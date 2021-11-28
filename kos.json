@@ -6,10 +6,39 @@
     "1.17.1-recommended": "1.1.0"
   },
   "1.16.5": {
-    "B2": "You can download the mod and/or view the list of changes by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+    "B2": "- Added elemental essence energy/n
+- Improved application of effects/n
+- [Bugfix] Air armor can no longer be obtained in the creative/n
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
-    "1.0.0": "You can download the mod and/or view the list of changes by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
-    "1.1.0": "You can download the mod and/or view the list of changes by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+    "1.0.0": "
+- Mod moved to Forge 1.17.1/n
+- New texture of the water flow projectile/n
+- Now water drops only have an effect while they are in the player's hand/n
+- Added new magical boxes/n
+- Added a separate tab for magic boxes/n
+- Added elements of 8 elements from group A/n
+- New tab icon with magic stones/n
+- An empty stone has been added, it can be crafted using glass and 4 Nether stars/n
+- Added the mod logo/n
+- Added a mod update script/n
+- Added some things for future mod updates/n
+- [Bugfix] It is no longer possible to use multiple stones at the same time/n
+- [Bugfix] Now, after death, the stone returns/n
+- [Bugfix] Fixed wooden box hitbox/n
+- [Bugfix] Fixed dup of shields/n
+- [Bugfix] Fixed a bug where the shield could be used several times when it was in the spare hand/n
+- [Bugfix] Fixed a bug where a player could use a shield and after the end of the wizard effect, the shield could return/n
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+    "1.1.0": "
+- Added new element spells: rain bow, magma shield, Tornado battle axe, crystal dagger, lava hammer, water katana, fire sword, air rapier/n
+- Lightning strike and energy staff now work as weapons and deal damage/n
+- Increased earth fist damage/n
+- Added 4 new slots in the stone box for future elements from group "A"/n
+- [Experimental] Added the ability to combine some stones/n
+- [Experimental] Added inferno merge/n
+- [Bugfix] Fixed errors with Russian translation/n
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }
