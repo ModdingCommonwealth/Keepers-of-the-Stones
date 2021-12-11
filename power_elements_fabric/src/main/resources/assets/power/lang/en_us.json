@@ -1,1 +1,13 @@
-{}
+{
+  "item.power.fire_sword": "Fire Sword",
+  "item.power.fire_leggings": "Fire Leggings",
+  "item.power.magic_fireball": "Magic Fireball",
+  "item.power.fire_helmet": "Fire Helmet",
+  "effect.recharge_fire_stone": "Recharge",
+  "item.power.fire_stone": "Fire Stone",
+  "effect.fire_master": "Master Of Fire",
+  "item.power.fire_boots": "Fire Boots",
+  "item.power.burn": "Burn",
+  "item.power.fire_chestplate": "Fire Chestplate",
+  "itemGroup.power.magic_stones": "Magic Stones"
+}
