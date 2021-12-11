@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "power:block/vacuum_web_block"
+    },
+    "powered=true": {
+      "model": "power:block/vacuum_web_block_down"
+    }
+  }
+}

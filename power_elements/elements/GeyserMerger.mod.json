@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Geyser Merger",
+    "icon": "geyser_merger.png",
+    "color": {
+      "value": -16724788,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "GeyserMergerEffectStart"
+    },
+    "onActiveTick": {
+      "name": "GeyserMergerEffects"
+    },
+    "onExpired": {
+      "name": "GeyserMergerEffectEnd"
+    }
+  }
+}

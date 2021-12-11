@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "power:fire_stone"
+    },
+    "3": {
+      "item": "power:air_stone"
+    },
+    "4": {
+      "item": "power:empty_stone"
+    },
+    "5": {
+      "item": "power:water_stone"
+    },
+    "7": {
+      "item": "power:earth_stone"
+    }
+  },
+  "result": {
+    "item": "power:energy_stone",
+    "count": 1
+  }
+}
