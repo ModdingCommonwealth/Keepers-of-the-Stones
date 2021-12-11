@@ -217,16 +217,6 @@
       "ids": {},
       "registry_name": "fire_sword",
       "path": "~/Fire"
-    },
-    {
-      "name": "MagicFireball",
-      "type": "rangeditem",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "magic_fireball",
-      "path": "~/Fire"
     }
   ],
   "variable_elements": [
@@ -248,7 +238,6 @@
     "en_us": {
       "item.power.fire_sword": "Fire Sword",
       "item.power.fire_leggings": "Fire Leggings",
-      "item.power.magic_fireball": "Magic Fireball",
       "item.power.fire_helmet": "Fire Helmet",
       "effect.recharge_fire_stone": "Recharge",
       "item.power.fire_stone": "Fire Stone",
@@ -271,13 +260,13 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev1",
+    "version": "1.2.0-dev3",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal, yVigil",
     "websiteURL": "https://minefox.ru",
     "license": "All Rights Reserved",
-    "disableForgeVersionCheck": true,
-    "serverSideOnly": true,
+    "disableForgeVersionCheck": false,
+    "serverSideOnly": false,
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],

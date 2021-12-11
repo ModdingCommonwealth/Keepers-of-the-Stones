@@ -20,7 +20,6 @@ import ru.minefox.keepersofthestones.procedures.FireMasterEffectEndProcedure;
 import ru.minefox.keepersofthestones.procedures.BurnProcedureProcedure;
 import ru.minefox.keepersofthestones.procedures.BurnBlockProcedureProcedure;
 import ru.minefox.keepersofthestones.item.MagicStonesItemGroup;
-import ru.minefox.keepersofthestones.item.MagicFireballRangedItem;
 import ru.minefox.keepersofthestones.item.FireSwordTool;
 import ru.minefox.keepersofthestones.item.FireStoneItem;
 import ru.minefox.keepersofthestones.item.FireArmorMaterial;
@@ -44,7 +43,6 @@ public class PowerMod implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final Item FireStone_ITEM = Registry.register(Registry.ITEM, id("fire_stone"), new FireStoneItem());
 	public static final Item Burn_ITEM = Registry.register(Registry.ITEM, id("burn"), new BurnItem());
-	public static final Item MagicFireball_ITEM = Registry.register(Registry.ITEM, id("magic_fireball"), new MagicFireballRangedItem());
 	public static final ItemGroup MagicStones = MagicStonesItemGroup.get();
 	public static final Item Fire_HELMET = Registry.register(Registry.ITEM, id("fire_helmet"), FireArmorMaterial.HELMET);
 	public static final Item Fire_CHESTPLATE = Registry.register(Registry.ITEM, id("fire_chestplate"), FireArmorMaterial.CHESTPLATE);
