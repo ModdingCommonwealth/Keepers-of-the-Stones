@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "power",
+  "version": "1.0.0",
+  "name": "Keepers of the Stones",
+  "authors": [
+    "chizh, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": "https://github.com/ClothCreators/Fabric-Generator-MCreator"
+  },
+  "license": "Academic Free License v3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.minefox.keepersofthestones.PowerMod"
+    ],
+    "client": [
+      "ru.minefox.keepersofthestones.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*"
+  }
+}
