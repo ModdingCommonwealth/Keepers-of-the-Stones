@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Vacuum",
+    "icon": "vacuum_master.png",
+    "color": {
+      "value": -16751053,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "VacuumMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "VacuumMasterEffects"
+    },
+    "onExpired": {
+      "name": "VacuumMasterEffectEnd"
+    }
+  }
+}

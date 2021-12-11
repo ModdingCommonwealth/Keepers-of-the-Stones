@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Water",
+    "icon": "untitled_10-16-2021_02-01-28.png",
+    "color": {
+      "value": -16763905,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "WaterMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "WaterEffects"
+    },
+    "onExpired": {
+      "name": "WaterEffectEnd"
+    }
+  }
+}

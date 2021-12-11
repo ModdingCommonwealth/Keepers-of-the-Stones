@@ -1,0 +1,27 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "solar_axe",
+    "customModelName": "Normal",
+    "name": "Sun Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 0.8,
+    "enchantability": 2,
+    "damageVsEntity": 15.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

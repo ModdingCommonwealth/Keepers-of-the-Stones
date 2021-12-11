@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:black_concrete"
+    },
+    "1": {
+      "item": "power:empty_stone"
+    }
+  },
+  "result": {
+    "item": "power:shadow_stone",
+    "count": 1
+  }
+}

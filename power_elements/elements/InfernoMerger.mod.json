@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Inferno Merger",
+    "icon": "infernoeffect.png",
+    "color": {
+      "value": -26215,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "InfernoMergerEffectStart"
+    },
+    "onActiveTick": {
+      "name": "InfernoMergeEffects"
+    },
+    "onExpired": {
+      "name": "InfernoMergerEffectEnd"
+    }
+  }
+}
