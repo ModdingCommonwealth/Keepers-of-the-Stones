@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/crystal_block",
+    "up": "power:blocks/crystal_block",
+    "north": "power:blocks/crystal_block",
+    "east": "power:blocks/crystal_block",
+    "south": "power:blocks/crystal_block",
+    "west": "power:blocks/crystal_block",
+    "particle": "power:blocks/crystal_block"
+  }
+}
