@@ -5,9 +5,6 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:MoonLand"
-      },
-      {
-        "value": "CUSTOM:MoonOcean"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -15,7 +12,7 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "Blocks.STONE#5"
     },
     "canRespawnHere": true,
     "hasFog": false,

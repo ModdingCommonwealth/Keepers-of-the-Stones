@@ -5882,16 +5882,6 @@
       "path": "~/Cosmos"
     },
     {
-      "name": "MoonOcean",
-      "type": "biome",
-      "sortid": 393,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "moon_ocean",
-      "path": "~/Cosmos"
-    },
-    {
       "name": "Moon",
       "type": "dimension",
       "sortid": 394,
@@ -6380,7 +6370,6 @@
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
       "item.power.rain_knife": "Дождевой Нож",
-      "biome.power.moon_ocean": "Лунный Океан",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
       "item.power.lightning_boots": "Ботинки Молнии",
@@ -6632,7 +6621,6 @@
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
       "item.power.rain_knife": "Rain Knife",
-      "biome.power.moon_ocean": "Moon Land",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
       "item.power.lightning_boots": "Lightning Boots",
@@ -6880,7 +6868,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev26",
+    "version": "1.2.0-dev27",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal, yVigil",
     "websiteURL": "https://minefox.ru",

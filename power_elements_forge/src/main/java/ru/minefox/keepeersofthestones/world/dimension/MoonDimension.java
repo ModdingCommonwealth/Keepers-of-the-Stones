@@ -29,10 +29,6 @@ public class MoonDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.STONE);
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:moon_ocean")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:moon_ocean")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:moon_land")).getGenerationSettings().getSurfaceBuilder()
 					.get().config().getTopMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:moon_land")).getGenerationSettings().getSurfaceBuilder()
