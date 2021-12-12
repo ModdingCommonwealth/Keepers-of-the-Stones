@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "power:blocks/sharp_claster_block",
+    "particle": "power:blocks/sharp_claster_block"
+  }
+}

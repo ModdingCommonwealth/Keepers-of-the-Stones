@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Misc",
+    "icon": {
+      "value": "CUSTOM:EmptyStone"
+    },
+    "showSearch": false
+  }
+}

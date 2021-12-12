@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "power:block/sound_barrier_block"
+    }
+  }
+}
