@@ -2,31 +2,31 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Moon Land",
+    "name": "Mars Land",
     "groundBlock": {
-      "value": "Blocks.STONE#3"
+      "value": "Blocks.SAND#1"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.RED_SANDSTONE#0"
     },
     "airColor": {
-      "value": -16777216,
+      "value": -13210,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -16777216,
+      "value": -13210,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -16777216,
+      "value": -13210,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -16777216,
+      "value": -13210,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -16777216,
+      "value": -13210,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -54,9 +54,9 @@
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "biomeType": "WARM",
-    "spawnBiome": false,
+    "heightVariation": 0.5,
+    "biomeType": "COOL",
+    "spawnBiome": true,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
@@ -71,7 +71,7 @@
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 1,
+    "minHeight": 7,
     "treeStem": {
       "value": "Blocks.AIR"
     },
@@ -105,7 +105,9 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Caves"
+      "Ores",
+      "Caves",
+      "Icebergs"
     ],
     "spawnEntries": []
   }

@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "onmars",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "OnMarsUse"
+    }
+  }
+}

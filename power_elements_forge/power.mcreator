@@ -5969,6 +5969,57 @@
       "ids": {},
       "registry_name": "cosmos_stone",
       "path": "~/Cosmos"
+    },
+    {
+      "name": "MarsLand",
+      "type": "biome",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars_land",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "Mars",
+      "type": "dimension",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "OnMarsUse",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_mars_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "OnMars",
+      "type": "command",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_mars",
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -6359,6 +6410,7 @@
       "block.power.energy_block": "Энергетический блок",
       "item.power.light_sword": "Световой Меч",
       "item.power.moon_stone": "Камень Луны",
+      "item.power.mars": "Mars Portal Igniter",
       "item.power.destruction_power": "Анигиляция",
       "item.power.greenery_stone": "Камень Зелени",
       "effect.power.recharge_ocean_stone": "Перезарядка",
@@ -6378,6 +6430,7 @@
       "entity.power.glow": "Светляк",
       "item.power.eclipse": "Затмение",
       "effect.power.inferno_merger": "Слияние Инферно",
+      "biome.power.mars_land": "Mars Land",
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
       "effect.power.light_master": "Мастер Света",
@@ -6608,6 +6661,7 @@
       "block.power.energy_block": "Energy Block",
       "item.power.light_sword": "Light Sword",
       "item.power.moon_stone": "Moon Stone",
+      "item.power.mars": "Mars Portal Igniter",
       "item.power.destruction_power": "Destruction Power",
       "item.power.greenery_stone": "Greenery Stone",
       "item.power.ice_stone": "Ice Stone",
@@ -6631,6 +6685,7 @@
       "effect.recharge_energy_stone": "Recharge",
       "item.power.eclipse": "Eclipse",
       "effect.power.inferno_merger": "Inferno Merger",
+      "biome.power.mars_land": "Mars Land",
       "effect.lava_master": "Master of Lava",
       "item.power.rain_leggings": "Rain Leggings",
       "item.power.shadow_ball": "Shadow Ball",
