@@ -1,0 +1,162 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:FireStone"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 186,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:AirStone"
+          },
+          "color": {
+            "value": -3342337,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #2",
+          "x": 222,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:WaterStone"
+          },
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #3",
+          "x": 186,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:EarthStone"
+          },
+          "color": {
+            "value": -6737152,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #4",
+          "x": 222,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:EnergyStone"
+          },
+          "color": {
+            "value": -52,
+            "falpha": 0.0
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #5",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled_10-16-2021_01-48-32.png",
+          "use1Xscale": false,
+          "name": "untitled_10-16-2021_01-48-32.png",
+          "x": 223,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled_10-16-2021_02-01-28.png",
+          "use1Xscale": false,
+          "name": "untitled_10-16-2021_02-01-28.png",
+          "x": 187,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "image0.png",
+          "use1Xscale": false,
+          "name": "image0.png",
+          "x": 205,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "untitled_10-16-2021_05-43-24_3.png",
+          "use1Xscale": false,
+          "name": "untitled_10-16-2021_05-43-24_3.png",
+          "x": 223,
+          "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_master.png",
+          "use1Xscale": false,
+          "name": "fire_master.png",
+          "x": 187,
+          "y": 54
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "command",
+  "definition": {
+    "commandName": "detransform",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "DetransformKeyPriNazhatiiKlavishi"
+    }
+  }
+}

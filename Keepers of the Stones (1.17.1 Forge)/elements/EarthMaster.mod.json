@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of the Earth",
+    "icon": "untitled_10-16-2021_05-43-24_3.png",
+    "color": {
+      "value": -10079488,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "EarthMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "EarthEffects"
+    },
+    "onExpired": {
+      "name": "EarthMasterEffectEnd"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "power:custom/wood_stone_box",
+  "textures": {
+    "all": "power:blocks/golden_stone_box",
+    "particle": "power:blocks/golden_stone_box",
+    "0": "power:blocks/golden_stone_box"
+  }
+}

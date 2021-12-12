@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "U",
+    "keyBindingName": "Detransform key",
+    "keyBindingCategoryKey": "stones",
+    "onKeyPressed": {
+      "name": "DetransformKeyPriNazhatiiKlavishi"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Destruction Master",
+    "icon": "destruction_master.png",
+    "color": {
+      "value": -13421773,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "DestructionMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "DestructionMasterEffects"
+    },
+    "onExpired": {
+      "name": "DestructionMasterEffectEnd"
+    }
+  }
+}

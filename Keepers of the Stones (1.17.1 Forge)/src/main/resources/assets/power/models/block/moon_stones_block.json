@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/moon_stones_block",
+    "up": "power:blocks/moon_stones_block",
+    "north": "power:blocks/moon_stones_block",
+    "east": "power:blocks/moon_stones_block",
+    "south": "power:blocks/moon_stones_block",
+    "west": "power:blocks/moon_stones_block",
+    "particle": "power:blocks/moon_stones_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/sound_block",
+    "up": "power:blocks/sound_block",
+    "north": "power:blocks/sound_block",
+    "east": "power:blocks/sound_block",
+    "south": "power:blocks/sound_block",
+    "west": "power:blocks/sound_block",
+    "particle": "power:blocks/sound_block"
+  }
+}
