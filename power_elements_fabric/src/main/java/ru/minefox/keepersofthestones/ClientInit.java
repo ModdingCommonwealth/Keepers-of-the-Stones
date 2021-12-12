@@ -12,8 +12,6 @@
 */
 package ru.minefox.keepersofthestones;
 
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ClientModInitializer;
@@ -22,9 +20,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class ClientInit implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		HudRenderCallback.EVENT.register((matrices, tickDelta) -> {
-		});
-		ClientTickEvents.END_CLIENT_TICK.register((client) -> {
-		});
+
 	}
 }

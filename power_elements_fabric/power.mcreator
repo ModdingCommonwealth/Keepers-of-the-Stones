@@ -240,12 +240,14 @@
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.fire_helmet": "Fire Helmet",
       "effect.recharge_fire_stone": "Recharge",
-      "item.power.fire_stone": "Fire Stone",
+      "effect.power.fire_master": "Master Of Fire",
       "effect.fire_master": "Master Of Fire",
-      "item.power.fire_boots": "Fire Boots",
       "item.power.burn": "Burn",
       "item.power.fire_chestplate": "Fire Chestplate",
-      "itemGroup.power.magic_stones": "Magic Stones"
+      "itemGroup.power.magic_stones": "Magic Stones",
+      "item.power.fire_stone": "Fire Stone",
+      "item.power.fire_boots": "Fire Boots",
+      "effect.power.recharge_fire_stone": "Recharge"
     }
   },
   "foldersRoot": {
@@ -272,7 +274,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "fabric-1.16.5",
+    "currentGenerator": "fabric-1.17.1",
     "credits": "Created by MineFox",
     "modElementsPackage": "ru.minefox.keepersofthestones",
     "lockBaseModFiles": false

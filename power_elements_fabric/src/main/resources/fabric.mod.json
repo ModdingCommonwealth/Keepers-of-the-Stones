@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "power",
-  "version": "1.2.0-dev3",
+  "version": "1.2.0-dev3-fabric",
   "name": "Keepers of the Stones",
   "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
   "authors": [
@@ -9,7 +9,7 @@
   ],
   "contact": {
     "homepage": "https://minefox.ru",
-    "sources": "https://github.com/ClothCreators/Fabric-Generator-MCreator"
+    "sources": ""
   },
   "license": "All Rights Reserved",
   "icon": "assets/power/icon.png",
@@ -23,7 +23,9 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.11.6",
-    "fabric": "*"
+    "fabricloader": ">=0.12.1",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
   }
 }
