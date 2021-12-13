@@ -2,7 +2,7 @@
 package ru.minefox.keepeersofthestones.world.dimension;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;error
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
