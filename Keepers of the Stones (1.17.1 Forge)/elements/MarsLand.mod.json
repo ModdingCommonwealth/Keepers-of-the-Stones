@@ -7,7 +7,7 @@
       "value": "Blocks.SAND#1"
     },
     "undergroundBlock": {
-      "value": "Blocks.RED_SANDSTONE#0"
+      "value": "Blocks.DIRT#1"
     },
     "airColor": {
       "value": -13210,

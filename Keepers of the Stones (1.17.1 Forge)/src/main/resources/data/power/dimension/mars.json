@@ -60,7 +60,7 @@
       "ore_veins_enabled": false,
       "min_surface_level": 0,
       "default_block": {
-        "Name": "minecraft:granite"
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
         "Name": "minecraft:air"

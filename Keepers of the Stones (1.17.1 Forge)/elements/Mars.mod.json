@@ -9,7 +9,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#1"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
       "value": "Blocks.AIR"

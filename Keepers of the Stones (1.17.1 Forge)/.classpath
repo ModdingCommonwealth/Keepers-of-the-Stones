@@ -32,7 +32,7 @@
 	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16/"/>
-	<classpathentry sourcepath="C:/Users/chizh/OneDrive/Рабочий стол/Алексей/Keepers of the Stones/Keepers-of-the-Stones/power_elements_forge/build/fg_cache/net/minecraftforge/forge/1.17.1-37.1.1_mapped_official_1.17.1/forge-1.17.1-37.1.1_mapped_official_1.17.1-sources.jar" kind="lib" path="C:/Users/chizh/OneDrive/Рабочий стол/Алексей/Keepers of the Stones/Keepers-of-the-Stones/power_elements_forge/build/fg_cache/net/minecraftforge/forge/1.17.1-37.1.1_mapped_official_1.17.1/forge-1.17.1-37.1.1_mapped_official_1.17.1-recomp.jar">
+	<classpathentry sourcepath="C:/Users/chizh/OneDrive/Рабочий стол/Алексей/Keepers of the Stones/Keepers-of-the-Stones/Keepers of the Stones (1.17.1 Forge)/build/fg_cache/net/minecraftforge/forge/1.17.1-37.1.1_mapped_official_1.17.1/forge-1.17.1-37.1.1_mapped_official_1.17.1-sources.jar" kind="lib" path="C:/Users/chizh/OneDrive/Рабочий стол/Алексей/Keepers of the Stones/Keepers-of-the-Stones/Keepers of the Stones (1.17.1 Forge)/build/fg_cache/net/minecraftforge/forge/1.17.1-37.1.1_mapped_official_1.17.1/forge-1.17.1-37.1.1_mapped_official_1.17.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

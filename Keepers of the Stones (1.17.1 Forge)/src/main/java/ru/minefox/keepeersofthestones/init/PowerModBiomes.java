@@ -4,6 +4,7 @@
  */
 package ru.minefox.keepeersofthestones.init;
 
+import ru.minefox.keepeersofthestones.world.biome.VenusLandBiome;
 import ru.minefox.keepeersofthestones.world.biome.MoonLandBiome;
 import ru.minefox.keepeersofthestones.world.biome.MarsLandBiome;
 import ru.minefox.keepeersofthestones.PowerMod;
@@ -24,6 +25,7 @@ public class PowerModBiomes {
 	private static final List<Biome> REGISTRY = new ArrayList<>();
 	public static Biome MOON_LAND = register("moon_land", MoonLandBiome.createBiome());
 	public static Biome MARS_LAND = register("mars_land", MarsLandBiome.createBiome());
+	public static Biome VENUS_LAND = register("venus_land", VenusLandBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(PowerMod.MODID, registryname)));
@@ -40,6 +42,7 @@ public class PowerModBiomes {
 		event.enqueueWork(() -> {
 			MoonLandBiome.init();
 			MarsLandBiome.init();
+			VenusLandBiome.init();
 		});
 	}
 }

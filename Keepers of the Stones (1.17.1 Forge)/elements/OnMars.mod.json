@@ -3,7 +3,7 @@
   "_type": "command",
   "definition": {
     "commandName": "onmars",
-    "permissionLevel": "No requirement",
+    "permissionLevel": "1",
     "onCommandExecuted": {
       "name": "OnMarsUse"
     }

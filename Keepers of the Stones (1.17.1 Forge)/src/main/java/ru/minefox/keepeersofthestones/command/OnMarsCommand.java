@@ -23,10 +23,10 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 public class OnMarsCommand {
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("onmars")
-
-				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(OnMarsCommand::execute))
-				.executes(OnMarsCommand::execute));
+		event.getDispatcher()
+				.register(Commands.literal("onmars").requires(s -> s.hasPermission(1))
+						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(OnMarsCommand::execute))
+						.executes(OnMarsCommand::execute));
 	}
 
 	private static int execute(CommandContext<CommandSourceStack> ctx) {

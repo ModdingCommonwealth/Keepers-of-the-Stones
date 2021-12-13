@@ -28,7 +28,7 @@ public class MarsDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(Blocks.GRANITE);
+			replaceableBlocks.add(Blocks.STONE);
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:mars_land")).getGenerationSettings().getSurfaceBuilder()
 					.get().config().getTopMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:mars_land")).getGenerationSettings().getSurfaceBuilder()
