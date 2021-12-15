@@ -1,0 +1,9 @@
+.gradle/
+build/
+.idea/
+.settings/
+.mcreator/
+run/
+.DS_STORE
+.classpath
+.project
