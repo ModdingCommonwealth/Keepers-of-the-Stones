@@ -59,6 +59,9 @@ public class GreatStoneBoxGUIScreen extends AbstractContainerScreen<GreatStoneBo
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/destruction_master.png"));
 		this.blit(ms, this.leftPos + 96, this.topPos + 44, 0, 0, 16, 16, 16, 16);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/cosmos_master.png"));
+		this.blit(ms, this.leftPos + 79, this.topPos + 26, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
