@@ -1,7 +1,0 @@
-Java Launcher: C:\Users\chizh\.mcreator\gradle\jdks\jdk-16.0.2+7\bin\java.exe
-Arguments: '--inJar, C:\Users\chizh\OneDrive\Рабочий стол\Алексей\Keepers of the Stones\Keepers-of-the-Stones\Keepers of the Stones (1.17.1 Forge)\build\fg_cache\net\minecraftforge\forge\1.17.1-37.1.1\forge-1.17.1-37.1.1-injected.jar, --outJar, C:\Users\chizh\OneDrive\Рабочий стол\Алексей\Keepers of the Stones\Keepers-of-the-Stones\Keepers of the Stones (1.17.1 Forge)\build\fg_cache\net\minecraftforge\forge\1.17.1-37.1.1_mapped_official_1.17.1\forge-1.17.1-37.1.1_mapped_official_1.17.1.jar, --logFile, accesstransform.log, --atFile, C:\Users\chizh\OneDrive\Рабочий стол\Алексей\Keepers of the Stones\Keepers-of-the-Stones\Keepers of the Stones (1.17.1 Forge)\src\main\resources\META-INF\accesstransformer.cfg, --atFile, C:\Users\chizh\OneDrive\Рабочий стол\Алексей\Keepers of the Stones\Keepers-of-the-Stones\Keepers of the Stones (1.17.1 Forge)\build\_atJar_4\parent_at.cfg'
-Classpath:
- - C:\Users\chizh\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.0.5\accesstransformers-8.0.5-fatjar.jar
-Working directory: C:\Users\chizh\OneDrive\Рабочий стол\Алексей\Keepers of the Stones\Keepers-of-the-Stones\Keepers of the Stones (1.17.1 Forge)\build\_atJar_4
-Main class: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================
