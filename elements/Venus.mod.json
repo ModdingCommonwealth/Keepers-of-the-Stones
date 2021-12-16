@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:VenusLand"
+      },
+      {
+        "value": "CUSTOM:VenusDesert"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -63,7 +63,7 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:air"
+        "Name": "minecraft:snow_block"
       },
       "noise": {
         "min_y": 0,

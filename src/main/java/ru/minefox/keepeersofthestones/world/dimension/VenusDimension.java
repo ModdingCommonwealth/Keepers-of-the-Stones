@@ -29,6 +29,10 @@ public class VenusDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.STONE);
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:venus_desert")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
+			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:venus_desert")).getGenerationSettings()
+					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:venus_land")).getGenerationSettings()
 					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
 			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:venus_land")).getGenerationSettings()

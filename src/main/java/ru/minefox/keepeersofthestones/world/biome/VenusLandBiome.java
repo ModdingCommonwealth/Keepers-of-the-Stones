@@ -22,14 +22,13 @@ import net.minecraft.core.Registry;
 
 public class VenusLandBiome {
 	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderBaseConfiguration(
-			Blocks.GRANITE.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState()));
+			Blocks.COARSE_DIRT.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState()));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-26368).waterColor(-26368).waterFogColor(-26368).skyColor(-26368)
 				.foliageColorOverride(-26368).grassColorOverride(-26368).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
 		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
-		BiomeDefaultFeatures.addExtraGold(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).depth(0.2f).scale(0.3f)
 				.temperature(2f).downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
