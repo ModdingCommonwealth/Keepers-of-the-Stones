@@ -6063,6 +6063,25 @@
       "ids": {},
       "registry_name": "onvenus",
       "path": "~/Commands"
+    },
+    {
+      "name": "MagicStones",
+      "type": "tag",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magic_stones"
+    },
+    {
+      "name": "VenusDesert",
+      "type": "biome",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "venus_desert",
+      "path": "~/Cosmos"
     }
   ],
   "variable_elements": [
@@ -6378,6 +6397,7 @@
       "item.power.random_item": "Случайный предмет",
       "item.power.earth_boots": "Земляные Ботинки",
       "item.power.water_helmet": "Водная Маска",
+      "biome.power.venus_desert": "Venus Land",
       "item.power.cultivation": "Выращивание",
       "effect.power.recharge_crystal_stone": "Перезарядка",
       "effect.power.lightning_master": "Мастер Молнии",
@@ -6622,6 +6642,7 @@
       "item.power.random_item": "Random Item",
       "item.power.earth_boots": "Earth Boots",
       "item.power.water_helmet": "Water Helmet",
+      "biome.power.venus_desert": "Venus Land",
       "item.power.cultivation": "Cultivation",
       "effect.power.recharge_crystal_stone": "Recharge",
       "item.power.cluster_sharp": "Cluster Sharp",
@@ -6970,7 +6991,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev29",
+    "version": "1.2.0-dev30",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

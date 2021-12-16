@@ -4,7 +4,7 @@
   "definition": {
     "name": "Venus Land",
     "groundBlock": {
-      "value": "Blocks.DIRT#1"
+      "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
       "value": "Blocks.DRIPSTONE_BLOCK"

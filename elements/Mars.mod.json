@@ -12,7 +12,7 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.SNOW"
     },
     "canRespawnHere": true,
     "hasFog": false,

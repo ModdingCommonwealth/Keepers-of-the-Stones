@@ -20,25 +20,24 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
-public class MarsLandBiome {
+public class VenusDesertBiome {
 	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderBaseConfiguration(
-			Blocks.RED_SAND.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState()));
+			Blocks.SAND.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState(), Blocks.DRIPSTONE_BLOCK.defaultBlockState()));
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-13210).waterColor(-13210).waterFogColor(-13210).skyColor(-13210)
-				.foliageColorOverride(-13210).grassColorOverride(-13210).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-26368).waterColor(-26368).waterFogColor(-26368).skyColor(-26368)
+				.foliageColorOverride(-26368).grassColorOverride(-26368).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
-		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).depth(0.1f).scale(0.5f)
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).depth(0.2f).scale(0.3f)
 				.temperature(2f).downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
 				.generationSettings(biomeGenerationSettings.build()).build();
 	}
 
 	public static void init() {
-		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PowerMod.MODID, "mars_land"), SURFACE_BUILDER);
-		BiomeManager.addBiome(BiomeManager.BiomeType.COOL, new BiomeManager.BiomeEntry(
-				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(PowerModBiomes.MARS_LAND)), 1));
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PowerMod.MODID, "venus_desert"), SURFACE_BUILDER);
+		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(
+				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(PowerModBiomes.VENUS_DESERT)), 10));
 	}
 }
