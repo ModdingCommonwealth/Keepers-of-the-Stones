@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "power:fire_stone",
+    "power:energy_stone",
+    "power:lava_stone",
+    "power:creation_stone",
+    "power:ice_stone",
+    "power:empty_stone",
+    "power:sound_stone",
+    "power:vacuum_stone",
+    "power:air_stone",
+    "power:earth_stone",
+    "power:crystal_stone",
+    "power:tornado_stone",
+    "power:metal_stone",
+    "power:light_stone",
+    "power:moon_stone",
+    "power:destruction_stone",
+    "power:cosmos_stone",
+    "power:greenery_stone",
+    "power:lightning_stone",
+    "power:water_stone",
+    "power:animals_stone",
+    "power:ocean_stone",
+    "power:rain_stone"
+  ]
+}
