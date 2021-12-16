@@ -5844,14 +5844,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -6361,7 +6353,7 @@
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "block.power.crystal_shield_block": "Блок Кристаллического Щита",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
-      "item.power.cosmos_stone": "Cosmos Stone",
+      "item.power.cosmos_stone": "Камень Космоса",
       "effect.power.recharge_tornado_stone": "Перезарядка",
       "item.power.ocean_chestplate": "Акваланг Океана",
       "item.power.lava_leggings": "Лавовые Брюки",
@@ -6509,8 +6501,8 @@
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_helmet": "Energy Helmet",
-      "item.power.create_shadow": "Create Shadow",
       "effect.power.geyser_merger": "Geyser Merger",
+      "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
       "effect.power.sound_master": "Master of Sound",
@@ -6524,8 +6516,8 @@
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
-      "effect.power.unelemental_master": "Unelemental Master",
       "effect.fire_master": "Master of Fire",
+      "effect.power.unelemental_master": "Unelemental Master",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the Empty Stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -6553,8 +6545,8 @@
       "item.power.moon_wither": "Moon Wither",
       "item.power.sound_boots": "Sound Boots",
       "effect.power.recharge_earth_stone": "Recharge",
-      "item.power.magma_shield": "Magma Shield",
       "effect.power.ice_master": "Master of Ice",
+      "item.power.magma_shield": "Magma Shield",
       "item.power.moon_axe": "Moon Axe",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Moon Stones Block",
@@ -6978,7 +6970,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev28",
+    "version": "1.2.0-dev29",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
