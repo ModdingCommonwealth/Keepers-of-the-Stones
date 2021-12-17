@@ -8,7 +8,7 @@
     "name": "Sun Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MagicalStone"
+      "value": "CUSTOM:ExperimentalStones"
     },
     "stackSize": 1,
     "enchantability": 0,
