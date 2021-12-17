@@ -63,7 +63,7 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:snow_block"
+        "Name": "minecraft:red_sand"
       },
       "noise": {
         "min_y": 0,
