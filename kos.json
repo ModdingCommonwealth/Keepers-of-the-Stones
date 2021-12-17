@@ -41,9 +41,7 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Experimental] Added inferno merger
 - [Bugfix] Fixed errors with Russian translation
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
-    "1.2.0": "
-- Added 6 elements from group M
-- Added 5 elements from group G
+    "1.1.10": "
 - Added a new tab in the inventory for various items
 - Added andesite box
 - Added an achievement - Use your power!
@@ -57,6 +55,8 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Slightly improved shield code
 - Simplified detransformation key code
 - Removed crafting stones
+- [Experimental] Added 6 elements from group M
+- [Experimental] Added 5 elements from group G
 - [Experimental] Added geyser merge
 - [Bugfix] It is no longer possible to put any items in empty caskets that do not have elements yet
 - [Bugfix] Fixed GUI for some stone on the server
