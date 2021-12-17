@@ -105,7 +105,8 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Caves"
+      "Caves",
+      "ExtraGoldOre"
     ],
     "spawnEntries": []
   }

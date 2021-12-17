@@ -105,8 +105,8 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Ores",
-      "Caves"
+      "Caves",
+      "Ores"
     ],
     "spawnEntries": []
   }
