@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "power:block/black_hole_block"
+    },
+    "powered=true": {
+      "model": "power:block/black_hole_block_down"
+    }
+  }
+}

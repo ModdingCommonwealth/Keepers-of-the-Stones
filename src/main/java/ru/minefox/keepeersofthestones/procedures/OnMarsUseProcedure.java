@@ -33,5 +33,10 @@ public class OnMarsUseProcedure {
 				_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
 		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4), "tp ~ 75 ~");
+		}
 	}
 }

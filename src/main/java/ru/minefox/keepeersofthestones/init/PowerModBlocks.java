@@ -14,6 +14,7 @@ import ru.minefox.keepeersofthestones.block.GoldStoneBoxBlock;
 import ru.minefox.keepeersofthestones.block.EnergyBlockBlock;
 import ru.minefox.keepeersofthestones.block.CrystalShieldBlockBlock;
 import ru.minefox.keepeersofthestones.block.ClusterBlockBlock;
+import ru.minefox.keepeersofthestones.block.BlackHoleBlockBlock;
 import ru.minefox.keepeersofthestones.block.AndesiteStoneBoxBlock;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -41,6 +42,7 @@ public class PowerModBlocks {
 	public static final Block CRYSTAL_SHIELD_BLOCK = register(new CrystalShieldBlockBlock());
 	public static final Block VACUUM_WEB_BLOCK = register(new VacuumWebBlockBlock());
 	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
+	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -63,6 +65,7 @@ public class PowerModBlocks {
 			GoldStoneBoxBlock.registerRenderLayer();
 			ClusterBlockBlock.registerRenderLayer();
 			VacuumWebBlockBlock.registerRenderLayer();
+			BlackHoleBlockBlock.registerRenderLayer();
 		}
 	}
 }

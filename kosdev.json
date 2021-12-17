@@ -1,0 +1,22 @@
+{
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+  "promos": {
+    "1.17.1-latest": "1.2.0-dev32"
+  },
+  "1.17.1": {
+    "1.2.0-dev31": "
+- 1.2.0-dev31:
+- [New feature] Добавлена руда на Венеру
+- [Improve] Убран снег на Марсе
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+    "1.2.0-dev32": "
+1.2.0-dev32:
+- [New feature] Добавлен камень космоса
+- [Warning] Некоторые предметы заклинаний у камня космоса не имеет текстур
+- [New feature] Для дев-сборок добавлен отдельный файл листинга изменений
+- [Bugfix] Исправлена ветка для обновлений мода
+- [Bugfix] Биомы с других планет больше не генерируются в обычном мире 
+- [Bugfix] Игрок больше не телепортируется в камни при телепортации на другие планеты
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+ }
+}

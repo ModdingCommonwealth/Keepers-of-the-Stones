@@ -6082,6 +6082,198 @@
       "ids": {},
       "registry_name": "venus_desert",
       "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMaster",
+      "type": "potioneffect",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "RechargeCosmosStone",
+      "type": "potioneffect",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recharge_cosmos_stone",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosStoneUse",
+      "type": "procedure",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffectStart",
+      "type": "procedure",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffects",
+      "type": "procedure",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnMars",
+      "type": "item",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_mars",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnVenus",
+      "type": "item",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_venus",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnMoon",
+      "type": "item",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_moon",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnEarth",
+      "type": "item",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_earth",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "GalacticSword",
+      "type": "tool",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galactic_sword",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHole",
+      "type": "rangeditem",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHoleBlock",
+      "type": "block",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole_block",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHoleUse",
+      "type": "procedure",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
     }
   ],
   "variable_elements": [
@@ -6300,6 +6492,7 @@
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
+      "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
@@ -6314,11 +6507,13 @@
       "item.power.lava_hammer": "Лавовый Молот",
       "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
+      "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
       "item.power.lighting": "Освещение",
       "itemGroup.tabmagical_stone": "Волшебные камни",
       "item.power.fire_helmet": "Огненная корона",
+      "item.power.galactic_sword": "Галактический меч",
       "itemGroup.tabmisc_ko_s_category": "Разное",
       "effect.power.crystal_master": "Мастер Кристалла",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
@@ -6336,6 +6531,7 @@
       "biome.power.moon_land": "Лунная Земля",
       "effect.power.lava_master": "Мастер Лавы",
       "item.power.lava_ball": "Лавовый Шар",
+      "item.power.tp_on_venus": "Венера",
       "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.ocean_sword": "Меч Океана",
       "item.power.tornado_stone": "Камень Торнадо",
@@ -6437,6 +6633,7 @@
       "item.power.sun_explode": "Солнечный Взрыв",
       "item.power.vacuum_sword": "Пустотный Меч",
       "effect.power.creation_master": "Мастер Созидания",
+      "item.power.tp_on_moon": "Луна",
       "item.power.fire_sword": "Меч Огня",
       "item.power.water_boots": "Водные Ласты",
       "item.power.ice_shield": "Ледяной щит",
@@ -6448,8 +6645,10 @@
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
       "item.power.destruction_stone": "Камень Разрушения",
+      "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
+      "block.power.black_hole_block": "Блок Черной Дыры",
       "item.power.empty_stone": "Пустой Камень",
       "item.power.spawn": "Порождение",
       "item.power.tornado_helmet": "Шлем Торнадо",
@@ -6486,6 +6685,7 @@
       "item.power.rain_helmet": "Дождевая Шапка",
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
+      "effect.power.cosmos_master": "Master of Cosmos",
       "item.power.rain_knife": "Дождевой Нож",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
@@ -6503,6 +6703,7 @@
       "effect.power.metal_master": "Мастер Металла",
       "effect.power.recharge_metal_stone": "Перезарядка",
       "effect.power.fire_master": "Мастер Огня",
+      "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
       "block.power.wood_stone_box": "Волшебная деревянная шкатулка",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
@@ -6521,8 +6722,8 @@
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_helmet": "Energy Helmet",
-      "item.power.create_shadow": "Create Shadow",
       "effect.power.geyser_merger": "Geyser Merger",
+      "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
       "effect.power.sound_master": "Master of Sound",
@@ -6535,9 +6736,10 @@
       "effect.recharge_tornado_stone": "Recharge",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.sound_emitate": "Sound Emitate",
+      "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.power.vacuum_master": "Master of Vacuum",
-      "effect.power.unelemental_master": "Unelemental Master",
       "effect.fire_master": "Master of Fire",
+      "effect.power.unelemental_master": "Unelemental Master",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the Empty Stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -6549,13 +6751,15 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "item.power.earth_leggings": "Earth Leggings",
       "item.power.wooden_shield": "Wooden Shield",
+      "item.power.earth_leggings": "Earth Leggings",
+      "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
       "item.power.lighting": "Lighting",
       "itemGroup.tabmagical_stone": "Magical Stones",
       "item.power.fire_helmet": "Fire Helmet",
+      "item.power.galactic_sword": "Galactic Sword",
       "itemGroup.tabmisc_ko_s_category": "Misc",
       "effect.power.crystal_master": "Master of the Crystal",
       "effect.power.recharge_vacuum_stone": "Recharge",
@@ -6565,14 +6769,15 @@
       "item.power.moon_wither": "Moon Wither",
       "item.power.sound_boots": "Sound Boots",
       "effect.power.recharge_earth_stone": "Recharge",
-      "item.power.magma_shield": "Magma Shield",
       "effect.power.ice_master": "Master of Ice",
+      "item.power.magma_shield": "Magma Shield",
       "item.power.moon_axe": "Moon Axe",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
       "effect.power.lava_master": "Master of Lava",
       "item.power.lava_ball": "Lava Ball",
+      "item.power.tp_on_venus": "Tp On Venus",
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.ocean_sword": "Ocean Sword",
       "item.power.tornado_stone": "Tornado Stone",
@@ -6687,6 +6892,7 @@
       "item.power.sun_explode": "Sun Explode",
       "item.power.vacuum_sword": "Vacuum Sword",
       "effect.power.creation_master": "Master of Creation",
+      "item.power.tp_on_moon": "Tp On Moon",
       "item.power.fire_sword": "Fire Sword",
       "item.power.water_boots": "Water Boots",
       "item.power.ice_shield": "Ice Shield",
@@ -6700,8 +6906,10 @@
       "item.power.sound_barrier": "Sound Barrier",
       "effect.recharge_ice_stone": "Recharge",
       "item.power.destruction_stone": "Destruction Stone",
+      "item.power.tp_on_earth": "Tp On Earth",
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
+      "block.power.black_hole_block": "Black Hole Block",
       "item.power.empty_stone": "Empty Stone",
       "item.power.spawn": "Spawn",
       "item.power.tornado_helmet": "Tornado Helmet",
@@ -6742,6 +6950,7 @@
       "effect.recharge_sound_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
+      "effect.power.cosmos_master": "Master of Cosmos",
       "item.power.rain_knife": "Rain Knife",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
@@ -6762,6 +6971,7 @@
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
       "effect.power.fire_master": "Master of Fire",
+      "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
       "block.power.wood_stone_box": "Wood Stone Box",
       "item.power.vacuum_spiral": "Vacuum Spiral",
@@ -6991,14 +7201,14 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev31",
+    "version": "1.2.0-dev32",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
-    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Upate-Scripts/main/kos.json",
+    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kosdev.json",
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],
