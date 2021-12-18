@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Master of Space",
-    "icon": "cosmos_master.png",
+    "effectName": "Coal Merger",
+    "icon": "coal_merger.png",
     "color": {
-      "value": -13434829,
+      "value": -6750208,
       "falpha": 0.0
     },
     "isInstant": false,
@@ -14,13 +14,13 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onStarted": {
-      "name": "CosmosMasterEffectStart"
+      "name": "CoalMergerEffectStart"
     },
     "onActiveTick": {
-      "name": "CosmosMasterEffects"
+      "name": "CoalMergerEffects"
     },
     "onExpired": {
-      "name": "CosmosMasterEffectEnd"
+      "name": "CoalMergerEffectEnd"
     }
   }
 }

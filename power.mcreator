@@ -6283,6 +6283,74 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "experimental_stones"
+    },
+    {
+      "name": "CoalMerger",
+      "type": "potioneffect",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_merger",
+      "path": "~/Mergers/Coal"
+    },
+    {
+      "name": "CoalMergerEffectStart",
+      "type": "procedure",
+      "sortid": 405,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_merger_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mergers/Coal"
+    },
+    {
+      "name": "CoalMergerEffectEnd",
+      "type": "procedure",
+      "sortid": 406,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_merger_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mergers/Coal"
+    },
+    {
+      "name": "CoalMergerEffects",
+      "type": "procedure",
+      "sortid": 407,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coal_merger_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mergers/Coal"
     }
   ],
   "variable_elements": [
@@ -6501,7 +6569,7 @@
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
-      "effect.power.recharge_cosmos_stone": "Recharge",
+      "effect.power.recharge_cosmos_stone": "Перезарядка",
       "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
@@ -6680,6 +6748,7 @@
       "item.power.flash_light": "Вспышка Света",
       "item.power.sun_axe": "Солнечная Секира",
       "itemGroup.tabexperimental_stones": "Экспериментальные Камни",
+      "effect.power.coal_merger": "Слияние Уголь",
       "block.power.energy_block": "Энергетический блок",
       "item.power.light_sword": "Световой Меч",
       "item.power.moon_stone": "Камень Луны",
@@ -6695,7 +6764,7 @@
       "item.power.rain_helmet": "Дождевая Шапка",
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
-      "effect.power.cosmos_master": "Master of Cosmos",
+      "effect.power.cosmos_master": "Мастер Космоса",
       "item.power.rain_knife": "Дождевой Нож",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
@@ -6829,7 +6898,7 @@
       "item.power.crystal_leggings": "Crystal Leggings",
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
-      "item.power.cosmos_stone": "Cosmos Stone",
+      "item.power.cosmos_stone": "Space Stone",
       "effect.power.recharge_tornado_stone": "Recharge",
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
@@ -6944,6 +7013,7 @@
       "effect.ocean_master": "Master of the Ocean",
       "item.power.sun_axe": "Sun Axe",
       "itemGroup.tabexperimental_stones": "Experimental Stones",
+      "effect.power.coal_merger": "Coal Merger",
       "block.power.energy_block": "Energy Block",
       "item.power.light_sword": "Light Sword",
       "item.power.moon_stone": "Moon Stone",
@@ -6961,7 +7031,7 @@
       "effect.recharge_sound_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
-      "effect.power.cosmos_master": "Master of Cosmos",
+      "effect.power.cosmos_master": "Master of Space",
       "item.power.rain_knife": "Rain Knife",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
@@ -7158,15 +7228,15 @@
             "children": []
           },
           {
-            "name": "Steam",
+            "name": "Cloud",
             "children": []
           },
           {
-            "name": "Dust",
+            "name": "Mountain",
             "children": []
           },
           {
-            "name": "Mud",
+            "name": "Marsh",
             "children": []
           }
         ]
@@ -7212,7 +7282,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.11",
+    "version": "1.1.15-dev2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
@@ -7230,5 +7300,5 @@
     "modElementsPackage": "ru.minefox.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100351219
+  "mcreatorVersion": 202100351610
 }

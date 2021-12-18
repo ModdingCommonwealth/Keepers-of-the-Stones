@@ -128,6 +128,19 @@ public class ShiedOftheEarthProcedureProcedure {
 													"give @s power:shield_of_earth{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 									}
 								}
+							} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new PowerModVariables.PlayerVariables())).coal_merger) {
+								if (!(entity instanceof Player _playerHasItem
+										? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SHIELD_OF_EARTH))
+										: false)) {
+									{
+										Entity _ent = entity;
+										if (!_ent.level.isClientSide() && _ent.getServer() != null)
+											_ent.getServer().getCommands().performCommand(
+													_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+													"give @s power:shield_of_earth{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+									}
+								}
 							}
 							MinecraftForge.EVENT_BUS.unregister(this);
 						}
