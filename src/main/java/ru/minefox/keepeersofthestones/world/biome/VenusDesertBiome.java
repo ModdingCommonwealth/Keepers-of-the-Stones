@@ -1,10 +1,7 @@
 
 package ru.minefox.keepeersofthestones.world.biome;
 
-import ru.minefox.keepeersofthestones.init.PowerModBiomes;
 import ru.minefox.keepeersofthestones.PowerMod;
-
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
@@ -15,7 +12,6 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
@@ -38,7 +34,5 @@ public class VenusDesertBiome {
 
 	public static void init() {
 		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PowerMod.MODID, "venus_desert"), SURFACE_BUILDER);
-		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(
-				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(PowerModBiomes.VENUS_DESERT)), 10));
 	}
 }

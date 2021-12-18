@@ -56,7 +56,7 @@
     "baseHeight": 0.2,
     "heightVariation": 0.30000000000000004,
     "biomeType": "DESERT",
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

@@ -465,6 +465,13 @@ public class RespawnPlayerProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE);
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_COSMOS_STONE, 6000, 0, (false), (false)));
 		}
 	}
 }

@@ -44,5 +44,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.VACUUM_WEB, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.SUN_EXPLODE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.MOON_STONES, ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.BLACK_HOLE, ThrownItemRenderer::new);
 	}
 }

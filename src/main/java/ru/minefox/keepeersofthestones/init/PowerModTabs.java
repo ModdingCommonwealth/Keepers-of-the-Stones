@@ -14,6 +14,7 @@ public class PowerModTabs {
 	public static CreativeModeTab TAB_MAGICAL_STONE;
 	public static CreativeModeTab TAB_MAGICAL_STONE_BOXES;
 	public static CreativeModeTab TAB_MISC_KO_S_CATEGORY;
+	public static CreativeModeTab TAB_EXPERIMENTAL_STONES;
 
 	public static void load() {
 		TAB_MAGICAL_STONE = new CreativeModeTab("tabmagical_stone") {
@@ -42,6 +43,17 @@ public class PowerModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(PowerModItems.EMPTY_STONE);
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_EXPERIMENTAL_STONES = new CreativeModeTab("tabexperimental_stones") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(PowerModItems.COSMOS_STONE);
 			}
 
 			@OnlyIn(Dist.CLIENT)

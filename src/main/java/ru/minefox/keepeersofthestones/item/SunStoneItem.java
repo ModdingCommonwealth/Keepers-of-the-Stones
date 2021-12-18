@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class SunStoneItem extends Item {
 	public SunStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_STONES).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("sun_stone");
 	}
 

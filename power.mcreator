@@ -4,7 +4,7 @@
     {
       "name": "DetransformKey",
       "type": "keybind",
-      "sortid": 26,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -13,7 +13,7 @@
     {
       "name": "DetransformKeyPriNazhatiiKlavishi",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -40,7 +40,7 @@
     {
       "name": "MagicalStone",
       "type": "tab",
-      "sortid": 28,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -49,7 +49,7 @@
     {
       "name": "FireMastereffectstart",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -67,7 +67,7 @@
     {
       "name": "FireMaster",
       "type": "potioneffect",
-      "sortid": 30,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -77,7 +77,7 @@
     {
       "name": "FireStoneUse",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -95,7 +95,7 @@
     {
       "name": "BurnProcedure",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -112,7 +112,7 @@
     {
       "name": "Burn",
       "type": "item",
-      "sortid": 33,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -122,7 +122,7 @@
     {
       "name": "MagicFireball",
       "type": "rangeditem",
-      "sortid": 34,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -132,7 +132,7 @@
     {
       "name": "FireMasterEffectEnd",
       "type": "procedure",
-      "sortid": 35,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -150,7 +150,7 @@
     {
       "name": "AirMaster",
       "type": "potioneffect",
-      "sortid": 36,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -160,7 +160,7 @@
     {
       "name": "WaterMaster",
       "type": "potioneffect",
-      "sortid": 37,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -190,7 +190,7 @@
     {
       "name": "AirStoneUse",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -208,7 +208,7 @@
     {
       "name": "WaterStoneUse",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -226,7 +226,7 @@
     {
       "name": "EarthMaster",
       "type": "potioneffect",
-      "sortid": 40,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -236,7 +236,7 @@
     {
       "name": "EarthStoneUse",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -264,7 +264,7 @@
     {
       "name": "AirFlow",
       "type": "rangeditem",
-      "sortid": 42,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -274,7 +274,7 @@
     {
       "name": "AirMasterEffectStart",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -292,7 +292,7 @@
     {
       "name": "AirMasterEffectEnd",
       "type": "procedure",
-      "sortid": 44,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -310,7 +310,7 @@
     {
       "name": "BurnBlockProcedure",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -340,7 +340,7 @@
     {
       "name": "RechargeFireStone",
       "type": "potioneffect",
-      "sortid": 46,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -350,7 +350,7 @@
     {
       "name": "RechargeAirStone",
       "type": "potioneffect",
-      "sortid": 47,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -360,7 +360,7 @@
     {
       "name": "RechargeWaterStone",
       "type": "potioneffect",
-      "sortid": 48,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -370,7 +370,7 @@
     {
       "name": "RechargeEarthStone",
       "type": "potioneffect",
-      "sortid": 49,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -380,7 +380,7 @@
     {
       "name": "WaterFlow",
       "type": "rangeditem",
-      "sortid": 50,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -390,7 +390,7 @@
     {
       "name": "WaterCreateOnBlock",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -420,7 +420,7 @@
     {
       "name": "WaterMasterEffectStart",
       "type": "procedure",
-      "sortid": 52,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -438,7 +438,7 @@
     {
       "name": "WaterEffectEnd",
       "type": "procedure",
-      "sortid": 53,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -456,7 +456,7 @@
     {
       "name": "WaterDropUse",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -474,7 +474,7 @@
     {
       "name": "WaterDrop",
       "type": "item",
-      "sortid": 55,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -484,7 +484,7 @@
     {
       "name": "Fire",
       "type": "armor",
-      "sortid": 56,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -500,7 +500,7 @@
     {
       "name": "RechargeMagicFireball",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -522,7 +522,7 @@
     {
       "name": "EnergyMaster",
       "type": "potioneffect",
-      "sortid": 58,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -542,7 +542,7 @@
     {
       "name": "RechargeEnergyStone",
       "type": "potioneffect",
-      "sortid": 59,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -552,7 +552,7 @@
     {
       "name": "EnergyStoneUse",
       "type": "procedure",
-      "sortid": 60,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -570,7 +570,7 @@
     {
       "name": "BasicStoneBoxGUI",
       "type": "gui",
-      "sortid": 61,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -590,7 +590,7 @@
     {
       "name": "Water",
       "type": "armor",
-      "sortid": 62,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -606,7 +606,7 @@
     {
       "name": "EarthMasterEffectStart",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -624,7 +624,7 @@
     {
       "name": "EarthMasterEffectEnd",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -642,7 +642,7 @@
     {
       "name": "FistofEarth",
       "type": "tool",
-      "sortid": 65,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -652,7 +652,7 @@
     {
       "name": "ShiedOftheEarthProcedure",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -690,7 +690,7 @@
     {
       "name": "ShieldOfEarth",
       "type": "item",
-      "sortid": 67,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -700,7 +700,7 @@
     {
       "name": "Wind",
       "type": "armor",
-      "sortid": 68,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -716,7 +716,7 @@
     {
       "name": "PieceOfEarth",
       "type": "rangeditem",
-      "sortid": 69,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -726,7 +726,7 @@
     {
       "name": "Earth",
       "type": "armor",
-      "sortid": 70,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -742,7 +742,7 @@
     {
       "name": "StartEffectEnergyMaster",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -760,7 +760,7 @@
     {
       "name": "EndEffectEnergyMaster",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -778,7 +778,7 @@
     {
       "name": "EnergyStaffUse",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -796,7 +796,7 @@
     {
       "name": "FireEffects",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -814,7 +814,7 @@
     {
       "name": "AirEffects",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -832,7 +832,7 @@
     {
       "name": "WaterEffects",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -850,7 +850,7 @@
     {
       "name": "EarthEffects",
       "type": "procedure",
-      "sortid": 77,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -868,7 +868,7 @@
     {
       "name": "EnergyEffects",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -886,7 +886,7 @@
     {
       "name": "Energy",
       "type": "armor",
-      "sortid": 79,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -902,7 +902,7 @@
     {
       "name": "EnergySphere",
       "type": "rangeditem",
-      "sortid": 80,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -912,7 +912,7 @@
     {
       "name": "EnergyBlock",
       "type": "block",
-      "sortid": 81,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -922,7 +922,7 @@
     {
       "name": "EnergyShield",
       "type": "item",
-      "sortid": 82,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -932,7 +932,7 @@
     {
       "name": "EnergyShieldProcedure",
       "type": "procedure",
-      "sortid": 83,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -970,7 +970,7 @@
     {
       "name": "AdditionStoneBoxGUI",
       "type": "gui",
-      "sortid": 84,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -990,7 +990,7 @@
     {
       "name": "IceMaster",
       "type": "potioneffect",
-      "sortid": 85,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1010,7 +1010,7 @@
     {
       "name": "RechargeIceStone",
       "type": "potioneffect",
-      "sortid": 86,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1020,7 +1020,7 @@
     {
       "name": "IceStoneUse",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1038,7 +1038,7 @@
     {
       "name": "IceEffects",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1056,7 +1056,7 @@
     {
       "name": "IceMasterEffectStart",
       "type": "procedure",
-      "sortid": 89,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1074,7 +1074,7 @@
     {
       "name": "IceMasterEffectEnd",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1092,7 +1092,7 @@
     {
       "name": "IceBall",
       "type": "rangeditem",
-      "sortid": 91,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1102,7 +1102,7 @@
     {
       "name": "IceBallInEntity",
       "type": "procedure",
-      "sortid": 92,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1120,7 +1120,7 @@
     {
       "name": "IceBallInBlock",
       "type": "procedure",
-      "sortid": 93,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1150,7 +1150,7 @@
     {
       "name": "IceShield",
       "type": "item",
-      "sortid": 94,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1160,7 +1160,7 @@
     {
       "name": "IceShieldProcedure",
       "type": "procedure",
-      "sortid": 95,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1198,7 +1198,7 @@
     {
       "name": "SnowGolemCreator",
       "type": "item",
-      "sortid": 96,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1208,7 +1208,7 @@
     {
       "name": "GolemCreate",
       "type": "procedure",
-      "sortid": 97,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1242,7 +1242,7 @@
     {
       "name": "IceSharp",
       "type": "rangeditem",
-      "sortid": 98,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1252,7 +1252,7 @@
     {
       "name": "IceSharpFreezing",
       "type": "procedure",
-      "sortid": 99,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1270,7 +1270,7 @@
     {
       "name": "LightningMaster",
       "type": "potioneffect",
-      "sortid": 100,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1280,7 +1280,7 @@
     {
       "name": "RechargeLightningStone",
       "type": "potioneffect",
-      "sortid": 101,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1290,7 +1290,7 @@
     {
       "name": "LightningStoneUse",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1318,7 +1318,7 @@
     {
       "name": "LightningMasterEffectStart",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1336,7 +1336,7 @@
     {
       "name": "LightningMasterEffectEnd",
       "type": "procedure",
-      "sortid": 104,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1354,7 +1354,7 @@
     {
       "name": "LightningEffects",
       "type": "procedure",
-      "sortid": 105,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1372,7 +1372,7 @@
     {
       "name": "LightningStrikeUse",
       "type": "procedure",
-      "sortid": 106,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1402,7 +1402,7 @@
     {
       "name": "PlasmaBall",
       "type": "rangeditem",
-      "sortid": 107,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1412,7 +1412,7 @@
     {
       "name": "StormUse",
       "type": "procedure",
-      "sortid": 108,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1438,7 +1438,7 @@
     {
       "name": "Storm",
       "type": "item",
-      "sortid": 109,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1448,7 +1448,7 @@
     {
       "name": "SoundMaster",
       "type": "potioneffect",
-      "sortid": 110,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1468,7 +1468,7 @@
     {
       "name": "RechargeSoundStone",
       "type": "potioneffect",
-      "sortid": 111,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1478,7 +1478,7 @@
     {
       "name": "SoundStoneUse",
       "type": "procedure",
-      "sortid": 112,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1496,7 +1496,7 @@
     {
       "name": "SoundEffects",
       "type": "procedure",
-      "sortid": 113,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1514,7 +1514,7 @@
     {
       "name": "SoundSword",
       "type": "tool",
-      "sortid": 114,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1524,7 +1524,7 @@
     {
       "name": "AcusticalExplode",
       "type": "rangeditem",
-      "sortid": 115,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1534,7 +1534,7 @@
     {
       "name": "NullExplode",
       "type": "procedure",
-      "sortid": 116,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1564,7 +1564,7 @@
     {
       "name": "SoundMasterEffectStart",
       "type": "procedure",
-      "sortid": 117,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1582,7 +1582,7 @@
     {
       "name": "SoundMasterEffectEnd",
       "type": "procedure",
-      "sortid": 118,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1600,7 +1600,7 @@
     {
       "name": "SoundBarrierBlock",
       "type": "block",
-      "sortid": 119,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1610,7 +1610,7 @@
     {
       "name": "SoundBarrier",
       "type": "item",
-      "sortid": 120,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1620,7 +1620,7 @@
     {
       "name": "SoundBarrierUse",
       "type": "procedure",
-      "sortid": 121,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1658,7 +1658,7 @@
     {
       "name": "SoundEmitate",
       "type": "item",
-      "sortid": 122,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1668,7 +1668,7 @@
     {
       "name": "EmitateCreeper",
       "type": "procedure",
-      "sortid": 123,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1686,7 +1686,7 @@
     {
       "name": "SoundEmitateChoice",
       "type": "gui",
-      "sortid": 124,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1696,7 +1696,7 @@
     {
       "name": "EmitateSkeleton",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1714,7 +1714,7 @@
     {
       "name": "EmitateZombie",
       "type": "procedure",
-      "sortid": 126,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1732,7 +1732,7 @@
     {
       "name": "CrystalMaster",
       "type": "potioneffect",
-      "sortid": 127,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1742,7 +1742,7 @@
     {
       "name": "RechargeCrystalStone",
       "type": "potioneffect",
-      "sortid": 128,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1752,7 +1752,7 @@
     {
       "name": "CrystalEffects",
       "type": "procedure",
-      "sortid": 129,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1770,7 +1770,7 @@
     {
       "name": "CrystalStoneUse",
       "type": "procedure",
-      "sortid": 130,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1798,7 +1798,7 @@
     {
       "name": "CrystalMasterEffectStart",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1816,7 +1816,7 @@
     {
       "name": "CrystalMasterEffectEnd",
       "type": "procedure",
-      "sortid": 132,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1834,7 +1834,7 @@
     {
       "name": "ClusterSharp",
       "type": "rangeditem",
-      "sortid": 133,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1844,7 +1844,7 @@
     {
       "name": "CrystalSharpOnBlock",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1874,7 +1874,7 @@
     {
       "name": "EntityOnClusterBlock",
       "type": "procedure",
-      "sortid": 135,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1892,7 +1892,7 @@
     {
       "name": "ClusterBlock",
       "type": "block",
-      "sortid": 136,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1902,7 +1902,7 @@
     {
       "name": "CrystalShieldBlock",
       "type": "block",
-      "sortid": 137,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1912,7 +1912,7 @@
     {
       "name": "CrystalShield",
       "type": "item",
-      "sortid": 138,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1922,7 +1922,7 @@
     {
       "name": "CrystalShieldUse",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1960,7 +1960,7 @@
     {
       "name": "ClusterSharpIsGone",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1990,7 +1990,7 @@
     {
       "name": "LavaMaster",
       "type": "potioneffect",
-      "sortid": 141,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2000,7 +2000,7 @@
     {
       "name": "RechargeLavaStone",
       "type": "potioneffect",
-      "sortid": 142,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2020,7 +2020,7 @@
     {
       "name": "EmptyStone",
       "type": "item",
-      "sortid": 25,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2030,7 +2030,7 @@
     {
       "name": "EmptyStoneCraft",
       "type": "recipe",
-      "sortid": 143,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2420,7 +2420,7 @@
     {
       "name": "RespawnPlayer",
       "type": "procedure",
-      "sortid": 176,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2437,7 +2437,7 @@
     {
       "name": "TornadoMaster",
       "type": "potioneffect",
-      "sortid": 177,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2447,7 +2447,7 @@
     {
       "name": "RechargeTornadoStone",
       "type": "potioneffect",
-      "sortid": 178,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2457,7 +2457,7 @@
     {
       "name": "TornadoEffects",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2485,7 +2485,7 @@
     {
       "name": "TornadoStoneUse",
       "type": "procedure",
-      "sortid": 180,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2503,7 +2503,7 @@
     {
       "name": "TornadoEffectStart",
       "type": "procedure",
-      "sortid": 181,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2521,7 +2521,7 @@
     {
       "name": "TornadoEffectEnd",
       "type": "procedure",
-      "sortid": 182,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2539,7 +2539,7 @@
     {
       "name": "TornadoCreate",
       "type": "rangeditem",
-      "sortid": 183,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2549,7 +2549,7 @@
     {
       "name": "TornadoCreateOnBlock",
       "type": "procedure",
-      "sortid": 184,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2579,7 +2579,7 @@
     {
       "name": "TornadoCreateInEntity",
       "type": "procedure",
-      "sortid": 185,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2597,7 +2597,7 @@
     {
       "name": "OceanMaster",
       "type": "potioneffect",
-      "sortid": 186,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2607,7 +2607,7 @@
     {
       "name": "RechargeOceanStone",
       "type": "potioneffect",
-      "sortid": 187,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2627,7 +2627,7 @@
     {
       "name": "OceanStoneUse",
       "type": "procedure",
-      "sortid": 188,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2645,7 +2645,7 @@
     {
       "name": "OceanEffects",
       "type": "procedure",
-      "sortid": 189,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2663,7 +2663,7 @@
     {
       "name": "OceanMasterEffectStart",
       "type": "procedure",
-      "sortid": 190,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2681,7 +2681,7 @@
     {
       "name": "OceanMasterEffectEnd",
       "type": "procedure",
-      "sortid": 191,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2699,7 +2699,7 @@
     {
       "name": "CoralShield",
       "type": "item",
-      "sortid": 192,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2709,7 +2709,7 @@
     {
       "name": "CoralShieldUse",
       "type": "procedure",
-      "sortid": 193,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2747,7 +2747,7 @@
     {
       "name": "Whirlpool",
       "type": "rangeditem",
-      "sortid": 194,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2757,7 +2757,7 @@
     {
       "name": "Whirlpoolpower",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2775,7 +2775,7 @@
     {
       "name": "OceanSword",
       "type": "tool",
-      "sortid": 196,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2785,7 +2785,7 @@
     {
       "name": "Ice",
       "type": "armor",
-      "sortid": 199,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2801,7 +2801,7 @@
     {
       "name": "Lightning",
       "type": "armor",
-      "sortid": 200,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2817,7 +2817,7 @@
     {
       "name": "Sound",
       "type": "armor",
-      "sortid": 201,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2833,7 +2833,7 @@
     {
       "name": "Crystal",
       "type": "armor",
-      "sortid": 202,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2849,7 +2849,7 @@
     {
       "name": "Lava",
       "type": "armor",
-      "sortid": 204,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2865,7 +2865,7 @@
     {
       "name": "Rain",
       "type": "armor",
-      "sortid": 205,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2881,7 +2881,7 @@
     {
       "name": "Tornado",
       "type": "armor",
-      "sortid": 206,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2897,7 +2897,7 @@
     {
       "name": "Ocean",
       "type": "armor",
-      "sortid": 207,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2913,7 +2913,7 @@
     {
       "name": "LightningStrike",
       "type": "tool",
-      "sortid": 208,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2923,7 +2923,7 @@
     {
       "name": "EnergyStaff",
       "type": "tool",
-      "sortid": 209,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2933,7 +2933,7 @@
     {
       "name": "FireSword",
       "type": "tool",
-      "sortid": 210,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2943,7 +2943,7 @@
     {
       "name": "AirBlade",
       "type": "tool",
-      "sortid": 211,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2953,7 +2953,7 @@
     {
       "name": "WaterKatana",
       "type": "tool",
-      "sortid": 212,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2963,7 +2963,7 @@
     {
       "name": "CrystalDagger",
       "type": "tool",
-      "sortid": 213,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2973,7 +2973,7 @@
     {
       "name": "LavaHammer",
       "type": "tool",
-      "sortid": 214,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2983,7 +2983,7 @@
     {
       "name": "RainBow",
       "type": "rangeditem",
-      "sortid": 215,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2993,7 +2993,7 @@
     {
       "name": "TornadoBattleAxe",
       "type": "tool",
-      "sortid": 216,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3003,7 +3003,7 @@
     {
       "name": "MagmaShield",
       "type": "item",
-      "sortid": 217,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3013,7 +3013,7 @@
     {
       "name": "MagmaShieldUse",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3051,7 +3051,7 @@
     {
       "name": "IceSpear",
       "type": "tool",
-      "sortid": 219,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3061,7 +3061,7 @@
     {
       "name": "InfernoMergeEffects",
       "type": "procedure",
-      "sortid": 220,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3079,7 +3079,7 @@
     {
       "name": "InfernoMerger",
       "type": "potioneffect",
-      "sortid": 221,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3089,7 +3089,7 @@
     {
       "name": "InfernoMergerEffectStart",
       "type": "procedure",
-      "sortid": 222,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3111,7 +3111,7 @@
     {
       "name": "InfernoMergerEffectEnd",
       "type": "procedure",
-      "sortid": 223,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3129,7 +3129,7 @@
     {
       "name": "GreeneryMaster",
       "type": "potioneffect",
-      "sortid": 224,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3139,7 +3139,7 @@
     {
       "name": "GreeneryMasterEffects",
       "type": "procedure",
-      "sortid": 225,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3157,7 +3157,7 @@
     {
       "name": "GreeneryMasterEffectStart",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3175,7 +3175,7 @@
     {
       "name": "RechargeGreeneryStone",
       "type": "potioneffect",
-      "sortid": 227,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3185,7 +3185,7 @@
     {
       "name": "GreeneryMasterEffectEnd",
       "type": "procedure",
-      "sortid": 228,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3213,7 +3213,7 @@
     {
       "name": "GreeneryStoneUse",
       "type": "procedure",
-      "sortid": 229,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3231,7 +3231,7 @@
     {
       "name": "RoseSword",
       "type": "tool",
-      "sortid": 230,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3241,7 +3241,7 @@
     {
       "name": "WoodenShield",
       "type": "item",
-      "sortid": 231,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3251,7 +3251,7 @@
     {
       "name": "WoodenShieldUse",
       "type": "procedure",
-      "sortid": 232,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3289,7 +3289,7 @@
     {
       "name": "Spike",
       "type": "rangeditem",
-      "sortid": 233,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3299,7 +3299,7 @@
     {
       "name": "SpikePoisonProcedure",
       "type": "procedure",
-      "sortid": 234,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3317,7 +3317,7 @@
     {
       "name": "FertilizerUse",
       "type": "procedure",
-      "sortid": 235,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3335,7 +3335,7 @@
     {
       "name": "Fertilizer",
       "type": "item",
-      "sortid": 236,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3345,7 +3345,7 @@
     {
       "name": "Cultivation",
       "type": "item",
-      "sortid": 237,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3355,7 +3355,7 @@
     {
       "name": "CultivationGUI",
       "type": "gui",
-      "sortid": 238,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3365,7 +3365,7 @@
     {
       "name": "GetVine",
       "type": "procedure",
-      "sortid": 239,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3383,7 +3383,7 @@
     {
       "name": "GetOakSapling",
       "type": "procedure",
-      "sortid": 240,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3401,7 +3401,7 @@
     {
       "name": "GetWaterLily",
       "type": "procedure",
-      "sortid": 241,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3419,7 +3419,7 @@
     {
       "name": "GeyserMerger",
       "type": "potioneffect",
-      "sortid": 244,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3429,7 +3429,7 @@
     {
       "name": "GeyserMergerEffectStart",
       "type": "procedure",
-      "sortid": 245,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3451,7 +3451,7 @@
     {
       "name": "GeyserMergerEffectEnd",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3469,7 +3469,7 @@
     {
       "name": "GeyserMergerEffects",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3487,7 +3487,7 @@
     {
       "name": "AnimalsMaster",
       "type": "potioneffect",
-      "sortid": 248,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3497,7 +3497,7 @@
     {
       "name": "AnimalsMasterEffectStart",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3515,7 +3515,7 @@
     {
       "name": "RechargeAnimalsStone",
       "type": "potioneffect",
-      "sortid": 250,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3525,7 +3525,7 @@
     {
       "name": "AnimalsStoneUse",
       "type": "procedure",
-      "sortid": 251,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3553,7 +3553,7 @@
     {
       "name": "AnimalsMasterEffectEnd",
       "type": "procedure",
-      "sortid": 252,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3571,7 +3571,7 @@
     {
       "name": "AnimalsEffects",
       "type": "procedure",
-      "sortid": 253,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3589,7 +3589,7 @@
     {
       "name": "BeeSting",
       "type": "tool",
-      "sortid": 254,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3599,7 +3599,7 @@
     {
       "name": "TigerClaw",
       "type": "rangeditem",
-      "sortid": 255,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3609,7 +3609,7 @@
     {
       "name": "Tamer",
       "type": "item",
-      "sortid": 256,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3619,7 +3619,7 @@
     {
       "name": "TamePower",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3641,7 +3641,7 @@
     {
       "name": "Spawn",
       "type": "item",
-      "sortid": 258,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3651,7 +3651,7 @@
     {
       "name": "SpawnAnimalsGUI",
       "type": "gui",
-      "sortid": 259,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3661,7 +3661,7 @@
     {
       "name": "SummonWolf",
       "type": "procedure",
-      "sortid": 261,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3691,7 +3691,7 @@
     {
       "name": "SummonChicken",
       "type": "procedure",
-      "sortid": 262,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3721,7 +3721,7 @@
     {
       "name": "SummonCow",
       "type": "procedure",
-      "sortid": 263,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3751,7 +3751,7 @@
     {
       "name": "SummonCat",
       "type": "procedure",
-      "sortid": 264,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3781,7 +3781,7 @@
     {
       "name": "Invincibility",
       "type": "potioneffect",
-      "sortid": 265,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3791,7 +3791,7 @@
     {
       "name": "InvincibilityEffectStart",
       "type": "procedure",
-      "sortid": 266,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3809,7 +3809,7 @@
     {
       "name": "InvincibilityEffectEnd",
       "type": "procedure",
-      "sortid": 267,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3827,7 +3827,7 @@
     {
       "name": "MiscKoSCategory",
       "type": "tab",
-      "sortid": 268,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3836,7 +3836,7 @@
     {
       "name": "MetalMaster",
       "type": "potioneffect",
-      "sortid": 269,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3846,7 +3846,7 @@
     {
       "name": "RechargeMetalStone",
       "type": "potioneffect",
-      "sortid": 270,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3856,7 +3856,7 @@
     {
       "name": "MetalStoneUse",
       "type": "procedure",
-      "sortid": 271,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3884,7 +3884,7 @@
     {
       "name": "MetalMasterEffectStart",
       "type": "procedure",
-      "sortid": 272,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3902,7 +3902,7 @@
     {
       "name": "MetalMasterEffectEnd",
       "type": "procedure",
-      "sortid": 273,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3920,7 +3920,7 @@
     {
       "name": "MetalMasterEffects",
       "type": "procedure",
-      "sortid": 274,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3938,7 +3938,7 @@
     {
       "name": "Shuriken",
       "type": "rangeditem",
-      "sortid": 275,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3948,7 +3948,7 @@
     {
       "name": "Sai",
       "type": "tool",
-      "sortid": 276,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3958,7 +3958,7 @@
     {
       "name": "MetalInvulnerability",
       "type": "item",
-      "sortid": 277,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3968,7 +3968,7 @@
     {
       "name": "MetalInvulnerabilityUse",
       "type": "procedure",
-      "sortid": 278,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3994,7 +3994,7 @@
     {
       "name": "IronGolemCreate",
       "type": "item",
-      "sortid": 279,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4004,7 +4004,7 @@
     {
       "name": "IronGolemCreateUse",
       "type": "procedure",
-      "sortid": 280,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4038,7 +4038,7 @@
     {
       "name": "IronShield",
       "type": "item",
-      "sortid": 281,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4048,7 +4048,7 @@
     {
       "name": "IronShieldUse",
       "type": "procedure",
-      "sortid": 282,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4086,7 +4086,7 @@
     {
       "name": "WhenPlayerGoingSleep",
       "type": "procedure",
-      "sortid": 283,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4107,7 +4107,7 @@
     {
       "name": "UnelementalMasterEffectStart",
       "type": "procedure",
-      "sortid": 284,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4125,7 +4125,7 @@
     {
       "name": "UnelementalMasterEffectEnd",
       "type": "procedure",
-      "sortid": 285,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4143,7 +4143,7 @@
     {
       "name": "UnelementalMasterEffects",
       "type": "procedure",
-      "sortid": 286,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4161,7 +4161,7 @@
     {
       "name": "UnelementalMaster",
       "type": "potioneffect",
-      "sortid": 287,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4171,7 +4171,7 @@
     {
       "name": "RechargeEmptyStone",
       "type": "potioneffect",
-      "sortid": 288,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4181,7 +4181,7 @@
     {
       "name": "EmptyStoneUse",
       "type": "procedure",
-      "sortid": 289,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4199,7 +4199,7 @@
     {
       "name": "WhenPlayerWakeUp",
       "type": "procedure",
-      "sortid": 290,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4216,7 +4216,7 @@
     {
       "name": "Glow",
       "type": "livingentity",
-      "sortid": 293,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4226,7 +4226,7 @@
     {
       "name": "LightMasterEffectStart",
       "type": "procedure",
-      "sortid": 294,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4254,7 +4254,7 @@
     {
       "name": "LightMaster",
       "type": "potioneffect",
-      "sortid": 295,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4264,7 +4264,7 @@
     {
       "name": "RechargeLightStone",
       "type": "potioneffect",
-      "sortid": 296,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4274,7 +4274,7 @@
     {
       "name": "LightStoneUse",
       "type": "procedure",
-      "sortid": 297,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4292,7 +4292,7 @@
     {
       "name": "LightMasterEffectEnd",
       "type": "procedure",
-      "sortid": 298,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4310,7 +4310,7 @@
     {
       "name": "LightMasterEffects",
       "type": "procedure",
-      "sortid": 299,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4332,7 +4332,7 @@
     {
       "name": "LightSword",
       "type": "tool",
-      "sortid": 300,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4342,7 +4342,7 @@
     {
       "name": "FlashLight",
       "type": "rangeditem",
-      "sortid": 301,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4352,7 +4352,7 @@
     {
       "name": "FlashLightUse",
       "type": "procedure",
-      "sortid": 302,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4370,7 +4370,7 @@
     {
       "name": "GlowCreate",
       "type": "item",
-      "sortid": 303,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4380,7 +4380,7 @@
     {
       "name": "GlowCreateUse",
       "type": "procedure",
-      "sortid": 304,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4414,7 +4414,7 @@
     {
       "name": "TameGlow",
       "type": "procedure",
-      "sortid": 305,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4436,7 +4436,7 @@
     {
       "name": "Lighting",
       "type": "item",
-      "sortid": 306,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4446,7 +4446,7 @@
     {
       "name": "LightingUse",
       "type": "procedure",
-      "sortid": 307,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4468,7 +4468,7 @@
     {
       "name": "Shadow",
       "type": "livingentity",
-      "sortid": 308,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4478,7 +4478,7 @@
     {
       "name": "ShadowMaster",
       "type": "potioneffect",
-      "sortid": 309,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4488,7 +4488,7 @@
     {
       "name": "RechargeShadowStone",
       "type": "potioneffect",
-      "sortid": 310,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4498,7 +4498,7 @@
     {
       "name": "ShadowStoneUse",
       "type": "procedure",
-      "sortid": 311,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4526,7 +4526,7 @@
     {
       "name": "ShadowMasterEffectStart",
       "type": "procedure",
-      "sortid": 312,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4544,7 +4544,7 @@
     {
       "name": "ShadowMasterEffectEnd",
       "type": "procedure",
-      "sortid": 313,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4562,7 +4562,7 @@
     {
       "name": "ShadowMasterEffects",
       "type": "procedure",
-      "sortid": 314,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4584,7 +4584,7 @@
     {
       "name": "ShadowSword",
       "type": "tool",
-      "sortid": 315,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4594,7 +4594,7 @@
     {
       "name": "ShadowBall",
       "type": "rangeditem",
-      "sortid": 316,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4604,7 +4604,7 @@
     {
       "name": "ShadowInvisible",
       "type": "item",
-      "sortid": 317,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4614,7 +4614,7 @@
     {
       "name": "ShadowInvisibleUse",
       "type": "procedure",
-      "sortid": 318,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4640,7 +4640,7 @@
     {
       "name": "CreateShadow",
       "type": "item",
-      "sortid": 319,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4650,7 +4650,7 @@
     {
       "name": "CreateShadowUse",
       "type": "procedure",
-      "sortid": 320,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4684,7 +4684,7 @@
     {
       "name": "TameShadow",
       "type": "procedure",
-      "sortid": 321,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4706,7 +4706,7 @@
     {
       "name": "VacuumMaster",
       "type": "potioneffect",
-      "sortid": 322,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4716,7 +4716,7 @@
     {
       "name": "RechargeVacuumStone",
       "type": "potioneffect",
-      "sortid": 323,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4726,7 +4726,7 @@
     {
       "name": "VacuumStoneUse",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4754,7 +4754,7 @@
     {
       "name": "VacuumMasterEffectStart",
       "type": "procedure",
-      "sortid": 325,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4772,7 +4772,7 @@
     {
       "name": "VacuumMasterEffectEnd",
       "type": "procedure",
-      "sortid": 326,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4790,7 +4790,7 @@
     {
       "name": "VacuumMasterEffects",
       "type": "procedure",
-      "sortid": 327,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4808,7 +4808,7 @@
     {
       "name": "VacuumToZero",
       "type": "procedure",
-      "sortid": 328,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4826,7 +4826,7 @@
     {
       "name": "VacuumSword",
       "type": "tool",
-      "sortid": 329,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4836,7 +4836,7 @@
     {
       "name": "VacuumSpiral",
       "type": "rangeditem",
-      "sortid": 330,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4846,7 +4846,7 @@
     {
       "name": "VacuumWebBlock",
       "type": "block",
-      "sortid": 331,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4856,7 +4856,7 @@
     {
       "name": "VacuumWebUse",
       "type": "procedure",
-      "sortid": 332,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4886,7 +4886,7 @@
     {
       "name": "VacuumWeb",
       "type": "rangeditem",
-      "sortid": 333,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4896,7 +4896,7 @@
     {
       "name": "VacuumTP",
       "type": "procedure",
-      "sortid": 334,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4940,7 +4940,7 @@
     {
       "name": "AdditionalAndesiteBoxGUI",
       "type": "gui",
-      "sortid": 335,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4950,7 +4950,7 @@
     {
       "name": "RechargeSunStone",
       "type": "potioneffect",
-      "sortid": 336,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4960,7 +4960,7 @@
     {
       "name": "SunMaster",
       "type": "potioneffect",
-      "sortid": 337,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4970,7 +4970,7 @@
     {
       "name": "SunStoneUse",
       "type": "procedure",
-      "sortid": 338,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4988,7 +4988,7 @@
     {
       "name": "SunStone",
       "type": "item",
-      "sortid": 339,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -4998,7 +4998,7 @@
     {
       "name": "SunMasterEffectStart",
       "type": "procedure",
-      "sortid": 340,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5016,7 +5016,7 @@
     {
       "name": "SunMasterEffectEnd",
       "type": "procedure",
-      "sortid": 341,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5034,7 +5034,7 @@
     {
       "name": "SunMasterEffects",
       "type": "procedure",
-      "sortid": 342,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5052,7 +5052,7 @@
     {
       "name": "SunAxe",
       "type": "tool",
-      "sortid": 343,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5062,7 +5062,7 @@
     {
       "name": "SunExplode",
       "type": "rangeditem",
-      "sortid": 344,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5072,7 +5072,7 @@
     {
       "name": "SunRay",
       "type": "item",
-      "sortid": 345,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5082,7 +5082,7 @@
     {
       "name": "SunRayUse",
       "type": "procedure",
-      "sortid": 346,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5108,7 +5108,7 @@
     {
       "name": "SunRegeneration",
       "type": "item",
-      "sortid": 347,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5118,7 +5118,7 @@
     {
       "name": "SunRegenOnOther",
       "type": "procedure",
-      "sortid": 348,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5148,7 +5148,7 @@
     {
       "name": "SunRegenOnMe",
       "type": "procedure",
-      "sortid": 349,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5174,7 +5174,7 @@
     {
       "name": "SunExplodeUse",
       "type": "procedure",
-      "sortid": 350,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5204,7 +5204,7 @@
     {
       "name": "MoonMaster",
       "type": "potioneffect",
-      "sortid": 355,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5214,7 +5214,7 @@
     {
       "name": "RechargeMoonStone",
       "type": "potioneffect",
-      "sortid": 356,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5224,7 +5224,7 @@
     {
       "name": "MoonStoneUse",
       "type": "procedure",
-      "sortid": 357,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5242,7 +5242,7 @@
     {
       "name": "MoonStone",
       "type": "item",
-      "sortid": 358,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5252,7 +5252,7 @@
     {
       "name": "MoonMasterEffectStart",
       "type": "procedure",
-      "sortid": 359,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5270,7 +5270,7 @@
     {
       "name": "MoonMasterEffectEnd",
       "type": "procedure",
-      "sortid": 360,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5288,7 +5288,7 @@
     {
       "name": "MoonAxe",
       "type": "tool",
-      "sortid": 361,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5298,7 +5298,7 @@
     {
       "name": "MoonMasterEffects",
       "type": "procedure",
-      "sortid": 362,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5316,7 +5316,7 @@
     {
       "name": "MoonStones",
       "type": "rangeditem",
-      "sortid": 363,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5326,7 +5326,7 @@
     {
       "name": "MoonStonesBlock",
       "type": "block",
-      "sortid": 364,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5336,7 +5336,7 @@
     {
       "name": "MultiplicationMoonStone",
       "type": "procedure",
-      "sortid": 364,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5370,7 +5370,7 @@
     {
       "name": "SetBlockMoonStone",
       "type": "procedure",
-      "sortid": 365,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5400,7 +5400,7 @@
     {
       "name": "Eclipse",
       "type": "item",
-      "sortid": 366,
+      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5410,7 +5410,7 @@
     {
       "name": "EclipseUse",
       "type": "procedure",
-      "sortid": 366,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5436,7 +5436,7 @@
     {
       "name": "MoonWither",
       "type": "item",
-      "sortid": 367,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5446,7 +5446,7 @@
     {
       "name": "MoonWitherUse",
       "type": "procedure",
-      "sortid": 368,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5476,7 +5476,7 @@
     {
       "name": "MultiplicationMoonstoneBlockToTicks",
       "type": "procedure",
-      "sortid": 369,
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5506,7 +5506,7 @@
     {
       "name": "EntityOnMoonstones",
       "type": "procedure",
-      "sortid": 370,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5524,7 +5524,7 @@
     {
       "name": "RechargeCreationStone",
       "type": "potioneffect",
-      "sortid": 371,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5534,7 +5534,7 @@
     {
       "name": "CreationMaster",
       "type": "potioneffect",
-      "sortid": 372,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5544,7 +5544,7 @@
     {
       "name": "CreationStoneUse",
       "type": "procedure",
-      "sortid": 373,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5562,7 +5562,7 @@
     {
       "name": "CreationStone",
       "type": "item",
-      "sortid": 373,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5572,7 +5572,7 @@
     {
       "name": "CreationMasterEffectStart",
       "type": "procedure",
-      "sortid": 374,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5590,7 +5590,7 @@
     {
       "name": "CreationMasterEffectEnd",
       "type": "procedure",
-      "sortid": 375,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5608,7 +5608,7 @@
     {
       "name": "CreationMasterEffects",
       "type": "procedure",
-      "sortid": 376,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5626,7 +5626,7 @@
     {
       "name": "RandomItem",
       "type": "item",
-      "sortid": 377,
+      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5636,7 +5636,7 @@
     {
       "name": "RandomItemUse",
       "type": "procedure",
-      "sortid": 378,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5662,7 +5662,7 @@
     {
       "name": "RechargeSunExplode",
       "type": "procedure",
-      "sortid": 379,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5684,7 +5684,7 @@
     {
       "name": "SummonHorse",
       "type": "procedure",
-      "sortid": 380,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5714,7 +5714,7 @@
     {
       "name": "Detransform",
       "type": "command",
-      "sortid": 382,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5724,7 +5724,7 @@
     {
       "name": "DestructionStone",
       "type": "item",
-      "sortid": 383,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5734,7 +5734,7 @@
     {
       "name": "RechargeDestructionStone",
       "type": "potioneffect",
-      "sortid": 384,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5744,7 +5744,7 @@
     {
       "name": "DestructionMaster",
       "type": "potioneffect",
-      "sortid": 385,
+      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5754,7 +5754,7 @@
     {
       "name": "DestructionStoneUse",
       "type": "procedure",
-      "sortid": 386,
+      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5772,7 +5772,7 @@
     {
       "name": "DestructionMasterEffectStart",
       "type": "procedure",
-      "sortid": 387,
+      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5790,7 +5790,7 @@
     {
       "name": "DestructionMasterEffectEnd",
       "type": "procedure",
-      "sortid": 388,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5808,7 +5808,7 @@
     {
       "name": "DestructionMasterEffects",
       "type": "procedure",
-      "sortid": 389,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5826,7 +5826,7 @@
     {
       "name": "DestructionPower",
       "type": "item",
-      "sortid": 390,
+      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5836,7 +5836,7 @@
     {
       "name": "DestructionPowerUse",
       "type": "procedure",
-      "sortid": 391,
+      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5866,7 +5866,7 @@
     {
       "name": "MoonLand",
       "type": "biome",
-      "sortid": 392,
+      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5876,7 +5876,7 @@
     {
       "name": "Moon",
       "type": "dimension",
-      "sortid": 394,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5889,7 +5889,7 @@
     {
       "name": "OnMoonUse",
       "type": "procedure",
-      "sortid": 395,
+      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5907,7 +5907,7 @@
     {
       "name": "Onmoon",
       "type": "command",
-      "sortid": 395,
+      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5917,7 +5917,7 @@
     {
       "name": "OnEarthUse",
       "type": "procedure",
-      "sortid": 396,
+      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5935,7 +5935,7 @@
     {
       "name": "OnEarth",
       "type": "command",
-      "sortid": 397,
+      "sortid": 380,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5945,7 +5945,7 @@
     {
       "name": "UseYourPower",
       "type": "achievement",
-      "sortid": 398,
+      "sortid": 381,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5955,7 +5955,7 @@
     {
       "name": "CosmosStone",
       "type": "item",
-      "sortid": 399,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5965,7 +5965,7 @@
     {
       "name": "MarsLand",
       "type": "biome",
-      "sortid": 400,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5975,7 +5975,7 @@
     {
       "name": "Mars",
       "type": "dimension",
-      "sortid": 401,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -5988,7 +5988,7 @@
     {
       "name": "OnMarsUse",
       "type": "procedure",
-      "sortid": 402,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6006,7 +6006,7 @@
     {
       "name": "OnMars",
       "type": "command",
-      "sortid": 402,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6016,7 +6016,7 @@
     {
       "name": "VenusLand",
       "type": "biome",
-      "sortid": 403,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6026,7 +6026,7 @@
     {
       "name": "Venus",
       "type": "dimension",
-      "sortid": 404,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6039,7 +6039,7 @@
     {
       "name": "OnVenusUse",
       "type": "procedure",
-      "sortid": 405,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6057,7 +6057,7 @@
     {
       "name": "Onvenus",
       "type": "command",
-      "sortid": 405,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6067,7 +6067,7 @@
     {
       "name": "MagicStones",
       "type": "tag",
-      "sortid": 406,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -6076,12 +6076,213 @@
     {
       "name": "VenusDesert",
       "type": "biome",
-      "sortid": 407,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "venus_desert",
       "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMaster",
+      "type": "potioneffect",
+      "sortid": 390,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "RechargeCosmosStone",
+      "type": "potioneffect",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recharge_cosmos_stone",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosStoneUse",
+      "type": "procedure",
+      "sortid": 392,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffectStart",
+      "type": "procedure",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "CosmosMasterEffects",
+      "type": "procedure",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosmos_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnMars",
+      "type": "item",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_mars",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnVenus",
+      "type": "item",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_venus",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnMoon",
+      "type": "item",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_moon",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "TpOnEarth",
+      "type": "item",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tp_on_earth",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "GalacticSword",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galactic_sword",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHole",
+      "type": "rangeditem",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHoleBlock",
+      "type": "block",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole_block",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "BlackHoleUse",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_hole_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "ExperimentalStones",
+      "type": "tab",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "experimental_stones"
     }
   ],
   "variable_elements": [
@@ -6300,6 +6501,7 @@
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
+      "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
@@ -6314,11 +6516,13 @@
       "item.power.lava_hammer": "Лавовый Молот",
       "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
+      "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
       "item.power.lighting": "Освещение",
       "itemGroup.tabmagical_stone": "Волшебные камни",
       "item.power.fire_helmet": "Огненная корона",
+      "item.power.galactic_sword": "Галактический меч",
       "itemGroup.tabmisc_ko_s_category": "Разное",
       "effect.power.crystal_master": "Мастер Кристалла",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
@@ -6336,6 +6540,7 @@
       "biome.power.moon_land": "Лунная Земля",
       "effect.power.lava_master": "Мастер Лавы",
       "item.power.lava_ball": "Лавовый Шар",
+      "item.power.tp_on_venus": "Венера",
       "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.ocean_sword": "Меч Океана",
       "item.power.tornado_stone": "Камень Торнадо",
@@ -6437,6 +6642,7 @@
       "item.power.sun_explode": "Солнечный Взрыв",
       "item.power.vacuum_sword": "Пустотный Меч",
       "effect.power.creation_master": "Мастер Созидания",
+      "item.power.tp_on_moon": "Луна",
       "item.power.fire_sword": "Меч Огня",
       "item.power.water_boots": "Водные Ласты",
       "item.power.ice_shield": "Ледяной щит",
@@ -6448,8 +6654,10 @@
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
       "item.power.destruction_stone": "Камень Разрушения",
+      "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
+      "block.power.black_hole_block": "Блок Черной Дыры",
       "item.power.empty_stone": "Пустой Камень",
       "item.power.spawn": "Порождение",
       "item.power.tornado_helmet": "Шлем Торнадо",
@@ -6471,6 +6679,7 @@
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
       "item.power.sun_axe": "Солнечная Секира",
+      "itemGroup.tabexperimental_stones": "Экспериментальные Камни",
       "block.power.energy_block": "Энергетический блок",
       "item.power.light_sword": "Световой Меч",
       "item.power.moon_stone": "Камень Луны",
@@ -6486,6 +6695,7 @@
       "item.power.rain_helmet": "Дождевая Шапка",
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
+      "effect.power.cosmos_master": "Master of Cosmos",
       "item.power.rain_knife": "Дождевой Нож",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
@@ -6503,6 +6713,7 @@
       "effect.power.metal_master": "Мастер Металла",
       "effect.power.recharge_metal_stone": "Перезарядка",
       "effect.power.fire_master": "Мастер Огня",
+      "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
       "block.power.wood_stone_box": "Волшебная деревянная шкатулка",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
@@ -6536,6 +6747,7 @@
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
+      "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.power.unelemental_master": "Unelemental Master",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Lightning Helmet",
@@ -6551,11 +6763,13 @@
       "item.power.lava_hammer": "Lava Hammer",
       "item.power.earth_leggings": "Earth Leggings",
       "item.power.wooden_shield": "Wooden Shield",
+      "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
       "item.power.lighting": "Lighting",
       "itemGroup.tabmagical_stone": "Magical Stones",
       "item.power.fire_helmet": "Fire Helmet",
+      "item.power.galactic_sword": "Galactic Sword",
       "itemGroup.tabmisc_ko_s_category": "Misc",
       "effect.power.crystal_master": "Master of the Crystal",
       "effect.power.recharge_vacuum_stone": "Recharge",
@@ -6573,6 +6787,7 @@
       "biome.power.moon_land": "Moon Land",
       "effect.power.lava_master": "Master of Lava",
       "item.power.lava_ball": "Lava Ball",
+      "item.power.tp_on_venus": "Tp On Venus",
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.ocean_sword": "Ocean Sword",
       "item.power.tornado_stone": "Tornado Stone",
@@ -6687,6 +6902,7 @@
       "item.power.sun_explode": "Sun Explode",
       "item.power.vacuum_sword": "Vacuum Sword",
       "effect.power.creation_master": "Master of Creation",
+      "item.power.tp_on_moon": "Tp On Moon",
       "item.power.fire_sword": "Fire Sword",
       "item.power.water_boots": "Water Boots",
       "item.power.ice_shield": "Ice Shield",
@@ -6700,8 +6916,10 @@
       "item.power.sound_barrier": "Sound Barrier",
       "effect.recharge_ice_stone": "Recharge",
       "item.power.destruction_stone": "Destruction Stone",
+      "item.power.tp_on_earth": "Tp On Earth",
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
+      "block.power.black_hole_block": "Black Hole Block",
       "item.power.empty_stone": "Empty Stone",
       "item.power.spawn": "Spawn",
       "item.power.tornado_helmet": "Tornado Helmet",
@@ -6725,6 +6943,7 @@
       "item.power.flash_light": "Flash Light",
       "effect.ocean_master": "Master of the Ocean",
       "item.power.sun_axe": "Sun Axe",
+      "itemGroup.tabexperimental_stones": "Experimental Stones",
       "block.power.energy_block": "Energy Block",
       "item.power.light_sword": "Light Sword",
       "item.power.moon_stone": "Moon Stone",
@@ -6742,6 +6961,7 @@
       "effect.recharge_sound_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
+      "effect.power.cosmos_master": "Master of Cosmos",
       "item.power.rain_knife": "Rain Knife",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
@@ -6762,6 +6982,7 @@
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
       "effect.power.fire_master": "Master of Fire",
+      "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
       "block.power.wood_stone_box": "Wood Stone Box",
       "item.power.vacuum_spiral": "Vacuum Spiral",
@@ -6991,14 +7212,14 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev31",
+    "version": "1.1.11",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
-    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Upate-Scripts/main/kos.json",
+    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json",
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],

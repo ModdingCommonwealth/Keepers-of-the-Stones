@@ -27,6 +27,7 @@ import ru.minefox.keepeersofthestones.entity.GlowEntity;
 import ru.minefox.keepeersofthestones.entity.FlashLightEntity;
 import ru.minefox.keepeersofthestones.entity.EnergySphereEntity;
 import ru.minefox.keepeersofthestones.entity.ClusterSharpEntity;
+import ru.minefox.keepeersofthestones.entity.BlackHoleEntity;
 import ru.minefox.keepeersofthestones.entity.AirFlowEntity;
 import ru.minefox.keepeersofthestones.entity.AcusticalExplodeEntity;
 
@@ -120,6 +121,9 @@ public class PowerModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final EntityType<MoonStonesEntity> MOON_STONES = register("entitybulletmoon_stones",
 			EntityType.Builder.<MoonStonesEntity>of(MoonStonesEntity::new, MobCategory.MISC).setCustomClientFactory(MoonStonesEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<BlackHoleEntity> BLACK_HOLE = register("entitybulletblack_hole",
+			EntityType.Builder.<BlackHoleEntity>of(BlackHoleEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHoleEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
