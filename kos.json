@@ -65,6 +65,10 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] An empty stone no longer contains a stack of 64
 - [Bugfix] Removed items that should not be in the inventory
 - [Bugfix] Fixed a bug that caused the snow golem creation spell to drop when a player died
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+    "1.1.11": "
+- [Bugfix] The Cosmos Stone now returns after death
+- [Bugfix] Fixed a bug with the wrong file to check for updates
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }
