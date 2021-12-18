@@ -69,7 +69,7 @@ public class CoalMergerEffectEndProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.EARTH_MASTER, 6000, 0, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE, 6000, 0, (false), (false)));
 		{
 			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
