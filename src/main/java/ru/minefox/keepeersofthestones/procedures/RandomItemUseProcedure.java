@@ -3,14 +3,11 @@ package ru.minefox.keepeersofthestones.procedures;
 import ru.minefox.keepeersofthestones.network.PowerModVariables;
 import ru.minefox.keepeersofthestones.init.PowerModItems;
 
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -25,59 +22,60 @@ public class RandomItemUseProcedure {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (Math.random() <= 0.1) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.BREAD);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.2) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.COOKED_BEEF);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.3) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.IRON_SWORD);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.3) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.IRON_PICKAXE);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.3) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.IRON_AXE);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.4) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Blocks.IRON_BLOCK);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() <= 0.5) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.ENDER_PEARL);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else if (Math.random() >= 0.5) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.DIAMOND);
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else {
 				{
 					Entity _ent = entity;
 					if (!_ent.level.isClientSide() && _ent.getServer() != null)
 						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"give @s power:random_item{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+								"give @s bread");
+				}
+			} else if (Math.random() <= 0.2) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s cooked_beef");
+				}
+			} else if (Math.random() <= 0.3) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s iron_sword");
+				}
+			} else if (Math.random() <= 0.3) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s iron_pickaxe");
+				}
+			} else if (Math.random() <= 0.3) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s iron_axe");
+				}
+			} else if (Math.random() <= 0.4) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s iron_block");
+				}
+			} else if (Math.random() <= 0.5) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s ender_pearl");
+				}
+			} else if (Math.random() >= 0.5) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level.isClientSide() && _ent.getServer() != null)
+						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								"give @s diamond");
 				}
 			}
 			{
