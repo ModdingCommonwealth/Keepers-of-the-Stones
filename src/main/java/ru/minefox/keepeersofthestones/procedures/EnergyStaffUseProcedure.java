@@ -53,5 +53,11 @@ public class EnergyStaffUseProcedure {
 			_entity.removeEffect(PowerModMobEffects.SUN_MASTER);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.MOON_MASTER);
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(PowerModMobEffects.CREATION_MASTER);
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(PowerModMobEffects.COAL_MERGER);
 	}
 }

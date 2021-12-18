@@ -55,6 +55,7 @@ import ru.minefox.keepeersofthestones.potion.DestructionMasterMobEffect;
 import ru.minefox.keepeersofthestones.potion.CrystalMasterMobEffect;
 import ru.minefox.keepeersofthestones.potion.CreationMasterMobEffect;
 import ru.minefox.keepeersofthestones.potion.CosmosMasterMobEffect;
+import ru.minefox.keepeersofthestones.potion.CoalMergerMobEffect;
 import ru.minefox.keepeersofthestones.potion.AnimalsMasterMobEffect;
 import ru.minefox.keepeersofthestones.potion.AirMasterMobEffect;
 
@@ -123,6 +124,7 @@ public class PowerModMobEffects {
 	public static final MobEffect DESTRUCTION_MASTER = register(new DestructionMasterMobEffect());
 	public static final MobEffect COSMOS_MASTER = register(new CosmosMasterMobEffect());
 	public static final MobEffect RECHARGE_COSMOS_STONE = register(new RechargeCosmosStoneMobEffect());
+	public static final MobEffect COAL_MERGER = register(new CoalMergerMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);
