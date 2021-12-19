@@ -29,7 +29,7 @@ public class CrystalMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CrystalMasterEffectStartProcedure.execute(entity);
+		CrystalMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class CrystalMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CrystalMasterEffectEndProcedure.execute(entity);
+		CrystalMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

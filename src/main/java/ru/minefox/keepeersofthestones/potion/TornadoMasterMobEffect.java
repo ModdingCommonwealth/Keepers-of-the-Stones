@@ -29,7 +29,7 @@ public class TornadoMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		TornadoEffectStartProcedure.execute(entity);
+		TornadoEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class TornadoMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		TornadoEffectEndProcedure.execute(entity);
+		TornadoEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

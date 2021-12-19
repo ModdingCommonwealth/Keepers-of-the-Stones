@@ -29,7 +29,7 @@ public class EnergyMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		StartEffectEnergyMasterProcedure.execute(entity);
+		StartEffectEnergyMasterProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class EnergyMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EndEffectEnergyMasterProcedure.execute(entity);
+		EndEffectEnergyMasterProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

@@ -59,6 +59,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -142,6 +158,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -284,6 +316,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -302,6 +350,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -430,6 +494,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -448,6 +528,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -616,6 +712,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -634,6 +746,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -752,6 +880,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -770,6 +914,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1070,6 +1230,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1088,6 +1264,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1332,6 +1524,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1350,6 +1558,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1578,6 +1802,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1596,6 +1836,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1812,6 +2068,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1830,6 +2102,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2090,6 +2378,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2108,6 +2412,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2280,6 +2600,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2298,6 +2634,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2517,6 +2869,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2535,6 +2903,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2677,6 +3061,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2695,6 +3095,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6587,7 +7003,24 @@
       "value": "false"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "stone_activation",
+      "files": [
+        "stone_activation"
+      ],
+      "category": "player",
+      "subtitle": "Stone been activation"
+    },
+    {
+      "name": "stone_deactivation",
+      "files": [
+        "stone_deactivation"
+      ],
+      "category": "player",
+      "subtitle": "Stone been deactivation"
+    }
+  ],
   "language_map": {
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
@@ -6613,8 +7046,8 @@
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
-      "effect.fire_master": "Master of Fire",
       "effect.power.unelemental_master": "Мастер Без Элемента",
+      "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
       "item.power.lightning_leggings": "Штаны Молнии",
@@ -6626,8 +7059,8 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.wooden_shield": "Древесный Щит",
+      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
@@ -6727,6 +7160,7 @@
       "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Мастер Солнце",
       "effect.vacuum_master": "Master of Vacuum",
+      "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
       "item.power.random_item": "Случайный предмет",
@@ -6860,6 +7294,7 @@
       "item.power.light_stone": "Камень Света",
       "item.power.lightning_boots": "Ботинки Молнии",
       "effect.power.recharge_light_stone": "Перезарядка",
+      "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Водоворот",
       "entity.power.glow": "Светляк",
       "effect.recharge_lava_stone": "Recharge",
@@ -6915,8 +7350,8 @@
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
       "effect.power.recharge_cosmos_stone": "Recharge",
-      "effect.power.unelemental_master": "Unelemental Master",
       "effect.fire_master": "Master of Fire",
+      "effect.power.unelemental_master": "Unelemental Master",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the Empty Stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -6928,8 +7363,8 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "item.power.earth_leggings": "Earth Leggings",
       "item.power.wooden_shield": "Wooden Shield",
+      "item.power.earth_leggings": "Earth Leggings",
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
@@ -7029,6 +7464,7 @@
       "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Master of Sun",
       "effect.vacuum_master": "Master of Vacuum",
+      "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "item.power.random_item": "Random Item",
@@ -7162,6 +7598,7 @@
       "item.power.light_stone": "Light Stone",
       "item.power.lightning_boots": "Lightning Boots",
       "effect.power.recharge_light_stone": "Recharge",
+      "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Whirlpool",
       "entity.power.glow": "Glow",
       "effect.recharge_lava_stone": "Recharge",
@@ -7409,7 +7846,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.15-dev6",
+    "version": "1.1.15-dev7",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

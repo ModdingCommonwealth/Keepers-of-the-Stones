@@ -29,7 +29,7 @@ public class RainMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		RainMasterEffectStartProcedure.execute(entity);
+		RainMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class RainMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		RainMasterEffectEndProcedure.execute(entity);
+		RainMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

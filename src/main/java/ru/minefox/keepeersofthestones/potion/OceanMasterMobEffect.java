@@ -29,7 +29,7 @@ public class OceanMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		OceanMasterEffectStartProcedure.execute(entity);
+		OceanMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class OceanMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		OceanMasterEffectEndProcedure.execute(entity);
+		OceanMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

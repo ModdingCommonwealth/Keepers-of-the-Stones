@@ -29,7 +29,7 @@ public class EarthMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EarthMasterEffectStartProcedure.execute(entity);
+		EarthMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class EarthMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EarthMasterEffectEndProcedure.execute(entity);
+		EarthMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

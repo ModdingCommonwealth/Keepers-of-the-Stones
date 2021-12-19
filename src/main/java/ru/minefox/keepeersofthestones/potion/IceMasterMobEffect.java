@@ -29,7 +29,7 @@ public class IceMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		IceMasterEffectStartProcedure.execute(entity);
+		IceMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class IceMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		IceMasterEffectEndProcedure.execute(entity);
+		IceMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class AirMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AirMasterEffectStartProcedure.execute(entity);
+		AirMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class AirMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AirMasterEffectEndProcedure.execute(entity);
+		AirMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

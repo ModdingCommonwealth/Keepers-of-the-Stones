@@ -29,7 +29,7 @@ public class LavaMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		LavaMasterEffectStartProcedure.execute(entity);
+		LavaMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class LavaMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		LavaMasterEffectEndProcedure.execute(entity);
+		LavaMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

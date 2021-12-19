@@ -29,7 +29,7 @@ public class WaterMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		WaterMasterEffectStartProcedure.execute(entity);
+		WaterMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class WaterMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		WaterEffectEndProcedure.execute(entity);
+		WaterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
