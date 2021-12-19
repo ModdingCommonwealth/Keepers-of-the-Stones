@@ -952,6 +952,14 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3587,6 +3595,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3615,6 +3639,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6807,6 +6847,22 @@
         ]
       },
       "path": "~/Tornado"
+    },
+    {
+      "name": "Greenery",
+      "type": "armor",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greenery",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Greenery"
     }
   ],
   "variable_elements": [
@@ -7035,6 +7091,7 @@
       "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
       "item.power.spike": "Шип",
+      "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
       "effect.recharge_cosmos_stone": "Recharge",
@@ -7055,6 +7112,7 @@
       "item.power.glow_create": "Создать Светляка",
       "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.water_katana": "Водяная Катана",
+      "item.power.greenery_leggings": "Greenery Leggings",
       "item.power.snow_golem_creator": "Создание Снежного голема",
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
@@ -7101,6 +7159,7 @@
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
+      "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Мастер Тени",
       "effect.recharge_fire_stone": "Recharge",
       "effect.recharge_water_stone": "Recharge",
@@ -7201,6 +7260,7 @@
       "effect.energy_master": "Master of Energy",
       "item.power.sound_helmet": "Звуковая Маска",
       "item.power.metal_stone": "Камень Металла",
+      "item.power.greenery_boots": "Greenery Boots",
       "item.power.ice_chestplate": "Ледяная Куртка",
       "effect.recharge_earth_stone": "Recharge",
       "item.power.moon_stones": "Лунные Камни",
@@ -7339,6 +7399,7 @@
       "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
       "item.power.spike": "Spike",
+      "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
       "effect.recharge_cosmos_stone": "Recharge",
@@ -7359,6 +7420,7 @@
       "item.power.glow_create": "Glow Create",
       "effect.power.recharge_energy_stone": "Recharge",
       "item.power.water_katana": "Water Katana",
+      "item.power.greenery_leggings": "Greenery Leggings",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
@@ -7405,6 +7467,7 @@
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
+      "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Master of Shadow",
       "effect.recharge_water_stone": "Recharge",
       "effect.recharge_fire_stone": "Recharge",
@@ -7505,6 +7568,7 @@
       "effect.energy_master": "Master of Energy",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
+      "item.power.greenery_boots": "Greenery Boots",
       "item.power.ice_chestplate": "Ice Chestplate",
       "effect.recharge_earth_stone": "Recharge",
       "item.power.moon_stones": "Moon Stones",

@@ -49,7 +49,7 @@ public class EnergyStaffItem extends SwordItem {
 		double z = entity.getZ();
 		Level world = entity.level;
 
-		EnergyStaffUseProcedure.execute(entity, sourceentity);
+		EnergyStaffUseProcedure.execute(world, entity, sourceentity, itemstack);
 		return retval;
 	}
 }

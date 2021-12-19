@@ -29,7 +29,7 @@ public class GreeneryMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		GreeneryMasterEffectStartProcedure.execute(entity);
+		GreeneryMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class GreeneryMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		GreeneryMasterEffectEndProcedure.execute(entity);
+		GreeneryMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

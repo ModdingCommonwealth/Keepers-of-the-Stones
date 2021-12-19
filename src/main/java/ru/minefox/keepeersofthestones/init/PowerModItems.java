@@ -87,6 +87,7 @@ import ru.minefox.keepeersofthestones.item.IceSharpItem;
 import ru.minefox.keepeersofthestones.item.IceItem;
 import ru.minefox.keepeersofthestones.item.IceBallItem;
 import ru.minefox.keepeersofthestones.item.GreeneryStoneItem;
+import ru.minefox.keepeersofthestones.item.GreeneryItem;
 import ru.minefox.keepeersofthestones.item.GlowCreateItem;
 import ru.minefox.keepeersofthestones.item.GalacticSwordItem;
 import ru.minefox.keepeersofthestones.item.FlashLightItem;
@@ -311,6 +312,10 @@ public class PowerModItems {
 	public static final Item TP_ON_EARTH = register(new TpOnEarthItem());
 	public static final Item BLACK_HOLE = register(new BlackHoleItem());
 	public static final Item BLACK_HOLE_BLOCK = register(PowerModBlocks.BLACK_HOLE_BLOCK, null);
+	public static final Item GREENERY_HELMET = register(new GreeneryItem.Helmet());
+	public static final Item GREENERY_CHESTPLATE = register(new GreeneryItem.Chestplate());
+	public static final Item GREENERY_LEGGINGS = register(new GreeneryItem.Leggings());
+	public static final Item GREENERY_BOOTS = register(new GreeneryItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
