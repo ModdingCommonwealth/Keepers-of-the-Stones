@@ -8,6 +8,7 @@ import ru.minefox.keepeersofthestones.entity.WhirlpoolEntity;
 import ru.minefox.keepeersofthestones.entity.WaterFlowEntity;
 import ru.minefox.keepeersofthestones.entity.VacuumWebEntity;
 import ru.minefox.keepeersofthestones.entity.VacuumSpiralEntity;
+import ru.minefox.keepeersofthestones.entity.TornadoEntityEntity;
 import ru.minefox.keepeersofthestones.entity.TornadoCreateEntity;
 import ru.minefox.keepeersofthestones.entity.TigerClawEntity;
 import ru.minefox.keepeersofthestones.entity.SunExplodeEntity;
@@ -125,6 +126,9 @@ public class PowerModEntities {
 	public static final EntityType<BlackHoleEntity> BLACK_HOLE = register("entitybulletblack_hole",
 			EntityType.Builder.<BlackHoleEntity>of(BlackHoleEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHoleEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<TornadoEntityEntity> TORNADO_ENTITY = register("tornado_entity",
+			EntityType.Builder.<TornadoEntityEntity>of(TornadoEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TornadoEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -142,6 +146,7 @@ public class PowerModEntities {
 		event.enqueueWork(() -> {
 			GlowEntity.init();
 			ShadowEntity.init();
+			TornadoEntityEntity.init();
 		});
 	}
 
@@ -149,5 +154,6 @@ public class PowerModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(GLOW, GlowEntity.createAttributes().build());
 		event.put(SHADOW, ShadowEntity.createAttributes().build());
+		event.put(TORNADO_ENTITY, TornadoEntityEntity.createAttributes().build());
 	}
 }
