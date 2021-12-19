@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "unknown",
+    "textureHelmet": "greenery_helmet",
     "enableBody": true,
-    "textureBody": "unknown",
+    "textureBody": "greenery_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "unknown",
+    "textureLeggings": "greenery_leggings",
     "enableBoots": true,
-    "textureBoots": "unknown",
+    "textureBoots": "greenery_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },
