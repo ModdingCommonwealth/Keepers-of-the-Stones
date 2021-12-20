@@ -29,7 +29,7 @@ public class FireMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		FireMastereffectstartProcedure.execute(entity);
+		FireMastereffectstartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class FireMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		FireMasterEffectEndProcedure.execute(entity);
+		FireMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

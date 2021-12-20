@@ -2,8 +2,8 @@
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
     "1.16.5-latest": "B2",
-    "1.17.1-latest": "1.1.11",
-    "1.17.1-recommended": "1.1.11"
+    "1.17.1-latest": "1.1.15",
+    "1.17.1-recommended": "1.1.15"
   },
   "1.16.5": {
     "B2": "
@@ -69,6 +69,15 @@ You can download the mod by following the link: https://www.curseforge.com/minec
     "1.1.11": "
 - [Bugfix] The Cosmos Stone now returns after death
 - [Bugfix] Fixed a bug with the wrong file to check for updates
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+    "1.1.15": "
+- Added sounds of activation and deactivation of stones
+- Now the staff of energy can absorb the energy of the stones of creation and destruction
+- The metal shield now consists only of iron 
+- Redesigned mechanics of the tornado creation item
+- Improved the mechanics of the staff of energy
+- [Experimental] Added coal merge
+- [Bugfix] Fixed a bug with the disappearance of an item issued by a random item
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }

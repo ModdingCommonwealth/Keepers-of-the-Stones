@@ -4,6 +4,7 @@
  */
 package ru.minefox.keepeersofthestones.init;
 
+import ru.minefox.keepeersofthestones.client.renderer.TornadoEntityRenderer;
 import ru.minefox.keepeersofthestones.client.renderer.TornadoCreateRenderer;
 import ru.minefox.keepeersofthestones.client.renderer.ShadowRenderer;
 import ru.minefox.keepeersofthestones.client.renderer.GlowRenderer;
@@ -45,5 +46,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.SUN_EXPLODE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.MOON_STONES, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.BLACK_HOLE, ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.TORNADO_ENTITY, TornadoEntityRenderer::new);
 	}
 }

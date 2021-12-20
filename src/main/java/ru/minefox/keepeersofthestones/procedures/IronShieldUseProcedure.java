@@ -87,51 +87,21 @@ public class IronShieldUseProcedure {
 						_level.getServer().getCommands()
 								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
 										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 copper_block outline");
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
+										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
+					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).metal) {
+						if (!(entity instanceof Player _playerHasItem
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.IRON_SHIELD))
+								: false)) {
+							{
+								Entity _ent = entity;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null)
+									_ent.getServer().getCommands().performCommand(
+											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+											"give @s power:iron_shield{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
-
-						private void run() {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands()
-										.performCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-														new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-												"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
-							if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new PowerModVariables.PlayerVariables())).metal) {
-								if (!(entity instanceof Player _playerHasItem
-										? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.IRON_SHIELD))
-										: false)) {
-									{
-										Entity _ent = entity;
-										if (!_ent.level.isClientSide() && _ent.getServer() != null)
-											_ent.getServer().getCommands().performCommand(
-													_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-													"give @s power:iron_shield{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-									}
-								}
-							}
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 400);
+					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 400);

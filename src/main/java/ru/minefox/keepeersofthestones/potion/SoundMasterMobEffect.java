@@ -29,7 +29,7 @@ public class SoundMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SoundMasterEffectStartProcedure.execute(entity);
+		SoundMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class SoundMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SoundMasterEffectEndProcedure.execute(entity);
+		SoundMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

@@ -59,6 +59,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -142,6 +158,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -284,6 +316,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -302,6 +350,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -430,6 +494,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -448,6 +528,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -616,6 +712,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -634,6 +746,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -752,6 +880,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -770,6 +914,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -788,6 +948,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1066,6 +1238,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1084,6 +1272,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1328,6 +1532,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1346,6 +1566,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1574,6 +1810,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1592,6 +1844,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1808,6 +2076,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1826,6 +2110,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2086,6 +2386,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2104,6 +2420,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2276,6 +2608,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2294,6 +2642,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2513,6 +2877,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2531,6 +2911,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2673,6 +3069,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2691,6 +3103,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3167,6 +3595,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3195,6 +3639,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6351,6 +6811,58 @@
         ]
       },
       "path": "~/Mergers/Coal"
+    },
+    {
+      "name": "TornadoEntity",
+      "type": "livingentity",
+      "sortid": 408,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tornado_entity",
+      "path": "~/Tornado"
+    },
+    {
+      "name": "TameTornado",
+      "type": "procedure",
+      "sortid": 409,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tame_tornado",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tornado"
+    },
+    {
+      "name": "Greenery",
+      "type": "armor",
+      "sortid": 410,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greenery",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Greenery"
     }
   ],
   "variable_elements": [
@@ -6547,7 +7059,24 @@
       "value": "false"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "stone_activation",
+      "files": [
+        "stone_activation"
+      ],
+      "category": "player",
+      "subtitle": "Stone been activation"
+    },
+    {
+      "name": "stone_deactivation",
+      "files": [
+        "stone_deactivation"
+      ],
+      "category": "player",
+      "subtitle": "Stone been deactivation"
+    }
+  ],
   "language_map": {
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
@@ -6562,14 +7091,19 @@
       "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
       "item.power.spike": "Шип",
+      "item.power.greenery_chestplate": "Greenery Chestplate",
+      "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
+      "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Мастер Океана",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
+      "effect.recharge_tornado_stone": "Перезарядка",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
+      "effect.fire_master": "Master of Fire",
       "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
@@ -6578,17 +7112,19 @@
       "item.power.glow_create": "Создать Светляка",
       "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.water_katana": "Водяная Катана",
+      "item.power.greenery_leggings": "Greenery Leggings",
       "item.power.snow_golem_creator": "Создание Снежного голема",
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
+      "item.power.wooden_shield": "Древесный Щит",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
       "item.power.lighting": "Освещение",
       "itemGroup.tabmagical_stone": "Волшебные камни",
+      "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Огненная корона",
       "item.power.galactic_sword": "Галактический меч",
       "itemGroup.tabmisc_ko_s_category": "Разное",
@@ -6598,6 +7134,8 @@
       "item.power.venus": "Venus Portal Igniter",
       "item.power.tamer": "Приручатель",
       "item.power.moon_wither": "Лунное Иссушение",
+      "effect.inferno_merger": "Inferno Merger",
+      "effect.recharge_greenery_stone": "Recharge",
       "item.power.sound_boots": "Звуковые Ботинки",
       "effect.power.recharge_earth_stone": "Перезарядка",
       "effect.power.ice_master": "Мастер Льда",
@@ -6613,12 +7151,18 @@
       "item.power.ocean_sword": "Меч Океана",
       "item.power.tornado_stone": "Камень Торнадо",
       "item.power.shadow_invisible": "Теневая Невидимость",
+      "effect.cosmos_master": "Master of Space",
+      "effect.recharge_shadow_stone": "Recharge",
       "itemGroup.tabmagical_stone_boxes": "Волшебные шкатулки",
       "item.power.plasma_ball": "Плазменный шар",
       "item.power.moon": "Moon Portal Igniter",
+      "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
+      "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Мастер Тени",
+      "effect.recharge_fire_stone": "Recharge",
+      "effect.recharge_water_stone": "Recharge",
       "effect.power.recharge_animals_stone": "Перезарядка",
       "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
       "key.categories.stones": "Хранители Камней",
@@ -6626,19 +7170,23 @@
       "item.power.wind_helmet": "Воздушная Шапка",
       "effect.power.recharge_greenery_stone": "Перезарядка",
       "item.power.crystal_shield": "Кристаллический Щит",
+      "effect.sound_master": "Master of Sound",
       "item.power.earth_helmet": "Земляной Монокль",
       "item.power.water_flow": "Струя Воды",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
+      "effect.recharge_lightning_stone": "Recharge",
       "block.power.iron_stone_box": "Волшебнаяя железная шкатулка",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
       "effect.power.tornado_master": "Мастер Торнадо",
       "item.power.energy_boots": "Энергетические Ботинки",
       "item.power.burn": "Поджёг",
+      "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Перезарядка",
       "item.power.sun_ray": "Луч Солнца",
       "item.power.shield_of_earth": "Щит Земли",
+      "effect.recharge_air_stone": "Recharge",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
       "effect.power.recharge_fire_stone": "Перезарядка",
@@ -6651,10 +7199,13 @@
       "item.power.lava_leggings": "Лавовые Брюки",
       "item.power.lava_helmet": "Лавовые Очки",
       "item.power.ice_sharp": "Ледяной Осколок",
+      "effect.destruction_master": "Destruction Master",
       "item.power.sun_regeneration": "Солнечное Исцеление",
       "effect.power.recharge_lightning_stone": "Перезарядка",
       "item.power.fertilizer": "Удобрение",
+      "effect.recharge_crystal_stone": "Recharge",
       "block.power.gold_stone_box": "Волшебная золотая шкатулка",
+      "effect.tornado_master": "Мастер Торнадо",
       "item.power.fire_stone": "Камень Огня",
       "item.power.water_drop": "Капли Воды",
       "item.power.rain_boots": "Дождевые Сапоги",
@@ -6662,10 +7213,14 @@
       "item.power.creation_stone": "Камень Созидания",
       "effect.power.earth_master": "Мастер Земли",
       "effect.power.invincibility": "Непобедимость",
-      "item.power.ice_spear": "Ice Spear",
+      "item.power.ice_spear": "Ледяное Копьё",
       "item.power.water_chestplate": "Водный Костюм",
       "advancements.use_your_power.title": "Используй Свою Силу!",
+      "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Мастер Солнце",
+      "effect.vacuum_master": "Master of Vacuum",
+      "subtitles.stone_activation": "Stone been activation",
+      "effect.rain_master": "Master of Rain",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
       "item.power.random_item": "Случайный предмет",
       "item.power.earth_boots": "Земляные Ботинки",
@@ -6676,6 +7231,7 @@
       "effect.power.lightning_master": "Мастер Молнии",
       "item.power.cluster_sharp": "Осколок Кластера",
       "effect.power.recharge_air_stone": "Перезарядка",
+      "effect.crystal_master": "Master of the Crystal",
       "item.power.tornado_boots": "Ботинки Торнадо",
       "item.power.water_stone": "Камень Воды",
       "effect.power.energy_master": "Мастер Энергии",
@@ -6683,7 +7239,9 @@
       "item.power.shadow_stone": "Камень Тени",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
+      "effect.recharge_moon_stone": "Recharge",
       "item.power.ice_boots": "Ледяные Сапоги",
+      "effect.air_master": "Master of the Air",
       "item.power.earth_chestplate": "Земляной Желет",
       "item.power.crystal_boots": "Кристаллические Сапоги",
       "item.power.ocean_helmet": "Шлем Океана",
@@ -6692,20 +7250,27 @@
       "item.power.sai": "Саи",
       "entity.power.shadow": "Тень",
       "effect.power.recharge_empty_stone": "Перезарядка",
+      "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
       "item.power.ocean_boots": "Ботинки Океана",
       "effect.power.moon_master": "Мастер Луны",
       "item.power.lava_hole": "Лавовая Яма",
       "item.power.energy_stone": "Камень Энергии",
+      "effect.energy_master": "Master of Energy",
       "item.power.sound_helmet": "Звуковая Маска",
       "item.power.metal_stone": "Камень Металла",
+      "item.power.greenery_boots": "Greenery Boots",
       "item.power.ice_chestplate": "Ледяная Куртка",
+      "effect.recharge_earth_stone": "Recharge",
       "item.power.moon_stones": "Лунные Камни",
       "key.power.detransform_key": "Клавиша детрансформации",
+      "effect.recharge_creation_stone": "Recharge",
       "item.power.lava_stone": "Камень Лавы",
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
+      "effect.recharge_ocean_stone": "Recharge",
+      "effect.lightning_master": "Master of Lightning",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
       "item.power.sun_explode": "Солнечный Взрыв",
       "item.power.vacuum_sword": "Пустотный Меч",
@@ -6717,41 +7282,56 @@
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.acustical_explode": "Акустический Взрыв",
       "effect.power.recharge_lava_stone": "Перезарядка",
+      "effect.earth_master": "Master of the Earth",
+      "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Волшебная андезитовая шкатулка",
       "item.power.ice_helmet": "Ледяной Шарф",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
+      "effect.recharge_ice_stone": "Recharge",
       "item.power.destruction_stone": "Камень Разрушения",
       "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
+      "effect.recharge_metal_stone": "Recharge",
       "block.power.black_hole_block": "Блок Черной Дыры",
+      "effect.coal_merger": "Coal Merger",
       "item.power.empty_stone": "Пустой Камень",
       "item.power.spawn": "Порождение",
+      "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Шлем Торнадо",
       "effect.power.water_master": "Мастер Воды",
       "item.power.magic_fireball": "Волшебный Огненный шар",
       "item.power.earth_stone": "Камень Земли",
       "item.power.crystal_stone": "Камень Кристалла",
+      "effect.recharge_light_stone": "Recharge",
       "item.power.fire_boots": "Огненные Ботинки",
       "block.power.stone_stone_box": "Волшебная каменная шкатулка",
       "effect.power.air_master": "Мастер Воздуха",
+      "effect.unelemental_master": "Unelemental Master",
       "item.power.tiger_claw": "Тигриный Коготь",
+      "effect.recharge_rain_stone": "Recharge",
+      "effect.light_master": "Master of Light",
+      "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.lava_chestplate": "Лавовый Пояс",
+      "effect.shadow_master": "Master of Shadow",
       "item.power.lightning_chestplate": "Мантия Молнии",
       "item.power.rain_stone": "Камень Дождя",
       "item.power.lightning_strike": "Удар Молнии",
+      "effect.greenery_master": "Master of Greenery",
       "block.power.cluster_block": "Блок Кластера",
       "effect.power.recharge_sun_stone": "Перезарядка",
       "item.power.fistof_earth": "Земляной Кулак",
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
       "item.power.sun_axe": "Солнечная Секира",
+      "effect.ocean_master": "Master of the Ocean",
       "itemGroup.tabexperimental_stones": "Экспериментальные Камни",
       "effect.power.coal_merger": "Слияние Уголь",
       "block.power.energy_block": "Энергетический блок",
       "item.power.light_sword": "Световой Меч",
       "item.power.moon_stone": "Камень Луны",
+      "entity.power.tornado_entity": "Торнадо",
       "item.power.mars": "Mars Portal Igniter",
       "item.power.destruction_power": "Анигиляция",
       "item.power.greenery_stone": "Камень Зелени",
@@ -6760,27 +7340,36 @@
       "item.power.tornado_battle_axe": "Боевой Топор Торнадо",
       "biome.power.venus_land": "Венерианская Земля",
       "item.power.shadow_sword": "Теневой Мач",
+      "effect.ice_master": "Master of Ice",
       "item.power.wind_boots": "Воздушные Сапоги",
       "item.power.rain_helmet": "Дождевая Шапка",
+      "effect.recharge_sound_stone": "Recharge",
+      "effect.recharge_empty_stone": "Recharge",
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
       "effect.power.cosmos_master": "Мастер Космоса",
       "item.power.rain_knife": "Дождевой Нож",
+      "effect.recharge_destruction_stone": "Recharge",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
       "item.power.lightning_boots": "Ботинки Молнии",
       "effect.power.recharge_light_stone": "Перезарядка",
+      "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Водоворот",
       "entity.power.glow": "Светляк",
+      "effect.recharge_lava_stone": "Recharge",
+      "effect.recharge_energy_stone": "Recharge",
       "item.power.eclipse": "Затмение",
       "effect.power.inferno_merger": "Слияние Инферно",
       "biome.power.mars_land": "Марсианская Земля",
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
+      "effect.lava_master": "Master of Lava",
       "effect.power.light_master": "Мастер Света",
       "item.power.air_flow": "Поток Воздуха",
       "effect.power.metal_master": "Мастер Металла",
       "effect.power.recharge_metal_stone": "Перезарядка",
+      "effect.invincibility": "Invincibility",
       "effect.power.fire_master": "Мастер Огня",
       "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
@@ -6788,9 +7377,11 @@
       "item.power.vacuum_spiral": "Вакуумная Спираль",
       "item.power.ocean_stone": "Камень Океана",
       "effect.power.animals_master": "Мастер Животных",
+      "effect.recharge_sun_stone": "Recharge",
       "item.power.rose_sword": "Розовая Шпага",
       "item.power.storm": "Шторм",
       "item.power.air_stone": "Камень Воздуха",
+      "effect.water_master": "Master of Water",
       "item.power.water_leggings": "Водные Штаны",
       "item.power.sound_stone": "Камень Звука",
       "item.power.shuriken": "Сюрикен"
@@ -6808,7 +7399,10 @@
       "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
       "item.power.spike": "Spike",
+      "item.power.greenery_chestplate": "Greenery Chestplate",
+      "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
+      "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Master of the Ocean",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
@@ -6817,8 +7411,8 @@
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
       "effect.power.recharge_cosmos_stone": "Recharge",
-      "effect.power.unelemental_master": "Unelemental Master",
       "effect.fire_master": "Master of Fire",
+      "effect.power.unelemental_master": "Unelemental Master",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the Empty Stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -6826,17 +7420,19 @@
       "item.power.glow_create": "Glow Create",
       "effect.power.recharge_energy_stone": "Recharge",
       "item.power.water_katana": "Water Katana",
+      "item.power.greenery_leggings": "Greenery Leggings",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "item.power.earth_leggings": "Earth Leggings",
       "item.power.wooden_shield": "Wooden Shield",
+      "item.power.earth_leggings": "Earth Leggings",
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
       "item.power.lighting": "Lighting",
       "itemGroup.tabmagical_stone": "Magical Stones",
+      "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
       "itemGroup.tabmisc_ko_s_category": "Misc",
@@ -6846,6 +7442,8 @@
       "item.power.venus": "Venus Portal Igniter",
       "item.power.tamer": "Tamer",
       "item.power.moon_wither": "Moon Wither",
+      "effect.inferno_merger": "Inferno Merger",
+      "effect.recharge_greenery_stone": "Recharge",
       "item.power.sound_boots": "Sound Boots",
       "effect.power.recharge_earth_stone": "Recharge",
       "item.power.magma_shield": "Magma Shield",
@@ -6861,11 +7459,15 @@
       "item.power.ocean_sword": "Ocean Sword",
       "item.power.tornado_stone": "Tornado Stone",
       "item.power.shadow_invisible": "Shadow Invisible",
+      "effect.cosmos_master": "Master of Space",
+      "effect.recharge_shadow_stone": "Recharge",
       "itemGroup.tabmagical_stone_boxes": "Magical Stone Boxes",
       "item.power.plasma_ball": "Plasma Ball",
       "item.power.moon": "Moon Portal Igniter",
+      "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
+      "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Master of Shadow",
       "effect.recharge_water_stone": "Recharge",
       "effect.recharge_fire_stone": "Recharge",
@@ -6888,6 +7490,7 @@
       "effect.power.tornado_master": "Master of Tornado",
       "item.power.energy_boots": "Energy Boots",
       "item.power.burn": "Burn",
+      "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Recharge",
       "item.power.sun_ray": "Sun Ray",
       "effect.recharge_air_stone": "Recharge",
@@ -6904,6 +7507,7 @@
       "item.power.lava_leggings": "Lava Leggings",
       "item.power.lava_helmet": "Lava Helmet",
       "item.power.ice_sharp": "Ice Sharp",
+      "effect.destruction_master": "Destruction Master",
       "item.power.sun_regeneration": "Sun Regeneration",
       "effect.power.recharge_lightning_stone": "Recharge",
       "effect.recharge_crystal_stone": "Recharge",
@@ -6920,7 +7524,10 @@
       "item.power.ice_spear": "Ice Spear",
       "item.power.water_chestplate": "Water Chestplate",
       "advancements.use_your_power.title": "Use Your Power!",
+      "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Master of Sun",
+      "effect.vacuum_master": "Master of Vacuum",
+      "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "item.power.random_item": "Random Item",
@@ -6940,7 +7547,9 @@
       "item.power.shadow_stone": "Shadow Stone",
       "item.power.bee_sting": "Bee Sting",
       "item.power.sound_sword": "Sound Sword",
+      "effect.recharge_moon_stone": "Recharge",
       "item.power.ice_boots": "Ice Boots",
+      "effect.air_master": "Master of the Air",
       "item.power.crystal_boots": "Crystal Boots",
       "item.power.earth_chestplate": "Earth Chestplate",
       "item.power.ocean_helmet": "Ocean Helmet",
@@ -6949,6 +7558,7 @@
       "item.power.sai": "Sai",
       "entity.power.shadow": "Shadow",
       "effect.power.recharge_empty_stone": "Recharge",
+      "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
       "item.power.ocean_boots": "Ocean Boots",
@@ -6958,10 +7568,12 @@
       "effect.energy_master": "Master of Energy",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
+      "item.power.greenery_boots": "Greenery Boots",
       "item.power.ice_chestplate": "Ice Chestplate",
       "effect.recharge_earth_stone": "Recharge",
       "item.power.moon_stones": "Moon Stones",
       "key.power.detransform_key": "Detransform key",
+      "effect.recharge_creation_stone": "Recharge",
       "item.power.lava_stone": "Lava Stone",
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
@@ -6979,6 +7591,7 @@
       "item.power.acustical_explode": "Acustical Explode",
       "effect.power.recharge_lava_stone": "Recharge",
       "effect.earth_master": "Master of the Earth",
+      "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Andesite Stone Box",
       "item.power.ice_helmet": "Ice Helmet",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
@@ -6988,23 +7601,32 @@
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
+      "effect.recharge_metal_stone": "Recharge",
       "block.power.black_hole_block": "Black Hole Block",
+      "effect.coal_merger": "Coal Merger",
       "item.power.empty_stone": "Empty Stone",
       "item.power.spawn": "Spawn",
+      "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Tornado Helmet",
       "effect.power.water_master": "Master of Water",
       "item.power.magic_fireball": "Magic Fireball",
       "item.power.earth_stone": "Earth Stone",
       "item.power.crystal_stone": "Crystal Stone",
+      "effect.recharge_light_stone": "Recharge",
       "block.power.stone_stone_box": "Wood Stone Box",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
+      "effect.unelemental_master": "Unelemental Master",
       "effect.recharge_rain_stone": "Recharge",
       "item.power.tiger_claw": "Tiger Claw",
+      "effect.light_master": "Master of Light",
+      "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.lava_chestplate": "Lava Chestplate",
+      "effect.shadow_master": "Master of Shadow",
       "item.power.lightning_chestplate": "Lightning Chestplate",
       "item.power.rain_stone": "Rain Stone",
       "item.power.lightning_strike": "Lightning Strike",
+      "effect.greenery_master": "Master of Greenery",
       "block.power.cluster_block": "Cluster Block",
       "effect.power.recharge_sun_stone": "Recharge",
       "item.power.fistof_earth": "Fist of Earth",
@@ -7017,6 +7639,7 @@
       "block.power.energy_block": "Energy Block",
       "item.power.light_sword": "Light Sword",
       "item.power.moon_stone": "Moon Stone",
+      "entity.power.tornado_entity": "Tornado",
       "item.power.mars": "Mars Portal Igniter",
       "item.power.destruction_power": "Destruction Power",
       "item.power.greenery_stone": "Greenery Stone",
@@ -7029,14 +7652,17 @@
       "item.power.wind_boots": "Air Boots",
       "item.power.rain_helmet": "Rain Helmet",
       "effect.recharge_sound_stone": "Recharge",
+      "effect.recharge_empty_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
       "effect.power.cosmos_master": "Master of Space",
       "item.power.rain_knife": "Rain Knife",
+      "effect.recharge_destruction_stone": "Recharge",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
       "item.power.lightning_boots": "Lightning Boots",
       "effect.power.recharge_light_stone": "Recharge",
+      "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Whirlpool",
       "entity.power.glow": "Glow",
       "effect.recharge_lava_stone": "Recharge",
@@ -7051,6 +7677,7 @@
       "item.power.air_flow": "Air Flow",
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
+      "effect.invincibility": "Invincibility",
       "effect.power.fire_master": "Master of Fire",
       "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
@@ -7058,6 +7685,7 @@
       "item.power.vacuum_spiral": "Vacuum Spiral",
       "item.power.ocean_stone": "Ocean Stone",
       "effect.power.animals_master": "Master of Animals",
+      "effect.recharge_sun_stone": "Recharge",
       "item.power.rose_sword": "Rose Sword",
       "item.power.storm": "Storm",
       "item.power.air_stone": "Air Stone",
@@ -7282,7 +7910,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.15-dev2",
+    "version": "1.2.0-dev34",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

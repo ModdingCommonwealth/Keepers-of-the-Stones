@@ -1,1 +1,22 @@
-{}
+{
+  "stone_activation": {
+    "category": "player",
+    "subtitle": "subtitles.stone_activation",
+    "sounds": [
+      {
+        "name": "power:stone_activation",
+        "stream": false
+      }
+    ]
+  },
+  "stone_deactivation": {
+    "category": "player",
+    "subtitle": "subtitles.stone_deactivation",
+    "sounds": [
+      {
+        "name": "power:stone_deactivation",
+        "stream": false
+      }
+    ]
+  }
+}
