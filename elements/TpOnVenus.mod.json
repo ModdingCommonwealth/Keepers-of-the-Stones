@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "unknown",
+    "texture": "tpovenus",
     "customModelName": "Normal",
     "name": "Tp On Venus",
     "rarity": "COMMON",

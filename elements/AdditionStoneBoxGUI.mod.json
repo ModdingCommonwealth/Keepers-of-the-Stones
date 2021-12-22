@@ -17,7 +17,7 @@
             "value": "CUSTOM:IceStone"
           },
           "color": {
-            "value": -16711681,
+            "value": -16724788,
             "falpha": 0.0
           },
           "id": 1,
@@ -230,8 +230,8 @@
           "image": "ice_master.png",
           "use1Xscale": false,
           "name": "ice_master.png",
-          "x": 187,
-          "y": 63
+          "x": 186,
+          "y": 62
         }
       }
     ],
