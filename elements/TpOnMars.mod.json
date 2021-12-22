@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "unknown",
+    "texture": "tponmars",
     "customModelName": "Normal",
     "name": "Tp On Mars",
     "rarity": "COMMON",
