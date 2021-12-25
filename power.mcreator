@@ -6863,6 +6863,16 @@
         "ec": true
       },
       "path": "~/Greenery"
+    },
+    {
+      "name": "UnmultiplicationMoonStones",
+      "type": "block",
+      "sortid": 411,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unmultiplication_moon_stones_block",
+      "path": "~/Moon"
     }
   ],
   "variable_elements": [
@@ -7080,6 +7090,7 @@
   "language_map": {
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
+      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "item.power.energy_leggings": "Энергетические Поножи",
       "item.power.energy_sphere": "Энергетический Шар",
       "item.power.vacuum_web": "Вакуумная Сеть",
@@ -7103,8 +7114,8 @@
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
-      "effect.power.unelemental_master": "Мастер Без Элемента",
       "effect.fire_master": "Master of Fire",
+      "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
       "item.power.lightning_leggings": "Штаны Молнии",
@@ -7117,8 +7128,8 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
+      "item.power.wooden_shield": "Древесный Щит",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
@@ -7142,7 +7153,7 @@
       "item.power.magma_shield": "Магматический Щит",
       "item.power.moon_axe": "Лунная Секира",
       "item.power.piece_of_earth": "Кусок Земли",
-      "block.power.moon_stones_block": "Блок Лунных Камней",
+      "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
       "biome.power.moon_land": "Лунная Земля",
       "effect.power.lava_master": "Мастер Лавы",
       "item.power.lava_ball": "Лавовый Шар",
@@ -7217,7 +7228,7 @@
       "item.power.water_chestplate": "Водный Костюм",
       "advancements.use_your_power.title": "Используй Свою Силу!",
       "effect.recharge_animals_stone": "Recharge",
-      "effect.power.sun_master": "Мастер Солнце",
+      "effect.power.sun_master": "Мастер Солнца",
       "effect.vacuum_master": "Master of Vacuum",
       "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
@@ -7388,6 +7399,7 @@
     },
     "en_us": {
       "item.power.metal_invulnerability": "Invulnerability of Metal",
+      "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "item.power.energy_leggings": "Energy Leggings",
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
@@ -7450,7 +7462,7 @@
       "effect.power.ice_master": "Master of Ice",
       "item.power.moon_axe": "Moon Axe",
       "item.power.piece_of_earth": "Piece of the Earth",
-      "block.power.moon_stones_block": "Moon Stones Block",
+      "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
       "effect.power.lava_master": "Master of Lava",
       "item.power.lava_ball": "Lava Ball",
@@ -7910,7 +7922,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev35",
+    "version": "1.2.0-dev36",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

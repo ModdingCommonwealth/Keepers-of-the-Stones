@@ -10,14 +10,21 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Axe",
+    "toolType": "Special",
     "harvestLevel": 1,
-    "efficiency": 4.0,
+    "efficiency": 20.0,
     "attackSpeed": 0.7999999999999999,
     "enchantability": 2,
     "damageVsEntity": 15.0,
     "usageCount": 5000,
-    "blocksAffected": [],
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:MoonStonesBlock"
+      },
+      {
+        "value": "CUSTOM:UnmultiplicationMoonStones"
+      }
+    ],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": true,

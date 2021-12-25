@@ -6,6 +6,7 @@ package ru.minefox.keepeersofthestones.init;
 
 import ru.minefox.keepeersofthestones.block.WoodStoneBoxBlock;
 import ru.minefox.keepeersofthestones.block.VacuumWebBlockBlock;
+import ru.minefox.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
 import ru.minefox.keepeersofthestones.block.StoneStoneBoxBlock;
 import ru.minefox.keepeersofthestones.block.SoundBarrierBlockBlock;
 import ru.minefox.keepeersofthestones.block.MoonStonesBlockBlock;
@@ -43,6 +44,7 @@ public class PowerModBlocks {
 	public static final Block VACUUM_WEB_BLOCK = register(new VacuumWebBlockBlock());
 	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
 	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
+	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
