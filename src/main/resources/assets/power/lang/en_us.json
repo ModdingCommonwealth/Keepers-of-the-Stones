@@ -1,5 +1,6 @@
 {
   "item.power.metal_invulnerability": "Invulnerability of Metal",
+  "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
   "item.power.energy_leggings": "Energy Leggings",
   "item.power.energy_sphere": "Energy Sphere",
   "item.power.vacuum_web": "Vacuum Web",
@@ -62,7 +63,7 @@
   "effect.power.ice_master": "Master of Ice",
   "item.power.moon_axe": "Moon Axe",
   "item.power.piece_of_earth": "Piece of the Earth",
-  "block.power.moon_stones_block": "Moon Stones Block",
+  "block.power.moon_stones_block": "Growing Moon Stones Block",
   "biome.power.moon_land": "Moon Land",
   "effect.power.lava_master": "Master of Lava",
   "item.power.lava_ball": "Lava Ball",

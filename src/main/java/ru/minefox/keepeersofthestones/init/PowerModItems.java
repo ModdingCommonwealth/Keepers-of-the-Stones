@@ -316,6 +316,7 @@ public class PowerModItems {
 	public static final Item GREENERY_CHESTPLATE = register(new GreeneryItem.Chestplate());
 	public static final Item GREENERY_LEGGINGS = register(new GreeneryItem.Leggings());
 	public static final Item GREENERY_BOOTS = register(new GreeneryItem.Boots());
+	public static final Item UNMULTIPLICATION_MOON_STONES_BLOCK = register(PowerModBlocks.UNMULTIPLICATION_MOON_STONES_BLOCK, null);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -90,6 +90,11 @@ public class EnergyStaffUseProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
+				if (sourceentity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_STAFF);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+							_player.inventoryMenu.getCraftSlots());
+				}
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;

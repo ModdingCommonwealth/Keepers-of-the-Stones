@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "power:moon_stones_block"
+    "power:moon_stones_block",
+    "power:unmultiplication_moon_stones_block"
   ]
 }
