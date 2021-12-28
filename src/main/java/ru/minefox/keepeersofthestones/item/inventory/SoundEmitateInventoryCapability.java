@@ -63,6 +63,10 @@ public class SoundEmitateInventoryCapability implements ICapabilitySerializable<
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
 				return stack.getItem() != PowerModItems.SOUND_EMITATE;
 			}
+
+			@Override
+			public void setSize(int size) {
+			}
 		};
 	}
 

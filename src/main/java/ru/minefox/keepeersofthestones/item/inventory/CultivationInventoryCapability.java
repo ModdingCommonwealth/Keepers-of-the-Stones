@@ -63,6 +63,10 @@ public class CultivationInventoryCapability implements ICapabilitySerializable<C
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
 				return stack.getItem() != PowerModItems.CULTIVATION;
 			}
+
+			@Override
+			public void setSize(int size) {
+			}
 		};
 	}
 

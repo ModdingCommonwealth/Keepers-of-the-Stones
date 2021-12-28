@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "unknown",
+    "texture": "blackholeitem",
     "customModelName": "Normal",
     "name": "Black Hole",
     "specialInfo": [],
@@ -32,7 +32,7 @@
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:GalacticSword"
+      "value": "CUSTOM:BlackHole"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",

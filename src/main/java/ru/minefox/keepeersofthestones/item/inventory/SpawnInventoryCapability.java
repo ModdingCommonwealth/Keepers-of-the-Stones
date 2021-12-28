@@ -63,6 +63,10 @@ public class SpawnInventoryCapability implements ICapabilitySerializable<Compoun
 			public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
 				return stack.getItem() != PowerModItems.SPAWN;
 			}
+
+			@Override
+			public void setSize(int size) {
+			}
 		};
 	}
 
