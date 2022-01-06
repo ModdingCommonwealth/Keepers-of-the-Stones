@@ -7428,14 +7428,6 @@
         "children": []
       },
       {
-        "name": "Mist",
-        "children": []
-      },
-      {
-        "name": "Sand",
-        "children": []
-      },
-      {
         "name": "OtherWorldsElements",
         "children": [
           {
@@ -7460,14 +7452,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Smoke",
-        "children": []
-      },
-      {
-        "name": "Toxic",
-        "children": []
       },
       {
         "name": "Mergers",
@@ -7503,26 +7487,6 @@
         "children": []
       },
       {
-        "name": "Speed",
-        "children": []
-      },
-      {
-        "name": "Time",
-        "children": []
-      },
-      {
-        "name": "Technology",
-        "children": []
-      },
-      {
-        "name": "Teleport",
-        "children": []
-      },
-      {
-        "name": "Amber",
-        "children": []
-      },
-      {
         "name": "Commands",
         "children": []
       },
@@ -7539,7 +7503,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev39",
+    "version": "1.2.0-dev40",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
