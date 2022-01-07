@@ -213,7 +213,7 @@ public class TornadoEntityEntity extends TamableAnimal {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 100);
+		builder = builder.add(Attributes.MAX_HEALTH, 1000);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
 		return builder;
