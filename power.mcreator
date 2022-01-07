@@ -6461,6 +6461,35 @@
       "locked_code": false,
       "registry_name": "unmultiplication_moon_stones_block",
       "path": "~/Moon"
+    },
+    {
+      "name": "DestructionEntity",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Destruction"
     }
   ],
   "variable_elements": [
@@ -6702,8 +6731,8 @@
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
-      "effect.fire_master": "Master of Fire",
       "effect.power.unelemental_master": "Мастер Без Элемента",
+      "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
       "item.power.lightning_leggings": "Штаны Молнии",
@@ -6716,8 +6745,8 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.wooden_shield": "Древесный Щит",
+      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
@@ -7011,8 +7040,8 @@
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
       "effect.power.recharge_cosmos_stone": "Recharge",
-      "effect.fire_master": "Master of Fire",
       "effect.power.unelemental_master": "Unelemental Master",
+      "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the Empty Stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -7025,8 +7054,8 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "item.power.wooden_shield": "Wooden Shield",
       "item.power.earth_leggings": "Earth Leggings",
+      "item.power.wooden_shield": "Wooden Shield",
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
@@ -7399,14 +7428,6 @@
         "children": []
       },
       {
-        "name": "Mist",
-        "children": []
-      },
-      {
-        "name": "Sand",
-        "children": []
-      },
-      {
         "name": "OtherWorldsElements",
         "children": [
           {
@@ -7431,14 +7452,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Smoke",
-        "children": []
-      },
-      {
-        "name": "Toxic",
-        "children": []
       },
       {
         "name": "Mergers",
@@ -7474,26 +7487,6 @@
         "children": []
       },
       {
-        "name": "Speed",
-        "children": []
-      },
-      {
-        "name": "Time",
-        "children": []
-      },
-      {
-        "name": "Technology",
-        "children": []
-      },
-      {
-        "name": "Teleport",
-        "children": []
-      },
-      {
-        "name": "Amber",
-        "children": []
-      },
-      {
         "name": "Commands",
         "children": []
       },
@@ -7510,7 +7503,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev38",
+    "version": "1.2.0-dev40",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
