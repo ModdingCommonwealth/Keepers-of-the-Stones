@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "DetransformKey",
@@ -7,7 +6,6 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "detransform_key"
     },
     {
@@ -16,7 +14,6 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "detransform_key_pri_nazhatii_klavishi",
       "metadata": {
         "dependencies": [
@@ -33,7 +30,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_stone",
       "path": "~/Fire"
     },
@@ -43,7 +39,6 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magical_stone"
     },
     {
@@ -52,7 +47,6 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_mastereffectstart",
       "metadata": {
         "dependencies": [
@@ -86,7 +80,6 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_master",
       "path": "~/Fire"
     },
@@ -96,7 +89,6 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_stone_use",
       "metadata": {
         "dependencies": [
@@ -114,7 +106,6 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burn_procedure",
       "metadata": {
         "dependencies": [
@@ -131,7 +122,6 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burn",
       "path": "~/Fire"
     },
@@ -141,7 +131,6 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magic_fireball",
       "path": "~/Fire"
     },
@@ -151,7 +140,6 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -185,7 +173,6 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_master",
       "path": "~/Air"
     },
@@ -195,7 +182,6 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_master",
       "path": "~/Water"
     },
@@ -205,7 +191,6 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_stone",
       "path": "~/Air"
     },
@@ -215,7 +200,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_stone",
       "path": "~/Water"
     },
@@ -225,7 +209,6 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_stone_use",
       "metadata": {
         "dependencies": [
@@ -243,7 +226,6 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_stone_use",
       "metadata": {
         "dependencies": [
@@ -261,7 +243,6 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_master",
       "path": "~/Earth"
     },
@@ -271,7 +252,6 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_stone_use",
       "metadata": {
         "dependencies": [
@@ -289,7 +269,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_stone",
       "path": "~/Earth"
     },
@@ -299,7 +278,6 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_flow",
       "path": "~/Air"
     },
@@ -309,7 +287,6 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -343,7 +320,6 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -377,7 +353,6 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "burn_block_procedure",
       "metadata": {
         "dependencies": [
@@ -407,7 +382,6 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_fire_stone",
       "path": "~/Fire"
     },
@@ -417,7 +391,6 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_air_stone",
       "path": "~/Air"
     },
@@ -427,7 +400,6 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_water_stone",
       "path": "~/Water"
     },
@@ -437,7 +409,6 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_earth_stone",
       "path": "~/Earth"
     },
@@ -447,7 +418,6 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_flow",
       "path": "~/Water"
     },
@@ -457,7 +427,6 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_create_on_block",
       "metadata": {
         "dependencies": [
@@ -487,7 +456,6 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -521,7 +489,6 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_effect_end",
       "metadata": {
         "dependencies": [
@@ -555,7 +522,6 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_drop_use",
       "metadata": {
         "dependencies": [
@@ -573,7 +539,6 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_drop",
       "path": "~/Water"
     },
@@ -583,7 +548,6 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire",
       "metadata": {
         "eh": true,
@@ -599,7 +563,6 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_magic_fireball",
       "metadata": {
         "dependencies": [
@@ -621,7 +584,6 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_master",
       "path": "~/Energy"
     },
@@ -631,7 +593,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_stone",
       "path": "~/Energy"
     },
@@ -641,7 +602,6 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_energy_stone",
       "path": "~/Energy"
     },
@@ -651,7 +611,6 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_stone_use",
       "metadata": {
         "dependencies": [
@@ -669,7 +628,6 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "basic_stone_box_gui",
       "path": "~/StoneBoxes"
     },
@@ -679,7 +637,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wood_stone_box",
       "path": "~/StoneBoxes"
     },
@@ -689,7 +646,6 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water",
       "metadata": {
         "eh": true,
@@ -705,7 +661,6 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -739,7 +694,6 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -773,7 +727,6 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fistof_earth",
       "path": "~/Earth"
     },
@@ -783,7 +736,6 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shied_ofthe_earth_procedure",
       "metadata": {
         "dependencies": [
@@ -821,7 +773,6 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shield_of_earth",
       "path": "~/Earth"
     },
@@ -831,7 +782,6 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wind",
       "metadata": {
         "eh": true,
@@ -847,7 +797,6 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "piece_of_earth",
       "path": "~/Earth"
     },
@@ -857,7 +806,6 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth",
       "metadata": {
         "eh": true,
@@ -873,7 +821,6 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "start_effect_energy_master",
       "metadata": {
         "dependencies": [
@@ -907,7 +854,6 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "end_effect_energy_master",
       "metadata": {
         "dependencies": [
@@ -941,7 +887,6 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_staff_use",
       "metadata": {
         "dependencies": [
@@ -971,7 +916,6 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_effects",
       "metadata": {
         "dependencies": [
@@ -989,7 +933,6 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_effects",
       "metadata": {
         "dependencies": [
@@ -1007,7 +950,6 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_effects",
       "metadata": {
         "dependencies": [
@@ -1025,7 +967,6 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "earth_effects",
       "metadata": {
         "dependencies": [
@@ -1043,7 +984,6 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_effects",
       "metadata": {
         "dependencies": [
@@ -1061,7 +1001,6 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy",
       "metadata": {
         "eh": true,
@@ -1077,7 +1016,6 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_sphere",
       "path": "~/Energy"
     },
@@ -1087,7 +1025,6 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_block",
       "path": "~/Energy"
     },
@@ -1097,7 +1034,6 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_shield",
       "path": "~/Energy"
     },
@@ -1107,7 +1043,6 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_shield_procedure",
       "metadata": {
         "dependencies": [
@@ -1145,7 +1080,6 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "addition_stone_box_gui",
       "path": "~/StoneBoxes"
     },
@@ -1155,7 +1089,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "stone_stone_box",
       "path": "~/StoneBoxes"
     },
@@ -1165,7 +1098,6 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_master",
       "path": "~/Ice"
     },
@@ -1175,7 +1107,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_stone",
       "path": "~/Ice"
     },
@@ -1185,7 +1116,6 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_ice_stone",
       "path": "~/Ice"
     },
@@ -1195,7 +1125,6 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_stone_use",
       "metadata": {
         "dependencies": [
@@ -1213,7 +1142,6 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_effects",
       "metadata": {
         "dependencies": [
@@ -1231,7 +1159,6 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -1265,7 +1192,6 @@
       "sortid": 99,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -1299,7 +1225,6 @@
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_ball",
       "path": "~/Ice"
     },
@@ -1309,7 +1234,6 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_ball_in_entity",
       "metadata": {
         "dependencies": [
@@ -1327,7 +1251,6 @@
       "sortid": 102,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_ball_in_block",
       "metadata": {
         "dependencies": [
@@ -1357,7 +1280,6 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_shield",
       "path": "~/Ice"
     },
@@ -1367,7 +1289,6 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_shield_procedure",
       "metadata": {
         "dependencies": [
@@ -1405,7 +1326,6 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "snow_golem_creator",
       "path": "~/Ice"
     },
@@ -1415,7 +1335,6 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "golem_create",
       "metadata": {
         "dependencies": [
@@ -1449,7 +1368,6 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_sharp",
       "path": "~/Ice"
     },
@@ -1459,7 +1377,6 @@
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_sharp_freezing",
       "metadata": {
         "dependencies": [
@@ -1477,7 +1394,6 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_master",
       "path": "~/Lightning"
     },
@@ -1487,7 +1403,6 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_lightning_stone",
       "path": "~/Lightning"
     },
@@ -1497,7 +1412,6 @@
       "sortid": 111,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_stone_use",
       "metadata": {
         "dependencies": [
@@ -1515,7 +1429,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_stone",
       "path": "~/Lightning"
     },
@@ -1525,7 +1438,6 @@
       "sortid": 112,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -1559,7 +1471,6 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -1593,7 +1504,6 @@
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_effects",
       "metadata": {
         "dependencies": [
@@ -1611,7 +1521,6 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_strike_use",
       "metadata": {
         "dependencies": [
@@ -1641,7 +1550,6 @@
       "sortid": 116,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "plasma_ball",
       "path": "~/Lightning"
     },
@@ -1651,7 +1559,6 @@
       "sortid": 117,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "storm_use",
       "metadata": {
         "dependencies": [
@@ -1677,7 +1584,6 @@
       "sortid": 118,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "storm",
       "path": "~/Lightning"
     },
@@ -1687,7 +1593,6 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_master",
       "path": "~/Sound"
     },
@@ -1697,7 +1602,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_stone",
       "path": "~/Sound"
     },
@@ -1707,7 +1611,6 @@
       "sortid": 120,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_sound_stone",
       "path": "~/Sound"
     },
@@ -1717,7 +1620,6 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_stone_use",
       "metadata": {
         "dependencies": [
@@ -1735,7 +1637,6 @@
       "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_effects",
       "metadata": {
         "dependencies": [
@@ -1753,7 +1654,6 @@
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_sword",
       "path": "~/Sound"
     },
@@ -1763,7 +1663,6 @@
       "sortid": 124,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "acustical_explode",
       "path": "~/Sound"
     },
@@ -1773,7 +1672,6 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "null_explode",
       "metadata": {
         "dependencies": [
@@ -1803,7 +1701,6 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -1837,7 +1734,6 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -1871,7 +1767,6 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_barrier_block",
       "path": "~/Sound"
     },
@@ -1881,7 +1776,6 @@
       "sortid": 129,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_barrier",
       "path": "~/Sound"
     },
@@ -1891,7 +1785,6 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_barrier_use",
       "metadata": {
         "dependencies": [
@@ -1929,7 +1822,6 @@
       "sortid": 131,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_emitate",
       "path": "~/Sound"
     },
@@ -1939,7 +1831,6 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "emitate_creeper",
       "metadata": {
         "dependencies": [
@@ -1957,7 +1848,6 @@
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound_emitate_choice",
       "path": "~/Sound"
     },
@@ -1967,7 +1857,6 @@
       "sortid": 134,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "emitate_skeleton",
       "metadata": {
         "dependencies": [
@@ -1985,7 +1874,6 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "emitate_zombie",
       "metadata": {
         "dependencies": [
@@ -2003,7 +1891,6 @@
       "sortid": 136,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_master",
       "path": "~/Crystal"
     },
@@ -2013,7 +1900,6 @@
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_crystal_stone",
       "path": "~/Crystal"
     },
@@ -2023,7 +1909,6 @@
       "sortid": 138,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_effects",
       "metadata": {
         "dependencies": [
@@ -2041,7 +1926,6 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_stone_use",
       "metadata": {
         "dependencies": [
@@ -2059,7 +1943,6 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_stone",
       "path": "~/Crystal"
     },
@@ -2069,7 +1952,6 @@
       "sortid": 140,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -2103,7 +1985,6 @@
       "sortid": 141,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -2137,7 +2018,6 @@
       "sortid": 142,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cluster_sharp",
       "path": "~/Crystal"
     },
@@ -2147,7 +2027,6 @@
       "sortid": 143,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_sharp_on_block",
       "metadata": {
         "dependencies": [
@@ -2177,7 +2056,6 @@
       "sortid": 144,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "entity_on_cluster_block",
       "metadata": {
         "dependencies": [
@@ -2195,7 +2073,6 @@
       "sortid": 145,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cluster_block",
       "path": "~/Crystal"
     },
@@ -2205,7 +2082,6 @@
       "sortid": 146,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_shield_block",
       "path": "~/Crystal"
     },
@@ -2215,7 +2091,6 @@
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_shield",
       "path": "~/Crystal"
     },
@@ -2225,7 +2100,6 @@
       "sortid": 148,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_shield_use",
       "metadata": {
         "dependencies": [
@@ -2263,7 +2137,6 @@
       "sortid": 149,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cluster_sharp_is_gone",
       "metadata": {
         "dependencies": [
@@ -2293,7 +2166,6 @@
       "sortid": 150,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_master",
       "path": "~/Lava"
     },
@@ -2303,7 +2175,6 @@
       "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_lava_stone",
       "path": "~/Lava"
     },
@@ -2313,7 +2184,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_stone",
       "path": "~/Lava"
     },
@@ -2323,7 +2193,6 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "empty_stone",
       "path": "~/Crafts"
     },
@@ -2333,7 +2202,6 @@
       "sortid": 152,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "empty_stone_craft",
       "path": "~/Crafts"
     },
@@ -2343,7 +2211,6 @@
       "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_stone_use",
       "metadata": {
         "dependencies": [
@@ -2361,7 +2228,6 @@
       "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_effects",
       "metadata": {
         "dependencies": [
@@ -2379,7 +2245,6 @@
       "sortid": 155,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -2413,7 +2278,6 @@
       "sortid": 156,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -2447,7 +2311,6 @@
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_hole",
       "path": "~/Lava"
     },
@@ -2457,7 +2320,6 @@
       "sortid": 158,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_hole_gen",
       "metadata": {
         "dependencies": [
@@ -2495,7 +2357,6 @@
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_ball",
       "path": "~/Lava"
     },
@@ -2505,7 +2366,6 @@
       "sortid": 160,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_burn_block",
       "metadata": {
         "dependencies": [
@@ -2535,7 +2395,6 @@
       "sortid": 161,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_master",
       "path": "~/Rain"
     },
@@ -2545,7 +2404,6 @@
       "sortid": 162,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_rain_stone",
       "path": "~/Rain"
     },
@@ -2555,7 +2413,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_stone",
       "path": "~/Rain"
     },
@@ -2565,7 +2422,6 @@
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_stone_use",
       "metadata": {
         "dependencies": [
@@ -2583,7 +2439,6 @@
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_stone_effects",
       "metadata": {
         "dependencies": [
@@ -2601,7 +2456,6 @@
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -2635,7 +2489,6 @@
       "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -2669,7 +2522,6 @@
       "sortid": 167,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rainfall_use",
       "metadata": {
         "dependencies": [
@@ -2695,7 +2547,6 @@
       "sortid": 168,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rainfall",
       "path": "~/Rain"
     },
@@ -2705,7 +2556,6 @@
       "sortid": 169,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_knife_attack",
       "metadata": {
         "dependencies": [
@@ -2727,7 +2577,6 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_knife",
       "path": "~/Rain"
     },
@@ -2737,7 +2586,6 @@
       "sortid": 171,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "medium_stone_box_gui",
       "path": "~/StoneBoxes"
     },
@@ -2747,7 +2595,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_stone_box",
       "path": "~/StoneBoxes"
     },
@@ -2757,7 +2604,6 @@
       "sortid": 172,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "great_stone_box_gui",
       "path": "~/StoneBoxes"
     },
@@ -2767,7 +2613,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "gold_stone_box",
       "path": "~/StoneBoxes"
     },
@@ -2777,7 +2622,6 @@
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magical_stone_boxes",
       "path": "~/StoneBoxes"
     },
@@ -2787,7 +2631,6 @@
       "sortid": 174,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "respawn_player",
       "metadata": {
         "dependencies": [
@@ -2804,7 +2647,6 @@
       "sortid": 175,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_master",
       "path": "~/Tornado"
     },
@@ -2814,7 +2656,6 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_tornado_stone",
       "path": "~/Tornado"
     },
@@ -2824,7 +2665,6 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_effects",
       "metadata": {
         "dependencies": [
@@ -2842,7 +2682,6 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_stone",
       "path": "~/Tornado"
     },
@@ -2852,7 +2691,6 @@
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_stone_use",
       "metadata": {
         "dependencies": [
@@ -2870,7 +2708,6 @@
       "sortid": 179,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_effect_start",
       "metadata": {
         "dependencies": [
@@ -2904,7 +2741,6 @@
       "sortid": 180,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_effect_end",
       "metadata": {
         "dependencies": [
@@ -2938,7 +2774,6 @@
       "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_create",
       "path": "~/Tornado"
     },
@@ -2948,7 +2783,6 @@
       "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_create_on_block",
       "metadata": {
         "dependencies": [
@@ -2978,7 +2812,6 @@
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_create_in_entity",
       "metadata": {
         "dependencies": [
@@ -2996,7 +2829,6 @@
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_master",
       "path": "~/Ocean"
     },
@@ -3006,7 +2838,6 @@
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_ocean_stone",
       "path": "~/Ocean"
     },
@@ -3016,7 +2847,6 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_stone",
       "path": "~/Ocean"
     },
@@ -3026,7 +2856,6 @@
       "sortid": 186,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_stone_use",
       "metadata": {
         "dependencies": [
@@ -3044,7 +2873,6 @@
       "sortid": 187,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_effects",
       "metadata": {
         "dependencies": [
@@ -3062,7 +2890,6 @@
       "sortid": 188,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -3096,7 +2923,6 @@
       "sortid": 189,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -3130,7 +2956,6 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coral_shield",
       "path": "~/Ocean"
     },
@@ -3140,7 +2965,6 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coral_shield_use",
       "metadata": {
         "dependencies": [
@@ -3178,7 +3002,6 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "whirlpool",
       "path": "~/Ocean"
     },
@@ -3188,7 +3011,6 @@
       "sortid": 193,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "whirlpoolpower",
       "metadata": {
         "dependencies": [
@@ -3206,7 +3028,6 @@
       "sortid": 194,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean_sword",
       "path": "~/Ocean"
     },
@@ -3216,7 +3037,6 @@
       "sortid": 195,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice",
       "metadata": {
         "eh": true,
@@ -3232,7 +3052,6 @@
       "sortid": 196,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning",
       "metadata": {
         "eh": true,
@@ -3248,7 +3067,6 @@
       "sortid": 197,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sound",
       "metadata": {
         "eh": true,
@@ -3264,7 +3082,6 @@
       "sortid": 198,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal",
       "metadata": {
         "eh": true,
@@ -3280,7 +3097,6 @@
       "sortid": 199,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava",
       "metadata": {
         "eh": true,
@@ -3296,7 +3112,6 @@
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain",
       "metadata": {
         "eh": true,
@@ -3312,7 +3127,6 @@
       "sortid": 201,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado",
       "metadata": {
         "eh": true,
@@ -3328,7 +3142,6 @@
       "sortid": 202,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ocean",
       "metadata": {
         "eh": true,
@@ -3344,7 +3157,6 @@
       "sortid": 203,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lightning_strike",
       "path": "~/Lightning"
     },
@@ -3354,7 +3166,6 @@
       "sortid": 204,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "energy_staff",
       "path": "~/Energy"
     },
@@ -3364,7 +3175,6 @@
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fire_sword",
       "path": "~/Fire"
     },
@@ -3374,7 +3184,6 @@
       "sortid": 206,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "air_blade",
       "path": "~/Air"
     },
@@ -3384,7 +3193,6 @@
       "sortid": 207,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "water_katana",
       "path": "~/Water"
     },
@@ -3394,7 +3202,6 @@
       "sortid": 208,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "crystal_dagger",
       "path": "~/Crystal"
     },
@@ -3404,7 +3211,6 @@
       "sortid": 209,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lava_hammer",
       "path": "~/Lava"
     },
@@ -3414,7 +3220,6 @@
       "sortid": 210,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rain_bow",
       "path": "~/Rain"
     },
@@ -3424,7 +3229,6 @@
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_battle_axe",
       "path": "~/Tornado"
     },
@@ -3434,7 +3238,6 @@
       "sortid": 212,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magma_shield",
       "path": "~/Lava"
     },
@@ -3444,7 +3247,6 @@
       "sortid": 213,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magma_shield_use",
       "metadata": {
         "dependencies": [
@@ -3482,7 +3284,6 @@
       "sortid": 214,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "ice_spear",
       "path": "~/Ice"
     },
@@ -3492,7 +3293,6 @@
       "sortid": 215,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "inferno_merge_effects",
       "metadata": {
         "dependencies": [
@@ -3510,7 +3310,6 @@
       "sortid": 216,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "inferno_merger",
       "path": "~/Mergers/Inferno"
     },
@@ -3520,7 +3319,6 @@
       "sortid": 217,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "inferno_merger_effect_start",
       "metadata": {
         "dependencies": [
@@ -3542,7 +3340,6 @@
       "sortid": 218,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "inferno_merger_effect_end",
       "metadata": {
         "dependencies": [
@@ -3560,7 +3357,6 @@
       "sortid": 219,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_master",
       "path": "~/Greenery"
     },
@@ -3570,7 +3366,6 @@
       "sortid": 220,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_master_effects",
       "metadata": {
         "dependencies": [
@@ -3588,7 +3383,6 @@
       "sortid": 221,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -3622,7 +3416,6 @@
       "sortid": 222,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_greenery_stone",
       "path": "~/Greenery"
     },
@@ -3632,7 +3425,6 @@
       "sortid": 223,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -3666,7 +3458,6 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_stone",
       "path": "~/Greenery"
     },
@@ -3676,7 +3467,6 @@
       "sortid": 224,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery_stone_use",
       "metadata": {
         "dependencies": [
@@ -3694,7 +3484,6 @@
       "sortid": 225,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "rose_sword",
       "path": "~/Greenery"
     },
@@ -3704,7 +3493,6 @@
       "sortid": 226,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wooden_shield",
       "path": "~/Greenery"
     },
@@ -3714,7 +3502,6 @@
       "sortid": 227,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "wooden_shield_use",
       "metadata": {
         "dependencies": [
@@ -3752,7 +3539,6 @@
       "sortid": 228,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spike",
       "path": "~/Greenery"
     },
@@ -3762,7 +3548,6 @@
       "sortid": 229,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spike_poison_procedure",
       "metadata": {
         "dependencies": [
@@ -3780,7 +3565,6 @@
       "sortid": 230,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fertilizer_use",
       "metadata": {
         "dependencies": [
@@ -3798,7 +3582,6 @@
       "sortid": 231,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "fertilizer",
       "path": "~/Greenery"
     },
@@ -3808,7 +3591,6 @@
       "sortid": 232,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cultivation",
       "path": "~/Greenery"
     },
@@ -3818,7 +3600,6 @@
       "sortid": 233,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cultivation_gui",
       "path": "~/Greenery"
     },
@@ -3828,7 +3609,6 @@
       "sortid": 234,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "get_vine",
       "metadata": {
         "dependencies": [
@@ -3846,7 +3626,6 @@
       "sortid": 235,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "get_oak_sapling",
       "metadata": {
         "dependencies": [
@@ -3864,7 +3643,6 @@
       "sortid": 236,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "get_water_lily",
       "metadata": {
         "dependencies": [
@@ -3882,7 +3660,6 @@
       "sortid": 237,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "geyser_merger",
       "path": "~/Mergers/Geyser"
     },
@@ -3892,7 +3669,6 @@
       "sortid": 238,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "geyser_merger_effect_start",
       "metadata": {
         "dependencies": [
@@ -3914,7 +3690,6 @@
       "sortid": 239,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "geyser_merger_effect_end",
       "metadata": {
         "dependencies": [
@@ -3932,7 +3707,6 @@
       "sortid": 240,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "geyser_merger_effects",
       "metadata": {
         "dependencies": [
@@ -3950,7 +3724,6 @@
       "sortid": 241,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_master",
       "path": "~/Animals"
     },
@@ -3960,7 +3733,6 @@
       "sortid": 242,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -3978,7 +3750,6 @@
       "sortid": 243,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_animals_stone",
       "path": "~/Animals"
     },
@@ -3988,7 +3759,6 @@
       "sortid": 244,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_stone_use",
       "metadata": {
         "dependencies": [
@@ -4006,7 +3776,6 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_stone",
       "path": "~/Animals"
     },
@@ -4016,7 +3785,6 @@
       "sortid": 245,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -4034,7 +3802,6 @@
       "sortid": 246,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "animals_effects",
       "metadata": {
         "dependencies": [
@@ -4052,7 +3819,6 @@
       "sortid": 247,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "bee_sting",
       "path": "~/Animals"
     },
@@ -4062,7 +3828,6 @@
       "sortid": 248,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tiger_claw",
       "path": "~/Animals"
     },
@@ -4072,7 +3837,6 @@
       "sortid": 249,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tamer",
       "path": "~/Animals"
     },
@@ -4082,7 +3846,6 @@
       "sortid": 250,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tame_power",
       "metadata": {
         "dependencies": [
@@ -4104,7 +3867,6 @@
       "sortid": 251,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spawn",
       "path": "~/Animals"
     },
@@ -4114,7 +3876,6 @@
       "sortid": 252,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "spawn_animals_gui",
       "path": "~/Animals"
     },
@@ -4124,7 +3885,6 @@
       "sortid": 253,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "summon_wolf",
       "metadata": {
         "dependencies": [
@@ -4154,7 +3914,6 @@
       "sortid": 254,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "summon_chicken",
       "metadata": {
         "dependencies": [
@@ -4184,7 +3943,6 @@
       "sortid": 255,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "summon_cow",
       "metadata": {
         "dependencies": [
@@ -4214,7 +3972,6 @@
       "sortid": 256,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "summon_cat",
       "metadata": {
         "dependencies": [
@@ -4244,7 +4001,6 @@
       "sortid": 257,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "invincibility",
       "path": "~/Metal"
     },
@@ -4254,7 +4010,6 @@
       "sortid": 258,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "invincibility_effect_start",
       "metadata": {
         "dependencies": [
@@ -4272,7 +4027,6 @@
       "sortid": 259,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "invincibility_effect_end",
       "metadata": {
         "dependencies": [
@@ -4290,7 +4044,6 @@
       "sortid": 260,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "misc_ko_s_category"
     },
     {
@@ -4299,7 +4052,6 @@
       "sortid": 261,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_master",
       "path": "~/Metal"
     },
@@ -4309,7 +4061,6 @@
       "sortid": 262,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_metal_stone",
       "path": "~/Metal"
     },
@@ -4319,7 +4070,6 @@
       "sortid": 263,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_stone_use",
       "metadata": {
         "dependencies": [
@@ -4337,7 +4087,6 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_stone",
       "path": "~/Metal"
     },
@@ -4347,7 +4096,6 @@
       "sortid": 264,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -4365,7 +4113,6 @@
       "sortid": 265,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -4383,7 +4130,6 @@
       "sortid": 266,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_master_effects",
       "metadata": {
         "dependencies": [
@@ -4401,7 +4147,6 @@
       "sortid": 267,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shuriken",
       "path": "~/Metal"
     },
@@ -4411,7 +4156,6 @@
       "sortid": 268,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sai",
       "path": "~/Metal"
     },
@@ -4421,7 +4165,6 @@
       "sortid": 269,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_invulnerability",
       "path": "~/Metal"
     },
@@ -4431,7 +4174,6 @@
       "sortid": 270,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "metal_invulnerability_use",
       "metadata": {
         "dependencies": [
@@ -4457,7 +4199,6 @@
       "sortid": 271,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_golem_create",
       "path": "~/Metal"
     },
@@ -4467,7 +4208,6 @@
       "sortid": 272,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_golem_create_use",
       "metadata": {
         "dependencies": [
@@ -4501,7 +4241,6 @@
       "sortid": 273,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_shield",
       "path": "~/Metal"
     },
@@ -4511,7 +4250,6 @@
       "sortid": 274,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "iron_shield_use",
       "metadata": {
         "dependencies": [
@@ -4549,7 +4287,6 @@
       "sortid": 275,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "when_player_going_sleep",
       "metadata": {
         "dependencies": [
@@ -4570,7 +4307,6 @@
       "sortid": 276,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unelemental_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -4588,7 +4324,6 @@
       "sortid": 277,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unelemental_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -4606,7 +4341,6 @@
       "sortid": 278,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unelemental_master_effects",
       "metadata": {
         "dependencies": [
@@ -4624,7 +4358,6 @@
       "sortid": 279,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unelemental_master",
       "path": "~/EmptyStone"
     },
@@ -4634,7 +4367,6 @@
       "sortid": 280,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_empty_stone",
       "path": "~/EmptyStone"
     },
@@ -4644,7 +4376,6 @@
       "sortid": 281,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "empty_stone_use",
       "metadata": {
         "dependencies": [
@@ -4662,7 +4393,6 @@
       "sortid": 282,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "when_player_wake_up",
       "metadata": {
         "dependencies": [
@@ -4679,7 +4409,6 @@
       "sortid": 283,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "glow",
       "path": "~/Light"
     },
@@ -4689,7 +4418,6 @@
       "sortid": 284,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -4707,7 +4435,6 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_stone",
       "path": "~/Light"
     },
@@ -4717,7 +4444,6 @@
       "sortid": 285,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_master",
       "path": "~/Light"
     },
@@ -4727,7 +4453,6 @@
       "sortid": 286,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_light_stone",
       "path": "~/Light"
     },
@@ -4737,7 +4462,6 @@
       "sortid": 287,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_stone_use",
       "metadata": {
         "dependencies": [
@@ -4755,7 +4479,6 @@
       "sortid": 288,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -4773,7 +4496,6 @@
       "sortid": 289,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_master_effects",
       "metadata": {
         "dependencies": [
@@ -4795,7 +4517,6 @@
       "sortid": 290,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "light_sword",
       "path": "~/Light"
     },
@@ -4805,7 +4526,6 @@
       "sortid": 291,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flash_light",
       "path": "~/Light"
     },
@@ -4815,7 +4535,6 @@
       "sortid": 292,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "flash_light_use",
       "metadata": {
         "dependencies": [
@@ -4833,7 +4552,6 @@
       "sortid": 293,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "glow_create",
       "path": "~/Light"
     },
@@ -4843,7 +4561,6 @@
       "sortid": 294,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "glow_create_use",
       "metadata": {
         "dependencies": [
@@ -4877,7 +4594,6 @@
       "sortid": 295,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tame_glow",
       "metadata": {
         "dependencies": [
@@ -4899,7 +4615,6 @@
       "sortid": 296,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lighting",
       "path": "~/Light"
     },
@@ -4909,7 +4624,6 @@
       "sortid": 297,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "lighting_use",
       "metadata": {
         "dependencies": [
@@ -4931,7 +4645,6 @@
       "sortid": 298,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow",
       "path": "~/Shadow"
     },
@@ -4941,7 +4654,6 @@
       "sortid": 299,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_master",
       "path": "~/Shadow"
     },
@@ -4951,7 +4663,6 @@
       "sortid": 300,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_shadow_stone",
       "path": "~/Shadow"
     },
@@ -4961,7 +4672,6 @@
       "sortid": 301,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_stone_use",
       "metadata": {
         "dependencies": [
@@ -4979,7 +4689,6 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_stone",
       "path": "~/Shadow"
     },
@@ -4989,7 +4698,6 @@
       "sortid": 302,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -5007,7 +4715,6 @@
       "sortid": 303,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -5025,7 +4732,6 @@
       "sortid": 304,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_master_effects",
       "metadata": {
         "dependencies": [
@@ -5047,7 +4753,6 @@
       "sortid": 305,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_sword",
       "path": "~/Shadow"
     },
@@ -5057,7 +4762,6 @@
       "sortid": 306,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_ball",
       "path": "~/Shadow"
     },
@@ -5067,7 +4771,6 @@
       "sortid": 307,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_invisible",
       "path": "~/Shadow"
     },
@@ -5077,7 +4780,6 @@
       "sortid": 308,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "shadow_invisible_use",
       "metadata": {
         "dependencies": [
@@ -5103,7 +4805,6 @@
       "sortid": 309,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "create_shadow",
       "path": "~/Shadow"
     },
@@ -5113,7 +4814,6 @@
       "sortid": 310,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "create_shadow_use",
       "metadata": {
         "dependencies": [
@@ -5147,7 +4847,6 @@
       "sortid": 311,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tame_shadow",
       "metadata": {
         "dependencies": [
@@ -5169,7 +4868,6 @@
       "sortid": 312,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_master",
       "path": "~/Vacuum"
     },
@@ -5179,7 +4877,6 @@
       "sortid": 313,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_vacuum_stone",
       "path": "~/Vacuum"
     },
@@ -5189,7 +4886,6 @@
       "sortid": 314,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_stone_use",
       "metadata": {
         "dependencies": [
@@ -5207,7 +4903,6 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_stone",
       "path": "~/Vacuum"
     },
@@ -5217,7 +4912,6 @@
       "sortid": 315,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -5235,7 +4929,6 @@
       "sortid": 316,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -5253,7 +4946,6 @@
       "sortid": 317,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_master_effects",
       "metadata": {
         "dependencies": [
@@ -5271,7 +4963,6 @@
       "sortid": 318,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_to_zero",
       "metadata": {
         "dependencies": [
@@ -5289,7 +4980,6 @@
       "sortid": 319,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_sword",
       "path": "~/Vacuum"
     },
@@ -5299,7 +4989,6 @@
       "sortid": 320,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_spiral",
       "path": "~/Vacuum"
     },
@@ -5309,7 +4998,6 @@
       "sortid": 321,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_web_block",
       "path": "~/Vacuum"
     },
@@ -5319,7 +5007,6 @@
       "sortid": 322,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_web_use",
       "metadata": {
         "dependencies": [
@@ -5349,7 +5036,6 @@
       "sortid": 323,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_web",
       "path": "~/Vacuum"
     },
@@ -5359,7 +5045,6 @@
       "sortid": 324,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "vacuum_tp",
       "metadata": {
         "dependencies": [
@@ -5393,7 +5078,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "andesite_stone_box",
       "path": "~/StoneBoxes"
     },
@@ -5403,7 +5087,6 @@
       "sortid": 325,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "additional_andesite_box_gui",
       "path": "~/StoneBoxes"
     },
@@ -5413,7 +5096,6 @@
       "sortid": 326,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_sun_stone",
       "path": "~/Sun"
     },
@@ -5423,7 +5105,6 @@
       "sortid": 327,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_master",
       "path": "~/Sun"
     },
@@ -5433,7 +5114,6 @@
       "sortid": 328,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_stone_use",
       "metadata": {
         "dependencies": [
@@ -5451,7 +5131,6 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_stone",
       "path": "~/Sun"
     },
@@ -5461,7 +5140,6 @@
       "sortid": 329,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -5479,7 +5157,6 @@
       "sortid": 330,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -5497,7 +5174,6 @@
       "sortid": 331,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_master_effects",
       "metadata": {
         "dependencies": [
@@ -5515,7 +5191,6 @@
       "sortid": 332,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_axe",
       "path": "~/Sun"
     },
@@ -5525,7 +5200,6 @@
       "sortid": 333,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_explode",
       "path": "~/Sun"
     },
@@ -5535,7 +5209,6 @@
       "sortid": 334,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_ray",
       "path": "~/Sun"
     },
@@ -5545,7 +5218,6 @@
       "sortid": 335,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_ray_use",
       "metadata": {
         "dependencies": [
@@ -5571,7 +5243,6 @@
       "sortid": 336,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_regeneration",
       "path": "~/Sun"
     },
@@ -5581,7 +5252,6 @@
       "sortid": 337,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_regen_on_other",
       "metadata": {
         "dependencies": [
@@ -5611,7 +5281,6 @@
       "sortid": 338,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_regen_on_me",
       "metadata": {
         "dependencies": [
@@ -5637,7 +5306,6 @@
       "sortid": 339,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "sun_explode_use",
       "metadata": {
         "dependencies": [
@@ -5667,7 +5335,6 @@
       "sortid": 340,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_master",
       "path": "~/Moon"
     },
@@ -5677,7 +5344,6 @@
       "sortid": 341,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_moon_stone",
       "path": "~/Moon"
     },
@@ -5687,7 +5353,6 @@
       "sortid": 342,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_stone_use",
       "metadata": {
         "dependencies": [
@@ -5705,7 +5370,6 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_stone",
       "path": "~/Moon"
     },
@@ -5715,7 +5379,6 @@
       "sortid": 343,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -5733,7 +5396,6 @@
       "sortid": 344,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -5751,7 +5413,6 @@
       "sortid": 345,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_axe",
       "path": "~/Moon"
     },
@@ -5761,7 +5422,6 @@
       "sortid": 346,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_master_effects",
       "metadata": {
         "dependencies": [
@@ -5779,7 +5439,6 @@
       "sortid": 347,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_stones",
       "path": "~/Moon"
     },
@@ -5789,7 +5448,6 @@
       "sortid": 348,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_stones_block",
       "path": "~/Moon"
     },
@@ -5799,7 +5457,6 @@
       "sortid": 349,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "multiplication_moon_stone",
       "metadata": {
         "dependencies": [
@@ -5833,7 +5490,6 @@
       "sortid": 350,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "set_block_moon_stone",
       "metadata": {
         "dependencies": [
@@ -5863,7 +5519,6 @@
       "sortid": 351,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "eclipse",
       "path": "~/Moon"
     },
@@ -5873,7 +5528,6 @@
       "sortid": 352,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "eclipse_use",
       "metadata": {
         "dependencies": [
@@ -5899,7 +5553,6 @@
       "sortid": 353,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_wither",
       "path": "~/Moon"
     },
@@ -5909,7 +5562,6 @@
       "sortid": 354,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_wither_use",
       "metadata": {
         "dependencies": [
@@ -5939,7 +5591,6 @@
       "sortid": 355,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "multiplication_moonstone_block_to_ticks",
       "metadata": {
         "dependencies": [
@@ -5969,7 +5620,6 @@
       "sortid": 356,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "entity_on_moonstones",
       "metadata": {
         "dependencies": [
@@ -5987,7 +5637,6 @@
       "sortid": 357,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_creation_stone",
       "path": "~/Creation"
     },
@@ -5997,7 +5646,6 @@
       "sortid": 358,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_master",
       "path": "~/Creation"
     },
@@ -6007,7 +5655,6 @@
       "sortid": 359,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_stone_use",
       "metadata": {
         "dependencies": [
@@ -6025,7 +5672,6 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_stone",
       "path": "~/Creation"
     },
@@ -6035,7 +5681,6 @@
       "sortid": 360,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -6053,7 +5698,6 @@
       "sortid": 361,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -6071,7 +5715,6 @@
       "sortid": 362,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "creation_master_effects",
       "metadata": {
         "dependencies": [
@@ -6089,7 +5732,6 @@
       "sortid": 363,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "random_item",
       "path": "~/Creation"
     },
@@ -6099,7 +5741,6 @@
       "sortid": 364,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "random_item_use",
       "metadata": {
         "dependencies": [
@@ -6125,7 +5766,6 @@
       "sortid": 365,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_sun_explode",
       "metadata": {
         "dependencies": [
@@ -6147,7 +5787,6 @@
       "sortid": 366,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "summon_horse",
       "metadata": {
         "dependencies": [
@@ -6177,7 +5816,6 @@
       "sortid": 367,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "detransform",
       "path": "~/Commands"
     },
@@ -6187,7 +5825,6 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_stone",
       "path": "~/Destruction"
     },
@@ -6197,7 +5834,6 @@
       "sortid": 368,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_destruction_stone",
       "path": "~/Destruction"
     },
@@ -6207,7 +5843,6 @@
       "sortid": 369,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_master",
       "path": "~/Destruction"
     },
@@ -6217,7 +5852,6 @@
       "sortid": 370,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_stone_use",
       "metadata": {
         "dependencies": [
@@ -6235,7 +5869,6 @@
       "sortid": 371,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -6253,7 +5886,6 @@
       "sortid": 372,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -6271,7 +5903,6 @@
       "sortid": 373,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_master_effects",
       "metadata": {
         "dependencies": [
@@ -6289,7 +5920,6 @@
       "sortid": 374,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_power",
       "path": "~/Destruction"
     },
@@ -6299,7 +5929,6 @@
       "sortid": 375,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "destruction_power_use",
       "metadata": {
         "dependencies": [
@@ -6329,7 +5958,6 @@
       "sortid": 376,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon_land",
       "path": "~/Cosmos"
     },
@@ -6339,7 +5967,6 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "moon",
       "metadata": {
         "ep": false
@@ -6352,7 +5979,6 @@
       "sortid": 377,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_moon_use",
       "metadata": {
         "dependencies": [
@@ -6370,7 +5996,6 @@
       "sortid": 378,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "onmoon",
       "path": "~/Commands"
     },
@@ -6380,7 +6005,6 @@
       "sortid": 379,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_earth_use",
       "metadata": {
         "dependencies": [
@@ -6398,7 +6022,6 @@
       "sortid": 380,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_earth",
       "path": "~/Commands"
     },
@@ -6408,7 +6031,6 @@
       "sortid": 381,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "use_your_power",
       "path": "~/Advancement"
     },
@@ -6418,7 +6040,6 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_stone",
       "path": "~/Cosmos"
     },
@@ -6428,7 +6049,6 @@
       "sortid": 382,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mars_land",
       "path": "~/Cosmos"
     },
@@ -6438,7 +6058,6 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "mars",
       "metadata": {
         "ep": false
@@ -6451,7 +6070,6 @@
       "sortid": 383,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_mars_use",
       "metadata": {
         "dependencies": [
@@ -6469,7 +6087,6 @@
       "sortid": 384,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_mars",
       "path": "~/Commands"
     },
@@ -6479,7 +6096,6 @@
       "sortid": 385,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "venus_land",
       "path": "~/Cosmos"
     },
@@ -6489,7 +6105,6 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "venus",
       "metadata": {
         "ep": false
@@ -6502,7 +6117,6 @@
       "sortid": 386,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "on_venus_use",
       "metadata": {
         "dependencies": [
@@ -6520,7 +6134,6 @@
       "sortid": 387,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "onvenus",
       "path": "~/Commands"
     },
@@ -6530,7 +6143,6 @@
       "sortid": 388,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "magic_stones"
     },
     {
@@ -6539,7 +6151,6 @@
       "sortid": 389,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "venus_desert",
       "path": "~/Cosmos"
     },
@@ -6549,7 +6160,6 @@
       "sortid": 390,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_master",
       "path": "~/Cosmos"
     },
@@ -6559,7 +6169,6 @@
       "sortid": 391,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "recharge_cosmos_stone",
       "path": "~/Cosmos"
     },
@@ -6569,7 +6178,6 @@
       "sortid": 392,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_stone_use",
       "metadata": {
         "dependencies": [
@@ -6587,7 +6195,6 @@
       "sortid": 393,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_master_effect_start",
       "metadata": {
         "dependencies": [
@@ -6605,7 +6212,6 @@
       "sortid": 394,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_master_effect_end",
       "metadata": {
         "dependencies": [
@@ -6623,7 +6229,6 @@
       "sortid": 395,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "cosmos_master_effects",
       "metadata": {
         "dependencies": [
@@ -6641,7 +6246,6 @@
       "sortid": 396,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tp_on_mars",
       "path": "~/Cosmos"
     },
@@ -6651,7 +6255,6 @@
       "sortid": 397,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tp_on_venus",
       "path": "~/Cosmos"
     },
@@ -6661,7 +6264,6 @@
       "sortid": 398,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tp_on_moon",
       "path": "~/Cosmos"
     },
@@ -6671,7 +6273,6 @@
       "sortid": 399,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tp_on_earth",
       "path": "~/Cosmos"
     },
@@ -6681,7 +6282,6 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "galactic_sword",
       "path": "~/Cosmos"
     },
@@ -6691,7 +6291,6 @@
       "sortid": 400,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "black_hole",
       "path": "~/Cosmos"
     },
@@ -6701,7 +6300,6 @@
       "sortid": 401,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "black_hole_block",
       "path": "~/Cosmos"
     },
@@ -6711,7 +6309,6 @@
       "sortid": 402,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "black_hole_use",
       "metadata": {
         "dependencies": [
@@ -6741,7 +6338,6 @@
       "sortid": 403,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "experimental_stones"
     },
     {
@@ -6750,7 +6346,6 @@
       "sortid": 404,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coal_merger",
       "path": "~/Mergers/Coal"
     },
@@ -6760,7 +6355,6 @@
       "sortid": 405,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coal_merger_effect_start",
       "metadata": {
         "dependencies": [
@@ -6782,7 +6376,6 @@
       "sortid": 406,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coal_merger_effect_end",
       "metadata": {
         "dependencies": [
@@ -6800,7 +6393,6 @@
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "coal_merger_effects",
       "metadata": {
         "dependencies": [
@@ -6818,7 +6410,6 @@
       "sortid": 408,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tornado_entity",
       "path": "~/Tornado"
     },
@@ -6828,7 +6419,6 @@
       "sortid": 409,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "tame_tornado",
       "metadata": {
         "dependencies": [
@@ -6854,7 +6444,6 @@
       "sortid": 410,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "greenery",
       "metadata": {
         "eh": true,
@@ -6870,9 +6459,37 @@
       "sortid": 411,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unmultiplication_moon_stones_block",
       "path": "~/Moon"
+    },
+    {
+      "name": "DestructionEntity",
+      "type": "procedure",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Destruction"
     }
   ],
   "variable_elements": [
@@ -7114,8 +6731,8 @@
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
-      "effect.fire_master": "Master of Fire",
       "effect.power.unelemental_master": "Мастер Без Элемента",
+      "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируй Пустой Камень",
       "item.power.lightning_leggings": "Штаны Молнии",
@@ -7128,8 +6745,8 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.wooden_shield": "Древесный Щит",
+      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
@@ -7811,14 +7428,6 @@
         "children": []
       },
       {
-        "name": "Mist",
-        "children": []
-      },
-      {
-        "name": "Sand",
-        "children": []
-      },
-      {
         "name": "OtherWorldsElements",
         "children": [
           {
@@ -7843,14 +7452,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Smoke",
-        "children": []
-      },
-      {
-        "name": "Toxic",
-        "children": []
       },
       {
         "name": "Mergers",
@@ -7886,26 +7487,6 @@
         "children": []
       },
       {
-        "name": "Speed",
-        "children": []
-      },
-      {
-        "name": "Time",
-        "children": []
-      },
-      {
-        "name": "Technology",
-        "children": []
-      },
-      {
-        "name": "Teleport",
-        "children": []
-      },
-      {
-        "name": "Amber",
-        "children": []
-      },
-      {
         "name": "Commands",
         "children": []
       },
@@ -7922,7 +7503,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.2.0-dev36",
+    "version": "1.2.0-dev40",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
@@ -7940,5 +7521,5 @@
     "modElementsPackage": "ru.minefox.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100351610
+  "mcreatorVersion": 202100353117
 }
