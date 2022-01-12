@@ -1,13 +1,12 @@
 
 package ru.minefox.keepeersofthestones.entity;
 
-import ru.minefox.keepeersofthestones.procedures.BlackHoleUseProcedure;
 import ru.minefox.keepeersofthestones.init.PowerModItems;
 import ru.minefox.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,7 +26,7 @@ import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BlackHoleEntity extends AbstractArrow implements ItemSupplier {
-	public BlackHoleEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+	public BlackHoleEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(PowerModEntities.BLACK_HOLE, world);
 	}
 

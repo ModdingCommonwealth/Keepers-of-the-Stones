@@ -7516,7 +7516,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.17.1",
+    "currentGenerator": "forge-1.18.1",
     "credits": "Created by MagicalAlexey",
     "modElementsPackage": "ru.minefox.keepeersofthestones",
     "lockBaseModFiles": false

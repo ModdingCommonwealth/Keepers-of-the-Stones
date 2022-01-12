@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.LightningMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.LightningMasterEffectEndProcedure;
-import ru.minefox.keepeersofthestones.procedures.LightningEffectsProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

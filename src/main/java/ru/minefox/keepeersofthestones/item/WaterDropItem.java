@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.WaterDropUseProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.LavaMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.LavaMasterEffectEndProcedure;
-import ru.minefox.keepeersofthestones.procedures.LavaEffectsProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.TamePowerProcedure;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

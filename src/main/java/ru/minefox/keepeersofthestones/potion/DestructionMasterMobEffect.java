@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.DestructionMasterEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.DestructionMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.DestructionMasterEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

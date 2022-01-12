@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.ShadowMasterEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.ShadowMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.ShadowMasterEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

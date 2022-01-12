@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.MoonMasterEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.MoonMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.MoonMasterEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

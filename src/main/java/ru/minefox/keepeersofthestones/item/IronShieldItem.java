@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.IronShieldUseProcedure;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Rarity;

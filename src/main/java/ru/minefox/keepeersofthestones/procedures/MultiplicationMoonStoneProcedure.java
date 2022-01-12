@@ -1,7 +1,6 @@
 package ru.minefox.keepeersofthestones.procedures;
 
 import ru.minefox.keepeersofthestones.network.PowerModVariables;
-import ru.minefox.keepeersofthestones.init.PowerModBlocks;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;

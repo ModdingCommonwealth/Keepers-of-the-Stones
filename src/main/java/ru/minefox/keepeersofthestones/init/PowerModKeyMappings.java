@@ -9,11 +9,11 @@ import ru.minefox.keepeersofthestones.PowerMod;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.minecraftforge.fmlclient.registry.ClientRegistry;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.client.ClientRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;

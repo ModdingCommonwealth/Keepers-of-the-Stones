@@ -4,10 +4,7 @@
  */
 package ru.minefox.keepeersofthestones.init;
 
-import ru.minefox.keepeersofthestones.client.renderer.TornadoEntityRenderer;
 import ru.minefox.keepeersofthestones.client.renderer.TornadoCreateRenderer;
-import ru.minefox.keepeersofthestones.client.renderer.ShadowRenderer;
-import ru.minefox.keepeersofthestones.client.renderer.GlowRenderer;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

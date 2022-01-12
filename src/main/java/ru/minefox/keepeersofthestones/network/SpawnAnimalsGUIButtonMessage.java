@@ -2,14 +2,9 @@
 package ru.minefox.keepeersofthestones.network;
 
 import ru.minefox.keepeersofthestones.world.inventory.SpawnAnimalsGUIMenu;
-import ru.minefox.keepeersofthestones.procedures.SummonWolfProcedure;
-import ru.minefox.keepeersofthestones.procedures.SummonHorseProcedure;
-import ru.minefox.keepeersofthestones.procedures.SummonCowProcedure;
-import ru.minefox.keepeersofthestones.procedures.SummonChickenProcedure;
-import ru.minefox.keepeersofthestones.procedures.SummonCatProcedure;
 import ru.minefox.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

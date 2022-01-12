@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.RainStoneEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.RainMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.RainMasterEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

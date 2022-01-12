@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.GolemCreateProcedure;
-
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

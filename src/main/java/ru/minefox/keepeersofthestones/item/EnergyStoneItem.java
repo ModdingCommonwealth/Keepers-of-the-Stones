@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.EnergyStoneUseProcedure;
-import ru.minefox.keepeersofthestones.procedures.EnergyStaffUseProcedure;
 import ru.minefox.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;

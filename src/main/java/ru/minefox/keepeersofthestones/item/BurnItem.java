@@ -1,9 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.BurnProcedureProcedure;
-import ru.minefox.keepeersofthestones.procedures.BurnBlockProcedureProcedure;
-
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

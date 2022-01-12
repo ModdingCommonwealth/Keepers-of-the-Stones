@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.GeyserMergerEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.GeyserMergerEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.GeyserMergerEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

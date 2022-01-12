@@ -1,7 +1,6 @@
 
 package ru.minefox.keepeersofthestones.item;
 
-import ru.minefox.keepeersofthestones.procedures.EmptyStoneUseProcedure;
 import ru.minefox.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.Level;

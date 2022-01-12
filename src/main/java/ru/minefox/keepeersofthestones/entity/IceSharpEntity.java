@@ -1,13 +1,12 @@
 
 package ru.minefox.keepeersofthestones.entity;
 
-import ru.minefox.keepeersofthestones.procedures.IceSharpFreezingProcedure;
 import ru.minefox.keepeersofthestones.init.PowerModItems;
 import ru.minefox.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,7 +26,7 @@ import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class IceSharpEntity extends AbstractArrow implements ItemSupplier {
-	public IceSharpEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+	public IceSharpEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(PowerModEntities.ICE_SHARP, world);
 	}
 

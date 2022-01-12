@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.CoalMergerEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.CoalMergerEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.CoalMergerEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

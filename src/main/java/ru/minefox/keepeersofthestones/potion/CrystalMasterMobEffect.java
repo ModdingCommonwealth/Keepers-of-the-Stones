@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.CrystalMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.CrystalMasterEffectEndProcedure;
-import ru.minefox.keepeersofthestones.procedures.CrystalEffectsProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

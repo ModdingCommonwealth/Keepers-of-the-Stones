@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.CosmosMasterEffectsProcedure;
-import ru.minefox.keepeersofthestones.procedures.CosmosMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.CosmosMasterEffectEndProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

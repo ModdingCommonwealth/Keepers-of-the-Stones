@@ -25,7 +25,7 @@ public class WhenPlayerGoingSleepProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(world instanceof Level _lvl ? _lvl.isDay() : false)) {
+		if (!(world instanceof Level _lvl && _lvl.isDay())) {
 			DetransformKeyPriNazhatiiKlavishiProcedure.execute(entity);
 		}
 	}

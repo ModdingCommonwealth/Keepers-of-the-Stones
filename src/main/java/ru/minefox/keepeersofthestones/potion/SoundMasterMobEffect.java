@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.SoundMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.SoundMasterEffectEndProcedure;
-import ru.minefox.keepeersofthestones.procedures.SoundEffectsProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

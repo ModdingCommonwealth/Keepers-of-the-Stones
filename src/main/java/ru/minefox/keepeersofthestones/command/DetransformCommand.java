@@ -1,8 +1,6 @@
 
 package ru.minefox.keepeersofthestones.command;
 
-import ru.minefox.keepeersofthestones.procedures.DetransformKeyPriNazhatiiKlavishiProcedure;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
@@ -22,7 +20,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @Mod.EventBusSubscriber
 public class DetransformCommand {
 	@SubscribeEvent
-	public static void registerCommands(RegisterCommandsEvent event) {
+	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("detransform")
 
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(DetransformCommand::execute))

@@ -1,10 +1,6 @@
 
 package ru.minefox.keepeersofthestones.potion;
 
-import ru.minefox.keepeersofthestones.procedures.AirMasterEffectStartProcedure;
-import ru.minefox.keepeersofthestones.procedures.AirMasterEffectEndProcedure;
-import ru.minefox.keepeersofthestones.procedures.AirEffectsProcedure;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;

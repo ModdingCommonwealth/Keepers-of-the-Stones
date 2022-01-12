@@ -4,9 +4,9 @@ package ru.minefox.keepeersofthestones.item;
 import ru.minefox.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
 import ru.minefox.keepeersofthestones.item.inventory.SoundEmitateInventoryCapability;
 
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 
 import net.minecraft.world.level.block.state.BlockState;

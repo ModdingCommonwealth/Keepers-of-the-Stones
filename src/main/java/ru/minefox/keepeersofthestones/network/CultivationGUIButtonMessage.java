@@ -2,12 +2,9 @@
 package ru.minefox.keepeersofthestones.network;
 
 import ru.minefox.keepeersofthestones.world.inventory.CultivationGUIMenu;
-import ru.minefox.keepeersofthestones.procedures.GetWaterLilyProcedure;
-import ru.minefox.keepeersofthestones.procedures.GetVineProcedure;
-import ru.minefox.keepeersofthestones.procedures.GetOakSaplingProcedure;
 import ru.minefox.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
