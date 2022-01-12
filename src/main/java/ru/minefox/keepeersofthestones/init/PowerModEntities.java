@@ -8,6 +8,7 @@ import ru.minefox.keepeersofthestones.entity.WhirlpoolEntity;
 import ru.minefox.keepeersofthestones.entity.WaterFlowEntity;
 import ru.minefox.keepeersofthestones.entity.VacuumWebEntity;
 import ru.minefox.keepeersofthestones.entity.VacuumSpiralEntity;
+import ru.minefox.keepeersofthestones.entity.TornadoEntityEntity;
 import ru.minefox.keepeersofthestones.entity.TornadoCreateEntity;
 import ru.minefox.keepeersofthestones.entity.TigerClawEntity;
 import ru.minefox.keepeersofthestones.entity.SunExplodeEntity;

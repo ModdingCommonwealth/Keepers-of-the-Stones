@@ -52,6 +52,7 @@ import ru.minefox.keepeersofthestones.item.OceanItem;
 import ru.minefox.keepeersofthestones.item.MoonWitherItem;
 import ru.minefox.keepeersofthestones.item.MoonStonesItem;
 import ru.minefox.keepeersofthestones.item.MoonStoneItem;
+import ru.minefox.keepeersofthestones.item.MoonAxeItem;
 import ru.minefox.keepeersofthestones.item.MetalStoneItem;
 import ru.minefox.keepeersofthestones.item.MetalInvulnerabilityItem;
 import ru.minefox.keepeersofthestones.item.MagmaShieldItem;
