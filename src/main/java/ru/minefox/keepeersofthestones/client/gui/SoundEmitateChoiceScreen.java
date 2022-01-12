@@ -69,7 +69,7 @@ public class SoundEmitateChoiceScreen extends AbstractContainerScreen<SoundEmita
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Select the mob for emitate sound", 6, 7, -12829636);
+		this.font.draw(poseStack, "Select the mob for emitate sound", 6, 7, -12829636);
 	}
 
 	@Override

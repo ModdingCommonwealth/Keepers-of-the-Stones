@@ -51,7 +51,7 @@ public class BlackHoleEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(PowerModItems.GALACTIC_SWORD);
+		return new ItemStack(PowerModItems.BLACK_HOLE);
 	}
 
 	@Override

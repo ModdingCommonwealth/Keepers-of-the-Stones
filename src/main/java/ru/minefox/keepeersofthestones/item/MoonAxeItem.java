@@ -27,7 +27,9 @@ public class MoonAxeItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(PowerModBlocks.MOON_STONES_BLOCK, PowerModBlocks.UNMULTIPLICATION_MOON_STONES_BLOCK).contains(blockstate.getBlock()) ? 20f : 1;
+		return List.of(PowerModBlocks.MOON_STONES_BLOCK, PowerModBlocks.UNMULTIPLICATION_MOON_STONES_BLOCK).contains(blockstate.getBlock())
+				? 100f
+				: 1;
 	}
 
 	@Override
