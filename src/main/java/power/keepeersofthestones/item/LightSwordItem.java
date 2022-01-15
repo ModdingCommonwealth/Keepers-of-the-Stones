@@ -1,38 +1,51 @@
 
 package power.keepeersofthestones.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Item;
+import power.keepeersofthestones.PowerModElements;
 
-public class LightSwordItem extends SwordItem {
-	public LightSwordItem() {
-		super(new Tier() {
-			public int getUses() {
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+@PowerModElements.ModElement.Tag
+public class LightSwordItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:light_sword")
+	public static final Item block = null;
+
+	public LightSwordItem(PowerModElements instance) {
+		super(instance, 290);
+	}
+
+	@Override
+	public void initElements() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
+			public int getMaxUses() {
 				return 100;
 			}
 
-			public float getSpeed() {
+			public float getEfficiency() {
 				return 4f;
 			}
 
-			public float getAttackDamageBonus() {
+			public float getAttackDamage() {
 				return 9f;
 			}
 
-			public int getLevel() {
+			public int getHarvestLevel() {
 				return 1;
 			}
 
-			public int getEnchantmentValue() {
+			public int getEnchantability() {
 				return 2;
 			}
 
-			public Ingredient getRepairIngredient() {
+			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4000000000000001f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("light_sword");
+		}, 3, -2.4000000000000001f, new Item.Properties().group(null).isImmuneToFire()) {
+		}.setRegistryName("light_sword"));
 	}
 }

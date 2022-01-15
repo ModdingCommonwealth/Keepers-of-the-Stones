@@ -1,16 +1,25 @@
 package power.keepeersofthestones.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import power.keepeersofthestones.PowerMod;
+
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class InvincibilityEffectStartProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure InvincibilityEffectStart!");
 			return;
-		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-			if (entity instanceof Player _player) {
-				_player.getAbilities().invulnerable = (true);
-				_player.onUpdateAbilities();
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
+			if (entity instanceof PlayerEntity) {
+				((PlayerEntity) entity).abilities.disableDamage = (true);
+				((PlayerEntity) entity).sendPlayerAbilities();
 			}
 		}
 	}

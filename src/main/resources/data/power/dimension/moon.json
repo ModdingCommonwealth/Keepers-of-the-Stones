@@ -49,16 +49,10 @@
     },
     "settings": {
       "name": "power:moon",
-      "bedrock_roof_position": -2147483648,
+      "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,
       "disable_mob_generation": true,
-      "noodle_caves_enabled": false,
-      "noise_caves_enabled": false,
-      "aquifers_enabled": false,
-      "deepslate_enabled": false,
-      "ore_veins_enabled": false,
-      "min_surface_level": 0,
       "default_block": {
         "Name": "minecraft:stone"
       },
@@ -77,14 +71,14 @@
         "island_noise_override": false,
         "amplified": false,
         "sampling": {
-          "xz_scale": 0.9999999814507745,
-          "y_scale": 0.9999999814507745,
+          "xz_scale": 1,
+          "y_scale": 1,
           "xz_factor": 80,
           "y_factor": 160
         },
         "bottom_slide": {
-          "target": 15,
-          "size": 3,
+          "target": -30,
+          "size": 0,
           "offset": 0
         },
         "top_slide": {

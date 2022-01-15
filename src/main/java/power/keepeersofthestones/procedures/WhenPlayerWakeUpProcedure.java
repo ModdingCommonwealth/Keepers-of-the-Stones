@@ -1,81 +1,145 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.potion.RechargeWaterStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeVacuumStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeTornadoStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeSunStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeSoundStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeShadowStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeRainStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeOceanStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeMoonStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeMetalStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeLightningStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeLightStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeLavaStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeIceStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeGreeneryStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeFireStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeEnergyStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeEmptyStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeEarthStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeDestructionStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeCrystalStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeCreationStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeCosmosStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeAnimalsStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeAirStonePotionEffect;
+import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.World;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 
-import javax.annotation.Nullable;
+import java.util.Map;
+import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class WhenPlayerWakeUpProcedure {
-	@SubscribeEvent
-	public static void onEntityEndSleep(PlayerWakeUpEvent event) {
-		Entity entity = event.getEntity();
-		execute(event, entity);
+	@Mod.EventBusSubscriber
+	private static class GlobalTrigger {
+		@SubscribeEvent
+		public static void onEntityEndSleep(PlayerWakeUpEvent event) {
+			Entity entity = event.getEntity();
+			World world = entity.world;
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Map<String, Object> dependencies = new HashMap<>();
+			dependencies.put("x", i);
+			dependencies.put("y", j);
+			dependencies.put("z", k);
+			dependencies.put("world", world);
+			dependencies.put("entity", entity);
+			dependencies.put("event", event);
+			executeProcedure(dependencies);
+		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
-	}
-
-	private static void execute(@Nullable Event event, Entity entity) {
-		if (entity == null)
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure WhenPlayerWakeUp!");
 			return;
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_FIRE_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_AIR_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_WATER_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_EARTH_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ENERGY_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ICE_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHTNING_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SOUND_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_CRYSTAL_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LAVA_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_RAIN_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_TORNADO_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_OCEAN_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_GREENERY_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ANIMALS_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_METAL_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_EMPTY_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHT_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SHADOW_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_VACUUM_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SUN_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_MOON_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_CREATION_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_COSMOS_STONE);
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeFireStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeAirStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeWaterStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeEarthStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeEnergyStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeIceStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeLightningStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeSoundStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeCrystalStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeLavaStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeRainStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeTornadoStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeOceanStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeGreeneryStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeAnimalsStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeMetalStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeEmptyStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeLightStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeShadowStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeVacuumStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeSunStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeMoonStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeCreationStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeDestructionStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeCosmosStonePotionEffect.potion);
+		}
 	}
 }

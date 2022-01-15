@@ -1,38 +1,51 @@
 
 package power.keepeersofthestones.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Item;
+import power.keepeersofthestones.PowerModElements;
 
-public class OceanSwordItem extends SwordItem {
-	public OceanSwordItem() {
-		super(new Tier() {
-			public int getUses() {
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+@PowerModElements.ModElement.Tag
+public class OceanSwordItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:ocean_sword")
+	public static final Item block = null;
+
+	public OceanSwordItem(PowerModElements instance) {
+		super(instance, 194);
+	}
+
+	@Override
+	public void initElements() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
+			public int getMaxUses() {
 				return 5000;
 			}
 
-			public float getSpeed() {
+			public float getEfficiency() {
 				return 4f;
 			}
 
-			public float getAttackDamageBonus() {
+			public float getAttackDamage() {
 				return 7f;
 			}
 
-			public int getLevel() {
+			public int getHarvestLevel() {
 				return 1;
 			}
 
-			public int getEnchantmentValue() {
+			public int getEnchantability() {
 				return 2;
 			}
 
-			public Ingredient getRepairIngredient() {
+			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("ocean_sword");
+		}, 3, -3f, new Item.Properties().group(null).isImmuneToFire()) {
+		}.setRegistryName("ocean_sword"));
 	}
 }

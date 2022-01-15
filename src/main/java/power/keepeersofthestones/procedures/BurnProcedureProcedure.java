@@ -1,11 +1,20 @@
 package power.keepeersofthestones.procedures;
 
-import net.minecraft.world.entity.Entity;
+import power.keepeersofthestones.PowerMod;
+
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class BurnProcedureProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure BurnProcedure!");
 			return;
-		entity.setSecondsOnFire(10);
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		entity.setFire((int) 10);
 	}
 }

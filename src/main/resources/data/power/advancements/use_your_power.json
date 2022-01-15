@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "power:empty_stone"
-            ],
+            "item": "power:empty_stone",
             "count": {
               "min": 1,
               "max": 1

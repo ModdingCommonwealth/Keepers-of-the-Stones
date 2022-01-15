@@ -1,84 +1,112 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModMobEffects;
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.potion.RechargeFireStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeEarthStonePotionEffect;
+import power.keepeersofthestones.item.ShieldOfEarthItem;
+import power.keepeersofthestones.item.PieceOfEarthItem;
+import power.keepeersofthestones.item.MagicFireballItem;
+import power.keepeersofthestones.item.FistofEarthItem;
+import power.keepeersofthestones.item.FireSwordItem;
+import power.keepeersofthestones.item.FireStoneItem;
+import power.keepeersofthestones.item.FireItem;
+import power.keepeersofthestones.item.EarthStoneItem;
+import power.keepeersofthestones.item.EarthItem;
+import power.keepeersofthestones.item.BurnItem;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class CoalMergerEffectEndProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure CoalMergerEffectEnd!");
 			return;
-		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PowerModItems.EARTH_STONE);
-			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PowerModItems.FIRE_STONE);
-			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		Entity entity = (Entity) dependencies.get("entity");
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(EarthStoneItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.BURN);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(FireStoneItem.block);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.MAGIC_FIREBALL);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BurnItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_SWORD);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(MagicFireballItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.FISTOF_EARTH);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(FireSwordItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.PIECE_OF_EARTH);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(FistofEarthItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SHIELD_OF_EARTH);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(PieceOfEarthItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_HELMET);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(ShieldOfEarthItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_CHESTPLATE);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(EarthItem.helmet);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_LEGGINGS);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(FireItem.body);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_BOOTS);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(EarthItem.legs);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
 		}
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE, 6000, 0, (false), (false)));
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(FireItem.boots);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(RechargeFireStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(RechargeEarthStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
 		{
-			boolean _setval = false;
+			boolean _setval = (false);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.coal_merger = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = false;
+			boolean _setval = (false);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);

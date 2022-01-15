@@ -1,33 +1,55 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.item.TornadoBattleAxeItem;
+import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.IWorld;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class TameTornadoProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				PowerMod.LOGGER.warn("Failed to load dependency world for procedure TameTornado!");
 			return;
-		if (sourceentity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TORNADO_BATTLE_AXE))
+		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure TameTornado!");
+			return;
+		}
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				PowerMod.LOGGER.warn("Failed to load dependency sourceentity for procedure TameTornado!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if ((sourceentity instanceof PlayerEntity)
+				? ((PlayerEntity) sourceentity).inventory.hasItemStack(new ItemStack(TornadoBattleAxeItem.block))
 				: false) {
-			if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-				_toTame.tame(_owner);
+			if ((entity instanceof TameableEntity) && (sourceentity instanceof PlayerEntity)) {
+				((TameableEntity) entity).setTamed(true);
+				((TameableEntity) entity).setTamedBy((PlayerEntity) sourceentity);
+			}
 		}
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
-			private LevelAccessor world;
+			private IWorld world;
 
-			public void start(LevelAccessor world, int waitTicks) {
+			public void start(IWorld world, int waitTicks) {
 				this.waitTicks = waitTicks;
 				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
@@ -43,10 +65,10 @@ public class TameTornadoProcedure {
 			}
 
 			private void run() {
-				if (!entity.level.isClientSide())
-					entity.discard();
+				if (!entity.world.isRemote())
+					entity.remove();
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}.start(world, 400);
+		}.start(world, (int) 400);
 	}
 }
