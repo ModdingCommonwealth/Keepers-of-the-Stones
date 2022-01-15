@@ -2,8 +2,8 @@
   "_fv": 24,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Use Your Power!",
-    "achievementDescription": "Activate the Empty Stone",
+    "achievementName": "Use your power!",
+    "achievementDescription": "Activate the empty stone",
     "achievementIcon": {
       "value": "CUSTOM:EmptyStone"
     },
