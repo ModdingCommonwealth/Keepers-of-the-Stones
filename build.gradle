@@ -14,12 +14,10 @@ version = '1.0'
 group = 'com.yourname.modid'
 archivesBaseName = 'modid'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(16)
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 minecraft {
-    mappings channel: 'official', version: '1.17.1'
-
-    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    mappings channel: 'snapshot', version: '20201028-1.16.3'
 
     runs {
         client {
@@ -27,6 +25,11 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+
+            jvmArgs = [
+                    "--add-exports=java.base/sun.security.util=ALL-UNNAMED",
+                    "--add-opens=java.base/java.util.jar=ALL-UNNAMED"
+            ]
 
             mods {
                 examplemod {
@@ -41,6 +44,11 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
+            jvmArgs = [
+                    "--add-exports=java.base/sun.security.util=ALL-UNNAMED",
+                    "--add-opens=java.base/java.util.jar=ALL-UNNAMED"
+            ]
+
             mods {
                 examplemod {
                     source sourceSets.main
@@ -51,7 +59,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.17.1-37.1.1'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.20'
 }
 
 apply from: 'mcreator.gradle'
