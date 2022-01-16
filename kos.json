@@ -1,15 +1,24 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
-    "1.16.5-latest": "B2",
-    "1.17.1-latest": "1.1.15",
-    "1.17.1-recommended": "1.1.15"
+    "1.16.5-latest": "1.1.18",
+    "1.16.5-recommended": "1.1.18"
+    "1.17.1-latest": "1.1.18",
+    "1.17.1-recommended": "1.1.18"
   },
   "1.16.5": {
     "B2": "
 - Added elemental essence energy
 - Improved application of effects
 - [Bugfix] Air armor can no longer be obtained in the creative
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+   "1.1.18": "
+- Completed element - greenery
+- Slightly improved the staff of energy
+- [Bugfix] The eclipse spell will no longer be used at any time except during the day
+- [Bugfix] Fixed the staff of energy
+- [Bugfix] Fixed a bug with font shadows in interfaces
+- [Bugfix] Fixed the registry of letters in the Use your Power achievement
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
@@ -78,6 +87,14 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Improved the mechanics of the staff of energy
 - [Experimental] Added coal merge
 - [Bugfix] Fixed a bug with the disappearance of an item issued by a random item
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+   "1.1.18": "
+- Completed element - greenery
+- Slightly improved the staff of energy
+- [Bugfix] The eclipse spell will no longer be used at any time except during the day
+- [Bugfix] Fixed the staff of energy
+- [Bugfix] Fixed a bug with font shadows in interfaces
+- [Bugfix] Fixed the registry of letters in the Use your Power achievement
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }
