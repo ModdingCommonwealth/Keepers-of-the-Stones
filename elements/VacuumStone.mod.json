@@ -8,7 +8,7 @@
     "name": "Vacuum Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:ExperimentalStones"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,

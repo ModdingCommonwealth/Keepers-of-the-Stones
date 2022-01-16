@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.MoonStoneUseProcedure;
-import power.keepeersofthestones.itemgroup.ExperimentalStonesItemGroup;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -39,7 +38,7 @@ public class MoonStoneItem extends PowerModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ExperimentalStonesItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
+			super(new Item.Properties().group(null).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("moon_stone");
 		}
 
