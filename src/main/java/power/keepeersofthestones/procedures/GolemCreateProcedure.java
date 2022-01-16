@@ -62,7 +62,7 @@ public class GolemCreateProcedure {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"item replace entity @s weapon.mainhand with air");
+							"replaceitem entity @s weapon.mainhand air");
 				}
 			}
 			if (world instanceof ServerWorld) {
