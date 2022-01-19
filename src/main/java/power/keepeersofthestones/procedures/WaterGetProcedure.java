@@ -22,6 +22,8 @@ public class WaterGetProcedure {
 			}
 			PowerModVariables.WorldVariables.get(world).water_stone = true;
 			PowerModVariables.WorldVariables.get(world).syncData(world);
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 		}
 	}
 }

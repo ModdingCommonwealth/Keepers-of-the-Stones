@@ -22,6 +22,8 @@ public class FireGetProcedure {
 			}
 			PowerModVariables.WorldVariables.get(world).fire_stone = true;
 			PowerModVariables.WorldVariables.get(world).syncData(world);
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 		}
 	}
 }

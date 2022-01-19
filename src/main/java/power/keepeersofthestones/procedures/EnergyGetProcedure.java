@@ -22,6 +22,8 @@ public class EnergyGetProcedure {
 			}
 			PowerModVariables.WorldVariables.get(world).energy_stone = true;
 			PowerModVariables.WorldVariables.get(world).syncData(world);
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 		}
 	}
 }

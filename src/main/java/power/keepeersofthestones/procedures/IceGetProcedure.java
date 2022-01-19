@@ -22,6 +22,8 @@ public class IceGetProcedure {
 			}
 			PowerModVariables.MapVariables.get(world).ice_stone = true;
 			PowerModVariables.MapVariables.get(world).syncData(world);
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 		}
 	}
 }

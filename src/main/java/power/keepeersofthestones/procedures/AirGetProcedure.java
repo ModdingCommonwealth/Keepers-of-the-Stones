@@ -22,6 +22,8 @@ public class AirGetProcedure {
 			}
 			PowerModVariables.WorldVariables.get(world).air_stone = true;
 			PowerModVariables.WorldVariables.get(world).syncData(world);
+			if (entity instanceof Player _player)
+				_player.closeContainer();
 		}
 	}
 }
