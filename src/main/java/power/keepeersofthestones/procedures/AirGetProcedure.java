@@ -1,26 +1,40 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.item.AirStoneItem;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.IWorld;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class AirGetProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				PowerMod.LOGGER.warn("Failed to load dependency world for procedure AirGet!");
 			return;
+		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure AirGet!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
 		if (!PowerModVariables.WorldVariables.get(world).air_stone) {
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.AIR_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(AirStoneItem.block);
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			PowerModVariables.WorldVariables.get(world).air_stone = true;
+			PowerModVariables.WorldVariables.get(world).air_stone = (true);
 			PowerModVariables.WorldVariables.get(world).syncData(world);
 		}
 	}

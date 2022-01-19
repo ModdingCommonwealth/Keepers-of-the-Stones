@@ -51,6 +51,8 @@ public class PowerModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("power", "stone_activation")));
 		sounds.put(new ResourceLocation("power", "stone_deactivation"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("power", "stone_deactivation")));
+		sounds.put(new ResourceLocation("power", "powerful_stone"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("power", "powerful_stone")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("power").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

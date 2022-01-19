@@ -75,8 +75,8 @@ public class AdditionStoneBoxGUIGuiWindow extends ContainerScreen<AdditionStoneB
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/ocean_master.png"));
 		this.blit(ms, this.guiLeft + 79, this.guiTop + 43, 0, 0, 16, 16, 16, 16);
 
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/ice_master.png"));
-		this.blit(ms, this.guiLeft + 60, this.guiTop + 25, 0, 0, 16, 16, 16, 16);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/master_of_the_ice.png"));
+		this.blit(ms, this.guiLeft + 61, this.guiTop + 26, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
