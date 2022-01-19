@@ -1,10 +1,10 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
-    "1.16.5-latest": "1.1.18",
-    "1.16.5-recommended": "1.1.18",
-    "1.17.1-latest": "1.1.18",
-    "1.17.1-recommended": "1.1.18"
+    "1.16.5-latest": "1.1.20",
+    "1.16.5-recommended": "1.1.20",
+    "1.17.1-latest": "1.1.20",
+    "1.17.1-recommended": "1.1.20"
   },
   "1.16.5": {
     "B2": "
@@ -19,6 +19,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed the staff of energy
 - [Bugfix] Fixed a bug with font shadows in interfaces
 - [Bugfix] Fixed the registry of letters in the Use your Power achievement
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+   "1.1.20": "
+- Added a new game rule - The player receives stones when entering the world
+- [Bugfix] Fixed the stones tag
+- [Bugfix] Fixed version numbering
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
@@ -95,6 +100,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed the staff of energy
 - [Bugfix] Fixed a bug with font shadows in interfaces
 - [Bugfix] Fixed the registry of letters in the Use your Power achievement
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+   "1.1.20": "
+- Added a new game rule - The player receives stones when entering the world
+- [Bugfix] Fixed the stones tag
+- [Bugfix] Fixed version numbering
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }
