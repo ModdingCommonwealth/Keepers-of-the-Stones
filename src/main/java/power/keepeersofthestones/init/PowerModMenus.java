@@ -9,6 +9,7 @@ import power.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
 import power.keepeersofthestones.world.inventory.MediumStoneBoxGUIMenu;
 import power.keepeersofthestones.world.inventory.GreatStoneBoxGUIMenu;
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
+import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.world.inventory.BasicStoneBoxGUIMenu;
 import power.keepeersofthestones.world.inventory.AdditionalAndesiteBoxGUIMenu;
 import power.keepeersofthestones.world.inventory.AdditionStoneBoxGUIMenu;
@@ -43,6 +44,8 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new SpawnAnimalsGUIMenu(id, inv, extraData));
 	public static final MenuType<AdditionalAndesiteBoxGUIMenu> ADDITIONAL_ANDESITE_BOX_GUI = register("additional_andesite_box_gui",
 			(id, inv, extraData) -> new AdditionalAndesiteBoxGUIMenu(id, inv, extraData));
+	public static final MenuType<ChoiseMagicStoneGUIMenu> CHOISE_MAGIC_STONE_GUI = register("choise_magic_stone_gui",
+			(id, inv, extraData) -> new ChoiseMagicStoneGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

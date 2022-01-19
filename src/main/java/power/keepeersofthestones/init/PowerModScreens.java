@@ -9,6 +9,7 @@ import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
 import power.keepeersofthestones.client.gui.MediumStoneBoxGUIScreen;
 import power.keepeersofthestones.client.gui.GreatStoneBoxGUIScreen;
 import power.keepeersofthestones.client.gui.CultivationGUIScreen;
+import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
 import power.keepeersofthestones.client.gui.BasicStoneBoxGUIScreen;
 import power.keepeersofthestones.client.gui.AdditionalAndesiteBoxGUIScreen;
 import power.keepeersofthestones.client.gui.AdditionStoneBoxGUIScreen;
@@ -33,6 +34,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.CULTIVATION_GUI, CultivationGUIScreen::new);
 			MenuScreens.register(PowerModMenus.SPAWN_ANIMALS_GUI, SpawnAnimalsGUIScreen::new);
 			MenuScreens.register(PowerModMenus.ADDITIONAL_ANDESITE_BOX_GUI, AdditionalAndesiteBoxGUIScreen::new);
+			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONE_GUI, ChoiseMagicStoneGUIScreen::new);
 		});
 	}
 }

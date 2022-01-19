@@ -17,9 +17,14 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -33,6 +38,8 @@ import java.util.function.Supplier;
 public class PowerModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
+		PowerMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new,
+				SavedDataSyncMessage::handler);
 		PowerMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
 				PlayerVariablesSyncMessage::handler);
 	}
@@ -103,9 +110,158 @@ public class PowerModVariables {
 			clone.marsh_merger = original.marsh_merger;
 			clone.empty = original.empty;
 			clone.cosmos = original.cosmos;
+			clone.selected = original.selected;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+			if (!event.getPlayer().level.isClientSide()) {
+				SavedData mapdata = MapVariables.get(event.getPlayer().level);
+				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
+				if (mapdata != null)
+					PowerMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
+							new SavedDataSyncMessage(0, mapdata));
+				if (worlddata != null)
+					PowerMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
+							new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (!event.getPlayer().level.isClientSide()) {
+				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
+				if (worlddata != null)
+					PowerMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
+							new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+	}
+
+	public static class WorldVariables extends SavedData {
+		public static final String DATA_NAME = "power_worldvars";
+		public boolean fire_stone = false;
+		public boolean air_stone = false;
+		public boolean water_stone = false;
+		public boolean earth_stone = false;
+		public boolean energy_stone = false;
+
+		public static WorldVariables load(CompoundTag tag) {
+			WorldVariables data = new WorldVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+			fire_stone = nbt.getBoolean("fire_stone");
+			air_stone = nbt.getBoolean("air_stone");
+			water_stone = nbt.getBoolean("water_stone");
+			earth_stone = nbt.getBoolean("earth_stone");
+			energy_stone = nbt.getBoolean("energy_stone");
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("fire_stone", fire_stone);
+			nbt.putBoolean("air_stone", air_stone);
+			nbt.putBoolean("water_stone", water_stone);
+			nbt.putBoolean("earth_stone", earth_stone);
+			nbt.putBoolean("energy_stone", energy_stone);
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level level && !level.isClientSide())
+				PowerMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final String DATA_NAME = "power_mapvars";
+		public boolean ice_stone = false;
+
+		public static MapVariables load(CompoundTag tag) {
+			MapVariables data = new MapVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+			ice_stone = nbt.getBoolean("ice_stone");
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("ice_stone", ice_stone);
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level && !world.isClientSide())
+				PowerMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
+		}
+
+		static MapVariables clientSide = new MapVariables();
+
+		public static MapVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevelAccessor serverLevelAcc) {
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e),
+						MapVariables::new, DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class SavedDataSyncMessage {
+		public int type;
+		public SavedData data;
+
+		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
+			this.type = buffer.readInt();
+			this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
+			if (this.data instanceof MapVariables _mapvars)
+				_mapvars.read(buffer.readNbt());
+			else if (this.data instanceof WorldVariables _worldvars)
+				_worldvars.read(buffer.readNbt());
+		}
+
+		public SavedDataSyncMessage(int type, SavedData data) {
+			this.type = type;
+			this.data = data;
+		}
+
+		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
+			buffer.writeInt(message.type);
+			buffer.writeNbt(message.data.save(new CompoundTag()));
+		}
+
+		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+			NetworkEvent.Context context = contextSupplier.get();
+			context.enqueueWork(() -> {
+				if (!context.getDirection().getReceptionSide().isServer()) {
+					if (message.type == 0)
+						MapVariables.clientSide = (MapVariables) message.data;
+					else
+						WorldVariables.clientSide = (WorldVariables) message.data;
+				}
+			});
+			context.setPacketHandled(true);
 		}
 	}
 
@@ -172,6 +328,7 @@ public class PowerModVariables {
 		public boolean marsh_merger = false;
 		public boolean empty = false;
 		public boolean cosmos = false;
+		public boolean selected = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -212,6 +369,7 @@ public class PowerModVariables {
 			nbt.putBoolean("marsh_merger", marsh_merger);
 			nbt.putBoolean("empty", empty);
 			nbt.putBoolean("cosmos", cosmos);
+			nbt.putBoolean("selected", selected);
 			return nbt;
 		}
 
@@ -249,6 +407,7 @@ public class PowerModVariables {
 			marsh_merger = nbt.getBoolean("marsh_merger");
 			empty = nbt.getBoolean("empty");
 			cosmos = nbt.getBoolean("cosmos");
+			selected = nbt.getBoolean("selected");
 		}
 	}
 
@@ -306,6 +465,7 @@ public class PowerModVariables {
 					variables.marsh_merger = message.data.marsh_merger;
 					variables.empty = message.data.empty;
 					variables.cosmos = message.data.cosmos;
+					variables.selected = message.data.selected;
 				}
 			});
 			context.setPacketHandled(true);

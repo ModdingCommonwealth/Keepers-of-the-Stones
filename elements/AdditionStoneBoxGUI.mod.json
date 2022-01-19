@@ -227,11 +227,11 @@
       {
         "type": "image",
         "data": {
-          "image": "ice_master.png",
+          "image": "master_of_the_ice.png",
           "use1Xscale": false,
-          "name": "ice_master.png",
-          "x": 186,
-          "y": 62
+          "name": "master_of_the_ice.png",
+          "x": 187,
+          "y": 63
         }
       }
     ],

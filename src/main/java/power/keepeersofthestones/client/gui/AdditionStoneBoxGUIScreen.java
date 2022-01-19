@@ -68,8 +68,8 @@ public class AdditionStoneBoxGUIScreen extends AbstractContainerScreen<AdditionS
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/ocean_master.png"));
 		this.blit(ms, this.leftPos + 79, this.topPos + 43, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/ice_master.png"));
-		this.blit(ms, this.leftPos + 60, this.topPos + 25, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/master_of_the_ice.png"));
+		this.blit(ms, this.leftPos + 61, this.topPos + 26, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
