@@ -148,6 +148,15 @@ public class PowerModVariables {
 		public boolean water_stone = false;
 		public boolean earth_stone = false;
 		public boolean energy_stone = false;
+		public boolean ice_stone = false;
+		public boolean lightning_stone = false;
+		public boolean sound_stone = false;
+		public boolean crystal_stone = false;
+		public boolean lava_stone = false;
+		public boolean rain_stone = false;
+		public boolean tornado_stone = false;
+		public boolean ocean_stone = false;
+		public boolean greenery_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -161,6 +170,15 @@ public class PowerModVariables {
 			water_stone = nbt.getBoolean("water_stone");
 			earth_stone = nbt.getBoolean("earth_stone");
 			energy_stone = nbt.getBoolean("energy_stone");
+			ice_stone = nbt.getBoolean("ice_stone");
+			lightning_stone = nbt.getBoolean("lightning_stone");
+			sound_stone = nbt.getBoolean("sound_stone");
+			crystal_stone = nbt.getBoolean("crystal_stone");
+			lava_stone = nbt.getBoolean("lava_stone");
+			rain_stone = nbt.getBoolean("rain_stone");
+			tornado_stone = nbt.getBoolean("tornado_stone");
+			ocean_stone = nbt.getBoolean("ocean_stone");
+			greenery_stone = nbt.getBoolean("greenery_stone");
 		}
 
 		@Override
@@ -170,6 +188,15 @@ public class PowerModVariables {
 			nbt.putBoolean("water_stone", water_stone);
 			nbt.putBoolean("earth_stone", earth_stone);
 			nbt.putBoolean("energy_stone", energy_stone);
+			nbt.putBoolean("ice_stone", ice_stone);
+			nbt.putBoolean("lightning_stone", lightning_stone);
+			nbt.putBoolean("sound_stone", sound_stone);
+			nbt.putBoolean("crystal_stone", crystal_stone);
+			nbt.putBoolean("lava_stone", lava_stone);
+			nbt.putBoolean("rain_stone", rain_stone);
+			nbt.putBoolean("tornado_stone", tornado_stone);
+			nbt.putBoolean("ocean_stone", ocean_stone);
+			nbt.putBoolean("greenery_stone", greenery_stone);
 			return nbt;
 		}
 
@@ -192,7 +219,6 @@ public class PowerModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
-		public boolean ice_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -201,12 +227,10 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			ice_stone = nbt.getBoolean("ice_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putBoolean("ice_stone", ice_stone);
 			return nbt;
 		}
 

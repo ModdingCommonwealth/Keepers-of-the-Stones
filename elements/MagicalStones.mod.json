@@ -59,7 +59,13 @@
         "value": "CUSTOM:LightStone"
       },
       {
+        "value": "CUSTOM:ShadowStone"
+      },
+      {
         "value": "CUSTOM:VacuumStone"
+      },
+      {
+        "value": "CUSTOM:SunStone"
       },
       {
         "value": "CUSTOM:MoonStone"
@@ -77,7 +83,7 @@
     "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "magic_stones",
-    "namespace": "forge"
+    "name": "magical_stones",
+    "namespace": "mod"
   }
 }

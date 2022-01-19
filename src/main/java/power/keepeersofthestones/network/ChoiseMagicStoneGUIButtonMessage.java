@@ -3,10 +3,19 @@ package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.procedures.WaterGetProcedure;
+import power.keepeersofthestones.procedures.TornadoGetProcedure;
+import power.keepeersofthestones.procedures.SoundGetProcedure;
+import power.keepeersofthestones.procedures.RainGetProcedure;
+import power.keepeersofthestones.procedures.OceanGetProcedure;
+import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
+import power.keepeersofthestones.procedures.LightningGetProcedure;
+import power.keepeersofthestones.procedures.LavaGetProcedure;
 import power.keepeersofthestones.procedures.IceGetProcedure;
+import power.keepeersofthestones.procedures.GreeneryGetProcedure;
 import power.keepeersofthestones.procedures.FireGetProcedure;
 import power.keepeersofthestones.procedures.EnergyGetProcedure;
 import power.keepeersofthestones.procedures.EarthGetProcedure;
+import power.keepeersofthestones.procedures.CrystalGetProcedure;
 import power.keepeersofthestones.procedures.AirGetProcedure;
 import power.keepeersofthestones.PowerMod;
 
@@ -90,6 +99,42 @@ public class ChoiseMagicStoneGUIButtonMessage {
 		if (buttonID == 5) {
 
 			IceGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 6) {
+
+			LightningGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 7) {
+
+			SoundGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 8) {
+
+			CrystalGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 9) {
+
+			LavaGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 10) {
+
+			RainGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 11) {
+
+			OceanGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 12) {
+
+			GreeneryGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 13) {
+
+			TornadoGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 14) {
+
+			NextPageGUIChoiceStoneProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

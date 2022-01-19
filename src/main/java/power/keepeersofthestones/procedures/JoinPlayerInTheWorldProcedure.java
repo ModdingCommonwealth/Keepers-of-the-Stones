@@ -60,13 +60,6 @@ public class JoinPlayerInTheWorldProcedure {
 						}, _bpos);
 					}
 				}
-				{
-					boolean _setval = true;
-					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.selected = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
 			}
 		}
 	}

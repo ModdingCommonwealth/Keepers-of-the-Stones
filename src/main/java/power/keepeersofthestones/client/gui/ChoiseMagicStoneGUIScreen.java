@@ -85,10 +85,31 @@ public class ChoiseMagicStoneGUIScreen extends AbstractContainerScreen<ChoiseMag
 		this.blit(ms, this.leftPos + 217, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/ocean_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 217, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/greenery_master.png"));
-		this.blit(ms, this.leftPos + 217, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 217, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/tornado_master.png"));
+		this.blit(ms, this.leftPos + 217, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/animals_master.png"));
+		this.blit(ms, this.leftPos + 217, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/metal_master.png"));
+		this.blit(ms, this.leftPos + 307, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/light_master.png"));
+		this.blit(ms, this.leftPos + 307, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/shadow_master.png"));
+		this.blit(ms, this.leftPos + 307, this.topPos + 87, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/vacuum_master.png"));
+		this.blit(ms, this.leftPos + 307, this.topPos + 114, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/sun_master.png"));
+		this.blit(ms, this.leftPos + 307, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -159,18 +180,70 @@ public class ChoiseMagicStoneGUIScreen extends AbstractContainerScreen<ChoiseMag
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 136, this.topPos + 60, 56, 20, new TextComponent("Lightning"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(6, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 136, this.topPos + 87, 56, 20, new TextComponent("Sound"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(7, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 136, this.topPos + 114, 56, 20, new TextComponent("Crystal"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(8, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 8, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 136, this.topPos + 141, 56, 20, new TextComponent("Lava"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(9, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 33, 56, 20, new TextComponent("Rain"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(10, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 60, 56, 20, new TextComponent("Ocean"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 87, 56, 20, new TextComponent("Ocean"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(11, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 11, x, y, z);
+			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 87, 56, 20, new TextComponent("Greenery"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 114, 56, 20, new TextComponent("Greenery"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(12, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 12, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 60, 56, 20, new TextComponent("Tornado"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(13, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 13, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 316, this.topPos + 168, 72, 20, new TextComponent("Next page"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIButtonMessage(14, x, y, z));
+				ChoiseMagicStoneGUIButtonMessage.handleButtonAction(entity, 14, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 235, this.topPos + 141, 56, 20, new TextComponent("Animals"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 33, 56, 20, new TextComponent("Metal"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 60, 56, 20, new TextComponent("Light"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 87, 56, 20, new TextComponent("Shadow"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 114, 56, 20, new TextComponent("Vacuum"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 141, 56, 20, new TextComponent("Sun"), e -> {
 		}));
 	}
 }
