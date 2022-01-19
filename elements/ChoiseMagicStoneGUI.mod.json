@@ -171,6 +171,9 @@
         "type": "button",
         "data": {
           "text": "Lightning",
+          "onClick": {
+            "name": "LightningGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Lightning",
@@ -192,6 +195,9 @@
         "type": "button",
         "data": {
           "text": "Sound",
+          "onClick": {
+            "name": "SoundGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Sound",
@@ -213,6 +219,9 @@
         "type": "button",
         "data": {
           "text": "Crystal",
+          "onClick": {
+            "name": "CrystalGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Crystal",
@@ -234,6 +243,9 @@
         "type": "button",
         "data": {
           "text": "Lava",
+          "onClick": {
+            "name": "LavaGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Lava",
@@ -255,6 +267,9 @@
         "type": "button",
         "data": {
           "text": "Rain",
+          "onClick": {
+            "name": "RainGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Rain",
@@ -276,11 +291,14 @@
         "type": "button",
         "data": {
           "text": "Ocean",
+          "onClick": {
+            "name": "OceanGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Ocean",
           "x": 249,
-          "y": 80
+          "y": 107
         }
       },
       {
@@ -290,18 +308,21 @@
           "use1Xscale": false,
           "name": "ocean_master.png",
           "x": 231,
-          "y": 80
+          "y": 107
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Greenery",
+          "onClick": {
+            "name": "GreeneryGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Greenery",
           "x": 249,
-          "y": 107
+          "y": 134
         }
       },
       {
@@ -311,7 +332,171 @@
           "use1Xscale": false,
           "name": "greenery_master.png",
           "x": 231,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tornado_master.png",
+          "use1Xscale": false,
+          "name": "tornado_master.png",
+          "x": 231,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Tornado",
+          "onClick": {
+            "name": "TornadoGet"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Tornado",
+          "x": 249,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next page",
+          "onClick": {
+            "name": "NextPageGUIChoiceStone"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Next page",
+          "x": 330,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Animals",
+          "width": 56,
+          "height": 20,
+          "name": "Animals",
+          "x": 249,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Metal",
+          "width": 56,
+          "height": 20,
+          "name": "Metal",
+          "x": 339,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "animals_master.png",
+          "use1Xscale": false,
+          "name": "animals_master.png",
+          "x": 231,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "metal_master.png",
+          "use1Xscale": false,
+          "name": "metal_master.png",
+          "x": 321,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "light_master.png",
+          "use1Xscale": false,
+          "name": "light_master.png",
+          "x": 321,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Light",
+          "width": 56,
+          "height": 20,
+          "name": "Light",
+          "x": 339,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Shadow",
+          "width": 56,
+          "height": 20,
+          "name": "Shadow",
+          "x": 339,
           "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Vacuum",
+          "width": 56,
+          "height": 20,
+          "name": "Vacuum",
+          "x": 339,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sun",
+          "width": 56,
+          "height": 20,
+          "name": "Sun",
+          "x": 339,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shadow_master.png",
+          "use1Xscale": false,
+          "name": "shadow_master.png",
+          "x": 321,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vacuum_master.png",
+          "use1Xscale": false,
+          "name": "vacuum_master.png",
+          "x": 321,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sun_master.png",
+          "use1Xscale": false,
+          "name": "sun_master.png",
+          "x": 321,
+          "y": 161
         }
       }
     ],

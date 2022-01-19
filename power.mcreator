@@ -6138,14 +6138,6 @@
       "path": "~/Commands"
     },
     {
-      "name": "MagicStones",
-      "type": "tag",
-      "sortid": 388,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_stones"
-    },
-    {
       "name": "VenusDesert",
       "type": "biome",
       "sortid": 389,
@@ -6670,6 +6662,287 @@
         ]
       },
       "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "ChoiseMagicStonesPage2",
+      "type": "gui",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choise_magic_stones_page_2",
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "NextPageGUIChoiceStone",
+      "type": "procedure",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_page_gui_choice_stone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "PreviousPageGUIChoiceStones",
+      "type": "procedure",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "previous_page_gui_choice_stones",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "ResetChoiseCommand",
+      "type": "procedure",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_choise_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "ResetChoise",
+      "type": "command",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_choise",
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "MagicalStones",
+      "type": "tag",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magical_stones"
+    },
+    {
+      "name": "LightningGet",
+      "type": "procedure",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "SoundGet",
+      "type": "procedure",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "CrystalGet",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "LavaGet",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "RainGet",
+      "type": "procedure",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "TornadoGet",
+      "type": "procedure",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "OceanGet",
+      "type": "procedure",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
+    },
+    {
+      "name": "GreeneryGet",
+      "type": "procedure",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greenery_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ServerObtainStones"
     }
   ],
   "variable_elements": [
@@ -6904,7 +7177,55 @@
     {
       "name": "ice_stone",
       "type": "logic",
-      "scope": "map",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "lightning_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "sound_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "crystal_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "lava_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "rain_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "tornado_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "ocean_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "greenery_stone",
+      "type": "logic",
+      "scope": "world",
       "value": "false"
     }
   ],
@@ -7743,7 +8064,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.20-dev1",
+    "version": "1.1.20-dev2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
