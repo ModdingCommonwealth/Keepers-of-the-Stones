@@ -60,8 +60,6 @@ public class WhenPlayerWakeUpProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_METAL_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_EMPTY_STONE);
-		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHT_STONE);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_SHADOW_STONE);

@@ -6,7 +6,6 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.potion.WaterMasterMobEffect;
 import power.keepeersofthestones.potion.VacuumMasterMobEffect;
-import power.keepeersofthestones.potion.UnelementalMasterMobEffect;
 import power.keepeersofthestones.potion.TornadoMasterMobEffect;
 import power.keepeersofthestones.potion.SunMasterMobEffect;
 import power.keepeersofthestones.potion.SoundMasterMobEffect;
@@ -28,7 +27,6 @@ import power.keepeersofthestones.potion.RechargeIceStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeGreeneryStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeFireStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeEnergyStoneMobEffect;
-import power.keepeersofthestones.potion.RechargeEmptyStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeEarthStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeDestructionStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeCrystalStoneMobEffect;
@@ -106,8 +104,6 @@ public class PowerModMobEffects {
 	public static final MobEffect INVINCIBILITY = register(new InvincibilityMobEffect());
 	public static final MobEffect METAL_MASTER = register(new MetalMasterMobEffect());
 	public static final MobEffect RECHARGE_METAL_STONE = register(new RechargeMetalStoneMobEffect());
-	public static final MobEffect UNELEMENTAL_MASTER = register(new UnelementalMasterMobEffect());
-	public static final MobEffect RECHARGE_EMPTY_STONE = register(new RechargeEmptyStoneMobEffect());
 	public static final MobEffect LIGHT_MASTER = register(new LightMasterMobEffect());
 	public static final MobEffect RECHARGE_LIGHT_STONE = register(new RechargeLightStoneMobEffect());
 	public static final MobEffect SHADOW_MASTER = register(new ShadowMasterMobEffect());

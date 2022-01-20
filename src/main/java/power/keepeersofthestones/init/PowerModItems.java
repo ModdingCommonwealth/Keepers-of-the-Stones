@@ -101,7 +101,6 @@ import power.keepeersofthestones.item.EnergyStaffItem;
 import power.keepeersofthestones.item.EnergySphereItem;
 import power.keepeersofthestones.item.EnergyShieldItem;
 import power.keepeersofthestones.item.EnergyItem;
-import power.keepeersofthestones.item.EmptyStoneItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
@@ -170,7 +169,6 @@ public class PowerModItems {
 	public static final Item CREATION_STONE = register(new CreationStoneItem());
 	public static final Item DESTRUCTION_STONE = register(new DestructionStoneItem());
 	public static final Item COSMOS_STONE = register(new CosmosStoneItem());
-	public static final Item EMPTY_STONE = register(new EmptyStoneItem());
 	public static final Item GALACTIC_SWORD = register(new GalacticSwordItem());
 	public static final Item BURN = register(new BurnItem());
 	public static final Item MAGIC_FIREBALL = register(new MagicFireballItem());
