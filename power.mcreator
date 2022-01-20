@@ -2188,24 +2188,6 @@
       "path": "~/Lava"
     },
     {
-      "name": "EmptyStone",
-      "type": "item",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_stone",
-      "path": "~/Crafts"
-    },
-    {
-      "name": "EmptyStoneCraft",
-      "type": "recipe",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_stone_craft",
-      "path": "~/Crafts"
-    },
-    {
       "name": "LavaStoneUse",
       "type": "procedure",
       "sortid": 153,
@@ -2637,6 +2619,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4039,14 +4025,6 @@
       "path": "~/Metal"
     },
     {
-      "name": "MiscKoSCategory",
-      "type": "tab",
-      "sortid": 260,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "misc_ko_s_category"
-    },
-    {
       "name": "MetalMaster",
       "type": "potioneffect",
       "sortid": 261,
@@ -4300,92 +4278,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "UnelementalMasterEffectStart",
-      "type": "procedure",
-      "sortid": 276,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unelemental_master_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/EmptyStone"
-    },
-    {
-      "name": "UnelementalMasterEffectEnd",
-      "type": "procedure",
-      "sortid": 277,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unelemental_master_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/EmptyStone"
-    },
-    {
-      "name": "UnelementalMasterEffects",
-      "type": "procedure",
-      "sortid": 278,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unelemental_master_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/EmptyStone"
-    },
-    {
-      "name": "UnelementalMaster",
-      "type": "potioneffect",
-      "sortid": 279,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unelemental_master",
-      "path": "~/EmptyStone"
-    },
-    {
-      "name": "RechargeEmptyStone",
-      "type": "potioneffect",
-      "sortid": 280,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recharge_empty_stone",
-      "path": "~/EmptyStone"
-    },
-    {
-      "name": "EmptyStoneUse",
-      "type": "procedure",
-      "sortid": 281,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_stone_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/EmptyStone"
     },
     {
       "name": "WhenPlayerWakeUp",
@@ -6493,7 +6385,7 @@
       "metadata": {
         "type": "logic"
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "ChoiseMagicStoneGUI",
@@ -6502,7 +6394,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "choise_magic_stone_gui",
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "FireGet",
@@ -6523,7 +6415,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "JoinPlayerInTheWorld",
@@ -6556,7 +6448,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "AirGet",
@@ -6577,7 +6469,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "WaterGet",
@@ -6598,7 +6490,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "EarthGet",
@@ -6619,7 +6511,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "EnergyGet",
@@ -6640,7 +6532,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "IceGet",
@@ -6661,7 +6553,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "ChoiseMagicStonesPage2",
@@ -6670,7 +6562,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "choise_magic_stones_page_2",
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "NextPageGUIChoiceStone",
@@ -6703,7 +6595,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "PreviousPageGUIChoiceStones",
@@ -6736,7 +6628,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "ResetChoiseCommand",
@@ -6757,7 +6649,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "ResetChoise",
@@ -6766,7 +6658,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "reset_choise",
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "MagicalStones",
@@ -6795,7 +6687,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "SoundGet",
@@ -6816,7 +6708,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "CrystalGet",
@@ -6837,7 +6729,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "LavaGet",
@@ -6858,7 +6750,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "RainGet",
@@ -6879,7 +6771,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "TornadoGet",
@@ -6900,7 +6792,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "OceanGet",
@@ -6921,7 +6813,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     },
     {
       "name": "GreeneryGet",
@@ -6942,7 +6834,7 @@
           }
         ]
       },
-      "path": "~/ServerObtainStones"
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -7127,12 +7019,6 @@
       "value": "false"
     },
     {
-      "name": "empty",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
       "name": "cosmos",
       "type": "logic",
       "scope": "player_persistent",
@@ -7283,7 +7169,6 @@
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
       "effect.fire_master": "Master of Fire",
-      "effect.power.unelemental_master": "Мастер Без Элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
       "advancements.use_your_power.descr": "Активируйте пустой камень",
       "item.power.lightning_leggings": "Штаны Молнии",
@@ -7306,7 +7191,6 @@
       "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Огненная корона",
       "item.power.galactic_sword": "Галактический меч",
-      "itemGroup.tabmisc_ko_s_category": "Разное",
       "effect.power.crystal_master": "Мастер Кристалла",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
       "item.power.rain_chestplate": "Дождевая Накидка",
@@ -7429,7 +7313,6 @@
       "effect.power.recharge_sound_stone": "Перезарядка",
       "item.power.sai": "Саи",
       "entity.power.shadow": "Тень",
-      "effect.power.recharge_empty_stone": "Перезарядка",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -7478,7 +7361,6 @@
       "effect.recharge_metal_stone": "Recharge",
       "block.power.black_hole_block": "Блок Черной Дыры",
       "effect.coal_merger": "Coal Merger",
-      "item.power.empty_stone": "Пустой Камень",
       "item.power.spawn": "Порождение",
       "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Шлем Торнадо",
@@ -7595,7 +7477,6 @@
       "effect.power.vacuum_master": "Master of Vacuum",
       "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.fire_master": "Master of Fire",
-      "effect.power.unelemental_master": "Unelemental Master",
       "item.power.lightning_helmet": "Lightning Helmet",
       "advancements.use_your_power.descr": "Activate the empty stone",
       "item.power.lightning_leggings": "Lightning Leggings",
@@ -7618,7 +7499,6 @@
       "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
-      "itemGroup.tabmisc_ko_s_category": "Misc",
       "effect.power.crystal_master": "Master of the Crystal",
       "effect.power.recharge_vacuum_stone": "Recharge",
       "item.power.rain_chestplate": "Rain Chestplate",
@@ -7741,7 +7621,6 @@
       "effect.power.recharge_sound_stone": "Recharge",
       "item.power.sai": "Sai",
       "entity.power.shadow": "Shadow",
-      "effect.power.recharge_empty_stone": "Recharge",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
@@ -7790,7 +7669,6 @@
       "effect.recharge_metal_stone": "Recharge",
       "block.power.black_hole_block": "Black Hole Block",
       "effect.coal_merger": "Coal Merger",
-      "item.power.empty_stone": "Empty Stone",
       "item.power.spawn": "Spawn",
       "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Tornado Helmet",
@@ -7981,36 +7859,6 @@
         "children": []
       },
       {
-        "name": "Crafts",
-        "children": []
-      },
-      {
-        "name": "OtherWorldsElements",
-        "children": [
-          {
-            "name": "Nether",
-            "children": [
-              {
-                "name": "Gold",
-                "children": []
-              },
-              {
-                "name": "Blue Fire",
-                "children": []
-              },
-              {
-                "name": "Netherrack",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "End",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Mergers",
         "children": [
           {
@@ -8040,10 +7888,6 @@
         ]
       },
       {
-        "name": "EmptyStone",
-        "children": []
-      },
-      {
         "name": "Commands",
         "children": []
       },
@@ -8056,7 +7900,7 @@
         "children": []
       },
       {
-        "name": "ServerObtainStones",
+        "name": "ReceivingStones",
         "children": []
       }
     ]
@@ -8064,7 +7908,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.20",
+    "version": "1.1.30-dev1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
