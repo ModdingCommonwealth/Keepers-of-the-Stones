@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "lightning_helmet",
+    "textureHelmet": "elemental_helmet",
     "enableBody": true,
-    "textureBody": "lightning_chestplate",
+    "textureBody": "elemental_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "lightning_leggings",
+    "textureLeggings": "elemental_leggings",
     "enableBoots": true,
-    "textureBoots": "lightning_boots",
+    "textureBoots": "elemental_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },

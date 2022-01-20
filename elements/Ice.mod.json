@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ice_helmet",
+    "textureHelmet": "elemental_helmet",
     "enableBody": true,
-    "textureBody": "ice_chestplate",
+    "textureBody": "elemental_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "ice_leggings",
+    "textureLeggings": "elemental_leggings",
     "enableBoots": true,
-    "textureBoots": "ice_boots",
+    "textureBoots": "elemental_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },

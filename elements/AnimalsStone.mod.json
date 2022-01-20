@@ -8,7 +8,7 @@
     "name": "Animals Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:ExperimentalStones"
+      "value": "CUSTOM:MagicalStone"
     },
     "stackSize": 1,
     "enchantability": 0,

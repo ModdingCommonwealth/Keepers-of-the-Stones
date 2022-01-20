@@ -29,7 +29,7 @@ public class AnimalsMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AnimalsMasterEffectStartProcedure.execute(entity);
+		AnimalsMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class AnimalsMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AnimalsMasterEffectEndProcedure.execute(entity);
+		AnimalsMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

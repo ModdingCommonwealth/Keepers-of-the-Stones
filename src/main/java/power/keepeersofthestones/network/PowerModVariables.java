@@ -156,6 +156,7 @@ public class PowerModVariables {
 		public boolean tornado_stone = false;
 		public boolean ocean_stone = false;
 		public boolean greenery_stone = false;
+		public boolean animals_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -178,6 +179,7 @@ public class PowerModVariables {
 			tornado_stone = nbt.getBoolean("tornado_stone");
 			ocean_stone = nbt.getBoolean("ocean_stone");
 			greenery_stone = nbt.getBoolean("greenery_stone");
+			animals_stone = nbt.getBoolean("animals_stone");
 		}
 
 		@Override
@@ -196,6 +198,7 @@ public class PowerModVariables {
 			nbt.putBoolean("tornado_stone", tornado_stone);
 			nbt.putBoolean("ocean_stone", ocean_stone);
 			nbt.putBoolean("greenery_stone", greenery_stone);
+			nbt.putBoolean("animals_stone", animals_stone);
 			return nbt;
 		}
 

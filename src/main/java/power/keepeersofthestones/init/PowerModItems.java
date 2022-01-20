@@ -120,6 +120,7 @@ import power.keepeersofthestones.item.BurnItem;
 import power.keepeersofthestones.item.BlackHoleItem;
 import power.keepeersofthestones.item.BeeStingItem;
 import power.keepeersofthestones.item.AnimalsStoneItem;
+import power.keepeersofthestones.item.AnimalsItem;
 import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.item.AirFlowItem;
 import power.keepeersofthestones.item.AirBladeItem;
@@ -315,6 +316,9 @@ public class PowerModItems {
 	public static final Item GREENERY_LEGGINGS = register(new GreeneryItem.Leggings());
 	public static final Item GREENERY_BOOTS = register(new GreeneryItem.Boots());
 	public static final Item UNMULTIPLICATION_MOON_STONES_BLOCK = register(PowerModBlocks.UNMULTIPLICATION_MOON_STONES_BLOCK, null);
+	public static final Item ANIMALS_HELMET = register(new AnimalsItem.Helmet());
+	public static final Item ANIMALS_CHESTPLATE = register(new AnimalsItem.Chestplate());
+	public static final Item ANIMALS_LEGGINGS = register(new AnimalsItem.Leggings());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

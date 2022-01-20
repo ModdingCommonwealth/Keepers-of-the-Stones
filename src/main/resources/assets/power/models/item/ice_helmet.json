@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/ice_helmet"
+    "layer0": "power:items/elemental_helmet"
   }
 }
