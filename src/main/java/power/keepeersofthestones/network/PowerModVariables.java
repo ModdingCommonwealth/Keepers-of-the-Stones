@@ -108,7 +108,6 @@ public class PowerModVariables {
 			clone.cloud_merger = original.cloud_merger;
 			clone.mountain_merger = original.mountain_merger;
 			clone.marsh_merger = original.marsh_merger;
-			clone.empty = original.empty;
 			clone.cosmos = original.cosmos;
 			clone.selected = original.selected;
 			if (!event.isWasDeath()) {
@@ -350,7 +349,6 @@ public class PowerModVariables {
 		public boolean cloud_merger = false;
 		public boolean mountain_merger = false;
 		public boolean marsh_merger = false;
-		public boolean empty = false;
 		public boolean cosmos = false;
 		public boolean selected = false;
 
@@ -391,7 +389,6 @@ public class PowerModVariables {
 			nbt.putBoolean("cloud_merger", cloud_merger);
 			nbt.putBoolean("mountain_merger", mountain_merger);
 			nbt.putBoolean("marsh_merger", marsh_merger);
-			nbt.putBoolean("empty", empty);
 			nbt.putBoolean("cosmos", cosmos);
 			nbt.putBoolean("selected", selected);
 			return nbt;
@@ -429,7 +426,6 @@ public class PowerModVariables {
 			cloud_merger = nbt.getBoolean("cloud_merger");
 			mountain_merger = nbt.getBoolean("mountain_merger");
 			marsh_merger = nbt.getBoolean("marsh_merger");
-			empty = nbt.getBoolean("empty");
 			cosmos = nbt.getBoolean("cosmos");
 			selected = nbt.getBoolean("selected");
 		}
@@ -487,7 +483,6 @@ public class PowerModVariables {
 					variables.cloud_merger = message.data.cloud_merger;
 					variables.mountain_merger = message.data.mountain_merger;
 					variables.marsh_merger = message.data.marsh_merger;
-					variables.empty = message.data.empty;
 					variables.cosmos = message.data.cosmos;
 					variables.selected = message.data.selected;
 				}
