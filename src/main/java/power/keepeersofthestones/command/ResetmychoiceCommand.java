@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.command;
 
-import power.keepeersofthestones.procedures.ResetChoiseCommandProcedure;
+import power.keepeersofthestones.procedures.ResetmychoiceProcedureProcedure;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,13 +20,13 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
 @Mod.EventBusSubscriber
-public class ResetChoiseCommand {
+public class ResetmychoiceCommand {
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher()
-				.register(Commands.literal("resetchoise").requires(s -> s.hasPermission(1))
-						.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(ResetChoiseCommand::execute))
-						.executes(ResetChoiseCommand::execute));
+		event.getDispatcher().register(Commands.literal("resetmychoice")
+
+				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(ResetmychoiceCommand::execute))
+				.executes(ResetmychoiceCommand::execute));
 	}
 
 	private static int execute(CommandContext<CommandSourceStack> ctx) {
@@ -45,7 +45,7 @@ public class ResetChoiseCommand {
 			index[0]++;
 		});
 
-		ResetChoiseCommandProcedure.execute(world, entity);
+		ResetmychoiceProcedureProcedure.execute(world, x, y, z, entity);
 		return 0;
 	}
 }

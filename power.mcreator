@@ -5918,15 +5918,6 @@
       "path": "~/Commands"
     },
     {
-      "name": "UseYourPower",
-      "type": "achievement",
-      "sortid": 381,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "use_your_power",
-      "path": "~/Advancement"
-    },
-    {
       "name": "CosmosStone",
       "type": "item",
       "sortid": 29,
@@ -6631,36 +6622,6 @@
       "path": "~/ReceivingStones"
     },
     {
-      "name": "ResetChoiseCommand",
-      "type": "procedure",
-      "sortid": 425,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_choise_command",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ResetChoise",
-      "type": "command",
-      "sortid": 425,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset_choise",
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "MagicalStones",
       "type": "tag",
       "sortid": 426,
@@ -6834,6 +6795,48 @@
           }
         ]
       },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "ResetmychoiceProcedure",
+      "type": "procedure",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resetmychoice_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Resetmychoice",
+      "type": "command",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resetmychoice",
       "path": "~/ReceivingStones"
     }
   ],
@@ -7170,7 +7173,6 @@
       "effect.power.recharge_cosmos_stone": "Перезарядка",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
-      "advancements.use_your_power.descr": "Активируйте пустой камень",
       "item.power.lightning_leggings": "Штаны Молнии",
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
@@ -7278,7 +7280,6 @@
       "effect.power.invincibility": "Непобедимость",
       "item.power.ice_spear": "Ледяное Копьё",
       "item.power.water_chestplate": "Водный Костюм",
-      "advancements.use_your_power.title": "Используй свою силу!",
       "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Мастер Солнца",
       "effect.vacuum_master": "Master of Vacuum",
@@ -7478,7 +7479,6 @@
       "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Lightning Helmet",
-      "advancements.use_your_power.descr": "Activate the empty stone",
       "item.power.lightning_leggings": "Lightning Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
@@ -7586,7 +7586,6 @@
       "effect.power.invincibility": "Invincibility",
       "item.power.ice_spear": "Ice Spear",
       "item.power.water_chestplate": "Water Chestplate",
-      "advancements.use_your_power.title": "Use your power!",
       "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Master of Sun",
       "effect.vacuum_master": "Master of Vacuum",
@@ -7908,7 +7907,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.30-dev1",
+    "version": "1.1.30",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
