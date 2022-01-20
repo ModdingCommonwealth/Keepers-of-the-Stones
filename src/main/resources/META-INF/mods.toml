@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[36,)"
 license="All Rights Reserved"
 
 [[mods]]
@@ -18,7 +18,7 @@ This mod will add new sources of energy to the world with which you can transfor
 [[dependencies.power]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17.1]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

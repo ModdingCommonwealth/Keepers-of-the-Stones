@@ -1,5 +1,7 @@
 package power.keepeersofthestones;
 
+import power.keepeersofthestones.network.PowerModVariables;
+
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -75,6 +77,15 @@ public class PowerModVariables {
 		public boolean water_stone = false;
 		public boolean earth_stone = false;
 		public boolean energy_stone = false;
+		public boolean ice_stone = false;
+		public boolean lightning_stone = false;
+		public boolean sound_stone = false;
+		public boolean crystal_stone = false;
+		public boolean lava_stone = false;
+		public boolean rain_stone = false;
+		public boolean tornado_stone = false;
+		public boolean ocean_stone = false;
+		public boolean greenery_stone = false;
 
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -91,6 +102,15 @@ public class PowerModVariables {
 			water_stone = nbt.getBoolean("water_stone");
 			earth_stone = nbt.getBoolean("earth_stone");
 			energy_stone = nbt.getBoolean("energy_stone");
+			ice_stone = nbt.getBoolean("ice_stone");
+			lightning_stone = nbt.getBoolean("lightning_stone");
+			sound_stone = nbt.getBoolean("sound_stone");
+			crystal_stone = nbt.getBoolean("crystal_stone");
+			lava_stone = nbt.getBoolean("lava_stone");
+			rain_stone = nbt.getBoolean("rain_stone");
+			tornado_stone = nbt.getBoolean("tornado_stone");
+			ocean_stone = nbt.getBoolean("ocean_stone");
+			greenery_stone = nbt.getBoolean("greenery_stone");
 		}
 
 		@Override
@@ -100,6 +120,15 @@ public class PowerModVariables {
 			nbt.putBoolean("water_stone", water_stone);
 			nbt.putBoolean("earth_stone", earth_stone);
 			nbt.putBoolean("energy_stone", energy_stone);
+			nbt.putBoolean("ice_stone", ice_stone);
+			nbt.putBoolean("lightning_stone", lightning_stone);
+			nbt.putBoolean("sound_stone", sound_stone);
+			nbt.putBoolean("crystal_stone", crystal_stone);
+			nbt.putBoolean("lava_stone", lava_stone);
+			nbt.putBoolean("rain_stone", rain_stone);
+			nbt.putBoolean("tornado_stone", tornado_stone);
+			nbt.putBoolean("ocean_stone", ocean_stone);
+			nbt.putBoolean("greenery_stone", greenery_stone);
 			return nbt;
 		}
 
@@ -123,7 +152,6 @@ public class PowerModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "power_mapvars";
-		public boolean ice_stone = false;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -135,12 +163,10 @@ public class PowerModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			ice_stone = nbt.getBoolean("ice_stone");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putBoolean("ice_stone", ice_stone);
 			return nbt;
 		}
 
@@ -260,7 +286,6 @@ public class PowerModVariables {
 			nbt.putBoolean("cloud_merger", instance.cloud_merger);
 			nbt.putBoolean("mountain_merger", instance.mountain_merger);
 			nbt.putBoolean("marsh_merger", instance.marsh_merger);
-			nbt.putBoolean("empty", instance.empty);
 			nbt.putBoolean("cosmos", instance.cosmos);
 			nbt.putBoolean("selected", instance.selected);
 			return nbt;
@@ -299,7 +324,6 @@ public class PowerModVariables {
 			instance.cloud_merger = nbt.getBoolean("cloud_merger");
 			instance.mountain_merger = nbt.getBoolean("mountain_merger");
 			instance.marsh_merger = nbt.getBoolean("marsh_merger");
-			instance.empty = nbt.getBoolean("empty");
 			instance.cosmos = nbt.getBoolean("cosmos");
 			instance.selected = nbt.getBoolean("selected");
 		}
@@ -336,7 +360,6 @@ public class PowerModVariables {
 		public boolean cloud_merger = false;
 		public boolean mountain_merger = false;
 		public boolean marsh_merger = false;
-		public boolean empty = false;
 		public boolean cosmos = false;
 		public boolean selected = false;
 
@@ -401,7 +424,6 @@ public class PowerModVariables {
 		clone.cloud_merger = original.cloud_merger;
 		clone.mountain_merger = original.mountain_merger;
 		clone.marsh_merger = original.marsh_merger;
-		clone.empty = original.empty;
 		clone.cosmos = original.cosmos;
 		clone.selected = original.selected;
 		if (!event.isWasDeath()) {
@@ -461,7 +483,6 @@ public class PowerModVariables {
 					variables.cloud_merger = message.data.cloud_merger;
 					variables.mountain_merger = message.data.mountain_merger;
 					variables.marsh_merger = message.data.marsh_merger;
-					variables.empty = message.data.empty;
 					variables.cosmos = message.data.cosmos;
 					variables.selected = message.data.selected;
 				}

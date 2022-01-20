@@ -6,6 +6,8 @@
  */
 package power.keepeersofthestones;
 
+import power.keepeersofthestones.network.PowerModVariables;
+
 import net.minecraftforge.forgespi.language.ModFileScanData;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
