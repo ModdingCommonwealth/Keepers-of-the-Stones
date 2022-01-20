@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 @PowerModElements.ModElement.Tag
 public class GettingStonesWhenEnteringTheGameGameRule extends PowerModElements.ModElement {
 	public static final GameRules.RuleKey<GameRules.BooleanValue> gamerule = GameRules.register("gettingStonesWhenEnteringTheGame",
-			GameRules.Category.PLAYER, create(false));
+			GameRules.Category.PLAYER, create(true));
 
 	public GettingStonesWhenEnteringTheGameGameRule(PowerModElements instance) {
 		super(instance, 413);
