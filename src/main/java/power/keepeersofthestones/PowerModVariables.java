@@ -1,7 +1,5 @@
 package power.keepeersofthestones;
 
-import power.keepeersofthestones.network.PowerModVariables;
-
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

@@ -92,10 +92,31 @@ public class ChoiseMagicStoneGUIGuiWindow extends ContainerScreen<ChoiseMagicSto
 		this.blit(ms, this.guiLeft + 217, this.guiTop + 33, 0, 0, 16, 16, 16, 16);
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/ocean_master.png"));
-		this.blit(ms, this.guiLeft + 217, this.guiTop + 60, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.guiLeft + 217, this.guiTop + 87, 0, 0, 16, 16, 16, 16);
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/greenery_master.png"));
-		this.blit(ms, this.guiLeft + 217, this.guiTop + 87, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.guiLeft + 217, this.guiTop + 114, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/tornado_master.png"));
+		this.blit(ms, this.guiLeft + 217, this.guiTop + 60, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/animals_master.png"));
+		this.blit(ms, this.guiLeft + 217, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/metal_master.png"));
+		this.blit(ms, this.guiLeft + 307, this.guiTop + 33, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/light_master.png"));
+		this.blit(ms, this.guiLeft + 307, this.guiTop + 60, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/shadow_master.png"));
+		this.blit(ms, this.guiLeft + 307, this.guiTop + 87, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/vacuum_master.png"));
+		this.blit(ms, this.guiLeft + 307, this.guiTop + 114, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/sun_master.png"));
+		this.blit(ms, this.guiLeft + 307, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -195,16 +216,64 @@ public class ChoiseMagicStoneGUIGuiWindow extends ContainerScreen<ChoiseMagicSto
 				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 10, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 60, 56, 20, new StringTextComponent("Ocean"), e -> {
+		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 87, 56, 20, new StringTextComponent("Ocean"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(11, x, y, z));
 				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 11, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 87, 56, 20, new StringTextComponent("Greenery"), e -> {
+		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 114, 56, 20, new StringTextComponent("Greenery"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(12, x, y, z));
 				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 12, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 60, 56, 20, new StringTextComponent("Tornado"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(13, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 13, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 316, this.guiTop + 168, 72, 20, new StringTextComponent("Next page"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(14, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 14, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 235, this.guiTop + 141, 56, 20, new StringTextComponent("Animals"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(15, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 15, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 325, this.guiTop + 33, 56, 20, new StringTextComponent("Metal"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(16, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 16, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 325, this.guiTop + 60, 56, 20, new StringTextComponent("Light"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(17, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 17, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 325, this.guiTop + 87, 56, 20, new StringTextComponent("Shadow"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(18, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 18, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 325, this.guiTop + 114, 56, 20, new StringTextComponent("Vacuum"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(19, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 19, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 325, this.guiTop + 141, 56, 20, new StringTextComponent("Sun"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStoneGUIGui.ButtonPressedMessage(20, x, y, z));
+				ChoiseMagicStoneGUIGui.handleButtonAction(entity, 20, x, y, z);
 			}
 		}));
 	}

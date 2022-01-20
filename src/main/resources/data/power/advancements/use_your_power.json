@@ -2,7 +2,7 @@
   "display": {
     "background": "power:textures/kos_tasks_moonstone.png",
     "icon": {
-      "item": "power:empty_stone"
+      "item": "power:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.use_your_power.title"
@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "power:empty_stone",
+            "item": "power:deleted_mod_element",
             "count": {
               "min": 1,
               "max": 1

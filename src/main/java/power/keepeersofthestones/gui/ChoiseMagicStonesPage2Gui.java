@@ -1,21 +1,7 @@
 
 package power.keepeersofthestones.gui;
 
-import power.keepeersofthestones.procedures.WaterGetProcedure;
-import power.keepeersofthestones.procedures.TornadoGetProcedure;
-import power.keepeersofthestones.procedures.SoundGetProcedure;
-import power.keepeersofthestones.procedures.RainGetProcedure;
-import power.keepeersofthestones.procedures.OceanGetProcedure;
-import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
-import power.keepeersofthestones.procedures.LightningGetProcedure;
-import power.keepeersofthestones.procedures.LavaGetProcedure;
-import power.keepeersofthestones.procedures.IceGetProcedure;
-import power.keepeersofthestones.procedures.GreeneryGetProcedure;
-import power.keepeersofthestones.procedures.FireGetProcedure;
-import power.keepeersofthestones.procedures.EnergyGetProcedure;
-import power.keepeersofthestones.procedures.EarthGetProcedure;
-import power.keepeersofthestones.procedures.CrystalGetProcedure;
-import power.keepeersofthestones.procedures.AirGetProcedure;
+import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -46,12 +32,12 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @PowerModElements.ModElement.Tag
-public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
+public class ChoiseMagicStonesPage2Gui extends PowerModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 
-	public ChoiseMagicStoneGUIGui(PowerModElements instance) {
-		super(instance, 414);
+	public ChoiseMagicStonesPage2Gui(PowerModElements instance) {
+		super(instance, 422);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -63,13 +49,13 @@ public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
 		public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-			event.getRegistry().register(containerType.setRegistryName("choise_magic_stone_gui"));
+			event.getRegistry().register(containerType.setRegistryName("choise_magic_stones_page_2"));
 		}
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, ChoiseMagicStoneGUIGuiWindow::new));
+		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, ChoiseMagicStonesPage2GuiWindow::new));
 	}
 
 	public static class GuiContainerModFactory implements IContainerFactory {
@@ -199,91 +185,9 @@ public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-
-			FireGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 1) {
-
-			AirGetProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 2) {
-
-			WaterGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 3) {
-
-			EarthGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 4) {
-
-			EnergyGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 5) {
-
-			IceGetProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 6) {
-
-			LightningGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 7) {
-
-			SoundGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 8) {
-
-			CrystalGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 9) {
-
-			LavaGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 10) {
-
-			RainGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 11) {
-
-			OceanGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 12) {
-
-			GreeneryGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
 		if (buttonID == 13) {
 
-			TornadoGetProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-		if (buttonID == 14) {
-
-			NextPageGUIChoiceStoneProcedure.executeProcedure(Stream
+			PreviousPageGUIChoiceStonesProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
