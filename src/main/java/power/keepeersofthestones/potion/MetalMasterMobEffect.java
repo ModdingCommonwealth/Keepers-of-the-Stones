@@ -29,7 +29,7 @@ public class MetalMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		MetalMasterEffectStartProcedure.execute(entity);
+		MetalMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class MetalMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		MetalMasterEffectEndProcedure.execute(entity);
+		MetalMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

@@ -13,12 +13,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-public abstract class AnimalsItem extends ArmorItem {
-	public AnimalsItem(EquipmentSlot slot, Item.Properties properties) {
+public abstract class MetalItem extends ArmorItem {
+	public MetalItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 60;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			@Override
@@ -43,7 +43,7 @@ public abstract class AnimalsItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "animals";
+				return "metal";
 			}
 
 			@Override
@@ -53,44 +53,56 @@ public abstract class AnimalsItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.5f;
 			}
 		}, slot, properties);
 	}
 
-	public static class Helmet extends AnimalsItem {
+	public static class Helmet extends MetalItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("animals_helmet");
+			setRegistryName("metal_helmet");
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/animals__layer_1.png";
+			return "power:textures/models/armor/metal__layer_1.png";
 		}
 	}
 
-	public static class Chestplate extends AnimalsItem {
+	public static class Chestplate extends MetalItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("animals_chestplate");
+			setRegistryName("metal_chestplate");
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/animals__layer_1.png";
+			return "power:textures/models/armor/metal__layer_1.png";
 		}
 	}
 
-	public static class Leggings extends AnimalsItem {
+	public static class Leggings extends MetalItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("animals_leggings");
+			setRegistryName("metal_leggings");
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/animals__layer_2.png";
+			return "power:textures/models/armor/metal__layer_2.png";
+		}
+	}
+
+	public static class Boots extends MetalItem {
+		public Boots() {
+			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("metal_boots");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "power:textures/models/armor/metal__layer_1.png";
 		}
 	}
 }

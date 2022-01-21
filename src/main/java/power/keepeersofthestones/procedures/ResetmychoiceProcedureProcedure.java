@@ -25,6 +25,24 @@ public class ResetmychoiceProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("ChoiseMagicStoneGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.FIRE_STONE)) : false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_STONE);
@@ -481,6 +499,38 @@ public class ResetmychoiceProcedureProcedure {
 			}
 			PowerModVariables.WorldVariables.get(world).animals_stone = false;
 			PowerModVariables.WorldVariables.get(world).syncData(world);
+			{
+				boolean _setval = false;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.selected = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("ChoiseMagicStoneGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.METAL_STONE)) : false) {
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_STONE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			PowerModVariables.MapVariables.get(world).metal_stone = false;
+			PowerModVariables.MapVariables.get(world).syncData(world);
 			{
 				boolean _setval = false;
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

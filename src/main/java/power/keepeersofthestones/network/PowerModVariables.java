@@ -221,6 +221,7 @@ public class PowerModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
+		public boolean metal_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -229,10 +230,12 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			metal_stone = nbt.getBoolean("metal_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("metal_stone", metal_stone);
 			return nbt;
 		}
 

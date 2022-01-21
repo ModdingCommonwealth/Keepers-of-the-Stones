@@ -64,6 +64,7 @@ import power.keepeersofthestones.item.MoonStonesItem;
 import power.keepeersofthestones.item.MoonStoneItem;
 import power.keepeersofthestones.item.MoonAxeItem;
 import power.keepeersofthestones.item.MetalStoneItem;
+import power.keepeersofthestones.item.MetalItem;
 import power.keepeersofthestones.item.MetalInvulnerabilityItem;
 import power.keepeersofthestones.item.MagmaShieldItem;
 import power.keepeersofthestones.item.MagicFireballItem;
@@ -319,6 +320,10 @@ public class PowerModItems {
 	public static final Item ANIMALS_HELMET = register(new AnimalsItem.Helmet());
 	public static final Item ANIMALS_CHESTPLATE = register(new AnimalsItem.Chestplate());
 	public static final Item ANIMALS_LEGGINGS = register(new AnimalsItem.Leggings());
+	public static final Item METAL_HELMET = register(new MetalItem.Helmet());
+	public static final Item METAL_CHESTPLATE = register(new MetalItem.Chestplate());
+	public static final Item METAL_LEGGINGS = register(new MetalItem.Leggings());
+	public static final Item METAL_BOOTS = register(new MetalItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
