@@ -3725,6 +3725,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3777,6 +3793,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4080,6 +4112,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4097,6 +4145,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6838,6 +6902,78 @@
       "locked_code": false,
       "registry_name": "resetmychoice",
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Animals",
+      "type": "armor",
+      "sortid": 436,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animals",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Animals"
+    },
+    {
+      "name": "AnimalsGet",
+      "type": "procedure",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animals_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Metal",
+      "type": "armor",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Metal"
+    },
+    {
+      "name": "MetalGet",
+      "type": "procedure",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -7116,6 +7252,18 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "animals_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "metal_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -7162,6 +7310,7 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
+      "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Мастер Океана",
       "effect.power.recharge_rain_stone": "Перезарядка",
@@ -7183,8 +7332,8 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.wooden_shield": "Древесный Щит",
+      "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
@@ -7202,6 +7351,7 @@
       "effect.inferno_merger": "Inferno Merger",
       "effect.recharge_greenery_stone": "Recharge",
       "item.power.sound_boots": "Звуковые Ботинки",
+      "item.power.animals_chestplate": "Animals Chestplate",
       "effect.power.recharge_earth_stone": "Перезарядка",
       "effect.power.ice_master": "Мастер Льда",
       "item.power.magma_shield": "Магматический Щит",
@@ -7238,6 +7388,7 @@
       "effect.sound_master": "Master of Sound",
       "item.power.earth_helmet": "Земляной Монокль",
       "item.power.water_flow": "Струя Воды",
+      "item.power.metal_boots": "Metal Boots",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
       "effect.recharge_lightning_stone": "Recharge",
@@ -7263,6 +7414,7 @@
       "item.power.ocean_chestplate": "Акваланг Океана",
       "item.power.lava_leggings": "Лавовые Брюки",
       "item.power.lava_helmet": "Лавовые Очки",
+      "item.power.animals_helmet": "Animals Helmet",
       "item.power.ice_sharp": "Ледяной Осколок",
       "effect.destruction_master": "Destruction Master",
       "item.power.sun_regeneration": "Солнечное Исцеление",
@@ -7299,6 +7451,7 @@
       "item.power.tornado_boots": "Ботинки Торнадо",
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
+      "item.power.animals_boots": "Animals Ботинки",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -7324,6 +7477,7 @@
       "item.power.energy_stone": "Камень Энергии",
       "effect.energy_master": "Master of Energy",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
+      "item.power.metal_leggings": "Metal Leggings",
       "item.power.sound_helmet": "Звуковая Маска",
       "item.power.metal_stone": "Камень Металла",
       "item.power.greenery_boots": "Greenery Boots",
@@ -7370,6 +7524,7 @@
       "item.power.earth_stone": "Камень Земли",
       "item.power.crystal_stone": "Камень Кристалла",
       "effect.recharge_light_stone": "Recharge",
+      "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.fire_boots": "Огненные Ботинки",
       "block.power.stone_stone_box": "Волшебная каменная шкатулка",
       "effect.power.air_master": "Мастер Воздуха",
@@ -7411,6 +7566,7 @@
       "effect.recharge_sound_stone": "Recharge",
       "effect.recharge_empty_stone": "Recharge",
       "item.power.rain_bow": "Дождевой Лук",
+      "item.power.animals_leggings": "Animals Leggings",
       "item.power.wind_leggings": "Воздушные Штаны",
       "effect.power.cosmos_master": "Мастер Космоса",
       "item.power.rain_knife": "Дождевой Нож",
@@ -7468,6 +7624,7 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
+      "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Master of the Ocean",
       "effect.power.recharge_rain_stone": "Recharge",
@@ -7489,8 +7646,8 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "item.power.earth_leggings": "Earth Leggings",
       "item.power.wooden_shield": "Wooden Shield",
+      "item.power.earth_leggings": "Earth Leggings",
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
@@ -7508,6 +7665,7 @@
       "effect.inferno_merger": "Inferno Merger",
       "effect.recharge_greenery_stone": "Recharge",
       "item.power.sound_boots": "Sound Boots",
+      "item.power.animals_chestplate": "Animals Chestplate",
       "effect.power.recharge_earth_stone": "Recharge",
       "item.power.magma_shield": "Magma Shield",
       "effect.power.ice_master": "Master of Ice",
@@ -7544,6 +7702,7 @@
       "effect.sound_master": "Master of Sound",
       "item.power.earth_helmet": "Earth Helmet",
       "item.power.water_flow": "Water Flow",
+      "item.power.metal_boots": "Metal Boots",
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
       "effect.recharge_lightning_stone": "Recharge",
@@ -7569,6 +7728,7 @@
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
       "item.power.lava_helmet": "Lava Helmet",
+      "item.power.animals_helmet": "Animals Helmet",
       "item.power.ice_sharp": "Ice Sharp",
       "effect.destruction_master": "Destruction Master",
       "item.power.sun_regeneration": "Sun Regeneration",
@@ -7605,6 +7765,7 @@
       "item.power.tornado_boots": "Tornado Boots",
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Water Stone",
+      "item.power.animals_boots": "Animals Boots",
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
@@ -7630,6 +7791,7 @@
       "item.power.energy_stone": "Energy stone",
       "effect.energy_master": "Master of Energy",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
+      "item.power.metal_leggings": "Metal Leggings",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
       "item.power.greenery_boots": "Greenery Boots",
@@ -7676,6 +7838,7 @@
       "item.power.earth_stone": "Earth Stone",
       "item.power.crystal_stone": "Crystal Stone",
       "effect.recharge_light_stone": "Recharge",
+      "item.power.metal_chestplate": "Metal Chestplate",
       "block.power.stone_stone_box": "Wood Stone Box",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
@@ -7717,6 +7880,7 @@
       "effect.recharge_sound_stone": "Recharge",
       "effect.recharge_empty_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
+      "item.power.animals_leggings": "Animals Leggings",
       "item.power.wind_leggings": "Air Leggings",
       "effect.power.cosmos_master": "Master of Space",
       "item.power.rain_knife": "Rain Knife",
@@ -7907,7 +8071,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.30",
+    "version": "1.1.35-dev3",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "unknown",
+    "texture": "galactic_sword",
     "customModelName": "Normal",
     "name": "Galactic Sword",
     "specialInfo": [],

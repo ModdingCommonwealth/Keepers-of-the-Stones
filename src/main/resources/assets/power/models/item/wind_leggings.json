@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/air_leggings"
+    "layer0": "power:items/elemental_leggings"
   }
 }

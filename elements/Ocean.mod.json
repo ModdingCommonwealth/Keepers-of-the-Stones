@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ocean_helmet",
+    "textureHelmet": "elemental_helmet",
     "enableBody": true,
-    "textureBody": "ocean_chestplate",
+    "textureBody": "elemental_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "ocean_leggings",
+    "textureLeggings": "elemental_leggings",
     "enableBoots": true,
-    "textureBoots": "ocean_boots",
+    "textureBoots": "elemental_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },

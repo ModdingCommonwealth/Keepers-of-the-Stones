@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "untitled_10-17-2021_04-06-03",
+    "textureHelmet": "elemental_helmet",
     "enableBody": true,
-    "textureBody": "untitled_10-17-2021_04-11-38",
+    "textureBody": "elemental_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "untitled_10-17-2021_04-24-54",
+    "textureLeggings": "elemental_leggings",
     "enableBoots": true,
-    "textureBoots": "untitled_10-17-2021_04-32-32",
+    "textureBoots": "elemental_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },

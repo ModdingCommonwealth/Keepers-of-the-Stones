@@ -377,6 +377,9 @@
         "type": "button",
         "data": {
           "text": "Animals",
+          "onClick": {
+            "name": "AnimalsGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Animals",
