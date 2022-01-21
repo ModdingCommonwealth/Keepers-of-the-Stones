@@ -84,6 +84,7 @@ public class PowerModVariables {
 		public boolean tornado_stone = false;
 		public boolean ocean_stone = false;
 		public boolean greenery_stone = false;
+		public boolean animals_stone = false;
 
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -109,6 +110,7 @@ public class PowerModVariables {
 			tornado_stone = nbt.getBoolean("tornado_stone");
 			ocean_stone = nbt.getBoolean("ocean_stone");
 			greenery_stone = nbt.getBoolean("greenery_stone");
+			animals_stone = nbt.getBoolean("animals_stone");
 		}
 
 		@Override
@@ -127,6 +129,7 @@ public class PowerModVariables {
 			nbt.putBoolean("tornado_stone", tornado_stone);
 			nbt.putBoolean("ocean_stone", ocean_stone);
 			nbt.putBoolean("greenery_stone", greenery_stone);
+			nbt.putBoolean("animals_stone", animals_stone);
 			return nbt;
 		}
 
@@ -150,6 +153,7 @@ public class PowerModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "power_mapvars";
+		public boolean metal_stone = false;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -161,10 +165,12 @@ public class PowerModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			metal_stone = nbt.getBoolean("metal_stone");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putBoolean("metal_stone", metal_stone);
 			return nbt;
 		}
 
