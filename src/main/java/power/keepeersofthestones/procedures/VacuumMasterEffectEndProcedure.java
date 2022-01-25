@@ -1,85 +1,80 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.potion.RechargeVacuumStonePotionEffect;
-import power.keepeersofthestones.item.VacuumWebItem;
-import power.keepeersofthestones.item.VacuumSwordItem;
-import power.keepeersofthestones.item.VacuumStoneItem;
-import power.keepeersofthestones.item.VacuumSpiralItem;
-import power.keepeersofthestones.PowerModVariables;
-import power.keepeersofthestones.PowerMod;
+import power.keepeersofthestones.network.PowerModVariables;
+import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.init.PowerModItems;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
 
 public class VacuumMasterEffectEndProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure VacuumMasterEffectEnd!");
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
 			return;
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_deactivation")), SoundSource.PLAYERS, 1, 1);
+			} else {
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_deactivation")),
+						SoundSource.PLAYERS, 1, 1, false);
+			}
 		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity) {
-			ItemStack _setstack = new ItemStack(VacuumStoneItem.block);
-			_setstack.setCount((int) 1);
-			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = new ItemStack(PowerModItems.VACUUM_STONE);
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(VacuumSwordItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_SWORD);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(VacuumSpiralItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_SPIRAL);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(VacuumWebItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_WEB);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_HELMET);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_HELMET);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_CHESTPLATE);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_CHESTPLATE);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_LEGGINGS);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_LEGGINGS);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_BOOTS);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_BOOTS);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity)
-					.addPotionEffect(new EffectInstance(RechargeVacuumStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_VACUUM_STONE, 6000, 0, (false), (false)));
 		{
-			boolean _setval = (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.vacuum = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);

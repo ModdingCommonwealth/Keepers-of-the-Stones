@@ -1,86 +1,62 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.item.ShadowInvisibleItem;
-import power.keepeersofthestones.PowerModVariables;
-import power.keepeersofthestones.PowerMod;
+import power.keepeersofthestones.network.PowerModVariables;
+import power.keepeersofthestones.init.PowerModItems;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.client.Minecraft;
 
-import java.util.Map;
-
 public class ShadowInvisibleUseProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				PowerMod.LOGGER.warn("Failed to load dependency world for procedure ShadowInvisibleUse!");
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+		if (entity == null)
 			return;
-		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure ShadowInvisibleUse!");
-			return;
-		}
-		if (dependencies.get("itemstack") == null) {
-			if (!dependencies.containsKey("itemstack"))
-				PowerMod.LOGGER.warn("Failed to load dependency itemstack for procedure ShadowInvisibleUse!");
-			return;
-		}
-		IWorld world = (IWorld) dependencies.get("world");
-		Entity entity = (Entity) dependencies.get("entity");
-		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
-		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-				.getItem() == ShadowInvisibleItem.block) {
-			if (world.isRemote()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHADOW_INVISIBLE) {
+			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
-			}
 			{
 				Entity _ent = entity;
-				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 							"item replace entity @s weapon.mainhand with air");
-				}
 			}
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INVISIBILITY, (int) 200, (int) 254, (false), (false)));
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_HELMET);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, (false), (false)));
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_CHESTPLATE);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_LEGGINGS);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_BOOTS);
-				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-						((PlayerEntity) entity).container.func_234641_j_());
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
 			}
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
-				private IWorld world;
+				private LevelAccessor world;
 
-				public void start(IWorld world, int waitTicks) {
+				public void start(LevelAccessor world, int waitTicks) {
 					this.waitTicks = waitTicks;
 					MinecraftForge.EVENT_BUS.register(this);
 					this.world = world;
@@ -100,46 +76,42 @@ public class ShadowInvisibleUseProcedure {
 							.orElse(new PowerModVariables.PlayerVariables())).shadow) {
 						{
 							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"item replace entity @s armor.head with netherite_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
+							if (!_ent.level.isClientSide() && _ent.getServer() != null)
+								_ent.getServer().getCommands().performCommand(
+										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+										"item replace entity @s armor.head with power:shadow_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"item replace entity @s armor.chest with netherite_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
+							if (!_ent.level.isClientSide() && _ent.getServer() != null)
+								_ent.getServer().getCommands().performCommand(
+										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+										"item replace entity @s armor.chest with power:shadow_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"item replace entity @s armor.legs with netherite_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
+							if (!_ent.level.isClientSide() && _ent.getServer() != null)
+								_ent.getServer().getCommands().performCommand(
+										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+										"item replace entity @s armor.legs with power:shadow_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-										"item replace entity @s armor.feet with netherite_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
+							if (!_ent.level.isClientSide() && _ent.getServer() != null)
+								_ent.getServer().getCommands().performCommand(
+										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+										"item replace entity @s armor.feet with power:shadow_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, (int) 200);
+			}.start(world, 200);
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
-				private IWorld world;
+				private LevelAccessor world;
 
-				public void start(IWorld world, int waitTicks) {
+				public void start(LevelAccessor world, int waitTicks) {
 					this.waitTicks = waitTicks;
 					MinecraftForge.EVENT_BUS.register(this);
 					this.world = world;
@@ -157,22 +129,21 @@ public class ShadowInvisibleUseProcedure {
 				private void run() {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).shadow) {
-						if (!((entity instanceof PlayerEntity)
-								? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ShadowInvisibleItem.block))
+						if (!(entity instanceof Player _playerHasItem
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SHADOW_INVISIBLE))
 								: false)) {
 							{
 								Entity _ent = entity;
-								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-									_ent.world.getServer().getCommandManager().handleCommand(
-											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
+								if (!_ent.level.isClientSide() && _ent.getServer() != null)
+									_ent.getServer().getCommands().performCommand(
+											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 											"give @s power:shadow_invisible{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-								}
 							}
 						}
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, (int) 400);
+			}.start(world, 400);
 		}
 	}
 }

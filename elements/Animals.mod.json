@@ -8,8 +8,8 @@
     "textureBody": "elemental_chestplate",
     "enableLeggings": true,
     "textureLeggings": "elemental_leggings",
-    "enableBoots": false,
-    "textureBoots": "",
+    "enableBoots": true,
+    "textureBoots": "elemental_boots",
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -42,7 +42,7 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 60,
+    "maxDamage": 40,
     "damageValueHelmet": 8,
     "damageValueBody": 12,
     "damageValueLeggings": 10,

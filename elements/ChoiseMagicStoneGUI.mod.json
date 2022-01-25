@@ -432,6 +432,9 @@
         "type": "button",
         "data": {
           "text": "Light",
+          "onClick": {
+            "name": "LightGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Light",
@@ -443,6 +446,9 @@
         "type": "button",
         "data": {
           "text": "Shadow",
+          "onClick": {
+            "name": "ShadowGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Shadow",
@@ -454,6 +460,9 @@
         "type": "button",
         "data": {
           "text": "Vacuum",
+          "onClick": {
+            "name": "VacuumGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Vacuum",
@@ -465,6 +474,9 @@
         "type": "button",
         "data": {
           "text": "Sun",
+          "onClick": {
+            "name": "SunGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Sun",

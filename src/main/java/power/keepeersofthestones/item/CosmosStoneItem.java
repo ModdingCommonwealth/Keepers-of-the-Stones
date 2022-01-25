@@ -2,78 +2,47 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.CosmosStoneUseProcedure;
-import power.keepeersofthestones.PowerModElements;
+import power.keepeersofthestones.init.PowerModTabs;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 
-import net.minecraft.world.World;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResult;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.block.BlockState;
-
-import java.util.stream.Stream;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
-
-@PowerModElements.ModElement.Tag
-public class CosmosStoneItem extends PowerModElements.ModElement {
-	@ObjectHolder("power:cosmos_stone")
-	public static final Item block = null;
-
-	public CosmosStoneItem(PowerModElements instance) {
-		super(instance, 29);
+public class CosmosStoneItem extends Item {
+	public CosmosStoneItem() {
+		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("cosmos_stone");
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(null).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
-			setRegistryName("cosmos_stone");
-		}
+	@Override
+	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+		return 0F;
+	}
 
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
+	@Override
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
+	}
 
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		ItemStack itemstack = ar.getObject();
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
 
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 0F;
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
-
-		@Override
-		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
-			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
-			ItemStack itemstack = ar.getResult();
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-
-			CosmosStoneUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
-					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			return ar;
-		}
+		CosmosStoneUseProcedure.execute(entity);
+		return ar;
 	}
 }

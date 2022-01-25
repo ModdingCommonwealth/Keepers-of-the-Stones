@@ -1,97 +1,90 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.potion.RechargeLightStonePotionEffect;
-import power.keepeersofthestones.item.LightingItem;
-import power.keepeersofthestones.item.LightSwordItem;
-import power.keepeersofthestones.item.LightStoneItem;
-import power.keepeersofthestones.item.GlowCreateItem;
-import power.keepeersofthestones.item.FlashLightItem;
-import power.keepeersofthestones.PowerModVariables;
-import power.keepeersofthestones.PowerMod;
+import power.keepeersofthestones.network.PowerModVariables;
+import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.init.PowerModItems;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import java.util.Map;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
 
 public class LightMasterEffectEndProcedure {
-
-	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure LightMasterEffectEnd!");
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
 			return;
-		}
-		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity) {
-			ItemStack _setstack = new ItemStack(LightStoneItem.block);
-			_setstack.setCount((int) 1);
-			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(LightSwordItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(FlashLightItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(GlowCreateItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(LightingItem.block);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_HELMET);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_CHESTPLATE);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_LEGGINGS);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(Items.NETHERITE_BOOTS);
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(RechargeLightStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-		{
-			Entity _ent = entity;
-			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-				_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-						"kill @e[type=power:glow]");
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_deactivation")), SoundSource.PLAYERS, 1, 1);
+			} else {
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_deactivation")),
+						SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_STONE);
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_SWORD);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.FLASH_LIGHT);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.GLOW_CREATE);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTING);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_HELMET);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_CHESTPLATE);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_LEGGINGS);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_BOOTS);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_LIGHT_STONE, 6000, 0, (false), (false)));
 		{
-			boolean _setval = (false);
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"kill @e[type=power:glow]");
+		}
+		{
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.light = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
