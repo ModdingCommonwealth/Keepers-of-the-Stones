@@ -29,7 +29,7 @@ public class CreationMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CreationMasterEffectStartProcedure.execute(entity);
+		CreationMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class CreationMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CreationMasterEffectEndProcedure.execute(entity);
+		CreationMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

@@ -102,8 +102,16 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 60, 56, 20, new TextComponent(" Creation"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(1, x, y, z));
+				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 87, 56, 20, new TextComponent(" Destruct"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(2, x, y, z));
+				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 114, 56, 20, new TextComponent(" Cosmos"), e -> {
 		}));

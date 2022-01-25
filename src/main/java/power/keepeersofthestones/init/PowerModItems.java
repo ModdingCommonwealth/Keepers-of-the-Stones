@@ -111,6 +111,7 @@ import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
+import power.keepeersofthestones.item.DestructionItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -118,6 +119,7 @@ import power.keepeersofthestones.item.CrystalItem;
 import power.keepeersofthestones.item.CrystalDaggerItem;
 import power.keepeersofthestones.item.CrestcentItem;
 import power.keepeersofthestones.item.CreationStoneItem;
+import power.keepeersofthestones.item.CreationItem;
 import power.keepeersofthestones.item.CreateShadowItem;
 import power.keepeersofthestones.item.CosmosStoneItem;
 import power.keepeersofthestones.item.CoralShieldItem;
@@ -350,6 +352,14 @@ public class PowerModItems {
 	public static final Item VACUUM_CHESTPLATE = register(new VacuumItem.Chestplate());
 	public static final Item VACUUM_LEGGINGS = register(new VacuumItem.Leggings());
 	public static final Item VACUUM_BOOTS = register(new VacuumItem.Boots());
+	public static final Item CREATION_HELMET = register(new CreationItem.Helmet());
+	public static final Item CREATION_CHESTPLATE = register(new CreationItem.Chestplate());
+	public static final Item CREATION_LEGGINGS = register(new CreationItem.Leggings());
+	public static final Item CREATION_BOOTS = register(new CreationItem.Boots());
+	public static final Item DESTRUCTION_HELMET = register(new DestructionItem.Helmet());
+	public static final Item DESTRUCTION_CHESTPLATE = register(new DestructionItem.Chestplate());
+	public static final Item DESTRUCTION_LEGGINGS = register(new DestructionItem.Leggings());
+	public static final Item DESTRUCTION_BOOTS = register(new DestructionItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

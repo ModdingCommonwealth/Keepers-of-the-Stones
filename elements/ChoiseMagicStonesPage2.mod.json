@@ -41,6 +41,9 @@
         "type": "button",
         "data": {
           "text": " Creation",
+          "onClick": {
+            "name": "CreationGet"
+          },
           "width": 56,
           "height": 20,
           "name": " Creation",
@@ -52,6 +55,9 @@
         "type": "button",
         "data": {
           "text": " Destruct",
+          "onClick": {
+            "name": "DestructionGet"
+          },
           "width": 56,
           "height": 20,
           "name": " Destruct",

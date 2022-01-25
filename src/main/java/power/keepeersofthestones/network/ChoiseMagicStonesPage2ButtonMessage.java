@@ -4,6 +4,8 @@ package power.keepeersofthestones.network;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
 import power.keepeersofthestones.procedures.MoonGetProcedure;
+import power.keepeersofthestones.procedures.DestructionGetProcedure;
+import power.keepeersofthestones.procedures.CreationGetProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
@@ -66,6 +68,14 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		if (buttonID == 0) {
 
 			MoonGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 1) {
+
+			CreationGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 2) {
+
+			DestructionGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 13) {
 

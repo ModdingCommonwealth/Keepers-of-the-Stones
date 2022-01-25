@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class DestructionStoneItem extends Item {
 	public DestructionStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_STONES).durability(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(1).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("destruction_stone");
 	}
 

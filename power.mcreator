@@ -5803,6 +5803,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5820,6 +5836,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5991,6 +6023,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6008,6 +6056,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -7314,6 +7378,94 @@
         ]
       },
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Creation",
+      "type": "armor",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creation",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Creation"
+    },
+    {
+      "name": "Destruction",
+      "type": "armor",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Destruction"
+    },
+    {
+      "name": "CreationGet",
+      "type": "procedure",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creation_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "DestructionGet",
+      "type": "procedure",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destruction_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "RemovalProhibitedItems",
+      "type": "procedure",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "removal_prohibited_items",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7634,6 +7786,18 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "creation_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "destruction_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -7680,8 +7844,8 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
-      "effect.recharge_cosmos_stone": "Recharge",
       "item.power.metal_helmet": "Metal Helmet",
+      "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Мастер Океана",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
@@ -7731,6 +7895,7 @@
       "item.power.piece_of_earth": "Кусок Земли",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
       "biome.power.moon_land": "Лунная Земля",
+      "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Мастер Лавы",
       "item.power.lava_ball": "Лавовый Шар",
       "item.power.tp_on_venus": "Венера",
@@ -7753,6 +7918,7 @@
       "effect.power.shadow_master": "Мастер Тени",
       "effect.recharge_fire_stone": "Recharge",
       "effect.recharge_water_stone": "Recharge",
+      "item.power.creation_boots": "Creation Boots",
       "effect.power.recharge_animals_stone": "Перезарядка",
       "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
       "key.categories.stones": "Хранители Камней",
@@ -7760,6 +7926,7 @@
       "item.power.wind_helmet": "Воздушная Шапка",
       "effect.power.recharge_greenery_stone": "Перезарядка",
       "item.power.crystal_shield": "Кристаллический Щит",
+      "item.power.creation_leggings": "Creation Leggings",
       "effect.sound_master": "Master of Sound",
       "item.power.earth_helmet": "Земляной Монокль",
       "item.power.water_flow": "Струя Воды",
@@ -7773,14 +7940,17 @@
       "effect.power.tornado_master": "Мастер Торнадо",
       "item.power.energy_boots": "Энергетические Ботинки",
       "item.power.burn": "Поджёг",
+      "item.power.destruction_helmet": "Destruction Шлем",
       "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Перезарядка",
       "item.power.sun_ray": "Луч Солнца",
+      "item.power.destruction_leggings": "Destruction Поножи",
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
+      "item.power.creation_helmet": "Creation Helmet",
       "effect.power.recharge_fire_stone": "Перезарядка",
       "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Кристаллические Штаны",
@@ -7856,6 +8026,7 @@
       "effect.energy_master": "Master of Energy",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
       "item.power.metal_leggings": "Metal Leggings",
+      "item.power.destruction_boots": "Destruction Ботинки",
       "item.power.sound_helmet": "Звуковая Маска",
       "item.power.metal_stone": "Камень Металла",
       "item.power.greenery_boots": "Greenery Boots",
@@ -7935,6 +8106,7 @@
       "itemGroup.tabexperimental_stones": "Экспериментальные Камни",
       "effect.power.coal_merger": "Слияние Уголь",
       "block.power.energy_block": "Энергетический блок",
+      "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
       "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Камень Луны",
@@ -8014,8 +8186,8 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
-      "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
+      "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Master of the Ocean",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
@@ -8065,6 +8237,7 @@
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
+      "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Master of Lava",
       "item.power.lava_ball": "Lava Ball",
       "item.power.tp_on_venus": "Tp On Venus",
@@ -8087,6 +8260,7 @@
       "effect.power.shadow_master": "Master of Shadow",
       "effect.recharge_water_stone": "Recharge",
       "effect.recharge_fire_stone": "Recharge",
+      "item.power.creation_boots": "Creation Boots",
       "effect.power.recharge_animals_stone": "Recharge",
       "item.power.shadow_spawn_egg": "Shadow Spawn Egg",
       "key.categories.stones": "Keepers of the Stones",
@@ -8094,6 +8268,7 @@
       "item.power.wind_helmet": "Air Helmet",
       "item.power.crystal_shield": "Crystal Shield",
       "effect.power.recharge_greenery_stone": "Recharge",
+      "item.power.creation_leggings": "Creation Leggings",
       "effect.sound_master": "Master of Sound",
       "item.power.earth_helmet": "Earth Helmet",
       "item.power.water_flow": "Water Flow",
@@ -8107,14 +8282,17 @@
       "effect.power.tornado_master": "Master of Tornado",
       "item.power.energy_boots": "Energy Boots",
       "item.power.burn": "Burn",
+      "item.power.destruction_helmet": "Destruction Шлем",
       "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Recharge",
       "item.power.sun_ray": "Sun Ray",
+      "item.power.destruction_leggings": "Destruction Поножи",
       "effect.recharge_air_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
       "item.power.crestcent_boots": "Crestcent Boots",
       "item.power.ice_leggings": "Ice Leggings",
       "item.power.energy_staff": "Energy Staff",
+      "item.power.creation_helmet": "Creation Helmet",
       "effect.power.recharge_fire_stone": "Recharge",
       "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Crystal Leggings",
@@ -8190,6 +8368,7 @@
       "effect.energy_master": "Master of Energy",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.metal_leggings": "Metal Leggings",
+      "item.power.destruction_boots": "Destruction Ботинки",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
       "item.power.greenery_boots": "Greenery Boots",
@@ -8269,6 +8448,7 @@
       "itemGroup.tabexperimental_stones": "Experimental Stones",
       "effect.power.coal_merger": "Coal Merger",
       "block.power.energy_block": "Energy Block",
+      "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
       "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Moon Stone",
@@ -8481,7 +8661,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.1.35-dev4",
+    "version": "1.2.0-dev51",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

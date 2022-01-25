@@ -29,7 +29,7 @@ public class DestructionMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		DestructionMasterEffectStartProcedure.execute(entity);
+		DestructionMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class DestructionMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		DestructionMasterEffectEndProcedure.execute(entity);
+		DestructionMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
