@@ -2,12 +2,16 @@
 package power.keepeersofthestones.gui;
 
 import power.keepeersofthestones.procedures.WaterGetProcedure;
+import power.keepeersofthestones.procedures.VacuumGetProcedure;
 import power.keepeersofthestones.procedures.TornadoGetProcedure;
+import power.keepeersofthestones.procedures.SunGetProcedure;
 import power.keepeersofthestones.procedures.SoundGetProcedure;
+import power.keepeersofthestones.procedures.ShadowGetProcedure;
 import power.keepeersofthestones.procedures.RainGetProcedure;
 import power.keepeersofthestones.procedures.OceanGetProcedure;
 import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
 import power.keepeersofthestones.procedures.LightningGetProcedure;
+import power.keepeersofthestones.procedures.LightGetProcedure;
 import power.keepeersofthestones.procedures.LavaGetProcedure;
 import power.keepeersofthestones.procedures.IceGetProcedure;
 import power.keepeersofthestones.procedures.GreeneryGetProcedure;
@@ -294,6 +298,29 @@ public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
 			AnimalsGetProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 17) {
+
+			LightGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 18) {
+
+			ShadowGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 19) {
+
+			VacuumGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 20) {
+
+			SunGetProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 

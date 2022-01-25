@@ -85,6 +85,15 @@ public class PowerModVariables {
 		public boolean ocean_stone = false;
 		public boolean greenery_stone = false;
 		public boolean animals_stone = false;
+		public boolean metal_stone = false;
+		public boolean light_stone = false;
+		public boolean shadow_stone = false;
+		public boolean vacuum_stone = false;
+		public boolean sun_stone = false;
+		public boolean moon_stone = false;
+		public boolean creation_stone = false;
+		public boolean destruction_stone = false;
+		public boolean cosmos_stone = false;
 
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -111,6 +120,15 @@ public class PowerModVariables {
 			ocean_stone = nbt.getBoolean("ocean_stone");
 			greenery_stone = nbt.getBoolean("greenery_stone");
 			animals_stone = nbt.getBoolean("animals_stone");
+			metal_stone = nbt.getBoolean("metal_stone");
+			light_stone = nbt.getBoolean("light_stone");
+			shadow_stone = nbt.getBoolean("shadow_stone");
+			vacuum_stone = nbt.getBoolean("vacuum_stone");
+			sun_stone = nbt.getBoolean("sun_stone");
+			moon_stone = nbt.getBoolean("moon_stone");
+			creation_stone = nbt.getBoolean("creation_stone");
+			destruction_stone = nbt.getBoolean("destruction_stone");
+			cosmos_stone = nbt.getBoolean("cosmos_stone");
 		}
 
 		@Override
@@ -130,6 +148,15 @@ public class PowerModVariables {
 			nbt.putBoolean("ocean_stone", ocean_stone);
 			nbt.putBoolean("greenery_stone", greenery_stone);
 			nbt.putBoolean("animals_stone", animals_stone);
+			nbt.putBoolean("metal_stone", metal_stone);
+			nbt.putBoolean("light_stone", light_stone);
+			nbt.putBoolean("shadow_stone", shadow_stone);
+			nbt.putBoolean("vacuum_stone", vacuum_stone);
+			nbt.putBoolean("sun_stone", sun_stone);
+			nbt.putBoolean("moon_stone", moon_stone);
+			nbt.putBoolean("creation_stone", creation_stone);
+			nbt.putBoolean("destruction_stone", destruction_stone);
+			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			return nbt;
 		}
 
@@ -153,7 +180,6 @@ public class PowerModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "power_mapvars";
-		public boolean metal_stone = false;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -165,12 +191,10 @@ public class PowerModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			metal_stone = nbt.getBoolean("metal_stone");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putBoolean("metal_stone", metal_stone);
 			return nbt;
 		}
 
