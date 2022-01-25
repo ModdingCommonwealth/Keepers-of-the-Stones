@@ -165,6 +165,7 @@ public class PowerModVariables {
 		public boolean moon_stone = false;
 		public boolean creation_stone = false;
 		public boolean destruction_stone = false;
+		public boolean cosmos_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -196,6 +197,7 @@ public class PowerModVariables {
 			moon_stone = nbt.getBoolean("moon_stone");
 			creation_stone = nbt.getBoolean("creation_stone");
 			destruction_stone = nbt.getBoolean("destruction_stone");
+			cosmos_stone = nbt.getBoolean("cosmos_stone");
 		}
 
 		@Override
@@ -223,6 +225,7 @@ public class PowerModVariables {
 			nbt.putBoolean("moon_stone", moon_stone);
 			nbt.putBoolean("creation_stone", creation_stone);
 			nbt.putBoolean("destruction_stone", destruction_stone);
+			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			return nbt;
 		}
 

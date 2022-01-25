@@ -29,7 +29,7 @@ public class CosmosMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CosmosMasterEffectStartProcedure.execute(entity);
+		CosmosMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class CosmosMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CosmosMasterEffectEndProcedure.execute(entity);
+		CosmosMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

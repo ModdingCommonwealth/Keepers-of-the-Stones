@@ -781,5 +781,37 @@ public class ResetmychoiceProcedureProcedure {
 				}
 			}
 		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.COSMOS_STONE)) : false) {
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_STONE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			PowerModVariables.WorldVariables.get(world).cosmos_stone = false;
+			PowerModVariables.WorldVariables.get(world).syncData(world);
+			{
+				boolean _setval = false;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.selected = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("ChoiseMagicStoneGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
 	}
 }

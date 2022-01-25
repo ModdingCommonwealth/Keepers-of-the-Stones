@@ -122,6 +122,7 @@ import power.keepeersofthestones.item.CreationStoneItem;
 import power.keepeersofthestones.item.CreationItem;
 import power.keepeersofthestones.item.CreateShadowItem;
 import power.keepeersofthestones.item.CosmosStoneItem;
+import power.keepeersofthestones.item.CosmosItem;
 import power.keepeersofthestones.item.CoralShieldItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
 import power.keepeersofthestones.item.BurnItem;
@@ -360,6 +361,10 @@ public class PowerModItems {
 	public static final Item DESTRUCTION_CHESTPLATE = register(new DestructionItem.Chestplate());
 	public static final Item DESTRUCTION_LEGGINGS = register(new DestructionItem.Leggings());
 	public static final Item DESTRUCTION_BOOTS = register(new DestructionItem.Boots());
+	public static final Item COSMOS_HELMET = register(new CosmosItem.Helmet());
+	public static final Item COSMOS_CHESTPLATE = register(new CosmosItem.Chestplate());
+	public static final Item COSMOS_LEGGINGS = register(new CosmosItem.Leggings());
+	public static final Item COSMOS_BOOTS = register(new CosmosItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

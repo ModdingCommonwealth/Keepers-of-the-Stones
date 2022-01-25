@@ -6,6 +6,7 @@ import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure
 import power.keepeersofthestones.procedures.MoonGetProcedure;
 import power.keepeersofthestones.procedures.DestructionGetProcedure;
 import power.keepeersofthestones.procedures.CreationGetProcedure;
+import power.keepeersofthestones.procedures.CosmosGetProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
@@ -76,6 +77,10 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		if (buttonID == 2) {
 
 			DestructionGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 3) {
+
+			CosmosGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 13) {
 
