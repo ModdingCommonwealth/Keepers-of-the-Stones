@@ -110,6 +110,7 @@ public class PowerModVariables {
 			clone.marsh_merger = original.marsh_merger;
 			clone.cosmos = original.cosmos;
 			clone.selected = original.selected;
+			clone.blood = original.blood;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 			}
@@ -166,6 +167,7 @@ public class PowerModVariables {
 		public boolean creation_stone = false;
 		public boolean destruction_stone = false;
 		public boolean cosmos_stone = false;
+		public boolean blood_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -198,6 +200,7 @@ public class PowerModVariables {
 			creation_stone = nbt.getBoolean("creation_stone");
 			destruction_stone = nbt.getBoolean("destruction_stone");
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
+			blood_stone = nbt.getBoolean("blood_stone");
 		}
 
 		@Override
@@ -226,6 +229,7 @@ public class PowerModVariables {
 			nbt.putBoolean("creation_stone", creation_stone);
 			nbt.putBoolean("destruction_stone", destruction_stone);
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
+			nbt.putBoolean("blood_stone", blood_stone);
 			return nbt;
 		}
 
@@ -381,6 +385,7 @@ public class PowerModVariables {
 		public boolean marsh_merger = false;
 		public boolean cosmos = false;
 		public boolean selected = false;
+		public boolean blood = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -421,6 +426,7 @@ public class PowerModVariables {
 			nbt.putBoolean("marsh_merger", marsh_merger);
 			nbt.putBoolean("cosmos", cosmos);
 			nbt.putBoolean("selected", selected);
+			nbt.putBoolean("blood", blood);
 			return nbt;
 		}
 
@@ -458,6 +464,7 @@ public class PowerModVariables {
 			marsh_merger = nbt.getBoolean("marsh_merger");
 			cosmos = nbt.getBoolean("cosmos");
 			selected = nbt.getBoolean("selected");
+			blood = nbt.getBoolean("blood");
 		}
 	}
 
@@ -515,6 +522,7 @@ public class PowerModVariables {
 					variables.marsh_merger = message.data.marsh_merger;
 					variables.cosmos = message.data.cosmos;
 					variables.selected = message.data.selected;
+					variables.blood = message.data.blood;
 				}
 			});
 			context.setPacketHandled(true);

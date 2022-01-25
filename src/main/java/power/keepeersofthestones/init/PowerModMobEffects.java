@@ -32,6 +32,7 @@ import power.keepeersofthestones.potion.RechargeDestructionStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeCrystalStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeCreationStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeCosmosStoneMobEffect;
+import power.keepeersofthestones.potion.RechargeBloodStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeAnimalsStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeAirStoneMobEffect;
 import power.keepeersofthestones.potion.RainMasterMobEffect;
@@ -54,6 +55,7 @@ import power.keepeersofthestones.potion.CrystalMasterMobEffect;
 import power.keepeersofthestones.potion.CreationMasterMobEffect;
 import power.keepeersofthestones.potion.CosmosMasterMobEffect;
 import power.keepeersofthestones.potion.CoalMergerMobEffect;
+import power.keepeersofthestones.potion.BloodMasterMobEffect;
 import power.keepeersofthestones.potion.AnimalsMasterMobEffect;
 import power.keepeersofthestones.potion.AirMasterMobEffect;
 
@@ -121,6 +123,8 @@ public class PowerModMobEffects {
 	public static final MobEffect COSMOS_MASTER = register(new CosmosMasterMobEffect());
 	public static final MobEffect RECHARGE_COSMOS_STONE = register(new RechargeCosmosStoneMobEffect());
 	public static final MobEffect COAL_MERGER = register(new CoalMergerMobEffect());
+	public static final MobEffect RECHARGE_BLOOD_STONE = register(new RechargeBloodStoneMobEffect());
+	public static final MobEffect BLOOD_MASTER = register(new BloodMasterMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

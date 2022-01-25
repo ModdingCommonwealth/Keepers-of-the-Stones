@@ -7530,6 +7530,169 @@
         ]
       },
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "BloodStone",
+      "type": "item",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_stone",
+      "path": "~/Blood"
+    },
+    {
+      "name": "RechargeBloodStone",
+      "type": "potioneffect",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_blood_stone",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodMaster",
+      "type": "potioneffect",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_master",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodStoneUse",
+      "type": "procedure",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodMasterEffectStart",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "Blood",
+      "type": "armor",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodGet",
+      "type": "procedure",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "BloodEffects",
+      "type": "procedure",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
     }
   ],
   "variable_elements": [
@@ -7868,6 +8031,18 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "blood",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "blood_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -7914,8 +8089,8 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
-      "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
+      "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Мастер Океана",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
@@ -7926,6 +8101,7 @@
       "effect.power.recharge_cosmos_stone": "Перезарядка",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
+      "item.power.blood_boots": "Blood Boots",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Штаны Молнии",
       "item.power.fire_chestplate": "Огненная Мантия",
@@ -7968,6 +8144,7 @@
       "biome.power.moon_land": "Лунная Земля",
       "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Мастер Лавы",
+      "effect.power.blood_master": "Мастер Крови",
       "item.power.lava_ball": "Лавовый Шар",
       "item.power.tp_on_venus": "Венера",
       "item.power.energy_chestplate": "Энергетическая Кираса",
@@ -8019,6 +8196,7 @@
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
+      "effect.power.recharge_blood_stone": "Recharge",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
       "item.power.creation_helmet": "Creation Helmet",
@@ -8043,6 +8221,7 @@
       "block.power.gold_stone_box": "Волшебная золотая шкатулка",
       "effect.tornado_master": "Мастер Торнадо",
       "item.power.fire_stone": "Камень Огня",
+      "item.power.blood_stone": "Камень Крови",
       "item.power.water_drop": "Капли Воды",
       "item.power.rain_boots": "Дождевые Сапоги",
       "item.power.tornado_leggings": "Штаны Торнадо",
@@ -8135,6 +8314,7 @@
       "item.power.sound_barrier": "Звуковой барьер",
       "effect.recharge_ice_stone": "Recharge",
       "item.power.destruction_stone": "Камень Разрушения",
+      "item.power.blood_leggings": "Blood Leggings",
       "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
@@ -8173,6 +8353,7 @@
       "item.power.cosmos_chestplate": "Cosmos Chestplate",
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
+      "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Солнечная Секира",
       "effect.ocean_master": "Master of the Ocean",
@@ -8205,6 +8386,7 @@
       "item.power.cosmos_helmet": "Cosmos Helmet",
       "item.power.rain_knife": "Дождевой Нож",
       "effect.recharge_destruction_stone": "Recharge",
+      "item.power.blood_helmet": "Blood Helmet",
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
@@ -8254,14 +8436,14 @@
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "item.power.rainfall": "Rainfall",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
-      "effect.recharge_cosmos_stone": "Recharge",
       "item.power.metal_helmet": "Metal Helmet",
+      "effect.recharge_cosmos_stone": "Recharge",
       "effect.power.ocean_master": "Master of the Ocean",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
@@ -8272,6 +8454,7 @@
       "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Lightning Helmet",
+      "item.power.blood_boots": "Blood Boots",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Lightning Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
@@ -8314,6 +8497,7 @@
       "biome.power.moon_land": "Moon Land",
       "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Master of Lava",
+      "effect.power.blood_master": "Master of Blood",
       "item.power.lava_ball": "Lava Ball",
       "item.power.tp_on_venus": "Tp On Venus",
       "item.power.energy_chestplate": "Energy Chestplate",
@@ -8365,6 +8549,7 @@
       "effect.recharge_air_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
       "item.power.crestcent_boots": "Crestcent Boots",
+      "effect.power.recharge_blood_stone": "Recharge",
       "item.power.ice_leggings": "Ice Leggings",
       "item.power.energy_staff": "Energy Staff",
       "item.power.creation_helmet": "Creation Helmet",
@@ -8389,6 +8574,7 @@
       "block.power.gold_stone_box": "Gold Stone Box",
       "effect.tornado_master": "Master of Tornado",
       "item.power.fire_stone": "Fire stone",
+      "item.power.blood_stone": "Blood Stone",
       "item.power.water_drop": "Water Drops",
       "item.power.rain_boots": "Rain Boots",
       "item.power.tornado_leggings": "Tornado Leggings",
@@ -8481,6 +8667,7 @@
       "item.power.sound_barrier": "Sound Barrier",
       "effect.recharge_ice_stone": "Recharge",
       "item.power.destruction_stone": "Destruction Stone",
+      "item.power.blood_leggings": "Blood Leggings",
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
@@ -8519,6 +8706,7 @@
       "item.power.cosmos_chestplate": "Cosmos Chestplate",
       "item.power.sound_chestplate": "Sound Chestplate",
       "item.power.flash_light": "Flash Light",
+      "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "effect.ocean_master": "Master of the Ocean",
       "item.power.sun_axe": "Sun Axe",
@@ -8551,6 +8739,7 @@
       "item.power.cosmos_helmet": "Cosmos Helmet",
       "item.power.rain_knife": "Rain Knife",
       "effect.recharge_destruction_stone": "Recharge",
+      "item.power.blood_helmet": "Blood Helmet",
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
@@ -8732,6 +8921,10 @@
       },
       {
         "name": "ReceivingStones",
+        "children": []
+      },
+      {
+        "name": "Blood",
         "children": []
       }
     ]
