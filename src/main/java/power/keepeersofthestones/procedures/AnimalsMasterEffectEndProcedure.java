@@ -64,6 +64,10 @@ public class AnimalsMasterEffectEndProcedure {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_LEGGINGS);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_BOOTS);
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_ANIMALS_STONE, 6000, 0, (false), (false)));
 		{

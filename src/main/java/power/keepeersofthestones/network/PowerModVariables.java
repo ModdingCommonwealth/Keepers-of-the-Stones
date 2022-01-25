@@ -157,6 +157,12 @@ public class PowerModVariables {
 		public boolean ocean_stone = false;
 		public boolean greenery_stone = false;
 		public boolean animals_stone = false;
+		public boolean metal_stone = false;
+		public boolean light_stone = false;
+		public boolean shadow_stone = false;
+		public boolean vacuum_stone = false;
+		public boolean sun_stone = false;
+		public boolean moon_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -180,6 +186,12 @@ public class PowerModVariables {
 			ocean_stone = nbt.getBoolean("ocean_stone");
 			greenery_stone = nbt.getBoolean("greenery_stone");
 			animals_stone = nbt.getBoolean("animals_stone");
+			metal_stone = nbt.getBoolean("metal_stone");
+			light_stone = nbt.getBoolean("light_stone");
+			shadow_stone = nbt.getBoolean("shadow_stone");
+			vacuum_stone = nbt.getBoolean("vacuum_stone");
+			sun_stone = nbt.getBoolean("sun_stone");
+			moon_stone = nbt.getBoolean("moon_stone");
 		}
 
 		@Override
@@ -199,6 +211,12 @@ public class PowerModVariables {
 			nbt.putBoolean("ocean_stone", ocean_stone);
 			nbt.putBoolean("greenery_stone", greenery_stone);
 			nbt.putBoolean("animals_stone", animals_stone);
+			nbt.putBoolean("metal_stone", metal_stone);
+			nbt.putBoolean("light_stone", light_stone);
+			nbt.putBoolean("shadow_stone", shadow_stone);
+			nbt.putBoolean("vacuum_stone", vacuum_stone);
+			nbt.putBoolean("sun_stone", sun_stone);
+			nbt.putBoolean("moon_stone", moon_stone);
 			return nbt;
 		}
 
@@ -221,7 +239,6 @@ public class PowerModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
-		public boolean metal_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -230,12 +247,10 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			metal_stone = nbt.getBoolean("metal_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putBoolean("metal_stone", metal_stone);
 			return nbt;
 		}
 

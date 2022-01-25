@@ -3,12 +3,16 @@ package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.procedures.WaterGetProcedure;
+import power.keepeersofthestones.procedures.VacuumGetProcedure;
 import power.keepeersofthestones.procedures.TornadoGetProcedure;
+import power.keepeersofthestones.procedures.SunGetProcedure;
 import power.keepeersofthestones.procedures.SoundGetProcedure;
+import power.keepeersofthestones.procedures.ShadowGetProcedure;
 import power.keepeersofthestones.procedures.RainGetProcedure;
 import power.keepeersofthestones.procedures.OceanGetProcedure;
 import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
 import power.keepeersofthestones.procedures.LightningGetProcedure;
+import power.keepeersofthestones.procedures.LightGetProcedure;
 import power.keepeersofthestones.procedures.LavaGetProcedure;
 import power.keepeersofthestones.procedures.IceGetProcedure;
 import power.keepeersofthestones.procedures.GreeneryGetProcedure;
@@ -140,6 +144,22 @@ public class ChoiseMagicStoneGUIButtonMessage {
 		if (buttonID == 15) {
 
 			AnimalsGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 17) {
+
+			LightGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 18) {
+
+			ShadowGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 19) {
+
+			VacuumGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 20) {
+
+			SunGetProcedure.execute(world, entity);
 		}
 	}
 

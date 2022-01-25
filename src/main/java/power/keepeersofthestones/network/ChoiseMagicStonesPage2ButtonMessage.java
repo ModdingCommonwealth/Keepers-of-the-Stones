@@ -3,6 +3,7 @@ package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
+import power.keepeersofthestones.procedures.MoonGetProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
@@ -62,6 +63,10 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			MoonGetProcedure.execute(world, entity);
+		}
 		if (buttonID == 13) {
 
 			PreviousPageGUIChoiceStonesProcedure.execute(world, x, y, z, entity);

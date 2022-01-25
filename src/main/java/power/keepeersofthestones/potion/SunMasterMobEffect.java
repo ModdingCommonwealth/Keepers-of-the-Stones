@@ -29,7 +29,7 @@ public class SunMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SunMasterEffectStartProcedure.execute(entity);
+		SunMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class SunMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SunMasterEffectEndProcedure.execute(entity);
+		SunMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

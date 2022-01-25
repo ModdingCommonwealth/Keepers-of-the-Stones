@@ -29,7 +29,7 @@ public class VacuumMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		VacuumMasterEffectStartProcedure.execute(entity);
+		VacuumMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class VacuumMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		VacuumMasterEffectEndProcedure.execute(entity);
+		VacuumMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

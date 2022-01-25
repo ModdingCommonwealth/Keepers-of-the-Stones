@@ -8,7 +8,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -33,22 +32,22 @@ public class ShadowInvisibleUseProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, (false), (false)));
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_HELMET);
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_HELMET);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_CHESTPLATE);
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_CHESTPLATE);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_LEGGINGS);
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_LEGGINGS);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(Items.NETHERITE_BOOTS);
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_BOOTS);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
@@ -80,28 +79,28 @@ public class ShadowInvisibleUseProcedure {
 							if (!_ent.level.isClientSide() && _ent.getServer() != null)
 								_ent.getServer().getCommands().performCommand(
 										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-										"item replace entity @s armor.head with netherite_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+										"item replace entity @s armor.head with power:shadow_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
 							if (!_ent.level.isClientSide() && _ent.getServer() != null)
 								_ent.getServer().getCommands().performCommand(
 										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-										"item replace entity @s armor.chest with netherite_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+										"item replace entity @s armor.chest with power:shadow_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
 							if (!_ent.level.isClientSide() && _ent.getServer() != null)
 								_ent.getServer().getCommands().performCommand(
 										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-										"item replace entity @s armor.legs with netherite_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+										"item replace entity @s armor.legs with power:shadow_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 						{
 							Entity _ent = entity;
 							if (!_ent.level.isClientSide() && _ent.getServer() != null)
 								_ent.getServer().getCommands().performCommand(
 										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-										"item replace entity @s armor.feet with netherite_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+										"item replace entity @s armor.feet with power:shadow_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 						}
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);

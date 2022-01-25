@@ -29,7 +29,7 @@ public class ShadowMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		ShadowMasterEffectStartProcedure.execute(entity);
+		ShadowMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class ShadowMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		ShadowMasterEffectEndProcedure.execute(entity);
+		ShadowMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

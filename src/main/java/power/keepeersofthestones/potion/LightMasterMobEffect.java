@@ -29,7 +29,7 @@ public class LightMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		LightMasterEffectStartProcedure.execute(entity);
+		LightMasterEffectStartProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class LightMasterMobEffect extends MobEffect {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		LightMasterEffectEndProcedure.execute(entity);
+		LightMasterEffectEndProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

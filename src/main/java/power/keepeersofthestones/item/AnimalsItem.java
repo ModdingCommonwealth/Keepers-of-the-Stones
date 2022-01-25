@@ -18,7 +18,7 @@ public abstract class AnimalsItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 60;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			@Override
@@ -91,6 +91,18 @@ public abstract class AnimalsItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "power:textures/models/armor/animals__layer_2.png";
+		}
+	}
+
+	public static class Boots extends AnimalsItem {
+		public Boots() {
+			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("animals_boots");
+		}
+
+		@Override
+		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+			return "power:textures/models/armor/animals__layer_1.png";
 		}
 	}
 }

@@ -4380,6 +4380,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4441,6 +4457,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4660,6 +4692,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4677,6 +4725,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4874,6 +4938,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4891,6 +4971,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5102,6 +5198,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5119,6 +5231,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5341,6 +5469,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5358,6 +5502,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6913,7 +7073,7 @@
       "metadata": {
         "eh": true,
         "el": true,
-        "eb": false,
+        "eb": true,
         "ec": true
       },
       "path": "~/Animals"
@@ -6961,6 +7121,186 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "metal_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Light",
+      "type": "armor",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Light"
+    },
+    {
+      "name": "Shadowarmor",
+      "type": "armor",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Shadow"
+    },
+    {
+      "name": "Crestcent",
+      "type": "armor",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crestcent",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Moon"
+    },
+    {
+      "name": "Sun",
+      "type": "armor",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Sun"
+    },
+    {
+      "name": "Vacuum",
+      "type": "armor",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Vacuum"
+    },
+    {
+      "name": "LightGet",
+      "type": "procedure",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "ShadowGet",
+      "type": "procedure",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "VacuumGet",
+      "type": "procedure",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vacuum_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "SunGet",
+      "type": "procedure",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "MoonGet",
+      "type": "procedure",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_get",
       "metadata": {
         "dependencies": [
           {
@@ -7262,7 +7602,37 @@
     {
       "name": "metal_stone",
       "type": "logic",
-      "scope": "map",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "light_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "shadow_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "vacuum_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "sun_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "moon_stone",
+      "type": "logic",
+      "scope": "world",
       "value": "false"
     }
   ],
@@ -7322,6 +7692,7 @@
       "effect.power.recharge_cosmos_stone": "Перезарядка",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Повязка Молнии",
+      "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Штаны Молнии",
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
@@ -7343,6 +7714,7 @@
       "item.power.fire_helmet": "Огненная корона",
       "item.power.galactic_sword": "Галактический меч",
       "effect.power.crystal_master": "Мастер Кристалла",
+      "item.power.crestcent_helmet": "Crestcent Helmet",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
       "item.power.rain_chestplate": "Дождевая Накидка",
       "item.power.venus": "Venus Portal Igniter",
@@ -7364,13 +7736,16 @@
       "item.power.tp_on_venus": "Венера",
       "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.ocean_sword": "Меч Океана",
+      "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.tornado_stone": "Камень Торнадо",
       "item.power.shadow_invisible": "Теневая Невидимость",
       "effect.cosmos_master": "Master of Space",
+      "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
       "itemGroup.tabmagical_stone_boxes": "Волшебные шкатулки",
       "item.power.plasma_ball": "Плазменный шар",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Light Helmet",
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
@@ -7403,9 +7778,11 @@
       "item.power.sun_ray": "Луч Солнца",
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
+      "item.power.crestcent_boots": "Crestcent Boots",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
       "effect.power.recharge_fire_stone": "Перезарядка",
+      "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "block.power.crystal_shield_block": "Блок Кристаллического Щита",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
@@ -7451,7 +7828,7 @@
       "item.power.tornado_boots": "Ботинки Торнадо",
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
-      "item.power.animals_boots": "Animals Ботинки",
+      "item.power.animals_boots": "Animals Boots",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -7466,6 +7843,7 @@
       "item.power.tornado_chestplate": "Нагрудник Торнадо",
       "effect.power.recharge_sound_stone": "Перезарядка",
       "item.power.sai": "Саи",
+      "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Камень Молнии",
@@ -7497,11 +7875,15 @@
       "effect.power.creation_master": "Мастер Созидания",
       "item.power.tp_on_moon": "Луна",
       "item.power.fire_sword": "Меч Огня",
+      "item.power.vacuum_chestplate": "Vacuum Chestplate",
+      "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.water_boots": "Водные Ласты",
       "item.power.ice_shield": "Ледяной щит",
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.acustical_explode": "Акустический Взрыв",
+      "item.power.sun_helmet": "Sun Helmet",
       "effect.power.recharge_lava_stone": "Перезарядка",
+      "item.power.light_leggings": "Light Leggings",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Волшебная андезитовая шкатулка",
@@ -7520,6 +7902,7 @@
       "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Шлем Торнадо",
       "effect.power.water_master": "Мастер Воды",
+      "item.power.light_boots": "Light Boots",
       "item.power.magic_fireball": "Волшебный Огненный шар",
       "item.power.earth_stone": "Камень Земли",
       "item.power.crystal_stone": "Камень Кристалла",
@@ -7531,8 +7914,10 @@
       "effect.unelemental_master": "Unelemental Master",
       "item.power.tiger_claw": "Тигриный Коготь",
       "effect.recharge_rain_stone": "Recharge",
+      "item.power.shadow_leggings": "Shadow Leggings",
       "effect.light_master": "Master of Light",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
+      "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Лавовый Пояс",
       "effect.shadow_master": "Master of Shadow",
       "item.power.lightning_chestplate": "Мантия Молнии",
@@ -7544,12 +7929,14 @@
       "item.power.fistof_earth": "Земляной Кулак",
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
+      "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Солнечная Секира",
       "effect.ocean_master": "Master of the Ocean",
       "itemGroup.tabexperimental_stones": "Экспериментальные Камни",
       "effect.power.coal_merger": "Слияние Уголь",
       "block.power.energy_block": "Энергетический блок",
       "item.power.light_sword": "Световой Меч",
+      "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Камень Луны",
       "entity.power.tornado_entity": "Торнадо",
       "item.power.mars": "Mars Portal Igniter",
@@ -7561,6 +7948,7 @@
       "biome.power.venus_land": "Венерианская Земля",
       "item.power.shadow_sword": "Теневой Мач",
       "effect.ice_master": "Master of Ice",
+      "item.power.sun_leggings": "Sun Leggings",
       "item.power.wind_boots": "Воздушные Сапоги",
       "item.power.rain_helmet": "Дождевая Шапка",
       "effect.recharge_sound_stone": "Recharge",
@@ -7571,9 +7959,11 @@
       "effect.power.cosmos_master": "Мастер Космоса",
       "item.power.rain_knife": "Дождевой Нож",
       "effect.recharge_destruction_stone": "Recharge",
+      "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
       "item.power.lightning_boots": "Ботинки Молнии",
+      "item.power.vacuum_helmet": "Vacuum Helmet",
       "effect.power.recharge_light_stone": "Перезарядка",
       "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Водоворот",
@@ -7624,8 +8014,8 @@
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
-      "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
+      "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Master of the Ocean",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
@@ -7636,6 +8026,7 @@
       "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.fire_master": "Master of Fire",
       "item.power.lightning_helmet": "Lightning Helmet",
+      "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Lightning Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
@@ -7657,6 +8048,7 @@
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
       "effect.power.crystal_master": "Master of the Crystal",
+      "item.power.crestcent_helmet": "Crestcent Helmet",
       "effect.power.recharge_vacuum_stone": "Recharge",
       "item.power.rain_chestplate": "Rain Chestplate",
       "item.power.venus": "Venus Portal Igniter",
@@ -7678,13 +8070,16 @@
       "item.power.tp_on_venus": "Tp On Venus",
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.ocean_sword": "Ocean Sword",
+      "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.tornado_stone": "Tornado Stone",
       "item.power.shadow_invisible": "Shadow Invisible",
       "effect.cosmos_master": "Master of Space",
+      "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
       "itemGroup.tabmagical_stone_boxes": "Magical Stone Boxes",
       "item.power.plasma_ball": "Plasma Ball",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Light Helmet",
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
@@ -7717,9 +8112,11 @@
       "item.power.sun_ray": "Sun Ray",
       "effect.recharge_air_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
+      "item.power.crestcent_boots": "Crestcent Boots",
       "item.power.ice_leggings": "Ice Leggings",
       "item.power.energy_staff": "Energy Staff",
       "effect.power.recharge_fire_stone": "Recharge",
+      "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Crystal Leggings",
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
@@ -7780,6 +8177,7 @@
       "item.power.tornado_chestplate": "Tornado Chestplate",
       "effect.power.recharge_sound_stone": "Recharge",
       "item.power.sai": "Sai",
+      "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Lightning Stone",
@@ -7811,11 +8209,15 @@
       "effect.power.creation_master": "Master of Creation",
       "item.power.tp_on_moon": "Tp On Moon",
       "item.power.fire_sword": "Fire Sword",
+      "item.power.vacuum_chestplate": "Vacuum Chestplate",
+      "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.water_boots": "Water Boots",
       "item.power.ice_shield": "Ice Shield",
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.acustical_explode": "Acustical Explode",
+      "item.power.sun_helmet": "Sun Helmet",
       "effect.power.recharge_lava_stone": "Recharge",
+      "item.power.light_leggings": "Light Leggings",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Andesite Stone Box",
@@ -7834,6 +8236,7 @@
       "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Tornado Helmet",
       "effect.power.water_master": "Master of Water",
+      "item.power.light_boots": "Light Boots",
       "item.power.magic_fireball": "Magic Fireball",
       "item.power.earth_stone": "Earth Stone",
       "item.power.crystal_stone": "Crystal Stone",
@@ -7845,8 +8248,10 @@
       "effect.unelemental_master": "Unelemental Master",
       "effect.recharge_rain_stone": "Recharge",
       "item.power.tiger_claw": "Tiger Claw",
+      "item.power.shadow_leggings": "Shadow Leggings",
       "effect.light_master": "Master of Light",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
+      "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Lava Chestplate",
       "effect.shadow_master": "Master of Shadow",
       "item.power.lightning_chestplate": "Lightning Chestplate",
@@ -7858,12 +8263,14 @@
       "item.power.fistof_earth": "Fist of Earth",
       "item.power.sound_chestplate": "Sound Chestplate",
       "item.power.flash_light": "Flash Light",
+      "item.power.shadow_chestplate": "Shadow Chestplate",
       "effect.ocean_master": "Master of the Ocean",
       "item.power.sun_axe": "Sun Axe",
       "itemGroup.tabexperimental_stones": "Experimental Stones",
       "effect.power.coal_merger": "Coal Merger",
       "block.power.energy_block": "Energy Block",
       "item.power.light_sword": "Light Sword",
+      "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Moon Stone",
       "entity.power.tornado_entity": "Tornado",
       "item.power.mars": "Mars Portal Igniter",
@@ -7875,6 +8282,7 @@
       "biome.power.venus_land": "Venus Land",
       "effect.ice_master": "Master of Ice",
       "item.power.shadow_sword": "Shadow Sword",
+      "item.power.sun_leggings": "Sun Leggings",
       "item.power.wind_boots": "Air Boots",
       "item.power.rain_helmet": "Rain Helmet",
       "effect.recharge_sound_stone": "Recharge",
@@ -7885,9 +8293,11 @@
       "effect.power.cosmos_master": "Master of Space",
       "item.power.rain_knife": "Rain Knife",
       "effect.recharge_destruction_stone": "Recharge",
+      "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
       "item.power.lightning_boots": "Lightning Boots",
+      "item.power.vacuum_helmet": "Vacuum Helmet",
       "effect.power.recharge_light_stone": "Recharge",
       "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Whirlpool",
