@@ -2,7 +2,9 @@
 package power.keepeersofthestones.world.inventory;
 
 import power.keepeersofthestones.init.PowerModMenus;
+import power.keepeersofthestones.init.PowerModItems;
 
+import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -36,7 +38,7 @@ public class AdditionalAndesiteBoxGUIMenu extends AbstractContainerMenu implemen
 		super(PowerModMenus.ADDITIONAL_ANDESITE_BOX_GUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(0);
+		this.internal = new ItemStackHandler(5);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -74,6 +76,45 @@ public class AdditionalAndesiteBoxGUIMenu extends AbstractContainerMenu implemen
 				}
 			}
 		}
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 35) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (PowerModItems.BLOOD_STONE == stack.getItem());
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 17) {
+			@Override
+			public boolean mayPickup(Player player) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 17) {
+			@Override
+			public boolean mayPickup(Player player) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 115, 35) {
+			@Override
+			public boolean mayPickup(Player player) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
@@ -93,18 +134,18 @@ public class AdditionalAndesiteBoxGUIMenu extends AbstractContainerMenu implemen
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 0) {
-				if (!this.moveItemStackTo(itemstack1, 0, this.slots.size(), true)) {
+			if (index < 4) {
+				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 0, false)) {
-				if (index < 0 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 0 + 27, this.slots.size(), true)) {
+			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
+				if (index < 4 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 0, 0 + 27, false)) {
+					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false)) {
 						return ItemStack.EMPTY;
 					}
 				}
@@ -205,10 +246,26 @@ public class AdditionalAndesiteBoxGUIMenu extends AbstractContainerMenu implemen
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 1)
+						continue;
+					if (j == 2)
+						continue;
+					if (j == 3)
+						continue;
+					if (j == 4)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 1)
+						continue;
+					if (i == 2)
+						continue;
+					if (i == 3)
+						continue;
+					if (i == 4)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}

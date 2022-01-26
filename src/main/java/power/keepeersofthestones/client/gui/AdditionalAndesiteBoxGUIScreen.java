@@ -46,6 +46,19 @@ public class AdditionalAndesiteBoxGUIScreen extends AbstractContainerScreen<Addi
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blood_master.png"));
+		this.blit(ms, this.leftPos + 79, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/technology_master.png"));
+		this.blit(ms, this.leftPos + 60, this.topPos + 17, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/time_master.png"));
+		this.blit(ms, this.leftPos + 97, this.topPos + 17, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/speed_master.png"));
+		this.blit(ms, this.leftPos + 116, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
