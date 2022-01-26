@@ -13,7 +13,6 @@ import net.minecraft.world.item.CreativeModeTab;
 public class PowerModTabs {
 	public static CreativeModeTab TAB_MAGICAL_STONE;
 	public static CreativeModeTab TAB_MAGICAL_STONE_BOXES;
-	public static CreativeModeTab TAB_EXPERIMENTAL_STONES;
 
 	public static void load() {
 		TAB_MAGICAL_STONE = new CreativeModeTab("tabmagical_stone") {
@@ -31,17 +30,6 @@ public class PowerModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(PowerModBlocks.GOLD_STONE_BOX);
-			}
-
-			@OnlyIn(Dist.CLIENT)
-			public boolean hasSearchBar() {
-				return false;
-			}
-		};
-		TAB_EXPERIMENTAL_STONES = new CreativeModeTab("tabexperimental_stones") {
-			@Override
-			public ItemStack makeIcon() {
-				return new ItemStack(PowerModItems.COSMOS_STONE);
 			}
 
 			@OnlyIn(Dist.CLIENT)

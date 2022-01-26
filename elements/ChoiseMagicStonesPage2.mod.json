@@ -82,13 +82,10 @@
       {
         "type": "button",
         "data": {
-          "text": " Blood",
-          "onClick": {
-            "name": "BloodGet"
-          },
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": " Blood",
+          "name": " ",
           "x": 51,
           "y": 161
         }
@@ -233,16 +230,6 @@
           "name": "cosmos_master.png",
           "x": 33,
           "y": 134
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "blood_master.png",
-          "use1Xscale": false,
-          "name": "blood_master.png",
-          "x": 33,
-          "y": 161
         }
       }
     ],

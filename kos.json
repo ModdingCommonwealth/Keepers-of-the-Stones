@@ -3,8 +3,8 @@
   "promos": {
     "1.16.5-latest": "1.2.0",
     "1.16.5-recommended": "1.2.0",
-    "1.17.1-latest": "1.2.0",
-    "1.17.1-recommended": "1.2.0"
+    "1.17.1-latest": "1.2.1",
+    "1.17.1-recommended": "1.2.1"
   },
   "1.16.5": {
     "B2": "
@@ -133,6 +133,10 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Improved the /resetmychoice command and now if you have not selected a stone, you can simply enter the command and select
 - [Bugfix] Fixed a bug with using items without activated stone
 - [Bugfix] Fixed a bug when using stones with the keepInventory game rule enabled
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+ "1.2.1": "
+- Removed the tab with experimental stones
+- [Bugfix] Fixed bug where items with an activated stone could disappear when appearing
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }

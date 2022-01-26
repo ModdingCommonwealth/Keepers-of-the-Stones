@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.BloodStoneUseProcedure;
-import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -15,7 +14,7 @@ import net.minecraft.world.InteractionHand;
 
 public class BloodStoneItem extends Item {
 	public BloodStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_STONES).durability(10).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(null).durability(10).rarity(Rarity.COMMON));
 		setRegistryName("blood_stone");
 	}
 
