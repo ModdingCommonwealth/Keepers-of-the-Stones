@@ -83,6 +83,9 @@
         "type": "button",
         "data": {
           "text": " Blood",
+          "onClick": {
+            "name": "BloodGet"
+          },
           "width": 56,
           "height": 20,
           "name": " Blood",
