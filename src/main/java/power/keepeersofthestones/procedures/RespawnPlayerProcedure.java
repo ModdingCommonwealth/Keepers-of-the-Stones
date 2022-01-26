@@ -22,6 +22,7 @@ import power.keepeersofthestones.potion.RechargeDestructionStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCrystalStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCreationStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCosmosStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeBloodStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeAirStonePotionEffect;
 import power.keepeersofthestones.potion.FireMasterPotionEffect;
 import power.keepeersofthestones.item.WaterStoneItem;
@@ -46,6 +47,7 @@ import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CreationStoneItem;
 import power.keepeersofthestones.item.CosmosStoneItem;
+import power.keepeersofthestones.item.BloodStoneItem;
 import power.keepeersofthestones.item.AnimalsStoneItem;
 import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.PowerModVariables;
@@ -543,19 +545,20 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).blood) {
 			{
-				boolean _setval = false;
+				boolean _setval = (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.blood = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(BloodStoneItem.block);
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_BLOOD_STONE, 6000, 0, (false), (false)));
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity)
+						.addPotionEffect(new EffectInstance(RechargeBloodStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).coal_merger) {
 			{

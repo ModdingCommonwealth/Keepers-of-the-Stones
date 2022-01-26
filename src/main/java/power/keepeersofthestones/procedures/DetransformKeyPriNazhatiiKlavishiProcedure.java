@@ -1,69 +1,132 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.potion.WaterMasterPotionEffect;
+import power.keepeersofthestones.potion.VacuumMasterPotionEffect;
+import power.keepeersofthestones.potion.TornadoMasterPotionEffect;
+import power.keepeersofthestones.potion.SunMasterPotionEffect;
+import power.keepeersofthestones.potion.SoundMasterPotionEffect;
+import power.keepeersofthestones.potion.ShadowMasterPotionEffect;
+import power.keepeersofthestones.potion.RainMasterPotionEffect;
+import power.keepeersofthestones.potion.OceanMasterPotionEffect;
+import power.keepeersofthestones.potion.MoonMasterPotionEffect;
+import power.keepeersofthestones.potion.MetalMasterPotionEffect;
+import power.keepeersofthestones.potion.LightningMasterPotionEffect;
+import power.keepeersofthestones.potion.LightMasterPotionEffect;
+import power.keepeersofthestones.potion.LavaMasterPotionEffect;
+import power.keepeersofthestones.potion.InfernoMergerPotionEffect;
+import power.keepeersofthestones.potion.IceMasterPotionEffect;
+import power.keepeersofthestones.potion.GreeneryMasterPotionEffect;
+import power.keepeersofthestones.potion.GeyserMergerPotionEffect;
+import power.keepeersofthestones.potion.FireMasterPotionEffect;
+import power.keepeersofthestones.potion.EnergyMasterPotionEffect;
+import power.keepeersofthestones.potion.EarthMasterPotionEffect;
+import power.keepeersofthestones.potion.DestructionMasterPotionEffect;
+import power.keepeersofthestones.potion.CrystalMasterPotionEffect;
+import power.keepeersofthestones.potion.CreationMasterPotionEffect;
+import power.keepeersofthestones.potion.CosmosMasterPotionEffect;
+import power.keepeersofthestones.potion.CoalMergerPotionEffect;
+import power.keepeersofthestones.potion.BloodMasterPotionEffect;
+import power.keepeersofthestones.potion.AnimalsMasterPotionEffect;
+import power.keepeersofthestones.potion.AirMasterPotionEffect;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class DetransformKeyPriNazhatiiKlavishiProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure DetransformKeyPriNazhatiiKlavishi!");
 			return;
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.AIR_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.WATER_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.EARTH_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.ENERGY_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.ICE_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.LIGHTNING_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.SOUND_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.CRYSTAL_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.LAVA_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RAIN_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.TORNADO_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.OCEAN_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.INFERNO_MERGER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.GREENERY_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.GEYSER_MERGER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.ANIMALS_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.METAL_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.LIGHT_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.SHADOW_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.VACUUM_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.SUN_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.MOON_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.CREATION_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.COSMOS_MASTER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.COAL_MERGER);
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.BLOOD_MASTER);
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(FireMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(AirMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(WaterMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(EarthMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(EnergyMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(IceMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(LightningMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(SoundMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(CrystalMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(LavaMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RainMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(TornadoMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(OceanMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(InfernoMergerPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(GreeneryMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(GeyserMergerPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(AnimalsMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(MetalMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(LightMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(ShadowMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(VacuumMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(SunMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(MoonMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(CreationMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(DestructionMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(CosmosMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(CoalMergerPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(BloodMasterPotionEffect.potion);
+		}
 	}
 }

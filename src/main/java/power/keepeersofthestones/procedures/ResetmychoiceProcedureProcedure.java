@@ -22,6 +22,7 @@ import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CreationStoneItem;
 import power.keepeersofthestones.item.CosmosStoneItem;
+import power.keepeersofthestones.item.BloodStoneItem;
 import power.keepeersofthestones.item.AnimalsStoneItem;
 import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.gui.ChoiseMagicStoneGUIGui;
@@ -916,33 +917,35 @@ public class ResetmychoiceProcedureProcedure {
 				}
 			}
 		}
-		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.BLOOD_STONE)) : false) {
-			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_STONE);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+		if ((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(BloodStoneItem.block)) : false) {
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = new ItemStack(BloodStoneItem.block);
+				((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+						((PlayerEntity) entity).container.func_234641_j_());
 			}
-			PowerModVariables.WorldVariables.get(world).blood_stone = false;
+			PowerModVariables.WorldVariables.get(world).blood_stone = (false);
 			PowerModVariables.WorldVariables.get(world).syncData(world);
 			{
-				boolean _setval = false;
+				boolean _setval = (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.selected = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
-				if (entity instanceof ServerPlayer _ent) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
 					BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
-					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+					NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
 						@Override
-						public Component getDisplayName() {
-							return new TextComponent("ChoiseMagicStoneGUI");
+						public ITextComponent getDisplayName() {
+							return new StringTextComponent("ChoiseMagicStoneGUI");
 						}
 
 						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+							return new ChoiseMagicStoneGUIGui.GuiContainerMod(id, inventory,
+									new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}

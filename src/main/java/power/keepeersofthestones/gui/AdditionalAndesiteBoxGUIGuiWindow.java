@@ -53,6 +53,19 @@ public class AdditionalAndesiteBoxGUIGuiWindow extends ContainerScreen<Additiona
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/blood_master.png"));
+		this.blit(ms, this.guiLeft + 79, this.guiTop + 35, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/technology_master.png"));
+		this.blit(ms, this.guiLeft + 60, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/time_master.png"));
+		this.blit(ms, this.guiLeft + 97, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/speed_master.png"));
+		this.blit(ms, this.guiLeft + 116, this.guiTop + 35, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
