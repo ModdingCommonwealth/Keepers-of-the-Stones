@@ -68,7 +68,7 @@ public class SpawnAnimalsGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			SummonWolfProcedure.execute(world, x, y, z);
+			SummonWolfProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 

@@ -3918,6 +3918,14 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3950,6 +3958,10 @@
       "registry_name": "summon_wolf",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -8139,8 +8151,8 @@
       "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
@@ -8252,7 +8264,7 @@
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
-      "effect.power.recharge_blood_stone": "Recharge",
+      "effect.power.recharge_blood_stone": "Перезарядка",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
       "item.power.creation_helmet": "Creation Helmet",
