@@ -66,15 +66,15 @@ public class SoundEmitateChoiceButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			EmitateCreeperProcedure.execute(entity);
+			EmitateCreeperProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			EmitateZombieProcedure.execute(entity);
+			EmitateZombieProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			EmitateSkeletonProcedure.execute(entity);
+			EmitateSkeletonProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
