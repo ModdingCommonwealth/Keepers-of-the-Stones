@@ -25,5 +25,7 @@ public class GetOakSaplingProcedure {
 			_setstack.setCount((int) 1);
 			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }
