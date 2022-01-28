@@ -1,5 +1,6 @@
 package power.keepeersofthestones.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 public class EmitateZombieProcedure {
@@ -12,5 +13,7 @@ public class EmitateZombieProcedure {
 				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 						"playsound minecraft:entity.zombie.ambient hostile @a");
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }
