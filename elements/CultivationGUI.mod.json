@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 376,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -26,15 +26,15 @@
       {
         "type": "button",
         "data": {
-          "text": "Vine",
+          "text": "Water lily",
           "onClick": {
-            "name": "GetVine"
+            "name": "GetWaterLily"
           },
-          "width": 46,
+          "width": 77,
           "height": 20,
-          "name": "Vine",
-          "x": 141,
-          "y": 62
+          "name": "Water lily",
+          "x": 276,
+          "y": 89
         }
       },
       {
@@ -44,24 +44,94 @@
           "onClick": {
             "name": "GetOakSapling"
           },
-          "width": 82,
+          "width": 77,
           "height": 20,
           "name": "Oak Sapling",
-          "x": 204,
+          "x": 33,
           "y": 62
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Water Lily",
+          "text": "Vine",
           "onClick": {
-            "name": "GetWaterLily"
+            "name": "GetVine"
           },
           "width": 77,
           "height": 20,
-          "name": "Water Lily",
-          "x": 141,
+          "name": "Vine",
+          "x": 195,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Birch Sapling",
+          "onClick": {
+            "name": "GetBirchSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Birch Sapling",
+          "x": 114,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Spruce Sapling",
+          "onClick": {
+            "name": "GetSpruceSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Spruce Sapling",
+          "x": 276,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Acacia Sapling",
+          "onClick": {
+            "name": "GetAcaciaSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Acacia Sapling",
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dark sapling",
+          "onClick": {
+            "name": "GetDarkSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Dark sapling",
+          "x": 33,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Jungle sapling",
+          "onClick": {
+            "name": "GetJungleSapling"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Jungle sapling",
+          "x": 114,
           "y": 89
         }
       }

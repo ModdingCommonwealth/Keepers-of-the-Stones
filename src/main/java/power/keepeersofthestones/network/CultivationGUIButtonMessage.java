@@ -4,7 +4,12 @@ package power.keepeersofthestones.network;
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.procedures.GetWaterLilyProcedure;
 import power.keepeersofthestones.procedures.GetVineProcedure;
+import power.keepeersofthestones.procedures.GetSpruceSaplingProcedure;
 import power.keepeersofthestones.procedures.GetOakSaplingProcedure;
+import power.keepeersofthestones.procedures.GetJungleSaplingProcedure;
+import power.keepeersofthestones.procedures.GetDarkSaplingProcedure;
+import power.keepeersofthestones.procedures.GetBirchSaplingProcedure;
+import power.keepeersofthestones.procedures.GetAcaciaSaplingProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fmllegacy.network.NetworkEvent;
@@ -66,7 +71,7 @@ public class CultivationGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			GetVineProcedure.execute(entity);
+			GetWaterLilyProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
@@ -74,7 +79,27 @@ public class CultivationGUIButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			GetWaterLilyProcedure.execute(entity);
+			GetVineProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			GetBirchSaplingProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			GetSpruceSaplingProcedure.execute(entity);
+		}
+		if (buttonID == 5) {
+
+			GetAcaciaSaplingProcedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			GetDarkSaplingProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			GetJungleSaplingProcedure.execute(entity);
 		}
 	}
 
