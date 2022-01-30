@@ -130,5 +130,41 @@ public class CultivationGUIScreen extends AbstractContainerScreen<CultivationGUI
 				CultivationGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
 		}));
+		this.addRenderableWidget(new Button(this.leftPos + 7, this.topPos + 79, 77, 20, new TextComponent("Wheat"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(8, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 8, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 88, this.topPos + 79, 77, 20, new TextComponent("Potato"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(9, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 9, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 79, 77, 20, new TextComponent("Carrot"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(10, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 250, this.topPos + 79, 77, 20, new TextComponent("Beetroot"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(11, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 11, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 7, this.topPos + 106, 77, 20, new TextComponent("Melon"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(12, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 12, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 88, this.topPos + 106, 77, 20, new TextComponent("Pumpkin"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(13, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 13, x, y, z);
+			}
+		}));
 	}
 }

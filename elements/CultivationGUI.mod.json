@@ -134,6 +134,90 @@
           "x": 114,
           "y": 89
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Wheat",
+          "onClick": {
+            "name": "GetWheat"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Wheat",
+          "x": 33,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Potato",
+          "onClick": {
+            "name": "GetPotato"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Potato",
+          "x": 114,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Carrot",
+          "onClick": {
+            "name": "GetCarrot"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Carrot",
+          "x": 195,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Beetroot",
+          "onClick": {
+            "name": "GetBeetroot"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Beetroot",
+          "x": 276,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Melon",
+          "onClick": {
+            "name": "GetMelon"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Melon",
+          "x": 33,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pumpkin",
+          "onClick": {
+            "name": "GetPumpkin"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Pumpkin",
+          "x": 114,
+          "y": 143
+        }
       }
     ],
     "gridSettings": {

@@ -7846,6 +7846,108 @@
         ]
       },
       "path": "~/Greenery"
+    },
+    {
+      "name": "GetWheat",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_wheat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetPotato",
+      "type": "procedure",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_potato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetCarrot",
+      "type": "procedure",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_carrot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetBeetroot",
+      "type": "procedure",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_beetroot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetMelon",
+      "type": "procedure",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_melon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetPumpkin",
+      "type": "procedure",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_pumpkin",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
     }
   ],
   "variable_elements": [

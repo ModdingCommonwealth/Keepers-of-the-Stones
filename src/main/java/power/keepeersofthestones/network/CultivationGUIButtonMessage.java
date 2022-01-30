@@ -2,13 +2,19 @@
 package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
+import power.keepeersofthestones.procedures.GetWheatProcedure;
 import power.keepeersofthestones.procedures.GetWaterLilyProcedure;
 import power.keepeersofthestones.procedures.GetVineProcedure;
 import power.keepeersofthestones.procedures.GetSpruceSaplingProcedure;
+import power.keepeersofthestones.procedures.GetPumpkinProcedure;
+import power.keepeersofthestones.procedures.GetPotatoProcedure;
 import power.keepeersofthestones.procedures.GetOakSaplingProcedure;
+import power.keepeersofthestones.procedures.GetMelonProcedure;
 import power.keepeersofthestones.procedures.GetJungleSaplingProcedure;
 import power.keepeersofthestones.procedures.GetDarkSaplingProcedure;
+import power.keepeersofthestones.procedures.GetCarrotProcedure;
 import power.keepeersofthestones.procedures.GetBirchSaplingProcedure;
+import power.keepeersofthestones.procedures.GetBeetrootProcedure;
 import power.keepeersofthestones.procedures.GetAcaciaSaplingProcedure;
 import power.keepeersofthestones.PowerMod;
 
@@ -100,6 +106,30 @@ public class CultivationGUIButtonMessage {
 		if (buttonID == 7) {
 
 			GetJungleSaplingProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			GetWheatProcedure.execute(entity);
+		}
+		if (buttonID == 9) {
+
+			GetPotatoProcedure.execute(entity);
+		}
+		if (buttonID == 10) {
+
+			GetCarrotProcedure.execute(entity);
+		}
+		if (buttonID == 11) {
+
+			GetBeetrootProcedure.execute(entity);
+		}
+		if (buttonID == 12) {
+
+			GetMelonProcedure.execute(entity);
+		}
+		if (buttonID == 13) {
+
+			GetPumpkinProcedure.execute(entity);
 		}
 	}
 
