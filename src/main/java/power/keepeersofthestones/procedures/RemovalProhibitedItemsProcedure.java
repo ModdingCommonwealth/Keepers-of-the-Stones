@@ -443,6 +443,506 @@ public class RemovalProhibitedItemsProcedure {
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WATER_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WATER_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WATER_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WATER_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WIND_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WIND_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WIND_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.WIND_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ICE_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ICE_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ICE_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ICE_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTNING_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTNING_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTNING_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTNING_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LAVA_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LAVA_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LAVA_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LAVA_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.RAIN_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.RAIN_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.RAIN_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.RAIN_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.TORNADO_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.TORNADO_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.TORNADO_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.TORNADO_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.OCEAN_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.OCEAN_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.OCEAN_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.OCEAN_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.GREENERY_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.GREENERY_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.GREENERY_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.GREENERY_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRESTCENT_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRESTCENT_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRESTCENT_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CRESTCENT_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SUN_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SUN_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SUN_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SUN_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CREATION_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CREATION_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CREATION_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.CREATION_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_HELMET);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_CHESTPLATE);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_LEGGINGS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_BOOTS);
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
 		}
 	}
 }
