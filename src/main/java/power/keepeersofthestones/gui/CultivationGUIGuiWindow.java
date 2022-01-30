@@ -35,7 +35,7 @@ public class CultivationGUIGuiWindow extends ContainerScreen<CultivationGUIGui.G
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 176;
+		this.xSize = 376;
 		this.ySize = 166;
 	}
 
@@ -76,7 +76,7 @@ public class CultivationGUIGuiWindow extends ContainerScreen<CultivationGUIGui.G
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Select a plant to get", 24, 6, -12829636);
+		this.font.drawString(ms, "Select a plant to get", 124, 6, -12829636);
 	}
 
 	@Override
@@ -89,22 +89,88 @@ public class CultivationGUIGuiWindow extends ContainerScreen<CultivationGUIGui.G
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 15, this.guiTop + 25, 46, 20, new StringTextComponent("Vine"), e -> {
+		this.addButton(new Button(this.guiLeft + 250, this.guiTop + 52, 77, 20, new StringTextComponent("Water lily"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(0, x, y, z));
 				CultivationGUIGui.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 78, this.guiTop + 25, 82, 20, new StringTextComponent("Oak Sapling"), e -> {
+		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 25, 77, 20, new StringTextComponent("Oak Sapling"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(1, x, y, z));
 				CultivationGUIGui.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 15, this.guiTop + 52, 77, 20, new StringTextComponent("Water Lily"), e -> {
+		this.addButton(new Button(this.guiLeft + 169, this.guiTop + 52, 77, 20, new StringTextComponent("Vine"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(2, x, y, z));
 				CultivationGUIGui.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 25, 77, 20, new StringTextComponent("Birch Sapling"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(3, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 3, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 250, this.guiTop + 25, 77, 20, new StringTextComponent("Spruce Sapling"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(4, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 4, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 169, this.guiTop + 25, 77, 20, new StringTextComponent("Acacia Sapling"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(5, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 5, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 52, 77, 20, new StringTextComponent("Dark sapling"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(6, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 6, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 52, 77, 20, new StringTextComponent("Jungle sapling"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(7, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 7, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 79, 77, 20, new StringTextComponent("Wheat"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(8, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 8, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 79, 77, 20, new StringTextComponent("Potato"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(9, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 9, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 169, this.guiTop + 79, 77, 20, new StringTextComponent("Carrot"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(10, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 10, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 250, this.guiTop + 79, 77, 20, new StringTextComponent("Beetroot"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(11, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 11, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 7, this.guiTop + 106, 77, 20, new StringTextComponent("Melon"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(12, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 12, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 106, 77, 20, new StringTextComponent("Pumpkin"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIGui.ButtonPressedMessage(13, x, y, z));
+				CultivationGUIGui.handleButtonAction(entity, 13, x, y, z);
 			}
 		}));
 	}

@@ -1,9 +1,20 @@
 
 package power.keepeersofthestones.gui;
 
+import power.keepeersofthestones.procedures.GetWheatProcedure;
 import power.keepeersofthestones.procedures.GetWaterLilyProcedure;
 import power.keepeersofthestones.procedures.GetVineProcedure;
+import power.keepeersofthestones.procedures.GetSpruceSaplingProcedure;
+import power.keepeersofthestones.procedures.GetPumpkinProcedure;
+import power.keepeersofthestones.procedures.GetPotatoProcedure;
 import power.keepeersofthestones.procedures.GetOakSaplingProcedure;
+import power.keepeersofthestones.procedures.GetMelonProcedure;
+import power.keepeersofthestones.procedures.GetJungleSaplingProcedure;
+import power.keepeersofthestones.procedures.GetDarkSaplingProcedure;
+import power.keepeersofthestones.procedures.GetCarrotProcedure;
+import power.keepeersofthestones.procedures.GetBirchSaplingProcedure;
+import power.keepeersofthestones.procedures.GetBeetrootProcedure;
+import power.keepeersofthestones.procedures.GetAcaciaSaplingProcedure;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -189,7 +200,7 @@ public class CultivationGUIGui extends PowerModElements.ModElement {
 			return;
 		if (buttonID == 0) {
 
-			GetVineProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			GetWaterLilyProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 		if (buttonID == 1) {
@@ -199,7 +210,62 @@ public class CultivationGUIGui extends PowerModElements.ModElement {
 		}
 		if (buttonID == 2) {
 
-			GetWaterLilyProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			GetVineProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 3) {
+
+			GetBirchSaplingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 4) {
+
+			GetSpruceSaplingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 5) {
+
+			GetAcaciaSaplingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 6) {
+
+			GetDarkSaplingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 7) {
+
+			GetJungleSaplingProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 8) {
+
+			GetWheatProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 9) {
+
+			GetPotatoProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 10) {
+
+			GetCarrotProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 11) {
+
+			GetBeetrootProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 12) {
+
+			GetMelonProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 13) {
+
+			GetPumpkinProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
