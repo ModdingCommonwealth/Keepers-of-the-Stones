@@ -1837,6 +1837,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1863,6 +1879,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1880,6 +1912,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3870,6 +3918,14 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3902,6 +3958,10 @@
       "registry_name": "summon_wolf",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -7499,6 +7559,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -7701,6 +7765,204 @@
         ]
       },
       "path": "~/Blood"
+    },
+    {
+      "name": "GetBirchSapling",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_birch_sapling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetSpruceSapling",
+      "type": "procedure",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_spruce_sapling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetAcaciaSapling",
+      "type": "procedure",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_acacia_sapling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetDarkSapling",
+      "type": "procedure",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_dark_sapling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetJungleSapling",
+      "type": "procedure",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_jungle_sapling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetWheat",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_wheat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetPotato",
+      "type": "procedure",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_potato",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetCarrot",
+      "type": "procedure",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_carrot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetBeetroot",
+      "type": "procedure",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_beetroot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetMelon",
+      "type": "procedure",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_melon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "GetPumpkin",
+      "type": "procedure",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_pumpkin",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "ForbiddenInactiveSpells",
+      "type": "gamerule",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forbiddenInactiveSpells",
+      "metadata": {
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -8093,6 +8355,7 @@
       "item.power.energy_shield": "Энергощит",
       "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
@@ -8205,7 +8468,7 @@
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
-      "effect.power.recharge_blood_stone": "Recharge",
+      "effect.power.recharge_blood_stone": "Перезарядка",
       "item.power.ice_leggings": "Ледяные Штаны",
       "item.power.energy_staff": "Посох Энергии",
       "item.power.creation_helmet": "Creation Helmet",
@@ -8263,6 +8526,7 @@
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
+      "gamerule.forbiddenInactiveSpells": "Запретить использование заклинаний при неактивированном камне",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
       "effect.recharge_moon_stone": "Recharge",
@@ -8447,6 +8711,7 @@
       "effect.power.recharge_ice_stone": "Recharge",
       "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
@@ -8617,6 +8882,7 @@
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
+      "gamerule.forbiddenInactiveSpells": "Prohibit the use of spells when the stone is not activated",
       "item.power.bee_sting": "Bee Sting",
       "item.power.sound_sword": "Sound Sword",
       "effect.recharge_moon_stone": "Recharge",
@@ -8942,7 +9208,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.3.0",
+    "version": "1.3.0-dev2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
