@@ -7559,6 +7559,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -7948,6 +7952,17 @@
         ]
       },
       "path": "~/Greenery"
+    },
+    {
+      "name": "ForbiddenInactiveSpells",
+      "type": "gamerule",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forbiddenInactiveSpells",
+      "metadata": {
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -8340,6 +8355,7 @@
       "item.power.energy_shield": "Энергощит",
       "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
@@ -8508,6 +8524,7 @@
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
+      "gamerule.forbiddenInactiveSpells": "Запретить использование заклинаний при неактивированном камне",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
       "effect.recharge_moon_stone": "Recharge",
@@ -8690,8 +8707,9 @@
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
+      "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
@@ -8860,6 +8878,7 @@
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
+      "gamerule.forbiddenInactiveSpells": "Prohibit the use of spells when the stone is not activated",
       "item.power.bee_sting": "Bee Sting",
       "item.power.sound_sword": "Sound Sword",
       "effect.recharge_moon_stone": "Recharge",
