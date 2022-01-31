@@ -1,10 +1,10 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
-    "1.16.5-latest": "1.3.0",
-    "1.16.5-recommended": "1.3.0",
-    "1.17.1-latest": "1.3.0",
-    "1.17.1-recommended": "1.3.0"
+    "1.16.5-latest": "1.3.1",
+    "1.16.5-recommended": "1.3.1",
+    "1.17.1-latest": "1.3.1",
+    "1.17.1-recommended": "1.3.1"
   },
   "1.16.5": {
     "B2": "
@@ -50,6 +50,9 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Now the tamer spell is recharged after use
 - Improved graphical interface of some spells
 - [Bugfix] Fixed a bug where the armor remained after death with the activated stone and the keepInventory gamerule
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+ "1.3.1": "
+- [Bugfix] Fixed the use of milk when causing game crashes and stone cloning
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
@@ -157,6 +160,9 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Now the tamer spell is recharged after use
 - Improved graphical interface of some spells
 - [Bugfix] Fixed a bug where the armor remained after death with the activated stone and the keepInventory gamerule
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+ "1.3.1": "
+- [Bugfix] Fixed the use of milk when causing game crashes and stone cloning
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
  }
 }
