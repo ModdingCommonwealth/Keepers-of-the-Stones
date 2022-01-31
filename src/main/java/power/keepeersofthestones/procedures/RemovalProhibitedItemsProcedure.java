@@ -5,12 +5,14 @@ import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModGameRules;
 import power.keepeersofthestones.init.PowerModBlocks;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -945,6 +947,20 @@ public class RemovalProhibitedItemsProcedure {
 					ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_BOOTS);
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
+				}
+			} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).active) {
+				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.MILK_BUCKET)) : false) {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(Items.MILK_BUCKET);
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+								_player.inventoryMenu.getCraftSlots());
+					}
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(Items.BUCKET);
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
 				}
 			}
 		}
