@@ -11,6 +11,7 @@ import power.keepeersofthestones.procedures.ShadowGetProcedure;
 import power.keepeersofthestones.procedures.RainGetProcedure;
 import power.keepeersofthestones.procedures.OceanGetProcedure;
 import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
+import power.keepeersofthestones.procedures.MetalGetProcedure;
 import power.keepeersofthestones.procedures.LightningGetProcedure;
 import power.keepeersofthestones.procedures.LightGetProcedure;
 import power.keepeersofthestones.procedures.LavaGetProcedure;
@@ -144,6 +145,10 @@ public class ChoiseMagicStoneGUIButtonMessage {
 		if (buttonID == 15) {
 
 			AnimalsGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 16) {
+
+			MetalGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 17) {
 
