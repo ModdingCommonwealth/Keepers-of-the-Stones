@@ -29,9 +29,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntityHitWith": {
-      "name": "CursedDiamondUse"
-    },
     "onItemInInventoryTick": {
       "name": "CurseFromCursedDiamond"
     },

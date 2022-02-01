@@ -8047,35 +8047,6 @@
       "path": "~/Blood"
     },
     {
-      "name": "CursedDiamondUse",
-      "type": "procedure",
-      "sortid": 484,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_diamond_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blood"
-    },
-    {
       "name": "CurseCursedDiamond",
       "type": "potioneffect",
       "sortid": 485,
@@ -8524,8 +8495,8 @@
       "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -8635,7 +8606,7 @@
       "effect.power.recharge_destruction_stone": "Перезарядка",
       "item.power.sun_ray": "Луч Солнца",
       "item.power.destruction_leggings": "Destruction Поножи",
-      "item.power.vampirism": "Vampirism",
+      "item.power.vampirism": "Вампиризм",
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
@@ -8693,7 +8664,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
       "item.power.animals_boots": "Animals Boots",
-      "item.power.cursed_diamond": "Cursed Diamond",
+      "item.power.cursed_diamond": "Проклятый Бриллиант",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -8711,7 +8682,7 @@
       "item.power.sai": "Саи",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
-      "item.power.blood_reaper": "Blood Reaper",
+      "item.power.blood_reaper": "Кровавый Жнец",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -8765,7 +8736,7 @@
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
       "effect.recharge_metal_stone": "Recharge",
-      "item.power.black_heart": "Black Heart",
+      "item.power.black_heart": "Черное Сердце",
       "block.power.black_hole_block": "Блок Черной Дыры",
       "effect.coal_merger": "Coal Merger",
       "item.power.spawn": "Порождение",
@@ -8847,7 +8818,7 @@
       "item.power.eclipse": "Затмение",
       "effect.power.inferno_merger": "Слияние Инферно",
       "biome.power.mars_land": "Марсианская Земля",
-      "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
+      "effect.power.curse_cursed_diamond": "Проклятие Проклятого Бриллианта",
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
       "effect.lava_master": "Master of Lava",
@@ -8883,8 +8854,8 @@
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -9381,7 +9352,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.3.5-dev1",
+    "version": "1.3.5-dev2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
