@@ -7963,6 +7963,177 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "Vampirism",
+      "type": "item",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodReaper",
+      "type": "tool",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_reaper",
+      "path": "~/Blood"
+    },
+    {
+      "name": "CursedDiamond",
+      "type": "item",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BlackHeart",
+      "type": "rangeditem",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart",
+      "path": "~/Blood"
+    },
+    {
+      "name": "VampirismUse",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodReaperUse",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_reaper_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CursedDiamondUse",
+      "type": "procedure",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CurseCursedDiamond",
+      "type": "potioneffect",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_cursed_diamond",
+      "path": "~/Blood"
+    },
+    {
+      "name": "CurseFromCursedDiamond",
+      "type": "procedure",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_from_cursed_diamond",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CursedDiamondEffect",
+      "type": "procedure",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BlackHeartUse",
+      "type": "procedure",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
     }
   ],
   "variable_elements": [
@@ -8353,8 +8524,8 @@
       "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -8464,6 +8635,7 @@
       "effect.power.recharge_destruction_stone": "Перезарядка",
       "item.power.sun_ray": "Луч Солнца",
       "item.power.destruction_leggings": "Destruction Поножи",
+      "item.power.vampirism": "Vampirism",
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
@@ -8521,6 +8693,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
       "item.power.animals_boots": "Animals Boots",
+      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -8538,6 +8711,7 @@
       "item.power.sai": "Саи",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
+      "item.power.blood_reaper": "Blood Reaper",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -8591,6 +8765,7 @@
       "item.power.ice_ball": "Ледяной шар",
       "item.power.fire_leggings": "Огненные Штаны",
       "effect.recharge_metal_stone": "Recharge",
+      "item.power.black_heart": "Black Heart",
       "block.power.black_hole_block": "Блок Черной Дыры",
       "effect.coal_merger": "Coal Merger",
       "item.power.spawn": "Порождение",
@@ -8672,6 +8847,7 @@
       "item.power.eclipse": "Затмение",
       "effect.power.inferno_merger": "Слияние Инферно",
       "biome.power.mars_land": "Марсианская Земля",
+      "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
       "effect.lava_master": "Master of Lava",
@@ -8707,8 +8883,8 @@
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -8818,6 +8994,7 @@
       "effect.power.recharge_destruction_stone": "Recharge",
       "item.power.sun_ray": "Sun Ray",
       "item.power.destruction_leggings": "Destruction Поножи",
+      "item.power.vampirism": "Vampirism",
       "effect.recharge_air_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
       "item.power.crestcent_boots": "Crestcent Boots",
@@ -8875,6 +9052,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Water Stone",
       "item.power.animals_boots": "Animals Boots",
+      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
@@ -8892,6 +9070,7 @@
       "item.power.sai": "Sai",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
+      "item.power.blood_reaper": "Blood Reaper",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
@@ -8945,6 +9124,7 @@
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
       "effect.recharge_metal_stone": "Recharge",
+      "item.power.black_heart": "Black Heart",
       "block.power.black_hole_block": "Black Hole Block",
       "effect.coal_merger": "Coal Merger",
       "item.power.spawn": "Spawn",
@@ -9026,6 +9206,7 @@
       "item.power.eclipse": "Eclipse",
       "effect.power.inferno_merger": "Inferno Merger",
       "biome.power.mars_land": "Mars Land",
+      "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
       "effect.lava_master": "Master of Lava",
       "item.power.rain_leggings": "Rain Leggings",
       "item.power.shadow_ball": "Shadow Ball",

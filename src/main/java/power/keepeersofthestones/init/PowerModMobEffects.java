@@ -51,6 +51,7 @@ import power.keepeersofthestones.potion.FireMasterMobEffect;
 import power.keepeersofthestones.potion.EnergyMasterMobEffect;
 import power.keepeersofthestones.potion.EarthMasterMobEffect;
 import power.keepeersofthestones.potion.DestructionMasterMobEffect;
+import power.keepeersofthestones.potion.CurseCursedDiamondMobEffect;
 import power.keepeersofthestones.potion.CrystalMasterMobEffect;
 import power.keepeersofthestones.potion.CreationMasterMobEffect;
 import power.keepeersofthestones.potion.CosmosMasterMobEffect;
@@ -125,6 +126,7 @@ public class PowerModMobEffects {
 	public static final MobEffect COAL_MERGER = register(new CoalMergerMobEffect());
 	public static final MobEffect RECHARGE_BLOOD_STONE = register(new RechargeBloodStoneMobEffect());
 	public static final MobEffect BLOOD_MASTER = register(new BloodMasterMobEffect());
+	public static final MobEffect CURSE_CURSED_DIAMOND = register(new CurseCursedDiamondMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

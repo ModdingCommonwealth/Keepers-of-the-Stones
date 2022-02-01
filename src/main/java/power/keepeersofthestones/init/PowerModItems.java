@@ -12,6 +12,7 @@ import power.keepeersofthestones.item.WaterKatanaItem;
 import power.keepeersofthestones.item.WaterItem;
 import power.keepeersofthestones.item.WaterFlowItem;
 import power.keepeersofthestones.item.WaterDropItem;
+import power.keepeersofthestones.item.VampirismItem;
 import power.keepeersofthestones.item.VacuumWebItem;
 import power.keepeersofthestones.item.VacuumSwordItem;
 import power.keepeersofthestones.item.VacuumStoneItem;
@@ -112,6 +113,7 @@ import power.keepeersofthestones.item.EarthItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
+import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -127,8 +129,10 @@ import power.keepeersofthestones.item.CoralShieldItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
 import power.keepeersofthestones.item.BurnItem;
 import power.keepeersofthestones.item.BloodStoneItem;
+import power.keepeersofthestones.item.BloodReaperItem;
 import power.keepeersofthestones.item.BloodItem;
 import power.keepeersofthestones.item.BlackHoleItem;
+import power.keepeersofthestones.item.BlackHeartItem;
 import power.keepeersofthestones.item.BeeStingItem;
 import power.keepeersofthestones.item.AnimalsStoneItem;
 import power.keepeersofthestones.item.AnimalsItem;
@@ -372,6 +376,10 @@ public class PowerModItems {
 	public static final Item BLOOD_CHESTPLATE = register(new BloodItem.Chestplate());
 	public static final Item BLOOD_LEGGINGS = register(new BloodItem.Leggings());
 	public static final Item BLOOD_BOOTS = register(new BloodItem.Boots());
+	public static final Item VAMPIRISM = register(new VampirismItem());
+	public static final Item BLOOD_REAPER = register(new BloodReaperItem());
+	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
+	public static final Item BLACK_HEART = register(new BlackHeartItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

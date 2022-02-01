@@ -60,6 +60,30 @@ public class BloodMasterEffectStartProcedure {
 						"item replace entity @s armor.feet with power:blood_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 		}
 		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"give @s power:blood_reaper{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"give @s power:cursed_diamond{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"give @s power:black_heart{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"give @s power:vampirism{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		}
+		{
 			boolean _setval = true;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.blood = _setval;

@@ -29,6 +29,7 @@ import power.keepeersofthestones.entity.FlashLightEntity;
 import power.keepeersofthestones.entity.EnergySphereEntity;
 import power.keepeersofthestones.entity.ClusterSharpEntity;
 import power.keepeersofthestones.entity.BlackHoleEntity;
+import power.keepeersofthestones.entity.BlackHeartEntity;
 import power.keepeersofthestones.entity.AirFlowEntity;
 import power.keepeersofthestones.entity.AcusticalExplodeEntity;
 
@@ -129,6 +130,9 @@ public class PowerModEntities {
 	public static final EntityType<TornadoEntityEntity> TORNADO_ENTITY = register("tornado_entity",
 			EntityType.Builder.<TornadoEntityEntity>of(TornadoEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TornadoEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final EntityType<BlackHeartEntity> BLACK_HEART = register("entitybulletblack_heart",
+			EntityType.Builder.<BlackHeartEntity>of(BlackHeartEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHeartEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
