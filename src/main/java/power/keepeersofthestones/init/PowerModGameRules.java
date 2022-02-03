@@ -14,4 +14,6 @@ public class PowerModGameRules {
 			.register("gettingStonesWhenEnteringTheGame", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> FORBIDDENINACTIVESPELLS = GameRules.register("forbiddenInactiveSpells",
 			GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> CANRECHOISESTONE = GameRules.register("canRechoiseStone", GameRules.Category.PLAYER,
+			GameRules.BooleanValue.create(true));
 }

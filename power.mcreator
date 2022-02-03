@@ -8105,6 +8105,26 @@
         ]
       },
       "path": "~/Blood"
+    },
+    {
+      "name": "CanRechoiceStone",
+      "type": "code",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "can_rechoice_stone"
+    },
+    {
+      "name": "CanRechoiseStone",
+      "type": "gamerule",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canRechoiseStone",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -8487,6 +8507,7 @@
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
       "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
+      "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
       "item.power.energy_leggings": "Энергетические Поножи",
       "item.power.energy_sphere": "Энергетический Шар",
       "item.power.vacuum_web": "Вакуумная Сеть",
@@ -8495,8 +8516,8 @@
       "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -8827,6 +8848,7 @@
       "effect.power.metal_master": "Мастер Металла",
       "effect.power.recharge_metal_stone": "Перезарядка",
       "effect.invincibility": "Invincibility",
+      "gamerule.canRechoiseStone": "Может быть, можно заново выбрать камень?",
       "effect.power.fire_master": "Мастер Огня",
       "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
@@ -8846,6 +8868,7 @@
     "en_us": {
       "item.power.metal_invulnerability": "Invulnerability of Metal",
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
+      "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "item.power.energy_leggings": "Energy Leggings",
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
@@ -8854,8 +8877,8 @@
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -9186,6 +9209,7 @@
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
       "effect.invincibility": "Invincibility",
+      "gamerule.canRechoiseStone": "Maybe it is possible to re-select the stone?",
       "effect.power.fire_master": "Master of Fire",
       "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
@@ -9345,6 +9369,10 @@
       },
       {
         "name": "Blood",
+        "children": []
+      },
+      {
+        "name": "Technology",
         "children": []
       }
     ]
