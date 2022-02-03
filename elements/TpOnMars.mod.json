@@ -32,6 +32,9 @@
     "onRightClickedInAir": {
       "name": "OnMarsUse"
     },
+    "onEntityHitWith": {
+      "name": "OnMarsUse"
+    },
     "hasDispenseBehavior": false
   }
 }

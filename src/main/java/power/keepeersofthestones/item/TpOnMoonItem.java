@@ -9,6 +9,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
@@ -38,5 +39,12 @@ public class TpOnMoonItem extends Item {
 
 		OnMoonUseProcedure.execute(entity);
 		return ar;
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		OnMoonUseProcedure.execute(entity);
+		return retval;
 	}
 }

@@ -35,9 +35,6 @@
         "value": "CUSTOM:LavaStone"
       },
       {
-        "value": "CUSTOM:EmptyStone"
-      },
-      {
         "value": "CUSTOM:RainStone"
       },
       {
@@ -78,6 +75,9 @@
       },
       {
         "value": "CUSTOM:CosmosStone"
+      },
+      {
+        "value": "CUSTOM:BloodStone"
       }
     ],
     "blocks": [],

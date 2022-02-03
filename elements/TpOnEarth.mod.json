@@ -32,6 +32,9 @@
     "onRightClickedInAir": {
       "name": "OnEarthUse"
     },
+    "onEntityHitWith": {
+      "name": "OnEarthUse"
+    },
     "hasDispenseBehavior": false
   }
 }

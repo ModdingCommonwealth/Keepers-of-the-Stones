@@ -89,7 +89,7 @@ public class ShadowBallEntity extends AbstractArrow implements ItemSupplier {
 
 	public static ShadowBallEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ShadowBallEntity entityarrow = new ShadowBallEntity(PowerModEntities.SHADOW_BALL, entity, world);
-		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
+		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);

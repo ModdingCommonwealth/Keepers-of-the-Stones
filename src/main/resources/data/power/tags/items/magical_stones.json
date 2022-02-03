@@ -6,11 +6,8 @@
     "power:lava_stone",
     "power:creation_stone",
     "power:ice_stone",
-    "power:sound_stone",
     "power:vacuum_stone",
-    "power:air_stone",
     "power:earth_stone",
-    "power:crystal_stone",
     "power:tornado_stone",
     "power:metal_stone",
     "power:light_stone",
@@ -19,11 +16,15 @@
     "power:cosmos_stone",
     "power:greenery_stone",
     "power:lightning_stone",
-    "power:shadow_stone",
     "power:water_stone",
     "power:animals_stone",
+    "power:rain_stone",
+    "power:sound_stone",
+    "power:air_stone",
+    "power:crystal_stone",
+    "power:shadow_stone",
+    "power:blood_stone",
     "power:sun_stone",
-    "power:ocean_stone",
-    "power:rain_stone"
+    "power:ocean_stone"
   ]
 }

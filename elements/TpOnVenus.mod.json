@@ -32,6 +32,9 @@
     "onRightClickedInAir": {
       "name": "OnVenusUse"
     },
+    "onEntityHitWith": {
+      "name": "OnVenusUse"
+    },
     "hasDispenseBehavior": false
   }
 }

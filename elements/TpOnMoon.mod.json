@@ -32,6 +32,9 @@
     "onRightClickedInAir": {
       "name": "OnMoonUse"
     },
+    "onEntityHitWith": {
+      "name": "OnMoonUse"
+    },
     "hasDispenseBehavior": false
   }
 }

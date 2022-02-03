@@ -173,7 +173,7 @@ public class TornadoEntityEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of().contains(stack);
+		return List.of().contains(stack.getItem());
 	}
 
 	@Override

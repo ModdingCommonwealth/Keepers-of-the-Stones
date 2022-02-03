@@ -22,8 +22,7 @@ import javax.annotation.Nullable;
 public class RespawnPlayerProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, entity);
+		execute(event, event.getPlayer());
 	}
 
 	public static void execute(Entity entity) {
