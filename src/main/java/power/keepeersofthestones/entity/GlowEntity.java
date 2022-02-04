@@ -66,7 +66,7 @@ public class GlowEntity extends TamableAnimal {
 		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
 		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false));
-		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers());
+		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers(this.getClass()));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ShadowEntity.class, false, false));
 		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
@@ -154,7 +154,7 @@ public class GlowEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of().contains(stack.getItem());
+		return List.of().contains(stack);
 	}
 
 	public void aiStep() {

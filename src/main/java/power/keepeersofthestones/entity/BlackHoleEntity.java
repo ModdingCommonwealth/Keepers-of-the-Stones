@@ -83,7 +83,7 @@ public class BlackHoleEntity extends AbstractArrow implements ItemSupplier {
 
 	public static BlackHoleEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		BlackHoleEntity entityarrow = new BlackHoleEntity(PowerModEntities.BLACK_HOLE, entity, world);
-		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);

@@ -80,7 +80,7 @@ public class RainBowEntity extends AbstractArrow implements ItemSupplier {
 
 	public static RainBowEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		RainBowEntity entityarrow = new RainBowEntity(PowerModEntities.RAIN_BOW, entity, world);
-		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(true);
 		entityarrow.setBaseDamage(damage);

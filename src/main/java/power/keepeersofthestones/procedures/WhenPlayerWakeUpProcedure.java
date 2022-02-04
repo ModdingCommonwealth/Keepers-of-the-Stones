@@ -16,7 +16,8 @@ import javax.annotation.Nullable;
 public class WhenPlayerWakeUpProcedure {
 	@SubscribeEvent
 	public static void onEntityEndSleep(PlayerWakeUpEvent event) {
-		execute(event, event.getEntity());
+		Entity entity = event.getEntity();
+		execute(event, entity);
 	}
 
 	public static void execute(Entity entity) {

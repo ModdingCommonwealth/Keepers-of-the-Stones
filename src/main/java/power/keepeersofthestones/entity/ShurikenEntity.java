@@ -80,7 +80,7 @@ public class ShurikenEntity extends AbstractArrow implements ItemSupplier {
 
 	public static ShurikenEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ShurikenEntity entityarrow = new ShurikenEntity(PowerModEntities.SHURIKEN, entity, world);
-		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);

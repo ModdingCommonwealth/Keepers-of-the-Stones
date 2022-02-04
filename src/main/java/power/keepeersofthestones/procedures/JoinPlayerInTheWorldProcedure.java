@@ -30,7 +30,8 @@ import io.netty.buffer.Unpooled;
 public class JoinPlayerInTheWorldProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		execute(event, event.getPlayer().level, event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getPlayer());
+		Entity entity = event.getPlayer();
+		execute(event, entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
