@@ -30,6 +30,11 @@ public class BloodStoneItem extends Item {
 	}
 
 	@Override
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
+	}
+
+	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		ItemStack itemstack = ar.getObject();
