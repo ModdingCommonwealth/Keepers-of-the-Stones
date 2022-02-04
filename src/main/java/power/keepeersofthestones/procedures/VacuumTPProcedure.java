@@ -39,9 +39,9 @@ public class VacuumTPProcedure {
 			private void run() {
 				{
 					Entity _ent = entity;
-					_ent.teleportTo(x, (y * 0), z);
+					_ent.teleportTo(x, (y * (-65)), z);
 					if (_ent instanceof ServerPlayer _serverPlayer) {
-						_serverPlayer.connection.teleport(x, (y * 0), z, _ent.getYRot(), _ent.getXRot(), Collections.emptySet());
+						_serverPlayer.connection.teleport(x, (y * (-65)), z, _ent.getYRot(), _ent.getXRot(), Collections.emptySet());
 					}
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);
