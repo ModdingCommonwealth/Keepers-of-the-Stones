@@ -991,6 +991,51 @@ public class RemovalProhibitedItemsProcedure {
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 									_player.inventoryMenu.getCraftSlots());
 						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_HELMET);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_CHESTPLATE);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_LEGGINGS);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BOOTS);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BLADE);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.ACCELERATION_TIME);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_DILATION);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_STOP);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_REVERSED);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
 					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).active) {
 						if (entity instanceof Player _playerHasItem

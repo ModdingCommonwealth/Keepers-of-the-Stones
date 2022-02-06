@@ -26,6 +26,12 @@ import power.keepeersofthestones.item.TornadoStoneItem;
 import power.keepeersofthestones.item.TornadoItem;
 import power.keepeersofthestones.item.TornadoCreateItem;
 import power.keepeersofthestones.item.TornadoBattleAxeItem;
+import power.keepeersofthestones.item.TimedilationItem;
+import power.keepeersofthestones.item.TimeStopItem;
+import power.keepeersofthestones.item.TimeStoneItem;
+import power.keepeersofthestones.item.TimeReversedItem;
+import power.keepeersofthestones.item.TimeItem;
+import power.keepeersofthestones.item.TimeBladeItem;
 import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.TechnologyStoneItem;
 import power.keepeersofthestones.item.TamerItem;
@@ -141,6 +147,7 @@ import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.item.AirFlowItem;
 import power.keepeersofthestones.item.AirBladeItem;
 import power.keepeersofthestones.item.AcusticalExplodeItem;
+import power.keepeersofthestones.item.AccelerationTimeItem;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -382,6 +389,16 @@ public class PowerModItems {
 	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
 	public static final Item BLACK_HEART = register(new BlackHeartItem());
 	public static final Item TECHNOLOGY_STONE = register(new TechnologyStoneItem());
+	public static final Item TIME_STONE = register(new TimeStoneItem());
+	public static final Item TIME_HELMET = register(new TimeItem.Helmet());
+	public static final Item TIME_CHESTPLATE = register(new TimeItem.Chestplate());
+	public static final Item TIME_LEGGINGS = register(new TimeItem.Leggings());
+	public static final Item TIME_BOOTS = register(new TimeItem.Boots());
+	public static final Item TIME_BLADE = register(new TimeBladeItem());
+	public static final Item ACCELERATION_TIME = register(new AccelerationTimeItem());
+	public static final Item TIME_DILATION = register(new TimedilationItem());
+	public static final Item TIME_STOP = register(new TimeStopItem());
+	public static final Item TIME_REVERSED = register(new TimeReversedItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

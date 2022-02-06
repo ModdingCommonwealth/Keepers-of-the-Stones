@@ -1,0 +1,27 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "time_blade",
+    "customModelName": "Normal",
+    "name": "Time Blade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 10.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 12.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

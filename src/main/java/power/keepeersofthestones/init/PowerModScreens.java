@@ -11,6 +11,7 @@ import power.keepeersofthestones.client.gui.GreatStoneBoxGUIScreen;
 import power.keepeersofthestones.client.gui.CultivationGUIScreen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage2Screen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
+import power.keepeersofthestones.client.gui.CheckpointGUIScreen;
 import power.keepeersofthestones.client.gui.BasicStoneBoxGUIScreen;
 import power.keepeersofthestones.client.gui.AdditionalAndesiteBoxGUIScreen;
 import power.keepeersofthestones.client.gui.AdditionStoneBoxGUIScreen;
@@ -37,6 +38,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.ADDITIONAL_ANDESITE_BOX_GUI, AdditionalAndesiteBoxGUIScreen::new);
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONE_GUI, ChoiseMagicStoneGUIScreen::new);
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_2, ChoiseMagicStonesPage2Screen::new);
+			MenuScreens.register(PowerModMenus.CHECKPOINT_GUI, CheckpointGUIScreen::new);
 		});
 	}
 }

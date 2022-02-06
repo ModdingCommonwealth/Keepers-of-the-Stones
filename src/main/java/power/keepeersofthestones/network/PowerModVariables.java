@@ -112,6 +112,10 @@ public class PowerModVariables {
 			clone.selected = original.selected;
 			clone.blood = original.blood;
 			clone.technology = original.technology;
+			clone.time = original.time;
+			clone.spawnx = original.spawnx;
+			clone.spawny = original.spawny;
+			clone.spawnz = original.spawnz;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 			}
@@ -169,6 +173,7 @@ public class PowerModVariables {
 		public boolean destruction_stone = false;
 		public boolean cosmos_stone = false;
 		public boolean blood_stone = false;
+		public boolean time_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -202,6 +207,7 @@ public class PowerModVariables {
 			destruction_stone = nbt.getBoolean("destruction_stone");
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
 			blood_stone = nbt.getBoolean("blood_stone");
+			time_stone = nbt.getBoolean("time_stone");
 		}
 
 		@Override
@@ -231,6 +237,7 @@ public class PowerModVariables {
 			nbt.putBoolean("destruction_stone", destruction_stone);
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			nbt.putBoolean("blood_stone", blood_stone);
+			nbt.putBoolean("time_stone", time_stone);
 			return nbt;
 		}
 
@@ -391,6 +398,10 @@ public class PowerModVariables {
 		public boolean selected = false;
 		public boolean blood = false;
 		public boolean technology = false;
+		public boolean time = false;
+		public double spawnx = 0.0;
+		public double spawny = 75.0;
+		public double spawnz = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -433,6 +444,10 @@ public class PowerModVariables {
 			nbt.putBoolean("selected", selected);
 			nbt.putBoolean("blood", blood);
 			nbt.putBoolean("technology", technology);
+			nbt.putBoolean("time", time);
+			nbt.putDouble("spawnx", spawnx);
+			nbt.putDouble("spawny", spawny);
+			nbt.putDouble("spawnz", spawnz);
 			return nbt;
 		}
 
@@ -472,6 +487,10 @@ public class PowerModVariables {
 			selected = nbt.getBoolean("selected");
 			blood = nbt.getBoolean("blood");
 			technology = nbt.getBoolean("technology");
+			time = nbt.getBoolean("time");
+			spawnx = nbt.getDouble("spawnx");
+			spawny = nbt.getDouble("spawny");
+			spawnz = nbt.getDouble("spawnz");
 		}
 	}
 
@@ -531,6 +550,10 @@ public class PowerModVariables {
 					variables.selected = message.data.selected;
 					variables.blood = message.data.blood;
 					variables.technology = message.data.technology;
+					variables.time = message.data.time;
+					variables.spawnx = message.data.spawnx;
+					variables.spawny = message.data.spawny;
+					variables.spawnz = message.data.spawnz;
 				}
 			});
 			context.setPacketHandled(true);

@@ -8161,6 +8161,433 @@
         ]
       },
       "path": "~/Technology"
+    },
+    {
+      "name": "TimeStone",
+      "type": "item",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stone",
+      "path": "~/Time"
+    },
+    {
+      "name": "RechargeTimeStone",
+      "type": "potioneffect",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_time_stone",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffect",
+      "type": "potioneffect",
+      "sortid": 496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "Time",
+      "type": "armor",
+      "sortid": 497,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffectStart",
+      "type": "procedure",
+      "sortid": 498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffects",
+      "type": "procedure",
+      "sortid": 500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStoneUse",
+      "type": "procedure",
+      "sortid": 501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeBlade",
+      "type": "tool",
+      "sortid": 502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_blade",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTime",
+      "type": "item",
+      "sortid": 503,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeEffect",
+      "type": "potioneffect",
+      "sortid": 504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeTickEffect",
+      "type": "procedure",
+      "sortid": 505,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_tick_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeUse",
+      "type": "procedure",
+      "sortid": 506,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "Timedilation",
+      "type": "item",
+      "sortid": 507,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeDilationUse",
+      "type": "procedure",
+      "sortid": 508,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStop",
+      "type": "item",
+      "sortid": 509,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopUse",
+      "type": "procedure",
+      "sortid": 510,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffectStart",
+      "type": "procedure",
+      "sortid": 511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffectEnd",
+      "type": "procedure",
+      "sortid": 512,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffect",
+      "type": "potioneffect",
+      "sortid": 511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeGet",
+      "type": "procedure",
+      "sortid": 513,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "TimeReversed",
+      "type": "item",
+      "sortid": 514,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_reversed",
+      "path": "~/Time"
+    },
+    {
+      "name": "Checkpoint",
+      "type": "procedure",
+      "sortid": 515,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "ReturnCheckpoint",
+      "type": "procedure",
+      "sortid": 516,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_checkpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "CheckpointGUI",
+      "type": "gui",
+      "sortid": 517,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_gui",
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -8523,6 +8950,36 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "time",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "time_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "spawnx",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "spawny",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "75.0"
+    },
+    {
+      "name": "spawnz",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -8555,20 +9012,21 @@
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
       "effect.power.recharge_technology_stone": "Перезарядка",
-      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
+      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "item.power.energy_leggings": "Энергетические Поножи",
-      "item.power.energy_sphere": "Энергетический Шар",
       "item.power.vacuum_web": "Вакуумная Сеть",
+      "item.power.energy_sphere": "Энергетический Шар",
       "item.power.energy_helmet": "Энергетический Шлем",
       "item.power.create_shadow": "Создать Тень",
       "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "item.power.rainfall": "Ливень",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
+      "effect.power.time_stop_effect": "Остановка Времени",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Перезарядка",
@@ -8620,11 +9078,13 @@
       "effect.power.recharge_earth_stone": "Перезарядка",
       "effect.power.ice_master": "Мастер Льда",
       "item.power.magma_shield": "Магматический Щит",
+      "item.power.time_reversed": "Время Вспять",
       "item.power.cosmos_leggings": "Cosmos Leggings",
       "item.power.moon_axe": "Лунная Секира",
       "item.power.piece_of_earth": "Кусок Земли",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
       "biome.power.moon_land": "Лунная Земля",
+      "effect.power.acceleration_time_effect": "Ускорение Времени",
       "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Мастер Лавы",
       "effect.power.blood_master": "Мастер Крови",
@@ -8638,10 +9098,12 @@
       "effect.cosmos_master": "Master of Space",
       "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
+      "item.power.time_boots": "Time Boots",
       "itemGroup.tabmagical_stone_boxes": "Волшебные шкатулки",
       "item.power.plasma_ball": "Плазменный шар",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "item.power.time_leggings": "Time Leggings",
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
@@ -8677,6 +9139,7 @@
       "item.power.sun_ray": "Луч Солнца",
       "item.power.destruction_leggings": "Destruction Поножи",
       "item.power.vampirism": "Вампиризм",
+      "effect.power.recharge_time_stone": "Recharge",
       "item.power.shield_of_earth": "Щит Земли",
       "effect.recharge_air_stone": "Recharge",
       "item.power.crestcent_boots": "Crestcent Boots",
@@ -8686,6 +9149,7 @@
       "item.power.creation_helmet": "Creation Helmet",
       "effect.power.recharge_fire_stone": "Перезарядка",
       "item.power.shadow_helmet": "Shadow Helmet",
+      "item.power.time_stop": "Остановка Времени",
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "block.power.crystal_shield_block": "Блок Кристаллического Щита",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
@@ -8715,10 +9179,12 @@
       "item.power.ice_spear": "Ледяное Копьё",
       "item.power.water_chestplate": "Водный Костюм",
       "effect.recharge_animals_stone": "Recharge",
+      "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Мастер Солнца",
       "effect.vacuum_master": "Master of Vacuum",
       "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
+      "item.power.time_helmet": "Time Helmet",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
       "item.power.random_item": "Случайный предмет",
       "item.power.earth_boots": "Земляные Ботинки",
@@ -8797,6 +9263,7 @@
       "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Волшебная андезитовая шкатулка",
       "item.power.ice_helmet": "Ледяной Шарф",
+      "item.power.time_dilation": "Замедление Времени",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
       "effect.recharge_ice_stone": "Recharge",
@@ -8832,7 +9299,9 @@
       "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Лавовый Пояс",
       "effect.shadow_master": "Master of Shadow",
+      "item.power.time_chestplate": "Time Chestplate",
       "item.power.lightning_chestplate": "Мантия Молнии",
+      "item.power.time_blade": "Клинок Времени",
       "item.power.rain_stone": "Камень Дождя",
       "item.power.lightning_strike": "Удар Молнии",
       "effect.greenery_master": "Master of Greenery",
@@ -8906,6 +9375,8 @@
       "block.power.wood_stone_box": "Волшебная деревянная шкатулка",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
       "item.power.ocean_stone": "Камень Океана",
+      "effect.power.time_master_effect": "Мастер Времени",
+      "item.power.acceleration_time": "Ускорение Времени",
       "effect.power.animals_master": "Мастер Животных",
       "effect.recharge_sun_stone": "Recharge",
       "item.power.rose_sword": "Розовая Шпага",
@@ -8919,20 +9390,21 @@
     "en_us": {
       "item.power.metal_invulnerability": "Invulnerability of Metal",
       "effect.power.recharge_technology_stone": "Recharge",
-      "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
+      "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "item.power.energy_leggings": "Energy Leggings",
-      "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_sphere": "Energy Sphere",
+      "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_helmet": "Energy Helmet",
       "item.power.create_shadow": "Create Shadow",
       "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
+      "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
@@ -8984,11 +9456,13 @@
       "effect.power.recharge_earth_stone": "Recharge",
       "item.power.magma_shield": "Magma Shield",
       "effect.power.ice_master": "Master of Ice",
+      "item.power.time_reversed": "Time Reversed",
       "item.power.cosmos_leggings": "Cosmos Leggings",
       "item.power.moon_axe": "Moon Axe",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
+      "effect.power.acceleration_time_effect": "Acceleration Time",
       "item.power.destruction_chestplate": "Destruction Кираса",
       "effect.power.lava_master": "Master of Lava",
       "effect.power.blood_master": "Master of Blood",
@@ -9002,10 +9476,12 @@
       "effect.cosmos_master": "Master of Space",
       "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
+      "item.power.time_boots": "Time Boots",
       "itemGroup.tabmagical_stone_boxes": "Magical Stone Boxes",
       "item.power.plasma_ball": "Plasma Ball",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "item.power.time_leggings": "Time Leggings",
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
@@ -9041,6 +9517,7 @@
       "item.power.sun_ray": "Sun Ray",
       "item.power.destruction_leggings": "Destruction Поножи",
       "item.power.vampirism": "Vampirism",
+      "effect.power.recharge_time_stone": "Recharge",
       "effect.recharge_air_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
       "item.power.crestcent_boots": "Crestcent Boots",
@@ -9050,6 +9527,7 @@
       "item.power.creation_helmet": "Creation Helmet",
       "effect.power.recharge_fire_stone": "Recharge",
       "item.power.shadow_helmet": "Shadow Helmet",
+      "item.power.time_stop": "Time Stop",
       "item.power.crystal_leggings": "Crystal Leggings",
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
@@ -9079,10 +9557,12 @@
       "item.power.ice_spear": "Ice Spear",
       "item.power.water_chestplate": "Water Chestplate",
       "effect.recharge_animals_stone": "Recharge",
+      "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Master of Sun",
       "effect.vacuum_master": "Master of Vacuum",
       "subtitles.stone_activation": "Stone been activation",
       "effect.rain_master": "Master of Rain",
+      "item.power.time_helmet": "Time Helmet",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "item.power.random_item": "Random Item",
       "item.power.earth_boots": "Earth Boots",
@@ -9161,6 +9641,7 @@
       "effect.metal_master": "Master of Metal",
       "block.power.andesite_stone_box": "Andesite Stone Box",
       "item.power.ice_helmet": "Ice Helmet",
+      "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
       "item.power.sound_barrier": "Sound Barrier",
       "effect.recharge_ice_stone": "Recharge",
@@ -9196,7 +9677,9 @@
       "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Lava Chestplate",
       "effect.shadow_master": "Master of Shadow",
+      "item.power.time_chestplate": "Time Chestplate",
       "item.power.lightning_chestplate": "Lightning Chestplate",
+      "item.power.time_blade": "Time Blade",
       "item.power.rain_stone": "Rain Stone",
       "item.power.lightning_strike": "Lightning Strike",
       "effect.greenery_master": "Master of Greenery",
@@ -9270,6 +9753,8 @@
       "block.power.wood_stone_box": "Wood Stone Box",
       "item.power.vacuum_spiral": "Vacuum Spiral",
       "item.power.ocean_stone": "Ocean Stone",
+      "effect.power.time_master_effect": "Master of Time",
+      "item.power.acceleration_time": "Acceleration Time",
       "effect.power.animals_master": "Master of Animals",
       "effect.recharge_sun_stone": "Recharge",
       "item.power.rose_sword": "Rose Sword",
@@ -9428,13 +9913,17 @@
       {
         "name": "Technology",
         "children": []
+      },
+      {
+        "name": "Time",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.3.6",
+    "version": "1.4.0-dev1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, ChiffonMedal",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

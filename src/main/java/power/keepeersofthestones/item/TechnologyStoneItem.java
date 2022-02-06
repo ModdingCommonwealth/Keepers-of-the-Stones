@@ -14,7 +14,7 @@ import net.minecraft.world.InteractionHand;
 
 public class TechnologyStoneItem extends Item {
 	public TechnologyStoneItem() {
-		super(new Item.Properties().tab(null).durability(10).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("technology_stone");
 	}
 
@@ -26,11 +26,6 @@ public class TechnologyStoneItem extends Item {
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 		return -0F;
-	}
-
-	@Override
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 
 	@Override

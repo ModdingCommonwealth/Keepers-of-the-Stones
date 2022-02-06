@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class BloodStoneItem extends Item {
 	public BloodStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("blood_stone");
 	}
 
@@ -27,11 +27,6 @@ public class BloodStoneItem extends Item {
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 		return 0F;
-	}
-
-	@Override
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 
 	@Override
