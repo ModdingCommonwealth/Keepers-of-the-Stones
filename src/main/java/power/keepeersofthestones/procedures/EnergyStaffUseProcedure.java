@@ -79,6 +79,10 @@ public class EnergyStaffUseProcedure {
 					_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.COAL_MERGER);
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(PowerModMobEffects.BLOOD_MASTER);
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(PowerModMobEffects.TECHNOLOGY_MASTER);
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ENERGY_MASTER, 24000, 0, (false), (false)));
 				if (sourceentity instanceof LivingEntity _entity)

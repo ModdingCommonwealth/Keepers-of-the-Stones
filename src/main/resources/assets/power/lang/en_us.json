@@ -1,5 +1,6 @@
 {
   "item.power.metal_invulnerability": "Invulnerability of Metal",
+  "effect.power.recharge_technology_stone": "Recharge",
   "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
   "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
   "item.power.energy_leggings": "Energy Leggings",
@@ -264,6 +265,7 @@
   "item.power.crystal_stone": "Crystal Stone",
   "effect.recharge_light_stone": "Recharge",
   "item.power.metal_chestplate": "Metal Chestplate",
+  "item.power.technology_stone": "Technology Stone",
   "block.power.stone_stone_box": "Wood Stone Box",
   "item.power.fire_boots": "Fire Boots",
   "effect.power.air_master": "Master of the Air",
@@ -328,6 +330,7 @@
   "subtitles.stone_deactivation": "Stone been deactivation",
   "item.power.whirlpool": "Whirlpool",
   "entity.power.glow": "Glow",
+  "effect.power.technology_master": "Master of Technology",
   "effect.recharge_lava_stone": "Recharge",
   "effect.recharge_energy_stone": "Recharge",
   "item.power.eclipse": "Eclipse",

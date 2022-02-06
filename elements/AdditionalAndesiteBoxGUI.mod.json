@@ -42,14 +42,14 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:TechnologyStone"
           },
           "color": {
             "value": -16724839,
             "falpha": 0.0
           },
           "id": 2,
-          "disableStackInteraction": true,
+          "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
           "name": "Slot #2",
           "x": 186,

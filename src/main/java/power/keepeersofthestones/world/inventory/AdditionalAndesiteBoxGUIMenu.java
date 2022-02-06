@@ -84,13 +84,8 @@ public class AdditionalAndesiteBoxGUIMenu extends AbstractContainerMenu implemen
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 17) {
 			@Override
-			public boolean mayPickup(Player player) {
-				return false;
-			}
-
-			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return false;
+				return (PowerModItems.TECHNOLOGY_STONE == stack.getItem());
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 17) {

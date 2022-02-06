@@ -27,6 +27,7 @@ import power.keepeersofthestones.item.TornadoItem;
 import power.keepeersofthestones.item.TornadoCreateItem;
 import power.keepeersofthestones.item.TornadoBattleAxeItem;
 import power.keepeersofthestones.item.TigerClawItem;
+import power.keepeersofthestones.item.TechnologyStoneItem;
 import power.keepeersofthestones.item.TamerItem;
 import power.keepeersofthestones.item.SunStoneItem;
 import power.keepeersofthestones.item.SunRegenerationItem;
@@ -380,6 +381,7 @@ public class PowerModItems {
 	public static final Item BLOOD_REAPER = register(new BloodReaperItem());
 	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
 	public static final Item BLACK_HEART = register(new BlackHeartItem());
+	public static final Item TECHNOLOGY_STONE = register(new TechnologyStoneItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

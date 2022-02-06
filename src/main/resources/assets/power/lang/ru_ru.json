@@ -1,5 +1,6 @@
 {
   "item.power.metal_invulnerability": "Неуязвимость Металла",
+  "effect.power.recharge_technology_stone": "Перезарядка",
   "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
   "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
   "item.power.energy_leggings": "Энергетические Поножи",
@@ -264,6 +265,7 @@
   "item.power.crystal_stone": "Камень Кристалла",
   "effect.recharge_light_stone": "Recharge",
   "item.power.metal_chestplate": "Metal Chestplate",
+  "item.power.technology_stone": "Камень Технологий",
   "item.power.fire_boots": "Огненные Ботинки",
   "block.power.stone_stone_box": "Волшебная каменная шкатулка",
   "effect.power.air_master": "Мастер Воздуха",
@@ -328,6 +330,7 @@
   "subtitles.stone_deactivation": "Stone been deactivation",
   "item.power.whirlpool": "Водоворот",
   "entity.power.glow": "Светляк",
+  "effect.power.technology_master": "Мастер Технологий",
   "effect.recharge_lava_stone": "Recharge",
   "effect.recharge_energy_stone": "Recharge",
   "item.power.eclipse": "Затмение",

@@ -7,12 +7,14 @@ package power.keepeersofthestones.init;
 import power.keepeersofthestones.potion.WaterMasterMobEffect;
 import power.keepeersofthestones.potion.VacuumMasterMobEffect;
 import power.keepeersofthestones.potion.TornadoMasterMobEffect;
+import power.keepeersofthestones.potion.TechnologyMasterMobEffect;
 import power.keepeersofthestones.potion.SunMasterMobEffect;
 import power.keepeersofthestones.potion.SoundMasterMobEffect;
 import power.keepeersofthestones.potion.ShadowMasterMobEffect;
 import power.keepeersofthestones.potion.RechargeWaterStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeVacuumStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeTornadoStoneMobEffect;
+import power.keepeersofthestones.potion.RechargeTechnologyStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeSunStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeSoundStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeShadowStoneMobEffect;
@@ -127,6 +129,8 @@ public class PowerModMobEffects {
 	public static final MobEffect RECHARGE_BLOOD_STONE = register(new RechargeBloodStoneMobEffect());
 	public static final MobEffect BLOOD_MASTER = register(new BloodMasterMobEffect());
 	public static final MobEffect CURSE_CURSED_DIAMOND = register(new CurseCursedDiamondMobEffect());
+	public static final MobEffect TECHNOLOGY_MASTER = register(new TechnologyMasterMobEffect());
+	public static final MobEffect RECHARGE_TECHNOLOGY_STONE = register(new RechargeTechnologyStoneMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

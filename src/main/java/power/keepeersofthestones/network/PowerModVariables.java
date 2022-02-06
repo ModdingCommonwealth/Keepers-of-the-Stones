@@ -111,6 +111,7 @@ public class PowerModVariables {
 			clone.cosmos = original.cosmos;
 			clone.selected = original.selected;
 			clone.blood = original.blood;
+			clone.technology = original.technology;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 			}
@@ -252,6 +253,7 @@ public class PowerModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
+		public boolean technology_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -260,10 +262,12 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			technology_stone = nbt.getBoolean("technology_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("technology_stone", technology_stone);
 			return nbt;
 		}
 
@@ -386,6 +390,7 @@ public class PowerModVariables {
 		public boolean cosmos = false;
 		public boolean selected = false;
 		public boolean blood = false;
+		public boolean technology = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -427,6 +432,7 @@ public class PowerModVariables {
 			nbt.putBoolean("cosmos", cosmos);
 			nbt.putBoolean("selected", selected);
 			nbt.putBoolean("blood", blood);
+			nbt.putBoolean("technology", technology);
 			return nbt;
 		}
 
@@ -465,6 +471,7 @@ public class PowerModVariables {
 			cosmos = nbt.getBoolean("cosmos");
 			selected = nbt.getBoolean("selected");
 			blood = nbt.getBoolean("blood");
+			technology = nbt.getBoolean("technology");
 		}
 	}
 
@@ -523,6 +530,7 @@ public class PowerModVariables {
 					variables.cosmos = message.data.cosmos;
 					variables.selected = message.data.selected;
 					variables.blood = message.data.blood;
+					variables.technology = message.data.technology;
 				}
 			});
 			context.setPacketHandled(true);

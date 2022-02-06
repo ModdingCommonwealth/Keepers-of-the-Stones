@@ -496,5 +496,21 @@ public class RespawnPlayerProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE, 6000, 0, (false), (false)));
 		}
+		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).technology) {
+			{
+				boolean _setval = false;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.technology = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_STONE);
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TECHNOLOGY_STONE, 6000, 0, (false), (false)));
+		}
 	}
 }
