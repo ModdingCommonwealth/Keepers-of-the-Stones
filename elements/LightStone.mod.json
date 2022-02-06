@@ -8,7 +8,7 @@
     "name": "Light Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MagicalStone"
+      "value": "CUSTOM:MiddleGroup"
     },
     "stackSize": 1,
     "enchantability": 0,

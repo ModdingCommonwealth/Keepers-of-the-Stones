@@ -6,7 +6,8 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "detransform_key"
+      "registry_name": "detransform_key",
+      "path": "~/DetransformKey"
     },
     {
       "name": "DetransformKeyPriNazhatiiKlavishi",
@@ -22,7 +23,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/DetransformKey"
     },
     {
       "name": "FireStone",
@@ -32,14 +34,6 @@
       "locked_code": false,
       "registry_name": "fire_stone",
       "path": "~/Fire"
-    },
-    {
-      "name": "MagicalStone",
-      "type": "tab",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stone"
     },
     {
       "name": "FireMastereffectstart",
@@ -114,7 +108,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Fire"
     },
     {
       "name": "Burn",
@@ -623,24 +618,6 @@
       "path": "~/Energy"
     },
     {
-      "name": "BasicStoneBoxGUI",
-      "type": "gui",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "WoodStoneBox",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wood_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
       "name": "Water",
       "type": "armor",
       "sortid": 71,
@@ -1073,24 +1050,6 @@
         ]
       },
       "path": "~/Energy"
-    },
-    {
-      "name": "AdditionStoneBoxGUI",
-      "type": "gui",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "addition_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "StoneStoneBox",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_stone_box",
-      "path": "~/StoneBoxes"
     },
     {
       "name": "IceMaster",
@@ -2609,51 +2568,6 @@
       "locked_code": false,
       "registry_name": "rain_knife",
       "path": "~/Rain"
-    },
-    {
-      "name": "MediumStoneBoxGUI",
-      "type": "gui",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "medium_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "IronStoneBox",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "GreatStoneBoxGUI",
-      "type": "gui",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "great_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "GoldStoneBox",
-      "type": "block",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "MagicalStoneBoxes",
-      "type": "tab",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stone_boxes",
-      "path": "~/StoneBoxes"
     },
     {
       "name": "RespawnPlayer",
@@ -5193,24 +5107,6 @@
       "path": "~/Vacuum"
     },
     {
-      "name": "AndesiteStoneBox",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "andesite_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "AdditionalAndesiteBoxGUI",
-      "type": "gui",
-      "sortid": 325,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "additional_andesite_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
       "name": "RechargeSunStone",
       "type": "potioneffect",
       "sortid": 326,
@@ -7006,14 +6902,6 @@
       "path": "~/ReceivingStones"
     },
     {
-      "name": "MagicalStones",
-      "type": "tag",
-      "sortid": 426,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stones"
-    },
-    {
       "name": "LightningGet",
       "type": "procedure",
       "sortid": 427,
@@ -8588,6 +8476,42 @@
       "locked_code": false,
       "registry_name": "checkpoint_gui",
       "path": "~/Time"
+    },
+    {
+      "name": "BasicGroup",
+      "type": "tab",
+      "sortid": 518,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "AdditionalGroup",
+      "type": "tab",
+      "sortid": 519,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "additional_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "MiddleGroup",
+      "type": "tab",
+      "sortid": 520,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "middle_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "GreatGroup",
+      "type": "tab",
+      "sortid": 521,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_group",
+      "path": "~/ElementalGroups"
     }
   ],
   "variable_elements": [
@@ -9060,7 +8984,6 @@
       "item.power.air_blade": "Воздушная Рапира",
       "block.power.sound_barrier_block": "Блок Звукового барьера",
       "item.power.lighting": "Освещение",
-      "itemGroup.tabmagical_stone": "Волшебные камни",
       "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Огненная корона",
       "item.power.galactic_sword": "Галактический меч",
@@ -9099,7 +9022,6 @@
       "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
       "item.power.time_boots": "Time Boots",
-      "itemGroup.tabmagical_stone_boxes": "Волшебные шкатулки",
       "item.power.plasma_ball": "Плазменный шар",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
@@ -9127,11 +9049,11 @@
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
       "effect.recharge_lightning_stone": "Recharge",
-      "block.power.iron_stone_box": "Волшебнаяя железная шкатулка",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
       "effect.power.tornado_master": "Мастер Торнадо",
       "item.power.energy_boots": "Энергетические Ботинки",
+      "itemGroup.tabadditional_group": "Additional Group",
       "item.power.burn": "Поджёг",
       "item.power.destruction_helmet": "Destruction Шлем",
       "effect.creation_master": "Master of Creation",
@@ -9166,7 +9088,6 @@
       "effect.power.recharge_lightning_stone": "Перезарядка",
       "item.power.fertilizer": "Удобрение",
       "effect.recharge_crystal_stone": "Recharge",
-      "block.power.gold_stone_box": "Волшебная золотая шкатулка",
       "effect.tornado_master": "Мастер Торнадо",
       "item.power.fire_stone": "Камень Огня",
       "item.power.blood_stone": "Камень Крови",
@@ -9191,6 +9112,7 @@
       "item.power.water_helmet": "Водная Маска",
       "biome.power.venus_desert": "Венерианская Пустыня",
       "item.power.cultivation": "Выращивание",
+      "itemGroup.tabbasic_group": "Basic Group",
       "effect.power.recharge_crystal_stone": "Перезарядка",
       "effect.power.lightning_master": "Мастер Молнии",
       "item.power.cluster_sharp": "Осколок Кластера",
@@ -9257,11 +9179,11 @@
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.acustical_explode": "Акустический Взрыв",
       "item.power.sun_helmet": "Sun Helmet",
+      "itemGroup.tabmiddle_group": "Middle Group",
       "effect.power.recharge_lava_stone": "Перезарядка",
       "item.power.light_leggings": "Light Leggings",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
-      "block.power.andesite_stone_box": "Волшебная андезитовая шкатулка",
       "item.power.ice_helmet": "Ледяной Шарф",
       "item.power.time_dilation": "Замедление Времени",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
@@ -9288,7 +9210,6 @@
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Камень Технологий",
       "item.power.fire_boots": "Огненные Ботинки",
-      "block.power.stone_stone_box": "Волшебная каменная шкатулка",
       "effect.power.air_master": "Мастер Воздуха",
       "effect.unelemental_master": "Unelemental Master",
       "item.power.tiger_claw": "Тигриный Коготь",
@@ -9372,7 +9293,6 @@
       "effect.power.fire_master": "Мастер Огня",
       "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
-      "block.power.wood_stone_box": "Волшебная деревянная шкатулка",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
       "item.power.ocean_stone": "Камень Океана",
       "effect.power.time_master_effect": "Мастер Времени",
@@ -9385,6 +9305,7 @@
       "effect.water_master": "Master of Water",
       "item.power.water_leggings": "Водные Штаны",
       "item.power.sound_stone": "Камень Звука",
+      "itemGroup.tabgreat_group": "Great Group",
       "item.power.shuriken": "Сюрикен"
     },
     "en_us": {
@@ -9438,7 +9359,6 @@
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
       "item.power.lighting": "Lighting",
-      "itemGroup.tabmagical_stone": "Magical Stones",
       "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
@@ -9477,7 +9397,6 @@
       "item.power.vacuum_boots": "Vacuum Boots",
       "effect.recharge_shadow_stone": "Recharge",
       "item.power.time_boots": "Time Boots",
-      "itemGroup.tabmagical_stone_boxes": "Magical Stone Boxes",
       "item.power.plasma_ball": "Plasma Ball",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
@@ -9505,11 +9424,11 @@
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
       "effect.recharge_lightning_stone": "Recharge",
-      "block.power.iron_stone_box": "Iron Stone Box",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.iron_shield": "Iron Shield",
       "effect.power.tornado_master": "Master of Tornado",
       "item.power.energy_boots": "Energy Boots",
+      "itemGroup.tabadditional_group": "Additional Group",
       "item.power.burn": "Burn",
       "item.power.destruction_helmet": "Destruction Шлем",
       "effect.creation_master": "Master of Creation",
@@ -9544,7 +9463,6 @@
       "effect.power.recharge_lightning_stone": "Recharge",
       "effect.recharge_crystal_stone": "Recharge",
       "item.power.fertilizer": "Fertilizer",
-      "block.power.gold_stone_box": "Gold Stone Box",
       "effect.tornado_master": "Master of Tornado",
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
@@ -9569,6 +9487,7 @@
       "item.power.water_helmet": "Water Helmet",
       "biome.power.venus_desert": "Venus Desert",
       "item.power.cultivation": "Cultivation",
+      "itemGroup.tabbasic_group": "Basic Group",
       "effect.power.recharge_crystal_stone": "Recharge",
       "item.power.cluster_sharp": "Cluster Sharp",
       "effect.power.lightning_master": "Master of Lightning",
@@ -9635,11 +9554,11 @@
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.acustical_explode": "Acustical Explode",
       "item.power.sun_helmet": "Sun Helmet",
+      "itemGroup.tabmiddle_group": "Middle Group",
       "effect.power.recharge_lava_stone": "Recharge",
       "item.power.light_leggings": "Light Leggings",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
-      "block.power.andesite_stone_box": "Andesite Stone Box",
       "item.power.ice_helmet": "Ice Helmet",
       "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
@@ -9665,7 +9584,6 @@
       "effect.recharge_light_stone": "Recharge",
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Technology Stone",
-      "block.power.stone_stone_box": "Wood Stone Box",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
       "effect.unelemental_master": "Unelemental Master",
@@ -9750,7 +9668,6 @@
       "effect.power.fire_master": "Master of Fire",
       "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
-      "block.power.wood_stone_box": "Wood Stone Box",
       "item.power.vacuum_spiral": "Vacuum Spiral",
       "item.power.ocean_stone": "Ocean Stone",
       "effect.power.time_master_effect": "Master of Time",
@@ -9763,6 +9680,7 @@
       "effect.water_master": "Master of Water",
       "item.power.water_leggings": "Water Leggings",
       "item.power.sound_stone": "Sound Stone",
+      "itemGroup.tabgreat_group": "Great Group",
       "item.power.shuriken": "Shuriken"
     }
   },
@@ -9823,10 +9741,6 @@
       },
       {
         "name": "Greenery",
-        "children": []
-      },
-      {
-        "name": "StoneBoxes",
         "children": []
       },
       {
@@ -9916,6 +9830,14 @@
       },
       {
         "name": "Time",
+        "children": []
+      },
+      {
+        "name": "ElementalGroups",
+        "children": []
+      },
+      {
+        "name": "DetransformKey",
         "children": []
       }
     ]

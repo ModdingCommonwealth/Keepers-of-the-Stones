@@ -8,7 +8,7 @@
     "name": "Blood Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MagicalStone"
+      "value": "CUSTOM:AdditionalGroup"
     },
     "stackSize": 1,
     "enchantability": 0,

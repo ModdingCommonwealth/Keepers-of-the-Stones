@@ -2,6 +2,7 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TechnologyStoneUseProcedure;
+import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -14,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class TechnologyStoneItem extends Item {
 	public TechnologyStoneItem() {
-		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_MIDDLE_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("technology_stone");
 	}
 

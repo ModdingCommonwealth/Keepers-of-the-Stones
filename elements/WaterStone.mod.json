@@ -8,7 +8,7 @@
     "name": "Water Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MagicalStone"
+      "value": "CUSTOM:BasicGroup"
     },
     "stackSize": 1,
     "enchantability": 0,

@@ -164,11 +164,6 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item WOOD_STONE_BOX = register(PowerModBlocks.WOOD_STONE_BOX, PowerModTabs.TAB_MAGICAL_STONE_BOXES);
-	public static final Item STONE_STONE_BOX = register(PowerModBlocks.STONE_STONE_BOX, PowerModTabs.TAB_MAGICAL_STONE_BOXES);
-	public static final Item ANDESITE_STONE_BOX = register(PowerModBlocks.ANDESITE_STONE_BOX, PowerModTabs.TAB_MAGICAL_STONE_BOXES);
-	public static final Item IRON_STONE_BOX = register(PowerModBlocks.IRON_STONE_BOX, PowerModTabs.TAB_MAGICAL_STONE_BOXES);
-	public static final Item GOLD_STONE_BOX = register(PowerModBlocks.GOLD_STONE_BOX, PowerModTabs.TAB_MAGICAL_STONE_BOXES);
 	public static final Item FIRE_STONE = register(new FireStoneItem());
 	public static final Item AIR_STONE = register(new AirStoneItem());
 	public static final Item WATER_STONE = register(new WaterStoneItem());

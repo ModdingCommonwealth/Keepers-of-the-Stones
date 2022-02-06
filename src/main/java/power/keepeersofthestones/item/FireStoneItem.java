@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class FireStoneItem extends Item {
 	public FireStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_BASIC_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("fire_stone");
 	}
 

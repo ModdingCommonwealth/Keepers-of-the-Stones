@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class BloodStoneItem extends Item {
 	public BloodStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("blood_stone");
 	}
 

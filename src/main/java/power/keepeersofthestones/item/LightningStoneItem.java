@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class LightningStoneItem extends Item {
 	public LightningStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_STONE).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 		setRegistryName("lightning_stone");
 	}
 
