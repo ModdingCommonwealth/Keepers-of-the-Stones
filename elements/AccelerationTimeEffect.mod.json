@@ -13,8 +13,14 @@
     "isBenefitical": false,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "AccelerationTimeStart"
+    },
     "onActiveTick": {
       "name": "AccelerationTimeTickEffect"
+    },
+    "onExpired": {
+      "name": "AccelerationTimeEnd"
     }
   }
 }
