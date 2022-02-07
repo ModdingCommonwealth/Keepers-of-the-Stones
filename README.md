@@ -1,4 +1,4 @@
 # Keepers-of-the-Stones
-<br>Minecraft Support: 1.17.1
-<br>Mod Version: 1.3.5 Release
-<br>Support type: Main
+<br>Minecraft Support: 1.18.1
+<br>Mod Version: Fabric-1.0-Dev
+<br>Support type: Low priority
