@@ -1,7 +1,8 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.OnEarthUseProcedure;
+import power.keepeersofthestones.procedures.EarthOnPlayerProcedure;
+import power.keepeersofthestones.procedures.EarthOnMeProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -37,14 +38,14 @@ public class TpOnEarthItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		OnEarthUseProcedure.execute(entity);
+		EarthOnMeProcedure.execute(world, entity, itemstack);
 		return ar;
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		OnEarthUseProcedure.execute(entity);
+		EarthOnPlayerProcedure.execute(entity.level, entity, sourceentity, itemstack);
 		return retval;
 	}
 }
