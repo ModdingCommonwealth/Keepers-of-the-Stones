@@ -1,7 +1,8 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.OnMarsUseProcedure;
+import power.keepeersofthestones.procedures.MarsOnPlayerProcedure;
+import power.keepeersofthestones.procedures.MarsOnMeProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -37,14 +38,14 @@ public class TpOnMarsItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		OnMarsUseProcedure.execute(entity);
+		MarsOnMeProcedure.execute(world, entity, itemstack);
 		return ar;
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		OnMarsUseProcedure.execute(entity);
+		MarsOnPlayerProcedure.execute(entity.level, entity, sourceentity, itemstack);
 		return retval;
 	}
 }

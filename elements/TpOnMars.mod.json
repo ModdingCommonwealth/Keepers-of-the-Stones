@@ -30,10 +30,10 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "OnMarsUse"
+      "name": "MarsOnMe"
     },
     "onEntityHitWith": {
-      "name": "OnMarsUse"
+      "name": "MarsOnPlayer"
     },
     "hasDispenseBehavior": false
   }
