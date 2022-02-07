@@ -26,21 +26,21 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
-public class MarsOnPlayerProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
-		if (entity == null || sourceentity == null)
+public class VenusOnMeProcedure {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+		if (entity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MARS) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_VENUS) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			{
-				Entity _ent = sourceentity;
+				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 							"item replace entity @s weapon.mainhand with air");
 			}
 			if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:mars"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:venus"));
 				if (_player.level.dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -81,17 +81,17 @@ public class MarsOnPlayerProcedure {
 				}
 
 				private void run() {
-					if ((sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
-						if (!(sourceentity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MARS))
+						if (!(entity instanceof Player _playerHasItem
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_VENUS))
 								: false)) {
 							{
-								Entity _ent = sourceentity;
+								Entity _ent = entity;
 								if (!_ent.level.isClientSide() && _ent.getServer() != null)
 									_ent.getServer().getCommands().performCommand(
 											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-											"give @s power:tp_on_mars{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+											"give @s power:tp_on_venus{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
 					}
