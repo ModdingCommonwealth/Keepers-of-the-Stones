@@ -4,6 +4,7 @@
   "package": "com.koshakmine.kos.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "FireAttackMixin"
   ],
   "client": [
   ],
