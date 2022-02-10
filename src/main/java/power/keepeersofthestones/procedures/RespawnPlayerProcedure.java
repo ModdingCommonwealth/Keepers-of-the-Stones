@@ -395,52 +395,6 @@ public class RespawnPlayerProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).inferno_merger) {
-			{
-				boolean _setval = false;
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.inferno_merger = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.FIRE_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.AIR_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_AIR_STONE, 6000, 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).geyser_merger) {
-			{
-				boolean _setval = false;
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.geyser_merger = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.FIRE_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.WATER_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_WATER_STONE, 6000, 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
 			{
 				boolean _setval = false;
@@ -472,29 +426,6 @@ public class RespawnPlayerProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_BLOOD_STONE, 6000, 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).coal_merger) {
-			{
-				boolean _setval = false;
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.coal_merger = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.FIRE_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.EARTH_STONE);
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE, 6000, 0, (false), (false)));
 		}
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).technology) {
 			{

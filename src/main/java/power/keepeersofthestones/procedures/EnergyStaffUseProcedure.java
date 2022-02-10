@@ -44,8 +44,6 @@ public class EnergyStaffUseProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.LIGHTNING_MASTER);
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
-				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.CRYSTAL_MASTER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.LAVA_MASTER);
@@ -56,11 +54,7 @@ public class EnergyStaffUseProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.OCEAN_MASTER);
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
-				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.GREENERY_MASTER);
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PowerModMobEffects.GEYSER_MERGER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.ANIMALS_MASTER);
 				if (entity instanceof LivingEntity _entity)
@@ -77,8 +71,6 @@ public class EnergyStaffUseProcedure {
 					_entity.removeEffect(PowerModMobEffects.CREATION_MASTER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PowerModMobEffects.COAL_MERGER);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerModMobEffects.BLOOD_MASTER);
 				if (entity instanceof LivingEntity _entity)

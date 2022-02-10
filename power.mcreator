@@ -3232,70 +3232,6 @@
       "path": "~/Ice"
     },
     {
-      "name": "InfernoMergeEffects",
-      "type": "procedure",
-      "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merge_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMerger",
-      "type": "potioneffect",
-      "sortid": 216,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger",
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMergerEffectStart",
-      "type": "procedure",
-      "sortid": 217,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 218,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
       "name": "GreeneryMaster",
       "type": "potioneffect",
       "sortid": 219,
@@ -3597,70 +3533,6 @@
         ]
       },
       "path": "~/Greenery"
-    },
-    {
-      "name": "GeyserMerger",
-      "type": "potioneffect",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger",
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffectStart",
-      "type": "procedure",
-      "sortid": 238,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 239,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffects",
-      "type": "procedure",
-      "sortid": 240,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
     },
     {
       "name": "AnimalsMaster",
@@ -6496,70 +6368,6 @@
       "path": "~/Cosmos"
     },
     {
-      "name": "CoalMerger",
-      "type": "potioneffect",
-      "sortid": 404,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger",
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffectStart",
-      "type": "procedure",
-      "sortid": 405,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 406,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffects",
-      "type": "procedure",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
       "name": "TornadoEntity",
       "type": "livingentity",
       "sortid": 408,
@@ -9193,7 +9001,6 @@
       "item.power.energy_sphere": "Энергетический Шар",
       "item.power.energy_helmet": "Энергетический Шлем",
       "item.power.create_shadow": "Создать Тень",
-      "effect.power.geyser_merger": "Слияние Гейзер",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
       "effect.power.sound_master": "Мастер Звука",
@@ -9444,7 +9251,6 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Солнечная Секира",
-      "effect.power.coal_merger": "Слияние Уголь",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
@@ -9480,7 +9286,6 @@
       "entity.power.glow": "Светляк",
       "effect.power.technology_master": "Мастер Технологий",
       "item.power.eclipse": "Затмение",
-      "effect.power.inferno_merger": "Слияние Инферно",
       "biome.power.mars_land": "Марсианская Земля",
       "effect.power.curse_cursed_diamond": "Проклятие Бриллианта",
       "item.power.rain_leggings": "Дождевые Штаны",
@@ -9516,7 +9321,6 @@
       "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_helmet": "Energy Helmet",
       "item.power.create_shadow": "Create Shadow",
-      "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
       "item.power.rainfall": "Rainfall",
@@ -9767,7 +9571,6 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Sun Axe",
-      "effect.power.coal_merger": "Coal Merger",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
@@ -9803,7 +9606,6 @@
       "entity.power.glow": "Glow",
       "effect.power.technology_master": "Master of Technology",
       "item.power.eclipse": "Eclipse",
-      "effect.power.inferno_merger": "Inferno Merger",
       "biome.power.mars_land": "Mars Land",
       "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
       "item.power.rain_leggings": "Rain Leggings",
@@ -9924,35 +9726,6 @@
       {
         "name": "Destruction",
         "children": []
-      },
-      {
-        "name": "Mergers",
-        "children": [
-          {
-            "name": "Inferno",
-            "children": []
-          },
-          {
-            "name": "Geyser",
-            "children": []
-          },
-          {
-            "name": "Coal",
-            "children": []
-          },
-          {
-            "name": "Cloud",
-            "children": []
-          },
-          {
-            "name": "Mountain",
-            "children": []
-          },
-          {
-            "name": "Marsh",
-            "children": []
-          }
-        ]
       },
       {
         "name": "Commands",
