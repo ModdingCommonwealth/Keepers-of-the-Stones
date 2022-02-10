@@ -71,7 +71,7 @@ public class DestructionEntityProcedure {
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 400);
+			}.start(world, 1200);
 		}
 	}
 }

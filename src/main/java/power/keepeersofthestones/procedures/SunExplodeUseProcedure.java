@@ -41,9 +41,6 @@ public class SunExplodeUseProcedure {
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 								_level.getServer(), null).withSuppressedOutput(),
 						"fill ~-16 ~-16 ~-16 ~16 ~16 ~16 air replace power:unmultiplication_moon_stones_block");
-		} else {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 8, Explosion.BlockInteraction.DESTROY);
 		}
 	}
 }
