@@ -8570,6 +8570,35 @@
         ]
       },
       "path": "~/Cosmos"
+    },
+    {
+      "name": "EarthBlockCreate",
+      "type": "procedure",
+      "sortid": 532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_block_create",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Earth"
     }
   ],
   "variable_elements": [
@@ -9003,8 +9032,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
@@ -9323,8 +9352,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "item.power.rainfall": "Rainfall",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
@@ -9764,7 +9793,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.4.1-dev1",
+    "version": "1.4.1-dev2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

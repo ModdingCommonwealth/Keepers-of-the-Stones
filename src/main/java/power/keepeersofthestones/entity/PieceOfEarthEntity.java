@@ -1,6 +1,7 @@
 
 package power.keepeersofthestones.entity;
 
+import power.keepeersofthestones.procedures.EarthBlockCreateProcedure;
 import power.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -74,6 +75,8 @@ public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
 		Entity entity = this.getOwner();
 		Entity imediatesourceentity = this;
 		if (this.inGround) {
+
+			EarthBlockCreateProcedure.execute(world, x, y, z);
 			this.discard();
 		}
 	}
