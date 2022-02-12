@@ -26,7 +26,7 @@ public class ResetmychoiceProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getLevelData().getGameRules().getBoolean(PowerModGameRules.GETTINGSTONESWHENENTERINGTHEGAME) == true) {
+		if (world.getLevelData().getGameRules().getBoolean(PowerModGameRules.CANRECHOISESTONE) == true) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PowerModVariables.PlayerVariables())).selected) {
 				{
