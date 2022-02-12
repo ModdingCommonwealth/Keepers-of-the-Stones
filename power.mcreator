@@ -7,7 +7,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "detransform_key",
-      "path": "~/DetransformKey"
+      "path": "~/Keys"
     },
     {
       "name": "DetransformKeyPriNazhatiiKlavishi",
@@ -24,7 +24,7 @@
           }
         ]
       },
-      "path": "~/DetransformKey"
+      "path": "~/Keys"
     },
     {
       "name": "FireStone",
@@ -8599,6 +8599,91 @@
         ]
       },
       "path": "~/Earth"
+    },
+    {
+      "name": "FireFlying",
+      "type": "potioneffect",
+      "sortid": 534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying",
+      "path": "~/Fire"
+    },
+    {
+      "name": "FireFlyingTick",
+      "type": "procedure",
+      "sortid": 536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fire"
+    },
+    {
+      "name": "FireFlyingEnd",
+      "type": "procedure",
+      "sortid": 537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fire"
+    },
+    {
+      "name": "SpecialAbilityUse",
+      "type": "procedure",
+      "sortid": 538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_ability_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "SpecialAbilityKey",
+      "type": "keybind",
+      "sortid": 539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_ability_key",
+      "path": "~/Keys"
     }
   ],
   "variable_elements": [
@@ -9032,8 +9117,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "item.power.rainfall": "Ливень",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
@@ -9147,6 +9232,7 @@
       "block.power.crystal_shield_block": "Блок Кристаллического Щита",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
       "item.power.cosmos_stone": "Камень Космоса",
+      "effect.power.fire_flying": "Fire Flying",
       "effect.power.recharge_tornado_stone": "Перезарядка",
       "item.power.ocean_chestplate": "Акваланг Океана",
       "item.power.lava_leggings": "Лавовые Брюки",
@@ -9198,6 +9284,7 @@
       "item.power.earth_chestplate": "Земляной Желет",
       "item.power.crystal_boots": "Кристаллические Сапоги",
       "item.power.ocean_helmet": "Шлем Океана",
+      "key.power.special_ability_key": "Клавиша специальных способностей",
       "item.power.tornado_chestplate": "Нагрудник Торнадо",
       "effect.power.recharge_sound_stone": "Перезарядка",
       "item.power.sai": "Саи",
@@ -9352,8 +9439,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
@@ -9467,6 +9554,7 @@
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
       "item.power.cosmos_stone": "Space Stone",
+      "effect.power.fire_flying": "Fire Flying",
       "effect.power.recharge_tornado_stone": "Recharge",
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
@@ -9518,6 +9606,7 @@
       "item.power.crystal_boots": "Crystal Boots",
       "item.power.earth_chestplate": "Earth Chestplate",
       "item.power.ocean_helmet": "Ocean Helmet",
+      "key.power.special_ability_key": "Special Ability Key",
       "item.power.tornado_chestplate": "Tornado Chestplate",
       "effect.power.recharge_sound_stone": "Recharge",
       "item.power.sai": "Sai",
@@ -9785,7 +9874,7 @@
         "children": []
       },
       {
-        "name": "DetransformKey",
+        "name": "Keys",
         "children": []
       }
     ]

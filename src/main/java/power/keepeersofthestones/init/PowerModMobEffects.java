@@ -51,6 +51,7 @@ import power.keepeersofthestones.potion.InvincibilityMobEffect;
 import power.keepeersofthestones.potion.IceMasterMobEffect;
 import power.keepeersofthestones.potion.GreeneryMasterMobEffect;
 import power.keepeersofthestones.potion.FireMasterMobEffect;
+import power.keepeersofthestones.potion.FireFlyingMobEffect;
 import power.keepeersofthestones.potion.EnergyMasterMobEffect;
 import power.keepeersofthestones.potion.EarthMasterMobEffect;
 import power.keepeersofthestones.potion.DestructionMasterMobEffect;
@@ -133,6 +134,7 @@ public class PowerModMobEffects {
 	public static final MobEffect TIME_MASTER_EFFECT = register(new TimeMasterEffectMobEffect());
 	public static final MobEffect ACCELERATION_TIME_EFFECT = register(new AccelerationTimeEffectMobEffect());
 	public static final MobEffect TIME_STOP_EFFECT = register(new TimeStopEffectMobEffect());
+	public static final MobEffect FIRE_FLYING = register(new FireFlyingMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);
