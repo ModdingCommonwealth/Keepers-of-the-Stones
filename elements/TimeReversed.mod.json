@@ -26,9 +26,12 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "CheckpointGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 0,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "OpenGUITimeReversed"
+    },
     "hasDispenseBehavior": false
   }
 }

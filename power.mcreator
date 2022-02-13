@@ -8684,6 +8684,138 @@
       "locked_code": false,
       "registry_name": "special_ability_key",
       "path": "~/Keys"
+    },
+    {
+      "name": "OpenGUITimeReversed",
+      "type": "procedure",
+      "sortid": 540,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_time_reversed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "SpawnGUI",
+      "type": "procedure",
+      "sortid": 541,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Animals"
+    },
+    {
+      "name": "SultGUI",
+      "type": "procedure",
+      "sortid": 542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sult_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "SoundGUI",
+      "type": "procedure",
+      "sortid": 543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sound"
     }
   ],
   "variable_elements": [
