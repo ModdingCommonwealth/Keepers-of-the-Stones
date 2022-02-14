@@ -9,7 +9,7 @@ import power.keepeersofthestones.procedures.SummonChickenProcedure;
 import power.keepeersofthestones.procedures.SummonCatProcedure;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

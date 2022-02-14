@@ -5,7 +5,7 @@ import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModGameRules;
 
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
+import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -52,10 +52,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).fire_stone = false;
+				PowerModVariables.WorldVariables.get(world).fire_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -84,10 +84,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).air_stone = false;
+				PowerModVariables.WorldVariables.get(world).air_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -116,10 +116,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).water_stone = false;
+				PowerModVariables.WorldVariables.get(world).water_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -148,10 +148,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).earth_stone = false;
+				PowerModVariables.WorldVariables.get(world).earth_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -180,10 +180,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).energy_stone = false;
+				PowerModVariables.WorldVariables.get(world).energy_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -212,10 +212,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).ice_stone = false;
+				PowerModVariables.WorldVariables.get(world).ice_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -246,10 +246,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).lightning_stone = false;
+				PowerModVariables.WorldVariables.get(world).lightning_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -278,10 +278,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).sound_stone = false;
+				PowerModVariables.WorldVariables.get(world).sound_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -312,10 +312,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).crystal_stone = false;
+				PowerModVariables.WorldVariables.get(world).crystal_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -344,10 +344,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).lava_stone = false;
+				PowerModVariables.WorldVariables.get(world).lava_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -376,10 +376,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).rain_stone = false;
+				PowerModVariables.WorldVariables.get(world).rain_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -410,10 +410,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).tornado_stone = false;
+				PowerModVariables.WorldVariables.get(world).tornado_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -442,10 +442,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).ocean_stone = false;
+				PowerModVariables.WorldVariables.get(world).ocean_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -476,10 +476,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).greenery_stone = false;
+				PowerModVariables.WorldVariables.get(world).greenery_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -510,10 +510,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).animals_stone = false;
+				PowerModVariables.WorldVariables.get(world).animals_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -542,10 +542,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).metal_stone = false;
+				PowerModVariables.WorldVariables.get(world).metal_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -574,10 +574,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).light_stone = false;
+				PowerModVariables.WorldVariables.get(world).light_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -606,10 +606,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).shadow_stone = false;
+				PowerModVariables.WorldVariables.get(world).shadow_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -638,10 +638,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).vacuum_stone = false;
+				PowerModVariables.WorldVariables.get(world).vacuum_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -670,10 +670,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).sun_stone = false;
+				PowerModVariables.WorldVariables.get(world).sun_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -702,10 +702,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).moon_stone = false;
+				PowerModVariables.WorldVariables.get(world).moon_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -736,10 +736,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).creation_stone = false;
+				PowerModVariables.WorldVariables.get(world).creation_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -770,10 +770,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).destruction_stone = false;
+				PowerModVariables.WorldVariables.get(world).destruction_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -802,10 +802,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).cosmos_stone = false;
+				PowerModVariables.WorldVariables.get(world).cosmos_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -834,10 +834,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).blood_stone = false;
+				PowerModVariables.WorldVariables.get(world).blood_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);
@@ -866,10 +866,10 @@ public class ResetmychoiceProcedureProcedure {
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).time_stone = false;
+				PowerModVariables.WorldVariables.get(world).time_stone = (boolean) (false);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = false;
+					boolean _setval = (boolean) (false);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);

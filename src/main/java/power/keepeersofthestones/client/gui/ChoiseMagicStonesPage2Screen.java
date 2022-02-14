@@ -88,7 +88,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Choose a stone to get it", 127, 6, -12829636);
+		drawString(poseStack, this.font, "Choose a stone to get it", 127, 6, -12829636);
 	}
 
 	@Override

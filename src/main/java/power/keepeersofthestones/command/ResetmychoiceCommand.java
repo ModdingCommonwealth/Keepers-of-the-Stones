@@ -22,7 +22,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @Mod.EventBusSubscriber
 public class ResetmychoiceCommand {
 	@SubscribeEvent
-	public static void registerCommands(RegisterCommandsEvent event) {
+	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("resetmychoice")
 
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(ResetmychoiceCommand::execute))

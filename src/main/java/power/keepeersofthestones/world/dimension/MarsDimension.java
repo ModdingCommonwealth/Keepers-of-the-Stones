@@ -1,7 +1,6 @@
 
 package power.keepeersofthestones.world.dimension;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,10 +28,8 @@ public class MarsDimension {
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.STONE);
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:mars_land")).getGenerationSettings().getSurfaceBuilder()
-					.get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("power:mars_land")).getGenerationSettings().getSurfaceBuilder()
-					.get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(Blocks.RED_SAND);
+			replaceableBlocks.add(Blocks.COARSE_DIRT);
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();

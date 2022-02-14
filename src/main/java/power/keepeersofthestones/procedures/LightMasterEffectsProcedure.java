@@ -19,7 +19,7 @@ public class LightMasterEffectsProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 1, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 0, (false), (false)));
-		if (world instanceof Level _lvl ? _lvl.isDay() : false) {
+		if (world instanceof Level _lvl && _lvl.isDay()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20, 0, (false), (false)));
 		}

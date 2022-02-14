@@ -19,14 +19,14 @@ public class MoonMasterEffectStartProcedure {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = true;
+			boolean _setval = (boolean) (true);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.moon = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = true;
+			boolean _setval = (boolean) (true);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);

@@ -69,7 +69,7 @@ public class SpawnAnimalsGUIScreen extends AbstractContainerScreen<SpawnAnimalsG
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Choose an animal to summon", 15, 7, -12829636);
+		drawString(poseStack, this.font, "Choose an animal to summon", 15, 7, -12829636);
 	}
 
 	@Override

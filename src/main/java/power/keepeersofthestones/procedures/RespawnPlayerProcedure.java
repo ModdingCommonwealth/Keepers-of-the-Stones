@@ -22,8 +22,7 @@ import javax.annotation.Nullable;
 public class RespawnPlayerProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, entity);
+		execute(event, event.getPlayer());
 	}
 
 	public static void execute(Entity entity) {
@@ -35,7 +34,7 @@ public class RespawnPlayerProcedure {
 			return;
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fire) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.fire = _setval;
 					capability.syncPlayerVariables(entity);
@@ -50,7 +49,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_FIRE_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).air) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.air = _setval;
 					capability.syncPlayerVariables(entity);
@@ -66,7 +65,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).water) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.water = _setval;
 					capability.syncPlayerVariables(entity);
@@ -82,7 +81,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).earth) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.earth = _setval;
 					capability.syncPlayerVariables(entity);
@@ -98,7 +97,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).energy) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.energy = _setval;
 					capability.syncPlayerVariables(entity);
@@ -113,7 +112,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_ENERGY_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).ice) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.ice = _setval;
 					capability.syncPlayerVariables(entity);
@@ -129,7 +128,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).lightning) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.lightning = _setval;
 					capability.syncPlayerVariables(entity);
@@ -145,7 +144,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).sound) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.sound = _setval;
 					capability.syncPlayerVariables(entity);
@@ -161,7 +160,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).crystal) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.crystal = _setval;
 					capability.syncPlayerVariables(entity);
@@ -176,7 +175,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).lava) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.lava = _setval;
 					capability.syncPlayerVariables(entity);
@@ -191,7 +190,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_LAVA_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).rain) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.rain = _setval;
 					capability.syncPlayerVariables(entity);
@@ -207,7 +206,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).tornado) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.tornado = _setval;
 					capability.syncPlayerVariables(entity);
@@ -223,7 +222,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).ocean) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.ocean = _setval;
 					capability.syncPlayerVariables(entity);
@@ -239,7 +238,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).greenery) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.greenery = _setval;
 					capability.syncPlayerVariables(entity);
@@ -255,7 +254,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).animals) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.animals = _setval;
 					capability.syncPlayerVariables(entity);
@@ -271,7 +270,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).metal) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.metal = _setval;
 					capability.syncPlayerVariables(entity);
@@ -287,7 +286,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).light) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.light = _setval;
 					capability.syncPlayerVariables(entity);
@@ -303,7 +302,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).shadow) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.shadow = _setval;
 					capability.syncPlayerVariables(entity);
@@ -319,7 +318,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).vacuum) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.vacuum = _setval;
 					capability.syncPlayerVariables(entity);
@@ -334,7 +333,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_VACUUM_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).moon) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.moon = _setval;
 					capability.syncPlayerVariables(entity);
@@ -349,7 +348,7 @@ public class RespawnPlayerProcedure {
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_MOON_STONE, 6000, 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).sun) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.sun = _setval;
 					capability.syncPlayerVariables(entity);
@@ -365,7 +364,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).creation) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.creation = _setval;
 					capability.syncPlayerVariables(entity);
@@ -381,7 +380,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).destruction) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.destruction = _setval;
 					capability.syncPlayerVariables(entity);
@@ -397,7 +396,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.cosmos = _setval;
 					capability.syncPlayerVariables(entity);
@@ -413,7 +412,7 @@ public class RespawnPlayerProcedure {
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).blood) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.blood = _setval;
 					capability.syncPlayerVariables(entity);
@@ -429,7 +428,7 @@ public class RespawnPlayerProcedure {
 		}
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).technology) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.technology = _setval;
 					capability.syncPlayerVariables(entity);
@@ -445,7 +444,7 @@ public class RespawnPlayerProcedure {
 		}
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).time) {
 			{
-				boolean _setval = false;
+				boolean _setval = (boolean) (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.time = _setval;
 					capability.syncPlayerVariables(entity);

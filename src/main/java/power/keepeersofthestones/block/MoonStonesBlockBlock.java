@@ -5,6 +5,8 @@ import power.keepeersofthestones.procedures.MultiplicationMoonstoneBlockToTicksP
 import power.keepeersofthestones.procedures.MultiplicationMoonStoneProcedure;
 import power.keepeersofthestones.procedures.EntityOnMoonstonesProcedure;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
@@ -58,8 +60,8 @@ public class MoonStonesBlockBlock extends Block {
 	}
 
 	@Override
-	public boolean removedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		MultiplicationMoonStoneProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}

@@ -22,7 +22,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @Mod.EventBusSubscriber
 public class DetransformCommand {
 	@SubscribeEvent
-	public static void registerCommands(RegisterCommandsEvent event) {
+	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("detransform")
 
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(DetransformCommand::execute))

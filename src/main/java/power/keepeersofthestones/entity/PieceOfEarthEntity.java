@@ -5,8 +5,8 @@ import power.keepeersofthestones.procedures.EarthBlockCreateProcedure;
 import power.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,7 +27,7 @@ import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
-	public PieceOfEarthEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+	public PieceOfEarthEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(PowerModEntities.PIECE_OF_EARTH, world);
 	}
 
@@ -83,7 +83,7 @@ public class PieceOfEarthEntity extends AbstractArrow implements ItemSupplier {
 
 	public static PieceOfEarthEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		PieceOfEarthEntity entityarrow = new PieceOfEarthEntity(PowerModEntities.PIECE_OF_EARTH, entity, world);
-		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
+		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);

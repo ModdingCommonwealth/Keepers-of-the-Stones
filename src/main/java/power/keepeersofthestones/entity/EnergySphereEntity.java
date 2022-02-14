@@ -5,8 +5,8 @@ import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fmllegacy.network.NetworkHooks;
-import net.minecraftforge.fmllegacy.network.FMLPlayMessages;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -26,7 +26,7 @@ import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class EnergySphereEntity extends AbstractArrow implements ItemSupplier {
-	public EnergySphereEntity(FMLPlayMessages.SpawnEntity packet, Level world) {
+	public EnergySphereEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(PowerModEntities.ENERGY_SPHERE, world);
 	}
 
@@ -80,7 +80,7 @@ public class EnergySphereEntity extends AbstractArrow implements ItemSupplier {
 
 	public static EnergySphereEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		EnergySphereEntity entityarrow = new EnergySphereEntity(PowerModEntities.ENERGY_SPHERE, entity, world);
-		entityarrow.shoot(entity.getLookAngle().x, entity.getLookAngle().y, entity.getLookAngle().z, power * 2, 0);
+		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
