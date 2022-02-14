@@ -45,7 +45,7 @@ public class WhirlpoolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				WhirlpoolEntity entityarrow = WhirlpoolEntity.shoot(world, entity, world.getRandom(), 10f, 9, 2);
+				WhirlpoolEntity entityarrow = WhirlpoolEntity.shoot(world, entity, world.getRandom(), 10f, 1, 2);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

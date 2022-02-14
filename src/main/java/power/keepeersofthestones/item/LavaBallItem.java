@@ -45,7 +45,7 @@ public class LavaBallItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				LavaBallEntity entityarrow = LavaBallEntity.shoot(world, entity, world.getRandom(), 0.5f, 12, 2);
+				LavaBallEntity entityarrow = LavaBallEntity.shoot(world, entity, world.getRandom(), 1.1f, 8, 2);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

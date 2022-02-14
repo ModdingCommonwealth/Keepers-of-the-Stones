@@ -34,7 +34,7 @@ public class VampirismUseProcedure {
 			if (sourceentity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2, (false), (false)));
 			if (sourceentity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 300, 4, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 300, 1, (false), (false)));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;

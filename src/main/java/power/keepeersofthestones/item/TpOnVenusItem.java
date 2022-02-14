@@ -1,8 +1,8 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.VenusOnPlayerProcedure;
 import power.keepeersofthestones.procedures.VenusOnMeProcedure;
+import power.keepeersofthestones.procedures.VenusGUIProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -45,7 +45,7 @@ public class TpOnVenusItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		VenusOnPlayerProcedure.execute(entity.level, entity, sourceentity, itemstack);
+		VenusGUIProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

@@ -41,6 +41,7 @@ import power.keepeersofthestones.potion.RechargeBloodStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeAnimalsStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeAirStoneMobEffect;
 import power.keepeersofthestones.potion.RainMasterMobEffect;
+import power.keepeersofthestones.potion.RainFlyMobEffect;
 import power.keepeersofthestones.potion.OceanMasterMobEffect;
 import power.keepeersofthestones.potion.MoonMasterMobEffect;
 import power.keepeersofthestones.potion.MetalMasterMobEffect;
@@ -135,6 +136,7 @@ public class PowerModMobEffects {
 	public static final MobEffect ACCELERATION_TIME_EFFECT = register(new AccelerationTimeEffectMobEffect());
 	public static final MobEffect TIME_STOP_EFFECT = register(new TimeStopEffectMobEffect());
 	public static final MobEffect FIRE_FLYING = register(new FireFlyingMobEffect());
+	public static final MobEffect RAIN_FLY = register(new RainFlyMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

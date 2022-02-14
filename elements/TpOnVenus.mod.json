@@ -33,7 +33,7 @@
       "name": "VenusOnMe"
     },
     "onEntityHitWith": {
-      "name": "VenusOnPlayer"
+      "name": "VenusGUI"
     },
     "hasDispenseBehavior": false
   }

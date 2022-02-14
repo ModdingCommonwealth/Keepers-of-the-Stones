@@ -109,9 +109,9 @@ public class LavaBallEntity extends AbstractArrow implements ItemSupplier {
 		double d0 = target.getY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - entity.getX();
 		double d3 = target.getZ() - entity.getZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.5f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(12);
+		entityarrow.setBaseDamage(8);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);

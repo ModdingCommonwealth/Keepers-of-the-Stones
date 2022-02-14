@@ -1,8 +1,8 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.MoonOnPlayerProcedure;
 import power.keepeersofthestones.procedures.MoonOnMeProcedure;
+import power.keepeersofthestones.procedures.MoonGUIProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -45,7 +45,7 @@ public class TpOnMoonItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		MoonOnPlayerProcedure.execute(entity.level, entity, sourceentity, itemstack);
+		MoonGUIProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}
 }

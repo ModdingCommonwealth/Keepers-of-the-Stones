@@ -27,7 +27,7 @@
       "name": "RechargeMagicFireball"
     },
     "bulletPower": 10.0,
-    "bulletDamage": 9.0,
+    "bulletDamage": 1.0,
     "bulletKnockback": 2,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

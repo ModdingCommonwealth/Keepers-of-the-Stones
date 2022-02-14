@@ -33,7 +33,7 @@
       "name": "MoonOnMe"
     },
     "onEntityHitWith": {
-      "name": "MoonOnPlayer"
+      "name": "MoonGUI"
     },
     "hasDispenseBehavior": false
   }

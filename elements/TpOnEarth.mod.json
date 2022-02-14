@@ -33,7 +33,7 @@
       "name": "EarthOnMe"
     },
     "onEntityHitWith": {
-      "name": "EarthOnPlayer"
+      "name": "EarthGUI"
     },
     "hasDispenseBehavior": false
   }

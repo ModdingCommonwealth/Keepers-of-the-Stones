@@ -58,7 +58,7 @@ public class VenusOnMeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"tp ~ 75 ~");
+							"tp ~ ~10 ~");
 			}
 			new Object() {
 				private int ticks = 0;

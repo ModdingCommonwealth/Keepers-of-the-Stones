@@ -33,7 +33,7 @@
       "name": "MarsOnMe"
     },
     "onEntityHitWith": {
-      "name": "MarsOnPlayer"
+      "name": "MarsGUI"
     },
     "hasDispenseBehavior": false
   }

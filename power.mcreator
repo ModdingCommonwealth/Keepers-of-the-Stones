@@ -8392,18 +8392,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -8446,18 +8434,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -8500,18 +8476,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -8554,18 +8518,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -8816,6 +8768,254 @@
         ]
       },
       "path": "~/Sound"
+    },
+    {
+      "name": "RainFly",
+      "type": "potioneffect",
+      "sortid": 544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_fly",
+      "path": "~/Rain"
+    },
+    {
+      "name": "RainFlyTick",
+      "type": "procedure",
+      "sortid": 545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_fly_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rain"
+    },
+    {
+      "name": "RainEnd",
+      "type": "procedure",
+      "sortid": 546,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rain"
+    },
+    {
+      "name": "NoAcceptProc",
+      "type": "procedure",
+      "sortid": 547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_accept_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "AcceptTpOnMoon",
+      "type": "gui",
+      "sortid": 547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_tp_on_moon",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "AcceptTpOnEarth",
+      "type": "gui",
+      "sortid": 548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_tp_on_earth",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "AcceptTpOnMars",
+      "type": "gui",
+      "sortid": 549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_tp_on_mars",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "AcceptTpOnVenus",
+      "type": "gui",
+      "sortid": 550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_tp_on_venus",
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "VenusGUI",
+      "type": "procedure",
+      "sortid": 551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venus_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "MarsGUI",
+      "type": "procedure",
+      "sortid": 552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mars_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "EarthGUI",
+      "type": "procedure",
+      "sortid": 553,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "MoonGUI",
+      "type": "procedure",
+      "sortid": 554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
     }
   ],
   "variable_elements": [
@@ -9249,8 +9449,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "item.power.rainfall": "Ливень",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
@@ -9410,6 +9610,7 @@
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
       "gamerule.forbiddenInactiveSpells": "Запретить использование заклинаний при неактивированном камне",
+      "effect.power.rain_fly": "RainFly",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
       "item.power.ice_boots": "Ледяные Сапоги",
@@ -9571,8 +9772,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
@@ -9732,6 +9933,7 @@
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
       "gamerule.forbiddenInactiveSpells": "Prohibit the use of spells when the stone is not activated",
+      "effect.power.rain_fly": "RainFly",
       "item.power.bee_sting": "Bee Sting",
       "item.power.sound_sword": "Sound Sword",
       "item.power.ice_boots": "Ice Boots",
@@ -10014,7 +10216,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.4.2",
+    "version": "1.4.3-dev1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

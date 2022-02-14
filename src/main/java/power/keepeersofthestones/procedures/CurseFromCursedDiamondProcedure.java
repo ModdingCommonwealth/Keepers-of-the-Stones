@@ -12,8 +12,10 @@ public class CurseFromCursedDiamondProcedure {
 		if (entity == null)
 			return;
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).blood) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CURSE_CURSED_DIAMOND, 20, 0, (false), (false)));
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CURSE_CURSED_DIAMOND, 20, 0, (false), (false)));
+			}
 		}
 	}
 }
