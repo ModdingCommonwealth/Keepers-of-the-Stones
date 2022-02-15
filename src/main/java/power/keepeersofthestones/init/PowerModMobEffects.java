@@ -56,7 +56,6 @@ import power.keepeersofthestones.potion.FireFlyingMobEffect;
 import power.keepeersofthestones.potion.EnergyMasterMobEffect;
 import power.keepeersofthestones.potion.EarthMasterMobEffect;
 import power.keepeersofthestones.potion.DestructionMasterMobEffect;
-import power.keepeersofthestones.potion.CurseCursedDiamondMobEffect;
 import power.keepeersofthestones.potion.CrystalMasterMobEffect;
 import power.keepeersofthestones.potion.CreationMasterMobEffect;
 import power.keepeersofthestones.potion.CosmosMasterMobEffect;
@@ -128,7 +127,6 @@ public class PowerModMobEffects {
 	public static final MobEffect RECHARGE_COSMOS_STONE = register(new RechargeCosmosStoneMobEffect());
 	public static final MobEffect RECHARGE_BLOOD_STONE = register(new RechargeBloodStoneMobEffect());
 	public static final MobEffect BLOOD_MASTER = register(new BloodMasterMobEffect());
-	public static final MobEffect CURSE_CURSED_DIAMOND = register(new CurseCursedDiamondMobEffect());
 	public static final MobEffect TECHNOLOGY_MASTER = register(new TechnologyMasterMobEffect());
 	public static final MobEffect RECHARGE_TECHNOLOGY_STONE = register(new RechargeTechnologyStoneMobEffect());
 	public static final MobEffect RECHARGE_TIME_STONE = register(new RechargeTimeStoneMobEffect());

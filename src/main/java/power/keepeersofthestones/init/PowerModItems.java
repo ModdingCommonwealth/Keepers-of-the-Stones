@@ -120,7 +120,6 @@ import power.keepeersofthestones.item.EarthItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
-import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -381,7 +380,6 @@ public class PowerModItems {
 	public static final Item BLOOD_BOOTS = register(new BloodItem.Boots());
 	public static final Item VAMPIRISM = register(new VampirismItem());
 	public static final Item BLOOD_REAPER = register(new BloodReaperItem());
-	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
 	public static final Item BLACK_HEART = register(new BlackHeartItem());
 	public static final Item TECHNOLOGY_STONE = register(new TechnologyStoneItem());
 	public static final Item TIME_STONE = register(new TimeStoneItem());

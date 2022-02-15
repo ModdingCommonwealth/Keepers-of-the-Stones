@@ -7679,15 +7679,6 @@
       "path": "~/Blood"
     },
     {
-      "name": "CursedDiamond",
-      "type": "item",
-      "sortid": 480,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_diamond",
-      "path": "~/Blood"
-    },
-    {
       "name": "BlackHeart",
       "type": "rangeditem",
       "sortid": 481,
@@ -7732,49 +7723,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "blood_reaper_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Blood"
-    },
-    {
-      "name": "CurseCursedDiamond",
-      "type": "potioneffect",
-      "sortid": 485,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curse_cursed_diamond",
-      "path": "~/Blood"
-    },
-    {
-      "name": "CurseFromCursedDiamond",
-      "type": "procedure",
-      "sortid": 485,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curse_from_cursed_diamond",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Blood"
-    },
-    {
-      "name": "CursedDiamondEffect",
-      "type": "procedure",
-      "sortid": 486,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_diamond_effect",
       "metadata": {
         "dependencies": [
           {
@@ -9483,8 +9431,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "item.power.rainfall": "Ливень",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
@@ -9639,7 +9587,6 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
       "item.power.animals_boots": "Animals Boots",
-      "item.power.cursed_diamond": "Проклятый Бриллиант",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -9770,7 +9717,6 @@
       "effect.power.technology_master": "Мастер Технологий",
       "item.power.eclipse": "Затмение",
       "biome.power.mars_land": "Марсианская Земля",
-      "effect.power.curse_cursed_diamond": "Проклятие Бриллианта",
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
       "effect.power.light_master": "Мастер Света",
@@ -9806,8 +9752,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
@@ -9962,7 +9908,6 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Water Stone",
       "item.power.animals_boots": "Animals Boots",
-      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
@@ -10093,7 +10038,6 @@
       "effect.power.technology_master": "Master of Technology",
       "item.power.eclipse": "Eclipse",
       "biome.power.mars_land": "Mars Land",
-      "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
       "item.power.rain_leggings": "Rain Leggings",
       "item.power.shadow_ball": "Shadow Ball",
       "effect.power.light_master": "Master of Light",
