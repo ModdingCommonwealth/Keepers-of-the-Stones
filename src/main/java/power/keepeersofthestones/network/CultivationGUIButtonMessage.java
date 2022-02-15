@@ -5,6 +5,7 @@ import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.procedures.GetWheatProcedure;
 import power.keepeersofthestones.procedures.GetWaterLilyProcedure;
 import power.keepeersofthestones.procedures.GetVineProcedure;
+import power.keepeersofthestones.procedures.GetSugarCaneProcedure;
 import power.keepeersofthestones.procedures.GetSpruceSaplingProcedure;
 import power.keepeersofthestones.procedures.GetPumpkinProcedure;
 import power.keepeersofthestones.procedures.GetPotatoProcedure;
@@ -130,6 +131,10 @@ public class CultivationGUIButtonMessage {
 		if (buttonID == 13) {
 
 			GetPumpkinProcedure.execute(entity);
+		}
+		if (buttonID == 14) {
+
+			GetSugarCaneProcedure.execute(entity);
 		}
 	}
 

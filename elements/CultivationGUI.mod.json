@@ -218,6 +218,31 @@
           "x": 114,
           "y": 143
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sugar Cane",
+          "onClick": {
+            "name": "GetSugarCane"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Sugar Cane",
+          "x": 195,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Bamboo",
+          "width": 77,
+          "height": 20,
+          "name": "Bamboo",
+          "x": 276,
+          "y": 143
+        }
       }
     ],
     "gridSettings": {

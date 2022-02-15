@@ -166,5 +166,13 @@ public class CultivationGUIScreen extends AbstractContainerScreen<CultivationGUI
 				CultivationGUIButtonMessage.handleButtonAction(entity, 13, x, y, z);
 			}
 		}));
+		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 106, 77, 20, new TextComponent("Sugar Cane"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(14, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 14, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 250, this.topPos + 106, 77, 20, new TextComponent("Bamboo"), e -> {
+		}));
 	}
 }
