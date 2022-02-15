@@ -92,6 +92,20 @@
           "x": 141,
           "y": 116
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sheep",
+          "onClick": {
+            "name": "SummonSheep"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Sheep",
+          "x": 204,
+          "y": 116
+        }
       }
     ],
     "gridSettings": {

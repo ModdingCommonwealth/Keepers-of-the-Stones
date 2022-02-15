@@ -112,5 +112,11 @@ public class SpawnAnimalsGUIScreen extends AbstractContainerScreen<SpawnAnimalsG
 				SpawnAnimalsGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
+		this.addRenderableWidget(new Button(this.leftPos + 78, this.topPos + 79, 51, 20, new TextComponent("Sheep"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new SpawnAnimalsGUIButtonMessage(5, x, y, z));
+				SpawnAnimalsGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}));
 	}
 }
