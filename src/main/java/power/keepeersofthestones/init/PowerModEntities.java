@@ -10,6 +10,7 @@ import power.keepeersofthestones.entity.VacuumWebEntity;
 import power.keepeersofthestones.entity.VacuumSpiralEntity;
 import power.keepeersofthestones.entity.TornadoEntityEntity;
 import power.keepeersofthestones.entity.TornadoCreateEntity;
+import power.keepeersofthestones.entity.TimeDilationEntity;
 import power.keepeersofthestones.entity.TigerClawEntity;
 import power.keepeersofthestones.entity.SunExplodeEntity;
 import power.keepeersofthestones.entity.SpikeEntity;
@@ -132,6 +133,9 @@ public class PowerModEntities {
 					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TornadoEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final EntityType<BlackHeartEntity> BLACK_HEART = register("entitybulletblack_heart",
 			EntityType.Builder.<BlackHeartEntity>of(BlackHeartEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHeartEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<TimeDilationEntity> TIME_DILATION = register("entitybullettime_dilation",
+			EntityType.Builder.<TimeDilationEntity>of(TimeDilationEntity::new, MobCategory.MISC).setCustomClientFactory(TimeDilationEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

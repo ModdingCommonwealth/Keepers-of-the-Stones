@@ -523,6 +523,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8030,15 +8046,6 @@
       "path": "~/Time"
     },
     {
-      "name": "Timedilation",
-      "type": "item",
-      "sortid": 507,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_dilation",
-      "path": "~/Time"
-    },
-    {
       "name": "TimeDilationUse",
       "type": "procedure",
       "sortid": 508,
@@ -8050,18 +8057,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -9031,6 +9026,15 @@
         ]
       },
       "path": "~/Animals"
+    },
+    {
+      "name": "TimeDilation",
+      "type": "rangeditem",
+      "sortid": 558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation",
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -9464,8 +9468,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "effect.power.sound_master": "Мастер Звука",
       "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
@@ -9674,7 +9678,7 @@
       "effect.power.recharge_lava_stone": "Перезарядка",
       "item.power.light_leggings": "Light Leggings",
       "item.power.ice_helmet": "Ледяной Шарф",
-      "item.power.time_dilation": "Замедление Времени",
+      "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
       "item.power.destruction_stone": "Камень Разрушения",
@@ -9785,8 +9789,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "item.power.rainfall": "Rainfall",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",

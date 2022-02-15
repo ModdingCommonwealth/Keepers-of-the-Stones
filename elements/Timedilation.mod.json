@@ -1,37 +1,43 @@
 {
   "_fv": 24,
-  "_type": "item",
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "time_dilation",
     "customModelName": "Normal",
     "name": "Time Dilation",
-    "rarity": "COMMON",
+    "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
     },
     "stackSize": 1,
-    "enchantability": 0,
-    "useDuration": 0,
-    "toolType": 0.0,
-    "damageCount": 0,
-    "recipeRemainder": {
+    "ammoItem": {
       "value": ""
     },
-    "destroyAnyBlock": false,
-    "immuneToFire": true,
-    "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
-    "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onEntityHitWith": {
-      "name": "TimeDilationUse"
+    "onRangedItemUsed": {
+      "name": "RechargeMagicFireball"
     },
-    "hasDispenseBehavior": false
+    "bulletPower": 1.0,
+    "bulletDamage": 9.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:TimeDilation"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "TimeDilationUse"
+    }
   }
 }

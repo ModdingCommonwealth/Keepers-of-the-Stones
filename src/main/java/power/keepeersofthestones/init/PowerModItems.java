@@ -26,11 +26,11 @@ import power.keepeersofthestones.item.TornadoStoneItem;
 import power.keepeersofthestones.item.TornadoItem;
 import power.keepeersofthestones.item.TornadoCreateItem;
 import power.keepeersofthestones.item.TornadoBattleAxeItem;
-import power.keepeersofthestones.item.TimedilationItem;
 import power.keepeersofthestones.item.TimeStopItem;
 import power.keepeersofthestones.item.TimeStoneItem;
 import power.keepeersofthestones.item.TimeReversedItem;
 import power.keepeersofthestones.item.TimeItem;
+import power.keepeersofthestones.item.TimeDilationItem;
 import power.keepeersofthestones.item.TimeBladeItem;
 import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.TechnologyStoneItem;
@@ -389,9 +389,9 @@ public class PowerModItems {
 	public static final Item TIME_BOOTS = register(new TimeItem.Boots());
 	public static final Item TIME_BLADE = register(new TimeBladeItem());
 	public static final Item ACCELERATION_TIME = register(new AccelerationTimeItem());
-	public static final Item TIME_DILATION = register(new TimedilationItem());
 	public static final Item TIME_STOP = register(new TimeStopItem());
 	public static final Item TIME_REVERSED = register(new TimeReversedItem());
+	public static final Item TIME_DILATION = register(new TimeDilationItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
