@@ -10238,7 +10238,7 @@
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
-    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos-beta.json",
+    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json",
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],
