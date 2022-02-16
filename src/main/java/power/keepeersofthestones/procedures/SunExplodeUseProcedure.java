@@ -15,9 +15,9 @@ import net.minecraft.commands.CommandSource;
 
 public class SunExplodeUseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if (world instanceof Level _level && !_level.isClientSide())
+			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.NONE);
 		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PowerModBlocks.MOON_STONES_BLOCK) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
@@ -29,8 +29,6 @@ public class SunExplodeUseProcedure {
 								_level.getServer(), null).withSuppressedOutput(),
 						"fill ~-16 ~-16 ~-16 ~16 ~16 ~16 air replace power:unmultiplication_moon_stones_block");
 		} else if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PowerModBlocks.UNMULTIPLICATION_MOON_STONES_BLOCK) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
