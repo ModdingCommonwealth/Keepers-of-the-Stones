@@ -22,7 +22,7 @@
       "falpha": 0.0
     },
     "canRespawnHere": true,
-    "hasFog": false,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": true,
     "sleepResult": "ALLOW",
