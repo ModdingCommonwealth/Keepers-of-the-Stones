@@ -70,6 +70,7 @@ public class CheckpointGUIScreen extends AbstractContainerScreen<CheckpointGUIMe
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		drawString(poseStack, this.font, "Returning to the last point", 15, 7, -12829636);
+		drawString(poseStack, this.font, "Time travel", 60, 79, -12829636);
 	}
 
 	@Override
@@ -92,6 +93,18 @@ public class CheckpointGUIScreen extends AbstractContainerScreen<CheckpointGUIMe
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new CheckpointGUIButtonMessage(1, x, y, z));
 				CheckpointGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 97, 126, 20, new TextComponent("Return to the past"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CheckpointGUIButtonMessage(2, x, y, z));
+				CheckpointGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 124, 134, 20, new TextComponent("Return to the present"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CheckpointGUIButtonMessage(3, x, y, z));
+				CheckpointGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
 	}

@@ -9219,6 +9219,70 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "ReturnToPast",
+      "type": "procedure",
+      "sortid": 531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_to_past",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "ReturnToPresent",
+      "type": "procedure",
+      "sortid": 532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_to_present",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TpDinoera",
+      "type": "command",
+      "sortid": 533,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_dinoera",
+      "path": "~/Time"
+    },
+    {
+      "name": "AncientJungle",
+      "type": "biome",
+      "sortid": 534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_jungle",
+      "path": "~/Time"
+    },
+    {
+      "name": "Dinoera",
+      "type": "dimension",
+      "sortid": 536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinoera",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -9707,7 +9771,7 @@
       "effect.power.recharge_earth_stone": "Перезарядка",
       "effect.power.ice_master": "Мастер Льда",
       "item.power.magma_shield": "Магматический Щит",
-      "item.power.time_reversed": "Время Вспять",
+      "item.power.time_reversed": "Time Reversed",
       "item.power.cosmos_leggings": "Cosmos Leggings",
       "item.power.moon_axe": "Лунная Секира",
       "item.power.piece_of_earth": "Кусок Земли",
@@ -9751,6 +9815,7 @@
       "item.power.metal_boots": "Metal Boots",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
+      "biome.power.ancient_jungle": "Ancient Jungle",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
       "effect.power.tornado_master": "Мастер Торнадо",
@@ -9913,6 +9978,7 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Солнечная Секира",
+      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
@@ -10078,6 +10144,7 @@
       "item.power.metal_boots": "Metal Boots",
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
+      "biome.power.ancient_jungle": "Ancient Jungle",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.iron_shield": "Iron Shield",
       "effect.power.tornado_master": "Master of Tornado",
@@ -10240,6 +10307,7 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Sun Axe",
+      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",

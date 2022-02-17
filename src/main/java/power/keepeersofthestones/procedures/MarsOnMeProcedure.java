@@ -59,7 +59,7 @@ public class MarsOnMeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"tp ~ ~10 ~");
+							"tp ~ ~30 ~");
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0, (false), (false)));

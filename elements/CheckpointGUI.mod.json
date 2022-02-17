@@ -50,6 +50,47 @@
           "x": 150,
           "y": 89
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Return to the past",
+          "onClick": {
+            "name": "ReturnToPast"
+          },
+          "width": 126,
+          "height": 20,
+          "name": "Return to the past",
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Return to the present",
+          "onClick": {
+            "name": "ReturnToPresent"
+          },
+          "width": 134,
+          "height": 20,
+          "name": "Return to the present",
+          "x": 150,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Time travel",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Time travel",
+          "x": 186,
+          "y": 116
+        }
       }
     ],
     "gridSettings": {

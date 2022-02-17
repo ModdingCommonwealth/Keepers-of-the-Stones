@@ -2,6 +2,8 @@
 package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.CheckpointGUIMenu;
+import power.keepeersofthestones.procedures.ReturnToPresentProcedure;
+import power.keepeersofthestones.procedures.ReturnToPastProcedure;
 import power.keepeersofthestones.procedures.ReturnCheckpointProcedure;
 import power.keepeersofthestones.procedures.CheckpointProcedure;
 import power.keepeersofthestones.PowerMod;
@@ -70,6 +72,14 @@ public class CheckpointGUIButtonMessage {
 		if (buttonID == 1) {
 
 			CheckpointProcedure.execute(x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			ReturnToPastProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			ReturnToPresentProcedure.execute(entity);
 		}
 	}
 
