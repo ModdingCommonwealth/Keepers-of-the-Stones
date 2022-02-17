@@ -116,6 +116,7 @@ import power.keepeersofthestones.item.EnergyStaffItem;
 import power.keepeersofthestones.item.EnergySphereItem;
 import power.keepeersofthestones.item.EnergyShieldItem;
 import power.keepeersofthestones.item.EnergyItem;
+import power.keepeersofthestones.item.EnergyBatteryItem;
 import power.keepeersofthestones.item.EmptyBatteryItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
@@ -403,6 +404,7 @@ public class PowerModItems {
 	public static final Item TIME_STOP = register(new TimeStopItem());
 	public static final Item TIME_REVERSED = register(new TimeReversedItem());
 	public static final Item TIME_DILATION = register(new TimeDilationItem());
+	public static final Item ENERGY_BATTERY = register(new EnergyBatteryItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

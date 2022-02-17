@@ -9193,6 +9193,32 @@
       "locked_code": false,
       "registry_name": "batteries",
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "EnergyBattery",
+      "type": "item",
+      "sortid": 528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "EnergyBatteryUse",
+      "type": "procedure",
+      "sortid": 529,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -9710,6 +9736,7 @@
       "effect.power.greenery_master": "Мастер Зелени",
       "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Мастер Тени",
+      "item.power.energy_battery": "Батарея",
       "item.power.creation_boots": "Creation Boots",
       "effect.power.recharge_animals_stone": "Перезарядка",
       "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
@@ -9958,8 +9985,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "effect.power.sound_master": "Master of Sound",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -10036,6 +10063,7 @@
       "effect.power.greenery_master": "Master of Greenery",
       "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Master of Shadow",
+      "item.power.energy_battery": "Battery",
       "item.power.creation_boots": "Creation Boots",
       "effect.power.recharge_animals_stone": "Recharge",
       "item.power.shadow_spawn_egg": "Shadow Spawn Egg",
