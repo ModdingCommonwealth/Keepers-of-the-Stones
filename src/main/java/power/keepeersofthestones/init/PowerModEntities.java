@@ -50,6 +50,9 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModEntities {
 	private static final List<EntityType<?>> REGISTRY = new ArrayList<>();
+	public static final EntityType<TornadoEntityEntity> TORNADO_ENTITY = register("tornado_entity",
+			EntityType.Builder.<TornadoEntityEntity>of(TornadoEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TornadoEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final EntityType<MagicFireballEntity> MAGIC_FIREBALL = register("entitybulletmagic_fireball",
 			EntityType.Builder.<MagicFireballEntity>of(MagicFireballEntity::new, MobCategory.MISC).setCustomClientFactory(MagicFireballEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -128,9 +131,6 @@ public class PowerModEntities {
 	public static final EntityType<BlackHoleEntity> BLACK_HOLE = register("entitybulletblack_hole",
 			EntityType.Builder.<BlackHoleEntity>of(BlackHoleEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHoleEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final EntityType<TornadoEntityEntity> TORNADO_ENTITY = register("tornado_entity",
-			EntityType.Builder.<TornadoEntityEntity>of(TornadoEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TornadoEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final EntityType<BlackHeartEntity> BLACK_HEART = register("entitybulletblack_heart",
 			EntityType.Builder.<BlackHeartEntity>of(BlackHeartEntity::new, MobCategory.MISC).setCustomClientFactory(BlackHeartEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -152,16 +152,16 @@ public class PowerModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			TornadoEntityEntity.init();
 			GlowEntity.init();
 			ShadowEntity.init();
-			TornadoEntityEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(TORNADO_ENTITY, TornadoEntityEntity.createAttributes().build());
 		event.put(GLOW, GlowEntity.createAttributes().build());
 		event.put(SHADOW, ShadowEntity.createAttributes().build());
-		event.put(TORNADO_ENTITY, TornadoEntityEntity.createAttributes().build());
 	}
 }

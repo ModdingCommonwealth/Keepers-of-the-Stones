@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Batteries",
+    "icon": {
+      "value": "CUSTOM:EmptyBattery"
+    },
+    "showSearch": false
+  }
+}

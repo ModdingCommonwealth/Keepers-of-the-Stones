@@ -25,12 +25,15 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Empty"
+      "§bAir"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "AirBatteryUse"
+    },
     "hasDispenseBehavior": false
   }
 }

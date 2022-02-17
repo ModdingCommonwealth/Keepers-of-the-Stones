@@ -20,6 +20,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 public class PowerModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+		event.registerEntityRenderer(PowerModEntities.TORNADO_ENTITY, TornadoEntityRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.MAGIC_FIREBALL, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.AIR_FLOW, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.WATER_FLOW, ThrownItemRenderer::new);
@@ -46,7 +47,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.SUN_EXPLODE, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.MOON_STONES, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.BLACK_HOLE, ThrownItemRenderer::new);
-		event.registerEntityRenderer(PowerModEntities.TORNADO_ENTITY, TornadoEntityRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.BLACK_HEART, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.TIME_DILATION, ThrownItemRenderer::new);
 	}

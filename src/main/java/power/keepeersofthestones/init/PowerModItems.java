@@ -12,6 +12,7 @@ import power.keepeersofthestones.item.WaterKatanaItem;
 import power.keepeersofthestones.item.WaterItem;
 import power.keepeersofthestones.item.WaterFlowItem;
 import power.keepeersofthestones.item.WaterDropItem;
+import power.keepeersofthestones.item.WaterBatteryItem;
 import power.keepeersofthestones.item.VampirismItem;
 import power.keepeersofthestones.item.VacuumWebItem;
 import power.keepeersofthestones.item.VacuumSwordItem;
@@ -119,6 +120,7 @@ import power.keepeersofthestones.item.EmptyBatteryItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
+import power.keepeersofthestones.item.EarthBatteryItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
@@ -147,6 +149,7 @@ import power.keepeersofthestones.item.AnimalsItem;
 import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.item.AirFlowItem;
 import power.keepeersofthestones.item.AirBladeItem;
+import power.keepeersofthestones.item.AirBatteryItem;
 import power.keepeersofthestones.item.AcusticalExplodeItem;
 import power.keepeersofthestones.item.AccelerationTimeItem;
 
@@ -178,18 +181,26 @@ public class PowerModItems {
 	public static final Item RAIN_STONE = register(new RainStoneItem());
 	public static final Item TORNADO_STONE = register(new TornadoStoneItem());
 	public static final Item OCEAN_STONE = register(new OceanStoneItem());
+	public static final Item BLOOD_STONE = register(new BloodStoneItem());
 	public static final Item GREENERY_STONE = register(new GreeneryStoneItem());
 	public static final Item ANIMALS_STONE = register(new AnimalsStoneItem());
 	public static final Item METAL_STONE = register(new MetalStoneItem());
 	public static final Item LIGHT_STONE = register(new LightStoneItem());
 	public static final Item SHADOW_STONE = register(new ShadowStoneItem());
 	public static final Item VACUUM_STONE = register(new VacuumStoneItem());
+	public static final Item TECHNOLOGY_STONE = register(new TechnologyStoneItem());
+	public static final Item TIME_STONE = register(new TimeStoneItem());
 	public static final Item SUN_STONE = register(new SunStoneItem());
 	public static final Item MOON_STONE = register(new MoonStoneItem());
 	public static final Item CREATION_STONE = register(new CreationStoneItem());
 	public static final Item DESTRUCTION_STONE = register(new DestructionStoneItem());
 	public static final Item COSMOS_STONE = register(new CosmosStoneItem());
-	public static final Item GALACTIC_SWORD = register(new GalacticSwordItem());
+	public static final Item EMPTY_BATTERY = register(new EmptyBatteryItem());
+	public static final Item FIRE_BATTERY = register(new FireBatteryItem());
+	public static final Item AIR_BATTERY = register(new AirBatteryItem());
+	public static final Item WATER_BATTERY = register(new WaterBatteryItem());
+	public static final Item EARTH_BATTERY = register(new EarthBatteryItem());
+	public static final Item BATTERY_CHARGER = register(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item BURN = register(new BurnItem());
 	public static final Item MAGIC_FIREBALL = register(new MagicFireballItem());
 	public static final Item AIR_FLOW = register(new AirFlowItem());
@@ -328,6 +339,7 @@ public class PowerModItems {
 	public static final Item TP_ON_VENUS = register(new TpOnVenusItem());
 	public static final Item TP_ON_MOON = register(new TpOnMoonItem());
 	public static final Item TP_ON_EARTH = register(new TpOnEarthItem());
+	public static final Item GALACTIC_SWORD = register(new GalacticSwordItem());
 	public static final Item BLACK_HOLE = register(new BlackHoleItem());
 	public static final Item BLACK_HOLE_BLOCK = register(PowerModBlocks.BLACK_HOLE_BLOCK, null);
 	public static final Item GREENERY_HELMET = register(new GreeneryItem.Helmet());
@@ -375,7 +387,6 @@ public class PowerModItems {
 	public static final Item COSMOS_CHESTPLATE = register(new CosmosItem.Chestplate());
 	public static final Item COSMOS_LEGGINGS = register(new CosmosItem.Leggings());
 	public static final Item COSMOS_BOOTS = register(new CosmosItem.Boots());
-	public static final Item BLOOD_STONE = register(new BloodStoneItem());
 	public static final Item BLOOD_HELMET = register(new BloodItem.Helmet());
 	public static final Item BLOOD_CHESTPLATE = register(new BloodItem.Chestplate());
 	public static final Item BLOOD_LEGGINGS = register(new BloodItem.Leggings());
@@ -383,8 +394,6 @@ public class PowerModItems {
 	public static final Item VAMPIRISM = register(new VampirismItem());
 	public static final Item BLOOD_REAPER = register(new BloodReaperItem());
 	public static final Item BLACK_HEART = register(new BlackHeartItem());
-	public static final Item TECHNOLOGY_STONE = register(new TechnologyStoneItem());
-	public static final Item TIME_STONE = register(new TimeStoneItem());
 	public static final Item TIME_HELMET = register(new TimeItem.Helmet());
 	public static final Item TIME_CHESTPLATE = register(new TimeItem.Chestplate());
 	public static final Item TIME_LEGGINGS = register(new TimeItem.Leggings());
@@ -394,9 +403,6 @@ public class PowerModItems {
 	public static final Item TIME_STOP = register(new TimeStopItem());
 	public static final Item TIME_REVERSED = register(new TimeReversedItem());
 	public static final Item TIME_DILATION = register(new TimeDilationItem());
-	public static final Item EMPTY_BATTERY = register(new EmptyBatteryItem());
-	public static final Item BATTERY_CHARGER = register(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item FIRE_BATTERY = register(new FireBatteryItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

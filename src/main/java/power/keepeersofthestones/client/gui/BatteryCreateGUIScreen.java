@@ -79,7 +79,7 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 					return BlockEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuelRemaining")) + "%", 78, 52, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuelRemaining")) + "", 78, 52, -12829636);
 	}
 
 	@Override

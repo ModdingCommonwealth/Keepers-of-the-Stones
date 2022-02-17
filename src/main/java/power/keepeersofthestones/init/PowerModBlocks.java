@@ -28,6 +28,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModBlocks {
 	private static final List<Block> REGISTRY = new ArrayList<>();
+	public static final Block BATTERY_CHARGER = register(new BatteryChargerBlock());
 	public static final Block ENERGY_BLOCK = register(new EnergyBlockBlock());
 	public static final Block SOUND_BARRIER_BLOCK = register(new SoundBarrierBlockBlock());
 	public static final Block CLUSTER_BLOCK = register(new ClusterBlockBlock());
@@ -36,7 +37,6 @@ public class PowerModBlocks {
 	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
 	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
 	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
-	public static final Block BATTERY_CHARGER = register(new BatteryChargerBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

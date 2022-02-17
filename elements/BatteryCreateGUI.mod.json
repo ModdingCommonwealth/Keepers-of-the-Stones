@@ -86,12 +86,12 @@
       {
         "type": "label",
         "data": {
-          "text": "<BNBT:integer:fuelRemaining>%",
+          "text": "<BNBT:integer:fuelRemaining>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:integer:fuelRemaining>%",
+          "name": "<BNBT:integer:fuelRemaining>",
           "x": 204,
           "y": 89
         }
