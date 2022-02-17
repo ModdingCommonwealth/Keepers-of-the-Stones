@@ -7666,17 +7666,6 @@
       "path": "~/Greenery"
     },
     {
-      "name": "ForbiddenInactiveSpells",
-      "type": "gamerule",
-      "sortid": 477,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forbiddenInactiveSpells",
-      "metadata": {
-        "type": "logic"
-      }
-    },
-    {
       "name": "Vampirism",
       "type": "item",
       "sortid": 478,
@@ -9035,6 +9024,71 @@
       "locked_code": false,
       "registry_name": "time_dilation",
       "path": "~/Time"
+    },
+    {
+      "name": "BatteryCreateGUI",
+      "type": "gui",
+      "sortid": 559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_create_gui",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "EmptyBattery",
+      "type": "item",
+      "sortid": 560,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "BatteryCharger",
+      "type": "block",
+      "sortid": 561,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_charger",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "BatteryCreateTick",
+      "type": "procedure",
+      "sortid": 562,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_create_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "FireBattery",
+      "type": "item",
+      "sortid": 563,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_battery",
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -9427,6 +9481,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "battery",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -9470,7 +9530,6 @@
       "item.power.energy_shield": "Энергощит",
       "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
-      "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -9627,7 +9686,7 @@
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
-      "gamerule.forbiddenInactiveSpells": "Запретить использование заклинаний при неактивированном камне",
+      "block.power.battery_charger": "Battery Charger",
       "effect.power.rain_fly": "RainFly",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
@@ -9641,6 +9700,7 @@
       "item.power.sai": "Саи",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
+      "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Кровавый Жнец",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -9677,6 +9737,7 @@
       "itemGroup.tabmiddle_group": "Средние",
       "effect.power.recharge_lava_stone": "Перезарядка",
       "item.power.light_leggings": "Light Leggings",
+      "item.power.empty_battery": "Battery",
       "item.power.ice_helmet": "Ледяной Шарф",
       "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
@@ -9791,7 +9852,6 @@
       "effect.power.recharge_ice_stone": "Recharge",
       "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
-      "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -9948,7 +10008,7 @@
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
-      "gamerule.forbiddenInactiveSpells": "Prohibit the use of spells when the stone is not activated",
+      "block.power.battery_charger": "Battery Charger",
       "effect.power.rain_fly": "RainFly",
       "item.power.bee_sting": "Bee Sting",
       "item.power.sound_sword": "Sound Sword",
@@ -9962,6 +10022,7 @@
       "item.power.sai": "Sai",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
+      "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Blood Reaper",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
@@ -9998,6 +10059,7 @@
       "itemGroup.tabmiddle_group": "Middle Group",
       "effect.power.recharge_lava_stone": "Recharge",
       "item.power.light_leggings": "Light Leggings",
+      "item.power.empty_battery": "Battery",
       "item.power.ice_helmet": "Ice Helmet",
       "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
@@ -10225,20 +10287,24 @@
       {
         "name": "Keys",
         "children": []
+      },
+      {
+        "name": "ElementalBattery",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.5.0",
+    "version": "1.6.0.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
-    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json",
+    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos-beta.json",
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],

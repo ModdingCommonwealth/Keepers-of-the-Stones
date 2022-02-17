@@ -10,6 +10,7 @@ import power.keepeersofthestones.client.gui.CultivationGUIScreen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage2Screen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
 import power.keepeersofthestones.client.gui.CheckpointGUIScreen;
+import power.keepeersofthestones.client.gui.BatteryCreateGUIScreen;
 import power.keepeersofthestones.client.gui.AcceptTpOnVenusScreen;
 import power.keepeersofthestones.client.gui.AcceptTpOnMoonScreen;
 import power.keepeersofthestones.client.gui.AcceptTpOnMarsScreen;
@@ -37,6 +38,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_EARTH, AcceptTpOnEarthScreen::new);
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_MARS, AcceptTpOnMarsScreen::new);
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_VENUS, AcceptTpOnVenusScreen::new);
+			MenuScreens.register(PowerModMenus.BATTERY_CREATE_GUI, BatteryCreateGUIScreen::new);
 		});
 	}
 }

@@ -12,6 +12,7 @@ import power.keepeersofthestones.block.EnergyBlockBlock;
 import power.keepeersofthestones.block.CrystalShieldBlockBlock;
 import power.keepeersofthestones.block.ClusterBlockBlock;
 import power.keepeersofthestones.block.BlackHoleBlockBlock;
+import power.keepeersofthestones.block.BatteryChargerBlock;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +36,7 @@ public class PowerModBlocks {
 	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
 	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
 	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
+	public static final Block BATTERY_CHARGER = register(new BatteryChargerBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

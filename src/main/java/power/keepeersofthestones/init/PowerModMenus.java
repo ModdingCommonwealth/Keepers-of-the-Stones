@@ -10,6 +10,7 @@ import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.world.inventory.CheckpointGUIMenu;
+import power.keepeersofthestones.world.inventory.BatteryCreateGUIMenu;
 import power.keepeersofthestones.world.inventory.AcceptTpOnVenusMenu;
 import power.keepeersofthestones.world.inventory.AcceptTpOnMoonMenu;
 import power.keepeersofthestones.world.inventory.AcceptTpOnMarsMenu;
@@ -49,6 +50,8 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new AcceptTpOnMarsMenu(id, inv, extraData));
 	public static final MenuType<AcceptTpOnVenusMenu> ACCEPT_TP_ON_VENUS = register("accept_tp_on_venus",
 			(id, inv, extraData) -> new AcceptTpOnVenusMenu(id, inv, extraData));
+	public static final MenuType<BatteryCreateGUIMenu> BATTERY_CREATE_GUI = register("battery_create_gui",
+			(id, inv, extraData) -> new BatteryCreateGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

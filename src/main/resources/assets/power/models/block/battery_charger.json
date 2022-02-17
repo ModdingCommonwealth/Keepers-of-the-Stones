@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/blackholeblock",
+    "up": "power:blocks/blackholeblock",
+    "north": "power:blocks/blackholeblock",
+    "east": "power:blocks/blackholeblock",
+    "south": "power:blocks/blackholeblock",
+    "west": "power:blocks/blackholeblock",
+    "particle": "power:blocks/blackholeblock"
+  }
+}

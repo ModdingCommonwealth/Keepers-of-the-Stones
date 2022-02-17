@@ -108,12 +108,14 @@ import power.keepeersofthestones.item.FistofEarthItem;
 import power.keepeersofthestones.item.FireSwordItem;
 import power.keepeersofthestones.item.FireStoneItem;
 import power.keepeersofthestones.item.FireItem;
+import power.keepeersofthestones.item.FireBatteryItem;
 import power.keepeersofthestones.item.FertilizerItem;
 import power.keepeersofthestones.item.EnergyStoneItem;
 import power.keepeersofthestones.item.EnergyStaffItem;
 import power.keepeersofthestones.item.EnergySphereItem;
 import power.keepeersofthestones.item.EnergyShieldItem;
 import power.keepeersofthestones.item.EnergyItem;
+import power.keepeersofthestones.item.EmptyBatteryItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
@@ -392,6 +394,9 @@ public class PowerModItems {
 	public static final Item TIME_STOP = register(new TimeStopItem());
 	public static final Item TIME_REVERSED = register(new TimeReversedItem());
 	public static final Item TIME_DILATION = register(new TimeDilationItem());
+	public static final Item EMPTY_BATTERY = register(new EmptyBatteryItem());
+	public static final Item BATTERY_CHARGER = register(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item FIRE_BATTERY = register(new FireBatteryItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
