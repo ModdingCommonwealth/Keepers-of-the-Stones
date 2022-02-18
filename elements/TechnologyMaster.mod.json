@@ -12,6 +12,15 @@
     "isBad": false,
     "isBenefitical": true,
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "TechnologyMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "TechnologyMasterEffects"
+    },
+    "onExpired": {
+      "name": "TechnologyMasterEffectEnd"
+    }
   }
 }

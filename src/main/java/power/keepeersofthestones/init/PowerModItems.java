@@ -35,6 +35,8 @@ import power.keepeersofthestones.item.TimeDilationItem;
 import power.keepeersofthestones.item.TimeBladeItem;
 import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.TechnologyStoneItem;
+import power.keepeersofthestones.item.TechnologyItem;
+import power.keepeersofthestones.item.TechnoPickaxeItem;
 import power.keepeersofthestones.item.TamerItem;
 import power.keepeersofthestones.item.SunStoneItem;
 import power.keepeersofthestones.item.SunRegenerationItem;
@@ -405,6 +407,11 @@ public class PowerModItems {
 	public static final Item TIME_REVERSED = register(new TimeReversedItem());
 	public static final Item TIME_DILATION = register(new TimeDilationItem());
 	public static final Item ENERGY_BATTERY = register(new EnergyBatteryItem());
+	public static final Item TECHNOLOGY_HELMET = register(new TechnologyItem.Helmet());
+	public static final Item TECHNOLOGY_CHESTPLATE = register(new TechnologyItem.Chestplate());
+	public static final Item TECHNOLOGY_LEGGINGS = register(new TechnologyItem.Leggings());
+	public static final Item TECHNOLOGY_BOOTS = register(new TechnologyItem.Boots());
+	public static final Item TECHNO_PICKAXE = register(new TechnoPickaxeItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

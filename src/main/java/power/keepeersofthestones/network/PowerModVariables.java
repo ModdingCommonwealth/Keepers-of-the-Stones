@@ -116,6 +116,7 @@ public class PowerModVariables {
 			clone.spawnx = original.spawnx;
 			clone.spawny = original.spawny;
 			clone.spawnz = original.spawnz;
+			clone.power_level = original.power_level;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.battery = original.battery;
@@ -404,6 +405,7 @@ public class PowerModVariables {
 		public double spawny = 75.0;
 		public double spawnz = 0.0;
 		public boolean battery = false;
+		public double power_level = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -451,6 +453,7 @@ public class PowerModVariables {
 			nbt.putDouble("spawny", spawny);
 			nbt.putDouble("spawnz", spawnz);
 			nbt.putBoolean("battery", battery);
+			nbt.putDouble("power_level", power_level);
 			return nbt;
 		}
 
@@ -495,6 +498,7 @@ public class PowerModVariables {
 			spawny = nbt.getDouble("spawny");
 			spawnz = nbt.getDouble("spawnz");
 			battery = nbt.getBoolean("battery");
+			power_level = nbt.getDouble("power_level");
 		}
 	}
 
@@ -559,6 +563,7 @@ public class PowerModVariables {
 					variables.spawny = message.data.spawny;
 					variables.spawnz = message.data.spawnz;
 					variables.battery = message.data.battery;
+					variables.power_level = message.data.power_level;
 				}
 			});
 			context.setPacketHandled(true);
