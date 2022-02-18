@@ -31,10 +31,12 @@ public class LightMasterEffectEndProcedure {
 						SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_STONE);
-			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_STONE);
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
 		}
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_SWORD);
@@ -68,13 +70,9 @@ public class LightMasterEffectEndProcedure {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_BOOTS);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_LIGHT_STONE, 6000, 0, (false), (false)));
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"kill @e[type=power:glow]");
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_LIGHT_STONE, 6000, 0, (false), (false)));
 		}
 		{
 			boolean _setval = (boolean) (false);
@@ -89,6 +87,19 @@ public class LightMasterEffectEndProcedure {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
 			});
+		}
+		{
+			boolean _setval = (boolean) (false);
+			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.battery = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null)
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						"kill @e[type=power:glow]");
 		}
 	}
 }

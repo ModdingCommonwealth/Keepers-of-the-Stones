@@ -31,10 +31,12 @@ public class TimeMasterEffectEndProcedure {
 						SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PowerModItems.TIME_STONE);
-			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PowerModItems.TIME_STONE);
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
 		}
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BLADE);
@@ -72,8 +74,10 @@ public class TimeMasterEffectEndProcedure {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BOOTS);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TIME_STONE, 6000, 0, (false), (false)));
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TIME_STONE, 6000, 0, (false), (false)));
+		}
 		{
 			boolean _setval = (boolean) (false);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -85,6 +89,13 @@ public class TimeMasterEffectEndProcedure {
 			boolean _setval = (boolean) (false);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			boolean _setval = (boolean) (false);
+			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.battery = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
