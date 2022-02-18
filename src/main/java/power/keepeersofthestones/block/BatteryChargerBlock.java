@@ -3,10 +3,16 @@ package power.keepeersofthestones.block;
 
 import power.keepeersofthestones.world.inventory.BatteryCreateGUIMenu;
 import power.keepeersofthestones.procedures.BatteryCreateTickProcedure;
+import power.keepeersofthestones.init.PowerModBlocks;
 import power.keepeersofthestones.block.entity.BatteryChargerBlockEntity;
 
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -32,6 +38,8 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import java.util.Random;
 import java.util.List;
@@ -44,13 +52,25 @@ public class BatteryChargerBlock extends Block
 
 			EntityBlock {
 	public BatteryChargerBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
+				.isRedstoneConductor((bs, br, bp) -> false));
 		setRegistryName("battery_charger");
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		return box(0, 0, 0, 16, 6, 16).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -139,5 +159,10 @@ public class BatteryChargerBlock extends Block
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BATTERY_CHARGER, renderType -> renderType == RenderType.cutout());
 	}
 }

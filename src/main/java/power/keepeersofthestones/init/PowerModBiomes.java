@@ -9,6 +9,7 @@ import power.keepeersofthestones.world.biome.VenusDesertBiome;
 import power.keepeersofthestones.world.biome.MoonLandBiome;
 import power.keepeersofthestones.world.biome.MarsLandBiome;
 import power.keepeersofthestones.world.biome.AncientJungleBiome;
+import power.keepeersofthestones.world.biome.AncientDesertBiome;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -30,6 +31,7 @@ public class PowerModBiomes {
 	public static Biome VENUS_LAND = register("venus_land", VenusLandBiome.createBiome());
 	public static Biome VENUS_DESERT = register("venus_desert", VenusDesertBiome.createBiome());
 	public static Biome ANCIENT_JUNGLE = register("ancient_jungle", AncientJungleBiome.createBiome());
+	public static Biome ANCIENT_DESERT = register("ancient_desert", AncientDesertBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(PowerMod.MODID, registryname)));
@@ -49,6 +51,7 @@ public class PowerModBiomes {
 			VenusLandBiome.init();
 			VenusDesertBiome.init();
 			AncientJungleBiome.init();
+			AncientDesertBiome.init();
 		});
 	}
 }

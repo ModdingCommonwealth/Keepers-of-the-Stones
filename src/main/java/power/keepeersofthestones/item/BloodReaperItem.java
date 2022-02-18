@@ -37,7 +37,7 @@ public class BloodReaperItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3.1f, new Item.Properties().tab(null).fireResistant());
+		}, 1, -3f, new Item.Properties().tab(null).fireResistant());
 		setRegistryName("blood_reaper");
 	}
 

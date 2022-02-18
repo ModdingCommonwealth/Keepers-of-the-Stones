@@ -5,14 +5,17 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:AncientJungle"
+      },
+      {
+        "value": "CUSTOM:AncientDesert"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
     "hasFog": false,

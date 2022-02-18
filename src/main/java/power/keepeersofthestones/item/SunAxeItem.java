@@ -32,7 +32,7 @@ public class SunAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3.2f, new Item.Properties().tab(null));
+		}, 1, -3f, new Item.Properties().tab(null));
 		setRegistryName("sun_axe");
 	}
 }

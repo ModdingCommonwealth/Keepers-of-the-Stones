@@ -52,6 +52,7 @@ public class PowerModBlocks {
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
+			BatteryChargerBlock.registerRenderLayer();
 			ClusterBlockBlock.registerRenderLayer();
 			VacuumWebBlockBlock.registerRenderLayer();
 			BlackHoleBlockBlock.registerRenderLayer();

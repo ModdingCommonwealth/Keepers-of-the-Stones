@@ -23,7 +23,7 @@ public class LavaHammerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 13f;
+				return 20f;
 			}
 
 			public int getLevel() {
@@ -37,7 +37,7 @@ public class LavaHammerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3.85f, new Item.Properties().tab(null).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(null).fireResistant());
 		setRegistryName("lava_hammer");
 	}
 

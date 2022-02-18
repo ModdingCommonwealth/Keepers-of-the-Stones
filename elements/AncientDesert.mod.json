@@ -4,17 +4,17 @@
   "definition": {
     "name": "Ancient Jungle",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.SANDSTONE#0"
     },
     "grassColor": {
-      "value": -16751104,
+      "value": -3368704,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -16751104,
+      "value": -3368704,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -30,7 +30,7 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "SPORE_BLOSSOM_AIR"
     },
@@ -39,38 +39,38 @@
     "parent": {
       "value": "No parent"
     },
-    "rainingPossibility": 1.0,
-    "temperature": 0.5,
+    "rainingPossibility": 0.1,
+    "temperature": 2.0,
     "baseHeight": 0.1,
-    "heightVariation": 0.4,
+    "heightVariation": 0.19999999999999998,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 10,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [
-      "JUNGLE",
-      "WET"
+      "DRY",
+      "SANDY"
     ],
-    "grassPerChunk": 20,
+    "grassPerChunk": 2,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
-    "mushroomsPerChunk": 3,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 3,
-    "gravelPatchesPerChunk": 2,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "treesPerChunk": 5,
-    "vanillaTreeType": "Big trees",
+    "cactiPerChunk": 6,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.LOG#3"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#3"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": "Blocks.AIR"
@@ -88,7 +88,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
-    "spawnBuriedTreasure": true,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,

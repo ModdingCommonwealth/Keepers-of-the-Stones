@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "power:custom/battery_charger",
   "textures": {
-    "down": "power:blocks/blackholeblock",
-    "up": "power:blocks/blackholeblock",
-    "north": "power:blocks/blackholeblock",
-    "east": "power:blocks/blackholeblock",
-    "south": "power:blocks/blackholeblock",
-    "west": "power:blocks/blackholeblock",
-    "particle": "power:blocks/blackholeblock"
+    "all": "power:blocks/battery_charger",
+    "particle": "power:blocks/battery_charger",
+    "2": "power:blocks/battery_charger"
   }
 }

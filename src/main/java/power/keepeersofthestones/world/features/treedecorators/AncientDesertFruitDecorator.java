@@ -15,18 +15,18 @@ import java.util.function.BiConsumer;
 import java.util.Random;
 import java.util.List;
 
-public class AncientJungleFruitDecorator extends CocoaDecorator {
-	public static final AncientJungleFruitDecorator INSTANCE = new AncientJungleFruitDecorator();
-	public static com.mojang.serialization.Codec<AncientJungleFruitDecorator> codec;
+public class AncientDesertFruitDecorator extends CocoaDecorator {
+	public static final AncientDesertFruitDecorator INSTANCE = new AncientDesertFruitDecorator();
+	public static com.mojang.serialization.Codec<AncientDesertFruitDecorator> codec;
 	public static TreeDecoratorType<?> tdt;
 	static {
 		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		tdt = new TreeDecoratorType<>(codec);
-		tdt.setRegistryName("ancient_jungle_tree_fruit_decorator");
+		tdt.setRegistryName("ancient_desert_tree_fruit_decorator");
 		ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 	}
 
-	public AncientJungleFruitDecorator() {
+	public AncientDesertFruitDecorator() {
 		super(0.2f);
 	}
 

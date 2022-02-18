@@ -201,7 +201,7 @@ public class PowerModItems {
 	public static final Item AIR_BATTERY = register(new AirBatteryItem());
 	public static final Item WATER_BATTERY = register(new WaterBatteryItem());
 	public static final Item EARTH_BATTERY = register(new EarthBatteryItem());
-	public static final Item BATTERY_CHARGER = register(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BATTERY_CHARGER = register(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_REDSTONE);
 	public static final Item BURN = register(new BurnItem());
 	public static final Item MAGIC_FIREBALL = register(new MagicFireballItem());
 	public static final Item AIR_FLOW = register(new AirFlowItem());

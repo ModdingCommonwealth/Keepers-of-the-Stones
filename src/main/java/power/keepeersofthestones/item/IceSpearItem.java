@@ -23,7 +23,7 @@ public class IceSpearItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8f;
+				return 13f;
 			}
 
 			public int getLevel() {
@@ -37,7 +37,7 @@ public class IceSpearItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3.5f, new Item.Properties().tab(null).fireResistant());
+		}, 3, -3f, new Item.Properties().tab(null).fireResistant());
 		setRegistryName("ice_spear");
 	}
 

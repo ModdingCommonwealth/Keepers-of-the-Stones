@@ -9283,6 +9283,24 @@
         "ep": false
       },
       "path": "~/Time"
+    },
+    {
+      "name": "AncientDesert",
+      "type": "biome",
+      "sortid": 537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_desert",
+      "path": "~/Time"
+    },
+    {
+      "name": "CraftBatteryCharger",
+      "type": "recipe",
+      "sortid": 538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_battery_charger",
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -9722,8 +9740,8 @@
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
       "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
       "effect.power.sound_master": "Мастер Звука",
+      "item.power.rainfall": "Ливень",
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -9900,6 +9918,7 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
       "item.power.fire_battery": "Батарея",
+      "biome.power.ancient_desert": "Ancient Jungle",
       "item.power.blood_reaper": "Кровавый Жнец",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -10051,8 +10070,8 @@
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "item.power.rainfall": "Rainfall",
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
@@ -10229,6 +10248,7 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
       "item.power.fire_battery": "Battery",
+      "biome.power.ancient_desert": "Ancient Jungle",
       "item.power.blood_reaper": "Blood Reaper",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",

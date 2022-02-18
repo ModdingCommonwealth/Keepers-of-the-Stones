@@ -57,7 +57,7 @@ public class MoonAxeItem extends Item {
 			builder.put(Attributes.ATTACK_DAMAGE,
 					new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 13f, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED,
-					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3.2000000000000001, AttributeModifier.Operation.ADDITION));
+					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);

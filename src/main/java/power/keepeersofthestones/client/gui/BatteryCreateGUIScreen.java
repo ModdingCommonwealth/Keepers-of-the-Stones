@@ -71,7 +71,7 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Creating a battery", 42, 7, -12829636);
+		drawString(poseStack, this.font, "Charging the battery", 42, 7, -12829636);
 		drawString(poseStack, this.font, "" + ((int) new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
@@ -79,7 +79,7 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 					return BlockEntity.getTileData().getDouble(tag);
 				return 0;
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuelRemaining")) + "", 77, 52, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuelRemaining")) + "", 83, 51, -12829636);
 	}
 
 	@Override

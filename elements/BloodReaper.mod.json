@@ -13,7 +13,7 @@
     "toolType": "Axe",
     "harvestLevel": 3,
     "efficiency": 6.0,
-    "attackSpeed": 0.9,
+    "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 15.0,
     "usageCount": 5000,

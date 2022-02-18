@@ -27,7 +27,9 @@ public class DinoeraDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(Blocks.GRASS_BLOCK);
+			replaceableBlocks.add(Blocks.STONE);
+			replaceableBlocks.add(Blocks.SAND);
+			replaceableBlocks.add(Blocks.SANDSTONE);
 			replaceableBlocks.add(Blocks.GRASS_BLOCK);
 			replaceableBlocks.add(Blocks.DIRT);
 			event.enqueueWork(() -> {
