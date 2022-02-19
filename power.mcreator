@@ -9408,6 +9408,58 @@
       "locked_code": false,
       "registry_name": "techno_pickaxe",
       "path": "~/Technology"
+    },
+    {
+      "name": "IceBattery",
+      "type": "item",
+      "sortid": 544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "IceBatteryUse",
+      "type": "procedure",
+      "sortid": 545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "LightningBattery",
+      "type": "item",
+      "sortid": 546,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "LightningBatteryUse",
+      "type": "procedure",
+      "sortid": 547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -9844,8 +9896,8 @@
     "ru_ru": {
       "item.power.metal_invulnerability": "Неуязвимость Металла",
       "effect.power.recharge_technology_stone": "Перезарядка",
-      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
+      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "item.power.energy_leggings": "Энергетические Поножи",
       "item.power.vacuum_web": "Вакуумная Сеть",
       "item.power.energy_sphere": "Энергетический Шар",
@@ -9861,6 +9913,7 @@
       "effect.power.recharge_water_stone": "Перезарядка",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Мастер Океана",
+      "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
@@ -10142,6 +10195,7 @@
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
+      "item.power.ice_battery": "Battery",
       "item.power.lightning_boots": "Ботинки Молнии",
       "item.power.vacuum_helmet": "Vacuum Helmet",
       "effect.power.recharge_light_stone": "Перезарядка",
@@ -10179,8 +10233,8 @@
     "en_us": {
       "item.power.metal_invulnerability": "Invulnerability of Metal",
       "effect.power.recharge_technology_stone": "Recharge",
-      "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
+      "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "item.power.energy_leggings": "Energy Leggings",
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
@@ -10196,6 +10250,7 @@
       "effect.power.recharge_water_stone": "Recharge",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Master of the Ocean",
+      "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
@@ -10477,6 +10532,7 @@
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Iron Golem Create",
       "item.power.light_stone": "Light Stone",
+      "item.power.ice_battery": "Battery",
       "item.power.lightning_boots": "Lightning Boots",
       "item.power.vacuum_helmet": "Vacuum Helmet",
       "effect.power.recharge_light_stone": "Recharge",

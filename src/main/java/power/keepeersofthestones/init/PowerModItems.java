@@ -85,6 +85,7 @@ import power.keepeersofthestones.item.MagicFireballItem;
 import power.keepeersofthestones.item.LightningStrikeItem;
 import power.keepeersofthestones.item.LightningStoneItem;
 import power.keepeersofthestones.item.LightningItem;
+import power.keepeersofthestones.item.LightningBatteryItem;
 import power.keepeersofthestones.item.LightingItem;
 import power.keepeersofthestones.item.LightSwordItem;
 import power.keepeersofthestones.item.LightStoneItem;
@@ -101,6 +102,7 @@ import power.keepeersofthestones.item.IceSpearItem;
 import power.keepeersofthestones.item.IceShieldItem;
 import power.keepeersofthestones.item.IceSharpItem;
 import power.keepeersofthestones.item.IceItem;
+import power.keepeersofthestones.item.IceBatteryItem;
 import power.keepeersofthestones.item.IceBallItem;
 import power.keepeersofthestones.item.GreeneryStoneItem;
 import power.keepeersofthestones.item.GreeneryItem;
@@ -412,6 +414,8 @@ public class PowerModItems {
 	public static final Item TECHNOLOGY_LEGGINGS = register(new TechnologyItem.Leggings());
 	public static final Item TECHNOLOGY_BOOTS = register(new TechnologyItem.Boots());
 	public static final Item TECHNO_PICKAXE = register(new TechnoPickaxeItem());
+	public static final Item ICE_BATTERY = register(new IceBatteryItem());
+	public static final Item LIGHTNING_BATTERY = register(new LightningBatteryItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
