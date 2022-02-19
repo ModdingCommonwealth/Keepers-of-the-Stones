@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "Ancient Jungle",
+    "name": "Ancient Plains",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -10,11 +10,11 @@
       "value": "Blocks.DIRT#0"
     },
     "grassColor": {
-      "value": -10027264,
+      "value": -6684877,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -10027264,
+      "value": -6684877,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -30,48 +30,47 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
       "value": "SPORE_BLOSSOM_AIR"
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
     "parent": {
-      "value": "CUSTOM:AncientPlains"
+      "value": "CUSTOM:AncientJungle"
     },
-    "rainingPossibility": 1.0,
-    "temperature": 0.5,
+    "rainingPossibility": 0.5,
+    "temperature": 1.2000000000000002,
     "baseHeight": 0.1,
-    "heightVariation": 0.4,
-    "biomeType": "WARM",
+    "heightVariation": 0.2,
+    "biomeType": "DESERT",
     "spawnBiome": true,
-    "biomeWeight": 10,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [
-      "JUNGLE",
-      "WET",
-      "HOT"
+      "PLAINS",
+      "DRY"
     ],
-    "grassPerChunk": 20,
+    "grassPerChunk": 6,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
-    "mushroomsPerChunk": 3,
+    "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 3,
-    "gravelPatchesPerChunk": 2,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "treesPerChunk": 5,
-    "vanillaTreeType": "Big trees",
+    "cactiPerChunk": 6,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.LOG#3"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES#3"
+      "value": "Blocks.AIR"
     },
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": "Blocks.AIR"
@@ -89,7 +88,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "spawnShipwreckBeached": false,
-    "spawnBuriedTreasure": true,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
     "spawnNetherFossil": false,
@@ -99,10 +98,7 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "Fossils",
-      "PlainsTallGrass",
-      "TaigaLargeFerns",
-      "TaigaRocks"
+      "PlainsTallGrass"
     ],
     "spawnEntries": []
   }

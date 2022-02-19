@@ -8,6 +8,9 @@
       },
       {
         "value": "CUSTOM:AncientDesert"
+      },
+      {
+        "value": "CUSTOM:AncientPlains"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -19,7 +22,7 @@
     },
     "canRespawnHere": true,
     "hasFog": false,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,

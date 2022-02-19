@@ -9460,6 +9460,15 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "AncientPlains",
+      "type": "biome",
+      "sortid": 548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_plains",
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -9936,6 +9945,7 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
+      "biome.power.ancient_plains": "Ancient Jungle",
       "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
@@ -10273,6 +10283,7 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
+      "biome.power.ancient_plains": "Ancient Plains",
       "item.power.wooden_shield": "Wooden Shield",
       "item.power.earth_leggings": "Earth Leggings",
       "item.power.black_hole": "Black Hole",
@@ -10424,7 +10435,7 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
       "item.power.fire_battery": "Battery",
-      "biome.power.ancient_desert": "Ancient Jungle",
+      "biome.power.ancient_desert": "Ancient Desert",
       "item.power.blood_reaper": "Blood Reaper",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",

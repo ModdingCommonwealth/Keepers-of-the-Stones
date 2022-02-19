@@ -8,6 +8,7 @@ import power.keepeersofthestones.world.biome.VenusLandBiome;
 import power.keepeersofthestones.world.biome.VenusDesertBiome;
 import power.keepeersofthestones.world.biome.MoonLandBiome;
 import power.keepeersofthestones.world.biome.MarsLandBiome;
+import power.keepeersofthestones.world.biome.AncientPlainsBiome;
 import power.keepeersofthestones.world.biome.AncientJungleBiome;
 import power.keepeersofthestones.world.biome.AncientDesertBiome;
 import power.keepeersofthestones.PowerMod;
@@ -32,6 +33,7 @@ public class PowerModBiomes {
 	public static Biome VENUS_DESERT = register("venus_desert", VenusDesertBiome.createBiome());
 	public static Biome ANCIENT_JUNGLE = register("ancient_jungle", AncientJungleBiome.createBiome());
 	public static Biome ANCIENT_DESERT = register("ancient_desert", AncientDesertBiome.createBiome());
+	public static Biome ANCIENT_PLAINS = register("ancient_plains", AncientPlainsBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(PowerMod.MODID, registryname)));
@@ -52,6 +54,7 @@ public class PowerModBiomes {
 			VenusDesertBiome.init();
 			AncientJungleBiome.init();
 			AncientDesertBiome.init();
+			AncientPlainsBiome.init();
 		});
 	}
 }
