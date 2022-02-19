@@ -25,14 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§6Earth"
+      "§bOcean"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "EarthBatteryUse"
+      "name": "OceanBatteryUse"
     },
     "hasDispenseBehavior": false
   }

@@ -39,7 +39,7 @@
     "parent": {
       "value": "CUSTOM:AncientPlains"
     },
-    "rainingPossibility": 0.1,
+    "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.1,
     "heightVariation": 0.19999999999999998,

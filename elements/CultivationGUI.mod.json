@@ -237,6 +237,9 @@
         "type": "button",
         "data": {
           "text": "Bamboo",
+          "onClick": {
+            "name": "GetBamboo"
+          },
           "width": 77,
           "height": 20,
           "name": "Bamboo",

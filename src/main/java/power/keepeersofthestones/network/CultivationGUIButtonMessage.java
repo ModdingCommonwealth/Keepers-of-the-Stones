@@ -16,6 +16,7 @@ import power.keepeersofthestones.procedures.GetDarkSaplingProcedure;
 import power.keepeersofthestones.procedures.GetCarrotProcedure;
 import power.keepeersofthestones.procedures.GetBirchSaplingProcedure;
 import power.keepeersofthestones.procedures.GetBeetrootProcedure;
+import power.keepeersofthestones.procedures.GetBambooProcedure;
 import power.keepeersofthestones.procedures.GetAcaciaSaplingProcedure;
 import power.keepeersofthestones.PowerMod;
 
@@ -135,6 +136,10 @@ public class CultivationGUIButtonMessage {
 		if (buttonID == 14) {
 
 			GetSugarCaneProcedure.execute(entity);
+		}
+		if (buttonID == 15) {
+
+			GetBambooProcedure.execute(entity);
 		}
 	}
 

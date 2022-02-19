@@ -173,6 +173,10 @@ public class CultivationGUIScreen extends AbstractContainerScreen<CultivationGUI
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 250, this.topPos + 106, 77, 20, new TextComponent("Bamboo"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CultivationGUIButtonMessage(15, x, y, z));
+				CultivationGUIButtonMessage.handleButtonAction(entity, 15, x, y, z);
+			}
 		}));
 	}
 }

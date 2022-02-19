@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "unknown",
+    "texture": "battery",
     "customModelName": "Normal",
     "name": "Battery",
     "rarity": "COMMON",
