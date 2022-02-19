@@ -753,7 +753,7 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "maxFuel"))) * 100));
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "maxFuel"))) * 50));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
