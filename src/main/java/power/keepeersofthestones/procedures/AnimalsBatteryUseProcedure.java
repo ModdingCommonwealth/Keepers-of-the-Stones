@@ -9,11 +9,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
-public class CrystalBatteryUseProcedure {
+public class AnimalsBatteryUseProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.CRYSTAL_BATTERY) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ANIMALS_BATTERY) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 				{
 					boolean _setval = (boolean) (true);
@@ -23,7 +23,7 @@ public class CrystalBatteryUseProcedure {
 					});
 				}
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CRYSTAL_MASTER, 6000, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ANIMALS_MASTER, 6000, 0, (false), (false)));
 			}
 		}
 	}

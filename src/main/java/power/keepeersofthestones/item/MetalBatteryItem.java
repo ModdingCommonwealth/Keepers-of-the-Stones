@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.RainBatteryUseProcedure;
+import power.keepeersofthestones.procedures.MetalBatteryUseProcedure;
 import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,10 +18,10 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class RainBatteryItem extends Item {
-	public RainBatteryItem() {
+public class MetalBatteryItem extends Item {
+	public MetalBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("rain_battery");
+		setRegistryName("metal_battery");
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class RainBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A73Rain"));
+		list.add(new TextComponent("\u00A77Metal"));
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class RainBatteryItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		RainBatteryUseProcedure.execute(entity);
+		MetalBatteryUseProcedure.execute(entity);
 		return ar;
 	}
 }
