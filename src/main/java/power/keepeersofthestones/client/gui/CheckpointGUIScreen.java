@@ -69,8 +69,8 @@ public class CheckpointGUIScreen extends AbstractContainerScreen<CheckpointGUIMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "Returning to the last point", 15, 7, -12829636);
-		drawString(poseStack, this.font, "Time travel", 60, 79, -12829636);
+		this.font.draw(poseStack, "Returning to the last point", 15, 7, -12829636);
+		this.font.draw(poseStack, "Time travel", 60, 79, -12829636);
 	}
 
 	@Override

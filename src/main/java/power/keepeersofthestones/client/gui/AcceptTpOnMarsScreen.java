@@ -69,8 +69,8 @@ public class AcceptTpOnMarsScreen extends AbstractContainerScreen<AcceptTpOnMars
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		drawString(poseStack, this.font, "They want to teleport you to the mars.", 34, 7, -12829636);
-		drawString(poseStack, this.font, " Do you agree?", 88, 25, -12829636);
+		this.font.draw(poseStack, "They want to teleport you to the mars.", 34, 7, -12829636);
+		this.font.draw(poseStack, " Do you agree?", 88, 25, -12829636);
 	}
 
 	@Override
