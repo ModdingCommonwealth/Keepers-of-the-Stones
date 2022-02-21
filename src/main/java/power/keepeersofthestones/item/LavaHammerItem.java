@@ -26,7 +26,7 @@ public class LavaHammerItem extends PickaxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 20f;
+				return 12f;
 			}
 
 			public int getLevel() {

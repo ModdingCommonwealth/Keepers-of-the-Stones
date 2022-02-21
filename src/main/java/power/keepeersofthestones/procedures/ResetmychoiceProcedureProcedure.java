@@ -892,6 +892,40 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				}
 			}
+			if (entity instanceof Player _playerHasItem
+					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TECHNOLOGY_STONE))
+					: false) {
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(PowerModItems.TECHNOLOGY_STONE);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+							_player.inventoryMenu.getCraftSlots());
+				}
+				PowerModVariables.MapVariables.get(world).technology_stone = (boolean) (false);
+				PowerModVariables.MapVariables.get(world).syncData(world);
+				{
+					boolean _setval = (boolean) (false);
+					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.selected = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return new TextComponent("ChoiseMagicStoneGUI");
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				}
+			}
 		}
 	}
 }
