@@ -110,10 +110,10 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": "Technology ",
           "width": 56,
           "height": 20,
-          "name": " ",
+          "name": "Technology ",
           "x": 150,
           "y": 80
         }
@@ -256,6 +256,16 @@
           "name": "time_master.png",
           "x": 132,
           "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "technology_master.png",
+          "use1Xscale": false,
+          "name": "technology_master.png",
+          "x": 132,
+          "y": 80
         }
       }
     ],
