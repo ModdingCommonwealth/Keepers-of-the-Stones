@@ -10000,6 +10000,14 @@
         ]
       },
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "ElementalMusicDisc",
+      "type": "musicdisc",
+      "sortid": 586,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elemental_music_disc"
     }
   ],
   "variable_elements": [
@@ -10532,6 +10540,7 @@
       "effect.power.greenery_master": "Мастер Зелени",
       "item.power.greenery_helmet": "Greenery Helmet",
       "item.power.greenery_battery": "Батарея",
+      "item.power.elemental_music_disc.desc": "Элементы",
       "effect.power.shadow_master": "Мастер Тени",
       "item.power.energy_battery": "Батарея",
       "item.power.vacuum_battery": "Батарея",
@@ -10711,6 +10720,7 @@
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Лавовый Пояс",
+      "item.power.elemental_music_disc": "Пластинка",
       "item.power.time_chestplate": "Time Chestplate",
       "item.power.lightning_chestplate": "Мантия Молнии",
       "item.power.time_blade": "Клинок Времени",
@@ -10888,6 +10898,7 @@
       "effect.power.greenery_master": "Master of Greenery",
       "item.power.greenery_helmet": "Greenery Helmet",
       "item.power.greenery_battery": "Battery",
+      "item.power.elemental_music_disc.desc": "Elements",
       "effect.power.shadow_master": "Master of Shadow",
       "item.power.energy_battery": "Battery",
       "item.power.vacuum_battery": "Battery",
@@ -11067,6 +11078,7 @@
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.shadow_boots": "Shadow Boots",
       "item.power.lava_chestplate": "Lava Chestplate",
+      "item.power.elemental_music_disc": "Music Disc",
       "item.power.time_chestplate": "Time Chestplate",
       "item.power.lightning_chestplate": "Lightning Chestplate",
       "item.power.time_blade": "Time Blade",

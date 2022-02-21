@@ -136,6 +136,7 @@ import power.keepeersofthestones.item.EnergyShieldItem;
 import power.keepeersofthestones.item.EnergyItem;
 import power.keepeersofthestones.item.EnergyBatteryItem;
 import power.keepeersofthestones.item.EmptyBatteryItem;
+import power.keepeersofthestones.item.ElementalMusicDiscItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
@@ -452,6 +453,7 @@ public class PowerModItems {
 	public static final Item BLOOD_BATTERY = register(new BloodBatteryItem());
 	public static final Item TIME_BATTERY = register(new TimeBatteryItem());
 	public static final Item TECHNOLOGY_BATTERY = register(new TechnologyBatteryItem());
+	public static final Item ELEMENTAL_MUSIC_DISC = register(new ElementalMusicDiscItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
