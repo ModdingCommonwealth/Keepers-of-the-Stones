@@ -144,6 +144,7 @@ import power.keepeersofthestones.item.EarthBatteryItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
+import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -454,6 +455,7 @@ public class PowerModItems {
 	public static final Item TIME_BATTERY = register(new TimeBatteryItem());
 	public static final Item TECHNOLOGY_BATTERY = register(new TechnologyBatteryItem());
 	public static final Item ELEMENTAL_MUSIC_DISC = register(new ElementalMusicDiscItem());
+	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

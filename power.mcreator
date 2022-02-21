@@ -9264,36 +9264,6 @@
       "path": "~/Time"
     },
     {
-      "name": "AncientJungle",
-      "type": "biome",
-      "sortid": 542,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_jungle",
-      "path": "~/Time"
-    },
-    {
-      "name": "Dinoera",
-      "type": "dimension",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dinoera",
-      "metadata": {
-        "ep": false
-      },
-      "path": "~/Time"
-    },
-    {
-      "name": "AncientDesert",
-      "type": "biome",
-      "sortid": 543,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_desert",
-      "path": "~/Time"
-    },
-    {
       "name": "CraftBatteryCharger",
       "type": "recipe",
       "sortid": 544,
@@ -9460,15 +9430,6 @@
         ]
       },
       "path": "~/ElementalBattery"
-    },
-    {
-      "name": "AncientPlains",
-      "type": "biome",
-      "sortid": 552,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_plains",
-      "path": "~/Time"
     },
     {
       "name": "BatteryCraft",
@@ -10008,6 +9969,15 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "elemental_music_disc"
+    },
+    {
+      "name": "CursedDiamond",
+      "type": "item",
+      "sortid": 587,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond",
+      "path": "~/Blood"
     }
   ],
   "variable_elements": [
@@ -10486,7 +10456,6 @@
       "effect.power.rain_master": "Мастер Дождя",
       "item.power.coral_shield": "Коралловый щит",
       "item.power.lava_hammer": "Лавовый Молот",
-      "biome.power.ancient_plains": "Ancient Jungle",
       "item.power.wooden_shield": "Древесный Щит",
       "item.power.earth_leggings": "Земляные Штаны",
       "item.power.black_hole": "Черная Дыра",
@@ -10560,7 +10529,6 @@
       "item.power.lava_battery": "Батарея",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
-      "biome.power.ancient_jungle": "Ancient Jungle",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
       "item.power.light_battery": "Батарея",
@@ -10633,6 +10601,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Камень Воды",
       "item.power.animals_boots": "Animals Boots",
+      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -10652,7 +10621,6 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Тень",
       "item.power.fire_battery": "Батарея",
-      "biome.power.ancient_desert": "Ancient Jungle",
       "item.power.blood_reaper": "Кровавый Жнец",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
@@ -10735,7 +10703,6 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Солнечная Секира",
-      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
@@ -10844,7 +10811,6 @@
       "item.power.coral_shield": "Coral Shield",
       "effect.power.rain_master": "Master of Rain",
       "item.power.lava_hammer": "Lava Hammer",
-      "biome.power.ancient_plains": "Ancient Plains",
       "item.power.wooden_shield": "Wooden Shield",
       "item.power.earth_leggings": "Earth Leggings",
       "item.power.black_hole": "Black Hole",
@@ -10918,7 +10884,6 @@
       "item.power.lava_battery": "Battery",
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
-      "biome.power.ancient_jungle": "Ancient Jungle",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.iron_shield": "Iron Shield",
       "item.power.light_battery": "Battery",
@@ -10991,6 +10956,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Water Stone",
       "item.power.animals_boots": "Animals Boots",
+      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
@@ -11010,7 +10976,6 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
       "item.power.fire_battery": "Battery",
-      "biome.power.ancient_desert": "Ancient Desert",
       "item.power.blood_reaper": "Blood Reaper",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
@@ -11093,7 +11058,6 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Sun Axe",
-      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
