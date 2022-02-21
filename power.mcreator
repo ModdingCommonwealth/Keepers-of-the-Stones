@@ -9790,6 +9790,195 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "DestroyRocks",
+      "type": "procedure",
+      "sortid": 572,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "destroy_rocks",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Earth"
+    },
+    {
+      "name": "SunBattery",
+      "type": "item",
+      "sortid": 573,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "SunBatteryUse",
+      "type": "procedure",
+      "sortid": 574,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "MoonBattery",
+      "type": "item",
+      "sortid": 575,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "MoonBatteryUse",
+      "type": "procedure",
+      "sortid": 576,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "CosmosBattery",
+      "type": "item",
+      "sortid": 577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cosmos_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "CosmosBatteryUse",
+      "type": "procedure",
+      "sortid": 578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cosmos_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "BloodBattery",
+      "type": "item",
+      "sortid": 579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "BloodBatteryUse",
+      "type": "procedure",
+      "sortid": 580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "TimeBattery",
+      "type": "item",
+      "sortid": 581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "TimeBatteryUse",
+      "type": "procedure",
+      "sortid": 582,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "TechnologyBattery",
+      "type": "item",
+      "sortid": 583,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technology_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "TechnologyBatteryUse",
+      "type": "procedure",
+      "sortid": 584,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technology_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -10229,8 +10418,10 @@
       "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
       "item.power.energy_leggings": "Энергетические Поножи",
-      "item.power.vacuum_web": "Вакуумная Сеть",
+      "item.power.moon_battery": "Батарея",
       "item.power.energy_sphere": "Энергетический Шар",
+      "item.power.vacuum_web": "Вакуумная Сеть",
+      "item.power.sun_battery": "Батарея",
       "item.power.energy_helmet": "Энергетический Шлем",
       "item.power.create_shadow": "Создать Тень",
       "effect.power.recharge_ice_stone": "Перезарядка",
@@ -10243,7 +10434,7 @@
       "effect.power.recharge_water_stone": "Перезарядка",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Мастер Океана",
-      "item.power.lightning_battery": "Battery",
+      "item.power.lightning_battery": "Батарея",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
@@ -10306,21 +10497,23 @@
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.tornado_stone": "Камень Торнадо",
       "itemGroup.tabbatteries": "Батареи",
+      "item.power.cosmos_battery": "Батарея",
       "item.power.shadow_invisible": "Теневая Невидимость",
       "item.power.vacuum_boots": "Vacuum Boots",
       "item.power.water_battery": "Батерея",
       "item.power.time_boots": "Time Boots",
       "item.power.plasma_ball": "Плазменный шар",
+      "item.power.technology_battery": "Батарея",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
       "item.power.greenery_helmet": "Greenery Helmet",
-      "item.power.greenery_battery": "Battery",
+      "item.power.greenery_battery": "Батарея",
       "effect.power.shadow_master": "Мастер Тени",
       "item.power.energy_battery": "Батарея",
-      "item.power.vacuum_battery": "Battery",
+      "item.power.vacuum_battery": "Батарея",
       "item.power.creation_boots": "Creation Boots",
       "effect.power.recharge_animals_stone": "Перезарядка",
       "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
@@ -10330,19 +10523,19 @@
       "effect.power.recharge_greenery_stone": "Перезарядка",
       "item.power.crystal_shield": "Кристаллический Щит",
       "item.power.creation_leggings": "Creation Leggings",
-      "item.power.shadow_battery": "Battery",
+      "item.power.shadow_battery": "Батарея",
       "item.power.earth_helmet": "Земляной Монокль",
       "item.power.water_flow": "Струя Воды",
       "item.power.metal_boots": "Metal Boots",
-      "item.power.lava_battery": "Battery",
+      "item.power.lava_battery": "Батарея",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
       "biome.power.ancient_jungle": "Ancient Jungle",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
-      "item.power.light_battery": "Battery",
+      "item.power.light_battery": "Батарея",
       "effect.power.tornado_master": "Мастер Торнадо",
-      "item.power.metal_battery": "Battery",
+      "item.power.metal_battery": "Батарея",
       "item.power.energy_boots": "Энергетические Ботинки",
       "itemGroup.tabadditional_group": "Дополнительные",
       "item.power.burn": "Поджёг",
@@ -10367,10 +10560,11 @@
       "item.power.cosmos_stone": "Камень Космоса",
       "effect.power.fire_flying": "Fire Flying",
       "effect.power.recharge_tornado_stone": "Перезарядка",
-      "item.power.animals_battery": "Battery",
+      "item.power.animals_battery": "Батарея",
       "item.power.ocean_chestplate": "Акваланг Океана",
       "item.power.lava_leggings": "Лавовые Брюки",
       "item.power.lava_helmet": "Лавовые Очки",
+      "item.power.time_battery": "Батарея",
       "item.power.animals_helmet": "Animals Helmet",
       "item.power.ice_sharp": "Ледяной Осколок",
       "item.power.cosmos_boots": "Cosmos Boots",
@@ -10387,6 +10581,7 @@
       "effect.power.earth_master": "Мастер Земли",
       "effect.power.invincibility": "Непобедимость",
       "item.power.ice_spear": "Ледяное Копьё",
+      "item.power.blood_battery": "Батарея",
       "item.power.water_chestplate": "Водный Костюм",
       "item.power.time_stone": "Камень Времени",
       "effect.power.sun_master": "Мастер Солнца",
@@ -10400,7 +10595,7 @@
       "item.power.cultivation": "Выращивание",
       "itemGroup.tabbasic_group": "Базовые",
       "effect.power.recharge_crystal_stone": "Перезарядка",
-      "item.power.ocean_battery": "Battery",
+      "item.power.ocean_battery": "Батарея",
       "effect.power.lightning_master": "Мастер Молнии",
       "item.power.cluster_sharp": "Осколок Кластера",
       "effect.power.recharge_air_stone": "Перезарядка",
@@ -10416,7 +10611,7 @@
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.sound_sword": "Звуковой кинжал",
       "item.power.ice_boots": "Ледяные Сапоги",
-      "item.power.tornado_battery": "Battery",
+      "item.power.tornado_battery": "Батарея",
       "item.power.earth_chestplate": "Земляной Желет",
       "item.power.crystal_boots": "Кристаллические Сапоги",
       "item.power.ocean_helmet": "Шлем Океана",
@@ -10445,7 +10640,7 @@
       "item.power.ice_chestplate": "Ледяная Куртка",
       "item.power.moon_stones": "Лунные Камни",
       "key.power.detransform_key": "Клавиша детрансформации",
-      "item.power.sound_battery": "Battery",
+      "item.power.sound_battery": "Батарея",
       "item.power.lava_stone": "Камень Лавы",
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
@@ -10484,13 +10679,13 @@
       "item.power.magic_fireball": "Волшебный Огненный шар",
       "item.power.earth_stone": "Камень Земли",
       "item.power.crystal_stone": "Камень Кристалла",
-      "item.power.rain_battery": "Battery",
+      "item.power.rain_battery": "Батарея",
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Камень Технологий",
       "item.power.fire_boots": "Огненные Ботинки",
       "effect.power.air_master": "Мастер Воздуха",
       "item.power.tiger_claw": "Тигриный Коготь",
-      "item.power.crystal_battery": "Battery",
+      "item.power.crystal_battery": "Батарея",
       "item.power.shadow_leggings": "Shadow Leggings",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.shadow_boots": "Shadow Boots",
@@ -10538,7 +10733,7 @@
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.iron_golem_create": "Создание Железного Голема",
       "item.power.light_stone": "Камень Света",
-      "item.power.ice_battery": "Battery",
+      "item.power.ice_battery": "Батарея",
       "item.power.lightning_boots": "Ботинки Молнии",
       "item.power.vacuum_helmet": "Vacuum Helmet",
       "effect.power.recharge_light_stone": "Перезарядка",
@@ -10579,8 +10774,10 @@
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "item.power.energy_leggings": "Energy Leggings",
-      "item.power.energy_sphere": "Energy Sphere",
+      "item.power.moon_battery": "Battery",
       "item.power.vacuum_web": "Vacuum Web",
+      "item.power.energy_sphere": "Energy Sphere",
+      "item.power.sun_battery": "Battery",
       "item.power.energy_helmet": "Energy Helmet",
       "item.power.create_shadow": "Create Shadow",
       "item.power.energy_shield": "Energy Shield",
@@ -10656,11 +10853,13 @@
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.tornado_stone": "Tornado Stone",
       "itemGroup.tabbatteries": "Batteries",
+      "item.power.cosmos_battery": "Battery",
       "item.power.shadow_invisible": "Shadow Invisible",
       "item.power.vacuum_boots": "Vacuum Boots",
       "item.power.water_battery": "Battery",
       "item.power.time_boots": "Time Boots",
       "item.power.plasma_ball": "Plasma Ball",
+      "item.power.technology_battery": "Battery",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
       "item.power.time_leggings": "Time Leggings",
@@ -10721,6 +10920,7 @@
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
       "item.power.lava_helmet": "Lava Helmet",
+      "item.power.time_battery": "Battery",
       "item.power.animals_helmet": "Animals Helmet",
       "item.power.ice_sharp": "Ice Sharp",
       "item.power.cosmos_boots": "Cosmos Boots",
@@ -10737,6 +10937,7 @@
       "effect.power.earth_master": "Master of the Earth",
       "effect.power.invincibility": "Invincibility",
       "item.power.ice_spear": "Ice Spear",
+      "item.power.blood_battery": "Battery",
       "item.power.water_chestplate": "Water Chestplate",
       "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Master of Sun",
@@ -11060,7 +11261,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.6.0.1",
+    "version": "1.6.0.2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

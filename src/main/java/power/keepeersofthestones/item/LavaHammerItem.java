@@ -1,17 +1,20 @@
 
 package power.keepeersofthestones.item;
 
+import power.keepeersofthestones.procedures.DestroyRocksProcedure;
 import power.keepeersofthestones.procedures.BurnProcedureProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
 
-public class LavaHammerItem extends SwordItem {
+public class LavaHammerItem extends PickaxeItem {
 	public LavaHammerItem() {
 		super(new Tier() {
 			public int getUses() {
@@ -37,7 +40,7 @@ public class LavaHammerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().tab(null).fireResistant());
+		}, 1, -3f, new Item.Properties().tab(null).fireResistant());
 		setRegistryName("lava_hammer");
 	}
 
@@ -50,6 +53,14 @@ public class LavaHammerItem extends SwordItem {
 		Level world = entity.level;
 
 		BurnProcedureProcedure.execute(entity);
+		return retval;
+	}
+
+	@Override
+	public InteractionResult useOn(UseOnContext context) {
+		InteractionResult retval = super.useOn(context);
+		DestroyRocksProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
+				context.getClickedPos().getZ(), context.getPlayer());
 		return retval;
 	}
 }

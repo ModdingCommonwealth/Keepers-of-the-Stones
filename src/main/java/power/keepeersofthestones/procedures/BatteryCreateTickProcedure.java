@@ -559,6 +559,174 @@ public class BatteryCreateTickProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.SUN_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 19);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.MOON_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 20);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.COSMOS_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 21);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.BLOOD_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 22);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TIME_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 23);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+				return _retval.get();
+			}
+		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TECHNOLOGY_STONE && new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+				AtomicInteger _retval = new AtomicInteger(0);
+				BlockEntity _ent = world.getBlockEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
+				return _retval.get();
+			}
+		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getTileData().putDouble("recipe", 24);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 		} else {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -1471,6 +1639,282 @@ public class BatteryCreateTickProcedure {
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.VACUUM_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 19) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.SUN_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.SUN_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 20) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.MOON_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.MOON_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 21) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 22) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 23) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.TIME_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.TIME_STONE);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 24) {
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 0;
+							final int _amount = 1;
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable) {
+									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
+									_stk.shrink(_amount);
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
+								}
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_BATTERY);
+							_setstack.setCount(1);
+							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+					{
+						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (_ent != null) {
+							final int _slotid = 3;
+							final ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_STONE);
 							_setstack.setCount(1);
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)

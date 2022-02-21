@@ -10,7 +10,7 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Sword",
+    "toolType": "Pickaxe",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,
@@ -23,6 +23,9 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "DestroyRocks"
+    },
     "onEntityHitWith": {
       "name": "BurnProcedure"
     }
