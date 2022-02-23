@@ -111,6 +111,9 @@
         "type": "button",
         "data": {
           "text": "Technology ",
+          "onClick": {
+            "name": "TechnologyGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Technology ",
@@ -121,10 +124,10 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": "Speed",
           "width": 56,
           "height": 20,
-          "name": " ",
+          "name": "Speed",
           "x": 150,
           "y": 107
         }
@@ -266,6 +269,16 @@
           "name": "technology_master.png",
           "x": 132,
           "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speed_master.png",
+          "use1Xscale": false,
+          "name": "speed_master.png",
+          "x": 132,
+          "y": 107
         }
       }
     ],
