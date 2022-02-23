@@ -1,6 +1,5 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModItems;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,6 +26,8 @@ public class LavaHoleGenProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LAVA_HOLE) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -71,12 +72,6 @@ public class LavaHoleGenProcedure {
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 3);
-			{
-				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"item replace entity @s weapon.mainhand with air");
-			}
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -103,20 +98,6 @@ public class LavaHoleGenProcedure {
 								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 										_level.getServer(), null).withSuppressedOutput(),
 								"fill ~-2 ~-4 ~-2 ~2 ~ ~2 minecraft:cobblestone replace minecraft:lava[]");
-					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).lava) {
-						if (!(entity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LAVA_HOLE))
-								: false)) {
-							{
-								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null)
-									_ent.getServer().getCommands().performCommand(
-											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-											"give @s power:lava_hole{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
-						}
-					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 400);
