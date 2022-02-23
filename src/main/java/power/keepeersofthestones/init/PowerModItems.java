@@ -40,6 +40,7 @@ import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.TechnologyStoneItem;
 import power.keepeersofthestones.item.TechnologyItem;
 import power.keepeersofthestones.item.TechnologyBatteryItem;
+import power.keepeersofthestones.item.TechnobarrierItem;
 import power.keepeersofthestones.item.TechnoPickaxeItem;
 import power.keepeersofthestones.item.TamerItem;
 import power.keepeersofthestones.item.SunStoneItem;
@@ -456,6 +457,8 @@ public class PowerModItems {
 	public static final Item TECHNOLOGY_BATTERY = register(new TechnologyBatteryItem());
 	public static final Item ELEMENTAL_MUSIC_DISC = register(new ElementalMusicDiscItem());
 	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
+	public static final Item TECHNOBARRIER_BLOCK = register(PowerModBlocks.TECHNOBARRIER_BLOCK, null);
+	public static final Item TECHNOBARRIER = register(new TechnobarrierItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

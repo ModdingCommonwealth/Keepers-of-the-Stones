@@ -6,6 +6,7 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.block.VacuumWebBlockBlock;
 import power.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
+import power.keepeersofthestones.block.TechnobarrierBlockBlock;
 import power.keepeersofthestones.block.SoundBarrierBlockBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.block.EnergyBlockBlock;
@@ -37,6 +38,7 @@ public class PowerModBlocks {
 	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
 	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
 	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
+	public static final Block TECHNOBARRIER_BLOCK = register(new TechnobarrierBlockBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -56,6 +58,7 @@ public class PowerModBlocks {
 			ClusterBlockBlock.registerRenderLayer();
 			VacuumWebBlockBlock.registerRenderLayer();
 			BlackHoleBlockBlock.registerRenderLayer();
+			TechnobarrierBlockBlock.registerRenderLayer();
 		}
 	}
 }

@@ -20,11 +20,11 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
-public class ShiedOftheEarthProcedureProcedure {
+public class TechnobarrierUseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHIELD_OF_EARTH) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TECHNOBARRIER) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			{
@@ -55,10 +55,10 @@ public class ShiedOftheEarthProcedureProcedure {
 
 				private void run() {
 					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 stone outline");
+						_level.getServer().getCommands().performCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+										_level.getServer(), null).withSuppressedOutput(),
+								"fill ~-2 ~1 ~-2 ~2 ~5 ~2 power:technobarrier_block outline");
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 3);
@@ -87,51 +87,21 @@ public class ShiedOftheEarthProcedureProcedure {
 						_level.getServer().getCommands()
 								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
 										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 dirt outline");
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
+										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
+					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).technology) {
+						if (!(entity instanceof Player _playerHasItem
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TECHNOBARRIER))
+								: false)) {
+							{
+								Entity _ent = entity;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null)
+									_ent.getServer().getCommands().performCommand(
+											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+											"give @s power:technobarrier{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 							}
 						}
-
-						private void run() {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands()
-										.performCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-														new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-												"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
-							if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new PowerModVariables.PlayerVariables())).earth) {
-								if (!(entity instanceof Player _playerHasItem
-										? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SHIELD_OF_EARTH))
-										: false)) {
-									{
-										Entity _ent = entity;
-										if (!_ent.level.isClientSide() && _ent.getServer() != null)
-											_ent.getServer().getCommands().performCommand(
-													_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-													"give @s power:shield_of_earth{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-									}
-								}
-							}
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 100);
+					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 300);

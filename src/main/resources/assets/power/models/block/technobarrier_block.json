@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/technobarrier_block",
+    "up": "power:blocks/technobarrier_block",
+    "north": "power:blocks/technobarrier_block",
+    "east": "power:blocks/technobarrier_block",
+    "south": "power:blocks/technobarrier_block",
+    "west": "power:blocks/technobarrier_block",
+    "particle": "power:blocks/technobarrier_block"
+  }
+}
