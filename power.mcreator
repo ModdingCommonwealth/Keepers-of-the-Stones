@@ -3471,6 +3471,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -4132,6 +4136,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -4431,6 +4439,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -4494,8 +4506,8 @@
             "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -4714,6 +4726,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",

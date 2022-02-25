@@ -36,7 +36,7 @@ public class FertilizerItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		FertilizerUseProcedure.execute(entity);
+		FertilizerUseProcedure.execute(entity, itemstack);
 		return ar;
 	}
 }

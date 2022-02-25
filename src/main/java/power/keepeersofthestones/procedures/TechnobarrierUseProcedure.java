@@ -1,6 +1,5 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModItems;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,12 +26,8 @@ public class TechnobarrierUseProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TECHNOBARRIER) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
-			{
-				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"item replace entity @s weapon.mainhand with air");
-			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -88,23 +83,9 @@ public class TechnobarrierUseProcedure {
 								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
 										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
 										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
-					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).technology) {
-						if (!(entity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TECHNOBARRIER))
-								: false)) {
-							{
-								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null)
-									_ent.getServer().getCommands().performCommand(
-											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-											"give @s power:technobarrier{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-							}
-						}
-					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 300);
+			}.start(world, 400);
 		}
 	}
 }

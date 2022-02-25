@@ -30,7 +30,7 @@ public class IronGolemCreateItem extends Item {
 	public InteractionResult useOn(UseOnContext context) {
 		InteractionResult retval = super.useOn(context);
 		IronGolemCreateUseProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
-				context.getClickedPos().getZ(), context.getPlayer());
+				context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
 		return retval;
 	}
 }

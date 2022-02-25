@@ -36,7 +36,7 @@ public class LightingItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		LightingUseProcedure.execute(world, entity);
+		LightingUseProcedure.execute(entity, itemstack);
 		return ar;
 	}
 }
