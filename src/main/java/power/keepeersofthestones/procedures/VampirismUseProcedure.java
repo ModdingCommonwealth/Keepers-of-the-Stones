@@ -22,7 +22,7 @@ public class VampirismUseProcedure {
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.VAMPIRISM) {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
-			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+			if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PowerModVariables.PlayerVariables())).recharge_spell_blood) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 2, (false), (false)));
@@ -33,9 +33,9 @@ public class VampirismUseProcedure {
 			}
 			{
 				boolean _setval = (boolean) (true);
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.recharge_spell_blood = _setval;
-					capability.syncPlayerVariables(entity);
+					capability.syncPlayerVariables(sourceentity);
 				});
 			}
 			new Object() {
@@ -61,9 +61,9 @@ public class VampirismUseProcedure {
 				private void run() {
 					{
 						boolean _setval = (boolean) (false);
-						entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.recharge_spell_blood = _setval;
-							capability.syncPlayerVariables(entity);
+							capability.syncPlayerVariables(sourceentity);
 						});
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
