@@ -114,6 +114,10 @@ public class PowerModVariables {
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.battery = original.battery;
+				clone.recharge_spell_sun = original.recharge_spell_sun;
+				clone.recharge_spell_moon = original.recharge_spell_moon;
+				clone.recharge_spell_blood = original.recharge_spell_blood;
+				clone.recharge_spell_energy = original.recharge_spell_energy;
 			}
 		}
 
@@ -394,6 +398,10 @@ public class PowerModVariables {
 		public double spawnz = 0.0;
 		public boolean battery = false;
 		public double power_level = 0;
+		public boolean recharge_spell_sun = false;
+		public boolean recharge_spell_moon = false;
+		public boolean recharge_spell_blood = false;
+		public boolean recharge_spell_energy = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -436,6 +444,10 @@ public class PowerModVariables {
 			nbt.putDouble("spawnz", spawnz);
 			nbt.putBoolean("battery", battery);
 			nbt.putDouble("power_level", power_level);
+			nbt.putBoolean("recharge_spell_sun", recharge_spell_sun);
+			nbt.putBoolean("recharge_spell_moon", recharge_spell_moon);
+			nbt.putBoolean("recharge_spell_blood", recharge_spell_blood);
+			nbt.putBoolean("recharge_spell_energy", recharge_spell_energy);
 			return nbt;
 		}
 
@@ -475,6 +487,10 @@ public class PowerModVariables {
 			spawnz = nbt.getDouble("spawnz");
 			battery = nbt.getBoolean("battery");
 			power_level = nbt.getDouble("power_level");
+			recharge_spell_sun = nbt.getBoolean("recharge_spell_sun");
+			recharge_spell_moon = nbt.getBoolean("recharge_spell_moon");
+			recharge_spell_blood = nbt.getBoolean("recharge_spell_blood");
+			recharge_spell_energy = nbt.getBoolean("recharge_spell_energy");
 		}
 	}
 
@@ -534,6 +550,10 @@ public class PowerModVariables {
 					variables.spawnz = message.data.spawnz;
 					variables.battery = message.data.battery;
 					variables.power_level = message.data.power_level;
+					variables.recharge_spell_sun = message.data.recharge_spell_sun;
+					variables.recharge_spell_moon = message.data.recharge_spell_moon;
+					variables.recharge_spell_blood = message.data.recharge_spell_blood;
+					variables.recharge_spell_energy = message.data.recharge_spell_energy;
 				}
 			});
 			context.setPacketHandled(true);

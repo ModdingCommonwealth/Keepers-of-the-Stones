@@ -1,6 +1,11 @@
 package power.keepeersofthestones.procedures;
 
+import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModItems;
+
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -20,12 +25,53 @@ public class VampirismUseProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 2, (false), (false)));
-			if (sourceentity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 300, 2, (false), (false)));
-			if (sourceentity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 2, (false), (false)));
+			{
+				boolean _setval = (boolean) (true);
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.recharge_spell_blood = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					{
+						boolean _setval = (boolean) (false);
+						entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.recharge_spell_blood = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 400);
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).recharge_spell_blood) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 2, (false), (false)));
+				if (sourceentity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 300, 2, (false), (false)));
+				if (sourceentity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 2, (false), (false)));
+			}
 		}
 	}
 }
