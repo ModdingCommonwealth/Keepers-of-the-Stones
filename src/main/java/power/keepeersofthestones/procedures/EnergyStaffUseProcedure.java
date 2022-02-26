@@ -22,7 +22,9 @@ public class EnergyStaffUseProcedure {
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getItem() == PowerModItems.ENERGY_STAFF) {
-				if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
+				if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new PowerModVariables.PlayerVariables())).recharge_spell_energy) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
@@ -65,7 +67,7 @@ public class EnergyStaffUseProcedure {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.BLOOD_MASTER);
+						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
 					if (entity instanceof LivingEntity _entity)
@@ -79,47 +81,45 @@ public class EnergyStaffUseProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
-					if (sourceentity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
-					{
-						boolean _setval = (boolean) (true);
-						sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.recharge_spell_energy = _setval;
-							capability.syncPlayerVariables(sourceentity);
-						});
-					}
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
-							}
-						}
-
-						private void run() {
-							{
-								boolean _setval = (boolean) (false);
-								sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.recharge_spell_energy = _setval;
-									capability.syncPlayerVariables(sourceentity);
-								});
-							}
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 800);
 				}
+				{
+					boolean _setval = (boolean) (true);
+					sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.recharge_spell_energy = _setval;
+						capability.syncPlayerVariables(sourceentity);
+					});
+				}
+				new Object() {
+					private int ticks = 0;
+					private float waitTicks;
+					private LevelAccessor world;
+
+					public void start(LevelAccessor world, int waitTicks) {
+						this.waitTicks = waitTicks;
+						MinecraftForge.EVENT_BUS.register(this);
+						this.world = world;
+					}
+
+					@SubscribeEvent
+					public void tick(TickEvent.ServerTickEvent event) {
+						if (event.phase == TickEvent.Phase.END) {
+							this.ticks += 1;
+							if (this.ticks >= this.waitTicks)
+								run();
+						}
+					}
+
+					private void run() {
+						{
+							boolean _setval = (boolean) (false);
+							sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.recharge_spell_energy = _setval;
+								capability.syncPlayerVariables(sourceentity);
+							});
+						}
+						MinecraftForge.EVENT_BUS.unregister(this);
+					}
+				}.start(world, 800);
 			}
 		}
 	}
