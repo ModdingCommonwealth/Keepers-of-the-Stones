@@ -70,6 +70,7 @@ import power.keepeersofthestones.item.ShadowBatteryItem;
 import power.keepeersofthestones.item.ShadowBallItem;
 import power.keepeersofthestones.item.SaiItem;
 import power.keepeersofthestones.item.RoseSwordItem;
+import power.keepeersofthestones.item.RedstoneBundleItem;
 import power.keepeersofthestones.item.RandomItemItem;
 import power.keepeersofthestones.item.RainfallItem;
 import power.keepeersofthestones.item.RainStoneItem;
@@ -461,6 +462,7 @@ public class PowerModItems {
 	public static final Item TECHNOBARRIER_BLOCK = register(PowerModBlocks.TECHNOBARRIER_BLOCK, null);
 	public static final Item TECHNOBARRIER = register(new TechnobarrierItem());
 	public static final Item MEGAWATT = register(new MegawattItem());
+	public static final Item REDSTONE_BUNDLE = register(new RedstoneBundleItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

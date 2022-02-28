@@ -10091,6 +10091,125 @@
         ]
       },
       "path": "~/Technology"
+    },
+    {
+      "name": "RedstoneBundle",
+      "type": "item",
+      "sortid": 593,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_bundle",
+      "path": "~/Technology"
+    },
+    {
+      "name": "RedstoneBundleGUI",
+      "type": "gui",
+      "sortid": 594,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_bundle_gui",
+      "path": "~/Technology"
+    },
+    {
+      "name": "OpenRedstoneBundle",
+      "type": "procedure",
+      "sortid": 595,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_redstone_bundle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Technology"
+    },
+    {
+      "name": "GetPiston",
+      "type": "procedure",
+      "sortid": 596,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_piston",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technology"
+    },
+    {
+      "name": "GetStickyPiston",
+      "type": "procedure",
+      "sortid": 597,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_sticky_piston",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technology"
+    },
+    {
+      "name": "GetObserver",
+      "type": "procedure",
+      "sortid": 598,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_observer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technology"
+    },
+    {
+      "name": "GetRedstoneBlock",
+      "type": "procedure",
+      "sortid": 599,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_redstone_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technology"
     }
   ],
   "variable_elements": [
@@ -10630,6 +10749,7 @@
       "item.power.lava_battery": "Батарея",
       "item.power.animals_stone": "Камень Животных",
       "item.power.vacuum_stone": "Камень Пустоты",
+      "item.power.redstone_bundle": "Мешок С Редстоуном",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.iron_shield": "Железный Щит",
       "item.power.light_battery": "Батарея",
@@ -10781,7 +10901,7 @@
       "item.power.rain_battery": "Батарея",
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Камень Технологий",
-      "item.power.megawatt": "Megawatt",
+      "item.power.megawatt": "Мегаватт",
       "item.power.fire_boots": "Огненные Ботинки",
       "effect.power.air_master": "Мастер Воздуха",
       "block.power.technobarrier_block": "Блок Технобарьера",
@@ -10988,6 +11108,7 @@
       "item.power.lava_battery": "Battery",
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
+      "item.power.redstone_bundle": "Redstone Bundle",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.iron_shield": "Iron Shield",
       "item.power.light_battery": "Battery",

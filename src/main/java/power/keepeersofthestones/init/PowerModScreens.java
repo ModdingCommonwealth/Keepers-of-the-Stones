@@ -6,6 +6,7 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
 import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
+import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
 import power.keepeersofthestones.client.gui.CultivationGUIScreen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage2Screen;
 import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
@@ -39,6 +40,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_MARS, AcceptTpOnMarsScreen::new);
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_VENUS, AcceptTpOnVenusScreen::new);
 			MenuScreens.register(PowerModMenus.BATTERY_CREATE_GUI, BatteryCreateGUIScreen::new);
+			MenuScreens.register(PowerModMenus.REDSTONE_BUNDLE_GUI, RedstoneBundleGUIScreen::new);
 		});
 	}
 }

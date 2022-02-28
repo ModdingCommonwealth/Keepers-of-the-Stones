@@ -6,6 +6,7 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.world.inventory.SpawnAnimalsGUIMenu;
 import power.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
+import power.keepeersofthestones.world.inventory.RedstoneBundleGUIMenu;
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
@@ -52,6 +53,8 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new AcceptTpOnVenusMenu(id, inv, extraData));
 	public static final MenuType<BatteryCreateGUIMenu> BATTERY_CREATE_GUI = register("battery_create_gui",
 			(id, inv, extraData) -> new BatteryCreateGUIMenu(id, inv, extraData));
+	public static final MenuType<RedstoneBundleGUIMenu> REDSTONE_BUNDLE_GUI = register("redstone_bundle_gui",
+			(id, inv, extraData) -> new RedstoneBundleGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);
