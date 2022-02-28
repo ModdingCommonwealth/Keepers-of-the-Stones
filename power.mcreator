@@ -10053,6 +10053,44 @@
         ]
       },
       "path": "~/Technology"
+    },
+    {
+      "name": "Megawatt",
+      "type": "rangeditem",
+      "sortid": 591,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megawatt",
+      "path": "~/Technology"
+    },
+    {
+      "name": "MegawattInEntity",
+      "type": "procedure",
+      "sortid": 592,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "megawatt_in_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Technology"
     }
   ],
   "variable_elements": [
@@ -10743,6 +10781,7 @@
       "item.power.rain_battery": "Батарея",
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Камень Технологий",
+      "item.power.megawatt": "Megawatt",
       "item.power.fire_boots": "Огненные Ботинки",
       "effect.power.air_master": "Мастер Воздуха",
       "block.power.technobarrier_block": "Блок Технобарьера",
@@ -11100,6 +11139,7 @@
       "item.power.rain_battery": "Battery",
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Technology Stone",
+      "item.power.megawatt": "Megawatt",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
       "block.power.technobarrier_block": "Technobarrier Block",

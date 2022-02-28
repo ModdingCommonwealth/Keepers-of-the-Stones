@@ -92,6 +92,7 @@ import power.keepeersofthestones.item.MetalStoneItem;
 import power.keepeersofthestones.item.MetalItem;
 import power.keepeersofthestones.item.MetalInvulnerabilityItem;
 import power.keepeersofthestones.item.MetalBatteryItem;
+import power.keepeersofthestones.item.MegawattItem;
 import power.keepeersofthestones.item.MagmaShieldItem;
 import power.keepeersofthestones.item.MagicFireballItem;
 import power.keepeersofthestones.item.LightningStrikeItem;
@@ -459,6 +460,7 @@ public class PowerModItems {
 	public static final Item CURSED_DIAMOND = register(new CursedDiamondItem());
 	public static final Item TECHNOBARRIER_BLOCK = register(PowerModBlocks.TECHNOBARRIER_BLOCK, null);
 	public static final Item TECHNOBARRIER = register(new TechnobarrierItem());
+	public static final Item MEGAWATT = register(new MegawattItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
