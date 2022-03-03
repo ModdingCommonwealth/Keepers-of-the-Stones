@@ -11135,7 +11135,7 @@
       "item.power.crystal_leggings": "Crystal Leggings",
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
-      "item.power.cosmos_stone": "Space Stone",
+      "item.power.cosmos_stone": "Cosmos Stone",
       "effect.power.fire_flying": "Fire Flying",
       "effect.power.recharge_tornado_stone": "Recharge",
       "item.power.animals_battery": "Battery",
@@ -11486,7 +11486,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

@@ -40,29 +40,23 @@
       {
         "type": "button",
         "data": {
-          "text": " Creation",
-          "onClick": {
-            "name": "CreationGet"
-          },
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": " Creation",
-          "x": 51,
-          "y": 80
+          "name": " ",
+          "x": 141,
+          "y": 161
         }
       },
       {
         "type": "button",
         "data": {
-          "text": " Destruct",
-          "onClick": {
-            "name": "DestructionGet"
-          },
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": " Destruct",
-          "x": 51,
-          "y": 107
+          "name": " ",
+          "x": 141,
+          "y": 134
         }
       },
       {
@@ -76,7 +70,7 @@
           "height": 20,
           "name": " Cosmos",
           "x": 51,
-          "y": 134
+          "y": 80
         }
       },
       {
@@ -90,7 +84,7 @@
           "height": 20,
           "name": "Blood",
           "x": 51,
-          "y": 161
+          "y": 107
         }
       },
       {
@@ -103,8 +97,8 @@
           "width": 56,
           "height": 20,
           "name": "Time",
-          "x": 150,
-          "y": 53
+          "x": 51,
+          "y": 134
         }
       },
       {
@@ -117,8 +111,8 @@
           "width": 56,
           "height": 20,
           "name": "Technology ",
-          "x": 150,
-          "y": 80
+          "x": 51,
+          "y": 161
         }
       },
       {
@@ -128,30 +122,30 @@
           "width": 56,
           "height": 20,
           "name": "Speed",
-          "x": 150,
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
           "y": 107
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": " ",
-          "width": 56,
-          "height": 20,
-          "name": " ",
-          "x": 150,
-          "y": 134
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": " ",
-          "width": 56,
-          "height": 20,
-          "name": " ",
-          "x": 150,
-          "y": 161
         }
       },
       {
@@ -214,31 +208,11 @@
       {
         "type": "image",
         "data": {
-          "image": "creation_master.png",
-          "use1Xscale": false,
-          "name": "creation_master.png",
-          "x": 33,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "destruction_master.png",
-          "use1Xscale": false,
-          "name": "destruction_master.png",
-          "x": 33,
-          "y": 107
-        }
-      },
-      {
-        "type": "image",
-        "data": {
           "image": "cosmos_master.png",
           "use1Xscale": false,
           "name": "cosmos_master.png",
           "x": 33,
-          "y": 134
+          "y": 80
         }
       },
       {
@@ -248,7 +222,7 @@
           "use1Xscale": false,
           "name": "blood_master.png",
           "x": 33,
-          "y": 161
+          "y": 107
         }
       },
       {
@@ -257,8 +231,8 @@
           "image": "time_master.png",
           "use1Xscale": false,
           "name": "time_master.png",
-          "x": 132,
-          "y": 53
+          "x": 33,
+          "y": 134
         }
       },
       {
@@ -267,8 +241,8 @@
           "image": "technology_master.png",
           "use1Xscale": false,
           "name": "technology_master.png",
-          "x": 132,
-          "y": 80
+          "x": 33,
+          "y": 161
         }
       },
       {
@@ -277,8 +251,8 @@
           "image": "speed_master.png",
           "use1Xscale": false,
           "name": "speed_master.png",
-          "x": 132,
-          "y": 107
+          "x": 123,
+          "y": 53
         }
       }
     ],
