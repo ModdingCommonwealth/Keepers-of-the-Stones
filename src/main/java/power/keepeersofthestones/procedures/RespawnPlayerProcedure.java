@@ -466,6 +466,15 @@ public class RespawnPlayerProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TIME_STONE, 6000, 0, (false), (false)));
 			}
+		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new PowerModVariables.PlayerVariables())).battery) {
+			{
+				boolean _setval = (boolean) (false);
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.battery = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

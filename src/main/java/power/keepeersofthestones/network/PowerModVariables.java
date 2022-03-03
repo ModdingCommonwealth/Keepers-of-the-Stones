@@ -110,10 +110,10 @@ public class PowerModVariables {
 			clone.spawnx = original.spawnx;
 			clone.spawny = original.spawny;
 			clone.spawnz = original.spawnz;
+			clone.battery = original.battery;
 			clone.power_level = original.power_level;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
-				clone.battery = original.battery;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
 				clone.recharge_spell_moon = original.recharge_spell_moon;
 				clone.recharge_spell_blood = original.recharge_spell_blood;

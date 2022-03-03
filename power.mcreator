@@ -10570,7 +10570,7 @@
     {
       "name": "battery",
       "type": "logic",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "false"
     },
     {
