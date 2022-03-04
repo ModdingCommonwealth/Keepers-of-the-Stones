@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of Ice",
-    "icon": "master_of_the_ice.png",
+    "icon": "ice_master.png",
     "color": {
       "value": -16711681,
       "falpha": 0.0

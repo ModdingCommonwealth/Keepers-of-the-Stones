@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of Energy",
-    "icon": "image0.png",
+    "icon": "energy_master.png",
     "color": {
       "value": -52,
       "falpha": 0.0

@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "untitled_10-16-2021_01-32-37",
+    "texture": "magic_fireball",
     "customModelName": "Normal",
     "name": "Magic Fireball",
     "specialInfo": [],
@@ -35,7 +35,7 @@
       "value": "CUSTOM:MagicFireball"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": "untitled_10-16-2021_01-32-37.png",
+    "customBulletModelTexture": "",
     "onBulletHitsPlayer": {
       "name": "BurnProcedure"
     },

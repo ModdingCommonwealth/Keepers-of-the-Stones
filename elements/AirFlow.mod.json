@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "sds",
+    "texture": "air_flow",
     "customModelName": "Normal",
     "name": "Air Flow",
     "specialInfo": [],

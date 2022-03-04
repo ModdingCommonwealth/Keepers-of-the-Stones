@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Fire Flying",
-    "icon": "coal_merger.png",
+    "icon": "unknown.png",
     "color": {
       "value": -26368,
       "falpha": 0.0

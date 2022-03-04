@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/sds"
+    "layer0": "power:items/air_flow"
   },
   "display": {
     "thirdperson_righthand": {
