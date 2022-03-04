@@ -104,13 +104,13 @@
       {
         "type": "button",
         "data": {
-          "text": "Technology ",
+          "text": "Technology",
           "onClick": {
             "name": "TechnologyGet"
           },
           "width": 56,
           "height": 20,
-          "name": "Technology ",
+          "name": "Technology",
           "x": 51,
           "y": 161
         }
@@ -129,10 +129,10 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": " Teleport",
           "width": 56,
           "height": 20,
-          "name": " ",
+          "name": " Teleport",
           "x": 141,
           "y": 80
         }

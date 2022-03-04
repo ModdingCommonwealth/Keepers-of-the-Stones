@@ -10210,6 +10210,45 @@
         ]
       },
       "path": "~/Technology"
+    },
+    {
+      "name": "TeleportationStone",
+      "type": "item",
+      "sortid": 600,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_stone",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationBattery",
+      "type": "item",
+      "sortid": 601,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "TeleportationGet",
+      "type": "procedure",
+      "sortid": 602,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -10602,6 +10641,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "teleportation",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "teleportation_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -10790,6 +10841,7 @@
       "item.power.sun_regeneration": "Солнечное Исцеление",
       "effect.power.recharge_lightning_stone": "Перезарядка",
       "item.power.fertilizer": "Удобрение",
+      "item.power.teleportation_battery": "Батарея",
       "effect.tornado_master": "Мастер Торнадо",
       "item.power.fire_stone": "Камень Огня",
       "item.power.blood_stone": "Камень Крови",
@@ -10843,6 +10895,7 @@
       "entity.power.shadow": "Тень",
       "item.power.fire_battery": "Батарея",
       "item.power.blood_reaper": "Кровавый Жнец",
+      "item.power.teleportation_stone": "Камень Телепортации",
       "item.power.lightning_stone": "Камень Молнии",
       "item.power.lava_boots": "Лавовые Ботинки",
       "item.power.ocean_boots": "Ботинки Океана",
@@ -11149,6 +11202,7 @@
       "item.power.sun_regeneration": "Sun Regeneration",
       "effect.power.recharge_lightning_stone": "Recharge",
       "item.power.fertilizer": "Fertilizer",
+      "item.power.teleportation_battery": "Battery",
       "effect.tornado_master": "Master of Tornado",
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
@@ -11202,6 +11256,7 @@
       "entity.power.shadow": "Shadow",
       "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Blood Reaper",
+      "item.power.teleportation_stone": "Teleportation Stone",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
       "item.power.ocean_boots": "Ocean Boots",
@@ -11480,20 +11535,24 @@
       {
         "name": "ElementalBattery",
         "children": []
+      },
+      {
+        "name": "Teleportation",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.6.1",
+    "version": "1.6.10.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
-    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json",
+    "updateURL": "https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos-beta.json",
     "modPicture": "logo_new",
     "requiredMods": [],
     "dependencies": [],

@@ -112,6 +112,7 @@ public class PowerModVariables {
 			clone.spawnz = original.spawnz;
 			clone.battery = original.battery;
 			clone.power_level = original.power_level;
+			clone.teleportation = original.teleportation;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -261,6 +262,7 @@ public class PowerModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
 		public boolean technology_stone = false;
+		public boolean teleportation_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -270,11 +272,13 @@ public class PowerModVariables {
 
 		public void read(CompoundTag nbt) {
 			technology_stone = nbt.getBoolean("technology_stone");
+			teleportation_stone = nbt.getBoolean("teleportation_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("technology_stone", technology_stone);
+			nbt.putBoolean("teleportation_stone", teleportation_stone);
 			return nbt;
 		}
 
@@ -402,6 +406,7 @@ public class PowerModVariables {
 		public boolean recharge_spell_moon = false;
 		public boolean recharge_spell_blood = false;
 		public boolean recharge_spell_energy = false;
+		public boolean teleportation = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -448,6 +453,7 @@ public class PowerModVariables {
 			nbt.putBoolean("recharge_spell_moon", recharge_spell_moon);
 			nbt.putBoolean("recharge_spell_blood", recharge_spell_blood);
 			nbt.putBoolean("recharge_spell_energy", recharge_spell_energy);
+			nbt.putBoolean("teleportation", teleportation);
 			return nbt;
 		}
 
@@ -491,6 +497,7 @@ public class PowerModVariables {
 			recharge_spell_moon = nbt.getBoolean("recharge_spell_moon");
 			recharge_spell_blood = nbt.getBoolean("recharge_spell_blood");
 			recharge_spell_energy = nbt.getBoolean("recharge_spell_energy");
+			teleportation = nbt.getBoolean("teleportation");
 		}
 	}
 
@@ -554,6 +561,7 @@ public class PowerModVariables {
 					variables.recharge_spell_moon = message.data.recharge_spell_moon;
 					variables.recharge_spell_blood = message.data.recharge_spell_blood;
 					variables.recharge_spell_energy = message.data.recharge_spell_energy;
+					variables.teleportation = message.data.teleportation;
 				}
 			});
 			context.setPacketHandled(true);

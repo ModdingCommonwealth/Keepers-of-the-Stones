@@ -129,7 +129,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 141, 56, 20, new TextComponent("Technology "), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 141, 56, 20, new TextComponent("Technology"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(6, x, y, z));
 				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -137,7 +137,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 33, 56, 20, new TextComponent("Speed"), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 60, 56, 20, new TextComponent(" "), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 60, 56, 20, new TextComponent(" Teleport"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 87, 56, 20, new TextComponent(" "), e -> {
 		}));
