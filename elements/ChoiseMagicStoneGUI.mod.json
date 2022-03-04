@@ -50,9 +50,9 @@
       {
         "type": "image",
         "data": {
-          "image": "untitled_10-16-2021_01-48-32.png",
+          "image": "air_master.png",
           "use1Xscale": false,
-          "name": "untitled_10-16-2021_01-48-32.png",
+          "name": "air_master.png",
           "x": 33,
           "y": 80
         }
@@ -74,9 +74,9 @@
       {
         "type": "image",
         "data": {
-          "image": "untitled_10-16-2021_02-01-28.png",
+          "image": "water_master.png",
           "use1Xscale": false,
-          "name": "untitled_10-16-2021_02-01-28.png",
+          "name": "water_master.png",
           "x": 33,
           "y": 107
         }
@@ -112,9 +112,9 @@
       {
         "type": "image",
         "data": {
-          "image": "untitled_10-16-2021_05-43-24_3.png",
+          "image": "earth_master.png",
           "use1Xscale": false,
-          "name": "untitled_10-16-2021_05-43-24_3.png",
+          "name": "earth_master.png",
           "x": 33,
           "y": 134
         }
@@ -136,9 +136,9 @@
       {
         "type": "image",
         "data": {
-          "image": "image0.png",
+          "image": "energy_master.png",
           "use1Xscale": false,
-          "name": "image0.png",
+          "name": "energy_master.png",
           "x": 33,
           "y": 161
         }
@@ -160,9 +160,9 @@
       {
         "type": "image",
         "data": {
-          "image": "master_of_the_ice.png",
+          "image": "ice_master.png",
           "use1Xscale": false,
-          "name": "master_of_the_ice.png",
+          "name": "ice_master.png",
           "x": 132,
           "y": 53
         }

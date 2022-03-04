@@ -54,19 +54,19 @@ public class ChoiseMagicStoneGUIScreen extends AbstractContainerScreen<ChoiseMag
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/untitled_10-16-2021_01-48-32.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/air_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/untitled_10-16-2021_02-01-28.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/water_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 87, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/untitled_10-16-2021_05-43-24_3.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/earth_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 114, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/image0.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/energy_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 141, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/master_of_the_ice.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/ice_master.png"));
 		this.blit(ms, this.leftPos + 118, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/lightning_master.png"));
