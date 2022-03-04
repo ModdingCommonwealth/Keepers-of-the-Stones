@@ -17,6 +17,7 @@ import power.keepeersofthestones.potion.RechargeWaterStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeVacuumStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeTornadoStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeTimeStoneMobEffect;
+import power.keepeersofthestones.potion.RechargeTeleportationStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeTechnologyStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeSunStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeSoundStoneMobEffect;
@@ -135,6 +136,7 @@ public class PowerModMobEffects {
 	public static final MobEffect TIME_STOP_EFFECT = register(new TimeStopEffectMobEffect());
 	public static final MobEffect FIRE_FLYING = register(new FireFlyingMobEffect());
 	public static final MobEffect RAIN_FLY = register(new RainFlyMobEffect());
+	public static final MobEffect RECHARGE_TELEPORTATION_STONE = register(new RechargeTeleportationStoneMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

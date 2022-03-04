@@ -10249,6 +10249,15 @@
         ]
       },
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "RechargeTeleportationStone",
+      "type": "potioneffect",
+      "sortid": 603,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_teleportation_stone",
+      "path": "~/Teleportation"
     }
   ],
   "variable_elements": [
@@ -10856,6 +10865,7 @@
       "item.power.water_chestplate": "Водный Костюм",
       "item.power.time_stone": "Камень Времени",
       "effect.power.sun_master": "Мастер Солнца",
+      "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "item.power.time_helmet": "Time Helmet",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
@@ -11217,6 +11227,7 @@
       "item.power.water_chestplate": "Water Chestplate",
       "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Master of Sun",
+      "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "item.power.time_helmet": "Time Helmet",
       "block.power.vacuum_web_block": "Vacuum Web Block",
