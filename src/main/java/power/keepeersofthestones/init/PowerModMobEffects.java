@@ -9,6 +9,7 @@ import power.keepeersofthestones.potion.VacuumMasterMobEffect;
 import power.keepeersofthestones.potion.TornadoMasterMobEffect;
 import power.keepeersofthestones.potion.TimeStopEffectMobEffect;
 import power.keepeersofthestones.potion.TimeMasterEffectMobEffect;
+import power.keepeersofthestones.potion.TeleportationMasterMobEffect;
 import power.keepeersofthestones.potion.TechnologyMasterMobEffect;
 import power.keepeersofthestones.potion.SunMasterMobEffect;
 import power.keepeersofthestones.potion.SoundMasterMobEffect;
@@ -137,6 +138,7 @@ public class PowerModMobEffects {
 	public static final MobEffect FIRE_FLYING = register(new FireFlyingMobEffect());
 	public static final MobEffect RAIN_FLY = register(new RainFlyMobEffect());
 	public static final MobEffect RECHARGE_TELEPORTATION_STONE = register(new RechargeTeleportationStoneMobEffect());
+	public static final MobEffect TELEPORTATION_MASTER = register(new TeleportationMasterMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);

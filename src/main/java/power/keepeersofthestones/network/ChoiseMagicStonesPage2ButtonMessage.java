@@ -3,6 +3,7 @@ package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.procedures.TimeGetProcedure;
+import power.keepeersofthestones.procedures.TeleportationGetProcedure;
 import power.keepeersofthestones.procedures.TechnologyGetProcedure;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
 import power.keepeersofthestones.procedures.MoonGetProcedure;
@@ -86,6 +87,10 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		if (buttonID == 6) {
 
 			TechnologyGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 8) {
+
+			TeleportationGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 13) {
 

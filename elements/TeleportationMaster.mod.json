@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Teleportation",
+    "icon": "teleportation_master.png",
+    "color": {
+      "value": -16737793,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "TeleportationMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "TeleportationMasterEffects"
+    },
+    "onExpired": {
+      "name": "TeleportationMasterEffectEnd"
+    }
+  }
+}

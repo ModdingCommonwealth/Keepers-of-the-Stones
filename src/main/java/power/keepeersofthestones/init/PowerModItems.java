@@ -38,6 +38,7 @@ import power.keepeersofthestones.item.TimeBladeItem;
 import power.keepeersofthestones.item.TimeBatteryItem;
 import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.TeleportationStoneItem;
+import power.keepeersofthestones.item.TeleportationItem;
 import power.keepeersofthestones.item.TeleportationBatteryItem;
 import power.keepeersofthestones.item.TechnologyStoneItem;
 import power.keepeersofthestones.item.TechnologyItem;
@@ -467,6 +468,10 @@ public class PowerModItems {
 	public static final Item REDSTONE_BUNDLE = register(new RedstoneBundleItem());
 	public static final Item TELEPORTATION_STONE = register(new TeleportationStoneItem());
 	public static final Item TELEPORTATION_BATTERY = register(new TeleportationBatteryItem());
+	public static final Item TELEPORTATION_HELMET = register(new TeleportationItem.Helmet());
+	public static final Item TELEPORTATION_CHESTPLATE = register(new TeleportationItem.Chestplate());
+	public static final Item TELEPORTATION_LEGGINGS = register(new TeleportationItem.Leggings());
+	public static final Item TELEPORTATION_BOOTS = register(new TeleportationItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

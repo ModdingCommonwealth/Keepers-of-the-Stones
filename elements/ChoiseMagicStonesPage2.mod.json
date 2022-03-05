@@ -104,13 +104,13 @@
       {
         "type": "button",
         "data": {
-          "text": "Technology",
+          "text": "Tech",
           "onClick": {
             "name": "TechnologyGet"
           },
           "width": 56,
           "height": 20,
-          "name": "Technology",
+          "name": "Tech",
           "x": 51,
           "y": 161
         }
@@ -123,18 +123,21 @@
           "height": 20,
           "name": "Speed",
           "x": 141,
-          "y": 53
+          "y": 80
         }
       },
       {
         "type": "button",
         "data": {
-          "text": " Teleport",
+          "text": "TP",
+          "onClick": {
+            "name": "TeleportationGet"
+          },
           "width": 56,
           "height": 20,
-          "name": " Teleport",
+          "name": "TP",
           "x": 141,
-          "y": 80
+          "y": 53
         }
       },
       {
@@ -251,6 +254,16 @@
           "image": "speed_master.png",
           "use1Xscale": false,
           "name": "speed_master.png",
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "teleportation_master.png",
+          "use1Xscale": false,
+          "name": "teleportation_master.png",
           "x": 123,
           "y": 53
         }

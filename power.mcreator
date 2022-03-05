@@ -10258,6 +10258,130 @@
       "locked_code": false,
       "registry_name": "recharge_teleportation_stone",
       "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationMaster",
+      "type": "potioneffect",
+      "sortid": 604,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_master",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationStoneUse",
+      "type": "procedure",
+      "sortid": 605,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationMasterEffectStart",
+      "type": "procedure",
+      "sortid": 606,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 607,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationMasterEffects",
+      "type": "procedure",
+      "sortid": 608,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "Teleportation",
+      "type": "armor",
+      "sortid": 609,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Teleportation"
     }
   ],
   "variable_elements": [
@@ -10710,6 +10834,7 @@
       "item.power.spike": "Шип",
       "effect.power.time_stop_effect": "Остановка Времени",
       "item.power.greenery_chestplate": "Greenery Chestplate",
+      "item.power.teleportation_leggings": "Teleportation Leggings",
       "effect.power.recharge_water_stone": "Перезарядка",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Мастер Океана",
@@ -10718,6 +10843,7 @@
       "effect.power.recharge_creation_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
       "effect.power.recharge_moon_stone": "Перезарядка",
+      "item.power.teleportation_helmet": "Teleportation Helmet",
       "item.power.sound_emitate": "Издать Звук",
       "item.power.earth_battery": "Батарея",
       "effect.power.vacuum_master": "Мастер Пустоты",
@@ -10842,6 +10968,7 @@
       "item.power.animals_battery": "Батарея",
       "item.power.ocean_chestplate": "Акваланг Океана",
       "item.power.lava_leggings": "Лавовые Брюки",
+      "item.power.teleportation_chestplate": "Teleportation Chestplate",
       "item.power.lava_helmet": "Лавовые Очки",
       "item.power.time_battery": "Батарея",
       "item.power.animals_helmet": "Animals Helmet",
@@ -10923,6 +11050,7 @@
       "item.power.moon_stones": "Лунные Камни",
       "key.power.detransform_key": "Клавиша детрансформации",
       "item.power.sound_battery": "Батарея",
+      "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
@@ -10965,6 +11093,7 @@
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Камень Технологий",
       "item.power.megawatt": "Мегаватт",
+      "item.power.teleportation_boots": "Teleportation Boots",
       "item.power.fire_boots": "Огненные Ботинки",
       "effect.power.air_master": "Мастер Воздуха",
       "block.power.technobarrier_block": "Блок Технобарьера",
@@ -11072,6 +11201,7 @@
       "item.power.spike": "Spike",
       "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
+      "item.power.teleportation_leggings": "Teleportation Leggings",
       "effect.power.recharge_water_stone": "Recharge",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.power.ocean_master": "Master of the Ocean",
@@ -11080,6 +11210,7 @@
       "effect.power.recharge_creation_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
       "effect.power.recharge_moon_stone": "Recharge",
+      "item.power.teleportation_helmet": "Teleportation Helmet",
       "item.power.sound_emitate": "Sound Emitate",
       "item.power.earth_battery": "Battery",
       "effect.power.vacuum_master": "Master of Vacuum",
@@ -11204,6 +11335,7 @@
       "item.power.animals_battery": "Battery",
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
+      "item.power.teleportation_chestplate": "Teleportation Chestplate",
       "item.power.lava_helmet": "Lava Helmet",
       "item.power.time_battery": "Battery",
       "item.power.animals_helmet": "Animals Helmet",
@@ -11285,6 +11417,7 @@
       "item.power.moon_stones": "Moon Stones",
       "key.power.detransform_key": "Detransform key",
       "item.power.sound_battery": "Battery",
+      "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
@@ -11327,6 +11460,7 @@
       "item.power.metal_chestplate": "Metal Chestplate",
       "item.power.technology_stone": "Technology Stone",
       "item.power.megawatt": "Megawatt",
+      "item.power.teleportation_boots": "Teleportation Boots",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
       "block.power.technobarrier_block": "Technobarrier Block",
