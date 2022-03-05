@@ -21,7 +21,6 @@ import java.util.List;
 public class CrystalBatteryItem extends Item {
 	public CrystalBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("crystal_battery");
 	}
 
 	@Override

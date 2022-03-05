@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class VacuumWebItem extends Item {
 	public VacuumWebItem() {
 		super(new Item.Properties().tab(null).durability(100));
-		setRegistryName("vacuum_web");
 	}
 
 	@Override

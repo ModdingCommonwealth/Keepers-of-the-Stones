@@ -45,7 +45,7 @@ import java.util.List;
 
 public class GlowEntity extends TamableAnimal {
 	public GlowEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PowerModEntities.GLOW, world);
+		this(PowerModEntities.GLOW.get(), world);
 	}
 
 	public GlowEntity(EntityType<GlowEntity> type, Level world) {
@@ -153,7 +153,7 @@ public class GlowEntity extends TamableAnimal {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		GlowEntity retval = PowerModEntities.GLOW.create(serverWorld);
+		GlowEntity retval = PowerModEntities.GLOW.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}

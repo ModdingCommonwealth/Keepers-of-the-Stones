@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class ShadowBallItem extends Item {
 	public ShadowBallItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("shadow_ball");
 	}
 
 	@Override

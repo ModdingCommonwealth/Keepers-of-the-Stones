@@ -21,7 +21,6 @@ import java.util.List;
 public class CosmosBatteryItem extends Item {
 	public CosmosBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("cosmos_battery");
 	}
 
 	@Override

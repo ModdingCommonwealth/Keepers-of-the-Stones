@@ -11569,7 +11569,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.1",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created by MagicalAlexey",
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false

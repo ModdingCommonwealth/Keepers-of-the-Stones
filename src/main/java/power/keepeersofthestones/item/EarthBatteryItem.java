@@ -21,7 +21,6 @@ import java.util.List;
 public class EarthBatteryItem extends Item {
 	public EarthBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("earth_battery");
 	}
 
 	@Override

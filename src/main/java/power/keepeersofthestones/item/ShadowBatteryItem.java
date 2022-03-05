@@ -21,7 +21,6 @@ import java.util.List;
 public class ShadowBatteryItem extends Item {
 	public ShadowBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("shadow_battery");
 	}
 
 	@Override

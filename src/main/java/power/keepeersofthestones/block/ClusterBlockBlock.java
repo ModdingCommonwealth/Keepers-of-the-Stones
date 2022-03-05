@@ -30,7 +30,6 @@ public class ClusterBlockBlock extends FallingBlock {
 	public ClusterBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("cluster_block");
 	}
 
 	@Override
@@ -71,6 +70,6 @@ public class ClusterBlockBlock extends FallingBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.CLUSTER_BLOCK, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.CLUSTER_BLOCK.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

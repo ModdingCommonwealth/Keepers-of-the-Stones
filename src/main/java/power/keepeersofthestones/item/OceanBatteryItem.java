@@ -21,7 +21,6 @@ import java.util.List;
 public class OceanBatteryItem extends Item {
 	public OceanBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("ocean_battery");
 	}
 
 	@Override

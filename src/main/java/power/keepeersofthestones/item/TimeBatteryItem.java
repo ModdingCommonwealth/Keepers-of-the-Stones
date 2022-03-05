@@ -21,7 +21,6 @@ import java.util.List;
 public class TimeBatteryItem extends Item {
 	public TimeBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("time_battery");
 	}
 
 	@Override

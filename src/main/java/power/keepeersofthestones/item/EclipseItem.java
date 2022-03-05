@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 public class EclipseItem extends Item {
 	public EclipseItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("eclipse");
 	}
 
 	@Override

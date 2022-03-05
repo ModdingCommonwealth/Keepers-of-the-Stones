@@ -20,70 +20,70 @@ public class EnergyStaffUseProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-					.getItem() == PowerModItems.ENERGY_STAFF) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ENERGY_STAFF
+					.get()) {
 				if (sourceentity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
 				if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new PowerModVariables.PlayerVariables())).recharge_spell_energy) {
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
+						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.AIR_MASTER);
+						_entity.removeEffect(PowerModMobEffects.AIR_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.WATER_MASTER);
+						_entity.removeEffect(PowerModMobEffects.WATER_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.EARTH_MASTER);
+						_entity.removeEffect(PowerModMobEffects.EARTH_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.ICE_MASTER);
+						_entity.removeEffect(PowerModMobEffects.ICE_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.LIGHTNING_MASTER);
+						_entity.removeEffect(PowerModMobEffects.LIGHTNING_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.CRYSTAL_MASTER);
+						_entity.removeEffect(PowerModMobEffects.CRYSTAL_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.LAVA_MASTER);
+						_entity.removeEffect(PowerModMobEffects.LAVA_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.RAIN_MASTER);
+						_entity.removeEffect(PowerModMobEffects.RAIN_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.TORNADO_MASTER);
+						_entity.removeEffect(PowerModMobEffects.TORNADO_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.OCEAN_MASTER);
+						_entity.removeEffect(PowerModMobEffects.OCEAN_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.GREENERY_MASTER);
+						_entity.removeEffect(PowerModMobEffects.GREENERY_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.ANIMALS_MASTER);
+						_entity.removeEffect(PowerModMobEffects.ANIMALS_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.METAL_MASTER);
+						_entity.removeEffect(PowerModMobEffects.METAL_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.LIGHT_MASTER);
+						_entity.removeEffect(PowerModMobEffects.LIGHT_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.SHADOW_MASTER);
+						_entity.removeEffect(PowerModMobEffects.SHADOW_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.SUN_MASTER);
+						_entity.removeEffect(PowerModMobEffects.SUN_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.MOON_MASTER);
+						_entity.removeEffect(PowerModMobEffects.MOON_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.CREATION_MASTER);
+						_entity.removeEffect(PowerModMobEffects.CREATION_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER);
+						_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
+						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
+						_entity.removeEffect(PowerModMobEffects.FIRE_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.TECHNOLOGY_MASTER);
+						_entity.removeEffect(PowerModMobEffects.TECHNOLOGY_MASTER.get());
 					if (sourceentity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ENERGY_MASTER, 24000, 0, (false), (false)));
+						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ENERGY_MASTER.get(), 24000, 0, (false), (false)));
 					if (sourceentity instanceof LivingEntity _entity)
-						_entity.removeEffect(PowerModMobEffects.RECHARGE_ENERGY_STONE);
+						_entity.removeEffect(PowerModMobEffects.RECHARGE_ENERGY_STONE.get());
 					if (sourceentity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_STONE);
+						ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_STONE.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
 				}
 				{
-					boolean _setval = (boolean) (true);
+					boolean _setval = true;
 					sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.recharge_spell_energy = _setval;
 						capability.syncPlayerVariables(sourceentity);
@@ -111,7 +111,7 @@ public class EnergyStaffUseProcedure {
 
 					private void run() {
 						{
-							boolean _setval = (boolean) (false);
+							boolean _setval = false;
 							sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.recharge_spell_energy = _setval;
 								capability.syncPlayerVariables(sourceentity);

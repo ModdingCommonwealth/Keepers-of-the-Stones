@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class BlackHoleItem extends Item {
 	public BlackHoleItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("black_hole");
 	}
 
 	@Override

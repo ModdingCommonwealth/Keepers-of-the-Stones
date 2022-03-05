@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class VacuumSpiralItem extends Item {
 	public VacuumSpiralItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("vacuum_spiral");
 	}
 
 	@Override

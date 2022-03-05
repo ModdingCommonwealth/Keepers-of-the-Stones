@@ -33,6 +33,5 @@ public class AirBladeItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -1f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("air_blade");
 	}
 }

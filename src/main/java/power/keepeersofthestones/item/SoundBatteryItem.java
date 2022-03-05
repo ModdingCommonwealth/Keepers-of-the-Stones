@@ -21,7 +21,6 @@ import java.util.List;
 public class SoundBatteryItem extends Item {
 	public SoundBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("sound_battery");
 	}
 
 	@Override

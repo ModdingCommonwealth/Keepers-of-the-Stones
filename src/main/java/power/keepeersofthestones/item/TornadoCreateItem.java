@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class TornadoCreateItem extends Item {
 	public TornadoCreateItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("tornado_create");
 	}
 
 	@Override

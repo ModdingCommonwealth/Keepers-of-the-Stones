@@ -21,7 +21,6 @@ import java.util.List;
 public class MoonBatteryItem extends Item {
 	public MoonBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("moon_battery");
 	}
 
 	@Override

@@ -21,7 +21,6 @@ import java.util.List;
 public class FireBatteryItem extends Item {
 	public FireBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("fire_battery");
 	}
 
 	@Override

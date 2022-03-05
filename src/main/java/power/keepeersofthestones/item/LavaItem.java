@@ -61,7 +61,6 @@ public abstract class LavaItem extends ArmorItem {
 	public static class Helmet extends LavaItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("lava_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class LavaItem extends ArmorItem {
 	public static class Chestplate extends LavaItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("lava_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class LavaItem extends ArmorItem {
 	public static class Leggings extends LavaItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("lava_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class LavaItem extends ArmorItem {
 	public static class Boots extends LavaItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("lava_boots");
 		}
 
 		@Override

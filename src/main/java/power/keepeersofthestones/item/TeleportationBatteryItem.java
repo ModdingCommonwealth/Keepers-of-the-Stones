@@ -17,7 +17,6 @@ import java.util.List;
 public class TeleportationBatteryItem extends Item {
 	public TeleportationBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("teleportation_battery");
 	}
 
 	@Override

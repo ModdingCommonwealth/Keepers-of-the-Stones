@@ -61,7 +61,6 @@ public abstract class TornadoItem extends ArmorItem {
 	public static class Helmet extends TornadoItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("tornado_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class TornadoItem extends ArmorItem {
 	public static class Chestplate extends TornadoItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("tornado_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class TornadoItem extends ArmorItem {
 	public static class Leggings extends TornadoItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("tornado_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class TornadoItem extends ArmorItem {
 	public static class Boots extends TornadoItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("tornado_boots");
 		}
 
 		@Override
