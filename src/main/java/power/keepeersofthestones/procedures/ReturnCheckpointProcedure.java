@@ -5,6 +5,7 @@ import power.keepeersofthestones.network.PowerModVariables;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.TextComponent;
 
 public class ReturnCheckpointProcedure {
 	public static void execute(Entity entity) {
@@ -31,5 +32,7 @@ public class ReturnCheckpointProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
+		if (entity instanceof Player _player && !_player.level.isClientSide())
+			_player.displayClientMessage(new TextComponent("You have successfully returned to the point of return."), (false));
 	}
 }
