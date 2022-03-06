@@ -166,7 +166,9 @@ import power.keepeersofthestones.item.CosmosItem;
 import power.keepeersofthestones.item.CosmosBatteryItem;
 import power.keepeersofthestones.item.CoralShieldItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
+import power.keepeersofthestones.item.CheckpointItem;
 import power.keepeersofthestones.item.BurnItem;
+import power.keepeersofthestones.item.BlueKnifeItem;
 import power.keepeersofthestones.item.BloodStoneItem;
 import power.keepeersofthestones.item.BloodReaperItem;
 import power.keepeersofthestones.item.BloodItem;
@@ -472,6 +474,8 @@ public class PowerModItems {
 	public static final Item TELEPORTATION_CHESTPLATE = register(new TeleportationItem.Chestplate());
 	public static final Item TELEPORTATION_LEGGINGS = register(new TeleportationItem.Leggings());
 	public static final Item TELEPORTATION_BOOTS = register(new TeleportationItem.Boots());
+	public static final Item BLUE_KNIFE = register(new BlueKnifeItem());
+	public static final Item CHECKPOINT = register(new CheckpointItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

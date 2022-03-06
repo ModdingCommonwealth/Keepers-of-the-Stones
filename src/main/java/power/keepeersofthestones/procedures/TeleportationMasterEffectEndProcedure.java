@@ -39,11 +39,11 @@ public class TeleportationMasterEffectEndProcedure {
 			}
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_SWORD);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.BLUE_KNIFE);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.ACUSTICAL_EXPLODE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.CHECKPOINT);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {

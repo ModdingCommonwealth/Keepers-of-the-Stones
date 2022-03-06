@@ -8183,35 +8183,6 @@
       "path": "~/Time"
     },
     {
-      "name": "Checkpoint",
-      "type": "procedure",
-      "sortid": 488,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "checkpoint",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Time"
-    },
-    {
       "name": "ReturnCheckpoint",
       "type": "procedure",
       "sortid": 489,
@@ -10382,6 +10353,82 @@
         "ec": true
       },
       "path": "~/Teleportation"
+    },
+    {
+      "name": "BlueKnife",
+      "type": "tool",
+      "sortid": 610,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_knife",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TimeCheckpoint",
+      "type": "procedure",
+      "sortid": 611,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_checkpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "Checkpoint",
+      "type": "item",
+      "sortid": 612,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "CheckSet",
+      "type": "procedure",
+      "sortid": 613,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_set",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
     }
   ],
   "variable_elements": [
@@ -10871,6 +10918,7 @@
       "item.power.fire_helmet": "Огненная корона",
       "item.power.galactic_sword": "Галактический меч",
       "effect.power.crystal_master": "Мастер Кристалла",
+      "item.power.blue_knife": "Голубой Нож",
       "item.power.crestcent_helmet": "Crestcent Helmet",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
       "item.power.rain_chestplate": "Дождевая Накидка",
@@ -10992,7 +11040,7 @@
       "item.power.water_chestplate": "Водный Костюм",
       "item.power.time_stone": "Камень Времени",
       "effect.power.sun_master": "Мастер Солнца",
-      "effect.power.recharge_teleportation_stone": "Recharge",
+      "effect.power.recharge_teleportation_stone": "Перезарядка",
       "subtitles.stone_activation": "Stone been activation",
       "item.power.time_helmet": "Time Helmet",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
@@ -11082,6 +11130,7 @@
       "item.power.fire_leggings": "Огненные Штаны",
       "item.power.black_heart": "Черное Сердце",
       "block.power.black_hole_block": "Блок Черной Дыры",
+      "item.power.checkpoint": "Чекпоинт",
       "item.power.spawn": "Порождение",
       "item.power.tornado_helmet": "Шлем Торнадо",
       "effect.power.water_master": "Мастер Воды",
@@ -11238,6 +11287,7 @@
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
       "effect.power.crystal_master": "Master of the Crystal",
+      "item.power.blue_knife": "Blue Knife",
       "item.power.crestcent_helmet": "Crestcent Helmet",
       "effect.power.recharge_vacuum_stone": "Recharge",
       "item.power.rain_chestplate": "Rain Chestplate",
@@ -11449,6 +11499,7 @@
       "item.power.ice_ball": "Ice Ball",
       "item.power.black_heart": "Black Heart",
       "block.power.black_hole_block": "Black Hole Block",
+      "item.power.checkpoint": "Checkpoint",
       "item.power.spawn": "Spawn",
       "item.power.tornado_helmet": "Tornado Helmet",
       "effect.power.water_master": "Master of Water",

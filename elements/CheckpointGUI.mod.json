@@ -42,7 +42,7 @@
         "data": {
           "text": "Set checkpoint",
           "onClick": {
-            "name": "Checkpoint"
+            "name": "TimeCheckpoint"
           },
           "width": 126,
           "height": 20,
