@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of the Air",
-    "icon": "untitled_10-16-2021_01-48-32.png",
+    "icon": "air_master.png",
     "color": {
       "value": -3342337,
       "falpha": 0.0

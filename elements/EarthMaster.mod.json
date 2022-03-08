@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of the Earth",
-    "icon": "untitled_10-16-2021_05-43-24_3.png",
+    "icon": "earth_master.png",
     "color": {
       "value": -10079488,
       "falpha": 0.0
