@@ -1,7 +1,7 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
-    "1.18.1-latest": "1.6.0.100"
+    "1.18.1-latest": "1.6.10.1"
 },
   "1.18.1": {
 "1.5.0.1": "A new beta build of the mod has been released. Upgrade and get new features!",
@@ -10,6 +10,7 @@
 "1.6.0.2": "A new beta build of the mod has been released. Upgrade and get new features!",
 "1.6.0.3": "A new beta build of the mod has been released. Upgrade and get new features!",
 "1.6.0.4": "A new beta build of the mod has been released. Upgrade and get new features!",
-"1.6.0.100": "A new release of the mod has been released. Upgrade and get new features!"
+"1.6.0.100": "A new release of the mod has been released. Upgrade and get new features!",
+"1.6.10.1": "A new beta build of the mod has been released. Upgrade and get new features!",
   }
 }
