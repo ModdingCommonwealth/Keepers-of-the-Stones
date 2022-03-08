@@ -27,7 +27,7 @@ public class BlueKnifeItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(PowerModBlocks.BLUE_PORTAL, PowerModBlocks.ORANGE_PORTAL).contains(blockstate.getBlock()) ? 12f : 1;
+		return List.of(PowerModBlocks.BLUE_PORTAL, PowerModBlocks.ORANGE_PORTAL).contains(blockstate.getBlock()) ? 45f : 1;
 	}
 
 	@Override
