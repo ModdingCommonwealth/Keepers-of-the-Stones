@@ -47,11 +47,7 @@ public class TeleportationMasterEffectEndProcedure {
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BARRIER);
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_EMITATE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.PORTAL_BLAST);
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {

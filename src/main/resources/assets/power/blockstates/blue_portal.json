@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "power:block/blue_portal"
+    },
+    "powered=true": {
+      "model": "power:block/blue_portal_down"
+    }
+  }
+}

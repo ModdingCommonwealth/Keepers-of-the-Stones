@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "power:block/orange_portal"
+    },
+    "powered=true": {
+      "model": "power:block/orange_portal_down"
+    }
+  }
+}

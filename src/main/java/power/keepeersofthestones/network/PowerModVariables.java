@@ -263,6 +263,14 @@ public class PowerModVariables {
 		public static final String DATA_NAME = "power_mapvars";
 		public boolean technology_stone = false;
 		public boolean teleportation_stone = false;
+		public boolean blue_portal = false;
+		public boolean orange_portal = false;
+		public double bposx = 0;
+		public double bposy = 0;
+		public double bposz = 0;
+		public double oposx = 0;
+		public double oposy = 0;
+		public double oposz = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -273,12 +281,28 @@ public class PowerModVariables {
 		public void read(CompoundTag nbt) {
 			technology_stone = nbt.getBoolean("technology_stone");
 			teleportation_stone = nbt.getBoolean("teleportation_stone");
+			blue_portal = nbt.getBoolean("blue_portal");
+			orange_portal = nbt.getBoolean("orange_portal");
+			bposx = nbt.getDouble("bposx");
+			bposy = nbt.getDouble("bposy");
+			bposz = nbt.getDouble("bposz");
+			oposx = nbt.getDouble("oposx");
+			oposy = nbt.getDouble("oposy");
+			oposz = nbt.getDouble("oposz");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("technology_stone", technology_stone);
 			nbt.putBoolean("teleportation_stone", teleportation_stone);
+			nbt.putBoolean("blue_portal", blue_portal);
+			nbt.putBoolean("orange_portal", orange_portal);
+			nbt.putDouble("bposx", bposx);
+			nbt.putDouble("bposy", bposy);
+			nbt.putDouble("bposz", bposz);
+			nbt.putDouble("oposx", oposx);
+			nbt.putDouble("oposy", oposy);
+			nbt.putDouble("oposz", oposz);
 			return nbt;
 		}
 

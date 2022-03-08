@@ -18,6 +18,7 @@ import power.keepeersofthestones.entity.ShurikenEntity;
 import power.keepeersofthestones.entity.ShadowEntity;
 import power.keepeersofthestones.entity.ShadowBallEntity;
 import power.keepeersofthestones.entity.RainBowEntity;
+import power.keepeersofthestones.entity.PortalBlastEntity;
 import power.keepeersofthestones.entity.PlasmaBallEntity;
 import power.keepeersofthestones.entity.PieceOfEarthEntity;
 import power.keepeersofthestones.entity.MoonStonesEntity;
@@ -140,6 +141,9 @@ public class PowerModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final EntityType<MegawattEntity> MEGAWATT = register("entitybulletmegawatt",
 			EntityType.Builder.<MegawattEntity>of(MegawattEntity::new, MobCategory.MISC).setCustomClientFactory(MegawattEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<PortalBlastEntity> PORTAL_BLAST = register("entitybulletportal_blast",
+			EntityType.Builder.<PortalBlastEntity>of(PortalBlastEntity::new, MobCategory.MISC).setCustomClientFactory(PortalBlastEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

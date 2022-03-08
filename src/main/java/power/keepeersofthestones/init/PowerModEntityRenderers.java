@@ -50,5 +50,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.BLACK_HEART, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.TIME_DILATION, ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.MEGAWATT, ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.PORTAL_BLAST, ThrownItemRenderer::new);
 	}
 }

@@ -10429,6 +10429,155 @@
         ]
       },
       "path": "~/Teleportation"
+    },
+    {
+      "name": "PortalBlast",
+      "type": "rangeditem",
+      "sortid": 614,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_blast",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "BluePortal",
+      "type": "block",
+      "sortid": 615,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_portal",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "OrangePortal",
+      "type": "block",
+      "sortid": 616,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_portal",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "PortalSet",
+      "type": "procedure",
+      "sortid": 617,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_set",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "RemoveBluePortal",
+      "type": "procedure",
+      "sortid": 618,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_blue_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "RemoveOrangePortal",
+      "type": "procedure",
+      "sortid": 619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_orange_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportToOrangePortal",
+      "type": "procedure",
+      "sortid": 620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_to_orange_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportToBluePortal",
+      "type": "procedure",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_to_blue_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "TeleportationBatteryUse",
+      "type": "procedure",
+      "sortid": 622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -10833,6 +10982,54 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "blue_portal",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "orange_portal",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "bposx",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "bposy",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "bposz",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "oposx",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "oposy",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "oposz",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -11037,6 +11234,7 @@
       "effect.power.invincibility": "Непобедимость",
       "item.power.ice_spear": "Ледяное Копьё",
       "item.power.blood_battery": "Батарея",
+      "item.power.portal_blast": "Портальная Пушка",
       "item.power.water_chestplate": "Водный Костюм",
       "item.power.time_stone": "Камень Времени",
       "effect.power.sun_master": "Мастер Солнца",
@@ -11100,6 +11298,7 @@
       "item.power.sound_battery": "Батарея",
       "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
+      "block.power.orange_portal": "Оранжевый Портал",
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
@@ -11222,6 +11421,7 @@
       "effect.power.time_master_effect": "Мастер Времени",
       "item.power.acceleration_time": "Ускорение Времени",
       "effect.power.animals_master": "Мастер Животных",
+      "block.power.blue_portal": "Голубой Портал",
       "item.power.rose_sword": "Розовая Шпага",
       "item.power.storm": "Шторм",
       "item.power.air_stone": "Камень Воздуха",
@@ -11406,6 +11606,7 @@
       "effect.power.invincibility": "Invincibility",
       "item.power.ice_spear": "Ice Spear",
       "item.power.blood_battery": "Battery",
+      "item.power.portal_blast": "Portal Blast",
       "item.power.water_chestplate": "Water Chestplate",
       "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Master of Sun",
@@ -11469,6 +11670,7 @@
       "item.power.sound_battery": "Battery",
       "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
+      "block.power.orange_portal": "Orange Portal",
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
@@ -11591,6 +11793,7 @@
       "effect.power.time_master_effect": "Master of Time",
       "item.power.acceleration_time": "Acceleration Time",
       "effect.power.animals_master": "Master of Animals",
+      "block.power.blue_portal": "Blue Portal",
       "item.power.rose_sword": "Rose Sword",
       "item.power.storm": "Storm",
       "item.power.air_stone": "Air Stone",

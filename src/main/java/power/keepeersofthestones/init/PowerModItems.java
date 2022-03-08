@@ -81,6 +81,7 @@ import power.keepeersofthestones.item.RainKnifeItem;
 import power.keepeersofthestones.item.RainItem;
 import power.keepeersofthestones.item.RainBowItem;
 import power.keepeersofthestones.item.RainBatteryItem;
+import power.keepeersofthestones.item.PortalBlastItem;
 import power.keepeersofthestones.item.PlasmaBallItem;
 import power.keepeersofthestones.item.PieceOfEarthItem;
 import power.keepeersofthestones.item.OceanSwordItem;
@@ -476,6 +477,9 @@ public class PowerModItems {
 	public static final Item TELEPORTATION_BOOTS = register(new TeleportationItem.Boots());
 	public static final Item BLUE_KNIFE = register(new BlueKnifeItem());
 	public static final Item CHECKPOINT = register(new CheckpointItem());
+	public static final Item PORTAL_BLAST = register(new PortalBlastItem());
+	public static final Item BLUE_PORTAL = register(PowerModBlocks.BLUE_PORTAL, null);
+	public static final Item ORANGE_PORTAL = register(PowerModBlocks.ORANGE_PORTAL, null);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

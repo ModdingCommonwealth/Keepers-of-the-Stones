@@ -8,10 +8,12 @@ import power.keepeersofthestones.block.VacuumWebBlockBlock;
 import power.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
 import power.keepeersofthestones.block.TechnobarrierBlockBlock;
 import power.keepeersofthestones.block.SoundBarrierBlockBlock;
+import power.keepeersofthestones.block.OrangePortalBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.block.EnergyBlockBlock;
 import power.keepeersofthestones.block.CrystalShieldBlockBlock;
 import power.keepeersofthestones.block.ClusterBlockBlock;
+import power.keepeersofthestones.block.BluePortalBlock;
 import power.keepeersofthestones.block.BlackHoleBlockBlock;
 import power.keepeersofthestones.block.BatteryChargerBlock;
 
@@ -39,6 +41,8 @@ public class PowerModBlocks {
 	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
 	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
 	public static final Block TECHNOBARRIER_BLOCK = register(new TechnobarrierBlockBlock());
+	public static final Block BLUE_PORTAL = register(new BluePortalBlock());
+	public static final Block ORANGE_PORTAL = register(new OrangePortalBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -59,6 +63,8 @@ public class PowerModBlocks {
 			VacuumWebBlockBlock.registerRenderLayer();
 			BlackHoleBlockBlock.registerRenderLayer();
 			TechnobarrierBlockBlock.registerRenderLayer();
+			BluePortalBlock.registerRenderLayer();
+			OrangePortalBlock.registerRenderLayer();
 		}
 	}
 }
