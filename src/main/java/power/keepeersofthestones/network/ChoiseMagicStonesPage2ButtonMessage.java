@@ -7,6 +7,7 @@ import power.keepeersofthestones.procedures.TeleportationGetProcedure;
 import power.keepeersofthestones.procedures.TechnologyGetProcedure;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
 import power.keepeersofthestones.procedures.MoonGetProcedure;
+import power.keepeersofthestones.procedures.ExplosionGetProcedure;
 import power.keepeersofthestones.procedures.CosmosGetProcedure;
 import power.keepeersofthestones.procedures.BloodGetProcedure;
 import power.keepeersofthestones.PowerMod;
@@ -87,6 +88,10 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		if (buttonID == 6) {
 
 			TechnologyGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 7) {
+
+			ExplosionGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 8) {
 
