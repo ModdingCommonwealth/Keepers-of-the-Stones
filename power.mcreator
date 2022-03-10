@@ -10578,6 +10578,133 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "ExplosionStone",
+      "type": "item",
+      "sortid": 618,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_stone",
+      "path": "~/Explosion"
+    },
+    {
+      "name": "RechargeExplosionStone",
+      "type": "potioneffect",
+      "sortid": 619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_explosion_stone",
+      "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionMaster",
+      "type": "potioneffect",
+      "sortid": 620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_master",
+      "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionMasterEffectStart",
+      "type": "procedure",
+      "sortid": 621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionMasterEffects",
+      "type": "procedure",
+      "sortid": 623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionStoneUse",
+      "type": "procedure",
+      "sortid": 624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Explosion"
     }
   ],
   "variable_elements": [
@@ -11036,6 +11163,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "explosion",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "explosion_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -11161,6 +11300,7 @@
       "item.power.technology_battery": "Батарея",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "effect.power.explosion_master": "Мастер Взрыва",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.recharge_shadow_stone": "Перезарядка",
       "effect.power.greenery_master": "Мастер Зелени",
@@ -11176,6 +11316,7 @@
       "key.categories.stones": "Хранители Камней",
       "item.power.crystal_helmet": "Кристаллическая Каска",
       "item.power.wind_helmet": "Воздушная Шапка",
+      "item.power.explosion_stone": "Камень Взрыва",
       "effect.power.recharge_greenery_stone": "Перезарядка",
       "item.power.crystal_shield": "Кристаллический Щит",
       "item.power.creation_leggings": "Creation Leggings",
@@ -11341,6 +11482,7 @@
       "effect.power.water_master": "Мастер Воды",
       "item.power.light_boots": "Light Boots",
       "item.power.magic_fireball": "Волшебный Огненный шар",
+      "effect.power.recharge_explosion_stone": "Перезарядка",
       "item.power.earth_stone": "Камень Земли",
       "item.power.crystal_stone": "Камень Кристалла",
       "item.power.rain_battery": "Батарея",
@@ -11533,6 +11675,7 @@
       "item.power.technology_battery": "Battery",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "effect.power.explosion_master": "Master of Explosion",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
@@ -11548,6 +11691,7 @@
       "key.categories.stones": "Keepers of the Stones",
       "item.power.crystal_helmet": "Crystal Helmet",
       "item.power.wind_helmet": "Air Helmet",
+      "item.power.explosion_stone": "Explosion Stone",
       "item.power.crystal_shield": "Crystal Shield",
       "effect.power.recharge_greenery_stone": "Recharge",
       "item.power.creation_leggings": "Creation Leggings",
@@ -11713,6 +11857,7 @@
       "effect.power.water_master": "Master of Water",
       "item.power.light_boots": "Light Boots",
       "item.power.magic_fireball": "Magic Fireball",
+      "effect.power.recharge_explosion_stone": "Recharge",
       "item.power.earth_stone": "Earth Stone",
       "item.power.crystal_stone": "Crystal Stone",
       "item.power.rain_battery": "Battery",

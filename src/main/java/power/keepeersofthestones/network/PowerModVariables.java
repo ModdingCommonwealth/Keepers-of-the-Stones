@@ -113,6 +113,7 @@ public class PowerModVariables {
 			clone.battery = original.battery;
 			clone.power_level = original.power_level;
 			clone.teleportation = original.teleportation;
+			clone.explosion = original.explosion;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -272,6 +273,7 @@ public class PowerModVariables {
 		public double oposx = 0;
 		public double oposy = 0;
 		public double oposz = 0;
+		public boolean explosion_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -290,6 +292,7 @@ public class PowerModVariables {
 			oposx = nbt.getDouble("oposx");
 			oposy = nbt.getDouble("oposy");
 			oposz = nbt.getDouble("oposz");
+			explosion_stone = nbt.getBoolean("explosion_stone");
 		}
 
 		@Override
@@ -304,6 +307,7 @@ public class PowerModVariables {
 			nbt.putDouble("oposx", oposx);
 			nbt.putDouble("oposy", oposy);
 			nbt.putDouble("oposz", oposz);
+			nbt.putBoolean("explosion_stone", explosion_stone);
 			return nbt;
 		}
 
@@ -433,6 +437,7 @@ public class PowerModVariables {
 		public boolean recharge_spell_energy = false;
 		public boolean teleportation = false;
 		public boolean portalstop = false;
+		public boolean explosion = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -481,6 +486,7 @@ public class PowerModVariables {
 			nbt.putBoolean("recharge_spell_energy", recharge_spell_energy);
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("portalstop", portalstop);
+			nbt.putBoolean("explosion", explosion);
 			return nbt;
 		}
 
@@ -526,6 +532,7 @@ public class PowerModVariables {
 			recharge_spell_energy = nbt.getBoolean("recharge_spell_energy");
 			teleportation = nbt.getBoolean("teleportation");
 			portalstop = nbt.getBoolean("portalstop");
+			explosion = nbt.getBoolean("explosion");
 		}
 	}
 
@@ -591,6 +598,7 @@ public class PowerModVariables {
 					variables.recharge_spell_energy = message.data.recharge_spell_energy;
 					variables.teleportation = message.data.teleportation;
 					variables.portalstop = message.data.portalstop;
+					variables.explosion = message.data.explosion;
 				}
 			});
 			context.setPacketHandled(true);

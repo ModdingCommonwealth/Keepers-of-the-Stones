@@ -42,7 +42,7 @@ public class DetransformKeyPriNazhatiiKlavishiProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.METAL_MASTER);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.LIGHT_MASTER);
+			_entity.removeEffect(PowerModMobEffects.FIRE_MASTER);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.SHADOW_MASTER);
 		if (entity instanceof LivingEntity _entity)
@@ -65,5 +65,7 @@ public class DetransformKeyPriNazhatiiKlavishiProcedure {
 			_entity.removeEffect(PowerModMobEffects.TIME_MASTER_EFFECT);
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.TELEPORTATION_MASTER);
+		if (entity instanceof LivingEntity _entity)
+			_entity.removeEffect(PowerModMobEffects.EXPLOSION_MASTER);
 	}
 }

@@ -136,6 +136,7 @@ import power.keepeersofthestones.item.FireStoneItem;
 import power.keepeersofthestones.item.FireItem;
 import power.keepeersofthestones.item.FireBatteryItem;
 import power.keepeersofthestones.item.FertilizerItem;
+import power.keepeersofthestones.item.ExplosionStoneItem;
 import power.keepeersofthestones.item.EnergyStoneItem;
 import power.keepeersofthestones.item.EnergyStaffItem;
 import power.keepeersofthestones.item.EnergySphereItem;
@@ -480,6 +481,7 @@ public class PowerModItems {
 	public static final Item PORTAL_BLAST = register(new PortalBlastItem());
 	public static final Item BLUE_PORTAL = register(PowerModBlocks.BLUE_PORTAL, null);
 	public static final Item ORANGE_PORTAL = register(PowerModBlocks.ORANGE_PORTAL, null);
+	public static final Item EXPLOSION_STONE = register(new ExplosionStoneItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

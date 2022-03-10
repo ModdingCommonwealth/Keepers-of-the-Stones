@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Explosion",
+    "icon": "explosion_master.png",
+    "color": {
+      "value": -6737152,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ExplosionMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "ExplosionMasterEffects"
+    },
+    "onExpired": {
+      "name": "ExplosionMasterEffectEnd"
+    }
+  }
+}

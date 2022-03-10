@@ -33,6 +33,7 @@ import power.keepeersofthestones.potion.RechargeLavaStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeIceStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeGreeneryStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeFireStoneMobEffect;
+import power.keepeersofthestones.potion.RechargeExplosionStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeEnergyStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeEarthStoneMobEffect;
 import power.keepeersofthestones.potion.RechargeDestructionStoneMobEffect;
@@ -55,6 +56,7 @@ import power.keepeersofthestones.potion.IceMasterMobEffect;
 import power.keepeersofthestones.potion.GreeneryMasterMobEffect;
 import power.keepeersofthestones.potion.FireMasterMobEffect;
 import power.keepeersofthestones.potion.FireFlyingMobEffect;
+import power.keepeersofthestones.potion.ExplosionMasterMobEffect;
 import power.keepeersofthestones.potion.EnergyMasterMobEffect;
 import power.keepeersofthestones.potion.EarthMasterMobEffect;
 import power.keepeersofthestones.potion.DestructionMasterMobEffect;
@@ -139,6 +141,8 @@ public class PowerModMobEffects {
 	public static final MobEffect RAIN_FLY = register(new RainFlyMobEffect());
 	public static final MobEffect RECHARGE_TELEPORTATION_STONE = register(new RechargeTeleportationStoneMobEffect());
 	public static final MobEffect TELEPORTATION_MASTER = register(new TeleportationMasterMobEffect());
+	public static final MobEffect RECHARGE_EXPLOSION_STONE = register(new RechargeExplosionStoneMobEffect());
+	public static final MobEffect EXPLOSION_MASTER = register(new ExplosionMasterMobEffect());
 
 	private static MobEffect register(MobEffect effect) {
 		REGISTRY.add(effect);
