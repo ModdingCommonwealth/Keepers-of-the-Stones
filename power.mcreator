@@ -10741,6 +10741,32 @@
         "ec": true
       },
       "path": "~/Explosion"
+    },
+    {
+      "name": "ExplosionBattery",
+      "type": "item",
+      "sortid": 627,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "ExplosionBatteryUse",
+      "type": "procedure",
+      "sortid": 628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -11327,6 +11353,7 @@
       "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.ocean_sword": "Меч Океана",
       "item.power.sun_chestplate": "Sun Chestplate",
+      "item.power.explosion_battery": "Battery",
       "item.power.tornado_stone": "Камень Торнадо",
       "itemGroup.tabbatteries": "Батареи",
       "item.power.cosmos_battery": "Батарея",
@@ -11706,6 +11733,7 @@
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.ocean_sword": "Ocean Sword",
       "item.power.sun_chestplate": "Sun Chestplate",
+      "item.power.explosion_battery": "Battery",
       "item.power.tornado_stone": "Tornado Stone",
       "itemGroup.tabbatteries": "Batteries",
       "item.power.cosmos_battery": "Battery",
@@ -12143,7 +12171,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.6.10.3",
+    "version": "1.7.0.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

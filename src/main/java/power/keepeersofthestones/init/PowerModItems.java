@@ -137,6 +137,7 @@ import power.keepeersofthestones.item.FireItem;
 import power.keepeersofthestones.item.FireBatteryItem;
 import power.keepeersofthestones.item.FertilizerItem;
 import power.keepeersofthestones.item.ExplosionStoneItem;
+import power.keepeersofthestones.item.ExplosionBatteryItem;
 import power.keepeersofthestones.item.ExplodeItem;
 import power.keepeersofthestones.item.EnergyStoneItem;
 import power.keepeersofthestones.item.EnergyStaffItem;
@@ -487,6 +488,7 @@ public class PowerModItems {
 	public static final Item EXPLODE_CHESTPLATE = register(new ExplodeItem.Chestplate());
 	public static final Item EXPLODE_LEGGINGS = register(new ExplodeItem.Leggings());
 	public static final Item EXPLODE_BOOTS = register(new ExplodeItem.Boots());
+	public static final Item EXPLOSION_BATTERY = register(new ExplosionBatteryItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
