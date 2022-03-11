@@ -489,6 +489,7 @@ public class PowerModItems {
 	public static final Item EXPLODE_LEGGINGS = register(new ExplodeItem.Leggings());
 	public static final Item EXPLODE_BOOTS = register(new ExplodeItem.Boots());
 	public static final Item EXPLOSION_BATTERY = register(new ExplosionBatteryItem());
+	public static final Item DETONATOR_TNT = register(PowerModBlocks.DETONATOR_TNT, PowerModTabs.TAB_BASIC_GROUP);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

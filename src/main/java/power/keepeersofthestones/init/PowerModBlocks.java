@@ -11,6 +11,7 @@ import power.keepeersofthestones.block.SoundBarrierBlockBlock;
 import power.keepeersofthestones.block.OrangePortalBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.block.EnergyBlockBlock;
+import power.keepeersofthestones.block.DetonatorTNTBlock;
 import power.keepeersofthestones.block.CrystalShieldBlockBlock;
 import power.keepeersofthestones.block.ClusterBlockBlock;
 import power.keepeersofthestones.block.BluePortalBlock;
@@ -43,6 +44,7 @@ public class PowerModBlocks {
 	public static final Block TECHNOBARRIER_BLOCK = register(new TechnobarrierBlockBlock());
 	public static final Block BLUE_PORTAL = register(new BluePortalBlock());
 	public static final Block ORANGE_PORTAL = register(new OrangePortalBlock());
+	public static final Block DETONATOR_TNT = register(new DetonatorTNTBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

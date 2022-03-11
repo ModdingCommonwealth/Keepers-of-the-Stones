@@ -10767,6 +10767,44 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "DetonatorTNT",
+      "type": "block",
+      "sortid": 629,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_tnt",
+      "path": "~/Explosion"
+    },
+    {
+      "name": "DetonatorTNTExplode",
+      "type": "procedure",
+      "sortid": 630,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonator_tnt_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Explosion"
     }
   ],
   "variable_elements": [
@@ -11294,6 +11332,7 @@
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.power.recharge_creation_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
+      "block.power.detonator_tnt": "Detonator TNT",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.teleportation_helmet": "Teleportation Helmet",
       "item.power.sound_emitate": "Издать Звук",
@@ -11674,6 +11713,7 @@
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.power.recharge_creation_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
+      "block.power.detonator_tnt": "Detonator TNT",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.teleportation_helmet": "Teleportation Helmet",
       "item.power.sound_emitate": "Sound Emitate",

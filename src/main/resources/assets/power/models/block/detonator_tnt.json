@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "power:blocks/detonator_tnt_top",
+    "up": "power:blocks/detonator_tnt_top",
+    "north": "power:blocks/detonator_tnt_front",
+    "east": "power:blocks/detonator_tnt_side",
+    "south": "power:blocks/detonator_tnt_side",
+    "west": "power:blocks/detonator_tnt_side",
+    "particle": "power:blocks/detonator_tnt_top"
+  }
+}

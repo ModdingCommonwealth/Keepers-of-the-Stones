@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "power:block/detonator_tnt"
+    },
+    "facing=east": {
+      "model": "power:block/detonator_tnt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "power:block/detonator_tnt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "power:block/detonator_tnt",
+      "y": 270
+    }
+  }
+}
