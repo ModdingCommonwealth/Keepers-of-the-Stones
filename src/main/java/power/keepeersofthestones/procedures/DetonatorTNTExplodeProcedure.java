@@ -39,7 +39,7 @@ public class DetonatorTNTExplodeProcedure {
 			}
 
 			private void run() {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PowerModBlocks.DETONATOR_TNT) {
+				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PowerModBlocks.DETONATOR_TNT.get()) {
 					world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = new PrimedTnt(EntityType.TNT, _level);

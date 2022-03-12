@@ -21,7 +21,6 @@ import java.util.List;
 public class EnergyBatteryItem extends Item {
 	public EnergyBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("energy_battery");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class EnergyBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7eEnergy"));
+		list.add(new TextComponent("\uFFFDeEnergy"));
 	}
 
 	@Override

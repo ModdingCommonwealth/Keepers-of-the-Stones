@@ -67,90 +67,106 @@ import power.keepeersofthestones.potion.BloodMasterMobEffect;
 import power.keepeersofthestones.potion.AnimalsMasterMobEffect;
 import power.keepeersofthestones.potion.AirMasterMobEffect;
 import power.keepeersofthestones.potion.AccelerationTimeEffectMobEffect;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModMobEffects {
-	private static final List<MobEffect> REGISTRY = new ArrayList<>();
-	public static final MobEffect FIRE_MASTER = register(new FireMasterMobEffect());
-	public static final MobEffect AIR_MASTER = register(new AirMasterMobEffect());
-	public static final MobEffect WATER_MASTER = register(new WaterMasterMobEffect());
-	public static final MobEffect EARTH_MASTER = register(new EarthMasterMobEffect());
-	public static final MobEffect RECHARGE_FIRE_STONE = register(new RechargeFireStoneMobEffect());
-	public static final MobEffect RECHARGE_AIR_STONE = register(new RechargeAirStoneMobEffect());
-	public static final MobEffect RECHARGE_WATER_STONE = register(new RechargeWaterStoneMobEffect());
-	public static final MobEffect RECHARGE_EARTH_STONE = register(new RechargeEarthStoneMobEffect());
-	public static final MobEffect ENERGY_MASTER = register(new EnergyMasterMobEffect());
-	public static final MobEffect RECHARGE_ENERGY_STONE = register(new RechargeEnergyStoneMobEffect());
-	public static final MobEffect ICE_MASTER = register(new IceMasterMobEffect());
-	public static final MobEffect RECHARGE_ICE_STONE = register(new RechargeIceStoneMobEffect());
-	public static final MobEffect LIGHTNING_MASTER = register(new LightningMasterMobEffect());
-	public static final MobEffect RECHARGE_LIGHTNING_STONE = register(new RechargeLightningStoneMobEffect());
-	public static final MobEffect SOUND_MASTER = register(new SoundMasterMobEffect());
-	public static final MobEffect RECHARGE_SOUND_STONE = register(new RechargeSoundStoneMobEffect());
-	public static final MobEffect CRYSTAL_MASTER = register(new CrystalMasterMobEffect());
-	public static final MobEffect RECHARGE_CRYSTAL_STONE = register(new RechargeCrystalStoneMobEffect());
-	public static final MobEffect LAVA_MASTER = register(new LavaMasterMobEffect());
-	public static final MobEffect RECHARGE_LAVA_STONE = register(new RechargeLavaStoneMobEffect());
-	public static final MobEffect RAIN_MASTER = register(new RainMasterMobEffect());
-	public static final MobEffect RECHARGE_RAIN_STONE = register(new RechargeRainStoneMobEffect());
-	public static final MobEffect TORNADO_MASTER = register(new TornadoMasterMobEffect());
-	public static final MobEffect RECHARGE_TORNADO_STONE = register(new RechargeTornadoStoneMobEffect());
-	public static final MobEffect OCEAN_MASTER = register(new OceanMasterMobEffect());
-	public static final MobEffect RECHARGE_OCEAN_STONE = register(new RechargeOceanStoneMobEffect());
-	public static final MobEffect GREENERY_MASTER = register(new GreeneryMasterMobEffect());
-	public static final MobEffect RECHARGE_GREENERY_STONE = register(new RechargeGreeneryStoneMobEffect());
-	public static final MobEffect ANIMALS_MASTER = register(new AnimalsMasterMobEffect());
-	public static final MobEffect RECHARGE_ANIMALS_STONE = register(new RechargeAnimalsStoneMobEffect());
-	public static final MobEffect INVINCIBILITY = register(new InvincibilityMobEffect());
-	public static final MobEffect METAL_MASTER = register(new MetalMasterMobEffect());
-	public static final MobEffect RECHARGE_METAL_STONE = register(new RechargeMetalStoneMobEffect());
-	public static final MobEffect LIGHT_MASTER = register(new LightMasterMobEffect());
-	public static final MobEffect RECHARGE_LIGHT_STONE = register(new RechargeLightStoneMobEffect());
-	public static final MobEffect SHADOW_MASTER = register(new ShadowMasterMobEffect());
-	public static final MobEffect RECHARGE_SHADOW_STONE = register(new RechargeShadowStoneMobEffect());
-	public static final MobEffect VACUUM_MASTER = register(new VacuumMasterMobEffect());
-	public static final MobEffect RECHARGE_VACUUM_STONE = register(new RechargeVacuumStoneMobEffect());
-	public static final MobEffect RECHARGE_SUN_STONE = register(new RechargeSunStoneMobEffect());
-	public static final MobEffect SUN_MASTER = register(new SunMasterMobEffect());
-	public static final MobEffect MOON_MASTER = register(new MoonMasterMobEffect());
-	public static final MobEffect RECHARGE_MOON_STONE = register(new RechargeMoonStoneMobEffect());
-	public static final MobEffect RECHARGE_CREATION_STONE = register(new RechargeCreationStoneMobEffect());
-	public static final MobEffect CREATION_MASTER = register(new CreationMasterMobEffect());
-	public static final MobEffect RECHARGE_DESTRUCTION_STONE = register(new RechargeDestructionStoneMobEffect());
-	public static final MobEffect DESTRUCTION_MASTER = register(new DestructionMasterMobEffect());
-	public static final MobEffect COSMOS_MASTER = register(new CosmosMasterMobEffect());
-	public static final MobEffect RECHARGE_COSMOS_STONE = register(new RechargeCosmosStoneMobEffect());
-	public static final MobEffect RECHARGE_BLOOD_STONE = register(new RechargeBloodStoneMobEffect());
-	public static final MobEffect BLOOD_MASTER = register(new BloodMasterMobEffect());
-	public static final MobEffect TECHNOLOGY_MASTER = register(new TechnologyMasterMobEffect());
-	public static final MobEffect RECHARGE_TECHNOLOGY_STONE = register(new RechargeTechnologyStoneMobEffect());
-	public static final MobEffect RECHARGE_TIME_STONE = register(new RechargeTimeStoneMobEffect());
-	public static final MobEffect TIME_MASTER_EFFECT = register(new TimeMasterEffectMobEffect());
-	public static final MobEffect ACCELERATION_TIME_EFFECT = register(new AccelerationTimeEffectMobEffect());
-	public static final MobEffect TIME_STOP_EFFECT = register(new TimeStopEffectMobEffect());
-	public static final MobEffect FIRE_FLYING = register(new FireFlyingMobEffect());
-	public static final MobEffect RAIN_FLY = register(new RainFlyMobEffect());
-	public static final MobEffect RECHARGE_TELEPORTATION_STONE = register(new RechargeTeleportationStoneMobEffect());
-	public static final MobEffect TELEPORTATION_MASTER = register(new TeleportationMasterMobEffect());
-	public static final MobEffect RECHARGE_EXPLOSION_STONE = register(new RechargeExplosionStoneMobEffect());
-	public static final MobEffect EXPLOSION_MASTER = register(new ExplosionMasterMobEffect());
-
-	private static MobEffect register(MobEffect effect) {
-		REGISTRY.add(effect);
-		return effect;
-	}
-
-	@SubscribeEvent
-	public static void registerMobEffects(RegistryEvent.Register<MobEffect> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new MobEffect[0]));
-	}
+	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, PowerMod.MODID);
+	public static final RegistryObject<MobEffect> FIRE_MASTER = REGISTRY.register("fire_master", () -> new FireMasterMobEffect());
+	public static final RegistryObject<MobEffect> AIR_MASTER = REGISTRY.register("air_master", () -> new AirMasterMobEffect());
+	public static final RegistryObject<MobEffect> WATER_MASTER = REGISTRY.register("water_master", () -> new WaterMasterMobEffect());
+	public static final RegistryObject<MobEffect> EARTH_MASTER = REGISTRY.register("earth_master", () -> new EarthMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_FIRE_STONE = REGISTRY.register("recharge_fire_stone",
+			() -> new RechargeFireStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_AIR_STONE = REGISTRY.register("recharge_air_stone", () -> new RechargeAirStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_WATER_STONE = REGISTRY.register("recharge_water_stone",
+			() -> new RechargeWaterStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_EARTH_STONE = REGISTRY.register("recharge_earth_stone",
+			() -> new RechargeEarthStoneMobEffect());
+	public static final RegistryObject<MobEffect> ENERGY_MASTER = REGISTRY.register("energy_master", () -> new EnergyMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_ENERGY_STONE = REGISTRY.register("recharge_energy_stone",
+			() -> new RechargeEnergyStoneMobEffect());
+	public static final RegistryObject<MobEffect> ICE_MASTER = REGISTRY.register("ice_master", () -> new IceMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_ICE_STONE = REGISTRY.register("recharge_ice_stone", () -> new RechargeIceStoneMobEffect());
+	public static final RegistryObject<MobEffect> LIGHTNING_MASTER = REGISTRY.register("lightning_master", () -> new LightningMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_LIGHTNING_STONE = REGISTRY.register("recharge_lightning_stone",
+			() -> new RechargeLightningStoneMobEffect());
+	public static final RegistryObject<MobEffect> SOUND_MASTER = REGISTRY.register("sound_master", () -> new SoundMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_SOUND_STONE = REGISTRY.register("recharge_sound_stone",
+			() -> new RechargeSoundStoneMobEffect());
+	public static final RegistryObject<MobEffect> CRYSTAL_MASTER = REGISTRY.register("crystal_master", () -> new CrystalMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_CRYSTAL_STONE = REGISTRY.register("recharge_crystal_stone",
+			() -> new RechargeCrystalStoneMobEffect());
+	public static final RegistryObject<MobEffect> LAVA_MASTER = REGISTRY.register("lava_master", () -> new LavaMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_LAVA_STONE = REGISTRY.register("recharge_lava_stone",
+			() -> new RechargeLavaStoneMobEffect());
+	public static final RegistryObject<MobEffect> RAIN_MASTER = REGISTRY.register("rain_master", () -> new RainMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_RAIN_STONE = REGISTRY.register("recharge_rain_stone",
+			() -> new RechargeRainStoneMobEffect());
+	public static final RegistryObject<MobEffect> TORNADO_MASTER = REGISTRY.register("tornado_master", () -> new TornadoMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_TORNADO_STONE = REGISTRY.register("recharge_tornado_stone",
+			() -> new RechargeTornadoStoneMobEffect());
+	public static final RegistryObject<MobEffect> OCEAN_MASTER = REGISTRY.register("ocean_master", () -> new OceanMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_OCEAN_STONE = REGISTRY.register("recharge_ocean_stone",
+			() -> new RechargeOceanStoneMobEffect());
+	public static final RegistryObject<MobEffect> GREENERY_MASTER = REGISTRY.register("greenery_master", () -> new GreeneryMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_GREENERY_STONE = REGISTRY.register("recharge_greenery_stone",
+			() -> new RechargeGreeneryStoneMobEffect());
+	public static final RegistryObject<MobEffect> ANIMALS_MASTER = REGISTRY.register("animals_master", () -> new AnimalsMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_ANIMALS_STONE = REGISTRY.register("recharge_animals_stone",
+			() -> new RechargeAnimalsStoneMobEffect());
+	public static final RegistryObject<MobEffect> INVINCIBILITY = REGISTRY.register("invincibility", () -> new InvincibilityMobEffect());
+	public static final RegistryObject<MobEffect> METAL_MASTER = REGISTRY.register("metal_master", () -> new MetalMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_METAL_STONE = REGISTRY.register("recharge_metal_stone",
+			() -> new RechargeMetalStoneMobEffect());
+	public static final RegistryObject<MobEffect> LIGHT_MASTER = REGISTRY.register("light_master", () -> new LightMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_LIGHT_STONE = REGISTRY.register("recharge_light_stone",
+			() -> new RechargeLightStoneMobEffect());
+	public static final RegistryObject<MobEffect> SHADOW_MASTER = REGISTRY.register("shadow_master", () -> new ShadowMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_SHADOW_STONE = REGISTRY.register("recharge_shadow_stone",
+			() -> new RechargeShadowStoneMobEffect());
+	public static final RegistryObject<MobEffect> VACUUM_MASTER = REGISTRY.register("vacuum_master", () -> new VacuumMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_VACUUM_STONE = REGISTRY.register("recharge_vacuum_stone",
+			() -> new RechargeVacuumStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_SUN_STONE = REGISTRY.register("recharge_sun_stone", () -> new RechargeSunStoneMobEffect());
+	public static final RegistryObject<MobEffect> SUN_MASTER = REGISTRY.register("sun_master", () -> new SunMasterMobEffect());
+	public static final RegistryObject<MobEffect> MOON_MASTER = REGISTRY.register("moon_master", () -> new MoonMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_MOON_STONE = REGISTRY.register("recharge_moon_stone",
+			() -> new RechargeMoonStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_CREATION_STONE = REGISTRY.register("recharge_creation_stone",
+			() -> new RechargeCreationStoneMobEffect());
+	public static final RegistryObject<MobEffect> CREATION_MASTER = REGISTRY.register("creation_master", () -> new CreationMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_DESTRUCTION_STONE = REGISTRY.register("recharge_destruction_stone",
+			() -> new RechargeDestructionStoneMobEffect());
+	public static final RegistryObject<MobEffect> DESTRUCTION_MASTER = REGISTRY.register("destruction_master",
+			() -> new DestructionMasterMobEffect());
+	public static final RegistryObject<MobEffect> COSMOS_MASTER = REGISTRY.register("cosmos_master", () -> new CosmosMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_COSMOS_STONE = REGISTRY.register("recharge_cosmos_stone",
+			() -> new RechargeCosmosStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_BLOOD_STONE = REGISTRY.register("recharge_blood_stone",
+			() -> new RechargeBloodStoneMobEffect());
+	public static final RegistryObject<MobEffect> BLOOD_MASTER = REGISTRY.register("blood_master", () -> new BloodMasterMobEffect());
+	public static final RegistryObject<MobEffect> TECHNOLOGY_MASTER = REGISTRY.register("technology_master", () -> new TechnologyMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_TECHNOLOGY_STONE = REGISTRY.register("recharge_technology_stone",
+			() -> new RechargeTechnologyStoneMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_TIME_STONE = REGISTRY.register("recharge_time_stone",
+			() -> new RechargeTimeStoneMobEffect());
+	public static final RegistryObject<MobEffect> TIME_MASTER_EFFECT = REGISTRY.register("time_master_effect", () -> new TimeMasterEffectMobEffect());
+	public static final RegistryObject<MobEffect> ACCELERATION_TIME_EFFECT = REGISTRY.register("acceleration_time_effect",
+			() -> new AccelerationTimeEffectMobEffect());
+	public static final RegistryObject<MobEffect> TIME_STOP_EFFECT = REGISTRY.register("time_stop_effect", () -> new TimeStopEffectMobEffect());
+	public static final RegistryObject<MobEffect> FIRE_FLYING = REGISTRY.register("fire_flying", () -> new FireFlyingMobEffect());
+	public static final RegistryObject<MobEffect> RAIN_FLY = REGISTRY.register("rain_fly", () -> new RainFlyMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_TELEPORTATION_STONE = REGISTRY.register("recharge_teleportation_stone",
+			() -> new RechargeTeleportationStoneMobEffect());
+	public static final RegistryObject<MobEffect> TELEPORTATION_MASTER = REGISTRY.register("teleportation_master",
+			() -> new TeleportationMasterMobEffect());
+	public static final RegistryObject<MobEffect> RECHARGE_EXPLOSION_STONE = REGISTRY.register("recharge_explosion_stone",
+			() -> new RechargeExplosionStoneMobEffect());
+	public static final RegistryObject<MobEffect> EXPLOSION_MASTER = REGISTRY.register("explosion_master", () -> new ExplosionMasterMobEffect());
 }

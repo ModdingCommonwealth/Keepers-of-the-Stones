@@ -19,7 +19,7 @@ public class EclipseUseProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _lvl && _lvl.isDay()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ECLIPSE) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ECLIPSE.get()) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 				if (entity instanceof Player _player)

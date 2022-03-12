@@ -21,7 +21,6 @@ import java.util.List;
 public class TimeBatteryItem extends Item {
 	public TimeBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("time_battery");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class TimeBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A74Time"));
+		list.add(new TextComponent("\uFFFD4Time"));
 	}
 
 	@Override

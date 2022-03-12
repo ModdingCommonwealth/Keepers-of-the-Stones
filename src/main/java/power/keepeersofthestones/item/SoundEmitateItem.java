@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 public class SoundEmitateItem extends Item {
 	public SoundEmitateItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("sound_emitate");
 	}
 
 	@Override

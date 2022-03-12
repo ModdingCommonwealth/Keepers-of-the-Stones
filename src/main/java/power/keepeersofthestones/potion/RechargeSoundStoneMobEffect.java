@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeSoundStoneMobEffect extends MobEffect {
 	public RechargeSoundStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -13434829);
-		setRegistryName("recharge_sound_stone");
 	}
 
 	@Override

@@ -61,7 +61,6 @@ public abstract class TimeItem extends ArmorItem {
 	public static class Helmet extends TimeItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("time_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class TimeItem extends ArmorItem {
 	public static class Chestplate extends TimeItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("time_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class TimeItem extends ArmorItem {
 	public static class Leggings extends TimeItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("time_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class TimeItem extends ArmorItem {
 	public static class Boots extends TimeItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("time_boots");
 		}
 
 		@Override

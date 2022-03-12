@@ -33,6 +33,5 @@ public class ShadowSwordItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.4f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("shadow_sword");
 	}
 }

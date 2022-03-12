@@ -16,7 +16,6 @@ import net.minecraft.world.InteractionHand;
 public class AirStoneItem extends Item {
 	public AirStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BASIC_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("air_stone");
 	}
 
 	@Override

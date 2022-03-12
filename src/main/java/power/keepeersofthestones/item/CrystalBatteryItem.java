@@ -21,7 +21,6 @@ import java.util.List;
 public class CrystalBatteryItem extends Item {
 	public CrystalBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("crystal_battery");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class CrystalBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7dCrystal"));
+		list.add(new TextComponent("\uFFFDdCrystal"));
 	}
 
 	@Override

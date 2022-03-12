@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionHand;
 public class TpOnEarthItem extends Item {
 	public TpOnEarthItem() {
 		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("tp_on_earth");
 	}
 
 	@Override

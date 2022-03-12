@@ -3,7 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.EnergyStaffUseProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -38,18 +37,12 @@ public class EnergyStaffItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.7999999999999998f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("energy_staff");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
-		EnergyStaffUseProcedure.execute(world, entity, sourceentity, itemstack);
+		EnergyStaffUseProcedure.execute(entity.level, entity, sourceentity, itemstack);
 		return retval;
 	}
 }

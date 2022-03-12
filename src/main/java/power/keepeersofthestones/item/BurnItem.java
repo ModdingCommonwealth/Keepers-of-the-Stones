@@ -14,7 +14,6 @@ import net.minecraft.world.InteractionResult;
 public class BurnItem extends Item {
 	public BurnItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("burn");
 	}
 
 	@Override

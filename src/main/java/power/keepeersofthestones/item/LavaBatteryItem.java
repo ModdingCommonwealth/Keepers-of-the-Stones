@@ -21,7 +21,6 @@ import java.util.List;
 public class LavaBatteryItem extends Item {
 	public LavaBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("lava_battery");
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class LavaBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A76Lava"));
+		list.add(new TextComponent("\uFFFD6Lava"));
 	}
 
 	@Override

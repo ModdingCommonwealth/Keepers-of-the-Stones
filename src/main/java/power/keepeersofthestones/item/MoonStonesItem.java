@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class MoonStonesItem extends Item {
 	public MoonStonesItem() {
 		super(new Item.Properties().tab(null).durability(100));
-		setRegistryName("moon_stones");
 	}
 
 	@Override

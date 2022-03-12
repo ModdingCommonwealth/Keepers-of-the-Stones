@@ -33,6 +33,5 @@ public class GalacticSwordItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.5999999999999999f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("galactic_sword");
 	}
 }

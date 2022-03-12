@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class TigerClawItem extends Item {
 	public TigerClawItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("tiger_claw");
 	}
 
 	@Override

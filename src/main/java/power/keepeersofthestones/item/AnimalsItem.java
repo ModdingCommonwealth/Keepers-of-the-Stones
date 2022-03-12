@@ -61,7 +61,6 @@ public abstract class AnimalsItem extends ArmorItem {
 	public static class Helmet extends AnimalsItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("animals_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class AnimalsItem extends ArmorItem {
 	public static class Chestplate extends AnimalsItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("animals_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class AnimalsItem extends ArmorItem {
 	public static class Leggings extends AnimalsItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("animals_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class AnimalsItem extends ArmorItem {
 	public static class Boots extends AnimalsItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("animals_boots");
 		}
 
 		@Override

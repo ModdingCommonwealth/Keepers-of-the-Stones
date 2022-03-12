@@ -61,7 +61,6 @@ public abstract class CrystalItem extends ArmorItem {
 	public static class Helmet extends CrystalItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("crystal_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class CrystalItem extends ArmorItem {
 	public static class Chestplate extends CrystalItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("crystal_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class CrystalItem extends ArmorItem {
 	public static class Leggings extends CrystalItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("crystal_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class CrystalItem extends ArmorItem {
 	public static class Boots extends CrystalItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("crystal_boots");
 		}
 
 		@Override

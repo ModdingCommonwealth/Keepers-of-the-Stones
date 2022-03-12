@@ -61,7 +61,6 @@ public abstract class WaterItem extends ArmorItem {
 	public static class Helmet extends WaterItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("water_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class WaterItem extends ArmorItem {
 	public static class Chestplate extends WaterItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("water_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class WaterItem extends ArmorItem {
 	public static class Leggings extends WaterItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("water_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class WaterItem extends ArmorItem {
 	public static class Boots extends WaterItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("water_boots");
 		}
 
 		@Override

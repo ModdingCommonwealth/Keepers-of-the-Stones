@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class TimeDilationItem extends Item {
 	public TimeDilationItem() {
 		super(new Item.Properties().tab(null).durability(100));
-		setRegistryName("time_dilation");
 	}
 
 	@Override

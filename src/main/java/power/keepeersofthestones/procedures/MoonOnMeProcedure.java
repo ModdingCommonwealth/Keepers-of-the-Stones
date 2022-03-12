@@ -31,7 +31,7 @@ public class MoonOnMeProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MOON) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MOON.get()) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			{
@@ -87,7 +87,7 @@ public class MoonOnMeProcedure {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
 						if (!(entity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MOON))
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MOON.get()))
 								: false)) {
 							{
 								Entity _ent = entity;

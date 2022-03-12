@@ -61,7 +61,6 @@ public abstract class WindItem extends ArmorItem {
 	public static class Helmet extends WindItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("wind_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class WindItem extends ArmorItem {
 	public static class Chestplate extends WindItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("wind_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class WindItem extends ArmorItem {
 	public static class Leggings extends WindItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("wind_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class WindItem extends ArmorItem {
 	public static class Boots extends WindItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("wind_boots");
 		}
 
 		@Override

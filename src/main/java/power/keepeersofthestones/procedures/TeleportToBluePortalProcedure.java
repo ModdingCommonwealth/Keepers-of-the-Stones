@@ -26,7 +26,7 @@ public class TeleportToBluePortalProcedure {
 								_ent.getXRot());
 				}
 				{
-					boolean _setval = (boolean) (true);
+					boolean _setval = true;
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.portalstop = _setval;
 						capability.syncPlayerVariables(entity);
@@ -54,7 +54,7 @@ public class TeleportToBluePortalProcedure {
 
 					private void run() {
 						{
-							boolean _setval = (boolean) (false);
+							boolean _setval = false;
 							entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.portalstop = _setval;
 								capability.syncPlayerVariables(entity);
