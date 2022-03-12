@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 public class TimeReversedItem extends Item {
 	public TimeReversedItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("time_reversed");
 	}
 
 	@Override

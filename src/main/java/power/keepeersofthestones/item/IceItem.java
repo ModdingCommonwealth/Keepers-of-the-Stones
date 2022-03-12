@@ -61,7 +61,6 @@ public abstract class IceItem extends ArmorItem {
 	public static class Helmet extends IceItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("ice_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class IceItem extends ArmorItem {
 	public static class Chestplate extends IceItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("ice_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class IceItem extends ArmorItem {
 	public static class Leggings extends IceItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("ice_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class IceItem extends ArmorItem {
 	public static class Boots extends IceItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("ice_boots");
 		}
 
 		@Override

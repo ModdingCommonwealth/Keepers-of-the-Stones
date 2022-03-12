@@ -3,7 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TornadoCreateInEntityProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -38,17 +37,11 @@ public class TornadoBattleAxeItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3.5f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("tornado_battle_axe");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		TornadoCreateInEntityProcedure.execute(entity);
 		return retval;
 	}

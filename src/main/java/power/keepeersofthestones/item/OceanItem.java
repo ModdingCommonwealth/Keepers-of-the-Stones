@@ -61,7 +61,6 @@ public abstract class OceanItem extends ArmorItem {
 	public static class Helmet extends OceanItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("ocean_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class OceanItem extends ArmorItem {
 	public static class Chestplate extends OceanItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("ocean_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class OceanItem extends ArmorItem {
 	public static class Leggings extends OceanItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("ocean_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class OceanItem extends ArmorItem {
 	public static class Boots extends OceanItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("ocean_boots");
 		}
 
 		@Override

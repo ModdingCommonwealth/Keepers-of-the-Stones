@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeShadowStoneMobEffect extends MobEffect {
 	public RechargeShadowStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16777165);
-		setRegistryName("recharge_shadow_stone");
 	}
 
 	@Override

@@ -5,7 +5,6 @@ import power.keepeersofthestones.procedures.LavaMasterEffectStartProcedure;
 import power.keepeersofthestones.procedures.LavaMasterEffectEndProcedure;
 import power.keepeersofthestones.procedures.LavaEffectsProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -14,7 +13,6 @@ import net.minecraft.world.effect.MobEffect;
 public class LavaMasterMobEffect extends MobEffect {
 	public LavaMasterMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -39424);
-		setRegistryName("lava_master");
 	}
 
 	@Override
@@ -24,33 +22,18 @@ public class LavaMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		LavaMasterEffectStartProcedure.execute(world, x, y, z, entity);
+		LavaMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
 		LavaEffectsProcedure.execute(entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		LavaMasterEffectEndProcedure.execute(world, x, y, z, entity);
+		LavaMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

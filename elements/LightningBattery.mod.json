@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§dLightning"
+      "ï¿½dLightning"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

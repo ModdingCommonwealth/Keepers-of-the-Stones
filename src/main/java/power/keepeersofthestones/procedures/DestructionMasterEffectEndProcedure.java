@@ -33,51 +33,51 @@ public class DestructionMasterEffectEndProcedure {
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.DESTRUCTION_STONE);
+				ItemStack _setstack = new ItemStack(PowerModItems.DESTRUCTION_STONE.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_POWER);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_POWER.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_HELMET);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_HELMET.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_CHESTPLATE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_CHESTPLATE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_LEGGINGS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_LEGGINGS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_BOOTS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE, 6000, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get(), 6000, 0, (false), (false)));
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.destruction = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.battery = _setval;
 				capability.syncPlayerVariables(entity);

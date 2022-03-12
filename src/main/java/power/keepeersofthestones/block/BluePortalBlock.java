@@ -31,7 +31,6 @@ public class BluePortalBlock extends PressurePlateBlock {
 	public BluePortalBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(90f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("blue_portal");
 	}
 
 	@Override
@@ -62,6 +61,6 @@ public class BluePortalBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BLUE_PORTAL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BLUE_PORTAL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

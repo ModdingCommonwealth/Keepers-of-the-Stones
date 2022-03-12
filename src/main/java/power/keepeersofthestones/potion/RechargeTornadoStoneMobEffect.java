@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeTornadoStoneMobEffect extends MobEffect {
 	public RechargeTornadoStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -10066432);
-		setRegistryName("recharge_tornado_stone");
 	}
 
 	@Override

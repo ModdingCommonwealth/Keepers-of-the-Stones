@@ -33,59 +33,59 @@ public class TeleportationMasterEffectEndProcedure {
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.TELEPORTATION_STONE);
+				ItemStack _setstack = new ItemStack(PowerModItems.TELEPORTATION_STONE.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.BLUE_KNIFE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.BLUE_KNIFE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.CHECKPOINT);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.CHECKPOINT.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.PORTAL_BLAST);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.PORTAL_BLAST.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_HELMET);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_HELMET.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_CHESTPLATE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_CHESTPLATE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_LEGGINGS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_LEGGINGS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_BOOTS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TELEPORTATION_STONE, 6000, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_TELEPORTATION_STONE.get(), 6000, 0, (false), (false)));
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.teleportation = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.battery = _setval;
 				capability.syncPlayerVariables(entity);

@@ -11,21 +11,21 @@ public class CheckSetProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (double) (y + 1);
+			double _setval = y + 1;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.spawny = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			double _setval = (double) x;
+			double _setval = x;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.spawnx = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			double _setval = (double) z;
+			double _setval = z;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.spawnz = _setval;
 				capability.syncPlayerVariables(entity);

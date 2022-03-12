@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeTeleportationStoneMobEffect extends MobEffect {
 	public RechargeTeleportationStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16750849);
-		setRegistryName("recharge_teleportation_stone");
 	}
 
 	@Override

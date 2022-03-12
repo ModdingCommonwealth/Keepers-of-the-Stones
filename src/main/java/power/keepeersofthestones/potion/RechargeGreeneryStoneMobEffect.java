@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeGreeneryStoneMobEffect extends MobEffect {
 	public RechargeGreeneryStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -10040320);
-		setRegistryName("recharge_greenery_stone");
 	}
 
 	@Override

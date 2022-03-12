@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionHand;
 public class SunRegenerationItem extends Item {
 	public SunRegenerationItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("sun_regeneration");
 	}
 
 	@Override

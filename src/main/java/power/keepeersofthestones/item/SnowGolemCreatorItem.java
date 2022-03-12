@@ -12,7 +12,6 @@ import net.minecraft.world.InteractionResult;
 public class SnowGolemCreatorItem extends Item {
 	public SnowGolemCreatorItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("snow_golem_creator");
 	}
 
 	@Override

@@ -15,7 +15,8 @@ public class SunRegenOnMeProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SUN_REGENERATION) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SUN_REGENERATION
+				.get()) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (entity instanceof Player _player)

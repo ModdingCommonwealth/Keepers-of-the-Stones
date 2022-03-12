@@ -61,7 +61,6 @@ public abstract class SoundItem extends ArmorItem {
 	public static class Helmet extends SoundItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("sound_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class SoundItem extends ArmorItem {
 	public static class Chestplate extends SoundItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("sound_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class SoundItem extends ArmorItem {
 	public static class Leggings extends SoundItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("sound_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class SoundItem extends ArmorItem {
 	public static class Boots extends SoundItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("sound_boots");
 		}
 
 		@Override

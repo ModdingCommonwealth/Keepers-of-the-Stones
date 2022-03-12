@@ -3,7 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.RainKnifeAttackProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -38,18 +37,12 @@ public class RainKnifeItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -1.5f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("rain_knife");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
-		RainKnifeAttackProcedure.execute(world, entity);
+		RainKnifeAttackProcedure.execute(entity.level, entity);
 		return retval;
 	}
 }

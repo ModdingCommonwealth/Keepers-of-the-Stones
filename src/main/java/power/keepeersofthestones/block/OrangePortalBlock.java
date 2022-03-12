@@ -31,7 +31,6 @@ public class OrangePortalBlock extends PressurePlateBlock {
 	public OrangePortalBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(90f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("orange_portal");
 	}
 
 	@Override
@@ -62,6 +61,6 @@ public class OrangePortalBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.ORANGE_PORTAL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.ORANGE_PORTAL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

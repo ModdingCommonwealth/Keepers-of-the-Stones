@@ -31,7 +31,7 @@ public class MarsOnMeProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MARS) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MARS.get()) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			{
@@ -87,7 +87,7 @@ public class MarsOnMeProcedure {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
 						if (!(entity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MARS))
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MARS.get()))
 								: false)) {
 							{
 								Entity _ent = entity;

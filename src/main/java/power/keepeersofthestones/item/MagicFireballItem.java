@@ -26,7 +26,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class MagicFireballItem extends Item {
 	public MagicFireballItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("magic_fireball");
 	}
 
 	@Override

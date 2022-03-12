@@ -33,6 +33,5 @@ public class LightSwordItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.4000000000000001f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("light_sword");
 	}
 }

@@ -29,7 +29,6 @@ public class VacuumWebBlockBlock extends PressurePlateBlock {
 	public VacuumWebBlockBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.SCULK).sound(SoundType.SCULK_SENSOR).strength(8f, 50f).noCollission()
 				.friction(0.1f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("vacuum_web_block");
 	}
 
 	@Override
@@ -59,6 +58,6 @@ public class VacuumWebBlockBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.VACUUM_WEB_BLOCK, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.VACUUM_WEB_BLOCK.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

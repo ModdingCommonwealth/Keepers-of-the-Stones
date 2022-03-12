@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 public class StormItem extends Item {
 	public StormItem() {
 		super(new Item.Properties().tab(null).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("storm");
 	}
 
 	@Override

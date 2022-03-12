@@ -61,7 +61,6 @@ public abstract class ExplodeItem extends ArmorItem {
 	public static class Helmet extends ExplodeItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("explode_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class ExplodeItem extends ArmorItem {
 	public static class Chestplate extends ExplodeItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("explode_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class ExplodeItem extends ArmorItem {
 	public static class Leggings extends ExplodeItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("explode_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class ExplodeItem extends ArmorItem {
 	public static class Boots extends ExplodeItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("explode_boots");
 		}
 
 		@Override

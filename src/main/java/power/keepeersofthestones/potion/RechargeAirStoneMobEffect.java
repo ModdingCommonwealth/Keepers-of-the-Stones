@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeAirStoneMobEffect extends MobEffect {
 	public RechargeAirStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -3342337);
-		setRegistryName("recharge_air_stone");
 	}
 
 	@Override

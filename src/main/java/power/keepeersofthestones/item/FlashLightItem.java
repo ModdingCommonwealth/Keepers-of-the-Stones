@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class FlashLightItem extends Item {
 	public FlashLightItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("flash_light");
 	}
 
 	@Override
