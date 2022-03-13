@@ -13,7 +13,6 @@ import net.minecraft.world.InteractionResult;
 public class IronShieldItem extends Item {
 	public IronShieldItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("iron_shield");
 	}
 
 	@Override

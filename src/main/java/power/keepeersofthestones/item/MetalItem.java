@@ -61,7 +61,6 @@ public abstract class MetalItem extends ArmorItem {
 	public static class Helmet extends MetalItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("metal_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class MetalItem extends ArmorItem {
 	public static class Chestplate extends MetalItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("metal_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class MetalItem extends ArmorItem {
 	public static class Leggings extends MetalItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("metal_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class MetalItem extends ArmorItem {
 	public static class Boots extends MetalItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("metal_boots");
 		}
 
 		@Override

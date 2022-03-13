@@ -5,7 +5,6 @@ import power.keepeersofthestones.procedures.DestructionMasterEffectsProcedure;
 import power.keepeersofthestones.procedures.DestructionMasterEffectStartProcedure;
 import power.keepeersofthestones.procedures.DestructionMasterEffectEndProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -14,7 +13,6 @@ import net.minecraft.world.effect.MobEffect;
 public class DestructionMasterMobEffect extends MobEffect {
 	public DestructionMasterMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -13421773);
-		setRegistryName("destruction_master");
 	}
 
 	@Override
@@ -24,33 +22,18 @@ public class DestructionMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		DestructionMasterEffectStartProcedure.execute(world, x, y, z, entity);
+		DestructionMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
 		DestructionMasterEffectsProcedure.execute(entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		DestructionMasterEffectEndProcedure.execute(world, x, y, z, entity);
+		DestructionMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

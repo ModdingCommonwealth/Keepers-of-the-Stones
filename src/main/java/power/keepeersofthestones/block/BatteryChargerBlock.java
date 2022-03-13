@@ -54,7 +54,6 @@ public class BatteryChargerBlock extends Block
 	public BatteryChargerBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("battery_charger");
 	}
 
 	@Override
@@ -163,6 +162,6 @@ public class BatteryChargerBlock extends Block
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BATTERY_CHARGER, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BATTERY_CHARGER.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

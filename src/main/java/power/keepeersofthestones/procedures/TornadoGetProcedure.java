@@ -17,14 +17,14 @@ public class TornadoGetProcedure {
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
 			if (!PowerModVariables.WorldVariables.get(world).tornado_stone) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.TORNADO_STONE);
+					ItemStack _setstack = new ItemStack(PowerModItems.TORNADO_STONE.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PowerModVariables.WorldVariables.get(world).tornado_stone = (boolean) (true);
+				PowerModVariables.WorldVariables.get(world).tornado_stone = true;
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = (boolean) (true);
+					boolean _setval = true;
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);

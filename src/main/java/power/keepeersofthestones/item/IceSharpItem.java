@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class IceSharpItem extends Item {
 	public IceSharpItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("ice_sharp");
 	}
 
 	@Override

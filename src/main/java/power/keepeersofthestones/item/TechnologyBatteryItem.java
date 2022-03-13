@@ -21,7 +21,6 @@ import java.util.List;
 public class TechnologyBatteryItem extends Item {
 	public TechnologyBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("technology_battery");
 	}
 
 	@Override

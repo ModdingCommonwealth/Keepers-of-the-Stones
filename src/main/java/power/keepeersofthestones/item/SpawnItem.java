@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 public class SpawnItem extends Item {
 	public SpawnItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("spawn");
 	}
 
 	@Override

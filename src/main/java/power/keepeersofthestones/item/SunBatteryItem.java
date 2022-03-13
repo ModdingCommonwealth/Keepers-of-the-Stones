@@ -21,7 +21,6 @@ import java.util.List;
 public class SunBatteryItem extends Item {
 	public SunBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("sun_battery");
 	}
 
 	@Override

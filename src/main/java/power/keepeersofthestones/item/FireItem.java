@@ -61,7 +61,6 @@ public abstract class FireItem extends ArmorItem {
 	public static class Helmet extends FireItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null).fireResistant());
-			setRegistryName("fire_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class FireItem extends ArmorItem {
 	public static class Chestplate extends FireItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null).fireResistant());
-			setRegistryName("fire_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class FireItem extends ArmorItem {
 	public static class Leggings extends FireItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null).fireResistant());
-			setRegistryName("fire_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class FireItem extends ArmorItem {
 	public static class Boots extends FireItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null).fireResistant());
-			setRegistryName("fire_boots");
 		}
 
 		@Override

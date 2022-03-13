@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeLavaStoneMobEffect extends MobEffect {
 	public RechargeLavaStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -39424);
-		setRegistryName("recharge_lava_stone");
 	}
 
 	@Override

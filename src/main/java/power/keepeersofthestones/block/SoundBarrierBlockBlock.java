@@ -18,7 +18,6 @@ import java.util.Collections;
 public class SoundBarrierBlockBlock extends Block {
 	public SoundBarrierBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GLASS).strength(3f, 100f));
-		setRegistryName("sound_barrier_block");
 	}
 
 	@Override

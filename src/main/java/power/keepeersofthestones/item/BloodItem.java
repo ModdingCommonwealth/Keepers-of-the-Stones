@@ -61,7 +61,6 @@ public abstract class BloodItem extends ArmorItem {
 	public static class Helmet extends BloodItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("blood_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class BloodItem extends ArmorItem {
 	public static class Chestplate extends BloodItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("blood_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class BloodItem extends ArmorItem {
 	public static class Leggings extends BloodItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("blood_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class BloodItem extends ArmorItem {
 	public static class Boots extends BloodItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("blood_boots");
 		}
 
 		@Override

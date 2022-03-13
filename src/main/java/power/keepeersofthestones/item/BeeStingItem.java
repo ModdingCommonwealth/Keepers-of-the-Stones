@@ -3,7 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.SpikePoisonProcedureProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -38,17 +37,11 @@ public class BeeStingItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("bee_sting");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		Level world = entity.level;
-
 		SpikePoisonProcedureProcedure.execute(entity);
 		return retval;
 	}

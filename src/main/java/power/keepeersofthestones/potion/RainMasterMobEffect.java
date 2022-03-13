@@ -5,7 +5,6 @@ import power.keepeersofthestones.procedures.RainStoneEffectsProcedure;
 import power.keepeersofthestones.procedures.RainMasterEffectStartProcedure;
 import power.keepeersofthestones.procedures.RainMasterEffectEndProcedure;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -14,7 +13,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RainMasterMobEffect extends MobEffect {
 	public RainMasterMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -6710785);
-		setRegistryName("rain_master");
 	}
 
 	@Override
@@ -24,33 +22,18 @@ public class RainMasterMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		RainMasterEffectStartProcedure.execute(world, x, y, z, entity);
+		RainMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
 		RainStoneEffectsProcedure.execute(entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		Level world = entity.level;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		RainMasterEffectEndProcedure.execute(world, x, y, z, entity);
+		RainMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

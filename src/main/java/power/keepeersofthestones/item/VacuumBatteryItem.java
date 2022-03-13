@@ -21,7 +21,6 @@ import java.util.List;
 public class VacuumBatteryItem extends Item {
 	public VacuumBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("vacuum_battery");
 	}
 
 	@Override

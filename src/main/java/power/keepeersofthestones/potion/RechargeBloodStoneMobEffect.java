@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeBloodStoneMobEffect extends MobEffect {
 	public RechargeBloodStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -6750208);
-		setRegistryName("recharge_blood_stone");
 	}
 
 	@Override

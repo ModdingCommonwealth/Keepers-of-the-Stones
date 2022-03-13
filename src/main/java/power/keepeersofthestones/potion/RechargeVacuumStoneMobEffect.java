@@ -7,7 +7,6 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeVacuumStoneMobEffect extends MobEffect {
 	public RechargeVacuumStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16751053);
-		setRegistryName("recharge_vacuum_stone");
 	}
 
 	@Override

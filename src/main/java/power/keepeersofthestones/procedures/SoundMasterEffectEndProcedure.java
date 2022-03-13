@@ -33,63 +33,63 @@ public class SoundMasterEffectEndProcedure {
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.SOUND_STONE);
+				ItemStack _setstack = new ItemStack(PowerModItems.SOUND_STONE.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_SWORD);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_SWORD.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.ACUSTICAL_EXPLODE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.ACUSTICAL_EXPLODE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BARRIER);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BARRIER.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_EMITATE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_EMITATE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_HELMET);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_HELMET.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_CHESTPLATE);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_CHESTPLATE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_LEGGINGS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_LEGGINGS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BOOTS);
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_SOUND_STONE, 6000, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_SOUND_STONE.get(), 6000, 0, (false), (false)));
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.sound = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			boolean _setval = (boolean) (false);
+			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.battery = _setval;
 				capability.syncPlayerVariables(entity);

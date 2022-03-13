@@ -61,7 +61,6 @@ public abstract class RainItem extends ArmorItem {
 	public static class Helmet extends RainItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
-			setRegistryName("rain_helmet");
 		}
 
 		@Override
@@ -73,7 +72,6 @@ public abstract class RainItem extends ArmorItem {
 	public static class Chestplate extends RainItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
-			setRegistryName("rain_chestplate");
 		}
 
 		@Override
@@ -85,7 +83,6 @@ public abstract class RainItem extends ArmorItem {
 	public static class Leggings extends RainItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
-			setRegistryName("rain_leggings");
 		}
 
 		@Override
@@ -97,7 +94,6 @@ public abstract class RainItem extends ArmorItem {
 	public static class Boots extends RainItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
-			setRegistryName("rain_boots");
 		}
 
 		@Override

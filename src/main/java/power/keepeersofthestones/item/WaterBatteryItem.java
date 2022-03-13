@@ -21,7 +21,6 @@ import java.util.List;
 public class WaterBatteryItem extends Item {
 	public WaterBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
-		setRegistryName("water_battery");
 	}
 
 	@Override

@@ -19,7 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 public class WaterFlowItem extends Item {
 	public WaterFlowItem() {
 		super(new Item.Properties().tab(null).durability(5000));
-		setRegistryName("water_flow");
 	}
 
 	@Override

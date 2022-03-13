@@ -17,14 +17,14 @@ public class ExplosionGetProcedure {
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
 			if (!PowerModVariables.MapVariables.get(world).explosion_stone) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.EXPLOSION_STONE);
+					ItemStack _setstack = new ItemStack(PowerModItems.EXPLOSION_STONE.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PowerModVariables.MapVariables.get(world).explosion_stone = (boolean) (true);
+				PowerModVariables.MapVariables.get(world).explosion_stone = true;
 				PowerModVariables.MapVariables.get(world).syncData(world);
 				{
-					boolean _setval = (boolean) (true);
+					boolean _setval = true;
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);

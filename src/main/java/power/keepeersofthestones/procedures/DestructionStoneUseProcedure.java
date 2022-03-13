@@ -13,11 +13,12 @@ public class DestructionStoneUseProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.DESTRUCTION_STONE) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.DESTRUCTION_STONE
+				.get()) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
-				if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE) : false)) {
+				if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get()) : false)) {
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER, 12000, 0, (false), (false)));
+						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER.get(), 12000, 0, (false), (false)));
 				}
 			}
 		}
