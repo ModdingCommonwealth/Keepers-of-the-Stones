@@ -6,7 +6,8 @@
     "1.17.1-latest": "1.4.2",
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
-    "1.18.1-recommended": "1.6.1"
+    "1.18.1-recommended": "1.6.1",
+    "1.18.2-latest": "1.7.0"
   },
   "1.16.5": {
     "B2": "
@@ -263,6 +264,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Creation and destruction are no longer available to receive
 - [Bugfix] Fixed translation of the cosmos stone for accuracy
 - [Bugfix] Fixed a bug where a stone appeared after the death of a player with an activated battery
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+ },
+  "1.18.2": {
+"1.7.0": "
+
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
