@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeTimeStoneMobEffect extends MobEffect {
 	public RechargeTimeStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -10092544);
+		setRegistryName("recharge_time_stone");
 	}
 
 	@Override

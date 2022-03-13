@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeAnimalsStoneMobEffect extends MobEffect {
 	public RechargeAnimalsStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -26266);
+		setRegistryName("recharge_animals_stone");
 	}
 
 	@Override

@@ -4,6 +4,7 @@ package power.keepeersofthestones.potion;
 import power.keepeersofthestones.procedures.RainFlyTickProcedure;
 import power.keepeersofthestones.procedures.RainEndProcedure;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -12,6 +13,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RainFlyMobEffect extends MobEffect {
 	public RainFlyMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -3355393);
+		setRegistryName("rain_fly");
 	}
 
 	@Override
@@ -26,13 +28,23 @@ public class RainFlyMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		RainFlyTickProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		Level world = entity.level;
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+
+		RainFlyTickProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		RainEndProcedure.execute(entity.level, entity);
+		Level world = entity.level;
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+
+		RainEndProcedure.execute(world, entity);
 	}
 
 	@Override

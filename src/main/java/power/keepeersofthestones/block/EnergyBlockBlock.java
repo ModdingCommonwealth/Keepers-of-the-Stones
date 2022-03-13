@@ -18,6 +18,7 @@ import java.util.Collections;
 public class EnergyBlockBlock extends Block {
 	public EnergyBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(3f, 100f).friction(0.9f));
+		setRegistryName("energy_block");
 	}
 
 	@Override

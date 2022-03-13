@@ -61,6 +61,7 @@ public abstract class EnergyItem extends ArmorItem {
 	public static class Helmet extends EnergyItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("energy_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class EnergyItem extends ArmorItem {
 	public static class Chestplate extends EnergyItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("energy_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class EnergyItem extends ArmorItem {
 	public static class Leggings extends EnergyItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("energy_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class EnergyItem extends ArmorItem {
 	public static class Boots extends EnergyItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("energy_boots");
 		}
 
 		@Override

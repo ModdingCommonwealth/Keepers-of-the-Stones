@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class CosmosStoneItem extends Item {
 	public CosmosStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_GREAT_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("cosmos_stone");
 	}
 
 	@Override

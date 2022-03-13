@@ -33,5 +33,6 @@ public class OceanSwordItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("ocean_sword");
 	}
 }

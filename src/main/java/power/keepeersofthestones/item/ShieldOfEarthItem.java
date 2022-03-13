@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class ShieldOfEarthItem extends Item {
 	public ShieldOfEarthItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("shield_of_earth");
 	}
 
 	@Override

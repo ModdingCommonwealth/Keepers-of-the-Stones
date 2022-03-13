@@ -17,14 +17,14 @@ public class TechnologyGetProcedure {
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
 			if (!PowerModVariables.MapVariables.get(world).technology_stone) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_STONE.get());
+					ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_STONE);
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PowerModVariables.MapVariables.get(world).technology_stone = true;
+				PowerModVariables.MapVariables.get(world).technology_stone = (boolean) (true);
 				PowerModVariables.MapVariables.get(world).syncData(world);
 				{
-					boolean _setval = true;
+					boolean _setval = (boolean) (true);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);

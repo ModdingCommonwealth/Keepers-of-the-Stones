@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class PlasmaBallItem extends Item {
 	public PlasmaBallItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("plasma_ball");
 	}
 
 	@Override

@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class CultivationItem extends Item {
 	public CultivationItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("cultivation");
 	}
 
 	@Override

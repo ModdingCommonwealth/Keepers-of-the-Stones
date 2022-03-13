@@ -18,7 +18,7 @@ public class RandomItemUseProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.RANDOM_ITEM.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.RANDOM_ITEM) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (Math.random() <= 0.1) {
@@ -108,7 +108,7 @@ public class RandomItemUseProcedure {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).creation) {
 						if (!(entity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.RANDOM_ITEM.get()))
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.RANDOM_ITEM))
 								: false)) {
 							{
 								Entity _ent = entity;

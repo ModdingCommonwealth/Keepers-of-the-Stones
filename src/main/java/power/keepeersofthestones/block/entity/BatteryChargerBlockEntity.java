@@ -37,7 +37,7 @@ public class BatteryChargerBlockEntity extends RandomizableContainerBlockEntity 
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public BatteryChargerBlockEntity(BlockPos position, BlockState state) {
-		super(PowerModBlockEntities.BATTERY_CHARGER.get(), position, state);
+		super(PowerModBlockEntities.BATTERY_CHARGER, position, state);
 	}
 
 	@Override

@@ -61,6 +61,7 @@ public abstract class SunItem extends ArmorItem {
 	public static class Helmet extends SunItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("sun_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class SunItem extends ArmorItem {
 	public static class Chestplate extends SunItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("sun_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class SunItem extends ArmorItem {
 	public static class Leggings extends SunItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("sun_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class SunItem extends ArmorItem {
 	public static class Boots extends SunItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("sun_boots");
 		}
 
 		@Override

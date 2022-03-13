@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class RainBowItem extends Item {
 	public RainBowItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("rain_bow");
 	}
 
 	@Override

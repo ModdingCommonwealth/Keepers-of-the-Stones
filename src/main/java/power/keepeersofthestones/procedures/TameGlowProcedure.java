@@ -12,7 +12,7 @@ public class TameGlowProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHT_SWORD.get()))
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHT_SWORD))
 				: false) {
 			if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
 				_toTame.tame(_owner);

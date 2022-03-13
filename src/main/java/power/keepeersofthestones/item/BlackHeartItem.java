@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class BlackHeartItem extends Item {
 	public BlackHeartItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("black_heart");
 	}
 
 	@Override

@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeCosmosStoneMobEffect extends MobEffect {
 	public RechargeCosmosStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -13434829);
+		setRegistryName("recharge_cosmos_stone");
 	}
 
 	@Override

@@ -61,6 +61,7 @@ public abstract class TechnologyItem extends ArmorItem {
 	public static class Helmet extends TechnologyItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("technology_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class TechnologyItem extends ArmorItem {
 	public static class Chestplate extends TechnologyItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("technology_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class TechnologyItem extends ArmorItem {
 	public static class Leggings extends TechnologyItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("technology_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class TechnologyItem extends ArmorItem {
 	public static class Boots extends TechnologyItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("technology_boots");
 		}
 
 		@Override

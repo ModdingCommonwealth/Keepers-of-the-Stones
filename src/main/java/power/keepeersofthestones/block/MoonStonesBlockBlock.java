@@ -30,6 +30,7 @@ public class MoonStonesBlockBlock extends Block {
 	public MoonStonesBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f, 10f).lightLevel(s -> 7).requiresCorrectToolForDrops()
 				.friction(0.5f));
+		setRegistryName("moon_stones_block");
 	}
 
 	@Override

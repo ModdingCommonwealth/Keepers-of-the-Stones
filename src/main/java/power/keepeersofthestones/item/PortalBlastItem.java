@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class PortalBlastItem extends Item {
 	public PortalBlastItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("portal_blast");
 	}
 
 	@Override

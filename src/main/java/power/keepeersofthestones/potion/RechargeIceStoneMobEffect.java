@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeIceStoneMobEffect extends MobEffect {
 	public RechargeIceStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16711681);
+		setRegistryName("recharge_ice_stone");
 	}
 
 	@Override

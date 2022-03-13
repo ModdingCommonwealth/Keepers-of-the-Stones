@@ -12,6 +12,7 @@ import net.minecraft.world.InteractionResult;
 public class IceShieldItem extends Item {
 	public IceShieldItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("ice_shield");
 	}
 
 	@Override

@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class SpikeItem extends Item {
 	public SpikeItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("spike");
 	}
 
 	@Override

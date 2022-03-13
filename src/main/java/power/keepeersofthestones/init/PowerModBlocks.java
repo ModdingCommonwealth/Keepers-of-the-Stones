@@ -17,34 +17,44 @@ import power.keepeersofthestones.block.ClusterBlockBlock;
 import power.keepeersofthestones.block.BluePortalBlock;
 import power.keepeersofthestones.block.BlackHoleBlockBlock;
 import power.keepeersofthestones.block.BatteryChargerBlock;
-import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import java.util.List;
+import java.util.ArrayList;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModBlocks {
-	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PowerMod.MODID);
-	public static final RegistryObject<Block> BATTERY_CHARGER = REGISTRY.register("battery_charger", () -> new BatteryChargerBlock());
-	public static final RegistryObject<Block> ENERGY_BLOCK = REGISTRY.register("energy_block", () -> new EnergyBlockBlock());
-	public static final RegistryObject<Block> SOUND_BARRIER_BLOCK = REGISTRY.register("sound_barrier_block", () -> new SoundBarrierBlockBlock());
-	public static final RegistryObject<Block> CLUSTER_BLOCK = REGISTRY.register("cluster_block", () -> new ClusterBlockBlock());
-	public static final RegistryObject<Block> CRYSTAL_SHIELD_BLOCK = REGISTRY.register("crystal_shield_block", () -> new CrystalShieldBlockBlock());
-	public static final RegistryObject<Block> VACUUM_WEB_BLOCK = REGISTRY.register("vacuum_web_block", () -> new VacuumWebBlockBlock());
-	public static final RegistryObject<Block> MOON_STONES_BLOCK = REGISTRY.register("moon_stones_block", () -> new MoonStonesBlockBlock());
-	public static final RegistryObject<Block> BLACK_HOLE_BLOCK = REGISTRY.register("black_hole_block", () -> new BlackHoleBlockBlock());
-	public static final RegistryObject<Block> UNMULTIPLICATION_MOON_STONES_BLOCK = REGISTRY.register("unmultiplication_moon_stones_block",
-			() -> new UnmultiplicationMoonStonesBlock());
-	public static final RegistryObject<Block> TECHNOBARRIER_BLOCK = REGISTRY.register("technobarrier_block", () -> new TechnobarrierBlockBlock());
-	public static final RegistryObject<Block> BLUE_PORTAL = REGISTRY.register("blue_portal", () -> new BluePortalBlock());
-	public static final RegistryObject<Block> ORANGE_PORTAL = REGISTRY.register("orange_portal", () -> new OrangePortalBlock());
-	public static final RegistryObject<Block> DETONATOR_TNT = REGISTRY.register("detonator_tnt", () -> new DetonatorTNTBlock());
+	private static final List<Block> REGISTRY = new ArrayList<>();
+	public static final Block BATTERY_CHARGER = register(new BatteryChargerBlock());
+	public static final Block ENERGY_BLOCK = register(new EnergyBlockBlock());
+	public static final Block SOUND_BARRIER_BLOCK = register(new SoundBarrierBlockBlock());
+	public static final Block CLUSTER_BLOCK = register(new ClusterBlockBlock());
+	public static final Block CRYSTAL_SHIELD_BLOCK = register(new CrystalShieldBlockBlock());
+	public static final Block VACUUM_WEB_BLOCK = register(new VacuumWebBlockBlock());
+	public static final Block MOON_STONES_BLOCK = register(new MoonStonesBlockBlock());
+	public static final Block BLACK_HOLE_BLOCK = register(new BlackHoleBlockBlock());
+	public static final Block UNMULTIPLICATION_MOON_STONES_BLOCK = register(new UnmultiplicationMoonStonesBlock());
+	public static final Block TECHNOBARRIER_BLOCK = register(new TechnobarrierBlockBlock());
+	public static final Block BLUE_PORTAL = register(new BluePortalBlock());
+	public static final Block ORANGE_PORTAL = register(new OrangePortalBlock());
+	public static final Block DETONATOR_TNT = register(new DetonatorTNTBlock());
+
+	private static Block register(Block block) {
+		REGISTRY.add(block);
+		return block;
+	}
+
+	@SubscribeEvent
+	public static void registerBlocks(RegistryEvent.Register<Block> event) {
+		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
+	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 public class MoonWitherItem extends Item {
 	public MoonWitherItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("moon_wither");
 	}
 
 	@Override

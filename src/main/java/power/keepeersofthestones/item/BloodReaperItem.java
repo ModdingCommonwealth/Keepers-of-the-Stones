@@ -3,6 +3,7 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.BloodReaperUseProcedure;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
@@ -37,11 +38,17 @@ public class BloodReaperItem extends AxeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("blood_reaper");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		Level world = entity.level;
+
 		BloodReaperUseProcedure.execute(entity);
 		return retval;
 	}

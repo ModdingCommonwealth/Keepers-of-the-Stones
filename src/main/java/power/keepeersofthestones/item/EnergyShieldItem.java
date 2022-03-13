@@ -12,6 +12,7 @@ import net.minecraft.world.InteractionResult;
 public class EnergyShieldItem extends Item {
 	public EnergyShieldItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("energy_shield");
 	}
 
 	@Override

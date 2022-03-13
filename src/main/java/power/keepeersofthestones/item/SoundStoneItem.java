@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class SoundStoneItem extends Item {
 	public SoundStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("sound_stone");
 	}
 
 	@Override

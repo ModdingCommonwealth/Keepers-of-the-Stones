@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class IronGolemCreateItem extends Item {
 	public IronGolemCreateItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("iron_golem_create");
 	}
 
 	@Override

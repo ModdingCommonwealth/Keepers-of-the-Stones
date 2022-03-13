@@ -33,5 +33,6 @@ public class TimeBladeItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2.4f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("time_blade");
 	}
 }

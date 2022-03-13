@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class SunRayItem extends Item {
 	public SunRayItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("sun_ray");
 	}
 
 	@Override

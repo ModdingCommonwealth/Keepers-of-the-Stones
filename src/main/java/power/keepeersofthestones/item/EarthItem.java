@@ -61,6 +61,7 @@ public abstract class EarthItem extends ArmorItem {
 	public static class Helmet extends EarthItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("earth_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class EarthItem extends ArmorItem {
 	public static class Chestplate extends EarthItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("earth_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class EarthItem extends ArmorItem {
 	public static class Leggings extends EarthItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("earth_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class EarthItem extends ArmorItem {
 	public static class Boots extends EarthItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("earth_boots");
 		}
 
 		@Override

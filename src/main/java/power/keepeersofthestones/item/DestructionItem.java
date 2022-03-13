@@ -61,6 +61,7 @@ public abstract class DestructionItem extends ArmorItem {
 	public static class Helmet extends DestructionItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("destruction_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class DestructionItem extends ArmorItem {
 	public static class Chestplate extends DestructionItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("destruction_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class DestructionItem extends ArmorItem {
 	public static class Leggings extends DestructionItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("destruction_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class DestructionItem extends ArmorItem {
 	public static class Boots extends DestructionItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("destruction_boots");
 		}
 
 		@Override

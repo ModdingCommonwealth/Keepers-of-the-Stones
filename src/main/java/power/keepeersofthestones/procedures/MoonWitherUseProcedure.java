@@ -19,8 +19,7 @@ public class MoonWitherUseProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.MOON_WITHER
-				.get()) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.MOON_WITHER) {
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 			if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -29,7 +28,7 @@ public class MoonWitherUseProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 4, (false), (false)));
 			}
 			{
-				boolean _setval = true;
+				boolean _setval = (boolean) (true);
 				sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.recharge_spell_moon = _setval;
 					capability.syncPlayerVariables(sourceentity);
@@ -57,7 +56,7 @@ public class MoonWitherUseProcedure {
 
 				private void run() {
 					{
-						boolean _setval = false;
+						boolean _setval = (boolean) (false);
 						sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.recharge_spell_moon = _setval;
 							capability.syncPlayerVariables(sourceentity);

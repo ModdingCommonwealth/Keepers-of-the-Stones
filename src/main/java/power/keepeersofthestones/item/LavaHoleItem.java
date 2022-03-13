@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class LavaHoleItem extends Item {
 	public LavaHoleItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("lava_hole");
 	}
 
 	@Override

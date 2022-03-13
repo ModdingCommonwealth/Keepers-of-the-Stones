@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class TimeStopItem extends Item {
 	public TimeStopItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("time_stop");
 	}
 
 	@Override

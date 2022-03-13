@@ -33,5 +33,6 @@ public class TechnoPickaxeItem extends PickaxeItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -2.6f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("techno_pickaxe");
 	}
 }

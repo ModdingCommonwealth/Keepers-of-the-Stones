@@ -6,7 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 
 public class RemoveBluePortalProcedure {
 	public static void execute(LevelAccessor world) {
-		PowerModVariables.MapVariables.get(world).blue_portal = false;
+		PowerModVariables.MapVariables.get(world).blue_portal = (boolean) (false);
 		PowerModVariables.MapVariables.get(world).syncData(world);
 	}
 }

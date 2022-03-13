@@ -17,14 +17,14 @@ public class MetalGetProcedure {
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
 			if (!PowerModVariables.WorldVariables.get(world).metal_stone) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.METAL_STONE.get());
+					ItemStack _setstack = new ItemStack(PowerModItems.METAL_STONE);
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PowerModVariables.WorldVariables.get(world).metal_stone = true;
+				PowerModVariables.WorldVariables.get(world).metal_stone = (boolean) (true);
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
-					boolean _setval = true;
+					boolean _setval = (boolean) (true);
 					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.selected = _setval;
 						capability.syncPlayerVariables(entity);

@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeTechnologyStoneMobEffect extends MobEffect {
 	public RechargeTechnologyStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16750951);
+		setRegistryName("recharge_technology_stone");
 	}
 
 	@Override

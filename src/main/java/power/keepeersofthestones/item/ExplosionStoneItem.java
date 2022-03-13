@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class ExplosionStoneItem extends Item {
 	public ExplosionStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("explosion_stone");
 	}
 
 	@Override

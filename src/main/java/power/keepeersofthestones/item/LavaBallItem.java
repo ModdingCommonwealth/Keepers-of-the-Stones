@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class LavaBallItem extends Item {
 	public LavaBallItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("lava_ball");
 	}
 
 	@Override

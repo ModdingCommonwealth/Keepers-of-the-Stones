@@ -21,6 +21,7 @@ import java.util.List;
 public class VacuumBatteryItem extends Item {
 	public VacuumBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
+		setRegistryName("vacuum_battery");
 	}
 
 	@Override
@@ -36,7 +37,7 @@ public class VacuumBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFD3Vacuum"));
+		list.add(new TextComponent("\u00A73Vacuum"));
 	}
 
 	@Override

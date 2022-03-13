@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class ClusterSharpItem extends Item {
 	public ClusterSharpItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("cluster_sharp");
 	}
 
 	@Override

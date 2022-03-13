@@ -61,6 +61,7 @@ public abstract class CreationItem extends ArmorItem {
 	public static class Helmet extends CreationItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("creation_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class CreationItem extends ArmorItem {
 	public static class Chestplate extends CreationItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("creation_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class CreationItem extends ArmorItem {
 	public static class Leggings extends CreationItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("creation_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class CreationItem extends ArmorItem {
 	public static class Boots extends CreationItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("creation_boots");
 		}
 
 		@Override

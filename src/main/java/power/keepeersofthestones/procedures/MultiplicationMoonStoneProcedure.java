@@ -12,14 +12,14 @@ public class MultiplicationMoonStoneProcedure {
 		if (entity == null)
 			return;
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).moon) {
-			world.setBlock(new BlockPos((int) x, (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) y, (int) (z + 1)), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x + 1), (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) x, (int) y, (int) (z - 1)), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
-			world.setBlock(new BlockPos((int) (x - 1), (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) x, (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) x, (int) y, (int) (z + 1)), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) (x + 1), (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) x, (int) y, (int) (z - 1)), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
+			world.setBlock(new BlockPos((int) (x - 1), (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.defaultBlockState(), 3);
 		}
 	}
 }

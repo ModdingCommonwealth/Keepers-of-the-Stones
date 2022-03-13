@@ -15,7 +15,7 @@ public class TimeMasterEffectsProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 1, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 20, 3, (false), (false)));
-		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get()) : false) {
+		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.ACCELERATION_TIME_EFFECT) : false) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 20, (false), (false)));
 		} else {

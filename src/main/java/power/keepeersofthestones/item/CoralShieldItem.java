@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class CoralShieldItem extends Item {
 	public CoralShieldItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("coral_shield");
 	}
 
 	@Override

@@ -61,6 +61,7 @@ public abstract class ShadowarmorItem extends ArmorItem {
 	public static class Helmet extends ShadowarmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("shadow_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class ShadowarmorItem extends ArmorItem {
 	public static class Chestplate extends ShadowarmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("shadow_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class ShadowarmorItem extends ArmorItem {
 	public static class Leggings extends ShadowarmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("shadow_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class ShadowarmorItem extends ArmorItem {
 	public static class Boots extends ShadowarmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("shadow_boots");
 		}
 
 		@Override

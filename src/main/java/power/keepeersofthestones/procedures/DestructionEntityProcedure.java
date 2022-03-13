@@ -18,8 +18,8 @@ public class DestructionEntityProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
 		if (entity == null || sourceentity == null)
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.DESTRUCTION_POWER
-				.get()) {
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+				.getItem() == PowerModItems.DESTRUCTION_POWER) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			{
@@ -58,7 +58,7 @@ public class DestructionEntityProcedure {
 					if ((sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).destruction) {
 						if (!(sourceentity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.DESTRUCTION_POWER.get()))
+								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.DESTRUCTION_POWER))
 								: false)) {
 							{
 								Entity _ent = sourceentity;

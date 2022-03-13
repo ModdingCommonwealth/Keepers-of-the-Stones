@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 public class VampirismItem extends Item {
 	public VampirismItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON));
+		setRegistryName("vampirism");
 	}
 
 	@Override

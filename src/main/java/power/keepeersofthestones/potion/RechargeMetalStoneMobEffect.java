@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class RechargeMetalStoneMobEffect extends MobEffect {
 	public RechargeMetalStoneMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -3355444);
+		setRegistryName("recharge_metal_stone");
 	}
 
 	@Override

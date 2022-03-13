@@ -17,6 +17,7 @@ import java.util.List;
 public class EmptyBatteryItem extends Item {
 	public EmptyBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
+		setRegistryName("empty_battery");
 	}
 
 	@Override

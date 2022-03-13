@@ -61,6 +61,7 @@ public abstract class LightningItem extends ArmorItem {
 	public static class Helmet extends LightningItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("lightning_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class LightningItem extends ArmorItem {
 	public static class Chestplate extends LightningItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("lightning_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class LightningItem extends ArmorItem {
 	public static class Leggings extends LightningItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("lightning_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class LightningItem extends ArmorItem {
 	public static class Boots extends LightningItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("lightning_boots");
 		}
 
 		@Override

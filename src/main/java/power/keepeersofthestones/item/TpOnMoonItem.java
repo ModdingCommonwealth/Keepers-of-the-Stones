@@ -17,6 +17,7 @@ import net.minecraft.world.InteractionHand;
 public class TpOnMoonItem extends Item {
 	public TpOnMoonItem() {
 		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("tp_on_moon");
 	}
 
 	@Override

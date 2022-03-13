@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class CreateShadowItem extends Item {
 	public CreateShadowItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("create_shadow");
 	}
 
 	@Override

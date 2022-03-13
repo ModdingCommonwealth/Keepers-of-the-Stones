@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class MoonStoneItem extends Item {
 	public MoonStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_GREAT_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("moon_stone");
 	}
 
 	@Override

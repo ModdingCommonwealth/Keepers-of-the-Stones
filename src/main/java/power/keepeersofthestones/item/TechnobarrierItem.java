@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class TechnobarrierItem extends Item {
 	public TechnobarrierItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("technobarrier");
 	}
 
 	@Override

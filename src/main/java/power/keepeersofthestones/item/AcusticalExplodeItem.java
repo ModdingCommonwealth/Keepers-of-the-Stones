@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class AcusticalExplodeItem extends Item {
 	public AcusticalExplodeItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("acustical_explode");
 	}
 
 	@Override

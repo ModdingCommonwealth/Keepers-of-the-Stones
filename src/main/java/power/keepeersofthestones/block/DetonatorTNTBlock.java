@@ -30,6 +30,7 @@ public class DetonatorTNTBlock extends Block {
 	public DetonatorTNTBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		setRegistryName("detonator_tnt");
 	}
 
 	@Override

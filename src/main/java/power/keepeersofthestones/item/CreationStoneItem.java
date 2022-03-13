@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class CreationStoneItem extends Item {
 	public CreationStoneItem() {
 		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("creation_stone");
 	}
 
 	@Override

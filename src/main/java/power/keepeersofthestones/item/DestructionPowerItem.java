@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionResult;
 public class DestructionPowerItem extends Item {
 	public DestructionPowerItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("destruction_power");
 	}
 
 	@Override

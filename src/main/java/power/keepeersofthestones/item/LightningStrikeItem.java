@@ -3,6 +3,7 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.LightningStrikeUseProcedure;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
@@ -37,12 +38,18 @@ public class LightningStrikeItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3.4f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("lightning_strike");
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		LightningStrikeUseProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ());
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		Level world = entity.level;
+
+		LightningStrikeUseProcedure.execute(world, x, y, z);
 		return retval;
 	}
 }

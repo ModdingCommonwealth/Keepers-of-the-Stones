@@ -33,5 +33,6 @@ public class CrystalDaggerItem extends SwordItem {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -2f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("crystal_dagger");
 	}
 }

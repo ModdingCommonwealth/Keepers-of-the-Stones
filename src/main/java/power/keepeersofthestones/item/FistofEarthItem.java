@@ -37,6 +37,7 @@ public class FistofEarthItem extends ShovelItem {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3.8f, new Item.Properties().tab(null).fireResistant());
+		setRegistryName("fistof_earth");
 	}
 
 	@Override

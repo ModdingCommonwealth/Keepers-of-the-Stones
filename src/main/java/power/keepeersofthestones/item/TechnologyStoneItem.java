@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class TechnologyStoneItem extends Item {
 	public TechnologyStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_MIDDLE_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("technology_stone");
 	}
 
 	@Override

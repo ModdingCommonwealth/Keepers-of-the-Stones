@@ -17,6 +17,7 @@ import net.minecraft.world.InteractionHand;
 public class TpOnVenusItem extends Item {
 	public TpOnVenusItem() {
 		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("tp_on_venus");
 	}
 
 	@Override

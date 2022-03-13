@@ -61,6 +61,7 @@ public abstract class TeleportationItem extends ArmorItem {
 	public static class Helmet extends TeleportationItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("teleportation_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class TeleportationItem extends ArmorItem {
 	public static class Chestplate extends TeleportationItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("teleportation_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class TeleportationItem extends ArmorItem {
 	public static class Leggings extends TeleportationItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("teleportation_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class TeleportationItem extends ArmorItem {
 	public static class Boots extends TeleportationItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("teleportation_boots");
 		}
 
 		@Override

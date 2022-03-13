@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class MagmaShieldItem extends Item {
 	public MagmaShieldItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("magma_shield");
 	}
 
 	@Override

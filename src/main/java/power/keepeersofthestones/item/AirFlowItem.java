@@ -26,6 +26,7 @@ import com.google.common.collect.ImmutableMultimap;
 public class AirFlowItem extends Item {
 	public AirFlowItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("air_flow");
 	}
 
 	@Override

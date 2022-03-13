@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class FertilizerItem extends Item {
 	public FertilizerItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("fertilizer");
 	}
 
 	@Override

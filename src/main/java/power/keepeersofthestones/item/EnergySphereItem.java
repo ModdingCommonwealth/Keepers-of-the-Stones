@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class EnergySphereItem extends Item {
 	public EnergySphereItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("energy_sphere");
 	}
 
 	@Override

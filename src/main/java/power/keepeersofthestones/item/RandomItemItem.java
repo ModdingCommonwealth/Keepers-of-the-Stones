@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class RandomItemItem extends Item {
 	public RandomItemItem() {
 		super(new Item.Properties().tab(null).stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("random_item");
 	}
 
 	@Override

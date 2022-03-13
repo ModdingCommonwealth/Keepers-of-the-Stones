@@ -27,52 +27,52 @@ public class WhenPlayerWakeUpProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_FIRE_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_FIRE_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_AIR_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_AIR_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_WATER_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_WATER_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_EARTH_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_EARTH_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ENERGY_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_ENERGY_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ICE_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_ICE_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHTNING_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHTNING_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SOUND_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_SOUND_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_CRYSTAL_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LAVA_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_LAVA_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_RAIN_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_RAIN_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_TORNADO_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_TORNADO_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_OCEAN_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_OCEAN_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_GREENERY_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_GREENERY_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_ANIMALS_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_ANIMALS_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_METAL_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_METAL_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHT_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_LIGHT_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SHADOW_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_SHADOW_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_VACUUM_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_VACUUM_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_SUN_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_SUN_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_MOON_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_MOON_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_CREATION_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_CREATION_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE);
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_COSMOS_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_COSMOS_STONE);
 	}
 }

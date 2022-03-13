@@ -5,22 +5,31 @@
 package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.block.entity.BatteryChargerBlockEntity;
-import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import java.util.List;
+import java.util.ArrayList;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PowerModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, PowerMod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> BATTERY_CHARGER = register("battery_charger", PowerModBlocks.BATTERY_CHARGER,
+	private static final List<BlockEntityType<?>> REGISTRY = new ArrayList<>();
+	public static final BlockEntityType<?> BATTERY_CHARGER = register("power:battery_charger", PowerModBlocks.BATTERY_CHARGER,
 			BatteryChargerBlockEntity::new);
 
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
-			BlockEntityType.BlockEntitySupplier<?> supplier) {
-		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
+	private static BlockEntityType<?> register(String registryname, Block block, BlockEntityType.BlockEntitySupplier<?> supplier) {
+		BlockEntityType<?> blockEntityType = BlockEntityType.Builder.of(supplier, block).build(null).setRegistryName(registryname);
+		REGISTRY.add(blockEntityType);
+		return blockEntityType;
+	}
+
+	@SubscribeEvent
+	public static void registerTileEntity(RegistryEvent.Register<BlockEntityType<?>> event) {
+		event.getRegistry().registerAll(REGISTRY.toArray(new BlockEntityType[0]));
 	}
 }

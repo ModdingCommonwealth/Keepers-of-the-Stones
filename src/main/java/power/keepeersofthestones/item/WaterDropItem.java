@@ -19,6 +19,7 @@ import com.google.common.collect.ImmutableMultimap;
 public class WaterDropItem extends Item {
 	public WaterDropItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("water_drop");
 	}
 
 	@Override

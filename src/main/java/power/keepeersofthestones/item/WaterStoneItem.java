@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class WaterStoneItem extends Item {
 	public WaterStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BASIC_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("water_stone");
 	}
 
 	@Override

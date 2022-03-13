@@ -20,8 +20,7 @@ public class ShadowInvisibleUseProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHADOW_INVISIBLE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHADOW_INVISIBLE) {
 			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (entity instanceof Player _player)
@@ -29,22 +28,22 @@ public class ShadowInvisibleUseProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 254, (false), (false)));
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_HELMET.get());
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_HELMET);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_CHESTPLATE.get());
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_CHESTPLATE);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_LEGGINGS.get());
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_LEGGINGS);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_BOOTS.get());
+				ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_BOOTS);
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}

@@ -13,5 +13,6 @@ public class ElementalMusicDiscItem extends RecordItem {
 	public ElementalMusicDiscItem() {
 		super(0, PowerModSounds.REGISTRY.get(new ResourceLocation("power:powerful_stone")),
 				new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE));
+		setRegistryName("elemental_music_disc");
 	}
 }

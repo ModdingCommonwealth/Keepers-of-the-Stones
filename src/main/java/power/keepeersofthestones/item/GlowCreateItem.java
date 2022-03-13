@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class GlowCreateItem extends Item {
 	public GlowCreateItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("glow_create");
 	}
 
 	@Override

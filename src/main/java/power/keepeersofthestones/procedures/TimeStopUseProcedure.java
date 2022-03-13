@@ -15,8 +15,8 @@ public class TimeStopUseProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get()) : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TIME_STOP.get()) {
+		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.ACCELERATION_TIME_EFFECT) : false)) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TIME_STOP) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 				if (entity instanceof Player _player)
@@ -28,7 +28,7 @@ public class TimeStopUseProcedure {
 								"effect give @e minecraft:slowness 60 255");
 				}
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_STOP_EFFECT.get(), 1500, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_STOP_EFFECT, 1500, 0, (false), (false)));
 			}
 		}
 	}

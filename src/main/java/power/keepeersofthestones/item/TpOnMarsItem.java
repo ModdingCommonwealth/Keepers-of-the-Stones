@@ -17,6 +17,7 @@ import net.minecraft.world.InteractionHand;
 public class TpOnMarsItem extends Item {
 	public TpOnMarsItem() {
 		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("tp_on_mars");
 	}
 
 	@Override

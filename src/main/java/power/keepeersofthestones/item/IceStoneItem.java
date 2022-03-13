@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class IceStoneItem extends Item {
 	public IceStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("ice_stone");
 	}
 
 	@Override

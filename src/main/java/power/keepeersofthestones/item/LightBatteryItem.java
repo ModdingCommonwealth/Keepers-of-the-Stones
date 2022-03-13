@@ -21,6 +21,7 @@ import java.util.List;
 public class LightBatteryItem extends Item {
 	public LightBatteryItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BATTERIES).stacksTo(1).rarity(Rarity.COMMON));
+		setRegistryName("light_battery");
 	}
 
 	@Override
@@ -36,7 +37,7 @@ public class LightBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\uFFFDeLight"));
+		list.add(new TextComponent("\u00A7eLight"));
 	}
 
 	@Override

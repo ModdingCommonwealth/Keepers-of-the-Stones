@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class RedstoneBundleItem extends Item {
 	public RedstoneBundleItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("redstone_bundle");
 	}
 
 	@Override

@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class AccelerationTimeItem extends Item {
 	public AccelerationTimeItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("acceleration_time");
 	}
 
 	@Override

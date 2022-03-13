@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 24,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">player_in_bed</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"world_data_isday\"></block></value></block></value><statement name=\"DO0\"><block type=\"call_procedure\"><field name=\"procedure\">DetransformKeyPriNazhatiiKlavishi</field></block></statement></block></next></block></xml>"

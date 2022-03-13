@@ -15,15 +15,14 @@ public class AccelerationTimeUseProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.TIME_STOP_EFFECT.get()) : false)) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ACCELERATION_TIME
-					.get()) {
+		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.TIME_STOP_EFFECT) : false)) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ACCELERATION_TIME) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get(), 1500, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ACCELERATION_TIME_EFFECT, 1500, 0, (false), (false)));
 			}
 		}
 	}

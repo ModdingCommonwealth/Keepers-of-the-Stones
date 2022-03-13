@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class IceBallItem extends Item {
 	public IceBallItem() {
 		super(new Item.Properties().tab(null).durability(5000));
+		setRegistryName("ice_ball");
 	}
 
 	@Override

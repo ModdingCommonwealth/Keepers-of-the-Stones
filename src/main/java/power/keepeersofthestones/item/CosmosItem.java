@@ -61,6 +61,7 @@ public abstract class CosmosItem extends ArmorItem {
 	public static class Helmet extends CosmosItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("cosmos_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class CosmosItem extends ArmorItem {
 	public static class Chestplate extends CosmosItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("cosmos_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class CosmosItem extends ArmorItem {
 	public static class Leggings extends CosmosItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("cosmos_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class CosmosItem extends ArmorItem {
 	public static class Boots extends CosmosItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("cosmos_boots");
 		}
 
 		@Override

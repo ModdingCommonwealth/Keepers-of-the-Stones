@@ -61,6 +61,7 @@ public abstract class CrestcentItem extends ArmorItem {
 	public static class Helmet extends CrestcentItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("crestcent_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class CrestcentItem extends ArmorItem {
 	public static class Chestplate extends CrestcentItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("crestcent_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class CrestcentItem extends ArmorItem {
 	public static class Leggings extends CrestcentItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("crestcent_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class CrestcentItem extends ArmorItem {
 	public static class Boots extends CrestcentItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("crestcent_boots");
 		}
 
 		@Override

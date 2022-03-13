@@ -13,11 +13,11 @@ public class SpecialAbilityUseProcedure {
 			return;
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fire) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.FIRE_FLYING.get(), 20, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.FIRE_FLYING, 20, 1, (false), (false)));
 		}
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).rain) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RAIN_FLY.get(), 20, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RAIN_FLY, 20, 1, (false), (false)));
 		}
 	}
 }

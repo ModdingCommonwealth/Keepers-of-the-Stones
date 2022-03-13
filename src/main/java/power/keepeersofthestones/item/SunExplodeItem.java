@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 public class SunExplodeItem extends Item {
 	public SunExplodeItem() {
 		super(new Item.Properties().tab(null).durability(100));
+		setRegistryName("sun_explode");
 	}
 
 	@Override

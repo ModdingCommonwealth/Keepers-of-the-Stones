@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 public class CursedDiamondItem extends Item {
 	public CursedDiamondItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("cursed_diamond");
 	}
 
 	@Override

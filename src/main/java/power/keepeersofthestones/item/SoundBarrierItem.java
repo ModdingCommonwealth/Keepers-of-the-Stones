@@ -13,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 public class SoundBarrierItem extends Item {
 	public SoundBarrierItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON));
+		setRegistryName("sound_barrier");
 	}
 
 	@Override

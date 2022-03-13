@@ -14,12 +14,6 @@
 package power.keepeersofthestones;
 
 import power.keepeersofthestones.init.PowerModTabs;
-import power.keepeersofthestones.init.PowerModMobEffects;
-import power.keepeersofthestones.init.PowerModItems;
-import power.keepeersofthestones.init.PowerModEntities;
-import power.keepeersofthestones.init.PowerModBlocks;
-import power.keepeersofthestones.init.PowerModBlockEntities;
-import power.keepeersofthestones.init.PowerModBiomes;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -27,9 +21,7 @@ import org.apache.logging.log4j.LogManager;
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
@@ -49,15 +41,6 @@ public class PowerMod {
 
 	public PowerMod() {
 		PowerModTabs.load();
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		PowerModBlocks.REGISTRY.register(bus);
-		PowerModItems.REGISTRY.register(bus);
-		PowerModEntities.REGISTRY.register(bus);
-		PowerModBlockEntities.REGISTRY.register(bus);
-
-		PowerModMobEffects.REGISTRY.register(bus);
-
-		PowerModBiomes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

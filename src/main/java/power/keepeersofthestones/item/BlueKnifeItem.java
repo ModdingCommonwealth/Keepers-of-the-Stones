@@ -22,22 +22,23 @@ import com.google.common.collect.ImmutableMultimap;
 public class BlueKnifeItem extends Item {
 	public BlueKnifeItem() {
 		super(new Item.Properties().tab(null).durability(5000).fireResistant());
+		setRegistryName("blue_knife");
 	}
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(PowerModBlocks.BLUE_PORTAL.get(), PowerModBlocks.ORANGE_PORTAL.get()).contains(blockstate.getBlock()) ? 45f : 1;
+		return List.of(PowerModBlocks.BLUE_PORTAL, PowerModBlocks.ORANGE_PORTAL).contains(blockstate.getBlock()) ? 45f : 1;
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity entity) {
+		stack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity sourceentity) {
+		stack.hurtAndBreak(2, sourceentity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
 

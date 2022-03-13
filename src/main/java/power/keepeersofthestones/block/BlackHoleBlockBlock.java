@@ -29,6 +29,7 @@ public class BlackHoleBlockBlock extends PressurePlateBlock {
 	public BlackHoleBlockBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.SCULK).sound(SoundType.SCULK_SENSOR).strength(8f, 50f).noCollission()
 				.friction(0.1f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		setRegistryName("black_hole_block");
 	}
 
 	@Override
@@ -58,6 +59,6 @@ public class BlackHoleBlockBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BLACK_HOLE_BLOCK.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.BLACK_HOLE_BLOCK, renderType -> renderType == RenderType.cutout());
 	}
 }

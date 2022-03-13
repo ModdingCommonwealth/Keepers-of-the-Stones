@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 public class EarthStoneItem extends Item {
 	public EarthStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_BASIC_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("earth_stone");
 	}
 
 	@Override

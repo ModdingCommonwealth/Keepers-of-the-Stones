@@ -61,6 +61,7 @@ public abstract class LightItem extends ArmorItem {
 	public static class Helmet extends LightItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
+			setRegistryName("light_helmet");
 		}
 
 		@Override
@@ -72,6 +73,7 @@ public abstract class LightItem extends ArmorItem {
 	public static class Chestplate extends LightItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
+			setRegistryName("light_chestplate");
 		}
 
 		@Override
@@ -83,6 +85,7 @@ public abstract class LightItem extends ArmorItem {
 	public static class Leggings extends LightItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
+			setRegistryName("light_leggings");
 		}
 
 		@Override
@@ -94,6 +97,7 @@ public abstract class LightItem extends ArmorItem {
 	public static class Boots extends LightItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
+			setRegistryName("light_boots");
 		}
 
 		@Override

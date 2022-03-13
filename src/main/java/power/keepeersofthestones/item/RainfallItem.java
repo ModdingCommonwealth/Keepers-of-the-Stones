@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 public class RainfallItem extends Item {
 	public RainfallItem() {
 		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		setRegistryName("rainfall");
 	}
 
 	@Override
