@@ -490,7 +490,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> EXPLODE_LEGGINGS = REGISTRY.register("explode_leggings", () -> new ExplodeItem.Leggings());
 	public static final RegistryObject<Item> EXPLODE_BOOTS = REGISTRY.register("explode_boots", () -> new ExplodeItem.Boots());
 	public static final RegistryObject<Item> EXPLOSION_BATTERY = REGISTRY.register("explosion_battery", () -> new ExplosionBatteryItem());
-	public static final RegistryObject<Item> DETONATOR_TNT = block(PowerModBlocks.DETONATOR_TNT, PowerModTabs.TAB_BASIC_GROUP);
+	public static final RegistryObject<Item> DETONATOR_TNT = block(PowerModBlocks.DETONATOR_TNT, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
