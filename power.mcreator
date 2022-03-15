@@ -10805,6 +10805,18 @@
         ]
       },
       "path": "~/Explosion"
+    },
+    {
+      "name": "Dinoera",
+      "type": "dimension",
+      "sortid": 631,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinoera",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -11619,6 +11631,7 @@
       "item.power.blood_chestplate": "Нагрудник крови",
       "item.power.shadow_chestplate": "Нагрудник тьмы",
       "item.power.sun_axe": "Солнечная Секира",
+      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
@@ -12000,6 +12013,7 @@
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
       "item.power.sun_axe": "Sun Axe",
+      "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
