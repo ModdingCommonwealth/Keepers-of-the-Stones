@@ -72,13 +72,13 @@ public class OrangePortalBlock extends Block implements SimpleWaterloggedBlock
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(0, 0, 15, 16, 32, 16);
+				return box(0, 0, 8, 16, 32, 9);
 			case NORTH :
-				return box(0, 0, 0, 16, 32, 1);
+				return box(0, 0, 7, 16, 32, 8);
 			case EAST :
-				return box(15, 0, 0, 16, 32, 16);
+				return box(8, 0, 0, 9, 32, 16);
 			case WEST :
-				return box(0, 0, 0, 1, 32, 16);
+				return box(7, 0, 0, 8, 32, 16);
 		}
 	}
 

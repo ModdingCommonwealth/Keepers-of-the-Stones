@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -69,7 +68,18 @@ public class BluePortalBlock extends Block implements SimpleWaterloggedBlock
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+
+		switch ((Direction) state.getValue(FACING)) {
+			case SOUTH :
+			default :
+				return box(0, 0, 8, 16, 32, 9);
+			case NORTH :
+				return box(0, 0, 7, 16, 32, 8);
+			case EAST :
+				return box(8, 0, 0, 9, 32, 16);
+			case WEST :
+				return box(7, 0, 0, 8, 32, 16);
+		}
 	}
 
 	@Override
