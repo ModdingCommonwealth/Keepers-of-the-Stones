@@ -1,10 +1,19 @@
 {
   "variants": {
-    "powered=false": {
+    "facing=north": {
       "model": "power:block/orange_portal"
     },
-    "powered=true": {
-      "model": "power:block/orange_portal_down"
+    "facing=east": {
+      "model": "power:block/orange_portal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "power:block/orange_portal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "power:block/orange_portal",
+      "y": 270
     }
   }
 }

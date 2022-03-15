@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "orange": {
+      "map": {
+        "0": "orange_portal"
+      },
+      "name": "orange"
+    },
+    "default": {
+      "map": {
+        "0": ""
+      },
+      "name": "default"
+    },
+    "blue": {
+      "map": {
+        "0": "blue_portal"
+      },
+      "name": "blue"
+    }
+  }
+}

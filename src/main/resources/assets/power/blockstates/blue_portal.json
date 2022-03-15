@@ -1,10 +1,19 @@
 {
   "variants": {
-    "powered=false": {
+    "facing=north": {
       "model": "power:block/blue_portal"
     },
-    "powered=true": {
-      "model": "power:block/blue_portal_down"
+    "facing=east": {
+      "model": "power:block/blue_portal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "power:block/blue_portal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "power:block/blue_portal",
+      "y": 270
     }
   }
 }

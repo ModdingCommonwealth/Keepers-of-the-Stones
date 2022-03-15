@@ -11271,12 +11271,6 @@
       "value": "0"
     },
     {
-      "name": "portalstop",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
       "name": "explosion",
       "type": "logic",
       "scope": "player_persistent",

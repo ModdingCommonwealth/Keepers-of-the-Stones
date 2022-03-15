@@ -1,6 +1,8 @@
 {
-  "parent": "block/pressure_plate_up",
+  "parent": "power:custom/portal",
   "textures": {
-    "texture": "power:blocks/blue_portal"
+    "all": "power:blocks/blue_portal",
+    "particle": "power:blocks/blue_portal",
+    "0": "power:blocks/blue_portal"
   }
 }

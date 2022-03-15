@@ -120,7 +120,6 @@ public class PowerModVariables {
 				clone.recharge_spell_moon = original.recharge_spell_moon;
 				clone.recharge_spell_blood = original.recharge_spell_blood;
 				clone.recharge_spell_energy = original.recharge_spell_energy;
-				clone.portalstop = original.portalstop;
 			}
 		}
 
@@ -436,7 +435,6 @@ public class PowerModVariables {
 		public boolean recharge_spell_blood = false;
 		public boolean recharge_spell_energy = false;
 		public boolean teleportation = false;
-		public boolean portalstop = false;
 		public boolean explosion = false;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -485,7 +483,6 @@ public class PowerModVariables {
 			nbt.putBoolean("recharge_spell_blood", recharge_spell_blood);
 			nbt.putBoolean("recharge_spell_energy", recharge_spell_energy);
 			nbt.putBoolean("teleportation", teleportation);
-			nbt.putBoolean("portalstop", portalstop);
 			nbt.putBoolean("explosion", explosion);
 			return nbt;
 		}
@@ -531,7 +528,6 @@ public class PowerModVariables {
 			recharge_spell_blood = nbt.getBoolean("recharge_spell_blood");
 			recharge_spell_energy = nbt.getBoolean("recharge_spell_energy");
 			teleportation = nbt.getBoolean("teleportation");
-			portalstop = nbt.getBoolean("portalstop");
 			explosion = nbt.getBoolean("explosion");
 		}
 	}
@@ -597,7 +593,6 @@ public class PowerModVariables {
 					variables.recharge_spell_blood = message.data.recharge_spell_blood;
 					variables.recharge_spell_energy = message.data.recharge_spell_energy;
 					variables.teleportation = message.data.teleportation;
-					variables.portalstop = message.data.portalstop;
 					variables.explosion = message.data.explosion;
 				}
 			});
