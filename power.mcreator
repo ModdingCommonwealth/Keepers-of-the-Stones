@@ -11314,7 +11314,6 @@
       "item.power.energy_sphere": "�������������� ���",
       "item.power.vacuum_web": "��������� ����",
       "item.power.explode_leggings": "��������� ������",
-      "item.power.sun_battery": "Battery",
       "item.power.energy_helmet": "�������������� ����",
       "item.power.create_shadow": "������� ����",
       "effect.power.recharge_ice_stone": "�����������",
@@ -12228,5 +12227,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200112711
 }
