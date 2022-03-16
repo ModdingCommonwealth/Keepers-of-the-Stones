@@ -5,14 +5,11 @@
 package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.block.VacuumWebBlockBlock;
-import power.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
 import power.keepeersofthestones.block.TechnobarrierBlockBlock;
-import power.keepeersofthestones.block.SoundBarrierBlockBlock;
 import power.keepeersofthestones.block.OrangePortalBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.block.EnergyBlockBlock;
 import power.keepeersofthestones.block.DetonatorTNTBlock;
-import power.keepeersofthestones.block.CrystalShieldBlockBlock;
 import power.keepeersofthestones.block.ClusterBlockBlock;
 import power.keepeersofthestones.block.BluePortalBlock;
 import power.keepeersofthestones.block.BlackHoleBlockBlock;
@@ -33,14 +30,15 @@ public class PowerModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PowerMod.MODID);
 	public static final RegistryObject<Block> BATTERY_CHARGER = REGISTRY.register("battery_charger", () -> new BatteryChargerBlock());
 	public static final RegistryObject<Block> ENERGY_BLOCK = REGISTRY.register("energy_block", () -> new EnergyBlockBlock());
-	public static final RegistryObject<Block> SOUND_BARRIER_BLOCK = REGISTRY.register("sound_barrier_block", () -> new SoundBarrierBlockBlock());
+	public static final RegistryObject<Block> ACUSTICAL_EXPLODE = REGISTRY.register("acustical_explode", () -> new AcusticalExplodeBlock());
+	public static final RegistryObject<Block> CRYSTAL_SHARP_ON_BLOCK = REGISTRY.register("crystal_sharp_on_block",
+			() -> new CrystalSharpOnBlockBlock());
 	public static final RegistryObject<Block> CLUSTER_BLOCK = REGISTRY.register("cluster_block", () -> new ClusterBlockBlock());
-	public static final RegistryObject<Block> CRYSTAL_SHIELD_BLOCK = REGISTRY.register("crystal_shield_block", () -> new CrystalShieldBlockBlock());
 	public static final RegistryObject<Block> VACUUM_WEB_BLOCK = REGISTRY.register("vacuum_web_block", () -> new VacuumWebBlockBlock());
 	public static final RegistryObject<Block> MOON_STONES_BLOCK = REGISTRY.register("moon_stones_block", () -> new MoonStonesBlockBlock());
 	public static final RegistryObject<Block> BLACK_HOLE_BLOCK = REGISTRY.register("black_hole_block", () -> new BlackHoleBlockBlock());
-	public static final RegistryObject<Block> UNMULTIPLICATION_MOON_STONES_BLOCK = REGISTRY.register("unmultiplication_moon_stones_block",
-			() -> new UnmultiplicationMoonStonesBlock());
+	public static final RegistryObject<Block> GETTINGSTONESWHENENTERINGTHEGAME = REGISTRY.register("gettingStonesWhenEnteringTheGame",
+			() -> new GettingStonesWhenEnteringTheGameBlock());
 	public static final RegistryObject<Block> TECHNOBARRIER_BLOCK = REGISTRY.register("technobarrier_block", () -> new TechnobarrierBlockBlock());
 	public static final RegistryObject<Block> BLUE_PORTAL = REGISTRY.register("blue_portal", () -> new BluePortalBlock());
 	public static final RegistryObject<Block> ORANGE_PORTAL = REGISTRY.register("orange_portal", () -> new OrangePortalBlock());

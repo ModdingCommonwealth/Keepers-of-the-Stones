@@ -4,25 +4,9 @@
  */
 package power.keepeersofthestones.init;
 
-import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
-import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
-import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
-import power.keepeersofthestones.client.gui.CultivationGUIScreen;
-import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage2Screen;
-import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
-import power.keepeersofthestones.client.gui.CheckpointGUIScreen;
-import power.keepeersofthestones.client.gui.BatteryCreateGUIScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnVenusScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnMoonScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnMarsScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnEarthScreen;
-
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.client.gui.screens.MenuScreens;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PowerModScreens {

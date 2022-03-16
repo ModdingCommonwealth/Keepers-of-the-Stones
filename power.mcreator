@@ -6462,35 +6462,6 @@
       "path": "~/Moon"
     },
     {
-      "name": "DestructionEntity",
-      "type": "procedure",
-      "sortid": 409,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "destruction_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Destruction"
-    },
-    {
       "name": "GettingStonesWhenEnteringTheGame",
       "type": "gamerule",
       "sortid": 410,

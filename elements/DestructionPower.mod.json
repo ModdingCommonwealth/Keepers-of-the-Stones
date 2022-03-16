@@ -32,9 +32,6 @@
     "onRightClickedOnBlock": {
       "name": "DestructionPowerUse"
     },
-    "onEntityHitWith": {
-      "name": "DestructionEntity"
-    },
     "hasDispenseBehavior": false
   }
 }
