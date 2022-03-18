@@ -8,7 +8,7 @@
     "name": "Battery",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Batteries"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,
