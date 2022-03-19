@@ -28,10 +28,16 @@
         "value": "mutated_desert"
       },
       {
-        "value": "smaller_extreme_hills"
+        "value": "deep_lukewarm_ocean"
       },
       {
-        "value": "snowy_mountains"
+        "value": "deep_warm_ocean"
+      },
+      {
+        "value": "lukewarm_ocean"
+      },
+      {
+        "value": "warm_ocean"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -47,7 +53,7 @@
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": true,
+    "imitateOverworldBehaviour": false,
     "portalFrame": {
       "value": ""
     },

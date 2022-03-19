@@ -1,10 +1,10 @@
 {
   "ultrawarm": false,
-  "natural": true,
-  "piglin_safe": false,
+  "natural": false,
+  "piglin_safe": true,
   "respawn_anchor_works": true,
   "bed_works": true,
-  "has_raids": true,
+  "has_raids": false,
   "has_skylight": true,
   "has_ceiling": false,
   "coordinate_scale": 1,
