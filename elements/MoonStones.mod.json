@@ -24,7 +24,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "onRangedItemUsed": {
-      "name": "RechargeSunExplode"
+      "name": "RechargeMagicFireball"
     },
     "bulletPower": 1.0,
     "bulletDamage": 8.0,

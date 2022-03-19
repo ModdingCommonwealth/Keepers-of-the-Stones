@@ -3,9 +3,9 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "sun_explode",
+    "texture": "explosive_flow",
     "customModelName": "Normal",
-    "name": "Sun Explode",
+    "name": "Explosive Flow",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
@@ -15,7 +15,7 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 100,
+    "usageCount": 5000,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
@@ -27,17 +27,17 @@
       "name": "RechargeMagicFireball"
     },
     "bulletPower": 1.0,
-    "bulletDamage": 9.0,
-    "bulletKnockback": 1,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:SunExplode"
+      "value": "CUSTOM:ExplosiveFlow"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "SunExplodeUse"
+      "name": "NullExplode"
     }
   }
 }

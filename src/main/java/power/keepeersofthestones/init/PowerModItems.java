@@ -100,6 +100,7 @@ import power.keepeersofthestones.item.MetalBatteryItem;
 import power.keepeersofthestones.item.MegawattItem;
 import power.keepeersofthestones.item.MagmaShieldItem;
 import power.keepeersofthestones.item.MagicFireballItem;
+import power.keepeersofthestones.item.MaceItem;
 import power.keepeersofthestones.item.LightningStrikeItem;
 import power.keepeersofthestones.item.LightningStoneItem;
 import power.keepeersofthestones.item.LightningItem;
@@ -136,6 +137,7 @@ import power.keepeersofthestones.item.FireStoneItem;
 import power.keepeersofthestones.item.FireItem;
 import power.keepeersofthestones.item.FireBatteryItem;
 import power.keepeersofthestones.item.FertilizerItem;
+import power.keepeersofthestones.item.ExplosiveFlowItem;
 import power.keepeersofthestones.item.ExplosionStoneItem;
 import power.keepeersofthestones.item.ExplosionBatteryItem;
 import power.keepeersofthestones.item.ExplodeItem;
@@ -491,6 +493,8 @@ public class PowerModItems {
 	public static final RegistryObject<Item> EXPLODE_BOOTS = REGISTRY.register("explode_boots", () -> new ExplodeItem.Boots());
 	public static final RegistryObject<Item> EXPLOSION_BATTERY = REGISTRY.register("explosion_battery", () -> new ExplosionBatteryItem());
 	public static final RegistryObject<Item> DETONATOR_TNT = block(PowerModBlocks.DETONATOR_TNT, null);
+	public static final RegistryObject<Item> EXPLOSIVE_FLOW = REGISTRY.register("explosive_flow", () -> new ExplosiveFlowItem());
+	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -2,7 +2,7 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.RechargeMagicFireballProcedure;
-import power.keepeersofthestones.entity.MoonStonesEntity;
+import power.keepeersofthestones.entity.ExplosiveFlowEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
@@ -16,9 +16,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
-public class MoonStonesItem extends Item {
-	public MoonStonesItem() {
-		super(new Item.Properties().tab(null).durability(100));
+public class ExplosiveFlowItem extends Item {
+	public ExplosiveFlowItem() {
+		super(new Item.Properties().tab(null).durability(5000));
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class MoonStonesItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				MoonStonesEntity entityarrow = MoonStonesEntity.shoot(world, entity, world.getRandom(), 1f, 8, 1);
+				ExplosiveFlowEntity entityarrow = ExplosiveFlowEntity.shoot(world, entity, world.getRandom(), 1f, 5, 5);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

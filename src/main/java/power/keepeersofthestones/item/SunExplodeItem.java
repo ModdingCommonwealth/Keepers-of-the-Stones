@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.RechargeSunExplodeProcedure;
+import power.keepeersofthestones.procedures.RechargeMagicFireballProcedure;
 import power.keepeersofthestones.entity.SunExplodeEntity;
 
 import net.minecraft.world.level.Level;
@@ -48,7 +48,7 @@ public class SunExplodeItem extends Item {
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 
-				RechargeSunExplodeProcedure.execute(entity, itemstack);
+				RechargeMagicFireballProcedure.execute(entity, itemstack);
 			}
 		}
 	}
