@@ -14,7 +14,7 @@ public class TechnoPickaxeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 8f;
+				return 24f;
 			}
 
 			public float getAttackDamageBonus() {
