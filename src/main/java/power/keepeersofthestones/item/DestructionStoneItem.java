@@ -2,6 +2,7 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.DestructionStoneUseProcedure;
+import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -14,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class DestructionStoneItem extends Item {
 	public DestructionStoneItem() {
-		super(new Item.Properties().tab(null).durability(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_GREAT_GROUP).durability(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

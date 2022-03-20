@@ -51,11 +51,14 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": " Destruct",
+          "onClick": {
+            "name": "DestructionGet"
+          },
           "width": 56,
           "height": 20,
-          "name": " ",
-          "x": 141,
+          "name": " Destruct",
+          "x": 51,
           "y": 134
         }
       },
@@ -84,7 +87,7 @@
           "height": 20,
           "name": "Blood",
           "x": 51,
-          "y": 107
+          "y": 161
         }
       },
       {
@@ -97,8 +100,8 @@
           "width": 56,
           "height": 20,
           "name": "Time",
-          "x": 51,
-          "y": 134
+          "x": 141,
+          "y": 53
         }
       },
       {
@@ -111,8 +114,8 @@
           "width": 56,
           "height": 20,
           "name": "Tech",
-          "x": 51,
-          "y": 161
+          "x": 141,
+          "y": 80
         }
       },
       {
@@ -126,7 +129,7 @@
           "height": 20,
           "name": "Explosion",
           "x": 141,
-          "y": 80
+          "y": 134
         }
       },
       {
@@ -140,17 +143,20 @@
           "height": 20,
           "name": "TP",
           "x": 141,
-          "y": 53
+          "y": 107
         }
       },
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": "Creation",
+          "onClick": {
+            "name": "CreationGet"
+          },
           "width": 56,
           "height": 20,
-          "name": " ",
-          "x": 141,
+          "name": "Creation",
+          "x": 51,
           "y": 107
         }
       },
@@ -161,7 +167,7 @@
           "width": 56,
           "height": 20,
           "name": " ",
-          "x": 249,
+          "x": 240,
           "y": 53
         }
       },
@@ -172,7 +178,7 @@
           "width": 56,
           "height": 20,
           "name": " ",
-          "x": 249,
+          "x": 240,
           "y": 80
         }
       },
@@ -183,7 +189,7 @@
           "width": 56,
           "height": 20,
           "name": " ",
-          "x": 249,
+          "x": 240,
           "y": 107
         }
       },
@@ -228,7 +234,7 @@
           "use1Xscale": false,
           "name": "blood_master.png",
           "x": 33,
-          "y": 107
+          "y": 161
         }
       },
       {
@@ -237,8 +243,8 @@
           "image": "time_master.png",
           "use1Xscale": false,
           "name": "time_master.png",
-          "x": 33,
-          "y": 134
+          "x": 123,
+          "y": 53
         }
       },
       {
@@ -247,8 +253,8 @@
           "image": "technology_master.png",
           "use1Xscale": false,
           "name": "technology_master.png",
-          "x": 33,
-          "y": 161
+          "x": 123,
+          "y": 80
         }
       },
       {
@@ -258,7 +264,7 @@
           "use1Xscale": false,
           "name": "teleportation_master.png",
           "x": 123,
-          "y": 53
+          "y": 107
         }
       },
       {
@@ -268,7 +274,82 @@
           "use1Xscale": false,
           "name": "explosion_master.png",
           "x": 123,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Choise",
+          "width": 56,
+          "height": 20,
+          "name": "Choise",
+          "x": 339,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Choise",
+          "width": 56,
+          "height": 20,
+          "name": "Choise",
+          "x": 339,
           "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Choise",
+          "width": 56,
+          "height": 20,
+          "name": "Choise",
+          "x": 339,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "creation_master.png",
+          "use1Xscale": false,
+          "name": "creation_master.png",
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "destruction_master.png",
+          "use1Xscale": false,
+          "name": "destruction_master.png",
+          "x": 33,
+          "y": 134
         }
       }
     ],

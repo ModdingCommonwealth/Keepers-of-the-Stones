@@ -11503,7 +11503,7 @@
       "item.power.tornado_boots": "Ботинки Торнадо",
       "item.power.water_stone": "Камень Воды",
       "item.power.animals_boots": "Животные ботинки",
-      "item.power.cursed_diamond": "Cursed Diamond",
+      "item.power.cursed_diamond": "Проклятый Бриллиант",
       "effect.power.energy_master": "Мастер Энергии",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.shadow_stone": "Камень Тени",
@@ -12205,13 +12205,17 @@
       {
         "name": "Explosion",
         "children": []
+      },
+      {
+        "name": "Amber",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.8.0.1",
+    "version": "1.8.0.2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
