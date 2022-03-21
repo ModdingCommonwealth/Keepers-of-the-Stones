@@ -3243,15 +3243,6 @@
       "path": "~/Lava"
     },
     {
-      "name": "IceSpear",
-      "type": "tool",
-      "sortid": 232,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_spear",
-      "path": "~/Ice"
-    },
-    {
       "name": "GreeneryMaster",
       "type": "potioneffect",
       "sortid": 233,
@@ -10806,6 +10797,15 @@
       "locked_code": false,
       "registry_name": "mace",
       "path": "~/Explosion"
+    },
+    {
+      "name": "IceSpear",
+      "type": "rangeditem",
+      "sortid": 634,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_spear",
+      "path": "~/Ice"
     }
   ],
   "variable_elements": [
@@ -11862,9 +11862,9 @@
       "item.power.creation_stone": "Creation Stone",
       "effect.power.earth_master": "Master of the Earth",
       "effect.power.invincibility": "Invincibility",
-      "item.power.ice_spear": "Ice Spear",
       "item.power.blood_battery": "Battery",
       "item.power.portal_blast": "Portal Blaster",
+      "item.power.ice_spear": "Ice Spear",
       "item.power.water_chestplate": "Water Chestplate",
       "item.power.time_stone": "Time Stone",
       "effect.power.sun_master": "Master of Sun",

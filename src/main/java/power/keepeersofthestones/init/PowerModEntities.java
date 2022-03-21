@@ -25,6 +25,7 @@ import power.keepeersofthestones.entity.MoonStonesEntity;
 import power.keepeersofthestones.entity.MegawattEntity;
 import power.keepeersofthestones.entity.MagicFireballEntity;
 import power.keepeersofthestones.entity.LavaBallEntity;
+import power.keepeersofthestones.entity.IceSpearEntity;
 import power.keepeersofthestones.entity.IceSharpEntity;
 import power.keepeersofthestones.entity.IceBallEntity;
 import power.keepeersofthestones.entity.GlowEntity;
@@ -153,6 +154,9 @@ public class PowerModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ExplosiveFlowEntity>> EXPLOSIVE_FLOW = register("projectile_explosive_flow",
 			EntityType.Builder.<ExplosiveFlowEntity>of(ExplosiveFlowEntity::new, MobCategory.MISC).setCustomClientFactory(ExplosiveFlowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceSpearEntity>> ICE_SPEAR = register("projectile_ice_spear",
+			EntityType.Builder.<IceSpearEntity>of(IceSpearEntity::new, MobCategory.MISC).setCustomClientFactory(IceSpearEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

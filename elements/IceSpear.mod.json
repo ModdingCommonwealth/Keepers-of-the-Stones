@@ -1,6 +1,6 @@
 {
   "_fv": 25,
-  "_type": "tool",
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "ice_spear",
@@ -10,20 +10,33 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "toolType": "Sword",
-    "harvestLevel": 1,
-    "efficiency": 4.0,
-    "attackSpeed": 1.0,
-    "enchantability": 2,
-    "damageVsEntity": 15.0,
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
     "usageCount": 5000,
-    "blocksAffected": [],
+    "actionSound": {
+      "value": "item.trident.throw"
+    },
     "hasGlow": false,
-    "repairItems": [],
-    "immuneToFire": true,
-    "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 16.0,
+    "onRangedItemUsed": {
+      "name": "RechargeMagicFireball"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:IceSpear"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
       "name": "IceBallInEntity"
     }
   }

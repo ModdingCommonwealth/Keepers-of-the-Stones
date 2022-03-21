@@ -355,7 +355,6 @@ public class PowerModItems {
 	public static final RegistryObject<Item> RAIN_BOW = REGISTRY.register("rain_bow", () -> new RainBowItem());
 	public static final RegistryObject<Item> TORNADO_BATTLE_AXE = REGISTRY.register("tornado_battle_axe", () -> new TornadoBattleAxeItem());
 	public static final RegistryObject<Item> MAGMA_SHIELD = REGISTRY.register("magma_shield", () -> new MagmaShieldItem());
-	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
 	public static final RegistryObject<Item> ROSE_SWORD = REGISTRY.register("rose_sword", () -> new RoseSwordItem());
 	public static final RegistryObject<Item> WOODEN_SHIELD = REGISTRY.register("wooden_shield", () -> new WoodenShieldItem());
 	public static final RegistryObject<Item> SPIKE = REGISTRY.register("spike", () -> new SpikeItem());
@@ -495,6 +494,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> DETONATOR_TNT = block(PowerModBlocks.DETONATOR_TNT, null);
 	public static final RegistryObject<Item> EXPLOSIVE_FLOW = REGISTRY.register("explosive_flow", () -> new ExplosiveFlowItem());
 	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
+	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
