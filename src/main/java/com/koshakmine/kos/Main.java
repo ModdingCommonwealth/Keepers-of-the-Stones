@@ -6,17 +6,20 @@ import com.koshakmine.kos.effects.FireMasterEffect;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class Kos implements ModInitializer {
+public class Main implements ModInitializer {
     //Items
         public final static FireSwordItem Fire_Sword = new FireSwordItem(ToolMaterials.NETHERITE, 7, -2.5F, new FabricItemSettings().group(ItemGroup.COMBAT));
         public final static FireStoneItem Fire_Stone = new FireStoneItem(new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
     //Blocks
+
     //Effects
     public static final StatusEffect FireMasterEffect = new FireMasterEffect();
+    public static final StatusEffectInstance FireMasterEffectInstance = new StatusEffectInstance(FireMasterEffect, 12000);
 
         @Override
         public void onInitialize() {

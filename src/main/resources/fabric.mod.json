@@ -14,7 +14,7 @@
       "com.koshakmine.kos.client.KosClient"
     ],
     "main": [
-      "com.koshakmine.kos.Kos"
+      "com.koshakmine.kos.Main"
     ]
   },
   "mixins": [
@@ -23,6 +23,6 @@
   "depends": {
     "fabricloader": ">=0.13.1",
     "fabric": "*",
-    "minecraft": "1.18.1"
+    "minecraft": "1.18.2"
   }
 }
