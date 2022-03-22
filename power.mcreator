@@ -10806,6 +10806,15 @@
       "locked_code": false,
       "registry_name": "ice_spear",
       "path": "~/Ice"
+    },
+    {
+      "name": "GoldenCrossbow",
+      "type": "rangeditem",
+      "sortid": 635,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_crossbow",
+      "path": "~/Creation"
     }
   ],
   "variable_elements": [
@@ -11337,6 +11346,7 @@
       "effect.power.recharge_cosmos_stone": "Перезарядка",
       "item.power.lightning_helmet": "Повязка Молнии",
       "item.power.blood_boots": "Blood Boots",
+      "item.power.golden_crossbow": "Золотой Арбалет",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Штаны Молнии",
       "item.power.fire_chestplate": "Огненная Мантия",
@@ -11720,6 +11730,7 @@
       "effect.power.recharge_cosmos_stone": "Recharge",
       "item.power.lightning_helmet": "Lightning Helmet",
       "item.power.blood_boots": "Blood Boots",
+      "item.power.golden_crossbow": "Golden Crossbow",
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.lightning_leggings": "Lightning Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
@@ -12215,7 +12226,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.8.0.3",
+    "version": "1.8.0.4",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

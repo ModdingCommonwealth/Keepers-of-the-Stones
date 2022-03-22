@@ -128,6 +128,7 @@ import power.keepeersofthestones.item.IceBallItem;
 import power.keepeersofthestones.item.GreeneryStoneItem;
 import power.keepeersofthestones.item.GreeneryItem;
 import power.keepeersofthestones.item.GreeneryBatteryItem;
+import power.keepeersofthestones.item.GoldenCrossbowItem;
 import power.keepeersofthestones.item.GlowCreateItem;
 import power.keepeersofthestones.item.GalacticSwordItem;
 import power.keepeersofthestones.item.FlashLightItem;
@@ -495,6 +496,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> EXPLOSIVE_FLOW = REGISTRY.register("explosive_flow", () -> new ExplosiveFlowItem());
 	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
 	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
+	public static final RegistryObject<Item> GOLDEN_CROSSBOW = REGISTRY.register("golden_crossbow", () -> new GoldenCrossbowItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
