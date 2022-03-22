@@ -302,10 +302,10 @@
       {
         "type": "button",
         "data": {
-          "text": "Choise",
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": "Choise",
+          "name": " ",
           "x": 339,
           "y": 53
         }
@@ -313,10 +313,10 @@
       {
         "type": "button",
         "data": {
-          "text": "Choise",
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": "Choise",
+          "name": " ",
           "x": 339,
           "y": 80
         }
@@ -324,10 +324,10 @@
       {
         "type": "button",
         "data": {
-          "text": "Choise",
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": "Choise",
+          "name": " ",
           "x": 339,
           "y": 107
         }

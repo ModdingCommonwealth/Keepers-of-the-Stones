@@ -182,11 +182,11 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 226, this.topPos + 141, 56, 20, new TextComponent(" "), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 33, 56, 20, new TextComponent("Choise"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 33, 56, 20, new TextComponent(" "), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 60, 56, 20, new TextComponent("Choise"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 60, 56, 20, new TextComponent(" "), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 87, 56, 20, new TextComponent("Choise"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 87, 56, 20, new TextComponent(" "), e -> {
 		}));
 	}
 }
