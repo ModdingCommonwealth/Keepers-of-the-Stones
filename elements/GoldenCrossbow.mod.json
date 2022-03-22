@@ -32,7 +32,7 @@
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Items.ARROW"
+      "value": "Items.SPECTRAL_ARROW"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""

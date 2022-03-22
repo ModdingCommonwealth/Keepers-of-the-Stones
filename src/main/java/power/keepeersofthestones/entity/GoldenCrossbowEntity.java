@@ -48,7 +48,7 @@ public class GoldenCrossbowEntity extends AbstractArrow implements ItemSupplier 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(Items.ARROW);
+		return new ItemStack(Items.SPECTRAL_ARROW);
 	}
 
 	@Override

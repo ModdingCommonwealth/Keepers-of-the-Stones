@@ -23,6 +23,9 @@
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "RechargeMagicFireball"
+    },
     "bulletPower": 1.0,
     "bulletDamage": 8.0,
     "bulletKnockback": 1,
