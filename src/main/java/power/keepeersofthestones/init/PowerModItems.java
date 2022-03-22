@@ -211,7 +211,14 @@ public class PowerModItems {
 	public static final RegistryObject<Item> AIR_STONE = REGISTRY.register("air_stone", () -> new AirStoneItem());
 	public static final RegistryObject<Item> WATER_STONE = REGISTRY.register("water_stone", () -> new WaterStoneItem());
 	public static final RegistryObject<Item> EARTH_STONE = REGISTRY.register("earth_stone", () -> new EarthStoneItem());
+	public static final RegistryObject<Item> GREENERY_STONE = REGISTRY.register("greenery_stone", () -> new GreeneryStoneItem());
+	public static final RegistryObject<Item> ANIMALS_STONE = REGISTRY.register("animals_stone", () -> new AnimalsStoneItem());
+	public static final RegistryObject<Item> TECHNOLOGY_STONE = REGISTRY.register("technology_stone", () -> new TechnologyStoneItem());
+	public static final RegistryObject<Item> METAL_STONE = REGISTRY.register("metal_stone", () -> new MetalStoneItem());
+	public static final RegistryObject<Item> LIGHT_STONE = REGISTRY.register("light_stone", () -> new LightStoneItem());
+	public static final RegistryObject<Item> SHADOW_STONE = REGISTRY.register("shadow_stone", () -> new ShadowStoneItem());
 	public static final RegistryObject<Item> ENERGY_STONE = REGISTRY.register("energy_stone", () -> new EnergyStoneItem());
+	public static final RegistryObject<Item> VACUUM_STONE = REGISTRY.register("vacuum_stone", () -> new VacuumStoneItem());
 	public static final RegistryObject<Item> ICE_STONE = REGISTRY.register("ice_stone", () -> new IceStoneItem());
 	public static final RegistryObject<Item> LIGHTNING_STONE = REGISTRY.register("lightning_stone", () -> new LightningStoneItem());
 	public static final RegistryObject<Item> SOUND_STONE = REGISTRY.register("sound_stone", () -> new SoundStoneItem());
@@ -222,17 +229,15 @@ public class PowerModItems {
 	public static final RegistryObject<Item> OCEAN_STONE = REGISTRY.register("ocean_stone", () -> new OceanStoneItem());
 	public static final RegistryObject<Item> BLOOD_STONE = REGISTRY.register("blood_stone", () -> new BloodStoneItem());
 	public static final RegistryObject<Item> TELEPORTATION_STONE = REGISTRY.register("teleportation_stone", () -> new TeleportationStoneItem());
-	public static final RegistryObject<Item> GREENERY_STONE = REGISTRY.register("greenery_stone", () -> new GreeneryStoneItem());
-	public static final RegistryObject<Item> ANIMALS_STONE = REGISTRY.register("animals_stone", () -> new AnimalsStoneItem());
-	public static final RegistryObject<Item> METAL_STONE = REGISTRY.register("metal_stone", () -> new MetalStoneItem());
-	public static final RegistryObject<Item> LIGHT_STONE = REGISTRY.register("light_stone", () -> new LightStoneItem());
-	public static final RegistryObject<Item> SHADOW_STONE = REGISTRY.register("shadow_stone", () -> new ShadowStoneItem());
-	public static final RegistryObject<Item> VACUUM_STONE = REGISTRY.register("vacuum_stone", () -> new VacuumStoneItem());
-	public static final RegistryObject<Item> TECHNOLOGY_STONE = REGISTRY.register("technology_stone", () -> new TechnologyStoneItem());
+	public static final RegistryObject<Item> EXPLOSION_STONE = REGISTRY.register("explosion_stone", () -> new ExplosionStoneItem());
+	public static final RegistryObject<Item> AMBER_STONE = REGISTRY.register("amber_stone", () -> new AmberStoneItem());
 	public static final RegistryObject<Item> SUN_STONE = REGISTRY.register("sun_stone", () -> new SunStoneItem());
 	public static final RegistryObject<Item> MOON_STONE = REGISTRY.register("moon_stone", () -> new MoonStoneItem());
 	public static final RegistryObject<Item> COSMOS_STONE = REGISTRY.register("cosmos_stone", () -> new CosmosStoneItem());
 	public static final RegistryObject<Item> TIME_STONE = REGISTRY.register("time_stone", () -> new TimeStoneItem());
+	public static final RegistryObject<Item> CREATION_STONE = REGISTRY.register("creation_stone", () -> new CreationStoneItem());
+	public static final RegistryObject<Item> DESTRUCTION_STONE = REGISTRY.register("destruction_stone", () -> new DestructionStoneItem());
+	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
 	public static final RegistryObject<Item> ELEMENTAL_MUSIC_DISC = REGISTRY.register("elemental_music_disc", () -> new ElementalMusicDiscItem());
 	public static final RegistryObject<Item> EMPTY_BATTERY = REGISTRY.register("empty_battery", () -> new EmptyBatteryItem());
 	public static final RegistryObject<Item> FIRE_BATTERY = REGISTRY.register("fire_battery", () -> new FireBatteryItem());
@@ -261,6 +266,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> TIME_BATTERY = REGISTRY.register("time_battery", () -> new TimeBatteryItem());
 	public static final RegistryObject<Item> TECHNOLOGY_BATTERY = REGISTRY.register("technology_battery", () -> new TechnologyBatteryItem());
 	public static final RegistryObject<Item> TELEPORTATION_BATTERY = REGISTRY.register("teleportation_battery", () -> new TeleportationBatteryItem());
+	public static final RegistryObject<Item> EXPLOSION_BATTERY = REGISTRY.register("explosion_battery", () -> new ExplosionBatteryItem());
 	public static final RegistryObject<Item> BATTERY_CHARGER = block(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_REDSTONE);
 	public static final RegistryObject<Item> BURN = REGISTRY.register("burn", () -> new BurnItem());
 	public static final RegistryObject<Item> MAGIC_FIREBALL = REGISTRY.register("magic_fireball", () -> new MagicFireballItem());
@@ -393,9 +399,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> MOON_STONES_BLOCK = block(PowerModBlocks.MOON_STONES_BLOCK, null);
 	public static final RegistryObject<Item> ECLIPSE = REGISTRY.register("eclipse", () -> new EclipseItem());
 	public static final RegistryObject<Item> MOON_WITHER = REGISTRY.register("moon_wither", () -> new MoonWitherItem());
-	public static final RegistryObject<Item> CREATION_STONE = REGISTRY.register("creation_stone", () -> new CreationStoneItem());
 	public static final RegistryObject<Item> RANDOM_ITEM = REGISTRY.register("random_item", () -> new RandomItemItem());
-	public static final RegistryObject<Item> DESTRUCTION_STONE = REGISTRY.register("destruction_stone", () -> new DestructionStoneItem());
 	public static final RegistryObject<Item> DESTRUCTION_POWER = REGISTRY.register("destruction_power", () -> new DestructionPowerItem());
 	public static final RegistryObject<Item> TP_ON_MARS = REGISTRY.register("tp_on_mars", () -> new TpOnMarsItem());
 	public static final RegistryObject<Item> TP_ON_VENUS = REGISTRY.register("tp_on_venus", () -> new TpOnVenusItem());
@@ -488,19 +492,15 @@ public class PowerModItems {
 	public static final RegistryObject<Item> PORTAL_BLAST = REGISTRY.register("portal_blast", () -> new PortalBlastItem());
 	public static final RegistryObject<Item> BLUE_PORTAL = block(PowerModBlocks.BLUE_PORTAL, null);
 	public static final RegistryObject<Item> ORANGE_PORTAL = block(PowerModBlocks.ORANGE_PORTAL, null);
-	public static final RegistryObject<Item> EXPLOSION_STONE = REGISTRY.register("explosion_stone", () -> new ExplosionStoneItem());
 	public static final RegistryObject<Item> EXPLODE_HELMET = REGISTRY.register("explode_helmet", () -> new ExplodeItem.Helmet());
 	public static final RegistryObject<Item> EXPLODE_CHESTPLATE = REGISTRY.register("explode_chestplate", () -> new ExplodeItem.Chestplate());
 	public static final RegistryObject<Item> EXPLODE_LEGGINGS = REGISTRY.register("explode_leggings", () -> new ExplodeItem.Leggings());
 	public static final RegistryObject<Item> EXPLODE_BOOTS = REGISTRY.register("explode_boots", () -> new ExplodeItem.Boots());
-	public static final RegistryObject<Item> EXPLOSION_BATTERY = REGISTRY.register("explosion_battery", () -> new ExplosionBatteryItem());
 	public static final RegistryObject<Item> DETONATOR_TNT = block(PowerModBlocks.DETONATOR_TNT, null);
 	public static final RegistryObject<Item> EXPLOSIVE_FLOW = REGISTRY.register("explosive_flow", () -> new ExplosiveFlowItem());
-	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
 	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
 	public static final RegistryObject<Item> GOLDEN_CROSSBOW = REGISTRY.register("golden_crossbow", () -> new GoldenCrossbowItem());
 	public static final RegistryObject<Item> DESTRUCTION_SPHERE = REGISTRY.register("destruction_sphere", () -> new DestructionSphereItem());
-	public static final RegistryObject<Item> AMBER_STONE = REGISTRY.register("amber_stone", () -> new AmberStoneItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
