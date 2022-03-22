@@ -114,6 +114,7 @@ public class PowerModVariables {
 			clone.power_level = original.power_level;
 			clone.teleportation = original.teleportation;
 			clone.explosion = original.explosion;
+			clone.amber = original.amber;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -273,6 +274,7 @@ public class PowerModVariables {
 		public double oposy = 0;
 		public double oposz = 0;
 		public boolean explosion_stone = false;
+		public boolean amber_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -292,6 +294,7 @@ public class PowerModVariables {
 			oposy = nbt.getDouble("oposy");
 			oposz = nbt.getDouble("oposz");
 			explosion_stone = nbt.getBoolean("explosion_stone");
+			amber_stone = nbt.getBoolean("amber_stone");
 		}
 
 		@Override
@@ -307,6 +310,7 @@ public class PowerModVariables {
 			nbt.putDouble("oposy", oposy);
 			nbt.putDouble("oposz", oposz);
 			nbt.putBoolean("explosion_stone", explosion_stone);
+			nbt.putBoolean("amber_stone", amber_stone);
 			return nbt;
 		}
 
@@ -436,6 +440,7 @@ public class PowerModVariables {
 		public boolean recharge_spell_energy = false;
 		public boolean teleportation = false;
 		public boolean explosion = false;
+		public boolean amber = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -484,6 +489,7 @@ public class PowerModVariables {
 			nbt.putBoolean("recharge_spell_energy", recharge_spell_energy);
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("explosion", explosion);
+			nbt.putBoolean("amber", amber);
 			return nbt;
 		}
 
@@ -529,6 +535,7 @@ public class PowerModVariables {
 			recharge_spell_energy = nbt.getBoolean("recharge_spell_energy");
 			teleportation = nbt.getBoolean("teleportation");
 			explosion = nbt.getBoolean("explosion");
+			amber = nbt.getBoolean("amber");
 		}
 	}
 
@@ -594,6 +601,7 @@ public class PowerModVariables {
 					variables.recharge_spell_energy = message.data.recharge_spell_energy;
 					variables.teleportation = message.data.teleportation;
 					variables.explosion = message.data.explosion;
+					variables.amber = message.data.amber;
 				}
 			});
 			context.setPacketHandled(true);
