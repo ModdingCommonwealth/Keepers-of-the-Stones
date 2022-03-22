@@ -155,6 +155,7 @@ import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
 import power.keepeersofthestones.item.EarthBatteryItem;
 import power.keepeersofthestones.item.DestructionStoneItem;
+import power.keepeersofthestones.item.DestructionSphereItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
 import power.keepeersofthestones.item.CursedDiamondItem;
@@ -497,6 +498,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> MACE = REGISTRY.register("mace", () -> new MaceItem());
 	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
 	public static final RegistryObject<Item> GOLDEN_CROSSBOW = REGISTRY.register("golden_crossbow", () -> new GoldenCrossbowItem());
+	public static final RegistryObject<Item> DESTRUCTION_SPHERE = REGISTRY.register("destruction_sphere", () -> new DestructionSphereItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
