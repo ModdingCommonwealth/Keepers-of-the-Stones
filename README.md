@@ -2,4 +2,4 @@
 <br>Minecraft Support: 1.18.2(Fabric only)
 <br>Mod Version: Fabric-1.0-Dev1
 <br>Support type: Medium priority
-<br>Issue tag: [Fabric]
+<br>Issue tag: Fabric
