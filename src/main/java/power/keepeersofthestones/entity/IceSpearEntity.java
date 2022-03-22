@@ -67,7 +67,7 @@ public class IceSpearEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		IceBallInEntityProcedure.execute(entityHitResult.getEntity());
+		IceBallInEntityProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
