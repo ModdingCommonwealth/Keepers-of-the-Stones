@@ -1,6 +1,7 @@
 
 package power.keepeersofthestones.item;
 
+import power.keepeersofthestones.procedures.RechargeMagicFireballProcedure;
 import power.keepeersofthestones.entity.GoldenCrossbowEntity;
 
 import net.minecraft.world.level.Level;
@@ -46,6 +47,8 @@ public class GoldenCrossbowItem extends Item {
 				GoldenCrossbowEntity entityarrow = GoldenCrossbowEntity.shoot(world, entity, world.getRandom(), 1.2000000000000002f, 6, 4);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+
+				RechargeMagicFireballProcedure.execute(entity, itemstack);
 			}
 		}
 	}
