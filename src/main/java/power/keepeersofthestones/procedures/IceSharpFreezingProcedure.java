@@ -21,7 +21,7 @@ public class IceSharpFreezingProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, (false), (false)));
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 20, 5, 5, 5, 1);
+			_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 25, 2, 2, 2, 1);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
