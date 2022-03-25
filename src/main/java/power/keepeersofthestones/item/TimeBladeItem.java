@@ -1,38 +1,44 @@
 
 package power.keepeersofthestones.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Item;
+import power.keepeersofthestones.PowerModElements;
 
-public class TimeBladeItem extends SwordItem {
-	public TimeBladeItem() {
-		super(new Tier() {
-			public int getUses() {
+@PowerModElements.ModElement.Tag
+public class TimeBladeItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:time_blade")
+	public static final Item block = null;
+
+	public TimeBladeItem(PowerModElements instance) {
+		super(instance, 502);
+	}
+
+	@Override
+	public void initElements() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
+			public int getMaxUses() {
 				return 5000;
 			}
 
-			public float getSpeed() {
+			public float getEfficiency() {
 				return 10f;
 			}
 
-			public float getAttackDamageBonus() {
+			public float getAttackDamage() {
 				return 10f;
 			}
 
-			public int getLevel() {
+			public int getHarvestLevel() {
 				return 3;
 			}
 
-			public int getEnchantmentValue() {
+			public int getEnchantability() {
 				return 2;
 			}
 
-			public Ingredient getRepairIngredient() {
+			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().tab(null).fireResistant());
-		setRegistryName("time_blade");
+		}, 3, -2.4f, new Item.Properties().group(null).isImmuneToFire()) {
+		}.setRegistryName("time_blade"));
 	}
 }

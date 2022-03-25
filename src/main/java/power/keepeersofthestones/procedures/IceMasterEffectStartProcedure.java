@@ -3,18 +3,6 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
 import java.util.Map;
 
 public class IceMasterEffectStartProcedure {

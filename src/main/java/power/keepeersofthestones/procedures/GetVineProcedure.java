@@ -2,13 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-
 import java.util.Map;
 
 public class GetVineProcedure {

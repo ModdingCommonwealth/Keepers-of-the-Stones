@@ -7,34 +7,6 @@ import power.keepeersofthestones.procedures.IceBallInBlockProcedure;
 import power.keepeersofthestones.entity.renderer.IceBallRenderer;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.ActionResult;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.IRendersAsItem;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-
 import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
@@ -47,7 +19,7 @@ public class IceBallItem extends PowerModElements.ModElement {
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("entitybulletice_ball").setRegistryName("entitybulletice_ball");
+			.size(0.5f, 0.5f)).build("projectile_ice_ball").setRegistryName("projectile_ice_ball");
 
 	public IceBallItem(PowerModElements instance) {
 		super(instance, 100);
@@ -140,15 +112,37 @@ public class IceBallItem extends PowerModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+		}
+
+		@Override
+		public void onEntityHit(EntityRayTraceResult entityRayTraceResult) {
+			super.onEntityHit(entityRayTraceResult);
+			Entity entity = entityRayTraceResult.getEntity();
 			Entity sourceentity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-			Entity imediatesourceentity = this;
 
 			IceBallInEntityProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+
+		@Override
+		public void func_230299_a_(BlockRayTraceResult blockRayTraceResult) {
+			super.func_230299_a_(blockRayTraceResult);
+			double x = blockRayTraceResult.getPos().getX();
+			double y = blockRayTraceResult.getPos().getY();
+			double z = blockRayTraceResult.getPos().getZ();
+			World world = this.world;
+			Entity entity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
+
+			IceBallInBlockProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -173,7 +167,7 @@ public class IceBallItem extends PowerModElements.ModElement {
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
-		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
+		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);

@@ -3,49 +3,76 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.VenusOnPlayerProcedure;
 import power.keepeersofthestones.procedures.VenusOnMeProcedure;
+import power.keepeersofthestones.PowerModElements;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
-public class TpOnVenusItem extends Item {
-	public TpOnVenusItem() {
-		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("tp_on_venus");
+@PowerModElements.ModElement.Tag
+public class TpOnVenusItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:tp_on_venus")
+	public static final Item block = null;
+
+	public TpOnVenusItem(PowerModElements instance) {
+		super(instance, 397);
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
+	public void initElements() {
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
-	}
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
+			super(new Item.Properties().group(null).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
+			setRegistryName("tp_on_venus");
+		}
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
 
-		VenusOnMeProcedure.execute(world, entity, itemstack);
-		return ar;
-	}
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 0;
+		}
 
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		VenusOnPlayerProcedure.execute(entity.level, entity, sourceentity, itemstack);
-		return retval;
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
+		}
+
+		@Override
+		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
+			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
+			ItemStack itemstack = ar.getResult();
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			VenusOnMeProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return ar;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+
+			VenusOnPlayerProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("sourceentity", sourceentity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return retval;
+		}
 	}
 }

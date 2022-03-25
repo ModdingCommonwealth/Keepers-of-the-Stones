@@ -10,6 +10,7 @@ import power.keepeersofthestones.procedures.ShadowGetProcedure;
 import power.keepeersofthestones.procedures.RainGetProcedure;
 import power.keepeersofthestones.procedures.OceanGetProcedure;
 import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
+import power.keepeersofthestones.procedures.MetalGetProcedure;
 import power.keepeersofthestones.procedures.LightningGetProcedure;
 import power.keepeersofthestones.procedures.LightGetProcedure;
 import power.keepeersofthestones.procedures.LavaGetProcedure;
@@ -22,27 +23,6 @@ import power.keepeersofthestones.procedures.CrystalGetProcedure;
 import power.keepeersofthestones.procedures.AnimalsGetProcedure;
 import power.keepeersofthestones.procedures.AirGetProcedure;
 import power.keepeersofthestones.PowerModElements;
-
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.network.NetworkEvent;
-import net.minecraftforge.fml.network.IContainerFactory;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.inventory.container.ContainerType;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.ScreenManager;
 
 import java.util.stream.Stream;
 import java.util.function.Supplier;
@@ -296,6 +276,12 @@ public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
 		if (buttonID == 15) {
 
 			AnimalsGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 16) {
+
+			MetalGetProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}

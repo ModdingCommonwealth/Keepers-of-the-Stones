@@ -3,27 +3,8 @@ package power.keepeersofthestones.world.dimension;
 
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
-import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.carver.WorldCarver;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.world.DimensionRenderInfo;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Block;
-
 import java.util.Set;
 import java.util.HashSet;
-
-import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
-
-import com.google.common.collect.ImmutableSet;
 
 @PowerModElements.ModElement.Tag
 public class VenusDimension extends PowerModElements.ModElement {

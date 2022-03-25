@@ -4,10 +4,6 @@ import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.entity.Entity;
-
 import java.util.Map;
 
 public class MultiplicationMoonStoneProcedure {

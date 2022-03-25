@@ -3,36 +3,7 @@ package power.keepeersofthestones.world.biome;
 
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-
-import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
-import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
-import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.IWorldWriter;
-import net.minecraft.world.ISeedReader;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.state.BooleanProperty;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-
 import java.util.Set;
-import java.util.Random;
-import java.util.List;
 
 @PowerModElements.ModElement.Tag
 public class MoonLandBiome extends PowerModElements.ModElement {
@@ -120,36 +91,12 @@ public class MoonLandBiome extends PowerModElements.ModElement {
 			tdt.setRegistryName("moon_land_ctd");
 			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
 		}
-
 		public CustomCocoaTreeDecorator() {
 			super(0.2f);
 		}
-
-		@Override
-		protected TreeDecoratorType<?> func_230380_a_() {
+		@Override protected TreeDecoratorType<?> func_230380_a_() {
 			return tdt;
 		}
-
-		@Override
-		public void func_225576_a_(ISeedReader p_225576_1_, Random p_225576_2_, List<BlockPos> p_225576_3_, List<BlockPos> p_225576_4_,
-				Set<BlockPos> p_225576_5_, MutableBoundingBox p_225576_6_) {
-			if (!(p_225576_2_.nextFloat() >= 0.2F)) {
-				int i = p_225576_3_.get(0).getY();
-				p_225576_3_.stream().filter((p_236867_1_) -> {
-					return p_236867_1_.getY() - i <= 2;
-				}).forEach((p_242865_5_) -> {
-					for (Direction direction : Direction.Plane.HORIZONTAL) {
-						if (p_225576_2_.nextFloat() <= 0.25F) {
-							Direction direction1 = direction.getOpposite();
-							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
-							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = Blocks.AIR.getDefaultState();
-								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
-							}
-						}
-					}
-				});
-			}
-		}
+		@Override /* failed to load code for net.minecraft.world.gen.treedecorator.CocoaTreeDecorator */
 	}
 }

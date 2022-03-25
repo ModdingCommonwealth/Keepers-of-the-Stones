@@ -4,16 +4,6 @@ package power.keepeersofthestones.item;
 import power.keepeersofthestones.procedures.EnergyStaffUseProcedure;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.entity.LivingEntity;
-
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;

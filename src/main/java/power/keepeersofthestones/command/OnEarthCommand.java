@@ -3,25 +3,11 @@ package power.keepeersofthestones.command;
 
 import power.keepeersofthestones.procedures.OnEarthUseProcedure;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegisterCommandsEvent;
-import net.minecraftforge.common.util.FakePlayerFactory;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.entity.Entity;
-import net.minecraft.command.Commands;
-import net.minecraft.command.CommandSource;
-
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 import java.util.AbstractMap;
-
-import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-import com.mojang.brigadier.arguments.StringArgumentType;
 
 @Mod.EventBusSubscriber
 public class OnEarthCommand {

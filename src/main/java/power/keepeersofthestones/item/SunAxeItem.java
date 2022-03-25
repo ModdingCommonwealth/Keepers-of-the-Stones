@@ -3,13 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.AxeItem;
-
 @PowerModElements.ModElement.Tag
 public class SunAxeItem extends PowerModElements.ModElement {
 	@ObjectHolder("power:sun_axe")

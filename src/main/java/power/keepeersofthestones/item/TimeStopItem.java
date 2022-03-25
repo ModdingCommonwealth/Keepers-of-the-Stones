@@ -2,41 +2,61 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TimeStopUseProcedure;
+import power.keepeersofthestones.PowerModElements;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
-public class TimeStopItem extends Item {
-	public TimeStopItem() {
-		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("time_stop");
+@PowerModElements.ModElement.Tag
+public class TimeStopItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:time_stop")
+	public static final Item block = null;
+
+	public TimeStopItem(PowerModElements instance) {
+		super(instance, 509);
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
+	public void initElements() {
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
-	}
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
+			super(new Item.Properties().group(null).maxStackSize(1).isImmuneToFire().rarity(Rarity.COMMON));
+			setRegistryName("time_stop");
+		}
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
 
-		TimeStopUseProcedure.execute(world, entity, itemstack);
-		return ar;
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 0;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
+		}
+
+		@Override
+		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
+			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
+			ItemStack itemstack = ar.getResult();
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			TimeStopUseProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return ar;
+		}
 	}
 }

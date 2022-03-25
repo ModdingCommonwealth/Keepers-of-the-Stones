@@ -1,21 +1,9 @@
 
 package power.keepeersofthestones.potion;
 
-import power.keepeersofthestones.procedures.InfernoMergerEffectStartProcedure;
-import power.keepeersofthestones.procedures.InfernoMergerEffectEndProcedure;
-import power.keepeersofthestones.procedures.InfernoMergeEffectsProcedure;
-
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-
-import net.minecraft.world.World;
-import net.minecraft.potion.EffectType;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effect;
-import net.minecraft.entity.ai.attributes.AttributeModifierManager;
-import net.minecraft.entity.LivingEntity;
+import power.keepeersofthestones.procedures.AccelerationTimeTickEffectProcedure;
+import power.keepeersofthestones.procedures.AccelerationTimeStartProcedure;
+import power.keepeersofthestones.procedures.AccelerationTimeEndProcedure;
 
 import java.util.stream.Stream;
 import java.util.Map;
@@ -23,8 +11,8 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class InfernoMergerPotionEffect {
-	@ObjectHolder("power:inferno_merger")
+public class AccelerationTimeEffectPotionEffect {
+	@ObjectHolder("power:acceleration_time_effect")
 	public static final Effect potion = null;
 
 	@SubscribeEvent
@@ -34,18 +22,18 @@ public class InfernoMergerPotionEffect {
 
 	public static class EffectCustom extends Effect {
 		public EffectCustom() {
-			super(EffectType.BENEFICIAL, -26215);
-			setRegistryName("inferno_merger");
+			super(EffectType.NEUTRAL, -13395712);
+			setRegistryName("acceleration_time_effect");
 		}
 
 		@Override
 		public String getName() {
-			return "effect.inferno_merger";
+			return "effect.acceleration_time_effect";
 		}
 
 		@Override
 		public boolean isBeneficial() {
-			return true;
+			return false;
 		}
 
 		@Override
@@ -75,9 +63,8 @@ public class InfernoMergerPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			InfernoMergerEffectStartProcedure
-					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			AccelerationTimeStartProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -87,8 +74,10 @@ public class InfernoMergerPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			InfernoMergeEffectsProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
-					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			AccelerationTimeTickEffectProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -99,7 +88,7 @@ public class InfernoMergerPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			InfernoMergerEffectEndProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			AccelerationTimeEndProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 

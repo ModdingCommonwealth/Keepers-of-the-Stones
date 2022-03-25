@@ -2,15 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.math.vector.Vector2f;
-import net.minecraft.command.ICommandSource;
-import net.minecraft.command.CommandSource;
-
 import java.util.Map;
 
 public class CrystalSharpOnBlockProcedure {

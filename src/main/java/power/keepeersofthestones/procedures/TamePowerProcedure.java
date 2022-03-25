@@ -4,18 +4,6 @@ import power.keepeersofthestones.item.TamerItem;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.Minecraft;
-
 import java.util.Map;
 
 public class TamePowerProcedure {

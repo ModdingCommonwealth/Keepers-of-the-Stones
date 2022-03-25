@@ -1,19 +1,23 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.potion.FireFlyingPotionEffect;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
+import java.util.Map;
 
 public class SpecialAbilityUseProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure SpecialAbilityUse!");
 			return;
+		}
+		Entity entity = (Entity) dependencies.get("entity");
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fire) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.FIRE_FLYING, 20, 1, (false), (false)));
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(FireFlyingPotionEffect.potion, (int) 20, (int) 1, (false), (false)));
 		}
 	}
 }

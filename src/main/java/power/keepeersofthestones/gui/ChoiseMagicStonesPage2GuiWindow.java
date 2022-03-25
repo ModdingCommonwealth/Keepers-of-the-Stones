@@ -3,23 +3,7 @@ package power.keepeersofthestones.gui;
 
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.client.Minecraft;
-
 import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
 public class ChoiseMagicStonesPage2GuiWindow extends ContainerScreen<ChoiseMagicStonesPage2Gui.GuiContainerMod> {
@@ -72,6 +56,9 @@ public class ChoiseMagicStonesPage2GuiWindow extends ContainerScreen<ChoiseMagic
 
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/blood_master.png"));
 		this.blit(ms, this.guiLeft + 19, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("power:textures/time_master.png"));
+		this.blit(ms, this.guiLeft + 118, this.guiTop + 33, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -129,13 +116,13 @@ public class ChoiseMagicStonesPage2GuiWindow extends ContainerScreen<ChoiseMagic
 				ChoiseMagicStonesPage2Gui.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 37, this.guiTop + 141, 56, 20, new StringTextComponent(" Blood"), e -> {
+		this.addButton(new Button(this.guiLeft + 37, this.guiTop + 141, 56, 20, new StringTextComponent("Blood"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2Gui.ButtonPressedMessage(4, x, y, z));
 				ChoiseMagicStonesPage2Gui.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 136, this.guiTop + 33, 56, 20, new StringTextComponent(" "), e -> {
+		this.addButton(new Button(this.guiLeft + 136, this.guiTop + 33, 56, 20, new StringTextComponent("Time"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2Gui.ButtonPressedMessage(5, x, y, z));
 				ChoiseMagicStonesPage2Gui.handleButtonAction(entity, 5, x, y, z);

@@ -3,9 +3,6 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-
 import java.util.Map;
 
 public class SetBlockMoonStoneProcedure {

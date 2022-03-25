@@ -3,11 +3,6 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.item.LightSwordItem;
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.Entity;
-
 import java.util.Map;
 
 public class TameGlowProcedure {

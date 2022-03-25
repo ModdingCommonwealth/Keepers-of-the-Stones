@@ -1,19 +1,24 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.potion.CurseCursedDiamondPotionEffect;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
+import java.util.Map;
 
 public class CurseFromCursedDiamondProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure CurseFromCursedDiamond!");
 			return;
+		}
+		Entity entity = (Entity) dependencies.get("entity");
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).blood) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.CURSE_CURSED_DIAMOND, 20, 0, (false), (false)));
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity)
+						.addPotionEffect(new EffectInstance(CurseCursedDiamondPotionEffect.potion, (int) 20, (int) 0, (false), (false)));
 		}
 	}
 }

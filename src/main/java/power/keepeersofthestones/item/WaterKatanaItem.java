@@ -3,13 +3,6 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
 @PowerModElements.ModElement.Tag
 public class WaterKatanaItem extends PowerModElements.ModElement {
 	@ObjectHolder("power:water_katana")

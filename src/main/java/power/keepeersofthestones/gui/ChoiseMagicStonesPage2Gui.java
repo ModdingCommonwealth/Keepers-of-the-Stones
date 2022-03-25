@@ -1,6 +1,7 @@
 
 package power.keepeersofthestones.gui;
 
+import power.keepeersofthestones.procedures.TimeGetProcedure;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
 import power.keepeersofthestones.procedures.MoonGetProcedure;
 import power.keepeersofthestones.procedures.DestructionGetProcedure;
@@ -8,27 +9,6 @@ import power.keepeersofthestones.procedures.CreationGetProcedure;
 import power.keepeersofthestones.procedures.CosmosGetProcedure;
 import power.keepeersofthestones.procedures.BloodGetProcedure;
 import power.keepeersofthestones.PowerModElements;
-
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.network.NetworkEvent;
-import net.minecraftforge.fml.network.IContainerFactory;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.inventory.container.ContainerType;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.ScreenManager;
 
 import java.util.stream.Stream;
 import java.util.function.Supplier;
@@ -217,6 +197,12 @@ public class ChoiseMagicStonesPage2Gui extends PowerModElements.ModElement {
 		if (buttonID == 4) {
 
 			BloodGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 5) {
+
+			TimeGetProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}

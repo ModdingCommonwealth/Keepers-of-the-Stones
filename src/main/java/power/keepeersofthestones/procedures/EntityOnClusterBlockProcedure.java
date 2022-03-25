@@ -2,9 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.util.DamageSource;
-import net.minecraft.entity.Entity;
-
 import java.util.Map;
 
 public class EntityOnClusterBlockProcedure {

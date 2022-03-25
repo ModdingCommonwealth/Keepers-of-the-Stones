@@ -6,37 +6,7 @@ import power.keepeersofthestones.procedures.BurnProcedureProcedure;
 import power.keepeersofthestones.entity.renderer.MagicFireballRenderer;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.util.ActionResult;
-import net.minecraft.network.IPacket;
-import net.minecraft.item.UseAction;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.entity.ai.attributes.Attribute;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.IRendersAsItem;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 
 import java.util.stream.Stream;
 import java.util.Random;
@@ -44,16 +14,13 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
-
 @PowerModElements.ModElement.Tag
 public class MagicFireballItem extends PowerModElements.ModElement {
 	@ObjectHolder("power:magic_fireball")
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("entitybulletmagic_fireball").setRegistryName("entitybulletmagic_fireball");
+			.size(0.5f, 0.5f)).build("projectile_magic_fireball").setRegistryName("projectile_magic_fireball");
 
 	public MagicFireballItem(PowerModElements instance) {
 		super(instance, 43);
@@ -157,29 +124,35 @@ public class MagicFireballItem extends PowerModElements.ModElement {
 		}
 
 		@Override
+		protected void arrowHit(LivingEntity entity) {
+			super.arrowHit(entity);
+			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+		}
+
+		@Override
 		public void onCollideWithPlayer(PlayerEntity entity) {
 			super.onCollideWithPlayer(entity);
 			Entity sourceentity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-			Entity imediatesourceentity = this;
 
 			BurnProcedureProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
-		protected void arrowHit(LivingEntity entity) {
-			super.arrowHit(entity);
-			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+		public void onEntityHit(EntityRayTraceResult entityRayTraceResult) {
+			super.onEntityHit(entityRayTraceResult);
+			Entity entity = entityRayTraceResult.getEntity();
 			Entity sourceentity = this.func_234616_v_();
+			Entity imediatesourceentity = this;
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			World world = this.world;
-			Entity imediatesourceentity = this;
 
 			BurnProcedureProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
@@ -202,7 +175,7 @@ public class MagicFireballItem extends PowerModElements.ModElement {
 
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
-		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
+		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);

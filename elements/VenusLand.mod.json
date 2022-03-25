@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
     "name": "Venus Land",
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.2,

@@ -2,15 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.Minecraft;
-
 import java.util.Map;
 
 public class RainfallUseProcedure {

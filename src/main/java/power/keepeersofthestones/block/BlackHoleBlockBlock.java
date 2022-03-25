@@ -4,26 +4,7 @@ package power.keepeersofthestones.block;
 import power.keepeersofthestones.procedures.VacuumTPProcedure;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
 
 import java.util.stream.Stream;
 import java.util.Map;

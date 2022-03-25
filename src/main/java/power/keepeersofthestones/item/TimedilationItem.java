@@ -2,33 +2,61 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TimeDilationUseProcedure;
+import power.keepeersofthestones.PowerModElements;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
-public class TimedilationItem extends Item {
-	public TimedilationItem() {
-		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
-		setRegistryName("time_dilation");
+@PowerModElements.ModElement.Tag
+public class TimedilationItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:time_dilation")
+	public static final Item block = null;
+
+	public TimedilationItem(PowerModElements instance) {
+		super(instance, 507);
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
+	public void initElements() {
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
-	}
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
+			super(new Item.Properties().group(null).maxStackSize(1).isImmuneToFire().rarity(Rarity.COMMON));
+			setRegistryName("time_dilation");
+		}
 
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TimeDilationUseProcedure.execute(entity.level, entity, sourceentity, itemstack);
-		return retval;
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
+
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 0;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+			boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			World world = entity.world;
+
+			TimeDilationUseProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("sourceentity", sourceentity), new AbstractMap.SimpleEntry<>("itemstack", itemstack))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return retval;
+		}
 	}
 }

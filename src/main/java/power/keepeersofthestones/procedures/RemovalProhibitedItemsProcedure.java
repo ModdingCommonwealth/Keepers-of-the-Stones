@@ -8,6 +8,7 @@ import power.keepeersofthestones.item.WaterKatanaItem;
 import power.keepeersofthestones.item.WaterItem;
 import power.keepeersofthestones.item.WaterFlowItem;
 import power.keepeersofthestones.item.WaterDropItem;
+import power.keepeersofthestones.item.VampirismItem;
 import power.keepeersofthestones.item.VacuumWebItem;
 import power.keepeersofthestones.item.VacuumSwordItem;
 import power.keepeersofthestones.item.VacuumSpiralItem;
@@ -19,6 +20,11 @@ import power.keepeersofthestones.item.TpOnEarthItem;
 import power.keepeersofthestones.item.TornadoItem;
 import power.keepeersofthestones.item.TornadoCreateItem;
 import power.keepeersofthestones.item.TornadoBattleAxeItem;
+import power.keepeersofthestones.item.TimedilationItem;
+import power.keepeersofthestones.item.TimeStopItem;
+import power.keepeersofthestones.item.TimeReversedItem;
+import power.keepeersofthestones.item.TimeItem;
+import power.keepeersofthestones.item.TimeBladeItem;
 import power.keepeersofthestones.item.TigerClawItem;
 import power.keepeersofthestones.item.SunRegenerationItem;
 import power.keepeersofthestones.item.SunRayItem;
@@ -89,6 +95,7 @@ import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
+import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
 import power.keepeersofthestones.item.CrystalItem;
@@ -100,29 +107,19 @@ import power.keepeersofthestones.item.CosmosItem;
 import power.keepeersofthestones.item.CoralShieldItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
 import power.keepeersofthestones.item.BurnItem;
+import power.keepeersofthestones.item.BloodReaperItem;
 import power.keepeersofthestones.item.BloodItem;
 import power.keepeersofthestones.item.BlackHoleItem;
+import power.keepeersofthestones.item.BlackHeartItem;
 import power.keepeersofthestones.item.BeeStingItem;
 import power.keepeersofthestones.item.AnimalsItem;
 import power.keepeersofthestones.item.AirFlowItem;
 import power.keepeersofthestones.item.AirBladeItem;
 import power.keepeersofthestones.item.AcusticalExplodeItem;
+import power.keepeersofthestones.item.AccelerationTimeItem;
 import power.keepeersofthestones.block.ClusterBlockBlock;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
-
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -1097,70 +1094,70 @@ public class RemovalProhibitedItemsProcedure {
 							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.VAMPIRISM);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(VampirismItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_REAPER);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(BloodReaperItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.CURSED_DIAMOND);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(CursedDiamondItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.BLACK_HEART);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(BlackHeartItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_HELMET);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeItem.helmet);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_CHESTPLATE);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeItem.body);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_LEGGINGS);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeItem.legs);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BOOTS);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeItem.boots);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BLADE);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeBladeItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.ACCELERATION_TIME);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(AccelerationTimeItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_DILATION);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimedilationItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_STOP);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeStopItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_REVERSED);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-									_player.inventoryMenu.getCraftSlots());
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(TimeReversedItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
 						}
 					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).active) {

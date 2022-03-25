@@ -1,21 +1,8 @@
 
 package power.keepeersofthestones.potion;
 
-import power.keepeersofthestones.procedures.GeyserMergerEffectsProcedure;
-import power.keepeersofthestones.procedures.GeyserMergerEffectStartProcedure;
-import power.keepeersofthestones.procedures.GeyserMergerEffectEndProcedure;
-
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-
-import net.minecraft.world.World;
-import net.minecraft.potion.EffectType;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effect;
-import net.minecraft.entity.ai.attributes.AttributeModifierManager;
-import net.minecraft.entity.LivingEntity;
+import power.keepeersofthestones.procedures.TimeStopEffectStartProcedure;
+import power.keepeersofthestones.procedures.TimeStopEffectEndProcedure;
 
 import java.util.stream.Stream;
 import java.util.Map;
@@ -23,8 +10,8 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class GeyserMergerPotionEffect {
-	@ObjectHolder("power:geyser_merger")
+public class TimeStopEffectPotionEffect {
+	@ObjectHolder("power:time_stop_effect")
 	public static final Effect potion = null;
 
 	@SubscribeEvent
@@ -34,18 +21,18 @@ public class GeyserMergerPotionEffect {
 
 	public static class EffectCustom extends Effect {
 		public EffectCustom() {
-			super(EffectType.BENEFICIAL, -16724788);
-			setRegistryName("geyser_merger");
+			super(EffectType.NEUTRAL, -6750208);
+			setRegistryName("time_stop_effect");
 		}
 
 		@Override
 		public String getName() {
-			return "effect.geyser_merger";
+			return "effect.time_stop_effect";
 		}
 
 		@Override
 		public boolean isBeneficial() {
-			return true;
+			return false;
 		}
 
 		@Override
@@ -75,20 +62,9 @@ public class GeyserMergerPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			GeyserMergerEffectStartProcedure
+			TimeStopEffectStartProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-
-		@Override
-		public void performEffect(LivingEntity entity, int amplifier) {
-			World world = entity.world;
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
-
-			GeyserMergerEffectsProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
-					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
@@ -99,7 +75,7 @@ public class GeyserMergerPotionEffect {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			GeyserMergerEffectEndProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			TimeStopEffectEndProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 

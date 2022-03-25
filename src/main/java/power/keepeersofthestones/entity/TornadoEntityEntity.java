@@ -5,47 +5,7 @@ import power.keepeersofthestones.procedures.TameTornadoProcedure;
 import power.keepeersofthestones.entity.renderer.TornadoEntityRenderer;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.network.IPacket;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.entity.projectile.PotionEntity;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.OwnerHurtTargetGoal;
-import net.minecraft.entity.ai.goal.OwnerHurtByTargetGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.FollowOwnerGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifierMap;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.entity.AgeableEntity;
 
 import java.util.stream.Stream;
 import java.util.Random;
@@ -108,7 +68,12 @@ public class TornadoEntityEntity extends PowerModElements.ModElement {
 			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
 			this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 			this.goalSelector.addGoal(3, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
 			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
 		}
@@ -134,7 +99,7 @@ public class TornadoEntityEntity extends PowerModElements.ModElement {
 				return false;
 			if (source.getImmediateSource() instanceof PlayerEntity)
 				return false;
-			if (source.getImmediateSource() instanceof PotionEntity)
+			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)
 				return false;

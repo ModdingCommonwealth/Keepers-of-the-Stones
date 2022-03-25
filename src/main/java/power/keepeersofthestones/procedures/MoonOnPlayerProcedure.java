@@ -1,71 +1,80 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.item.TpOnMoonItem;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
-import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
-import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
-import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
-import net.minecraft.core.Registry;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
+import java.util.Map;
 
 public class MoonOnPlayerProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
-		if (entity == null || sourceentity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				PowerMod.LOGGER.warn("Failed to load dependency world for procedure MoonOnPlayer!");
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TP_ON_MOON) {
-			if (world.isClientSide())
+		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure MoonOnPlayer!");
+			return;
+		}
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				PowerMod.LOGGER.warn("Failed to load dependency sourceentity for procedure MoonOnPlayer!");
+			return;
+		}
+		if (dependencies.get("itemstack") == null) {
+			if (!dependencies.containsKey("itemstack"))
+				PowerMod.LOGGER.warn("Failed to load dependency itemstack for procedure MoonOnPlayer!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+		if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == TpOnMoonItem.block) {
+			if (world.isRemote()) {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
+			}
 			{
 				Entity _ent = sourceentity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 							"item replace entity @s weapon.mainhand with air");
-			}
-			if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:moon"));
-				if (_player.level.dimension() == destinationType)
-					return;
-				ServerLevel nextLevel = _player.server.getLevel(destinationType);
-				if (nextLevel != null) {
-					_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-					_player.teleportTo(nextLevel, nextLevel.getSharedSpawnPos().getX(), nextLevel.getSharedSpawnPos().getY() + 1,
-							nextLevel.getSharedSpawnPos().getZ(), _player.getYRot(), _player.getXRot());
-					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-					for (MobEffectInstance effectinstance : _player.getActiveEffects())
-						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), effectinstance));
-					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 				}
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
+					RegistryKey<World> destinationType = RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("power:moon"));
+					ServerWorld nextWorld = _ent.getServer().getWorld(destinationType);
+					if (nextWorld != null) {
+						((ServerPlayerEntity) _ent).connection.sendPacket(new SChangeGameStatePacket(SChangeGameStatePacket.field_241768_e_, 0));
+						((ServerPlayerEntity) _ent).teleport(nextWorld, nextWorld.getSpawnPoint().getX(), nextWorld.getSpawnPoint().getY() + 1,
+								nextWorld.getSpawnPoint().getZ(), _ent.rotationYaw, _ent.rotationPitch);
+						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayerAbilitiesPacket(((ServerPlayerEntity) _ent).abilities));
+						for (EffectInstance effectinstance : ((ServerPlayerEntity) _ent).getActivePotionEffects()) {
+							((ServerPlayerEntity) _ent).connection.sendPacket(new SPlayEntityEffectPacket(_ent.getEntityId(), effectinstance));
+						}
+						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
+					}
+				}
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 							"tp ~ 75 ~");
+				}
 			}
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
-				private LevelAccessor world;
+				private IWorld world;
 
-				public void start(LevelAccessor world, int waitTicks) {
+				public void start(IWorld world, int waitTicks) {
 					this.waitTicks = waitTicks;
 					MinecraftForge.EVENT_BUS.register(this);
 					this.world = world;
@@ -83,21 +92,22 @@ public class MoonOnPlayerProcedure {
 				private void run() {
 					if ((sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
-						if (!(sourceentity instanceof Player _playerHasItem
-								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_MOON))
+						if (!((sourceentity instanceof PlayerEntity)
+								? ((PlayerEntity) sourceentity).inventory.hasItemStack(new ItemStack(TpOnMoonItem.block))
 								: false)) {
 							{
 								Entity _ent = sourceentity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null)
-									_ent.getServer().getCommands().performCommand(
-											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								if (!_ent.world.isRemote && _ent.world.getServer() != null) {
+									_ent.world.getServer().getCommandManager().handleCommand(
+											_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
 											"give @s power:tp_on_moon{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+								}
 							}
 						}
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 400);
+			}.start(world, (int) 400);
 		}
 	}
 }

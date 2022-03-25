@@ -4,26 +4,12 @@ package power.keepeersofthestones.item;
 import power.keepeersofthestones.procedures.WaterDropUseProcedure;
 import power.keepeersofthestones.PowerModElements;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.attributes.AttributeModifier;
-import net.minecraft.entity.ai.attributes.Attribute;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.BlockState;
 
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap;
-
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
 
 @PowerModElements.ModElement.Tag
 public class WaterDropItem extends PowerModElements.ModElement {
