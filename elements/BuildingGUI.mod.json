@@ -1,0 +1,49 @@
+{
+  "_fv": 25,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 255,
+    "height": 211,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Select the structure you want to place",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Select the structure you want to place",
+          "x": 114,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fountain",
+          "onClick": {
+            "name": "FontanBuild"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Fountain",
+          "x": 105,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

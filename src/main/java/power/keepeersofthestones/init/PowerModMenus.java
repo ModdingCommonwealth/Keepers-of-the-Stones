@@ -11,6 +11,7 @@ import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.world.inventory.CheckpointGUIMenu;
+import power.keepeersofthestones.world.inventory.BuildingGUIMenu;
 import power.keepeersofthestones.world.inventory.BatteryCreateGUIMenu;
 import power.keepeersofthestones.world.inventory.AcceptTpOnVenusMenu;
 import power.keepeersofthestones.world.inventory.AcceptTpOnMoonMenu;
@@ -55,6 +56,8 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new BatteryCreateGUIMenu(id, inv, extraData));
 	public static final MenuType<RedstoneBundleGUIMenu> REDSTONE_BUNDLE_GUI = register("redstone_bundle_gui",
 			(id, inv, extraData) -> new RedstoneBundleGUIMenu(id, inv, extraData));
+	public static final MenuType<BuildingGUIMenu> BUILDING_GUI = register("building_gui",
+			(id, inv, extraData) -> new BuildingGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

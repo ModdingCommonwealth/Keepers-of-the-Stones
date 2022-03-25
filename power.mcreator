@@ -11011,6 +11011,99 @@
         ]
       },
       "path": "~/ReceivingStones"
+    },
+    {
+      "name": "Constructions",
+      "type": "item",
+      "sortid": 646,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constructions",
+      "path": "~/Creation"
+    },
+    {
+      "name": "BoStaff",
+      "type": "tool",
+      "sortid": 647,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bo_staff",
+      "path": "~/Creation"
+    },
+    {
+      "name": "BuildingGUI",
+      "type": "gui",
+      "sortid": 648,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "building_gui",
+      "path": "~/Creation"
+    },
+    {
+      "name": "FontanBuild",
+      "type": "procedure",
+      "sortid": 649,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fontan_build",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creation/Structures"
+    },
+    {
+      "name": "OpenBuildingGUI",
+      "type": "procedure",
+      "sortid": 650,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_building_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Creation"
     }
   ],
   "variable_elements": [
@@ -11579,6 +11672,7 @@
       "item.power.light_battery": "Батарея",
       "effect.power.tornado_master": "Мастер Торнадо",
       "itemGroup.tabadditional_group": "Дополнительные",
+      "item.power.bo_staff": "Bo Staff",
       "item.power.destruction_helmet": "Шлем разрушения",
       "item.power.sun_ray": "Луч Солнца",
       "item.power.destruction_leggings": "Поножи разрушения",
@@ -11892,6 +11986,7 @@
       "item.power.light_chestplate": "Нагрудник света",
       "item.power.light_stone": "Камень Света",
       "item.power.ice_battery": "Батарея",
+      "item.power.constructions": "Materialization of Constructions",
       "effect.power.technology_master": "Мастер Технологий",
       "item.power.eclipse": "Затмение",
       "biome.power.mars_land": "Марсианская Земля",
@@ -11929,8 +12024,8 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
-      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.lava_hammer": "Lava Hammer",
       "item.power.black_hole": "Black Hole",
@@ -11940,8 +12035,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Tamer",
       "effect.power.recharge_earth_stone": "Recharge",
-      "effect.power.ice_master": "Master of Ice",
       "item.power.time_reversed": "Time Reversed",
+      "effect.power.ice_master": "Master of Ice",
       "item.power.cosmos_leggings": "Cosmos Leggings",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
@@ -11955,8 +12050,8 @@
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "item.power.light_helmet": "Light Helmet",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Light Helmet",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.greenery_master": "Master of Greenery",
       "effect.power.recharge_animals_stone": "Recharge",
@@ -11967,10 +12062,11 @@
       "item.power.water_flow": "Water Flow",
       "item.power.animals_stone": "Animals Stone",
       "item.power.redstone_bundle": "Redstone Bundle",
-      "item.power.iron_shield": "Iron Shield",
       "item.power.light_battery": "Battery",
+      "item.power.iron_shield": "Iron Shield",
       "effect.power.tornado_master": "Master of Tornado",
       "itemGroup.tabadditional_group": "Additional Group",
+      "item.power.bo_staff": "Bo Staff",
       "item.power.destruction_helmet": "Destruction Helmet",
       "item.power.sun_ray": "Sun Ray",
       "item.power.destruction_leggings": "Destruction Leggings",
@@ -11978,8 +12074,8 @@
       "effect.power.recharge_fire_stone": "Recharge",
       "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Crystal Leggings",
-      "item.power.cosmos_stone": "Cosmos Stone",
       "item.power.crystal_dagger": "Crystal Dagger",
+      "item.power.cosmos_stone": "Cosmos Stone",
       "item.power.lava_leggings": "Lava Leggings",
       "item.power.ice_sharp": "Ice Sharp",
       "item.power.cosmos_boots": "Cosmos Boots",
@@ -11990,8 +12086,8 @@
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
       "item.power.rain_boots": "Rain Boots",
-      "item.power.portal_blast": "Portal Blaster",
       "item.power.ice_spear": "Ice Spear",
+      "item.power.portal_blast": "Portal Blaster",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "block.power.vacuum_web_block": "Vacuum Web Block",
@@ -12021,8 +12117,8 @@
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
-      "effect.power.creation_master": "Master of Creation",
       "item.power.tp_on_moon": "Tp On Moon",
+      "effect.power.creation_master": "Master of Creation",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ice Shield",
       "item.power.sound_leggings": "Sound Leggings",
@@ -12032,8 +12128,8 @@
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
       "item.power.sound_barrier": "Sound Barrier",
       "item.power.blood_leggings": "Blood Leggings",
-      "item.power.fire_leggings": "Fire Leggings",
       "item.power.black_heart": "Black Heart",
+      "item.power.fire_leggings": "Fire Leggings",
       "block.power.black_hole_block": "Black Hole Block",
       "item.power.checkpoint": "Checkpoint",
       "item.power.spawn": "Spawn",
@@ -12042,8 +12138,8 @@
       "effect.power.recharge_explosion_stone": "Recharge",
       "item.power.earth_stone": "Earth Stone",
       "item.power.rain_battery": "Battery",
-      "effect.power.air_master": "Master of the Air",
       "item.power.fire_boots": "Fire Boots",
+      "effect.power.air_master": "Master of the Air",
       "item.power.crystal_battery": "Battery",
       "item.power.shadow_leggings": "Shadow Leggings",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
@@ -12285,6 +12381,7 @@
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.light_stone": "Light Stone",
       "item.power.ice_battery": "Battery",
+      "item.power.constructions": "Materialization of Constructions",
       "effect.power.technology_master": "Master of Technology",
       "item.power.eclipse": "Eclipse",
       "biome.power.mars_land": "Mars Land",
@@ -12391,7 +12488,12 @@
       },
       {
         "name": "Creation",
-        "children": []
+        "children": [
+          {
+            "name": "Structures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Destruction",
@@ -12450,7 +12552,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.8.0.6",
+    "version": "1.8.0.7",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

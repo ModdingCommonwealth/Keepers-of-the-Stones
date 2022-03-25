@@ -173,9 +173,11 @@ import power.keepeersofthestones.item.CosmosStoneItem;
 import power.keepeersofthestones.item.CosmosItem;
 import power.keepeersofthestones.item.CosmosBatteryItem;
 import power.keepeersofthestones.item.CoralShieldItem;
+import power.keepeersofthestones.item.ConstructionsItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
 import power.keepeersofthestones.item.CheckpointItem;
 import power.keepeersofthestones.item.BurnItem;
+import power.keepeersofthestones.item.BoStaffItem;
 import power.keepeersofthestones.item.BlueKnifeItem;
 import power.keepeersofthestones.item.BloodStoneItem;
 import power.keepeersofthestones.item.BloodReaperItem;
@@ -506,6 +508,8 @@ public class PowerModItems {
 	public static final RegistryObject<Item> AMBER_LEGGINGS = REGISTRY.register("amber_leggings", () -> new AmberItem.Leggings());
 	public static final RegistryObject<Item> AMBER_BOOTS = REGISTRY.register("amber_boots", () -> new AmberItem.Boots());
 	public static final RegistryObject<Item> FORCE_REPLICATION = REGISTRY.register("force_replication", () -> new ForcereplicationItem());
+	public static final RegistryObject<Item> CONSTRUCTIONS = REGISTRY.register("constructions", () -> new ConstructionsItem());
+	public static final RegistryObject<Item> BO_STAFF = REGISTRY.register("bo_staff", () -> new BoStaffItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
