@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TechnologyStoneUseProcedure;
-import power.keepeersofthestones.itemgroup.MiddleGroupItemGroup;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -37,7 +36,7 @@ public class TechnologyStoneItem extends PowerModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MiddleGroupItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
+			super(new Item.Properties().group(null).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("technology_stone");
 		}
 
