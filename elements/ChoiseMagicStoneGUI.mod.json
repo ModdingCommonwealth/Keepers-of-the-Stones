@@ -516,6 +516,19 @@
           "x": 321,
           "y": 161
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "1/2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "1/2",
+          "x": 24,
+          "y": 26
+        }
       }
     ],
     "gridSettings": {

@@ -98,6 +98,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Choose a stone to get it", 127, 6, -12829636);
+		this.font.draw(poseStack, "2/2", 10, 6, -12829636);
 	}
 
 	@Override
@@ -187,6 +188,12 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 60, 56, 20, new TextComponent(" "), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 87, 56, 20, new TextComponent(" "), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 114, 56, 20, new TextComponent(" "), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 141, 56, 20, new TextComponent(" "), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 316, this.topPos + 168, 72, 20, new TextComponent("Next page"), e -> {
 		}));
 	}
 }

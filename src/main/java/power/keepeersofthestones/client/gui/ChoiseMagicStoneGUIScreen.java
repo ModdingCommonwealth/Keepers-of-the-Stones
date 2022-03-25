@@ -131,6 +131,7 @@ public class ChoiseMagicStoneGUIScreen extends AbstractContainerScreen<ChoiseMag
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Choose a stone to get it", 127, 6, -12829636);
+		this.font.draw(poseStack, "1/2", 10, 6, -12829636);
 	}
 
 	@Override

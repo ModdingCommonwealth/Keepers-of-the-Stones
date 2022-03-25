@@ -351,6 +351,52 @@
           "x": 33,
           "y": 134
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next page",
+          "width": 72,
+          "height": 20,
+          "name": "Next page",
+          "x": 330,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2/2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "2/2",
+          "x": 24,
+          "y": 26
+        }
       }
     ],
     "gridSettings": {
