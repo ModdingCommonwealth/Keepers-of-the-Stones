@@ -9956,15 +9956,6 @@
       "registry_name": "elemental_music_disc"
     },
     {
-      "name": "CursedDiamond",
-      "type": "item",
-      "sortid": 587,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cursed_diamond",
-      "path": "~/Blood"
-    },
-    {
       "name": "TechnobarrierBlock",
       "type": "block",
       "sortid": 588,
@@ -11478,7 +11469,6 @@
       "item.power.cultivation": "Выращивание",
       "item.power.ocean_battery": "Батарея",
       "item.power.animals_boots": "Животные ботинки",
-      "item.power.cursed_diamond": "Проклятый Бриллиант",
       "item.power.wind_chestplate": "Воздушный Жилет",
       "item.power.bee_sting": "Пчелиное Жало",
       "item.power.tornado_battery": "Батарея",
@@ -11865,7 +11855,6 @@
       "item.power.water_helmet": "Water Helmet",
       "item.power.cultivation": "Cultivation",
       "item.power.ocean_battery": "Battery",
-      "item.power.cursed_diamond": "Cursed Diamond",
       "item.power.animals_boots": "Animals Boots",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.bee_sting": "Bee Sting",

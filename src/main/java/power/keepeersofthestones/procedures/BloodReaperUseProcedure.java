@@ -10,6 +10,6 @@ public class BloodReaperUseProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 1, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 30, 1, (false), (false)));
 	}
 }

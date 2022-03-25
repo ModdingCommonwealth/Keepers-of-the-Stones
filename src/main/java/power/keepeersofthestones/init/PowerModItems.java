@@ -158,7 +158,6 @@ import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionSphereItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
-import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -476,7 +475,6 @@ public class PowerModItems {
 	public static final RegistryObject<Item> TECHNOLOGY_LEGGINGS = REGISTRY.register("technology_leggings", () -> new TechnologyItem.Leggings());
 	public static final RegistryObject<Item> TECHNOLOGY_BOOTS = REGISTRY.register("technology_boots", () -> new TechnologyItem.Boots());
 	public static final RegistryObject<Item> TECHNO_PICKAXE = REGISTRY.register("techno_pickaxe", () -> new TechnoPickaxeItem());
-	public static final RegistryObject<Item> CURSED_DIAMOND = REGISTRY.register("cursed_diamond", () -> new CursedDiamondItem());
 	public static final RegistryObject<Item> TECHNOBARRIER_BLOCK = block(PowerModBlocks.TECHNOBARRIER_BLOCK, null);
 	public static final RegistryObject<Item> TECHNOBARRIER = REGISTRY.register("technobarrier", () -> new TechnobarrierItem());
 	public static final RegistryObject<Item> MEGAWATT = REGISTRY.register("megawatt", () -> new MegawattItem());
