@@ -2,7 +2,6 @@
 package power.keepeersofthestones.entity;
 
 import power.keepeersofthestones.procedures.IceBallInEntityProcedure;
-import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,6 +11,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -50,7 +50,7 @@ public class IceSpearEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(PowerModItems.ICE_SPEAR.get());
+		return new ItemStack(Blocks.AIR);
 	}
 
 	@Override
