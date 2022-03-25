@@ -875,35 +875,6 @@
       "path": "~/Energy"
     },
     {
-      "name": "EnergyStaffUse",
-      "type": "procedure",
-      "sortid": 112,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_staff_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Energy"
-    },
-    {
       "name": "FireEffects",
       "type": "procedure",
       "sortid": 113,
@@ -12303,7 +12274,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.8.0.5",
+    "version": "1.8.0.6",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
