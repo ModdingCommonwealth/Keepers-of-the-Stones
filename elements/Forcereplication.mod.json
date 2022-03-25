@@ -1,0 +1,30 @@
+{
+  "_fv": 25,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "force_replication",
+    "customModelName": "Normal",
+    "name": "Force Replication",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 8,
+    "efficiency": 24.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 14.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "ForceReplicationUse"
+    }
+  }
+}

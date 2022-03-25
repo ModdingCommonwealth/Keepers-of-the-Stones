@@ -37,7 +37,7 @@ public class AmberMasterEffectEndProcedure {
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TECHNO_PICKAXE.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.FORCE_REPLICATION.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {

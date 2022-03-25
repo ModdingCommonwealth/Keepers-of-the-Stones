@@ -131,6 +131,7 @@ import power.keepeersofthestones.item.GreeneryBatteryItem;
 import power.keepeersofthestones.item.GoldenCrossbowItem;
 import power.keepeersofthestones.item.GlowCreateItem;
 import power.keepeersofthestones.item.GalacticSwordItem;
+import power.keepeersofthestones.item.ForcereplicationItem;
 import power.keepeersofthestones.item.FlashLightItem;
 import power.keepeersofthestones.item.FistofEarthItem;
 import power.keepeersofthestones.item.FireSwordItem;
@@ -504,6 +505,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> AMBER_CHESTPLATE = REGISTRY.register("amber_chestplate", () -> new AmberItem.Chestplate());
 	public static final RegistryObject<Item> AMBER_LEGGINGS = REGISTRY.register("amber_leggings", () -> new AmberItem.Leggings());
 	public static final RegistryObject<Item> AMBER_BOOTS = REGISTRY.register("amber_boots", () -> new AmberItem.Boots());
+	public static final RegistryObject<Item> FORCE_REPLICATION = REGISTRY.register("force_replication", () -> new ForcereplicationItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
