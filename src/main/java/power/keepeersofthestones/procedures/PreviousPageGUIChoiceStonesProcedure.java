@@ -3,7 +3,23 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.gui.ChoiseMagicStoneGUIGui;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraftforge.fml.network.NetworkHooks;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
+
+import io.netty.buffer.Unpooled;
 
 public class PreviousPageGUIChoiceStonesProcedure {
 

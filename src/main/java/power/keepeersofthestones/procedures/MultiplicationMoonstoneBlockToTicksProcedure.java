@@ -4,6 +4,13 @@ import power.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+
 import java.util.Map;
 
 public class MultiplicationMoonstoneBlockToTicksProcedure {

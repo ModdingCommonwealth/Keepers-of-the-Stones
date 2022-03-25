@@ -4,6 +4,17 @@ import power.keepeersofthestones.block.UnmultiplicationMoonStonesBlock;
 import power.keepeersofthestones.block.MoonStonesBlockBlock;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.Explosion;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
+
 import java.util.Map;
 
 public class SunExplodeUseProcedure {

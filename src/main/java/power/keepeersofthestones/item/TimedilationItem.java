@@ -4,6 +4,15 @@ package power.keepeersofthestones.item;
 import power.keepeersofthestones.procedures.TimeDilationUseProcedure;
 import power.keepeersofthestones.PowerModElements;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.World;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.block.BlockState;
+
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;

@@ -3,6 +3,10 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
 import java.util.Collections;
 

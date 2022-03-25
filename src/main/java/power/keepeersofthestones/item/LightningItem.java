@@ -3,6 +3,20 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.PowerModElements;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.Entity;
+
 @PowerModElements.ModElement.Tag
 public class LightningItem extends PowerModElements.ModElement {
 	@ObjectHolder("power:lightning_helmet")

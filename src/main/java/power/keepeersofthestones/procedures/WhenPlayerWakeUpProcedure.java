@@ -26,6 +26,14 @@ import power.keepeersofthestones.potion.RechargeAnimalsStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeAirStonePotionEffect;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
 import java.util.HashMap;
 

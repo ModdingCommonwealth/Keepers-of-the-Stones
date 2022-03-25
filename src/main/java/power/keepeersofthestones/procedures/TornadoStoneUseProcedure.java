@@ -5,6 +5,10 @@ import power.keepeersofthestones.potion.RechargeTornadoStonePotionEffect;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
 import java.util.Collection;
 

@@ -2,6 +2,13 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraftforge.items.ItemHandlerHelper;
+
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
 
 public class GetBeetrootProcedure {

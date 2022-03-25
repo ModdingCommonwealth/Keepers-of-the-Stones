@@ -1,6 +1,15 @@
 
 package power.keepeersofthestones.potion;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effect;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RechargeMetalStonePotionEffect {
 	@ObjectHolder("power:recharge_metal_stone")

@@ -29,6 +29,9 @@ import power.keepeersofthestones.potion.AnimalsMasterPotionEffect;
 import power.keepeersofthestones.potion.AirMasterPotionEffect;
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.Map;
 
 public class DetransformKeyPriNazhatiiKlavishiProcedure {

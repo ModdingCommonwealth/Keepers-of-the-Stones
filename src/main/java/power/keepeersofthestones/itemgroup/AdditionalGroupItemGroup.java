@@ -4,6 +4,12 @@ package power.keepeersofthestones.itemgroup;
 import power.keepeersofthestones.item.IceStoneItem;
 import power.keepeersofthestones.PowerModElements;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+
 @PowerModElements.ModElement.Tag
 public class AdditionalGroupItemGroup extends PowerModElements.ModElement {
 	public AdditionalGroupItemGroup(PowerModElements instance) {

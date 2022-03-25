@@ -5,6 +5,18 @@ import power.keepeersofthestones.procedures.AccelerationTimeTickEffectProcedure;
 import power.keepeersofthestones.procedures.AccelerationTimeStartProcedure;
 import power.keepeersofthestones.procedures.AccelerationTimeEndProcedure;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effect;
+import net.minecraft.entity.ai.attributes.AttributeModifierManager;
+import net.minecraft.entity.LivingEntity;
+
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;

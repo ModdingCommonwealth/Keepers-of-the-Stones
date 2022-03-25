@@ -2,6 +2,10 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.world.Explosion;
+
 import java.util.Map;
 
 public class NullExplodeProcedure {

@@ -2,6 +2,15 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.PowerMod;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
 import java.util.stream.Stream;
 import java.util.Map;
 import java.util.HashMap;

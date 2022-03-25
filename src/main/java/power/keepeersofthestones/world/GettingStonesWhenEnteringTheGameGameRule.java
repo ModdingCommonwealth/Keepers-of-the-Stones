@@ -2,6 +2,10 @@ package power.keepeersofthestones.world;
 
 import power.keepeersofthestones.PowerModElements;
 
+import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
+
+import net.minecraft.world.GameRules;
+
 import java.lang.reflect.Method;
 
 @PowerModElements.ModElement.Tag
