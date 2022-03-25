@@ -10,6 +10,7 @@ import power.keepeersofthestones.procedures.ShadowGetProcedure;
 import power.keepeersofthestones.procedures.RainGetProcedure;
 import power.keepeersofthestones.procedures.OceanGetProcedure;
 import power.keepeersofthestones.procedures.NextPageGUIChoiceStoneProcedure;
+import power.keepeersofthestones.procedures.MetalGetProcedure;
 import power.keepeersofthestones.procedures.LightningGetProcedure;
 import power.keepeersofthestones.procedures.LightGetProcedure;
 import power.keepeersofthestones.procedures.LavaGetProcedure;
@@ -296,6 +297,12 @@ public class ChoiseMagicStoneGUIGui extends PowerModElements.ModElement {
 		if (buttonID == 15) {
 
 			AnimalsGetProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (buttonID == 16) {
+
+			MetalGetProcedure
 					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}

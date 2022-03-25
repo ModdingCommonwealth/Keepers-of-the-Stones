@@ -1,0 +1,11 @@
+{
+  "_fv": 25,
+  "_type": "tab",
+  "definition": {
+    "name": "Additional Group",
+    "icon": {
+      "value": "CUSTOM:IceStone"
+    },
+    "showSearch": false
+  }
+}

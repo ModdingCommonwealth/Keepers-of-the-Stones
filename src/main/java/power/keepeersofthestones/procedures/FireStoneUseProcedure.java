@@ -1,10 +1,7 @@
 package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.RechargeFireStonePotionEffect;
-import power.keepeersofthestones.potion.InfernoMergerPotionEffect;
-import power.keepeersofthestones.potion.GeyserMergerPotionEffect;
 import power.keepeersofthestones.potion.FireMasterPotionEffect;
-import power.keepeersofthestones.potion.CoalMergerPotionEffect;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
@@ -40,23 +37,6 @@ public class FireStoneUseProcedure {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
 							.addPotionEffect(new EffectInstance(FireMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-			} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PowerModVariables.PlayerVariables())).active) {
-				if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).air) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(InfernoMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).water) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(GeyserMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).earth) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(CoalMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				}
 			}
 		}
 	}

@@ -1,7 +1,6 @@
 package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.RechargeAirStonePotionEffect;
-import power.keepeersofthestones.potion.InfernoMergerPotionEffect;
 import power.keepeersofthestones.potion.AirMasterPotionEffect;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
@@ -37,14 +36,6 @@ public class AirStoneUseProcedure {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(AirMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-			} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PowerModVariables.PlayerVariables())).active) {
-				if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).fire) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(InfernoMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				}
 			}
 		}
 	}

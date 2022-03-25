@@ -41,6 +41,7 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
@@ -111,8 +112,13 @@ public class GlowEntity extends PowerModElements.ModElement {
 			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
 			this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 			this.goalSelector.addGoal(3, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp());
 			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, ShadowEntity.CustomEntity.class, false, false));
 			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));

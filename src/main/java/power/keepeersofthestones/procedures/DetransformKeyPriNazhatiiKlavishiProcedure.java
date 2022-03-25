@@ -3,6 +3,8 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.potion.WaterMasterPotionEffect;
 import power.keepeersofthestones.potion.VacuumMasterPotionEffect;
 import power.keepeersofthestones.potion.TornadoMasterPotionEffect;
+import power.keepeersofthestones.potion.TimeMasterEffectPotionEffect;
+import power.keepeersofthestones.potion.TechnologyMasterPotionEffect;
 import power.keepeersofthestones.potion.SunMasterPotionEffect;
 import power.keepeersofthestones.potion.SoundMasterPotionEffect;
 import power.keepeersofthestones.potion.ShadowMasterPotionEffect;
@@ -13,10 +15,8 @@ import power.keepeersofthestones.potion.MetalMasterPotionEffect;
 import power.keepeersofthestones.potion.LightningMasterPotionEffect;
 import power.keepeersofthestones.potion.LightMasterPotionEffect;
 import power.keepeersofthestones.potion.LavaMasterPotionEffect;
-import power.keepeersofthestones.potion.InfernoMergerPotionEffect;
 import power.keepeersofthestones.potion.IceMasterPotionEffect;
 import power.keepeersofthestones.potion.GreeneryMasterPotionEffect;
-import power.keepeersofthestones.potion.GeyserMergerPotionEffect;
 import power.keepeersofthestones.potion.FireMasterPotionEffect;
 import power.keepeersofthestones.potion.EnergyMasterPotionEffect;
 import power.keepeersofthestones.potion.EarthMasterPotionEffect;
@@ -24,7 +24,6 @@ import power.keepeersofthestones.potion.DestructionMasterPotionEffect;
 import power.keepeersofthestones.potion.CrystalMasterPotionEffect;
 import power.keepeersofthestones.potion.CreationMasterPotionEffect;
 import power.keepeersofthestones.potion.CosmosMasterPotionEffect;
-import power.keepeersofthestones.potion.CoalMergerPotionEffect;
 import power.keepeersofthestones.potion.BloodMasterPotionEffect;
 import power.keepeersofthestones.potion.AnimalsMasterPotionEffect;
 import power.keepeersofthestones.potion.AirMasterPotionEffect;
@@ -84,13 +83,7 @@ public class DetransformKeyPriNazhatiiKlavishiProcedure {
 			((LivingEntity) entity).removePotionEffect(OceanMasterPotionEffect.potion);
 		}
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(InfernoMergerPotionEffect.potion);
-		}
-		if (entity instanceof LivingEntity) {
 			((LivingEntity) entity).removePotionEffect(GreeneryMasterPotionEffect.potion);
-		}
-		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(GeyserMergerPotionEffect.potion);
 		}
 		if (entity instanceof LivingEntity) {
 			((LivingEntity) entity).removePotionEffect(AnimalsMasterPotionEffect.potion);
@@ -123,10 +116,13 @@ public class DetransformKeyPriNazhatiiKlavishiProcedure {
 			((LivingEntity) entity).removePotionEffect(CosmosMasterPotionEffect.potion);
 		}
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(CoalMergerPotionEffect.potion);
+			((LivingEntity) entity).removePotionEffect(BloodMasterPotionEffect.potion);
 		}
 		if (entity instanceof LivingEntity) {
-			((LivingEntity) entity).removePotionEffect(BloodMasterPotionEffect.potion);
+			((LivingEntity) entity).removePotionEffect(TechnologyMasterPotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(TimeMasterEffectPotionEffect.potion);
 		}
 	}
 }

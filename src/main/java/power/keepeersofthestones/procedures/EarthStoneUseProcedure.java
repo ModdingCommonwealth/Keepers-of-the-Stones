@@ -2,7 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.RechargeEarthStonePotionEffect;
 import power.keepeersofthestones.potion.EarthMasterPotionEffect;
-import power.keepeersofthestones.potion.CoalMergerPotionEffect;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
@@ -38,14 +37,6 @@ public class EarthStoneUseProcedure {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
 							.addPotionEffect(new EffectInstance(EarthMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-			} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PowerModVariables.PlayerVariables())).active) {
-				if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).fire) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(CoalMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				}
 			}
 		}
 	}

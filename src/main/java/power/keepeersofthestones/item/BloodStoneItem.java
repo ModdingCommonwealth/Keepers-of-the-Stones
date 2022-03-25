@@ -2,6 +2,7 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.BloodStoneUseProcedure;
+import power.keepeersofthestones.itemgroup.AdditionalGroupItemGroup;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -36,7 +37,7 @@ public class BloodStoneItem extends PowerModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(null).maxDamage(10).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(AdditionalGroupItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("blood_stone");
 		}
 

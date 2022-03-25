@@ -1,0 +1,11 @@
+{
+  "_fv": 25,
+  "_type": "tab",
+  "definition": {
+    "name": "Basic Group",
+    "icon": {
+      "value": "CUSTOM:FireStone"
+    },
+    "showSearch": false
+  }
+}

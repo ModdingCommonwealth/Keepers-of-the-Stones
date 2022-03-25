@@ -1,0 +1,11 @@
+{
+  "_fv": 25,
+  "_type": "tab",
+  "definition": {
+    "name": "Great Group",
+    "icon": {
+      "value": "CUSTOM:CosmosStone"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 25,
+  "_type": "tab",
+  "definition": {
+    "name": "Middle Group",
+    "icon": {
+      "value": "CUSTOM:GreeneryStone"
+    },
+    "showSearch": false
+  }
+}

@@ -2,6 +2,8 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.WaterMasterPotionEffect;
 import power.keepeersofthestones.potion.TornadoMasterPotionEffect;
+import power.keepeersofthestones.potion.TimeMasterEffectPotionEffect;
+import power.keepeersofthestones.potion.TechnologyMasterPotionEffect;
 import power.keepeersofthestones.potion.SunMasterPotionEffect;
 import power.keepeersofthestones.potion.ShadowMasterPotionEffect;
 import power.keepeersofthestones.potion.RechargeEnergyStonePotionEffect;
@@ -14,14 +16,13 @@ import power.keepeersofthestones.potion.LightMasterPotionEffect;
 import power.keepeersofthestones.potion.LavaMasterPotionEffect;
 import power.keepeersofthestones.potion.IceMasterPotionEffect;
 import power.keepeersofthestones.potion.GreeneryMasterPotionEffect;
-import power.keepeersofthestones.potion.GeyserMergerPotionEffect;
 import power.keepeersofthestones.potion.FireMasterPotionEffect;
 import power.keepeersofthestones.potion.EnergyMasterPotionEffect;
 import power.keepeersofthestones.potion.EarthMasterPotionEffect;
 import power.keepeersofthestones.potion.DestructionMasterPotionEffect;
 import power.keepeersofthestones.potion.CrystalMasterPotionEffect;
 import power.keepeersofthestones.potion.CreationMasterPotionEffect;
-import power.keepeersofthestones.potion.CoalMergerPotionEffect;
+import power.keepeersofthestones.potion.BloodMasterPotionEffect;
 import power.keepeersofthestones.potion.AnimalsMasterPotionEffect;
 import power.keepeersofthestones.potion.AirMasterPotionEffect;
 import power.keepeersofthestones.item.EnergyStoneItem;
@@ -103,9 +104,6 @@ public class EnergyStaffUseProcedure {
 					((LivingEntity) entity).removePotionEffect(LightningMasterPotionEffect.potion);
 				}
 				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).removePotionEffect(FireMasterPotionEffect.potion);
-				}
-				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).removePotionEffect(CrystalMasterPotionEffect.potion);
 				}
 				if (entity instanceof LivingEntity) {
@@ -121,13 +119,7 @@ public class EnergyStaffUseProcedure {
 					((LivingEntity) entity).removePotionEffect(OceanMasterPotionEffect.potion);
 				}
 				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).removePotionEffect(FireMasterPotionEffect.potion);
-				}
-				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).removePotionEffect(GreeneryMasterPotionEffect.potion);
-				}
-				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).removePotionEffect(GeyserMergerPotionEffect.potion);
 				}
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).removePotionEffect(AnimalsMasterPotionEffect.potion);
@@ -154,7 +146,13 @@ public class EnergyStaffUseProcedure {
 					((LivingEntity) entity).removePotionEffect(DestructionMasterPotionEffect.potion);
 				}
 				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).removePotionEffect(CoalMergerPotionEffect.potion);
+					((LivingEntity) entity).removePotionEffect(BloodMasterPotionEffect.potion);
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).removePotionEffect(TechnologyMasterPotionEffect.potion);
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).removePotionEffect(TimeMasterEffectPotionEffect.potion);
 				}
 				if (sourceentity instanceof LivingEntity)
 					((LivingEntity) sourceentity)

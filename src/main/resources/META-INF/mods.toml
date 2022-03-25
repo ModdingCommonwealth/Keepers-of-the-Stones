@@ -4,13 +4,13 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="power"
-version="1.3.2"
+version="1.4.1"
 displayName="Keepers of the Stones"
 credits="Created by MagicalAlexey"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
 updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json"
 logoFile="logo.png"
-authors="MagicalAlexey, ChiffonMedal"
+authors="MagicalAlexey, KoshakMineDEV"
 description='''
 This mod will add new sources of energy to the world with which you can transform into masters of the elements.
 '''

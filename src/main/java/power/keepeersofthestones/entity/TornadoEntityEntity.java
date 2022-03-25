@@ -40,11 +40,13 @@ import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.AgeableEntity;
 
 import java.util.stream.Stream;
@@ -108,7 +110,12 @@ public class TornadoEntityEntity extends PowerModElements.ModElement {
 			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
 			this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 			this.goalSelector.addGoal(3, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
+				}
+			});
 			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
 		}
@@ -134,7 +141,7 @@ public class TornadoEntityEntity extends PowerModElements.ModElement {
 				return false;
 			if (source.getImmediateSource() instanceof PlayerEntity)
 				return false;
-			if (source.getImmediateSource() instanceof PotionEntity)
+			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
 				return false;
 			if (source == DamageSource.FALL)
 				return false;

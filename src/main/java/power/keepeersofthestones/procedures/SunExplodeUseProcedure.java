@@ -76,10 +76,6 @@ public class SunExplodeUseProcedure {
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
 						"fill ~-16 ~-16 ~-16 ~16 ~16 ~16 air replace power:unmultiplication_moon_stones_block");
 			}
-		} else {
-			if (world instanceof World && !((World) world).isRemote) {
-				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 8, Explosion.Mode.DESTROY);
-			}
 		}
 	}
 }

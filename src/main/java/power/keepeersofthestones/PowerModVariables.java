@@ -95,6 +95,7 @@ public class PowerModVariables {
 		public boolean destruction_stone = false;
 		public boolean cosmos_stone = false;
 		public boolean blood_stone = false;
+		public boolean time_stone = false;
 
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -131,6 +132,7 @@ public class PowerModVariables {
 			destruction_stone = nbt.getBoolean("destruction_stone");
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
 			blood_stone = nbt.getBoolean("blood_stone");
+			time_stone = nbt.getBoolean("time_stone");
 		}
 
 		@Override
@@ -160,6 +162,7 @@ public class PowerModVariables {
 			nbt.putBoolean("destruction_stone", destruction_stone);
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			nbt.putBoolean("blood_stone", blood_stone);
+			nbt.putBoolean("time_stone", time_stone);
 			return nbt;
 		}
 
@@ -183,6 +186,7 @@ public class PowerModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "power_mapvars";
+		public boolean technology_stone = false;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -194,10 +198,12 @@ public class PowerModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			technology_stone = nbt.getBoolean("technology_stone");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putBoolean("technology_stone", technology_stone);
 			return nbt;
 		}
 
@@ -320,6 +326,11 @@ public class PowerModVariables {
 			nbt.putBoolean("cosmos", instance.cosmos);
 			nbt.putBoolean("selected", instance.selected);
 			nbt.putBoolean("blood", instance.blood);
+			nbt.putBoolean("technology", instance.technology);
+			nbt.putBoolean("time", instance.time);
+			nbt.putDouble("spawnx", instance.spawnx);
+			nbt.putDouble("spawny", instance.spawny);
+			nbt.putDouble("spawnz", instance.spawnz);
 			return nbt;
 		}
 
@@ -359,6 +370,11 @@ public class PowerModVariables {
 			instance.cosmos = nbt.getBoolean("cosmos");
 			instance.selected = nbt.getBoolean("selected");
 			instance.blood = nbt.getBoolean("blood");
+			instance.technology = nbt.getBoolean("technology");
+			instance.time = nbt.getBoolean("time");
+			instance.spawnx = nbt.getDouble("spawnx");
+			instance.spawny = nbt.getDouble("spawny");
+			instance.spawnz = nbt.getDouble("spawnz");
 		}
 	}
 
@@ -396,6 +412,11 @@ public class PowerModVariables {
 		public boolean cosmos = false;
 		public boolean selected = false;
 		public boolean blood = false;
+		public boolean technology = false;
+		public boolean time = false;
+		public double spawnx = 0.0;
+		public double spawny = 75.0;
+		public double spawnz = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -461,6 +482,11 @@ public class PowerModVariables {
 		clone.cosmos = original.cosmos;
 		clone.selected = original.selected;
 		clone.blood = original.blood;
+		clone.technology = original.technology;
+		clone.time = original.time;
+		clone.spawnx = original.spawnx;
+		clone.spawny = original.spawny;
+		clone.spawnz = original.spawnz;
 		if (!event.isWasDeath()) {
 			clone.active = original.active;
 		}
@@ -521,6 +547,11 @@ public class PowerModVariables {
 					variables.cosmos = message.data.cosmos;
 					variables.selected = message.data.selected;
 					variables.blood = message.data.blood;
+					variables.technology = message.data.technology;
+					variables.time = message.data.time;
+					variables.spawnx = message.data.spawnx;
+					variables.spawny = message.data.spawny;
+					variables.spawnz = message.data.spawnz;
 				}
 			});
 			context.setPacketHandled(true);

@@ -40,7 +40,7 @@ public class FireSwordItem extends PowerModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5f;
+				return 10f;
 			}
 
 			public int getHarvestLevel() {

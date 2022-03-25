@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -30,7 +30,10 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "OnMarsUse"
+      "name": "MarsOnMe"
+    },
+    "onEntityHitWith": {
+      "name": "MarsOnPlayer"
     },
     "hasDispenseBehavior": false
   }

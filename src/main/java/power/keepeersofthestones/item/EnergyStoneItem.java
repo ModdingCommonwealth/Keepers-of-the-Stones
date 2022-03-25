@@ -3,12 +3,10 @@ package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.EnergyStoneUseProcedure;
 import power.keepeersofthestones.procedures.EnergyStaffUseProcedure;
-import power.keepeersofthestones.itemgroup.MagicalStoneItemGroup;
+import power.keepeersofthestones.itemgroup.BasicGroupItemGroup;
 import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.Hand;
@@ -41,7 +39,7 @@ public class EnergyStoneItem extends PowerModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MagicalStoneItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
+			super(new Item.Properties().group(BasicGroupItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
 			setRegistryName("energy_stone");
 		}
 
@@ -58,12 +56,6 @@ public class EnergyStoneItem extends PowerModElements.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 0F;
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
 		}
 
 		@Override

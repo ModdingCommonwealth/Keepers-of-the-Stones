@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -391,6 +391,9 @@
         "type": "button",
         "data": {
           "text": "Metal",
+          "onClick": {
+            "name": "MetalGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Metal",

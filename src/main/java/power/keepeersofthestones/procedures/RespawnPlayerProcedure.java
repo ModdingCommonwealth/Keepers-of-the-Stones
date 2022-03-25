@@ -3,6 +3,8 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.potion.RechargeWaterStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeVacuumStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeTornadoStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeTimeStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeTechnologyStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeSunStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeSoundStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeShadowStonePotionEffect;
@@ -28,6 +30,8 @@ import power.keepeersofthestones.potion.FireMasterPotionEffect;
 import power.keepeersofthestones.item.WaterStoneItem;
 import power.keepeersofthestones.item.VacuumStoneItem;
 import power.keepeersofthestones.item.TornadoStoneItem;
+import power.keepeersofthestones.item.TimeStoneItem;
+import power.keepeersofthestones.item.TechnologyStoneItem;
 import power.keepeersofthestones.item.SunStoneItem;
 import power.keepeersofthestones.item.SoundStoneItem;
 import power.keepeersofthestones.item.ShadowStoneItem;
@@ -476,56 +480,6 @@ public class RespawnPlayerProcedure {
 				((LivingEntity) entity)
 						.addPotionEffect(new EffectInstance(RechargeDestructionStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
 		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).inferno_merger) {
-			{
-				boolean _setval = (false);
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.inferno_merger = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(FireStoneItem.block);
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(AirStoneItem.block);
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeFireStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeAirStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).geyser_merger) {
-			{
-				boolean _setval = (false);
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.geyser_merger = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(FireStoneItem.block);
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(WaterStoneItem.block);
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeFireStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeWaterStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
 			{
 				boolean _setval = (false);
@@ -559,31 +513,40 @@ public class RespawnPlayerProcedure {
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity)
 						.addPotionEffect(new EffectInstance(RechargeBloodStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).coal_merger) {
+		}
+		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).technology) {
 			{
 				boolean _setval = (false);
 				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.coal_merger = _setval;
+					capability.technology = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(FireStoneItem.block);
+				ItemStack _setstack = new ItemStack(TechnologyStoneItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity)
+						.addPotionEffect(new EffectInstance(RechargeTechnologyStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
+		}
+		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).time) {
+			{
+				boolean _setval = (false);
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.time = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(EarthStoneItem.block);
+				ItemStack _setstack = new ItemStack(TimeStoneItem.block);
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeFireStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity)
-						.addPotionEffect(new EffectInstance(RechargeEarthStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
+						.addPotionEffect(new EffectInstance(RechargeTimeStonePotionEffect.potion, (int) 6000, (int) 0, (false), (false)));
 		}
 	}
 }

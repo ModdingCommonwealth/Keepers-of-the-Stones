@@ -71,9 +71,9 @@ public class VacuumTPProcedure {
 			private void run() {
 				{
 					Entity _ent = entity;
-					_ent.setPositionAndUpdate(x, (y * 0), z);
+					_ent.setPositionAndUpdate(x, (y * (-65)), z);
 					if (_ent instanceof ServerPlayerEntity) {
-						((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y * 0), z, _ent.rotationYaw, _ent.rotationPitch,
+						((ServerPlayerEntity) _ent).connection.setPlayerLocation(x, (y * (-65)), z, _ent.rotationYaw, _ent.rotationPitch,
 								Collections.emptySet());
 					}
 				}

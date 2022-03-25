@@ -1,8 +1,12 @@
 package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.RechargeBloodStonePotionEffect;
+import power.keepeersofthestones.item.VampirismItem;
+import power.keepeersofthestones.item.CursedDiamondItem;
 import power.keepeersofthestones.item.BloodStoneItem;
+import power.keepeersofthestones.item.BloodReaperItem;
 import power.keepeersofthestones.item.BloodItem;
+import power.keepeersofthestones.item.BlackHeartItem;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
@@ -86,6 +90,26 @@ public class BloodMasterEffectEndProcedure {
 		}
 		if (entity instanceof PlayerEntity) {
 			ItemStack _stktoremove = new ItemStack(BloodItem.boots);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(VampirismItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BloodReaperItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(CursedDiamondItem.block);
+			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+					((PlayerEntity) entity).container.func_234641_j_());
+		}
+		if (entity instanceof PlayerEntity) {
+			ItemStack _stktoremove = new ItemStack(BlackHeartItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

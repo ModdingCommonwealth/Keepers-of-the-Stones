@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -82,13 +82,13 @@
       {
         "type": "button",
         "data": {
-          "text": " Blood",
+          "text": "Blood",
           "onClick": {
             "name": "BloodGet"
           },
           "width": 56,
           "height": 20,
-          "name": " Blood",
+          "name": "Blood",
           "x": 51,
           "y": 161
         }
@@ -96,10 +96,13 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": "Time",
+          "onClick": {
+            "name": "TimeGet"
+          },
           "width": 56,
           "height": 20,
-          "name": " ",
+          "name": "Time",
           "x": 150,
           "y": 53
         }
@@ -243,6 +246,16 @@
           "name": "blood_master.png",
           "x": 33,
           "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "time_master.png",
+          "use1Xscale": false,
+          "name": "time_master.png",
+          "x": 132,
+          "y": 53
         }
       }
     ],

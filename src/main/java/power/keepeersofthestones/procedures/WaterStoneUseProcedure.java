@@ -2,7 +2,6 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.WaterMasterPotionEffect;
 import power.keepeersofthestones.potion.RechargeWaterStonePotionEffect;
-import power.keepeersofthestones.potion.GeyserMergerPotionEffect;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
@@ -38,14 +37,6 @@ public class WaterStoneUseProcedure {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity)
 							.addPotionEffect(new EffectInstance(WaterMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-			} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PowerModVariables.PlayerVariables())).active) {
-				if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).fire) {
-					if (entity instanceof LivingEntity)
-						((LivingEntity) entity)
-								.addPotionEffect(new EffectInstance(GeyserMergerPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
-				}
 			}
 		}
 	}

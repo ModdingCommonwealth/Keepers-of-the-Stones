@@ -53,7 +53,7 @@ public class DestructionEntityProcedure {
 				Entity _ent = sourceentity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"replaceitem entity @s weapon.mainhand air");
+							"item replace entity @s weapon.mainhand with air");
 				}
 			}
 			{
@@ -101,7 +101,7 @@ public class DestructionEntityProcedure {
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, (int) 400);
+			}.start(world, (int) 1200);
 		}
 	}
 }

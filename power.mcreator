@@ -6,7 +6,8 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "detransform_key"
+      "registry_name": "detransform_key",
+      "path": "~/Keys"
     },
     {
       "name": "DetransformKeyPriNazhatiiKlavishi",
@@ -22,7 +23,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Keys"
     },
     {
       "name": "FireStone",
@@ -32,14 +34,6 @@
       "locked_code": false,
       "registry_name": "fire_stone",
       "path": "~/Fire"
-    },
-    {
-      "name": "MagicalStone",
-      "type": "tab",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stone"
     },
     {
       "name": "FireMastereffectstart",
@@ -114,7 +108,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Fire"
     },
     {
       "name": "Burn",
@@ -623,24 +618,6 @@
       "path": "~/Energy"
     },
     {
-      "name": "BasicStoneBoxGUI",
-      "type": "gui",
-      "sortid": 70,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "WoodStoneBox",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wood_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
       "name": "Water",
       "type": "armor",
       "sortid": 71,
@@ -1073,24 +1050,6 @@
         ]
       },
       "path": "~/Energy"
-    },
-    {
-      "name": "AdditionStoneBoxGUI",
-      "type": "gui",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "addition_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "StoneStoneBox",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_stone_box",
-      "path": "~/StoneBoxes"
     },
     {
       "name": "IceMaster",
@@ -2611,51 +2570,6 @@
       "path": "~/Rain"
     },
     {
-      "name": "MediumStoneBoxGUI",
-      "type": "gui",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "medium_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "IronStoneBox",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "GreatStoneBoxGUI",
-      "type": "gui",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "great_stone_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "GoldStoneBox",
-      "type": "block",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "MagicalStoneBoxes",
-      "type": "tab",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stone_boxes",
-      "path": "~/StoneBoxes"
-    },
-    {
       "name": "RespawnPlayer",
       "type": "procedure",
       "sortid": 174,
@@ -3318,70 +3232,6 @@
       "path": "~/Ice"
     },
     {
-      "name": "InfernoMergeEffects",
-      "type": "procedure",
-      "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merge_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMerger",
-      "type": "potioneffect",
-      "sortid": 216,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger",
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMergerEffectStart",
-      "type": "procedure",
-      "sortid": 217,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
-      "name": "InfernoMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 218,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inferno_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Inferno"
-    },
-    {
       "name": "GreeneryMaster",
       "type": "potioneffect",
       "sortid": 219,
@@ -3683,70 +3533,6 @@
         ]
       },
       "path": "~/Greenery"
-    },
-    {
-      "name": "GeyserMerger",
-      "type": "potioneffect",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger",
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffectStart",
-      "type": "procedure",
-      "sortid": 238,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 239,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
-    },
-    {
-      "name": "GeyserMergerEffects",
-      "type": "procedure",
-      "sortid": 240,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geyser_merger_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Geyser"
     },
     {
       "name": "AnimalsMaster",
@@ -5193,24 +4979,6 @@
       "path": "~/Vacuum"
     },
     {
-      "name": "AndesiteStoneBox",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "andesite_stone_box",
-      "path": "~/StoneBoxes"
-    },
-    {
-      "name": "AdditionalAndesiteBoxGUI",
-      "type": "gui",
-      "sortid": 325,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "additional_andesite_box_gui",
-      "path": "~/StoneBoxes"
-    },
-    {
       "name": "RechargeSunStone",
       "type": "potioneffect",
       "sortid": 326,
@@ -6600,70 +6368,6 @@
       "path": "~/Cosmos"
     },
     {
-      "name": "CoalMerger",
-      "type": "potioneffect",
-      "sortid": 404,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger",
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffectStart",
-      "type": "procedure",
-      "sortid": 405,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffectEnd",
-      "type": "procedure",
-      "sortid": 406,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
-      "name": "CoalMergerEffects",
-      "type": "procedure",
-      "sortid": 407,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coal_merger_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Mergers/Coal"
-    },
-    {
       "name": "TornadoEntity",
       "type": "livingentity",
       "sortid": 408,
@@ -7004,14 +6708,6 @@
         ]
       },
       "path": "~/ReceivingStones"
-    },
-    {
-      "name": "MagicalStones",
-      "type": "tag",
-      "sortid": 426,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_stones"
     },
     {
       "name": "LightningGet",
@@ -7963,6 +7659,1163 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "Vampirism",
+      "type": "item",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodReaper",
+      "type": "tool",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_reaper",
+      "path": "~/Blood"
+    },
+    {
+      "name": "CursedDiamond",
+      "type": "item",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond",
+      "path": "~/Blood"
+    },
+    {
+      "name": "BlackHeart",
+      "type": "rangeditem",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart",
+      "path": "~/Blood"
+    },
+    {
+      "name": "VampirismUse",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BloodReaperUse",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_reaper_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CurseCursedDiamond",
+      "type": "potioneffect",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_cursed_diamond",
+      "path": "~/Blood"
+    },
+    {
+      "name": "CurseFromCursedDiamond",
+      "type": "procedure",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_from_cursed_diamond",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CursedDiamondEffect",
+      "type": "procedure",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_diamond_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "BlackHeartUse",
+      "type": "procedure",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_heart_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CanRechoiseStone",
+      "type": "gamerule",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "canRechoiseStone",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "TechnologyStone",
+      "type": "item",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technology_stone",
+      "path": "~/Technology"
+    },
+    {
+      "name": "TechnologyMaster",
+      "type": "potioneffect",
+      "sortid": 491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technology_master",
+      "path": "~/Technology"
+    },
+    {
+      "name": "RechargeTechnologyStone",
+      "type": "potioneffect",
+      "sortid": 492,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_technology_stone",
+      "path": "~/Technology"
+    },
+    {
+      "name": "TechnologyStoneUse",
+      "type": "procedure",
+      "sortid": 493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technology_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Technology"
+    },
+    {
+      "name": "TimeStone",
+      "type": "item",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stone",
+      "path": "~/Time"
+    },
+    {
+      "name": "RechargeTimeStone",
+      "type": "potioneffect",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_time_stone",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffect",
+      "type": "potioneffect",
+      "sortid": 496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "Time",
+      "type": "armor",
+      "sortid": 497,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffectStart",
+      "type": "procedure",
+      "sortid": 498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeMasterEffects",
+      "type": "procedure",
+      "sortid": 500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStoneUse",
+      "type": "procedure",
+      "sortid": 501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeBlade",
+      "type": "tool",
+      "sortid": 502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_blade",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTime",
+      "type": "item",
+      "sortid": 503,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeEffect",
+      "type": "potioneffect",
+      "sortid": 504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeTickEffect",
+      "type": "procedure",
+      "sortid": 505,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_tick_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeUse",
+      "type": "procedure",
+      "sortid": 506,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "Timedilation",
+      "type": "item",
+      "sortid": 507,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeDilationUse",
+      "type": "procedure",
+      "sortid": 508,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_dilation_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStop",
+      "type": "item",
+      "sortid": 509,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopUse",
+      "type": "procedure",
+      "sortid": 510,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffectStart",
+      "type": "procedure",
+      "sortid": 511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffectEnd",
+      "type": "procedure",
+      "sortid": 512,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeStopEffect",
+      "type": "potioneffect",
+      "sortid": 511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_stop_effect",
+      "path": "~/Time"
+    },
+    {
+      "name": "TimeGet",
+      "type": "procedure",
+      "sortid": 513,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "TimeReversed",
+      "type": "item",
+      "sortid": 514,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "time_reversed",
+      "path": "~/Time"
+    },
+    {
+      "name": "Checkpoint",
+      "type": "procedure",
+      "sortid": 515,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "ReturnCheckpoint",
+      "type": "procedure",
+      "sortid": 516,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_checkpoint",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "CheckpointGUI",
+      "type": "gui",
+      "sortid": 517,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkpoint_gui",
+      "path": "~/Time"
+    },
+    {
+      "name": "BasicGroup",
+      "type": "tab",
+      "sortid": 518,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "AdditionalGroup",
+      "type": "tab",
+      "sortid": 519,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "additional_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "MiddleGroup",
+      "type": "tab",
+      "sortid": 520,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "middle_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "GreatGroup",
+      "type": "tab",
+      "sortid": 521,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_group",
+      "path": "~/ElementalGroups"
+    },
+    {
+      "name": "AccelerationTimeStart",
+      "type": "procedure",
+      "sortid": 522,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "AccelerationTimeEnd",
+      "type": "procedure",
+      "sortid": 523,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acceleration_time_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "MarsOnMe",
+      "type": "procedure",
+      "sortid": 524,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mars_on_me",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "MarsOnPlayer",
+      "type": "procedure",
+      "sortid": 525,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mars_on_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "MoonOnMe",
+      "type": "procedure",
+      "sortid": 526,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_on_me",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "MoonOnPlayer",
+      "type": "procedure",
+      "sortid": 527,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_on_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "VenusOnMe",
+      "type": "procedure",
+      "sortid": 528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venus_on_me",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "VenusOnPlayer",
+      "type": "procedure",
+      "sortid": 529,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venus_on_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "EarthOnMe",
+      "type": "procedure",
+      "sortid": 530,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_on_me",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "EarthOnPlayer",
+      "type": "procedure",
+      "sortid": 531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_on_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cosmos"
+    },
+    {
+      "name": "EarthBlockCreate",
+      "type": "procedure",
+      "sortid": 532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_block_create",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Earth"
+    },
+    {
+      "name": "FireFlying",
+      "type": "potioneffect",
+      "sortid": 534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying",
+      "path": "~/Fire"
+    },
+    {
+      "name": "FireFlyingTick",
+      "type": "procedure",
+      "sortid": 536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fire"
+    },
+    {
+      "name": "FireFlyingEnd",
+      "type": "procedure",
+      "sortid": 537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flying_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fire"
+    },
+    {
+      "name": "SpecialAbilityUse",
+      "type": "procedure",
+      "sortid": 538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_ability_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "SpecialAbilityKey",
+      "type": "keybind",
+      "sortid": 539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_ability_key",
+      "path": "~/Keys"
+    },
+    {
+      "name": "OpenGUITimeReversed",
+      "type": "procedure",
+      "sortid": 540,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_time_reversed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Time"
+    },
+    {
+      "name": "SpawnGUI",
+      "type": "procedure",
+      "sortid": 541,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Animals"
+    },
+    {
+      "name": "SultGUI",
+      "type": "procedure",
+      "sortid": 542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sult_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Greenery"
+    },
+    {
+      "name": "SoundGUI",
+      "type": "procedure",
+      "sortid": 543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Sound"
     }
   ],
   "variable_elements": [
@@ -8313,6 +9166,48 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "technology",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "technology_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "time",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "time_stone",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "spawnx",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "spawny",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "75.0"
+    },
+    {
+      "name": "spawnz",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -8343,378 +9238,400 @@
   ],
   "language_map": {
     "ru_ru": {
-      "item.power.metal_invulnerability": "Неуязвимость Металла",
-      "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
-      "item.power.energy_leggings": "Энергетические Поножи",
-      "item.power.energy_sphere": "Энергетический Шар",
-      "item.power.vacuum_web": "Вакуумная Сеть",
-      "item.power.energy_helmet": "Энергетический Шлем",
-      "item.power.create_shadow": "Создать Тень",
-      "effect.power.geyser_merger": "Слияние Гейзер",
-      "effect.power.recharge_ice_stone": "Перезарядка",
-      "item.power.energy_shield": "Энергощит",
-      "item.power.rainfall": "Ливень",
-      "effect.power.sound_master": "Мастер Звука",
-      "gamerule.forbiddenInactiveSpells.description": "Запретить использование заклинаний при неактивированном камне",
-      "item.power.spike": "Шип",
-      "item.power.greenery_chestplate": "Greenery Chestplate",
-      "effect.geyser_merger": "Geyser Merger",
-      "effect.power.recharge_water_stone": "Перезарядка",
+      "item.power.metal_invulnerability": "РќРµСѓСЏР·РІРёРјРѕСЃС‚СЊ РњРµС‚Р°Р»Р»Р°",
+      "effect.power.recharge_technology_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "block.power.unmultiplication_moon_stones_block": "Р‘Р»РѕРє Р›СѓРЅРЅС‹С… РљР°РјРЅРµР№",
+      "gamerule.canRechoiseStone.description": "Р’С‹РєР»СЋС‡РёС‚Рµ, С‡С‚РѕР±С‹ РЅРµР»СЊР·СЏ Р±С‹Р»Рѕ РїРµСЂРµРІС‹Р±СЂР°С‚СЊ РєР°РјРЅРё",
+      "item.power.energy_leggings": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёРµ РџРѕРЅРѕР¶Рё",
+      "item.power.energy_sphere": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёР№ РЁР°СЂ",
+      "item.power.vacuum_web": "Р’Р°РєСѓСѓРјРЅР°СЏ РЎРµС‚СЊ",
+      "item.power.energy_helmet": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёР№ РЁР»РµРј",
+      "item.power.create_shadow": "РЎРѕР·РґР°С‚СЊ РўРµРЅСЊ",
+      "effect.power.recharge_ice_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.energy_shield": "Р­РЅРµСЂРіРѕС‰РёС‚",
+      "effect.power.sound_master": "РњР°СЃС‚РµСЂ Р—РІСѓРєР°",
+      "item.power.rainfall": "Р›РёРІРµРЅСЊ",
+      "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
+      "item.power.spike": "РЁРёРї",
+      "effect.power.time_stop_effect": "РћСЃС‚Р°РЅРѕРІРєР° Р’СЂРµРјРµРЅРё",
+      "item.power.greenery_chestplate": "РўСЂР°РІСЏРЅРѕР№ РЅР°РіСЂСѓРґРЅРёРє",
+      "effect.power.recharge_water_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.metal_helmet": "РњРµС‚Р°Р»Р»РёС‡РµСЃРєРёР№ С€Р»РµРј",
       "effect.recharge_cosmos_stone": "Recharge",
-      "item.power.metal_helmet": "Metal Helmet",
-      "effect.power.ocean_master": "Мастер Океана",
-      "effect.power.recharge_rain_stone": "Перезарядка",
-      "effect.power.recharge_creation_stone": "Перезарядка",
-      "effect.recharge_tornado_stone": "Перезарядка",
-      "effect.power.recharge_moon_stone": "Перезарядка",
-      "item.power.sound_emitate": "Издать Звук",
-      "effect.power.vacuum_master": "Мастер Пустоты",
-      "effect.power.recharge_cosmos_stone": "Перезарядка",
+      "effect.power.ocean_master": "РњР°СЃС‚РµСЂ РћРєРµР°РЅР°",
+      "effect.power.recharge_rain_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "effect.power.recharge_creation_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "effect.recharge_tornado_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "effect.power.recharge_moon_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.sound_emitate": "пїЅ?Р·РґР°С‚СЊ Р—РІСѓРє",
+      "effect.acceleration_time_effect": "Acceleration Time",
+      "effect.power.vacuum_master": "РњР°СЃС‚РµСЂ РџСѓСЃС‚РѕС‚С‹",
+      "effect.power.recharge_cosmos_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
       "effect.fire_master": "Master of Fire",
-      "item.power.lightning_helmet": "Повязка Молнии",
+      "item.power.lightning_helmet": "РџРѕРІСЏР·РєР° РњРѕР»РЅРёРё",
       "item.power.blood_boots": "Blood Boots",
       "item.power.crestcent_leggings": "Crestcent Leggings",
-      "item.power.lightning_leggings": "Штаны Молнии",
-      "item.power.fire_chestplate": "Огненная Мантия",
-      "item.power.glow_create": "Создать Светляка",
+      "item.power.lightning_leggings": "РЁС‚Р°РЅС‹ РњРѕР»РЅРёРё",
+      "item.power.fire_chestplate": "РћРіРЅРµРЅРЅР°СЏ РњР°РЅС‚РёСЏ",
+      "item.power.glow_create": "РЎРѕР·РґР°С‚СЊ РЎРІРµС‚Р»СЏРєР°",
       "effect.recharge_blood_stone": "Recharge",
-      "effect.power.recharge_energy_stone": "Перезарядка",
-      "item.power.water_katana": "Водяная Катана",
+      "effect.power.recharge_energy_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.water_katana": "Р’РѕРґСЏРЅР°СЏ РљР°С‚Р°РЅР°",
       "item.power.greenery_leggings": "Greenery Leggings",
-      "item.power.snow_golem_creator": "Создание Снежного голема",
-      "effect.power.rain_master": "Мастер Дождя",
-      "item.power.coral_shield": "Коралловый щит",
-      "item.power.lava_hammer": "Лавовый Молот",
-      "item.power.wooden_shield": "Древесный Щит",
-      "item.power.earth_leggings": "Земляные Штаны",
-      "item.power.black_hole": "Черная Дыра",
-      "item.power.air_blade": "Воздушная Рапира",
-      "block.power.sound_barrier_block": "Блок Звукового барьера",
-      "item.power.lighting": "Освещение",
-      "itemGroup.tabmagical_stone": "Волшебные камни",
+      "item.power.snow_golem_creator": "РЎРѕР·РґР°РЅРёРµ РЎРЅРµР¶РЅРѕРіРѕ РіРѕР»РµРјР°",
+      "item.power.lava_hammer": "Р›Р°РІРѕРІС‹Р№ РњРѕР»РѕС‚",
+      "item.power.coral_shield": "РљРѕСЂР°Р»Р»РѕРІС‹Р№ С‰РёС‚",
+      "effect.power.rain_master": "РњР°СЃС‚РµСЂ Р”РѕР¶РґСЏ",
+      "item.power.wooden_shield": "Р”СЂРµРІРµСЃРЅС‹Р№ Р©РёС‚",
+      "item.power.earth_leggings": "Р—РµРјР»СЏРЅС‹Рµ РЁС‚Р°РЅС‹",
+      "item.power.black_hole": "Р§РµСЂРЅР°СЏ Р”С‹СЂР°",
+      "item.power.air_blade": "Р’РѕР·РґСѓС€РЅР°СЏ Р Р°РїРёСЂР°",
+      "block.power.sound_barrier_block": "Р‘Р»РѕРє Р—РІСѓРєРѕРІРѕРіРѕ Р±Р°СЂСЊРµСЂР°",
+      "item.power.lighting": "РћСЃРІРµС‰РµРЅРёРµ",
       "effect.animals_master": "Master of Animals",
-      "item.power.fire_helmet": "Огненная корона",
-      "item.power.galactic_sword": "Галактический меч",
-      "effect.power.crystal_master": "Мастер Кристалла",
+      "item.power.fire_helmet": "РћРіРЅРµРЅРЅР°СЏ РєРѕСЂРѕРЅР°",
+      "item.power.galactic_sword": "Р“Р°Р»Р°РєС‚РёС‡РµСЃРєРёР№ РјРµС‡",
+      "effect.power.crystal_master": "РњР°СЃС‚РµСЂ РљСЂРёСЃС‚Р°Р»Р»Р°",
       "item.power.crestcent_helmet": "Crestcent Helmet",
-      "effect.power.recharge_vacuum_stone": "Перезарядка",
-      "item.power.rain_chestplate": "Дождевая Накидка",
+      "effect.power.recharge_vacuum_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.rain_chestplate": "Р”РѕР¶РґРµРІР°СЏ РќР°РєРёРґРєР°",
       "item.power.venus": "Venus Portal Igniter",
-      "item.power.tamer": "Приручатель",
-      "item.power.moon_wither": "Лунное Иссушение",
-      "effect.inferno_merger": "Inferno Merger",
+      "item.power.tamer": "РџСЂРёСЂСѓС‡Р°С‚РµР»СЊ",
+      "item.power.moon_wither": "Р›СѓРЅРЅРѕРµ РСЃСЃСѓС€РµРЅРёРµ",
       "effect.recharge_greenery_stone": "Recharge",
-      "item.power.sound_boots": "Звуковые Ботинки",
-      "item.power.animals_chestplate": "Animals Chestplate",
-      "effect.power.recharge_earth_stone": "Перезарядка",
-      "effect.power.ice_master": "Мастер Льда",
-      "item.power.magma_shield": "Магматический Щит",
-      "item.power.cosmos_leggings": "Cosmos Leggings",
-      "item.power.moon_axe": "Лунная Секира",
-      "item.power.piece_of_earth": "Кусок Земли",
-      "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
-      "biome.power.moon_land": "Лунная Земля",
-      "item.power.destruction_chestplate": "Destruction Кираса",
-      "effect.power.lava_master": "Мастер Лавы",
-      "effect.power.blood_master": "Мастер Крови",
-      "item.power.lava_ball": "Лавовый Шар",
-      "item.power.tp_on_venus": "Венера",
-      "item.power.energy_chestplate": "Энергетическая Кираса",
-      "item.power.ocean_sword": "Меч Океана",
-      "item.power.sun_chestplate": "Sun Chestplate",
-      "item.power.tornado_stone": "Камень Торнадо",
-      "item.power.shadow_invisible": "Теневая Невидимость",
+      "item.power.sound_boots": "Р—РІСѓРєРѕРІС‹Рµ Р‘РѕС‚РёРЅРєРё",
+      "item.power.animals_chestplate": "Р–РёРІРѕС‚РЅС‹Р№ РЅР°РіСЂСѓРґРЅРёРє",
+      "effect.power.recharge_earth_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.time_reversed": "РћР±СЂР°С‰РµРЅРёРµ Р’СЂРµРјРµРЅРё",
+      "effect.power.ice_master": "РњР°СЃС‚РµСЂ Р›СЊРґР°",
+      "item.power.magma_shield": "РњР°РіРјР°С‚РёС‡РµСЃРєРёР№ Р©РёС‚",
+      "item.power.cosmos_leggings": "РљРѕСЃРјРёС‡РµСЃРєРёРµ С€С‚Р°РЅС‹",
+      "item.power.moon_axe": "Р›СѓРЅРЅР°СЏ РЎРµРєРёСЂР°",
+      "item.power.piece_of_earth": "РљСѓСЃРѕРє Р—РµРјР»Рё",
+      "block.power.moon_stones_block": "Р‘Р»РѕРє Р Р°Р·СЂР°СЃС‚Р°СЋС‰РёС…СЃСЏ Р›СѓРЅРЅС‹С… РљР°РјРЅРµР№",
+      "biome.power.moon_land": "Р›СѓРЅРЅР°СЏ Р—РµРјР»СЏ",
+      "effect.power.acceleration_time_effect": "РЈСЃРєРѕСЂРµРЅРёРµ Р’СЂРµРјРµРЅРё",
+      "item.power.destruction_chestplate": "Destruction РљРёСЂР°СЃР°",
+      "effect.power.lava_master": "РњР°СЃС‚РµСЂ Р›Р°РІС‹",
+      "effect.power.blood_master": "РњР°СЃС‚РµСЂ РљСЂРѕРІРё",
+      "item.power.lava_ball": "Р›Р°РІРѕРІС‹Р№ РЁР°СЂ",
+      "item.power.tp_on_venus": "Р’РµРЅРµСЂР°",
+      "item.power.energy_chestplate": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєР°СЏ РљРёСЂР°СЃР°",
+      "item.power.ocean_sword": "РњРµС‡ РћРєРµР°РЅР°",
+      "item.power.sun_chestplate": "РќР°РіСЂСѓРґРЅРёРє СЃРѕР»РЅС†Р°",
+      "item.power.tornado_stone": "РљР°РјРµРЅСЊ РўРѕСЂРЅР°РґРѕ",
+      "item.power.shadow_invisible": "РўРµРЅРµРІР°СЏ РќРµРІРёРґРёРјРѕСЃС‚СЊ",
+      "item.power.vacuum_boots": "Р’Р°Р°РєСѓРјРЅС‹Рµ Р±РѕС‚РёРЅРєРё",
       "effect.cosmos_master": "Master of Space",
-      "item.power.vacuum_boots": "Vacuum Boots",
+      "item.power.time_boots": "Р‘РѕС‚РёРЅРєРё РІСЂРµРјРµРЅРё",
       "effect.recharge_shadow_stone": "Recharge",
-      "itemGroup.tabmagical_stone_boxes": "Волшебные шкатулки",
-      "item.power.plasma_ball": "Плазменный шар",
+      "item.power.plasma_ball": "РџР»Р°Р·РјРµРЅРЅС‹Р№ С€Р°СЂ",
+      "item.power.light_helmet": "РЁР»РµРј СЃРѕР»РЅС†Р°",
       "item.power.moon": "Moon Portal Igniter",
-      "item.power.light_helmet": "Light Helmet",
+      "item.power.time_leggings": "РЁС‚Р°РЅС‹ РІСЂРµРјРµРЅРё",
       "effect.recharge_vacuum_stone": "Recharge",
-      "effect.power.recharge_shadow_stone": "Перезарядка",
-      "effect.power.greenery_master": "Мастер Зелени",
-      "item.power.greenery_helmet": "Greenery Helmet",
-      "effect.power.shadow_master": "Мастер Тени",
+      "effect.power.recharge_shadow_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "effect.power.greenery_master": "РњР°СЃС‚РµСЂ Р—РµР»РµРЅРё",
+      "item.power.greenery_helmet": "РўСЂР°РІСЏРЅРѕР№ С€Р»РµРј",
+      "effect.power.shadow_master": "РњР°СЃС‚РµСЂ РўРµРЅРё",
+      "item.power.creation_boots": "Creation Boots",
       "effect.recharge_fire_stone": "Recharge",
       "effect.recharge_water_stone": "Recharge",
-      "item.power.creation_boots": "Creation Boots",
-      "effect.power.recharge_animals_stone": "Перезарядка",
-      "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
-      "key.categories.stones": "Хранители Камней",
-      "item.power.crystal_helmet": "Кристаллическая Каска",
-      "item.power.wind_helmet": "Воздушная Шапка",
-      "effect.power.recharge_greenery_stone": "Перезарядка",
-      "item.power.crystal_shield": "Кристаллический Щит",
-      "item.power.creation_leggings": "Creation Leggings",
+      "effect.power.recharge_animals_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.shadow_spawn_egg": "РЇР№С†Рѕ РїСЂРёР·С‹РІР° РўРµРЅРё",
+      "key.categories.stones": "РҐСЂР°РЅРёС‚РµР»Рё РљР°РјРЅРµР№",
+      "item.power.crystal_helmet": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєР°СЏ РљР°СЃРєР°",
+      "item.power.wind_helmet": "Р’РѕР·РґСѓС€РЅР°СЏ РЁР°РїРєР°",
+      "effect.power.recharge_greenery_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.crystal_shield": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРёР№ Р©РёС‚",
+      "item.power.creation_leggings": "РЁС‚Р°РЅС‹ СЃРѕР·РёРґР°РЅРёСЏ",
       "effect.sound_master": "Master of Sound",
-      "item.power.earth_helmet": "Земляной Монокль",
-      "item.power.water_flow": "Струя Воды",
-      "item.power.metal_boots": "Metal Boots",
-      "item.power.animals_stone": "Камень Животных",
-      "item.power.vacuum_stone": "Камень Пустоты",
+      "item.power.earth_helmet": "Р—РµРјР»СЏРЅРѕР№ РњРѕРЅРѕРєР»СЊ",
+      "item.power.water_flow": "РЎС‚СЂСѓСЏ Р’РѕРґС‹",
+      "item.power.metal_boots": "РњРµС‚Р°Р»Р»РёС‡РµСЃРєРёРµ Р±РѕС‚РёРЅРєРё",
+      "item.power.animals_stone": "РљР°РјРµРЅСЊ Р–РёРІРѕС‚РЅС‹С…",
+      "item.power.vacuum_stone": "РљР°РјРµРЅСЊ РџСѓСЃС‚РѕС‚С‹",
       "effect.recharge_lightning_stone": "Recharge",
-      "block.power.iron_stone_box": "Волшебнаяя железная шкатулка",
-      "effect.power.destruction_master": "Мастер Разрушения",
-      "item.power.iron_shield": "Железный Щит",
-      "effect.power.tornado_master": "Мастер Торнадо",
-      "item.power.energy_boots": "Энергетические Ботинки",
-      "item.power.burn": "Поджёг",
-      "item.power.destruction_helmet": "Destruction Шлем",
+      "effect.power.destruction_master": "РњР°СЃС‚РµСЂ Р Р°Р·СЂСѓС€РµРЅРёСЏ",
+      "item.power.iron_shield": "Р–РµР»РµР·РЅС‹Р№ Р©РёС‚",
+      "effect.power.tornado_master": "РњР°СЃС‚РµСЂ РўРѕСЂРЅР°РґРѕ",
+      "item.power.energy_boots": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёРµ Р‘РѕС‚РёРЅРєРё",
+      "itemGroup.tabadditional_group": "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ",
+      "item.power.burn": "РџРѕРґР¶С‘Рі",
+      "item.power.destruction_helmet": "РЁР»РµРј СЂР°Р·СЂСѓС€РµРЅРёСЏ",
       "effect.creation_master": "Master of Creation",
-      "effect.power.recharge_destruction_stone": "Перезарядка",
-      "item.power.sun_ray": "Луч Солнца",
-      "item.power.destruction_leggings": "Destruction Поножи",
-      "item.power.shield_of_earth": "Щит Земли",
-      "effect.recharge_air_stone": "Recharge",
+      "effect.power.recharge_destruction_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.sun_ray": "Р›СѓС‡ РЎРѕР»РЅС†Р°",
+      "item.power.destruction_leggings": "РџРѕРЅРѕР¶Рё СЂР°Р·СЂСѓС€РµРЅРёСЏ",
+      "item.power.vampirism": "Р’Р°РјРїРёСЂРёР·Рј",
+      "effect.power.recharge_time_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.shield_of_earth": "Р©РёС‚ Р—РµРјР»Рё",
       "item.power.crestcent_boots": "Crestcent Boots",
-      "effect.power.recharge_blood_stone": "Перезарядка",
-      "item.power.ice_leggings": "Ледяные Штаны",
-      "item.power.energy_staff": "Посох Энергии",
-      "item.power.creation_helmet": "Creation Helmet",
-      "effect.power.recharge_fire_stone": "Перезарядка",
-      "item.power.shadow_helmet": "Shadow Helmet",
-      "item.power.crystal_leggings": "Кристаллические Штаны",
-      "block.power.crystal_shield_block": "Блок Кристаллического Щита",
-      "item.power.crystal_dagger": "Кристаллический Кинжал",
-      "item.power.cosmos_stone": "Камень Космоса",
-      "effect.power.recharge_tornado_stone": "Перезарядка",
-      "item.power.ocean_chestplate": "Акваланг Океана",
-      "item.power.lava_leggings": "Лавовые Брюки",
-      "item.power.lava_helmet": "Лавовые Очки",
-      "item.power.animals_helmet": "Animals Helmet",
-      "item.power.ice_sharp": "Ледяной Осколок",
+      "effect.recharge_air_stone": "Recharge",
+      "effect.power.recharge_blood_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.energy_staff": "РџРѕСЃРѕС… Р­РЅРµСЂРіРёРё",
+      "item.power.ice_leggings": "Р›РµРґСЏРЅС‹Рµ РЁС‚Р°РЅС‹",
+      "item.power.creation_helmet": "РЁР»РµРј СЃРѕР·РёРґР°РЅРёСЏ",
+      "effect.power.recharge_fire_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.shadow_helmet": "РЁР»РµРј С‚СЊРјС‹",
+      "item.power.time_stop": "РћСЃС‚Р°РЅРѕРІРєР° Р’СЂРµРјРµРЅРё",
+      "item.power.crystal_leggings": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРёРµ РЁС‚Р°РЅС‹",
+      "item.power.crystal_dagger": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРёР№ РљРёРЅР¶Р°Р»",
+      "item.power.cosmos_stone": "РљР°РјРµРЅСЊ РљРѕСЃРјРѕСЃР°",
+      "block.power.crystal_shield_block": "Р‘Р»РѕРє РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРѕРіРѕ Р©РёС‚Р°",
+      "effect.power.fire_flying": "Fire Flying",
+      "effect.power.recharge_tornado_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.ocean_chestplate": "РђРєРІР°Р»Р°РЅРі РћРєРµР°РЅР°",
+      "item.power.lava_leggings": "Р›Р°РІРѕРІС‹Рµ Р‘СЂСЋРєРё",
+      "item.power.lava_helmet": "Р›Р°РІРѕРІС‹Рµ РћС‡РєРё",
+      "item.power.animals_helmet": "Р–РёРІРѕС‚РЅС‹Р№ С€Р»РµРј",
+      "item.power.ice_sharp": "Р›РµРґСЏРЅРѕР№ РћСЃРєРѕР»РѕРє",
       "effect.destruction_master": "Destruction Master",
-      "item.power.cosmos_boots": "Cosmos Boots",
-      "item.power.sun_regeneration": "Солнечное Исцеление",
-      "effect.power.recharge_lightning_stone": "Перезарядка",
-      "item.power.fertilizer": "Удобрение",
+      "item.power.cosmos_boots": "РљРѕСЃРјРёС‡РµСЃРєРёРµ Р±РѕС‚РёРЅРєРё",
+      "item.power.sun_regeneration": "РЎРѕР»РЅРµС‡РЅРѕРµ РСЃС†РµР»РµРЅРёРµ",
+      "effect.power.recharge_lightning_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.fertilizer": "РЈРґРѕР±СЂРµРЅРёРµ",
       "effect.recharge_crystal_stone": "Recharge",
-      "block.power.gold_stone_box": "Волшебная золотая шкатулка",
-      "effect.tornado_master": "Мастер Торнадо",
-      "item.power.fire_stone": "Камень Огня",
-      "item.power.blood_stone": "Камень Крови",
-      "item.power.water_drop": "Капли Воды",
-      "item.power.rain_boots": "Дождевые Сапоги",
-      "item.power.tornado_leggings": "Штаны Торнадо",
-      "item.power.creation_stone": "Камень Созидания",
-      "effect.power.earth_master": "Мастер Земли",
-      "effect.power.invincibility": "Непобедимость",
-      "item.power.ice_spear": "Ледяное Копьё",
-      "item.power.water_chestplate": "Водный Костюм",
+      "effect.technology_master": "Master of Technology",
+      "effect.tornado_master": "РњР°СЃС‚РµСЂ РўРѕСЂРЅР°РґРѕ",
+      "item.power.fire_stone": "РљР°РјРµРЅСЊ РћРіРЅСЏ",
+      "item.power.blood_stone": "РљР°РјРµРЅСЊ РљСЂРѕРІРё",
+      "item.power.rain_boots": "Р”РѕР¶РґРµРІС‹Рµ РЎР°РїРѕРіРё",
+      "item.power.water_drop": "РљР°РїР»Рё Р’РѕРґС‹",
+      "item.power.tornado_leggings": "РЁС‚Р°РЅС‹ РўРѕСЂРЅР°РґРѕ",
+      "item.power.creation_stone": "РљР°РјРµРЅСЊ РЎРѕР·РёРґР°РЅРёСЏ",
+      "effect.power.earth_master": "РњР°СЃС‚РµСЂ Р—РµРјР»Рё",
+      "effect.power.invincibility": "РќРµРїРѕР±РµРґРёРјРѕСЃС‚СЊ",
+      "item.power.ice_spear": "Р›РµРґСЏРЅРѕРµ РљРѕРїСЊС‘",
+      "effect.recharge_time_stone": "Recharge",
+      "item.power.water_chestplate": "Р’РѕРґРЅС‹Р№ РљРѕСЃС‚СЋРј",
+      "item.power.time_stone": "РљР°РјРµРЅСЊ Р’СЂРµРјРµРЅРё",
       "effect.recharge_animals_stone": "Recharge",
-      "effect.power.sun_master": "Мастер Солнца",
+      "effect.power.sun_master": "РњР°СЃС‚РµСЂ РЎРѕР»РЅС†Р°",
       "effect.vacuum_master": "Master of Vacuum",
       "subtitles.stone_activation": "Stone been activation",
+      "item.power.time_helmet": "РЁР»РµРј РІСЂРµРјРµРЅРё",
       "effect.rain_master": "Master of Rain",
-      "block.power.vacuum_web_block": "Блок Вакуумной Сети",
-      "item.power.random_item": "Случайный предмет",
-      "item.power.earth_boots": "Земляные Ботинки",
+      "block.power.vacuum_web_block": "Р‘Р»РѕРє Р’Р°РєСѓСѓРјРЅРѕР№ РЎРµС‚Рё",
+      "item.power.random_item": "РЎР»СѓС‡Р°Р№РЅС‹Р№ РџСЂРµРґРјРµС‚",
+      "item.power.earth_boots": "Р—РµРјР»СЏРЅС‹Рµ Р‘РѕС‚РёРЅРєРё",
       "effect.blood_master": "Master of Blood",
-      "item.power.water_helmet": "Водная Маска",
-      "biome.power.venus_desert": "Венерианская Пустыня",
-      "item.power.cultivation": "Выращивание",
-      "effect.power.recharge_crystal_stone": "Перезарядка",
-      "effect.power.lightning_master": "Мастер Молнии",
-      "item.power.cluster_sharp": "Осколок Кластера",
-      "effect.power.recharge_air_stone": "Перезарядка",
+      "item.power.water_helmet": "Р’РѕРґРЅР°СЏ РњР°СЃРєР°",
+      "biome.power.venus_desert": "Р’РµРЅРµСЂРёР°РЅСЃРєР°СЏ РџСѓСЃС‚С‹РЅСЏ",
+      "item.power.cultivation": "Р’С‹СЂР°С‰РёРІР°РЅРёРµ",
+      "itemGroup.tabbasic_group": "Р‘Р°Р·РѕРІС‹Рµ",
+      "effect.power.recharge_crystal_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "effect.power.lightning_master": "РњР°СЃС‚РµСЂ РњРѕР»РЅРёРё",
+      "item.power.cluster_sharp": "РћСЃРєРѕР»РѕРє РљР»Р°СЃС‚РµСЂР°",
+      "effect.power.recharge_air_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
       "effect.crystal_master": "Master of the Crystal",
-      "item.power.tornado_boots": "Ботинки Торнадо",
-      "subtitles.powerful_stone": "",
-      "item.power.water_stone": "Камень Воды",
-      "item.power.animals_boots": "Animals Boots",
-      "effect.power.energy_master": "Мастер Энергии",
-      "item.power.wind_chestplate": "Воздушный Жилет",
-      "item.power.shadow_stone": "Камень Тени",
-      "gamerule.forbiddenInactiveSpells": "Запретить использование заклинаний при неактивированном камне",
-      "item.power.bee_sting": "Пчелиное Жало",
-      "item.power.sound_sword": "Звуковой кинжал",
+      "item.power.tornado_boots": "Р‘РѕС‚РёРЅРєРё РўРѕСЂРЅР°РґРѕ",
+      "item.power.animals_boots": "Р–РёРІРѕС‚РЅС‹Рµ Р±РѕС‚РёРЅРєРё",
+      "item.power.water_stone": "РљР°РјРµРЅСЊ Р’РѕРґС‹",
+      "item.power.cursed_diamond": "Cursed Diamond",
+      "effect.power.energy_master": "РњР°СЃС‚РµСЂ Р­РЅРµСЂРіРёРё",
+      "item.power.wind_chestplate": "Р’РѕР·РґСѓС€РЅС‹Р№ Р–РёР»РµС‚",
+      "item.power.shadow_stone": "РљР°РјРµРЅСЊ РўРµРЅРё",
+      "gamerule.forbiddenInactiveSpells": "Prohibit the use of spells when the stone is not activated",
+      "item.power.bee_sting": "РџС‡РµР»РёРЅРѕРµ Р–Р°Р»Рѕ",
+      "item.power.sound_sword": "Р—РІСѓРєРѕРІРѕР№ РєРёРЅР¶Р°Р»",
       "effect.recharge_moon_stone": "Recharge",
-      "item.power.ice_boots": "Ледяные Сапоги",
+      "item.power.ice_boots": "Р›РµРґСЏРЅС‹Рµ РЎР°РїРѕРіРё",
       "effect.air_master": "Master of the Air",
-      "item.power.earth_chestplate": "Земляной Желет",
-      "item.power.crystal_boots": "Кристаллические Сапоги",
-      "item.power.ocean_helmet": "Шлем Океана",
-      "item.power.tornado_chestplate": "Нагрудник Торнадо",
-      "effect.power.recharge_sound_stone": "Перезарядка",
-      "item.power.sai": "Саи",
-      "item.power.vacuum_leggings": "Vacuum Leggings",
-      "entity.power.shadow": "Тень",
+      "item.power.crystal_boots": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєРёРµ РЎР°РїРѕРіРё",
+      "item.power.earth_chestplate": "Р—РµРјР»СЏРЅРѕР№ Р–РµР»РµС‚",
+      "item.power.ocean_helmet": "РЁР»РµРј РћРєРµР°РЅР°",
+      "key.power.special_ability_key": "РљР»Р°РІРёС€Р° СЃРїРµС†РёР°Р»СЊРЅС‹С… СЃРїРѕСЃРѕР±РЅРѕСЃС‚РµР№",
+      "item.power.tornado_chestplate": "РќР°РіСЂСѓРґРЅРёРє РўРѕСЂРЅР°РґРѕ",
+      "effect.power.recharge_sound_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.vacuum_leggings": "Р’Р°Р°РєСѓРјРЅС‹Рµ С€С‚Р°РЅС‹",
+      "item.power.sai": "РЎР°Рё",
+      "entity.power.shadow": "РўРµРЅСЊ",
+      "item.power.blood_reaper": "РљСЂРѕРІР°РІС‹Р№ Р–РЅРµС†",
       "effect.moon_master": "Master of the Moon",
-      "item.power.lightning_stone": "Камень Молнии",
-      "item.power.lava_boots": "Лавовые Ботинки",
-      "item.power.ocean_boots": "Ботинки Океана",
-      "gamerule.gettingStonesWhenEnteringTheGame": "Получение камней при входе в игру",
-      "effect.power.moon_master": "Мастер Луны",
-      "item.power.lava_hole": "Лавовая Яма",
-      "item.power.energy_stone": "Камень Энергии",
+      "item.power.lightning_stone": "РљР°РјРµРЅСЊ РњРѕР»РЅРёРё",
+      "item.power.lava_boots": "Р›Р°РІРѕРІС‹Рµ Р‘РѕС‚РёРЅРєРё",
+      "gamerule.gettingStonesWhenEnteringTheGame": "РџРѕР»СѓС‡РµРЅРёРµ РєР°РјРЅРµР№ РїСЂРё РІС…РѕРґРµ РІ РёРіСЂСѓ",
+      "item.power.ocean_boots": "Р‘РѕС‚РёРЅРєРё РћРєРµР°РЅР°",
+      "effect.power.moon_master": "РњР°СЃС‚РµСЂ Р›СѓРЅС‹",
+      "item.power.lava_hole": "Р›Р°РІРѕРІР°СЏ РЇРјР°",
+      "item.power.metal_leggings": "РњРµС‚Р°Р»Р»РёС‡РµСЃРєРёРµ РџРѕРЅРѕР¶Рё",
+      "gamerule.gettingStonesWhenEnteringTheGame.description": "Р”Р°РµС‚ РёРіСЂРѕРєР°Рј РєР°РјРЅРё, РєРѕРіРґР° РѕРЅРё РІСЃС‚СѓРїР°СЋС‚ РІ РёРіСЂСѓ, РµСЃР»Рё Сѓ РЅРёС… РёС… РЅРµС‚",
+      "item.power.energy_stone": "РљР°РјРµРЅСЊ Р­РЅРµСЂРіРёРё",
       "effect.energy_master": "Master of Energy",
-      "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
-      "item.power.metal_leggings": "Metal Leggings",
-      "item.power.destruction_boots": "Destruction Ботинки",
-      "item.power.sound_helmet": "Звуковая Маска",
-      "item.power.metal_stone": "Камень Металла",
-      "item.power.greenery_boots": "Greenery Boots",
-      "item.power.ice_chestplate": "Ледяная Куртка",
+      "item.power.destruction_boots": "Р‘РѕС‚РёРЅРєРё СЂР°Р·СЂСѓС€РµРЅРёСЏ",
+      "item.power.sound_helmet": "Р—РІСѓРєРѕРІР°СЏ РњР°СЃРєР°",
+      "item.power.metal_stone": "РљР°РјРµРЅСЊ РњРµС‚Р°Р»Р»Р°",
+      "item.power.greenery_boots": "Р›РёСЃС‚РІРµРЅРЅС‹Рµ Р±РѕС‚РёРЅРєРё",
+      "item.power.ice_chestplate": "Р›РµРґСЏРЅР°СЏ РљСѓСЂС‚РєР°",
       "effect.recharge_earth_stone": "Recharge",
-      "item.power.moon_stones": "Лунные Камни",
-      "key.power.detransform_key": "Клавиша детрансформации",
+      "item.power.moon_stones": "Р›СѓРЅРЅС‹Рµ РљР°РјРЅРё",
+      "key.power.detransform_key": "РљР»Р°РІРёС€Р° РґРµС‚СЂР°РЅСЃС„РѕСЂРјР°С†РёРё",
       "effect.recharge_creation_stone": "Recharge",
-      "item.power.lava_stone": "Камень Лавы",
-      "item.power.tornado_create": "Создание Торнадо",
-      "item.power.sun_stone": "Камень Солнца",
+      "item.power.lava_stone": "РљР°РјРµРЅСЊ Р›Р°РІС‹",
+      "item.power.tornado_create": "РЎРѕР·РґР°РЅРёРµ РўРѕСЂРЅР°РґРѕ",
+      "item.power.sun_stone": "РљР°РјРµРЅСЊ РЎРѕР»РЅС†Р°",
       "effect.recharge_ocean_stone": "Recharge",
       "effect.lightning_master": "Master of Lightning",
-      "item.power.crystal_chestplate": "Кристаллическая Куртка",
-      "item.power.sun_explode": "Солнечный Взрыв",
-      "item.power.vacuum_sword": "Пустотный Меч",
-      "effect.power.creation_master": "Мастер Созидания",
-      "item.power.tp_on_moon": "Луна",
-      "item.power.fire_sword": "Меч Огня",
-      "item.power.vacuum_chestplate": "Vacuum Chestplate",
+      "item.power.crystal_chestplate": "РљСЂРёСЃС‚Р°Р»Р»РёС‡РµСЃРєР°СЏ РљСѓСЂС‚РєР°",
+      "item.power.sun_explode": "РЎРѕР»РЅРµС‡РЅС‹Р№ Р’Р·СЂС‹РІ",
+      "item.power.tp_on_moon": "Р›СѓРЅР°",
+      "effect.power.creation_master": "РњР°СЃС‚РµСЂ РЎРѕР·РёРґР°РЅРёСЏ",
+      "item.power.vacuum_sword": "РџСѓСЃС‚РѕС‚РЅС‹Р№ РњРµС‡",
+      "item.power.fire_sword": "РњРµС‡ РћРіРЅСЏ",
+      "item.power.vacuum_chestplate": "Р’Р°Р°РєСѓРјРЅС‹Р№ РЅР°РіСЂСѓРґРЅРёРє",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
-      "item.power.water_boots": "Водные Ласты",
-      "item.power.ice_shield": "Ледяной щит",
-      "item.power.sound_leggings": "Звуковые Брюки",
-      "item.power.acustical_explode": "Акустический Взрыв",
-      "item.power.sun_helmet": "Sun Helmet",
-      "effect.power.recharge_lava_stone": "Перезарядка",
-      "item.power.light_leggings": "Light Leggings",
+      "item.power.ice_shield": "Р›РµРґСЏРЅРѕР№ С‰РёС‚",
+      "item.power.water_boots": "Р’РѕРґРЅС‹Рµ Р›Р°СЃС‚С‹",
+      "item.power.sound_leggings": "Р—РІСѓРєРѕРІС‹Рµ Р‘СЂСЋРєРё",
+      "item.power.acustical_explode": "РђРєСѓСЃС‚РёС‡РµСЃРєРёР№ Р’Р·СЂС‹РІ",
+      "item.power.sun_helmet": "РЁР»РµРј СЃРѕР»РЅС†Р°",
+      "itemGroup.tabmiddle_group": "РЎСЂРµРґРЅРёРµ",
+      "effect.power.recharge_lava_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.light_leggings": "РЁС‚Р°РЅС‹ СЃРІРµС‚Р°",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
-      "block.power.andesite_stone_box": "Волшебная андезитовая шкатулка",
-      "item.power.ice_helmet": "Ледяной Шарф",
-      "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
-      "item.power.sound_barrier": "Звуковой барьер",
+      "item.power.ice_helmet": "Р›РµРґСЏРЅРѕР№ РЁР°СЂС„",
+      "item.power.time_dilation": "Р—Р°РјРµРґР»РµРЅРёРµ Р’СЂРµРјРµРЅРё",
+      "item.power.glow_spawn_egg": "РЇР№С†Рѕ РїСЂРёР·С‹РІР° РЎРІРµС‚Р»СЏРєР°",
+      "item.power.sound_barrier": "Р—РІСѓРєРѕРІРѕР№ Р±Р°СЂСЊРµСЂ",
       "effect.recharge_ice_stone": "Recharge",
-      "item.power.destruction_stone": "Камень Разрушения",
-      "item.power.blood_leggings": "Blood Leggings",
-      "item.power.tp_on_earth": "Земля",
-      "item.power.ice_ball": "Ледяной шар",
-      "item.power.fire_leggings": "Огненные Штаны",
+      "item.power.destruction_stone": "РљР°РјРµРЅСЊ Р Р°Р·СЂСѓС€РµРЅРёСЏ",
+      "item.power.blood_leggings": "Р‘РѕС‚РёРЅРєРё РєСЂРѕРІРё",
+      "item.power.tp_on_earth": "Р—РµРјР»СЏ",
+      "item.power.fire_leggings": "РћРіРЅРµРЅРЅС‹Рµ РЁС‚Р°РЅС‹",
+      "item.power.black_heart": "Р§РµСЂРЅРѕРµ РЎРµСЂРґС†Рµ",
+      "item.power.ice_ball": "Р›РµРґСЏРЅРѕР№ С€Р°СЂ",
       "effect.recharge_metal_stone": "Recharge",
-      "block.power.black_hole_block": "Блок Черной Дыры",
-      "effect.coal_merger": "Coal Merger",
-      "item.power.spawn": "Порождение",
+      "block.power.black_hole_block": "Р‘Р»РѕРє Р§РµСЂРЅРѕР№ Р”С‹СЂС‹",
+      "item.power.spawn": "РџРѕСЂРѕР¶РґРµРЅРёРµ",
       "effect.sun_master": "Master of Sun",
-      "item.power.tornado_helmet": "Шлем Торнадо",
-      "effect.power.water_master": "Мастер Воды",
-      "item.power.light_boots": "Light Boots",
-      "item.power.magic_fireball": "Волшебный Огненный шар",
-      "item.power.earth_stone": "Камень Земли",
-      "item.power.crystal_stone": "Камень Кристалла",
+      "item.power.tornado_helmet": "РЁР»РµРј РўРѕСЂРЅР°РґРѕ",
+      "item.power.light_boots": "Р‘РѕС‚РёРЅРєРё СЃРІРµС‚Р°",
+      "effect.power.water_master": "РњР°СЃС‚РµСЂ Р’РѕРґС‹",
+      "item.power.magic_fireball": "Р’РѕР»С€РµР±РЅС‹Р№ РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ",
+      "item.power.earth_stone": "РљР°РјРµРЅСЊ Р—РµРјР»Рё",
+      "item.power.crystal_stone": "РљР°РјРµРЅСЊ РљСЂРёСЃС‚Р°Р»Р»Р°",
       "effect.recharge_light_stone": "Recharge",
-      "item.power.metal_chestplate": "Metal Chestplate",
-      "item.power.fire_boots": "Огненные Ботинки",
-      "block.power.stone_stone_box": "Волшебная каменная шкатулка",
-      "effect.power.air_master": "Мастер Воздуха",
-      "effect.unelemental_master": "Unelemental Master",
-      "item.power.tiger_claw": "Тигриный Коготь",
+      "item.power.metal_chestplate": "РњРµС‚С‚Р°Р»РёС‡РµСЃРєРёР№ РЅР°РіСЂСѓРґРЅРёРє",
+      "item.power.technology_stone": "РљР°РјРµРЅСЊ РўРµС…РЅРѕР»РѕРіРёР№",
+      "effect.power.air_master": "РњР°СЃС‚РµСЂ Р’РѕР·РґСѓС…Р°",
+      "item.power.fire_boots": "РћРіРЅРµРЅРЅС‹Рµ Р‘РѕС‚РёРЅРєРё",
+      "item.power.tiger_claw": "РўРёРіСЂРёРЅС‹Р№ РљРѕРіРѕС‚СЊ",
       "effect.recharge_rain_stone": "Recharge",
-      "item.power.shadow_leggings": "Shadow Leggings",
+      "item.power.shadow_leggings": "РџРѕРЅРѕР¶Рё С‚СЊРјС‹",
       "effect.light_master": "Master of Light",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
-      "item.power.shadow_boots": "Shadow Boots",
-      "item.power.lava_chestplate": "Лавовый Пояс",
+      "item.power.shadow_boots": "Р‘РѕС‚РёРЅРєРё С‚СЊРјС‹",
+      "effect.curse_cursed_diamond": "Curse of Cursed Diamond",
+      "item.power.lava_chestplate": "Р›Р°РІРѕРІС‹Р№ РџРѕСЏСЃ",
       "effect.shadow_master": "Master of Shadow",
-      "item.power.lightning_chestplate": "Мантия Молнии",
-      "item.power.rain_stone": "Камень Дождя",
-      "item.power.lightning_strike": "Удар Молнии",
+      "item.power.time_chestplate": "РќР°РіСЂСѓРґРЅРёРє РІСЂРµРјРµРЅРё",
+      "item.power.lightning_chestplate": "РњР°РЅС‚РёСЏ РњРѕР»РЅРёРё",
+      "effect.recharge_technology_stone": "Recharge",
+      "item.power.time_blade": "РљР»РёРЅРѕРє Р’СЂРµРјРµРЅРё",
+      "item.power.rain_stone": "РљР°РјРµРЅСЊ Р”РѕР¶РґСЏ",
+      "item.power.lightning_strike": "РЈРґР°СЂ РњРѕР»РЅРёРё",
       "effect.greenery_master": "Master of Greenery",
-      "block.power.cluster_block": "Блок Кластера",
-      "effect.power.recharge_sun_stone": "Перезарядка",
-      "item.power.fistof_earth": "Земляной Кулак",
-      "item.power.cosmos_chestplate": "Cosmos Chestplate",
-      "item.power.sound_chestplate": "Звуковой Нагрудник",
-      "item.power.flash_light": "Вспышка Света",
-      "item.power.blood_chestplate": "Blood Chestplate",
-      "item.power.shadow_chestplate": "Shadow Chestplate",
-      "item.power.sun_axe": "Солнечная Секира",
+      "effect.power.recharge_sun_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "block.power.cluster_block": "Р‘Р»РѕРє РљР»Р°СЃС‚РµСЂР°",
+      "item.power.fistof_earth": "Р—РµРјР»СЏРЅРѕР№ РљСѓР»Р°Рє",
+      "item.power.cosmos_chestplate": "РљРѕСЃРјРёС‡РµСЃРєРёР№ РЅР°РіСЂСѓРґРЅРёРє",
+      "item.power.sound_chestplate": "Р—РІСѓРєРѕРІРѕР№ РќР°РіСЂСѓРґРЅРёРє",
+      "item.power.flash_light": "Р’СЃРїС‹С€РєР° РЎРІРµС‚Р°",
+      "item.power.blood_chestplate": "РќР°РіСЂСѓРґРЅРёРє РєСЂРѕРІРё",
+      "item.power.shadow_chestplate": "РќР°РіСЂСѓРґРЅРёРє С‚СЊРјС‹",
+      "item.power.sun_axe": "РЎРѕР»РЅРµС‡РЅР°СЏ РЎРµРєРёСЂР°",
       "effect.ocean_master": "Master of the Ocean",
-      "effect.power.coal_merger": "Слияние Уголь",
-      "block.power.energy_block": "Энергетический блок",
+      "block.power.energy_block": "Р­РЅРµСЂРіРµС‚РёС‡РµСЃРєРёР№ Р±Р»РѕРє",
+      "effect.time_master_effect": "Master of Time",
       "item.power.creation_chestplate": "Creation Chestplate",
-      "item.power.light_sword": "Световой Меч",
-      "item.power.sun_boots": "Sun Boots",
-      "item.power.moon_stone": "Камень Луны",
-      "entity.power.tornado_entity": "Торнадо",
+      "item.power.light_sword": "РЎРІРµС‚РѕРІРѕР№ РњРµС‡",
+      "item.power.sun_boots": "РЁР»РµРј СЃРѕР»РЅС†Р°",
+      "entity.power.tornado_entity": "РўРѕСЂРЅР°РґРѕ",
+      "item.power.moon_stone": "РљР°РјРµРЅСЊ Р›СѓРЅС‹",
       "item.power.mars": "Mars Portal Igniter",
-      "item.power.destruction_power": "Анигиляция",
-      "item.power.greenery_stone": "Камень Зелени",
-      "effect.power.recharge_ocean_stone": "Перезарядка",
-      "item.power.ice_stone": "Камень Льда",
-      "item.power.tornado_battle_axe": "Боевой Топор Торнадо",
-      "biome.power.venus_land": "Венерианская Земля",
-      "item.power.shadow_sword": "Теневой Мач",
+      "item.power.destruction_power": "РђРЅРёРіРёР»СЏС†РёСЏ",
+      "item.power.greenery_stone": "РљР°РјРµРЅСЊ Р—РµР»РµРЅРё",
+      "item.power.ice_stone": "РљР°РјРµРЅСЊ Р›СЊРґР°",
+      "effect.power.recharge_ocean_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
+      "item.power.tornado_battle_axe": "Р‘РѕРµРІРѕР№ РўРѕРїРѕСЂ РўРѕСЂРЅР°РґРѕ",
+      "biome.power.venus_land": "Р’РµРЅРµСЂРёР°РЅСЃРєР°СЏ Р—РµРјР»СЏ",
+      "effect.time_stop_effect": "Time Stop",
+      "item.power.shadow_sword": "РўРµРЅРµРІРѕР№ РњР°С‡",
       "effect.ice_master": "Master of Ice",
-      "item.power.sun_leggings": "Sun Leggings",
-      "item.power.wind_boots": "Воздушные Сапоги",
-      "item.power.rain_helmet": "Дождевая Шапка",
+      "item.power.sun_leggings": "РЁС‚Р°РЅС‹ СЃРѕР»РЅС†Р°",
+      "item.power.wind_boots": "Р’РѕР·РґСѓС€РЅС‹Рµ РЎР°РїРѕРіРё",
+      "item.power.rain_helmet": "Р”РѕР¶РґРµРІР°СЏ РЁР°РїРєР°",
       "effect.recharge_sound_stone": "Recharge",
-      "effect.recharge_empty_stone": "Recharge",
-      "item.power.rain_bow": "Дождевой Лук",
-      "item.power.animals_leggings": "Animals Leggings",
-      "item.power.wind_leggings": "Воздушные Штаны",
-      "effect.power.cosmos_master": "Мастер Космоса",
-      "item.power.cosmos_helmet": "Cosmos Helmet",
-      "item.power.rain_knife": "Дождевой Нож",
+      "item.power.animals_leggings": "РЁС‚Р°РЅС‹ Р¶РёРІРѕС‚РЅС‹С…",
+      "item.power.rain_bow": "Р”РѕР¶РґРµРІРѕР№ Р›СѓРє",
+      "item.power.wind_leggings": "Р’РѕР·РґСѓС€РЅС‹Рµ РЁС‚Р°РЅС‹",
+      "effect.power.cosmos_master": "РњР°СЃС‚РµСЂ РљРѕСЃРјРѕСЃР°",
+      "item.power.cosmos_helmet": "РљРѕСЃРјРёС‡РµСЃРєРёР№ С€Р»РµРј",
+      "item.power.rain_knife": "Р”РѕР¶РґРµРІРѕР№ РќРѕР¶",
       "effect.recharge_destruction_stone": "Recharge",
-      "item.power.blood_helmet": "Blood Helmet",
-      "item.power.light_chestplate": "Light Chestplate",
-      "item.power.iron_golem_create": "Создание Железного Голема",
-      "item.power.light_stone": "Камень Света",
-      "item.power.lightning_boots": "Ботинки Молнии",
-      "item.power.vacuum_helmet": "Vacuum Helmet",
-      "effect.power.recharge_light_stone": "Перезарядка",
+      "item.power.blood_helmet": "РЁР»РµРј РєСЂРѕРІРё",
+      "item.power.light_chestplate": "РќР°РіСЂСѓРґРЅРёРє СЃРІРµС‚Р°",
+      "item.power.iron_golem_create": "РЎРѕР·РґР°РЅРёРµ Р–РµР»РµР·РЅРѕРіРѕ Р“РѕР»РµРјР°",
+      "item.power.light_stone": "РљР°РјРµРЅСЊ РЎРІРµС‚Р°",
+      "item.power.lightning_boots": "Р‘РѕС‚РёРЅРєРё РњРѕР»РЅРёРё",
+      "item.power.vacuum_helmet": "Р’Р°Р°РєСѓРјРЅС‹Р№ С€Р»РµРј",
+      "effect.power.recharge_light_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
       "subtitles.stone_deactivation": "Stone been deactivation",
-      "item.power.whirlpool": "Водоворот",
-      "entity.power.glow": "Светляк",
+      "item.power.whirlpool": "Р’РѕРґРѕРІРѕСЂРѕС‚",
+      "entity.power.glow": "РЎРІРµС‚Р»СЏРє",
+      "effect.power.technology_master": "РњР°СЃС‚РµСЂ РўРµС…РЅРѕР»РѕРіРёР№",
       "effect.recharge_lava_stone": "Recharge",
       "effect.recharge_energy_stone": "Recharge",
-      "item.power.eclipse": "Затмение",
-      "effect.power.inferno_merger": "Слияние Инферно",
-      "biome.power.mars_land": "Марсианская Земля",
-      "item.power.rain_leggings": "Дождевые Штаны",
-      "item.power.shadow_ball": "Теневой Шар",
+      "item.power.eclipse": "Р—Р°С‚РјРµРЅРёРµ",
+      "biome.power.mars_land": "РњР°СЂСЃРёР°РЅСЃРєР°СЏ Р—РµРјР»СЏ",
+      "item.power.rain_leggings": "Р”РѕР¶РґРµРІС‹Рµ РЁС‚Р°РЅС‹",
+      "item.power.shadow_ball": "РўРµРЅРµРІРѕР№ РЁР°СЂ",
       "effect.lava_master": "Master of Lava",
-      "effect.power.light_master": "Мастер Света",
-      "item.power.air_flow": "Поток Воздуха",
-      "effect.power.metal_master": "Мастер Металла",
-      "effect.power.recharge_metal_stone": "Перезарядка",
+      "effect.power.light_master": "РњР°СЃС‚РµСЂ РЎРІРµС‚Р°",
+      "item.power.air_flow": "РџРѕС‚РѕРє Р’РѕР·РґСѓС…Р°",
+      "effect.power.metal_master": "РњР°СЃС‚РµСЂ РњРµС‚Р°Р»Р»Р°",
+      "effect.power.recharge_metal_stone": "РџРµСЂРµР·Р°СЂСЏРґРєР°",
       "effect.invincibility": "Invincibility",
-      "effect.power.fire_master": "Мастер Огня",
-      "item.power.tp_on_mars": "Марс",
-      "item.power.ocean_leggings": "Штаны Океана",
-      "block.power.wood_stone_box": "Волшебная деревянная шкатулка",
-      "item.power.vacuum_spiral": "Вакуумная Спираль",
-      "item.power.ocean_stone": "Камень Океана",
-      "effect.power.animals_master": "Мастер Животных",
+      "gamerule.canRechoiseStone": "РњРѕР¶РµС‚ Р±С‹С‚СЊ, РјРѕР¶РЅРѕ Р·Р°РЅРѕРІРѕ РІС‹Р±СЂР°С‚СЊ РєР°РјРµРЅСЊ?",
+      "effect.power.fire_master": "РњР°СЃС‚РµСЂ РћРіРЅСЏ",
+      "effect.fire_flying": "Fire Flying",
+      "item.power.tp_on_mars": "РњР°СЂСЃ",
+      "item.power.ocean_leggings": "РЁС‚Р°РЅС‹ РћРєРµР°РЅР°",
+      "item.power.vacuum_spiral": "Р’Р°РєСѓСѓРјРЅР°СЏ РЎРїРёСЂР°Р»СЊ",
+      "item.power.ocean_stone": "РљР°РјРµРЅСЊ РћРєРµР°РЅР°",
+      "effect.power.time_master_effect": "РњР°СЃС‚РµСЂ Р’СЂРµРјРµРЅРё",
+      "item.power.acceleration_time": "РЈСЃРєРѕСЂРµРЅРёРµ Р’СЂРµРјРµРЅРё",
+      "effect.power.animals_master": "РњР°СЃС‚РµСЂ Р–РёРІРѕС‚РЅС‹С…",
       "effect.recharge_sun_stone": "Recharge",
-      "item.power.rose_sword": "Розовая Шпага",
-      "item.power.storm": "Шторм",
-      "item.power.air_stone": "Камень Воздуха",
+      "item.power.rose_sword": "Р РѕР·РѕРІР°СЏ РЁРїР°РіР°",
+      "item.power.storm": "РЁС‚РѕСЂРј",
+      "item.power.air_stone": "РљР°РјРµРЅСЊ Р’РѕР·РґСѓС…Р°",
       "effect.water_master": "Master of Water",
-      "item.power.water_leggings": "Водные Штаны",
-      "item.power.sound_stone": "Камень Звука",
-      "item.power.shuriken": "Сюрикен"
+      "item.power.sound_stone": "РљР°РјРµРЅСЊ Р—РІСѓРєР°",
+      "item.power.water_leggings": "Р’РѕРґРЅС‹Рµ РЁС‚Р°РЅС‹",
+      "itemGroup.tabgreat_group": "Р’РµР»РёРєРёРµ",
+      "item.power.shuriken": "РЎСЋСЂРёРєРµРЅ"
     },
     "en_us": {
       "item.power.metal_invulnerability": "Invulnerability of Metal",
+      "effect.power.recharge_technology_stone": "Recharge",
+      "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "item.power.energy_leggings": "Energy Leggings",
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_helmet": "Energy Helmet",
       "item.power.create_shadow": "Create Shadow",
-      "effect.power.geyser_merger": "Geyser Merger",
       "item.power.energy_shield": "Energy Shield",
       "effect.power.recharge_ice_stone": "Recharge",
-      "item.power.rainfall": "Rainfall",
       "effect.power.sound_master": "Master of Sound",
+      "item.power.rainfall": "Rainfall",
       "gamerule.forbiddenInactiveSpells.description": "Prohibit the use of spells when the stone is not activated",
       "item.power.spike": "Spike",
+      "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
-      "effect.geyser_merger": "Geyser Merger",
       "effect.power.recharge_water_stone": "Recharge",
       "item.power.metal_helmet": "Metal Helmet",
       "effect.recharge_cosmos_stone": "Recharge",
@@ -8724,6 +9641,7 @@
       "effect.recharge_tornado_stone": "Recharge",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.sound_emitate": "Sound Emitate",
+      "effect.acceleration_time_effect": "Acceleration Time",
       "effect.power.vacuum_master": "Master of Vacuum",
       "effect.power.recharge_cosmos_stone": "Recharge",
       "effect.fire_master": "Master of Fire",
@@ -8747,7 +9665,6 @@
       "item.power.air_blade": "Air Rapier",
       "block.power.sound_barrier_block": "Sound Barrier Block",
       "item.power.lighting": "Lighting",
-      "itemGroup.tabmagical_stone": "Magical Stones",
       "effect.animals_master": "Master of Animals",
       "item.power.fire_helmet": "Fire Helmet",
       "item.power.galactic_sword": "Galactic Sword",
@@ -8758,19 +9675,20 @@
       "item.power.venus": "Venus Portal Igniter",
       "item.power.tamer": "Tamer",
       "item.power.moon_wither": "Moon Wither",
-      "effect.inferno_merger": "Inferno Merger",
       "effect.recharge_greenery_stone": "Recharge",
       "item.power.sound_boots": "Sound Boots",
       "item.power.animals_chestplate": "Animals Chestplate",
       "effect.power.recharge_earth_stone": "Recharge",
       "item.power.magma_shield": "Magma Shield",
       "effect.power.ice_master": "Master of Ice",
+      "item.power.time_reversed": "Time Reversed",
       "item.power.cosmos_leggings": "Cosmos Leggings",
       "item.power.moon_axe": "Moon Axe",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
-      "item.power.destruction_chestplate": "Destruction Кираса",
+      "effect.power.acceleration_time_effect": "Acceleration Time",
+      "item.power.destruction_chestplate": "Destruction РљРёСЂР°СЃР°",
       "effect.power.lava_master": "Master of Lava",
       "effect.power.blood_master": "Master of Blood",
       "item.power.lava_ball": "Lava Ball",
@@ -8780,21 +9698,22 @@
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.tornado_stone": "Tornado Stone",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "effect.cosmos_master": "Master of Space",
       "item.power.vacuum_boots": "Vacuum Boots",
+      "effect.cosmos_master": "Master of Space",
+      "item.power.time_boots": "Time Boots",
       "effect.recharge_shadow_stone": "Recharge",
-      "itemGroup.tabmagical_stone_boxes": "Magical Stone Boxes",
       "item.power.plasma_ball": "Plasma Ball",
       "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "item.power.time_leggings": "Time Leggings",
       "effect.recharge_vacuum_stone": "Recharge",
       "effect.power.recharge_shadow_stone": "Recharge",
       "effect.power.greenery_master": "Master of Greenery",
       "item.power.greenery_helmet": "Greenery Helmet",
       "effect.power.shadow_master": "Master of Shadow",
-      "effect.recharge_water_stone": "Recharge",
-      "effect.recharge_fire_stone": "Recharge",
       "item.power.creation_boots": "Creation Boots",
+      "effect.recharge_fire_stone": "Recharge",
+      "effect.recharge_water_stone": "Recharge",
       "effect.power.recharge_animals_stone": "Recharge",
       "item.power.shadow_spawn_egg": "Shadow Spawn Egg",
       "key.categories.stones": "Keepers of the Stones",
@@ -8810,30 +9729,34 @@
       "item.power.animals_stone": "Animals Stone",
       "item.power.vacuum_stone": "Vacuum Stone",
       "effect.recharge_lightning_stone": "Recharge",
-      "block.power.iron_stone_box": "Iron Stone Box",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.iron_shield": "Iron Shield",
       "effect.power.tornado_master": "Master of Tornado",
       "item.power.energy_boots": "Energy Boots",
+      "itemGroup.tabadditional_group": "Additional Group",
       "item.power.burn": "Burn",
-      "item.power.destruction_helmet": "Destruction Шлем",
+      "item.power.destruction_helmet": "Destruction РЁР»РµРј",
       "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Recharge",
       "item.power.sun_ray": "Sun Ray",
-      "item.power.destruction_leggings": "Destruction Поножи",
-      "effect.recharge_air_stone": "Recharge",
+      "item.power.destruction_leggings": "Destruction РџРѕРЅРѕР¶Рё",
+      "item.power.vampirism": "Vampirism",
+      "effect.power.recharge_time_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
       "item.power.crestcent_boots": "Crestcent Boots",
+      "effect.recharge_air_stone": "Recharge",
       "effect.power.recharge_blood_stone": "Recharge",
       "item.power.ice_leggings": "Ice Leggings",
       "item.power.energy_staff": "Energy Staff",
       "item.power.creation_helmet": "Creation Helmet",
       "effect.power.recharge_fire_stone": "Recharge",
       "item.power.shadow_helmet": "Shadow Helmet",
+      "item.power.time_stop": "Time Stop",
       "item.power.crystal_leggings": "Crystal Leggings",
       "block.power.crystal_shield_block": "Crystal Shield Block",
       "item.power.crystal_dagger": "Crystal Dagger",
       "item.power.cosmos_stone": "Space Stone",
+      "effect.power.fire_flying": "Fire Flying",
       "effect.power.recharge_tornado_stone": "Recharge",
       "item.power.ocean_chestplate": "Ocean Chestplate",
       "item.power.lava_leggings": "Lava Leggings",
@@ -8844,9 +9767,9 @@
       "item.power.cosmos_boots": "Cosmos Boots",
       "item.power.sun_regeneration": "Sun Regeneration",
       "effect.power.recharge_lightning_stone": "Recharge",
-      "effect.recharge_crystal_stone": "Recharge",
       "item.power.fertilizer": "Fertilizer",
-      "block.power.gold_stone_box": "Gold Stone Box",
+      "effect.recharge_crystal_stone": "Recharge",
+      "effect.technology_master": "Master of Technology",
       "effect.tornado_master": "Master of Tornado",
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
@@ -8857,11 +9780,14 @@
       "effect.power.earth_master": "Master of the Earth",
       "effect.power.invincibility": "Invincibility",
       "item.power.ice_spear": "Ice Spear",
+      "effect.recharge_time_stone": "Recharge",
       "item.power.water_chestplate": "Water Chestplate",
+      "item.power.time_stone": "Time Stone",
       "effect.recharge_animals_stone": "Recharge",
       "effect.power.sun_master": "Master of Sun",
       "effect.vacuum_master": "Master of Vacuum",
       "subtitles.stone_activation": "Stone been activation",
+      "item.power.time_helmet": "Time Helmet",
       "effect.rain_master": "Master of Rain",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "item.power.random_item": "Random Item",
@@ -8870,6 +9796,7 @@
       "item.power.water_helmet": "Water Helmet",
       "biome.power.venus_desert": "Venus Desert",
       "item.power.cultivation": "Cultivation",
+      "itemGroup.tabbasic_group": "Basic Group",
       "effect.power.recharge_crystal_stone": "Recharge",
       "item.power.cluster_sharp": "Cluster Sharp",
       "effect.power.lightning_master": "Master of Lightning",
@@ -8879,6 +9806,7 @@
       "subtitles.powerful_stone": "",
       "item.power.water_stone": "Water Stone",
       "item.power.animals_boots": "Animals Boots",
+      "item.power.cursed_diamond": "Cursed Diamond",
       "effect.power.energy_master": "Master of Energy",
       "item.power.wind_chestplate": "Air Chestplate",
       "item.power.shadow_stone": "Shadow Stone",
@@ -8891,11 +9819,13 @@
       "item.power.crystal_boots": "Crystal Boots",
       "item.power.earth_chestplate": "Earth Chestplate",
       "item.power.ocean_helmet": "Ocean Helmet",
+      "key.power.special_ability_key": "Special Ability Key",
       "item.power.tornado_chestplate": "Tornado Chestplate",
       "effect.power.recharge_sound_stone": "Recharge",
       "item.power.sai": "Sai",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "entity.power.shadow": "Shadow",
+      "item.power.blood_reaper": "Blood Reaper",
       "effect.moon_master": "Master of the Moon",
       "item.power.lightning_stone": "Lightning Stone",
       "item.power.lava_boots": "Lava Boots",
@@ -8904,10 +9834,10 @@
       "effect.power.moon_master": "Master of the Moon",
       "item.power.lava_hole": "Lava Hole",
       "item.power.energy_stone": "Energy stone",
-      "effect.energy_master": "Master of Energy",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.metal_leggings": "Metal Leggings",
-      "item.power.destruction_boots": "Destruction Ботинки",
+      "effect.energy_master": "Master of Energy",
+      "item.power.destruction_boots": "Destruction Р‘РѕС‚РёРЅРєРё",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
       "item.power.greenery_boots": "Greenery Boots",
@@ -8934,12 +9864,13 @@
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.acustical_explode": "Acustical Explode",
       "item.power.sun_helmet": "Sun Helmet",
+      "itemGroup.tabmiddle_group": "Middle Group",
       "effect.power.recharge_lava_stone": "Recharge",
       "item.power.light_leggings": "Light Leggings",
       "effect.earth_master": "Master of the Earth",
       "effect.metal_master": "Master of Metal",
-      "block.power.andesite_stone_box": "Andesite Stone Box",
       "item.power.ice_helmet": "Ice Helmet",
+      "item.power.time_dilation": "Time Dilation",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
       "item.power.sound_barrier": "Sound Barrier",
       "effect.recharge_ice_stone": "Recharge",
@@ -8948,9 +9879,9 @@
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.fire_leggings": "Fire Leggings",
       "item.power.ice_ball": "Ice Ball",
+      "item.power.black_heart": "Black Heart",
       "effect.recharge_metal_stone": "Recharge",
       "block.power.black_hole_block": "Black Hole Block",
-      "effect.coal_merger": "Coal Merger",
       "item.power.spawn": "Spawn",
       "effect.sun_master": "Master of Sun",
       "item.power.tornado_helmet": "Tornado Helmet",
@@ -8961,19 +9892,22 @@
       "item.power.crystal_stone": "Crystal Stone",
       "effect.recharge_light_stone": "Recharge",
       "item.power.metal_chestplate": "Metal Chestplate",
-      "block.power.stone_stone_box": "Wood Stone Box",
+      "item.power.technology_stone": "Technology Stone",
       "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
-      "effect.unelemental_master": "Unelemental Master",
-      "effect.recharge_rain_stone": "Recharge",
       "item.power.tiger_claw": "Tiger Claw",
+      "effect.recharge_rain_stone": "Recharge",
       "item.power.shadow_leggings": "Shadow Leggings",
       "effect.light_master": "Master of Light",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
       "item.power.shadow_boots": "Shadow Boots",
+      "effect.curse_cursed_diamond": "Curse of Cursed Diamond",
       "item.power.lava_chestplate": "Lava Chestplate",
       "effect.shadow_master": "Master of Shadow",
+      "item.power.time_chestplate": "Time Chestplate",
       "item.power.lightning_chestplate": "Lightning Chestplate",
+      "effect.recharge_technology_stone": "Recharge",
+      "item.power.time_blade": "Time Blade",
       "item.power.rain_stone": "Rain Stone",
       "item.power.lightning_strike": "Lightning Strike",
       "effect.greenery_master": "Master of Greenery",
@@ -8985,10 +9919,10 @@
       "item.power.flash_light": "Flash Light",
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.shadow_chestplate": "Shadow Chestplate",
-      "effect.ocean_master": "Master of the Ocean",
       "item.power.sun_axe": "Sun Axe",
-      "effect.power.coal_merger": "Coal Merger",
+      "effect.ocean_master": "Master of the Ocean",
       "block.power.energy_block": "Energy Block",
+      "effect.time_master_effect": "Master of Time",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
       "item.power.sun_boots": "Sun Boots",
@@ -9001,13 +9935,13 @@
       "effect.power.recharge_ocean_stone": "Recharge",
       "item.power.tornado_battle_axe": "Tornado Battle Axe",
       "biome.power.venus_land": "Venus Land",
-      "effect.ice_master": "Master of Ice",
+      "effect.time_stop_effect": "Time Stop",
       "item.power.shadow_sword": "Shadow Sword",
+      "effect.ice_master": "Master of Ice",
       "item.power.sun_leggings": "Sun Leggings",
       "item.power.wind_boots": "Air Boots",
       "item.power.rain_helmet": "Rain Helmet",
       "effect.recharge_sound_stone": "Recharge",
-      "effect.recharge_empty_stone": "Recharge",
       "item.power.rain_bow": "Rain Bow",
       "item.power.animals_leggings": "Animals Leggings",
       "item.power.wind_leggings": "Air Leggings",
@@ -9025,25 +9959,29 @@
       "subtitles.stone_deactivation": "Stone been deactivation",
       "item.power.whirlpool": "Whirlpool",
       "entity.power.glow": "Glow",
+      "effect.power.technology_master": "Master of Technology",
       "effect.recharge_lava_stone": "Recharge",
       "effect.recharge_energy_stone": "Recharge",
       "item.power.eclipse": "Eclipse",
-      "effect.power.inferno_merger": "Inferno Merger",
       "biome.power.mars_land": "Mars Land",
-      "effect.lava_master": "Master of Lava",
+      "effect.power.curse_cursed_diamond": "Curse of Cursed Diamond",
       "item.power.rain_leggings": "Rain Leggings",
       "item.power.shadow_ball": "Shadow Ball",
+      "effect.lava_master": "Master of Lava",
       "effect.power.light_master": "Master of Light",
       "item.power.air_flow": "Air Flow",
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
       "effect.invincibility": "Invincibility",
+      "gamerule.canRechoiseStone": "Maybe it is possible to re-select the stone?",
       "effect.power.fire_master": "Master of Fire",
+      "effect.fire_flying": "Fire Flying",
       "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
-      "block.power.wood_stone_box": "Wood Stone Box",
       "item.power.vacuum_spiral": "Vacuum Spiral",
       "item.power.ocean_stone": "Ocean Stone",
+      "effect.power.time_master_effect": "Master of Time",
+      "item.power.acceleration_time": "Acceleration Time",
       "effect.power.animals_master": "Master of Animals",
       "effect.recharge_sun_stone": "Recharge",
       "item.power.rose_sword": "Rose Sword",
@@ -9052,6 +9990,7 @@
       "effect.water_master": "Master of Water",
       "item.power.water_leggings": "Water Leggings",
       "item.power.sound_stone": "Sound Stone",
+      "itemGroup.tabgreat_group": "Great Group",
       "item.power.shuriken": "Shuriken"
     }
   },
@@ -9115,10 +10054,6 @@
         "children": []
       },
       {
-        "name": "StoneBoxes",
-        "children": []
-      },
-      {
         "name": "Animals",
         "children": []
       },
@@ -9155,44 +10090,11 @@
         "children": []
       },
       {
-        "name": "Mergers",
-        "children": [
-          {
-            "name": "Inferno",
-            "children": []
-          },
-          {
-            "name": "Geyser",
-            "children": []
-          },
-          {
-            "name": "Coal",
-            "children": []
-          },
-          {
-            "name": "Cloud",
-            "children": []
-          },
-          {
-            "name": "Mountain",
-            "children": []
-          },
-          {
-            "name": "Marsh",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Commands",
         "children": []
       },
       {
         "name": "Cosmos",
-        "children": []
-      },
-      {
-        "name": "Advancement",
         "children": []
       },
       {
@@ -9202,15 +10104,31 @@
       {
         "name": "Blood",
         "children": []
+      },
+      {
+        "name": "Technology",
+        "children": []
+      },
+      {
+        "name": "Time",
+        "children": []
+      },
+      {
+        "name": "ElementalGroups",
+        "children": []
+      },
+      {
+        "name": "Keys",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "1.3.2",
+    "version": "1.4.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
-    "author": "MagicalAlexey, ChiffonMedal",
+    "author": "MagicalAlexey, KoshakMineDEV",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
@@ -9226,5 +10144,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202200112711
 }
