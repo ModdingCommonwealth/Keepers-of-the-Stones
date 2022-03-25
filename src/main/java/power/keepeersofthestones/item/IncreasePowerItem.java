@@ -14,7 +14,7 @@ import net.minecraft.world.InteractionHand;
 
 public class IncreasePowerItem extends Item {
 	public IncreasePowerItem() {
-		super(new Item.Properties().tab(null).stacksTo(0).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
