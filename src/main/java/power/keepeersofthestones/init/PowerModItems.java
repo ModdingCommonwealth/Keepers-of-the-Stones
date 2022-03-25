@@ -118,6 +118,7 @@ import power.keepeersofthestones.item.LavaBatteryItem;
 import power.keepeersofthestones.item.LavaBallItem;
 import power.keepeersofthestones.item.IronShieldItem;
 import power.keepeersofthestones.item.IronGolemCreateItem;
+import power.keepeersofthestones.item.IncreasePowerItem;
 import power.keepeersofthestones.item.IceStoneItem;
 import power.keepeersofthestones.item.IceSpearItem;
 import power.keepeersofthestones.item.IceShieldItem;
@@ -159,6 +160,7 @@ import power.keepeersofthestones.item.DestructionStoneItem;
 import power.keepeersofthestones.item.DestructionSphereItem;
 import power.keepeersofthestones.item.DestructionPowerItem;
 import power.keepeersofthestones.item.DestructionItem;
+import power.keepeersofthestones.item.CutterSwordItem;
 import power.keepeersofthestones.item.CultivationItem;
 import power.keepeersofthestones.item.CrystalStoneItem;
 import power.keepeersofthestones.item.CrystalShieldItem;
@@ -510,6 +512,8 @@ public class PowerModItems {
 	public static final RegistryObject<Item> FORCE_REPLICATION = REGISTRY.register("force_replication", () -> new ForcereplicationItem());
 	public static final RegistryObject<Item> CONSTRUCTIONS = REGISTRY.register("constructions", () -> new ConstructionsItem());
 	public static final RegistryObject<Item> BO_STAFF = REGISTRY.register("bo_staff", () -> new BoStaffItem());
+	public static final RegistryObject<Item> INCREASE_POWER = REGISTRY.register("increase_power", () -> new IncreasePowerItem());
+	public static final RegistryObject<Item> CUTTER_SWORD = REGISTRY.register("cutter_sword", () -> new CutterSwordItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

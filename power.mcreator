@@ -11104,6 +11104,45 @@
         ]
       },
       "path": "~/Creation"
+    },
+    {
+      "name": "IncreasePower",
+      "type": "item",
+      "sortid": 651,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_power",
+      "path": "~/Destruction"
+    },
+    {
+      "name": "IncreasePowerUse",
+      "type": "procedure",
+      "sortid": 652,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_power_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Destruction"
+    },
+    {
+      "name": "CutterSword",
+      "type": "tool",
+      "sortid": 653,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutter_sword",
+      "path": "~/Destruction"
     }
   ],
   "variable_elements": [
@@ -11623,6 +11662,7 @@
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
       "block.power.detonator_tnt": "Детонатор",
+      "item.power.cutter_sword": "Cutter Sword",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.earth_battery": "Батарея",
       "item.power.lightning_helmet": "Повязка Молнии",
@@ -11950,6 +11990,7 @@
       "itemGroup.tabmiddle_group": "Средние",
       "effect.power.recharge_lava_stone": "Перезарядка",
       "item.power.ice_helmet": "Ледяной Шарф",
+      "item.power.increase_power": "Increase Power",
       "item.power.destruction_stone": "Камень Разрушения",
       "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
@@ -12017,6 +12058,7 @@
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
       "block.power.detonator_tnt": "Detonator TNT",
+      "item.power.cutter_sword": "Cutter Sword",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.earth_battery": "Battery",
       "item.power.lightning_helmet": "Lightning Helmet",
@@ -12345,6 +12387,7 @@
       "itemGroup.tabmiddle_group": "Middle Group",
       "effect.power.recharge_lava_stone": "Recharge",
       "item.power.ice_helmet": "Ice Helmet",
+      "item.power.increase_power": "Increase Power",
       "item.power.destruction_stone": "Destruction Stone",
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.ice_ball": "Ice Ball",

@@ -1,0 +1,27 @@
+{
+  "_fv": 25,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "cutter_sword",
+    "customModelName": "Normal",
+    "name": "Cutter Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 8,
+    "efficiency": 24.0,
+    "attackSpeed": 1.2,
+    "enchantability": 2,
+    "damageVsEntity": 25.0,
+    "usageCount": 5000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
