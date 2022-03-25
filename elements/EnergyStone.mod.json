@@ -32,9 +32,6 @@
     "onRightClickedInAir": {
       "name": "EnergyStoneUse"
     },
-    "onEntityHitWith": {
-      "name": "EnergyStaffUse"
-    },
     "hasDispenseBehavior": false
   }
 }

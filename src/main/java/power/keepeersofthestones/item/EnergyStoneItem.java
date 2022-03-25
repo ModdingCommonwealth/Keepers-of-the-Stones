@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.EnergyStoneUseProcedure;
-import power.keepeersofthestones.procedures.EnergyStaffUseProcedure;
 import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,7 +10,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
@@ -40,12 +38,5 @@ public class EnergyStoneItem extends Item {
 
 		EnergyStoneUseProcedure.execute(entity);
 		return ar;
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		EnergyStaffUseProcedure.execute(entity.level, entity, sourceentity, itemstack);
-		return retval;
 	}
 }
