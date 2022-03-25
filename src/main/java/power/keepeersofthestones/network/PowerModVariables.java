@@ -121,6 +121,7 @@ public class PowerModVariables {
 				clone.recharge_spell_moon = original.recharge_spell_moon;
 				clone.recharge_spell_blood = original.recharge_spell_blood;
 				clone.recharge_spell_energy = original.recharge_spell_energy;
+				clone.copy = original.copy;
 			}
 		}
 
@@ -441,6 +442,7 @@ public class PowerModVariables {
 		public boolean teleportation = false;
 		public boolean explosion = false;
 		public boolean amber = false;
+		public boolean copy = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -490,6 +492,7 @@ public class PowerModVariables {
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("explosion", explosion);
 			nbt.putBoolean("amber", amber);
+			nbt.putBoolean("copy", copy);
 			return nbt;
 		}
 
@@ -536,6 +539,7 @@ public class PowerModVariables {
 			teleportation = nbt.getBoolean("teleportation");
 			explosion = nbt.getBoolean("explosion");
 			amber = nbt.getBoolean("amber");
+			copy = nbt.getBoolean("copy");
 		}
 	}
 
@@ -602,6 +606,7 @@ public class PowerModVariables {
 					variables.teleportation = message.data.teleportation;
 					variables.explosion = message.data.explosion;
 					variables.amber = message.data.amber;
+					variables.copy = message.data.copy;
 				}
 			});
 			context.setPacketHandled(true);

@@ -58,17 +58,18 @@ public class AmberMasterEffectEndProcedure {
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_AMBER_STONE.get(), 6000, 0, (false), (false)));
+		ClearCopyElementsProcedure.execute(entity);
 		{
 			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.sound = _setval;
+				capability.active = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.active = _setval;
+				capability.amber = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

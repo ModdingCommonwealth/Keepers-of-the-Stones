@@ -1,5 +1,6 @@
 package power.keepeersofthestones.procedures;
 
+import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModMobEffects;
 import power.keepeersofthestones.init.PowerModItems;
 
@@ -137,6 +138,13 @@ public class ForceReplicationUseProcedure {
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 							"give @s power:force_replication{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				boolean _setval = true;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.copy = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}
