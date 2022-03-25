@@ -187,6 +187,7 @@ import power.keepeersofthestones.item.AnimalsStoneItem;
 import power.keepeersofthestones.item.AnimalsItem;
 import power.keepeersofthestones.item.AnimalsBatteryItem;
 import power.keepeersofthestones.item.AmberStoneItem;
+import power.keepeersofthestones.item.AmberItem;
 import power.keepeersofthestones.item.AirStoneItem;
 import power.keepeersofthestones.item.AirFlowItem;
 import power.keepeersofthestones.item.AirBladeItem;
@@ -499,6 +500,10 @@ public class PowerModItems {
 	public static final RegistryObject<Item> ICE_SPEAR = REGISTRY.register("ice_spear", () -> new IceSpearItem());
 	public static final RegistryObject<Item> GOLDEN_CROSSBOW = REGISTRY.register("golden_crossbow", () -> new GoldenCrossbowItem());
 	public static final RegistryObject<Item> DESTRUCTION_SPHERE = REGISTRY.register("destruction_sphere", () -> new DestructionSphereItem());
+	public static final RegistryObject<Item> AMBER_HELMET = REGISTRY.register("amber_helmet", () -> new AmberItem.Helmet());
+	public static final RegistryObject<Item> AMBER_CHESTPLATE = REGISTRY.register("amber_chestplate", () -> new AmberItem.Chestplate());
+	public static final RegistryObject<Item> AMBER_LEGGINGS = REGISTRY.register("amber_leggings", () -> new AmberItem.Leggings());
+	public static final RegistryObject<Item> AMBER_BOOTS = REGISTRY.register("amber_boots", () -> new AmberItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
