@@ -72,12 +72,5 @@ public class AmberMasterEffectEndProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		{
-			boolean _setval = false;
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.battery = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 	}
 }

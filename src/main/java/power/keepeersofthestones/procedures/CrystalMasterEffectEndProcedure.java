@@ -38,6 +38,13 @@ public class CrystalMasterEffectEndProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+		}
 		if (entity instanceof Player _player) {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.CLUSTER_SHARP.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -70,17 +77,23 @@ public class CrystalMasterEffectEndProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get(), 6000, 0, (false), (false)));
 		}
-		{
-			boolean _setval = false;
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.crystal = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get(), 6000, 0, (false), (false)));
+		}
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			{
+				boolean _setval = false;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		{
 			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.active = _setval;
+				capability.crystal = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

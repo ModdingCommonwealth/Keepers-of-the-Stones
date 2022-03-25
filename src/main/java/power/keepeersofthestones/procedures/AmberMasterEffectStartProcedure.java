@@ -21,13 +21,6 @@ public class AmberMasterEffectStartProcedure {
 		{
 			boolean _setval = true;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.battery = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			boolean _setval = true;
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.amber = _setval;
 				capability.syncPlayerVariables(entity);
 			});

@@ -31,11 +31,14 @@ public class EarthMasterEffectEndProcedure {
 						SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.EARTH_STONE.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).battery) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(PowerModItems.EARTH_STONE.get());
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 			}
 		}
 		if (entity instanceof Player _player) {
@@ -66,9 +69,12 @@ public class EarthMasterEffectEndProcedure {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE.get(), 6000, 0, (false), (false)));
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).battery) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_EARTH_STONE.get(), 6000, 0, (false), (false)));
+			}
 		}
 		{
 			boolean _setval = false;
@@ -77,12 +83,14 @@ public class EarthMasterEffectEndProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		{
-			boolean _setval = false;
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.active = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			{
+				boolean _setval = false;
+				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		{
 			boolean _setval = false;

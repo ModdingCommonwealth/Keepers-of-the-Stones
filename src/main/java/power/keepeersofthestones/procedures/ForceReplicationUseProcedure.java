@@ -1,7 +1,10 @@
 package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.init.PowerModMobEffects;
+import power.keepeersofthestones.init.PowerModItems;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -117,6 +120,16 @@ public class ForceReplicationUseProcedure {
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.EXPLOSION_MASTER.get()) : false) {
 			if (sourceentity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.EXPLOSION_MASTER.get(), 12000, 0, (false), (false)));
+		}
+		if (!(sourceentity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.FORCE_REPLICATION.get()))
+				: false)) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"give @s power:force_replication{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
 		}
 	}
 }
