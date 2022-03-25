@@ -34,7 +34,7 @@
     "bulletItemTexture": {
       "value": "Items.SPECTRAL_ARROW"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "bulletModel": "Modelmagic_arrow",
+    "customBulletModelTexture": "arrows.png"
   }
 }

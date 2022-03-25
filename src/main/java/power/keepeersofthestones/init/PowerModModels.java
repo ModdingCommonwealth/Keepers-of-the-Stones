@@ -6,6 +6,7 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.client.model.Modeltornadocc;
 import power.keepeersofthestones.client.model.Modelshadow;
+import power.keepeersofthestones.client.model.Modelmagic_arrow;
 import power.keepeersofthestones.client.model.Modelglow;
 
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,7 @@ public class PowerModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modeltornadocc.LAYER_LOCATION, Modeltornadocc::createBodyLayer);
 		event.registerLayerDefinition(Modelshadow.LAYER_LOCATION, Modelshadow::createBodyLayer);
+		event.registerLayerDefinition(Modelmagic_arrow.LAYER_LOCATION, Modelmagic_arrow::createBodyLayer);
 		event.registerLayerDefinition(Modelglow.LAYER_LOCATION, Modelglow::createBodyLayer);
 	}
 }

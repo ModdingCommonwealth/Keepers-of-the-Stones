@@ -7,6 +7,8 @@ package power.keepeersofthestones.init;
 import power.keepeersofthestones.client.renderer.TornadoEntityRenderer;
 import power.keepeersofthestones.client.renderer.TornadoCreateRenderer;
 import power.keepeersofthestones.client.renderer.ShadowRenderer;
+import power.keepeersofthestones.client.renderer.RainBowRenderer;
+import power.keepeersofthestones.client.renderer.GoldenCrossbowRenderer;
 import power.keepeersofthestones.client.renderer.GlowRenderer;
 
 import net.minecraftforge.fml.common.Mod;
@@ -34,7 +36,7 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.LAVA_BALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.TORNADO_CREATE.get(), TornadoCreateRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.WHIRLPOOL.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(PowerModEntities.RAIN_BOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.RAIN_BOW.get(), RainBowRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.SPIKE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.TIGER_CLAW.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.SHURIKEN.get(), ThrownItemRenderer::new);
@@ -53,7 +55,7 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.PORTAL_BLAST.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.EXPLOSIVE_FLOW.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.ICE_SPEAR.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(PowerModEntities.GOLDEN_CROSSBOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.GOLDEN_CROSSBOW.get(), GoldenCrossbowRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.DESTRUCTION_SPHERE.get(), ThrownItemRenderer::new);
 	}
 }
