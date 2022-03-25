@@ -10990,6 +10990,27 @@
         ]
       },
       "path": "~/Amber"
+    },
+    {
+      "name": "AmberGet",
+      "type": "procedure",
+      "sortid": 645,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [

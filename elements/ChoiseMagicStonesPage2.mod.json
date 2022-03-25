@@ -40,10 +40,13 @@
       {
         "type": "button",
         "data": {
-          "text": " ",
+          "text": " Amber",
+          "onClick": {
+            "name": "AmberGet"
+          },
           "width": 56,
           "height": 20,
-          "name": " ",
+          "name": " Amber",
           "x": 141,
           "y": 161
         }
@@ -396,6 +399,16 @@
           "name": "2/2",
           "x": 24,
           "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "amber_master.png",
+          "use1Xscale": false,
+          "name": "amber_master.png",
+          "x": 123,
+          "y": 161
         }
       }
     ],

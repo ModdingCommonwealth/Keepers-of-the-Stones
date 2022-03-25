@@ -12,6 +12,7 @@ import power.keepeersofthestones.procedures.DestructionGetProcedure;
 import power.keepeersofthestones.procedures.CreationGetProcedure;
 import power.keepeersofthestones.procedures.CosmosGetProcedure;
 import power.keepeersofthestones.procedures.BloodGetProcedure;
+import power.keepeersofthestones.procedures.AmberGetProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -74,6 +75,10 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 		if (buttonID == 0) {
 
 			MoonGetProcedure.execute(world, entity);
+		}
+		if (buttonID == 1) {
+
+			AmberGetProcedure.execute(world, entity);
 		}
 		if (buttonID == 2) {
 
