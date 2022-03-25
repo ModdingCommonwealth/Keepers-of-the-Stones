@@ -7,6 +7,6 @@ import net.minecraft.core.BlockPos;
 
 public class SetBlockMoonStoneProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(new BlockPos((int) x, (int) (y - 1), (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
+		world.setBlock(new BlockPos((int) x, (int) y, (int) z), PowerModBlocks.MOON_STONES_BLOCK.get().defaultBlockState(), 3);
 	}
 }
