@@ -26,9 +26,12 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "SoundEmitateChoice",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 0,
     "inventoryStackSize": 1,
+    "onRightClickedInAir": {
+      "name": "SoundGUI"
+    },
     "hasDispenseBehavior": false
   }
 }

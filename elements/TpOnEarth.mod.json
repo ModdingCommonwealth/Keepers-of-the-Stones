@@ -30,7 +30,10 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "OnEarthUse"
+      "name": "EarthOnMe"
+    },
+    "onEntityHitWith": {
+      "name": "EarthOnPlayer"
     },
     "hasDispenseBehavior": false
   }

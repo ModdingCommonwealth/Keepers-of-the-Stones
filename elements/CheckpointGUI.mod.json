@@ -1,0 +1,63 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Returning to the last point",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Returning to the last point",
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Checkpoint",
+          "onClick": {
+            "name": "ReturnCheckpoint"
+          },
+          "width": 126,
+          "height": 20,
+          "name": "Checkpoint",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set checkpoint",
+          "onClick": {
+            "name": "Checkpoint"
+          },
+          "width": 126,
+          "height": 20,
+          "name": "Set checkpoint",
+          "x": 150,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

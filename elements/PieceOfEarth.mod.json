@@ -35,6 +35,9 @@
       "value": "Blocks.DIRT#0"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "EarthBlockCreate"
+    }
   }
 }

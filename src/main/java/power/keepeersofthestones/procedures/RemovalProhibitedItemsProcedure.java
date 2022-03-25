@@ -1097,6 +1097,71 @@ public class RemovalProhibitedItemsProcedure {
 							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 									((PlayerEntity) entity).container.func_234641_j_());
 						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.VAMPIRISM);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_REAPER);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.CURSED_DIAMOND);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.BLACK_HEART);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_HELMET);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_CHESTPLATE);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_LEGGINGS);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BOOTS);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_BLADE);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.ACCELERATION_TIME);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_DILATION);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_STOP);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_REVERSED);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+									_player.inventoryMenu.getCraftSlots());
+						}
 					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PowerModVariables.PlayerVariables())).active) {
 						if ((entity instanceof PlayerEntity)

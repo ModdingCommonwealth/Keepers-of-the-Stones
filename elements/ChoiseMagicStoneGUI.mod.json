@@ -391,6 +391,9 @@
         "type": "button",
         "data": {
           "text": "Metal",
+          "onClick": {
+            "name": "MetalGet"
+          },
           "width": 56,
           "height": 20,
           "name": "Metal",

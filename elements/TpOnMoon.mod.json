@@ -30,7 +30,10 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "OnMoonUse"
+      "name": "MoonOnMe"
+    },
+    "onEntityHitWith": {
+      "name": "MoonOnPlayer"
     },
     "hasDispenseBehavior": false
   }
