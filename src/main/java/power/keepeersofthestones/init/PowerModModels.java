@@ -8,7 +8,6 @@ import power.keepeersofthestones.client.model.Modeltornadocc;
 import power.keepeersofthestones.client.model.Modelshadow;
 import power.keepeersofthestones.client.model.Modelmagic_arrow;
 import power.keepeersofthestones.client.model.Modelglow;
-import power.keepeersofthestones.client.model.Modelcreeper_form;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,7 +20,6 @@ public class PowerModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modeltornadocc.LAYER_LOCATION, Modeltornadocc::createBodyLayer);
 		event.registerLayerDefinition(Modelshadow.LAYER_LOCATION, Modelshadow::createBodyLayer);
-		event.registerLayerDefinition(Modelcreeper_form.LAYER_LOCATION, Modelcreeper_form::createBodyLayer);
 		event.registerLayerDefinition(Modelmagic_arrow.LAYER_LOCATION, Modelmagic_arrow::createBodyLayer);
 		event.registerLayerDefinition(Modelglow.LAYER_LOCATION, Modelglow::createBodyLayer);
 	}
