@@ -85,6 +85,6 @@ public class WhenPlayerWakeUpProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_EXPLOSION_STONE.get());
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.AMBER_MASTER.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_AMBER_STONE.get());
 	}
 }
