@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="All Rights Reserved"
+license="MIT License"
 
 [[mods]]
 modId="power"
