@@ -67,29 +67,31 @@ public class EarthMasterEffectStartProcedure {
 				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 						"give @s power:piece_of_earth{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.head with power:earth_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.chest with power:earth_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.legs with power:earth_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.feet with power:earth_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.head with power:earth_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.chest with power:earth_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.legs with power:earth_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.feet with power:earth_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
 		}
 	}
 }

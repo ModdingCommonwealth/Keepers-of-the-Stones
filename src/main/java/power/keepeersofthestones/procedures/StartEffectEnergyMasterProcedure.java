@@ -49,6 +49,26 @@ public class StartEffectEnergyMasterProcedure {
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, (false), (false)));
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"give @s power:energy_staff{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"give @s power:energy_sphere{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"give @s power:energy_shield{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+		}
 		{
 			Entity _ent = entity;
 			if (!_ent.level.isClientSide() && _ent.getServer() != null)
@@ -72,24 +92,6 @@ public class StartEffectEnergyMasterProcedure {
 			if (!_ent.level.isClientSide() && _ent.getServer() != null)
 				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
 						"item replace entity @s armor.feet with power:energy_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"give @s power:energy_staff{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"give @s power:energy_sphere{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"give @s power:energy_shield{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
 		}
 	}
 }

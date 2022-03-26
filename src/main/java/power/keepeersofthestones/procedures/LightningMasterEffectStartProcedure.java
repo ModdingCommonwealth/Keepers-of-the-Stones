@@ -35,10 +35,10 @@ public class LightningMasterEffectStartProcedure {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_activation")), SoundSource.PLAYERS, 1, 1);
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_activation")), SoundSource.NEUTRAL, 1, 1);
 			} else {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("power:stone_activation")),
-						SoundSource.PLAYERS, 1, 1, false);
+						SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 		{
@@ -49,29 +49,31 @@ public class LightningMasterEffectStartProcedure {
 		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 30, 0, (false), (false)));
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.head with power:lightning_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.chest with power:lightning_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.legs with power:lightning_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
-		}
-		{
-			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"item replace entity @s armor.feet with power:lightning_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.head with power:lightning_helmet{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.chest with power:lightning_chestplate{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.legs with power:lightning_leggings{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level.isClientSide() && _ent.getServer() != null)
+					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							"item replace entity @s armor.feet with power:lightning_boots{Enchantments:[{id:binding_curse,lvl:1},{id:vanishing_curse,lvl:1}]}");
+			}
 		}
 		{
 			Entity _ent = entity;
