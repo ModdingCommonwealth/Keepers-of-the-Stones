@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "Blocks.STONE#0"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -16777216,
       "falpha": 0.0
@@ -55,6 +58,7 @@
     "biomeType": "WARM",
     "spawnBiome": false,
     "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
@@ -103,7 +107,8 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Caves"
+      "Caves",
+      "AmethystGeodes"
     ],
     "spawnEntries": []
   }

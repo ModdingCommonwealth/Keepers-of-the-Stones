@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "Blocks.DRIPSTONE_BLOCK"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -26368,
       "falpha": 0.0
@@ -55,6 +58,7 @@
     "biomeType": "DESERT",
     "spawnBiome": false,
     "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
@@ -104,7 +108,8 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "ExtraGoldOre"
+      "ExtraGoldOre",
+      "AmethystGeodes"
     ],
     "spawnEntries": []
   }

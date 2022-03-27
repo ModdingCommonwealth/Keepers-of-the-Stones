@@ -9,6 +9,9 @@
     "undergroundBlock": {
       "value": "Blocks.DIRT#1"
     },
+    "underwaterBlock": {
+      "value": ""
+    },
     "airColor": {
       "value": -13210,
       "falpha": 0.0
@@ -55,6 +58,7 @@
     "biomeType": "COOL",
     "spawnBiome": false,
     "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
@@ -104,7 +108,8 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores"
+      "Ores",
+      "Dripstone"
     ],
     "spawnEntries": []
   }
