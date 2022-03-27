@@ -19,7 +19,7 @@ public class FontanBuildProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("power", "fontaine1-1558127552"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos((int) x, (int) (y - 1), (int) z), new BlockPos((int) x, (int) (y - 1), (int) z),
+				template.placeInWorld(_serverworld, new BlockPos(x, y - 1, z), new BlockPos(x, y - 1, z),
 						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 						3);
 			}

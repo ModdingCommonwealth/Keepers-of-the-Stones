@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class WaterCreateOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.WATER.defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y + 1, z), Blocks.WATER.defaultBlockState(), 3);
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -32,7 +32,7 @@ public class WaterCreateOnBlockProcedure {
 			}
 
 			private void run() {
-				world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 100);

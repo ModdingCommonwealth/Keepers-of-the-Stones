@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DestructionPowerUseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.ROOTED_DIRT.defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y, z), Blocks.ROOTED_DIRT.defaultBlockState(), 3);
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -32,7 +32,7 @@ public class DestructionPowerUseProcedure {
 			}
 
 			private void run() {
-				world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 400);

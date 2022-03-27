@@ -31,7 +31,7 @@ public class ResetmychoiceProcedureProcedure {
 					.orElse(new PowerModVariables.PlayerVariables())).selected) {
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -65,7 +65,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -99,7 +99,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -133,7 +133,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -167,7 +167,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -201,7 +201,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -235,7 +235,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -269,7 +269,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -303,7 +303,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -337,7 +337,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -371,7 +371,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -405,7 +405,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -439,7 +439,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -473,7 +473,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -507,7 +507,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -541,7 +541,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -575,7 +575,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -609,7 +609,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -643,7 +643,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -677,7 +677,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -711,7 +711,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -745,7 +745,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -779,7 +779,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -813,7 +813,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -847,7 +847,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -881,7 +881,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -915,7 +915,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -949,7 +949,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -983,7 +983,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -1017,7 +1017,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
@@ -1051,7 +1051,7 @@ public class ResetmychoiceProcedureProcedure {
 				}
 				{
 					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bpos = new BlockPos(x, y, z);
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {

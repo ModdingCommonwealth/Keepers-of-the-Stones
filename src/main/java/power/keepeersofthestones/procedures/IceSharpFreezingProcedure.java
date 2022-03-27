@@ -24,7 +24,7 @@ public class IceSharpFreezingProcedure {
 			_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 25, 2, 2, 2, 1);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+				_level.playSound(null, new BlockPos(x, y, z),
 						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.hurt_freeze")), SoundSource.NEUTRAL, 1, 1);
 			} else {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.hurt_freeze")),

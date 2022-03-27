@@ -26,7 +26,7 @@ public class BatteryCreateTickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe");
+		}.getValue(world, new BlockPos(x, y, z), "recipe");
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -36,7 +36,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.FIRE_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.FIRE_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -45,9 +45,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -64,7 +64,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.AIR_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.AIR_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -73,9 +73,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -92,7 +92,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.EARTH_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.EARTH_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -101,9 +101,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -120,7 +120,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.WATER_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.WATER_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -129,9 +129,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -148,7 +148,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.ENERGY_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.ENERGY_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -157,9 +157,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -176,7 +176,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.ICE_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.ICE_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -185,9 +185,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -204,7 +204,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.LIGHTNING_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.LIGHTNING_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -213,9 +213,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -232,7 +232,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.SOUND_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.SOUND_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -241,9 +241,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -260,7 +260,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.CRYSTAL_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.CRYSTAL_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -269,9 +269,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -288,7 +288,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.LAVA_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.LAVA_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -297,9 +297,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -316,7 +316,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.RAIN_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.RAIN_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -325,9 +325,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -344,7 +344,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TORNADO_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.TORNADO_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -353,9 +353,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -372,7 +372,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.OCEAN_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.OCEAN_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -381,9 +381,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -400,7 +400,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.GREENERY_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.GREENERY_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -409,9 +409,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -428,7 +428,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.ANIMALS_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.ANIMALS_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -437,9 +437,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -456,7 +456,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.METAL_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.METAL_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -465,9 +465,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -484,7 +484,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.LIGHT_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.LIGHT_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -493,9 +493,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -512,7 +512,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.SHADOW_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.SHADOW_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -521,9 +521,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -540,7 +540,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.VACUUM_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.VACUUM_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -549,9 +549,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -568,7 +568,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.SUN_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.SUN_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -577,9 +577,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -596,7 +596,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.MOON_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.MOON_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -605,9 +605,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -624,7 +624,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.COSMOS_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.COSMOS_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -633,9 +633,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -652,7 +652,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.BLOOD_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.BLOOD_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -661,9 +661,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -680,7 +680,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TIME_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.TIME_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -689,9 +689,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -708,7 +708,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TECHNOLOGY_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.TECHNOLOGY_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -717,9 +717,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -736,7 +736,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.TELEPORTATION_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.TELEPORTATION_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -745,9 +745,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -764,7 +764,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 0)).getItem() == PowerModItems.EXPLOSION_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.EXPLOSION_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -773,9 +773,9 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 				return _retval.get();
 			}
-		}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 2) == 0) {
+		}.getAmount(world, new BlockPos(x, y, z), 2) == 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -785,7 +785,7 @@ public class BatteryCreateTickProcedure {
 			}
 		} else {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -801,9 +801,9 @@ public class BatteryCreateTickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe")) {
+		}.getValue(world, new BlockPos(x, y, z), "recipe")) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -819,7 +819,7 @@ public class BatteryCreateTickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") >= 0) {
+		}.getValue(world, new BlockPos(x, y, z), "recipe") >= 0) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -827,7 +827,7 @@ public class BatteryCreateTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "timer") >= 150) {
+			}.getValue(world, new BlockPos(x, y, z), "timer") >= 150) {
 				if (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -835,9 +835,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 0) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 0) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -851,7 +851,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.FIRE_BATTERY.get());
@@ -863,7 +863,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.FIRE_STONE.get());
@@ -881,9 +881,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 1) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 1) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -897,7 +897,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.AIR_BATTERY.get());
@@ -909,7 +909,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.AIR_STONE.get());
@@ -927,9 +927,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 2) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 2) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -943,7 +943,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.EARTH_BATTERY.get());
@@ -955,7 +955,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.EARTH_STONE.get());
@@ -973,9 +973,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 3) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 3) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -989,7 +989,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.WATER_BATTERY.get());
@@ -1001,7 +1001,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.WATER_STONE.get());
@@ -1019,9 +1019,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 4) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 4) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1035,7 +1035,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ENERGY_BATTERY.get());
@@ -1047,7 +1047,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ENERGY_STONE.get());
@@ -1065,9 +1065,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 5) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 5) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1081,7 +1081,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ICE_BATTERY.get());
@@ -1093,7 +1093,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ICE_STONE.get());
@@ -1111,9 +1111,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 6) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 6) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1127,7 +1127,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LIGHTNING_BATTERY.get());
@@ -1139,7 +1139,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LIGHTNING_STONE.get());
@@ -1157,9 +1157,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 7) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 7) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1173,7 +1173,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SOUND_BATTERY.get());
@@ -1185,7 +1185,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SOUND_STONE.get());
@@ -1203,9 +1203,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 8) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 8) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1219,7 +1219,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_BATTERY.get());
@@ -1231,7 +1231,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
@@ -1249,9 +1249,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 9) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 9) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1265,7 +1265,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LAVA_BATTERY.get());
@@ -1277,7 +1277,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LAVA_STONE.get());
@@ -1295,9 +1295,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 10) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 10) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1311,7 +1311,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.RAIN_BATTERY.get());
@@ -1323,7 +1323,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.RAIN_STONE.get());
@@ -1341,9 +1341,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 11) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 11) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1357,7 +1357,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TORNADO_BATTERY.get());
@@ -1369,7 +1369,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TORNADO_STONE.get());
@@ -1387,9 +1387,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 12) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 12) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1403,7 +1403,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.OCEAN_BATTERY.get());
@@ -1415,7 +1415,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.OCEAN_STONE.get());
@@ -1433,9 +1433,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 13) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 13) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1449,7 +1449,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.GREENERY_BATTERY.get());
@@ -1461,7 +1461,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.GREENERY_STONE.get());
@@ -1479,9 +1479,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 14) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 14) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1495,7 +1495,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ANIMALS_BATTERY.get());
@@ -1507,7 +1507,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.ANIMALS_STONE.get());
@@ -1525,9 +1525,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 15) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 15) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1541,7 +1541,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.METAL_BATTERY.get());
@@ -1553,7 +1553,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.METAL_STONE.get());
@@ -1571,9 +1571,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 16) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 16) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1587,7 +1587,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_BATTERY.get());
@@ -1599,7 +1599,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.LIGHT_STONE.get());
@@ -1617,9 +1617,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 17) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 17) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1633,7 +1633,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SHADOW_BATTERY.get());
@@ -1645,7 +1645,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SHADOW_STONE.get());
@@ -1663,9 +1663,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 18) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 18) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1679,7 +1679,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.VACUUM_BATTERY.get());
@@ -1691,7 +1691,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.VACUUM_STONE.get());
@@ -1709,9 +1709,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 19) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 19) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1725,7 +1725,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SUN_BATTERY.get());
@@ -1737,7 +1737,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.SUN_STONE.get());
@@ -1755,9 +1755,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 20) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 20) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1771,7 +1771,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.MOON_BATTERY.get());
@@ -1783,7 +1783,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.MOON_STONE.get());
@@ -1801,9 +1801,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 21) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 21) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1817,7 +1817,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_BATTERY.get());
@@ -1829,7 +1829,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE.get());
@@ -1847,9 +1847,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 22) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 22) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1863,7 +1863,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_BATTERY.get());
@@ -1875,7 +1875,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.BLOOD_STONE.get());
@@ -1893,9 +1893,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 23) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 23) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1909,7 +1909,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TIME_BATTERY.get());
@@ -1921,7 +1921,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TIME_STONE.get());
@@ -1939,9 +1939,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 24) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 24) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -1955,7 +1955,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_BATTERY.get());
@@ -1967,7 +1967,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TECHNOLOGY_STONE.get());
@@ -1985,9 +1985,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 25) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 25) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -2001,7 +2001,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TELEPORTATION_BATTERY.get());
@@ -2013,7 +2013,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.TELEPORTATION_STONE.get());
@@ -2031,9 +2031,9 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") == 26) {
+				}.getValue(world, new BlockPos(x, y, z), "recipe") == 26) {
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
@@ -2047,7 +2047,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(PowerModItems.EXPLOSION_BATTERY.get());
@@ -2059,7 +2059,7 @@ public class BatteryCreateTickProcedure {
 						}
 					}
 					{
-						BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
 							final ItemStack _setstack = new ItemStack(PowerModItems.EXPLOSION_STONE.get());
@@ -2072,7 +2072,7 @@ public class BatteryCreateTickProcedure {
 					}
 				}
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockPos _bp = new BlockPos(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -2088,7 +2088,7 @@ public class BatteryCreateTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "fuel") == 0) {
+			}.getValue(world, new BlockPos(x, y, z), "fuel") == 0) {
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicInteger _retval = new AtomicInteger(0);
@@ -2098,7 +2098,7 @@ public class BatteryCreateTickProcedure {
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 						return _retval.get();
 					}
-				}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 1) > 0 && new Object() {
+				}.getAmount(world, new BlockPos(x, y, z), 1) > 0 && new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = world.getBlockEntity(pos);
@@ -2107,7 +2107,7 @@ public class BatteryCreateTickProcedure {
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 						return _retval.get();
 					}
-				}.getAmount(world, new BlockPos((int) x, (int) y, (int) z), 0) != 0) {
+				}.getAmount(world, new BlockPos(x, y, z), 0) != 0) {
 					if ((new Object() {
 						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -2117,9 +2117,9 @@ public class BatteryCreateTickProcedure {
 										.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 							return _retval.get();
 						}
-					}.getItemStack(world, new BlockPos((int) x, (int) y, (int) z), 1)).getItem() == PowerModItems.EMPTY_BATTERY.get()) {
+					}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == PowerModItems.EMPTY_BATTERY.get()) {
 						{
-							BlockEntity _ent = world.getBlockEntity(new BlockPos((int) x, (int) y, (int) z));
+							BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 							if (_ent != null) {
 								final int _slotid = 1;
 								final int _amount = 1;
@@ -2133,7 +2133,7 @@ public class BatteryCreateTickProcedure {
 							}
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockPos _bp = new BlockPos(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2142,7 +2142,7 @@ public class BatteryCreateTickProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockPos _bp = new BlockPos(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -2153,7 +2153,7 @@ public class BatteryCreateTickProcedure {
 					}
 				} else {
 					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						BlockPos _bp = new BlockPos(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
@@ -2171,9 +2171,9 @@ public class BatteryCreateTickProcedure {
 					return blockEntity.getTileData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "fuel") > 0) {
+		}.getValue(world, new BlockPos(x, y, z), "fuel") > 0) {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				BlockPos _bp = new BlockPos(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -2184,7 +2184,7 @@ public class BatteryCreateTickProcedure {
 								return blockEntity.getTileData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "fuel")) - 1));
+					}.getValue(world, new BlockPos(x, y, z), "fuel")) - 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -2195,9 +2195,9 @@ public class BatteryCreateTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "recipe") >= 0) {
+			}.getValue(world, new BlockPos(x, y, z), "recipe") >= 0) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockPos _bp = new BlockPos(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -2208,14 +2208,14 @@ public class BatteryCreateTickProcedure {
 									return blockEntity.getTileData().getDouble(tag);
 								return -1;
 							}
-						}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "timer") + 1));
+						}.getValue(world, new BlockPos(x, y, z), "timer") + 1));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
 		}
 		if (!world.isClientSide()) {
-			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			BlockPos _bp = new BlockPos(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
@@ -2226,14 +2226,14 @@ public class BatteryCreateTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "fuel")) / (new Object() {
+				}.getValue(world, new BlockPos(x, y, z), "fuel")) / (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "maxFuel"))) * 50));
+				}.getValue(world, new BlockPos(x, y, z), "maxFuel"))) * 50));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

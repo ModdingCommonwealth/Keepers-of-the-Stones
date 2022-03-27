@@ -35,8 +35,8 @@ public class DetonatorTNTExplodeProcedure {
 			}
 
 			private void run() {
-				if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PowerModBlocks.DETONATOR_TNT.get()) {
-					world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
+				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PowerModBlocks.DETONATOR_TNT.get()) {
+					world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if (world instanceof Level _level && !_level.isClientSide())
 						_level.explode(null, x, y, z, 3, Explosion.BlockInteraction.BREAK);
 				}

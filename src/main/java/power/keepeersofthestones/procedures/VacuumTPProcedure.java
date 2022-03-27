@@ -44,6 +44,6 @@ public class VacuumTPProcedure {
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 3);
-		world.setBlock(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 	}
 }

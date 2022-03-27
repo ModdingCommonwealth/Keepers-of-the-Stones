@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 26,
   "_type": "biome",
   "definition": {
     "name": "Venus Desert",
@@ -54,6 +54,7 @@
     "heightVariation": 1.2000000000000002,
     "biomeType": "DESERT",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

@@ -32,7 +32,7 @@ public class BlackHoleUseProcedure {
 			}
 
 			private void run() {
-				world.setBlock(new BlockPos((int) x, (int) (y + 1), (int) z), PowerModBlocks.BLACK_HOLE_BLOCK.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y + 1, z), PowerModBlocks.BLACK_HOLE_BLOCK.get().defaultBlockState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 3);

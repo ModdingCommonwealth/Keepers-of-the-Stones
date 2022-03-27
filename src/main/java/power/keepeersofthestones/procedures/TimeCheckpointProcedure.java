@@ -13,8 +13,7 @@ public class TimeCheckpointProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _serverPlayer)
-			_serverPlayer.setRespawnPosition(_serverPlayer.level.dimension(), new BlockPos((int) x, (int) (y + 1), (int) z), _serverPlayer.getYRot(),
-					true, false);
+			_serverPlayer.setRespawnPosition(_serverPlayer.level.dimension(), new BlockPos(x, y + 1, z), _serverPlayer.getYRot(), true, false);
 		{
 			double _setval = y + 1;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

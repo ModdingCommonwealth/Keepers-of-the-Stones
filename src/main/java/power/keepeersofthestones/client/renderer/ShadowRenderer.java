@@ -1,3 +1,4 @@
+
 package power.keepeersofthestones.client.renderer;
 
 import power.keepeersofthestones.entity.ShadowEntity;
