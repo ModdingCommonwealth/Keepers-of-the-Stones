@@ -1,7 +1,7 @@
 {
   "homepage": "no",
   "promos": {
-    "1.16.5-latest": "1.4.2",
+    "1.16.5-latest": "1.4.1",
     "1.16.5-recommended": "1.4.1",
     "1.17.1-latest": "1.4.2",
     "1.17.1-recommended": "1.4.1",
@@ -72,9 +72,7 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed the error net.minecraft.nbt.CompoundTag.m_128425_ String, int because int is null
 - [Bugfix] The Time Stone can now be re-selected
 - [Bugfix] Fixed the game rule of re-selecting a stone
-You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
- "1.4.2": "
-- There will be no more mod updates for this version of Minecraft! Please update it!"
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
     "1.0.0": "
