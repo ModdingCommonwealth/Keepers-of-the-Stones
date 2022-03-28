@@ -11160,6 +11160,35 @@
         ]
       },
       "path": "~/Amber"
+    },
+    {
+      "name": "EnergyStaffUse",
+      "type": "procedure",
+      "sortid": 655,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_staff_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Energy"
     }
   ],
   "variable_elements": [
