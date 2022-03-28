@@ -3,12 +3,12 @@
   "promos": {
     "1.16.5-latest": "1.4.1",
     "1.16.5-recommended": "1.4.1",
-    "1.17.1-latest": "1.4.2",
+    "1.17.1-latest": "1.4.1",
     "1.17.1-recommended": "1.4.1",
-    "1.18.1-latest": "1.7.0",
+    "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.7.0",
-    "1.18.2-recommended": "1.7.0"
+    "1.18.2-latest": "1.8.0",
+    "1.18.2-recommended": "1.8.0"
   },
   "1.16.5": {
     "B2": "
@@ -288,6 +288,29 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Added dinoera
 - Mod texture files now have the correct names
 - [Bugfix] Localization bugs fixed
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.8.0": "
+- Added new elements - explosion and amber
+- Elements returned - creation and destruction
+- Added new spells for creation and destruction
+- Changed the cooldown of spells to the standard for the sun and moon
+- When using metal invulnerability, there will be a slowing effect
+- The ice spear can now be thrown
+- Added new sounds and effects for some ice master spells
+- The energy element has been moved to the Middle group
+- Removed the animation of the technobarrier block
+- The redstone bag now closes the interface after use
+- Added new minerals on the planets
+- Reduced weakness time from the blood Reaper
+- Final removal of the cursed diamond
+- The mod is now distributed and used under the MIT license
+- [Bugfix] Fixed a bug that caused the milk bucket to disappear when the player didn't have a wizard effect
+- [Bugfix] Fixed arrow texture for rain bow
+- [Bugfix] Fixed a bug with ocean generation in the Dinoera
+- [Bugfix] Fixed a bug where an energy stone could take energy from players with an activated stone
+- [Bugfix] Fixed a bug due to which the vacuum network and the black hole could not be placed in the world
+- [Bugfix] Fixed a bug with shifting moonstones along the Y axis
+- [Bugfix] Fixed a recharge bug that remained with some stones after the player went to bed with an activated stone
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
