@@ -3708,9 +3708,9 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:water",
+                              "Name": "minecraft:grass_block",
                               "Properties": {
-                                "level": "0"
+                                "snowy": "false"
                               }
                             }
                           }
@@ -3736,10 +3736,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:water",
-                        "Properties": {
-                          "level": "0"
-                        }
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }
@@ -3786,9 +3783,9 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:water",
+                              "Name": "minecraft:grass_block",
                               "Properties": {
-                                "level": "0"
+                                "snowy": "false"
                               }
                             }
                           }
@@ -3814,10 +3811,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:water",
-                        "Properties": {
-                          "level": "0"
-                        }
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }
@@ -3864,9 +3858,9 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:water",
+                              "Name": "minecraft:grass_block",
                               "Properties": {
-                                "level": "0"
+                                "snowy": "false"
                               }
                             }
                           }
@@ -3892,10 +3886,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:water",
-                        "Properties": {
-                          "level": "0"
-                        }
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }
@@ -3942,9 +3933,9 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:water",
+                              "Name": "minecraft:grass_block",
                               "Properties": {
-                                "level": "0"
+                                "snowy": "false"
                               }
                             }
                           }
@@ -3970,10 +3961,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:water",
-                        "Properties": {
-                          "level": "0"
-                        }
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }
