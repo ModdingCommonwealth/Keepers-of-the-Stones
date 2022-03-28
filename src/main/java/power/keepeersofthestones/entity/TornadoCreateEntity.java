@@ -2,7 +2,6 @@
 package power.keepeersofthestones.entity;
 
 import power.keepeersofthestones.procedures.TornadoCreateOnBlockProcedure;
-import power.keepeersofthestones.procedures.TornadoCreateInEntityProcedure;
 import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModEntities;
 
@@ -12,7 +11,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -64,12 +62,6 @@ public class TornadoCreateEntity extends AbstractArrow implements ItemSupplier {
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
-	}
-
-	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		TornadoCreateInEntityProcedure.execute(entityHitResult.getEntity());
 	}
 
 	@Override

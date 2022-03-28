@@ -38,9 +38,6 @@
     "customBulletModelTexture": "tornado.png",
     "onBulletHitsBlock": {
       "name": "TornadoCreateOnBlock"
-    },
-    "onBulletHitsEntity": {
-      "name": "TornadoCreateInEntity"
     }
   }
 }
