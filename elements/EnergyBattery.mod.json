@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§eEnergy"
+      "Â§eEnergy"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
