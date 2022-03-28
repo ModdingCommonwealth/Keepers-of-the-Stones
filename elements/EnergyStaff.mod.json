@@ -22,6 +22,9 @@
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "EnergyStaffUse"
+    }
   }
 }
