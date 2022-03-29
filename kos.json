@@ -313,7 +313,7 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed a recharge bug that remained with some stones after the player went to bed with an activated stone
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
 "1.8.1": "
-- [Bugfix] Fixed crashes and crashes on servers
+- [Bugfix] Fixed crashes on servers
 - [Bugfix] Fixed a bug that caused the crystal master to have a fire master effect
 - [Bugfix] Fixed a bug with the placement of dirt and crystal cluster
 - [Bugfix] Fixed a bug with infinite levitation when calling a tornado
