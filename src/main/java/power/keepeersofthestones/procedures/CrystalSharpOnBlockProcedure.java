@@ -1,16 +1,13 @@
 package power.keepeersofthestones.procedures;
 
+import power.keepeersofthestones.init.PowerModBlocks;
+
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.core.BlockPos;
 
 public class CrystalSharpOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -35,11 +32,7 @@ public class CrystalSharpOnBlockProcedure {
 			}
 
 			private void run() {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-									new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~ ~ ~ ~ ~ ~ power:cluster_block replace air");
+				world.setBlock(new BlockPos(x, y + 1, z), PowerModBlocks.CLUSTER_BLOCK.get().defaultBlockState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 3);
