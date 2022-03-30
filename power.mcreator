@@ -11189,6 +11189,15 @@
         ]
       },
       "path": "~/Energy"
+    },
+    {
+      "name": "EnergyAbsorption",
+      "type": "item",
+      "sortid": 656,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_absorption",
+      "path": "~/Energy"
     }
   ],
   "variable_elements": [
@@ -12026,6 +12035,7 @@
       "effect.power.moon_master": "Мастер Луны",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
       "item.power.energy_stone": "Камень Энергии",
+      "item.power.energy_absorption": "Energy Absorption",
       "item.power.ice_chestplate": "Ледяная Куртка",
       "item.power.moon_stones": "Лунные Камни",
       "item.power.sound_battery": "Батарея",
@@ -12423,6 +12433,7 @@
       "effect.power.moon_master": "Master of the Moon",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.energy_stone": "Energy stone",
+      "item.power.energy_absorption": "Energy Absorption",
       "item.power.ice_chestplate": "Ice Chestplate",
       "item.power.moon_stones": "Moon Stones",
       "item.power.sound_battery": "Battery",

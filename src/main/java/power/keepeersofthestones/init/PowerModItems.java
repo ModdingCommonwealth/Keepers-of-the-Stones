@@ -150,6 +150,7 @@ import power.keepeersofthestones.item.EnergySphereItem;
 import power.keepeersofthestones.item.EnergyShieldItem;
 import power.keepeersofthestones.item.EnergyItem;
 import power.keepeersofthestones.item.EnergyBatteryItem;
+import power.keepeersofthestones.item.EnergyAbsorptionItem;
 import power.keepeersofthestones.item.EmptyBatteryItem;
 import power.keepeersofthestones.item.ElementalMusicDiscItem;
 import power.keepeersofthestones.item.EclipseItem;
@@ -514,6 +515,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> BO_STAFF = REGISTRY.register("bo_staff", () -> new BoStaffItem());
 	public static final RegistryObject<Item> INCREASE_POWER = REGISTRY.register("increase_power", () -> new IncreasePowerItem());
 	public static final RegistryObject<Item> CUTTER_SWORD = REGISTRY.register("cutter_sword", () -> new CutterSwordItem());
+	public static final RegistryObject<Item> ENERGY_ABSORPTION = REGISTRY.register("energy_absorption", () -> new EnergyAbsorptionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

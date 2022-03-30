@@ -20,8 +20,8 @@ public class EnergyStaffUseProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ENERGY_STAFF
-					.get()) {
+			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+					.getItem() == PowerModItems.ENERGY_ABSORPTION.get()) {
 				if (sourceentity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
 				if (!(sourceentity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -76,6 +76,8 @@ public class EnergyStaffUseProcedure {
 						_entity.removeEffect(PowerModMobEffects.TELEPORTATION_MASTER.get());
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(PowerModMobEffects.EXPLOSION_MASTER.get());
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(PowerModMobEffects.AMBER_MASTER.get());
 					if (sourceentity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ENERGY_MASTER.get(), 24000, 0, (false), (false)));
 					if (sourceentity instanceof LivingEntity _entity)
