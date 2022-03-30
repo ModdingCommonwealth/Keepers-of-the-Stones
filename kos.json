@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.8.1",
-    "1.18.2-recommended": "1.8.1"
+    "1.18.2-latest": "1.8.2",
+    "1.18.2-recommended": "1.8.2"
   },
   "1.16.5": {
     "B2": "
@@ -317,6 +317,13 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed a bug that caused the crystal master to have a fire master effect
 - [Bugfix] Fixed a bug with the placement of dirt and crystal cluster
 - [Bugfix] Fixed a bug with infinite levitation when calling a tornado
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.8.2": "
+- Added a separate energy absorption ability
+- Now the height of the planets and dinoera is the same as in the ordinary world
+- [Bugfix] Fixed a bug with the absorption of the element of energy from amber
+- [Bugfix] Fixed the appearance of biomes in Dinoera
+- [Bugfix] Fixed generation errors in other dimensions
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
