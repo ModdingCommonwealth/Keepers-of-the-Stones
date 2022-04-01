@@ -36,7 +36,7 @@ public class FistofEarthItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3.8f, new Item.Properties().tab(null).fireResistant());
+		}, 1, -2.7999999999999998f, new Item.Properties().tab(null).fireResistant());
 	}
 
 	@Override
