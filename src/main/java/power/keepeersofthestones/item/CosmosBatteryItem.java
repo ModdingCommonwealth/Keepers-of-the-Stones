@@ -36,7 +36,7 @@ public class CosmosBatteryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A70Cosmos"));
+		list.add(new TextComponent("\u00A70Space"));
 	}
 
 	@Override

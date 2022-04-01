@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "cystal_stone",
+    "texture": "crystal_stone",
     "customModelName": "Normal",
     "name": "Crystal Stone",
     "rarity": "COMMON",
