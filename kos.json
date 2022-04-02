@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.9.0",
-    "1.18.2-recommended": "1.9.0"
+    "1.18.2-latest": "1.9.1",
+    "1.18.2-recommended": "1.9.1"
   },
   "1.16.5": {
     "B2": "
@@ -330,6 +330,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Increased the attack speed of the earth fist
 - [Bugfix] Fixed a bug with removing the fire master effect
 - [Bugfix] Fixed a bug with two fire stones
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.9.1": "
+- Improved textures of shadow and fog stones
+- [Bugfix] Fixed a bug with the inability to remove the light wizard effect
+- [Bugfix] Fixed a bug with removing a copy of the master of light
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
