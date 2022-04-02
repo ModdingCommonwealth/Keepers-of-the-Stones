@@ -324,6 +324,12 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed a bug with the absorption of the element of energy from amber
 - [Bugfix] Fixed the appearance of biomes in Dinoera
 - [Bugfix] Fixed generation errors in other dimensions
-You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.9.0": "
+- Updated all stone textures
+- Increased the attack speed of the earth fist
+- [Bugfix] Fixed a bug with removing the fire master effect
+- [Bugfix] Fixed a bug with two fire stones
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   }
 }
