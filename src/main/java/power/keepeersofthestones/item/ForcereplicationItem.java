@@ -8,7 +8,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.LivingEntity;
 
 public class ForcereplicationItem extends SwordItem {
@@ -37,7 +36,7 @@ public class ForcereplicationItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 3, -2.4f, new Item.Properties().tab(null).fireResistant());
 	}
 
 	@Override

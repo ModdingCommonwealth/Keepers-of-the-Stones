@@ -21,8 +21,8 @@
     },
     "hasGlow": false,
     "animation": "bow",
-    "enableMeleeDamage": true,
-    "damageVsEntity": 8.0,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "onRangedItemUsed": {
       "name": "RechargeMagicFireball"
     },
