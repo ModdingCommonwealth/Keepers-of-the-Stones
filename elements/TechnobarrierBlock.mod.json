@@ -94,7 +94,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 7,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,

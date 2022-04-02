@@ -3,6 +3,8 @@ package power.keepeersofthestones.block;
 
 import power.keepeersofthestones.init.PowerModBlocks;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -24,7 +26,7 @@ import java.util.Collections;
 
 public class TechnobarrierBlockBlock extends Block {
 	public TechnobarrierBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GLASS).strength(9999f, 1000f).noOcclusion()
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.GLASS).strength(9999f, 1000f).lightLevel(s -> 7).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
