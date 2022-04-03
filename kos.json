@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.9.1",
-    "1.18.2-recommended": "1.9.1"
+    "1.18.2-latest": "1.9.2",
+    "1.18.2-recommended": "1.9.2"
   },
   "1.16.5": {
     "B2": "
@@ -335,6 +335,12 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Improved textures of shadow and fog stones
 - [Bugfix] Fixed a bug with the inability to remove the light wizard effect
 - [Bugfix] Fixed a bug with removing a copy of the master of light
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.9.2": "
+- Changed the texture of the fire stone
+- Removed damage from the magic fireball
+- The technobarrier will now glow
+- Removed invalid items from inventory
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
