@@ -103,5 +103,12 @@ public class SunMasterEffectEndProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			boolean _setval = false;
+			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.recharge_spell_sun = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }
