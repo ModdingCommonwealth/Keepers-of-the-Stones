@@ -1,22 +1,31 @@
 package power.keepeersofthestones.procedures;
 
+import power.keepeersofthestones.PowerMod;
+
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class GetPumpkinProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure GetPumpkin!");
 			return;
-		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
-			_setstack.setCount(1);
-			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
-		if (entity instanceof Player _player)
-			_player.closeContainer();
+		Entity entity = (Entity) dependencies.get("entity");
+		if (entity instanceof PlayerEntity) {
+			ItemStack _setstack = new ItemStack(Items.PUMPKIN_SEEDS);
+			_setstack.setCount((int) 1);
+			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).closeScreen();
 	}
 }

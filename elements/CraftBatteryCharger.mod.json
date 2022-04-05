@@ -28,13 +28,13 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "Items.GOLD_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.COPPER_INGOT"
+        "value": "Items.GOLD_INGOT"
       }
     ],
     "recipeReturnStack": {

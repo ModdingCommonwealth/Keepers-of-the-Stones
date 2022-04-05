@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Shadow",
     "mobLabel": "",
-    "mobModelName": "Modelshadow",
+    "mobModelName": "Modelshadowmodel",
     "mobModelTexture": "shadow.png",
     "mobModelGlowTexture": "",
     "modelWidth": 1.0,

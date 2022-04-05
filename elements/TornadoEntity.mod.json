@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Tornado",
     "mobLabel": "",
-    "mobModelName": "Modeltornadocc",
+    "mobModelName": "Modeltornadomodel",
     "mobModelTexture": "tornado.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,

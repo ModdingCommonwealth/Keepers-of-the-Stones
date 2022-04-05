@@ -2,227 +2,268 @@
 package power.keepeersofthestones.entity;
 
 import power.keepeersofthestones.procedures.TameTornadoProcedure;
-import power.keepeersofthestones.init.PowerModEntities;
+import power.keepeersofthestones.entity.renderer.TornadoEntityRenderer;
+import power.keepeersofthestones.PowerModElements;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.SpawnEggItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.projectile.ThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.FollowOwnerGoal;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.OwnerHurtTargetGoal;
+import net.minecraft.entity.ai.goal.OwnerHurtByTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.FollowOwnerGoal;
+import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ILivingEntityData;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.entity.AgeableEntity;
 
-import java.util.List;
+import java.util.stream.Stream;
+import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
-public class TornadoEntityEntity extends TamableAnimal {
-	public TornadoEntityEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PowerModEntities.TORNADO_ENTITY.get(), world);
-	}
+@PowerModElements.ModElement.Tag
+public class TornadoEntityEntity extends PowerModElements.ModElement {
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.size(0.6f, 1.8f)).build("tornado_entity").setRegistryName("tornado_entity");
 
-	public TornadoEntityEntity(EntityType<TornadoEntityEntity> type, Level world) {
-		super(type, world);
-		xpReward = 0;
-		setNoAi(false);
-	}
-
-	@Override
-	public Packet<?> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
-	protected void registerGoals() {
-		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
-		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true) {
-			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
-			}
-		});
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+	public TornadoEntityEntity(PowerModElements instance) {
+		super(instance, 48);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new TornadoEntityRenderer.ModelRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
 
 	@Override
-	public MobType getMobType() {
-		return MobType.UNDEFINED;
+	public void initElements() {
+		elements.entities.add(() -> entity);
 	}
 
 	@Override
-	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+	public void init(FMLCommonSetupEvent event) {
 	}
 
-	@Override
-	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+	private static class EntityAttributesRegisterHandler {
+		@SubscribeEvent
+		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
+			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 1000);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 4);
+			event.put(entity, ammma.create());
+		}
 	}
 
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.getDirectEntity() instanceof AbstractArrow)
-			return false;
-		if (source.getDirectEntity() instanceof Player)
-			return false;
-		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
-			return false;
-		if (source == DamageSource.FALL)
-			return false;
-		if (source == DamageSource.CACTUS)
-			return false;
-		if (source == DamageSource.LIGHTNING_BOLT)
-			return false;
-		if (source.isExplosion())
-			return false;
-		if (source.getMsgId().equals("trident"))
-			return false;
-		if (source == DamageSource.ANVIL)
-			return false;
-		if (source == DamageSource.DRAGON_BREATH)
-			return false;
-		if (source == DamageSource.WITHER)
-			return false;
-		if (source.getMsgId().equals("witherSkull"))
-			return false;
-		return super.hurt(source, amount);
-	}
+	public static class CustomEntity extends TameableEntity {
+		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
+			this(entity, world);
+		}
 
-	@Override
-	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
-		ItemStack itemstack = sourceentity.getItemInHand(hand);
-		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-		Item item = itemstack.getItem();
-		if (itemstack.getItem() instanceof SpawnEggItem) {
-			retval = super.mobInteract(sourceentity, hand);
-		} else if (this.level.isClientSide()) {
-			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack))
-					? InteractionResult.sidedSuccess(this.level.isClientSide())
-					: InteractionResult.PASS;
-		} else {
-			if (this.isTame()) {
-				if (this.isOwnedBy(sourceentity)) {
-					if (item.isEdible() && this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
-						this.usePlayerItem(sourceentity, hand, itemstack);
-						this.heal((float) item.getFoodProperties().getNutrition());
-						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-					} else if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
-						this.usePlayerItem(sourceentity, hand, itemstack);
-						this.heal(4);
-						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-					} else {
-						retval = super.mobInteract(sourceentity, hand);
-					}
+		public CustomEntity(EntityType<CustomEntity> type, World world) {
+			super(type, world);
+			experienceValue = 0;
+			setNoAI(false);
+		}
+
+		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
+		protected void registerGoals() {
+			super.registerGoals();
+			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+			this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
+			this.goalSelector.addGoal(3, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, true) {
+				@Override
+				protected double getAttackReachSqr(LivingEntity entity) {
+					return (double) (4.0 + entity.getWidth() * entity.getWidth());
 				}
-			} else if (this.isFood(itemstack)) {
-				this.usePlayerItem(sourceentity, hand, itemstack);
-				if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
-					this.tame(sourceentity);
-					this.level.broadcastEntityEvent(this, (byte) 7);
-				} else {
-					this.level.broadcastEntityEvent(this, (byte) 6);
-				}
-				this.setPersistenceRequired();
-				retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+			});
+			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+		}
+
+		@Override
+		public CreatureAttribute getCreatureAttribute() {
+			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getDeathSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof AbstractArrowEntity)
+				return false;
+			if (source.getImmediateSource() instanceof PlayerEntity)
+				return false;
+			if (source.getImmediateSource() instanceof PotionEntity || source.getImmediateSource() instanceof AreaEffectCloudEntity)
+				return false;
+			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
+			if (source == DamageSource.LIGHTNING_BOLT)
+				return false;
+			if (source.isExplosion())
+				return false;
+			if (source.getDamageType().equals("trident"))
+				return false;
+			if (source == DamageSource.ANVIL)
+				return false;
+			if (source == DamageSource.DRAGON_BREATH)
+				return false;
+			if (source == DamageSource.WITHER)
+				return false;
+			if (source.getDamageType().equals("witherSkull"))
+				return false;
+			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			Item item = itemstack.getItem();
+			if (itemstack.getItem() instanceof SpawnEggItem) {
+				retval = super.func_230254_b_(sourceentity, hand);
+			} else if (this.world.isRemote()) {
+				retval = (this.isTamed() && this.isOwner(sourceentity) || this.isBreedingItem(itemstack))
+						? ActionResultType.func_233537_a_(this.world.isRemote())
+						: ActionResultType.PASS;
 			} else {
-				retval = super.mobInteract(sourceentity, hand);
-				if (retval == InteractionResult.SUCCESS || retval == InteractionResult.CONSUME)
-					this.setPersistenceRequired();
+				if (this.isTamed()) {
+					if (this.isOwner(sourceentity)) {
+						if (item.isFood() && this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
+							this.consumeItemFromStack(sourceentity, itemstack);
+							this.heal((float) item.getFood().getHealing());
+							retval = ActionResultType.func_233537_a_(this.world.isRemote());
+						} else if (this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
+							this.consumeItemFromStack(sourceentity, itemstack);
+							this.heal(4);
+							retval = ActionResultType.func_233537_a_(this.world.isRemote());
+						} else {
+							retval = super.func_230254_b_(sourceentity, hand);
+						}
+					}
+				} else if (this.isBreedingItem(itemstack)) {
+					this.consumeItemFromStack(sourceentity, itemstack);
+					if (this.rand.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
+						this.setTamedBy(sourceentity);
+						this.world.setEntityState(this, (byte) 7);
+					} else {
+						this.world.setEntityState(this, (byte) 6);
+					}
+					this.enablePersistence();
+					retval = ActionResultType.func_233537_a_(this.world.isRemote());
+				} else {
+					retval = super.func_230254_b_(sourceentity, hand);
+					if (retval == ActionResultType.SUCCESS || retval == ActionResultType.CONSUME)
+						this.enablePersistence();
+				}
 			}
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+
+			TameTornadoProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity),
+							new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return retval;
 		}
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
 
-		TameTornadoProcedure.execute(world, entity, sourceentity);
-		return retval;
-	}
-
-	@Override
-	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		TornadoEntityEntity retval = PowerModEntities.TORNADO_ENTITY.get().create(serverWorld);
-		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
-		return retval;
-	}
-
-	@Override
-	public boolean isFood(ItemStack stack) {
-		return List.of().contains(stack.getItem());
-	}
-
-	@Override
-	public boolean isPushable() {
-		return false;
-	}
-
-	@Override
-	protected void doPush(Entity entityIn) {
-	}
-
-	@Override
-	protected void pushEntities() {
-	}
-
-	public void aiStep() {
-		super.aiStep();
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 0.5D;
-			double dy = (random.nextFloat() - 0.5D) * 0.5D;
-			double dz = (random.nextFloat() - 0.5D) * 0.5D;
-			world.addParticle(ParticleTypes.CLOUD, x0, y0, z0, dx, dy, dz);
+		@Override
+		public AgeableEntity func_241840_a(ServerWorld serverWorld, AgeableEntity ageable) {
+			CustomEntity retval = (CustomEntity) entity.create(serverWorld);
+			retval.onInitialSpawn(serverWorld, serverWorld.getDifficultyForLocation(new BlockPos(retval.getPosition())), SpawnReason.BREEDING,
+					(ILivingEntityData) null, (CompoundNBT) null);
+			return retval;
 		}
-	}
 
-	public static void init() {
-	}
+		@Override
+		public boolean isBreedingItem(ItemStack stack) {
+			if (stack == null)
+				return false;
+			return false;
+		}
 
-	public static AttributeSupplier.Builder createAttributes() {
-		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 1000);
-		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
-		return builder;
+		@Override
+		public boolean canBePushed() {
+			return false;
+		}
+
+		@Override
+		protected void collideWithEntity(Entity entityIn) {
+		}
+
+		@Override
+		protected void collideWithNearbyEntities() {
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Random random = this.rand;
+			Entity entity = this;
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (x + random.nextFloat());
+					double d1 = (y + random.nextFloat());
+					double d2 = (z + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
+					world.addParticle(ParticleTypes.CLOUD, d0, d1, d2, d3, d4, d5);
+				}
+		}
 	}
 }

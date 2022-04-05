@@ -2,62 +2,98 @@
 package power.keepeersofthestones.block;
 
 import power.keepeersofthestones.procedures.VacuumTPProcedure;
-import power.keepeersofthestones.init.PowerModBlocks;
+import power.keepeersofthestones.PowerModElements;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.PressurePlateBlock;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
 
+import java.util.stream.Stream;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
+import java.util.AbstractMap;
 
-public class VacuumWebBlockBlock extends PressurePlateBlock {
-	public VacuumWebBlockBlock() {
-		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.SCULK).sound(SoundType.SCULK_SENSOR).strength(8f, 50f).noCollission()
-				.friction(0.1f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+@PowerModElements.ModElement.Tag
+public class VacuumWebBlockBlock extends PowerModElements.ModElement {
+	@ObjectHolder("power:vacuum_web_block")
+	public static final Block block = null;
+
+	public VacuumWebBlockBlock(PowerModElements instance) {
+		super(instance, 341);
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public void initElements() {
+		elements.blocks.add(() -> new CustomBlock());
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Blocks.AIR));
-	}
-
-	@Override
-	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
-		super.entityInside(blockstate, world, pos, entity);
-		VacuumTPProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
-	}
-
-	@Override
-	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
-		super.stepOn(world, pos, blockstate, entity);
-		VacuumTPProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
-	}
-
 	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PowerModBlocks.VACUUM_WEB_BLOCK.get(), renderType -> renderType == RenderType.cutout());
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+
+	public static class CustomBlock extends PressurePlateBlock {
+		public CustomBlock() {
+			super(Sensitivity.MOBS,
+					Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(8f, 50f).setLightLevel(s -> 0)
+							.doesNotBlockMovement().slipperiness(0.1f).speedFactor(0f).jumpFactor(0f).notSolid().setOpaque((bs, br, bp) -> false));
+			setRegistryName("vacuum_web_block");
+		}
+
+		@Override
+		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+			if (!dropsOriginal.isEmpty())
+				return dropsOriginal;
+			return Collections.singletonList(new ItemStack(Blocks.AIR));
+		}
+
+		@Override
+		public void onEntityCollision(BlockState blockstate, World world, BlockPos pos, Entity entity) {
+			super.onEntityCollision(blockstate, world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+
+			VacuumTPProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			BlockState blockstate = world.getBlockState(pos);
+
+			VacuumTPProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 	}
 }

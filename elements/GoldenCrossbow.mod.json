@@ -29,12 +29,12 @@
     "bulletPower": 1.2000000000000002,
     "bulletDamage": 6.0,
     "bulletKnockback": 4,
-    "bulletParticles": false,
+    "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "Items.SPECTRAL_ARROW"
     },
-    "bulletModel": "Modelmagic_arrow",
-    "customBulletModelTexture": "arrows.png"
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
   }
 }

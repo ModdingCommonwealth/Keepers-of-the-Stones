@@ -1,26 +1,56 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.item.TamerItem;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.IWorld;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.Minecraft;
 
+import java.util.Map;
+
 public class TamePowerProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
-		if (entity == null || sourceentity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				PowerMod.LOGGER.warn("Failed to load dependency world for procedure TamePower!");
 			return;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TAMER.get()) {
-			if (world.isClientSide())
+		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure TamePower!");
+			return;
+		}
+		if (dependencies.get("sourceentity") == null) {
+			if (!dependencies.containsKey("sourceentity"))
+				PowerMod.LOGGER.warn("Failed to load dependency sourceentity for procedure TamePower!");
+			return;
+		}
+		if (dependencies.get("itemstack") == null) {
+			if (!dependencies.containsKey("itemstack"))
+				PowerMod.LOGGER.warn("Failed to load dependency itemstack for procedure TamePower!");
+			return;
+		}
+		IWorld world = (IWorld) dependencies.get("world");
+		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+		if (((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == TamerItem.block) {
+			if (world.isRemote()) {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
-			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
-			if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-				_toTame.tame(_owner);
+			}
+			if (sourceentity instanceof PlayerEntity)
+				((PlayerEntity) sourceentity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 400);
+			if ((entity instanceof TameableEntity) && (sourceentity instanceof PlayerEntity)) {
+				((TameableEntity) entity).setTamed(true);
+				((TameableEntity) entity).setTamedBy((PlayerEntity) sourceentity);
+			}
 		}
 	}
 }

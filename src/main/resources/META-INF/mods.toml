@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[36,)"
 license="MIT License"
 
 [[mods]]
 modId="power"
-version="2.0.0.1"
-displayName="Keepers of the Stones II"
+version="1.9.3"
+displayName="Keepers of the Stones"
 credits="Created by MagicalAlexey"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
 updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json"
@@ -18,7 +18,7 @@ This mod will add new sources of energy to the world with which you can transfor
 [[dependencies.power]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.16.5]"
     ordering="NONE"
     side="BOTH"
 

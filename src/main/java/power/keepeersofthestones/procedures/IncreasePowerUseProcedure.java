@@ -1,19 +1,34 @@
 package power.keepeersofthestones.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import power.keepeersofthestones.PowerMod;
+
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
 
 public class IncreasePowerUseProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure IncreasePowerUse!");
 			return;
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 600);
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 4, (false), (false)));
+		}
+		if (dependencies.get("itemstack") == null) {
+			if (!dependencies.containsKey("itemstack"))
+				PowerMod.LOGGER.warn("Failed to load dependency itemstack for procedure IncreasePowerUse!");
+			return;
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 600);
+		if (entity instanceof LivingEntity)
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.STRENGTH, (int) 200, (int) 4, (false), (false)));
 	}
 }

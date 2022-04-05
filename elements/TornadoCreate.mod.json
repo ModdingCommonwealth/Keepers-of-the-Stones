@@ -34,7 +34,7 @@
     "bulletItemTexture": {
       "value": "CUSTOM:TornadoCreate"
     },
-    "bulletModel": "Modeltornadocc",
+    "bulletModel": "Modeltornadomodel",
     "customBulletModelTexture": "tornado.png",
     "onBulletHitsBlock": {
       "name": "TornadoCreateOnBlock"

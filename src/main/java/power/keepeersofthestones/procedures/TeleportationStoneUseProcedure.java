@@ -1,25 +1,47 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
-import power.keepeersofthestones.init.PowerModMobEffects;
-import power.keepeersofthestones.init.PowerModItems;
+import power.keepeersofthestones.potion.TeleportationMasterPotionEffect;
+import power.keepeersofthestones.potion.RechargeTeleportationStonePotionEffect;
+import power.keepeersofthestones.item.TeleportationStoneItem;
+import power.keepeersofthestones.PowerModVariables;
+import power.keepeersofthestones.PowerMod;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import java.util.Map;
+import java.util.Collection;
 
 public class TeleportationStoneUseProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PowerMod.LOGGER.warn("Failed to load dependency entity for procedure TeleportationStoneUse!");
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TELEPORTATION_STONE
-				.get()) {
-			if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.RECHARGE_TELEPORTATION_STONE.get()) : false)) {
+		}
+		Entity entity = (Entity) dependencies.get("entity");
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == TeleportationStoneItem.block) {
+			if (!(new Object() {
+				boolean check(Entity _entity) {
+					if (_entity instanceof LivingEntity) {
+						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+						for (EffectInstance effect : effects) {
+							if (effect.getPotion() == RechargeTeleportationStonePotionEffect.potion)
+								return true;
+						}
+					}
+					return false;
+				}
+			}.check(entity))) {
 				if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new PowerModVariables.PlayerVariables())).active) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TELEPORTATION_MASTER.get(), 12000, 0, (false), (false)));
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.addPotionEffect(new EffectInstance(TeleportationMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
 				}
 			}
 		}
