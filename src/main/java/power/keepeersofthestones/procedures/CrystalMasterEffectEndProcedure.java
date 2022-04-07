@@ -31,18 +31,14 @@ public class CrystalMasterEffectEndProcedure {
 						SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).battery) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 			}
 		}
 		if (entity instanceof Player _player) {
@@ -73,13 +69,12 @@ public class CrystalMasterEffectEndProcedure {
 			ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
-		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).battery) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get(), 6000, 0, (false), (false)));
-		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get(), 6000, 0, (false), (false)));
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new PowerModVariables.PlayerVariables())).battery) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_CRYSTAL_STONE.get(), 6000, 0, (false), (false)));
+			}
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
 			{

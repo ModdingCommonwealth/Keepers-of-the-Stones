@@ -5,7 +5,7 @@ license="MIT License"
 [[mods]]
 modId="power"
 version="2.0.0.1"
-displayName="Keepers of the Stones II"
+displayName="Keepers of the Stones"
 credits="Created by MagicalAlexey"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
 updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json"

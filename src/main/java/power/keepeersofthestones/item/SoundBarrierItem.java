@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.SoundBatteryUseProcedure;
+import power.keepeersofthestones.procedures.SoundBarrierUseProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -35,7 +35,7 @@ public class SoundBarrierItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SoundBatteryUseProcedure.execute(entity);
+		SoundBarrierUseProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }
