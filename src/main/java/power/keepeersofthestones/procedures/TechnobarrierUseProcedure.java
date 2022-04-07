@@ -53,7 +53,7 @@ public class TechnobarrierUseProcedure {
 						_level.getServer().getCommands().performCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 										_level.getServer(), null).withSuppressedOutput(),
-								"fill ~-2 ~1 ~-2 ~2 ~5 ~2 power:technobarrier_block outline");
+								"fill ~-2 ~ ~-2 ~2 ~4 ~2 power:technobarrier_block outline");
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 3);
@@ -82,7 +82,7 @@ public class TechnobarrierUseProcedure {
 						_level.getServer().getCommands()
 								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
 										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"fill ~-2 ~1 ~-2 ~2 ~5 ~2 air outline");
+										"fill ~-2 ~ ~-2 ~2 ~4 ~2 air outline");
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 400);
