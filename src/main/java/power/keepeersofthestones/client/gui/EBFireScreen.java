@@ -26,8 +26,8 @@ public class EBFireScreen extends AbstractContainerScreen<EBFireMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 500;
-		this.imageHeight = 300;
+		this.imageWidth = 0;
+		this.imageHeight = 0;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("power:textures/eb_fire.png");
@@ -47,20 +47,20 @@ public class EBFireScreen extends AbstractContainerScreen<EBFireMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_page.png"));
+		this.blit(ms, this.leftPos + 2, this.topPos + -121, 0, 0, 194, 240, 194, 240);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_page.png"));
+		this.blit(ms, this.leftPos + -189, this.topPos + -121, 0, 0, 194, 240, 194, 240);
+
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_stone.png"));
-		this.blit(ms, this.leftPos + 51, this.topPos + 56, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_master.png"));
-		this.blit(ms, this.leftPos + 429, this.topPos + 56, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 89, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_element.png"));
-		this.blit(ms, this.leftPos + 213, this.topPos + 83, 0, 0, 227, 128, 227, 128);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_stone.png"));
-		this.blit(ms, this.leftPos + 429, this.topPos + 227, 0, 0, 16, 16, 16, 16);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_master.png"));
-		this.blit(ms, this.leftPos + 51, this.topPos + 227, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 61, 128, 61, 128);
 
 		RenderSystem.disableBlend();
 	}
@@ -81,9 +81,9 @@ public class EBFireScreen extends AbstractContainerScreen<EBFireMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Class: Basic", 69, 83, -12829636);
-		this.font.draw(poseStack, "Element: Fire", 69, 101, -12829636);
-		this.font.draw(poseStack, "Force: Ignition", 69, 119, -12829636);
+		this.font.draw(poseStack, "Class: Basic", -162, -85, -12829636);
+		this.font.draw(poseStack, "Element: Fire", -162, -67, -12829636);
+		this.font.draw(poseStack, "Force: Ignition", -162, -49, -12829636);
 	}
 
 	@Override

@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 500,
-    "height": 300,
+    "width": 0,
+    "height": 0,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,21 +13,21 @@
       {
         "type": "image",
         "data": {
-          "image": "fire_stone.png",
-          "use1Xscale": false,
-          "name": "fire_stone.png",
-          "x": 15,
-          "y": 26
+          "image": "book_of_elements_page.png",
+          "use1Xscale": true,
+          "name": "book_of_elements_page.png",
+          "x": 216,
+          "y": -1
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "fire_master.png",
-          "use1Xscale": false,
-          "name": "fire_master.png",
-          "x": 393,
-          "y": 26
+          "image": "book_of_elements_page.png",
+          "use1Xscale": true,
+          "name": "book_of_elements_page.png",
+          "x": 24,
+          "y": -1
         }
       },
       {
@@ -39,8 +39,8 @@
             "falpha": 0.0
           },
           "name": "Class: Basic",
-          "x": 33,
-          "y": 53
+          "x": 51,
+          "y": 35
         }
       },
       {
@@ -52,8 +52,8 @@
             "falpha": 0.0
           },
           "name": "Element: Fire",
-          "x": 33,
-          "y": 71
+          "x": 51,
+          "y": 53
         }
       },
       {
@@ -65,18 +65,8 @@
             "falpha": 0.0
           },
           "name": "Force: Ignition",
-          "x": 33,
-          "y": 89
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "fire_element.png",
-          "use1Xscale": true,
-          "name": "fire_element.png",
-          "x": 177,
-          "y": 53
+          "x": 51,
+          "y": 71
         }
       },
       {
@@ -85,8 +75,8 @@
           "image": "fire_stone.png",
           "use1Xscale": false,
           "name": "fire_stone.png",
-          "x": 393,
-          "y": 197
+          "x": 109,
+          "y": 11
         }
       },
       {
@@ -95,8 +85,18 @@
           "image": "fire_master.png",
           "use1Xscale": false,
           "name": "fire_master.png",
-          "x": 15,
-          "y": 197
+          "x": 303,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_element.png",
+          "use1Xscale": true,
+          "name": "fire_element.png",
+          "x": 285,
+          "y": 35
         }
       }
     ],
@@ -105,7 +105,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
