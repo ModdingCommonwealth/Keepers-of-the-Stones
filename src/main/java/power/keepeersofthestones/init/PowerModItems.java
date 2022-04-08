@@ -189,6 +189,7 @@ import power.keepeersofthestones.item.ConstructionsItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
 import power.keepeersofthestones.item.CheckpointItem;
 import power.keepeersofthestones.item.BurnItem;
+import power.keepeersofthestones.item.BookOfElementsItem;
 import power.keepeersofthestones.item.BoStaffItem;
 import power.keepeersofthestones.item.BlueKnifeItem;
 import power.keepeersofthestones.item.BlueFlameStoneItem;
@@ -536,6 +537,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> BO_STAFF = REGISTRY.register("bo_staff", () -> new BoStaffItem());
 	public static final RegistryObject<Item> INCREASE_POWER = REGISTRY.register("increase_power", () -> new IncreasePowerItem());
 	public static final RegistryObject<Item> ENERGY_ABSORPTION = REGISTRY.register("energy_absorption", () -> new EnergyAbsorptionItem());
+	public static final RegistryObject<Item> BOOK_OF_ELEMENTS = REGISTRY.register("book_of_elements", () -> new BookOfElementsItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

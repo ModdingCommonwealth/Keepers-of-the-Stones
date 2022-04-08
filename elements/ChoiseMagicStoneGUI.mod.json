@@ -529,6 +529,19 @@
           "x": 24,
           "y": 26
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "To reset the stone, use the command /resetmychoice",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "To reset the stone, use the command /resetmychoice",
+          "x": 40,
+          "y": 193
+        }
       }
     ],
     "gridSettings": {
@@ -536,7 +549,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
