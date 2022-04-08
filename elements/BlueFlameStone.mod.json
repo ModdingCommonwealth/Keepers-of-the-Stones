@@ -8,7 +8,7 @@
     "name": "Blue Flame Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:AdditionalGroup"
+      "value": "CUSTOM:ExperimentalGroup"
     },
     "stackSize": 1,
     "enchantability": 0,

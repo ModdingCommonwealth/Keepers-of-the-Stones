@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 public class SandStoneItem extends Item {
 	public SandStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_ADDITIONAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

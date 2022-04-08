@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 public class SpiritStoneItem extends Item {
 	public SpiritStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MIDDLE_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

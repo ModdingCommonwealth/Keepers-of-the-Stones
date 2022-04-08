@@ -8,7 +8,7 @@
     "name": "Mushroom Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MiddleGroup"
+      "value": "CUSTOM:ExperimentalGroup"
     },
     "stackSize": 1,
     "enchantability": 0,

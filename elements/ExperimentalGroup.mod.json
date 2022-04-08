@@ -1,0 +1,11 @@
+{
+  "_fv": 27,
+  "_type": "tab",
+  "definition": {
+    "name": "Experimental Group",
+    "icon": {
+      "value": "CUSTOM:MistStone"
+    },
+    "showSearch": false
+  }
+}
