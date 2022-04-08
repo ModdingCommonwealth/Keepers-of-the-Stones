@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.9.3",
-    "1.18.2-recommended": "1.9.3"
+    "1.18.2-latest": "1.9.4",
+    "1.18.2-recommended": "1.9.4"
   },
   "1.16.5": {
     "B2": "
@@ -344,6 +344,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
 "1.9.3": "
 - [Bugfix] Fixed a bug due to which the textures of the crystal and sound stones were confused
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"1.9.4": "
+- Now the shield is activated by right-clicking on the air
+- [Bugfix] Fixed dropping of rechargeable items after removing the wizard effect
+- [Bugfix] Fixed a bug with the issuance of a crystal stone when using a battery
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
