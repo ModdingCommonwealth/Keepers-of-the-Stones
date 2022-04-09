@@ -11357,6 +11357,114 @@
       "locked_code": false,
       "registry_name": "magical_artifacts",
       "path": "~/ElementalGroups"
+    },
+    {
+      "name": "EBAir",
+      "type": "gui",
+      "sortid": 670,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_air",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBWater",
+      "type": "gui",
+      "sortid": 671,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_water",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBEarth",
+      "type": "gui",
+      "sortid": 672,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_earth",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBEnergy",
+      "type": "gui",
+      "sortid": 673,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_energy",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBIce",
+      "type": "gui",
+      "sortid": 674,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_ice",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBLightning",
+      "type": "gui",
+      "sortid": 675,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_lightning",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBSound",
+      "type": "gui",
+      "sortid": 676,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_sound",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBCrystal",
+      "type": "gui",
+      "sortid": 677,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_crystal",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBLava",
+      "type": "gui",
+      "sortid": 678,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_lava",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBRain",
+      "type": "gui",
+      "sortid": 679,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_rain",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBTornado",
+      "type": "gui",
+      "sortid": 680,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_tornado",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBOcean",
+      "type": "gui",
+      "sortid": 681,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_ocean",
+      "path": "~/ElementalBook"
     }
   ],
   "variable_elements": [
