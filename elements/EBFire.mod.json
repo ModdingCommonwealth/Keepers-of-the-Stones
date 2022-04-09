@@ -13,21 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "book_of_elements_page.png",
+          "image": "book_of_elements_book.png",
           "use1Xscale": true,
-          "name": "book_of_elements_page.png",
-          "x": 216,
-          "y": -1
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "book_of_elements_page.png",
-          "use1Xscale": true,
-          "name": "book_of_elements_page.png",
-          "x": 24,
-          "y": -1
+          "name": "book_of_elements_book.png",
+          "x": -31,
+          "y": -7
         }
       },
       {
@@ -85,7 +75,7 @@
           "image": "fire_master.png",
           "use1Xscale": false,
           "name": "fire_master.png",
-          "x": 303,
+          "x": 307,
           "y": 11
         }
       },

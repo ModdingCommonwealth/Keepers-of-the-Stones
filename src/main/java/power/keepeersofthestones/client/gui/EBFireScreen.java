@@ -47,17 +47,14 @@ public class EBFireScreen extends AbstractContainerScreen<EBFireMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_page.png"));
-		this.blit(ms, this.leftPos + 2, this.topPos + -121, 0, 0, 194, 240, 194, 240);
-
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_page.png"));
-		this.blit(ms, this.leftPos + -189, this.topPos + -121, 0, 0, 194, 240, 194, 240);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_book.png"));
+		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_stone.png"));
 		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_master.png"));
-		this.blit(ms, this.leftPos + 89, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fire_element.png"));
 		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 61, 128, 61, 128);
