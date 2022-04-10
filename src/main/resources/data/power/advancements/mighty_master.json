@@ -1,0 +1,33 @@
+{
+  "display": {
+    "background": "power:textures/moon_stones_block.png",
+    "icon": {
+      "item": "power:fire_stone"
+    },
+    "title": {
+      "translate": "advancements.mighty_master.title"
+    },
+    "description": {
+      "translate": "advancements.mighty_master.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "mighty_master": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "power:entities/elemental_book_give"
+    ],
+    "recipes": [
+      "power:craft_battery_charger",
+      "power:battery_craft"
+    ]
+  }
+}

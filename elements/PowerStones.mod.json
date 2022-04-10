@@ -1,0 +1,134 @@
+{
+  "_fv": 27,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FireStone"
+      },
+      {
+        "value": "CUSTOM:AirStone"
+      },
+      {
+        "value": "CUSTOM:WaterStone"
+      },
+      {
+        "value": "CUSTOM:EarthStone"
+      },
+      {
+        "value": "CUSTOM:EnergyStone"
+      },
+      {
+        "value": "CUSTOM:IceStone"
+      },
+      {
+        "value": "CUSTOM:LightningStone"
+      },
+      {
+        "value": "CUSTOM:SoundStone"
+      },
+      {
+        "value": "CUSTOM:CrystalStone"
+      },
+      {
+        "value": "CUSTOM:LavaStone"
+      },
+      {
+        "value": "CUSTOM:RainStone"
+      },
+      {
+        "value": "CUSTOM:TornadoStone"
+      },
+      {
+        "value": "CUSTOM:OceanStone"
+      },
+      {
+        "value": "CUSTOM:GreeneryStone"
+      },
+      {
+        "value": "CUSTOM:AnimalsStone"
+      },
+      {
+        "value": "CUSTOM:MetalStone"
+      },
+      {
+        "value": "CUSTOM:LightStone"
+      },
+      {
+        "value": "CUSTOM:ShadowStone"
+      },
+      {
+        "value": "CUSTOM:VacuumStone"
+      },
+      {
+        "value": "CUSTOM:SunStone"
+      },
+      {
+        "value": "CUSTOM:MoonStone"
+      },
+      {
+        "value": "CUSTOM:CreationStone"
+      },
+      {
+        "value": "CUSTOM:DestructionStone"
+      },
+      {
+        "value": "CUSTOM:CosmosStone"
+      },
+      {
+        "value": "CUSTOM:BloodStone"
+      },
+      {
+        "value": "CUSTOM:TechnologyStone"
+      },
+      {
+        "value": "CUSTOM:TimeStone"
+      },
+      {
+        "value": "CUSTOM:TeleportationStone"
+      },
+      {
+        "value": "CUSTOM:ExplosionStone"
+      },
+      {
+        "value": "CUSTOM:AmberStone"
+      },
+      {
+        "value": "CUSTOM:BlueFlameStone"
+      },
+      {
+        "value": "CUSTOM:MistStone"
+      },
+      {
+        "value": "CUSTOM:SmokeStone"
+      },
+      {
+        "value": "CUSTOM:PoisonStone"
+      },
+      {
+        "value": "CUSTOM:PlagueStone"
+      },
+      {
+        "value": "CUSTOM:GravityStone"
+      },
+      {
+        "value": "CUSTOM:SpeedStone"
+      },
+      {
+        "value": "CUSTOM:SandStone"
+      },
+      {
+        "value": "CUSTOM:SpiritStone"
+      },
+      {
+        "value": "CUSTOM:MushroomsStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "power_stones",
+    "namespace": "forge"
+  }
+}
