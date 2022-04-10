@@ -4,23 +4,22 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 
-public class MagicFiraballEntity extends ThrownItemEntity {
+public class MagicFireballEntity extends ThrownItemEntity {
 
-    public MagicFiraballEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public MagicFireballEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
-    public MagicFiraballEntity(World world, LivingEntity owner) {
+    public MagicFireballEntity(World world, LivingEntity owner) {
         super(null, owner, world); // null will be changed later
     }
 
-    public MagicFiraballEntity(World world, double x, double y, double z) {
+    public MagicFireballEntity(World world, double x, double y, double z) {
         super(null, x, y, z, world); // null will be changed later
     }
 

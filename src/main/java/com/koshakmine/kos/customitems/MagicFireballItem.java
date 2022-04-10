@@ -1,6 +1,6 @@
 package com.koshakmine.kos.customitems;
 
-import com.koshakmine.kos.entities.MagicFiraballEntity;
+import com.koshakmine.kos.entities.MagicFireballEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -18,7 +18,7 @@ public class MagicFireballItem extends Item {
         ItemStack itemStack = user.getStackInHand(hand); // creates a new ItemStack instance of the user's itemStack in-hand
 		user.getItemCooldownManager().set(this, 40);
         if (!world.isClient) {
-            MagicFiraballEntity firaballEntity = new MagicFiraballEntity(world, user);
+            MagicFireballEntity firaballEntity = new MagicFireballEntity(world, user);
             firaballEntity.setItem(itemStack);
             firaballEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1F, 0F);
             world.spawnEntity(firaballEntity); // spawns entity
