@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kos:items/magic_fireball"
+    "layer0": "power:items/magic_fireball"
   }
 }

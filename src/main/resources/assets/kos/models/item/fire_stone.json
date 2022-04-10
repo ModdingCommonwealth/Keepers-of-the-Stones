@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "kos:items/fire_stone"
+    "layer0": "power:items/fire_stone"
   }
 }

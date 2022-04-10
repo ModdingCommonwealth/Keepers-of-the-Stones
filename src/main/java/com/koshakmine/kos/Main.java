@@ -18,6 +18,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Main implements ModInitializer {
+    static String MOD_ID = "power";
     //Items
 
         public final static FireSwordItem Fire_Sword = new FireSwordItem(ToolMaterials.NETHERITE, 7, -2.5F, new FabricItemSettings().group(ItemGroup.COMBAT));
@@ -31,7 +32,7 @@ public class Main implements ModInitializer {
     //Entities
     public static final EntityType<MagicFiraballEntity> PackedSnowballEntityType = Registry.register(
             Registry.ENTITY_TYPE,
-            new Identifier("kos", "magic_fireballentity"),
+            new Identifier(MOD_ID, "magic_fireballentity"),
             FabricEntityTypeBuilder.<MagicFiraballEntity>create(SpawnGroup.MISC, MagicFiraballEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F)) // dimensions in Minecraft units of the projectile
                     .trackRangeBlocks(4).trackedUpdateRate(10) // necessary for all thrown projectiles (as it prevents it from breaking, lol)
@@ -39,10 +40,10 @@ public class Main implements ModInitializer {
     );
         @Override
         public void onInitialize() {
-            Registry.register(Registry.ITEM, new Identifier("kos", "fire_stone"), Fire_Stone);
-            Registry.register(Registry.ITEM, new Identifier("kos", "fire_sword"), Fire_Sword);
-            Registry.register(Registry.STATUS_EFFECT, new Identifier("kos", "fire_master"), FireMasterEffect);
-            Registry.register(Registry.ITEM, new Identifier("kos", "magic_fireball"), MagicFireballItem);
+            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fire_stone"), Fire_Stone);
+            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fire_sword"), Fire_Sword);
+            Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "fire_master"), FireMasterEffect);
+            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "magic_fireball"), MagicFireballItem);
         }
 
 
