@@ -7,7 +7,7 @@
   "authors": [],
   "contact": {},
   "license": "GPL-3.0",
-  "icon": "assets/kos/icon.png",
+  "icon": "assets/power/logo.png",
   "environment": "*",
   "entrypoints": {
     "client": [
