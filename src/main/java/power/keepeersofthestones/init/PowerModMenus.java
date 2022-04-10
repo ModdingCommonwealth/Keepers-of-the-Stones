@@ -8,17 +8,25 @@ import power.keepeersofthestones.world.inventory.SpawnAnimalsGUIMenu;
 import power.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
 import power.keepeersofthestones.world.inventory.RedstoneBundleGUIMenu;
 import power.keepeersofthestones.world.inventory.EBWaterMenu;
+import power.keepeersofthestones.world.inventory.EBVacuumMenu;
 import power.keepeersofthestones.world.inventory.EBTornadoMenu;
+import power.keepeersofthestones.world.inventory.EBSunMenu;
 import power.keepeersofthestones.world.inventory.EBSoundMenu;
+import power.keepeersofthestones.world.inventory.EBShadowMenu;
 import power.keepeersofthestones.world.inventory.EBRainMenu;
 import power.keepeersofthestones.world.inventory.EBOceanMenu;
+import power.keepeersofthestones.world.inventory.EBMoonMenu;
+import power.keepeersofthestones.world.inventory.EBMetalMenu;
 import power.keepeersofthestones.world.inventory.EBLightningMenu;
+import power.keepeersofthestones.world.inventory.EBLightMenu;
 import power.keepeersofthestones.world.inventory.EBLavaMenu;
 import power.keepeersofthestones.world.inventory.EBIceMenu;
+import power.keepeersofthestones.world.inventory.EBGreeneryMenu;
 import power.keepeersofthestones.world.inventory.EBFireMenu;
 import power.keepeersofthestones.world.inventory.EBEnergyMenu;
 import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
+import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAirMenu;
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
 import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
@@ -85,6 +93,15 @@ public class PowerModMenus {
 	public static final MenuType<EBRainMenu> EB_RAIN = register("eb_rain", (id, inv, extraData) -> new EBRainMenu(id, inv, extraData));
 	public static final MenuType<EBTornadoMenu> EB_TORNADO = register("eb_tornado", (id, inv, extraData) -> new EBTornadoMenu(id, inv, extraData));
 	public static final MenuType<EBOceanMenu> EB_OCEAN = register("eb_ocean", (id, inv, extraData) -> new EBOceanMenu(id, inv, extraData));
+	public static final MenuType<EBGreeneryMenu> EB_GREENERY = register("eb_greenery",
+			(id, inv, extraData) -> new EBGreeneryMenu(id, inv, extraData));
+	public static final MenuType<EBAnimalsMenu> EB_ANIMALS = register("eb_animals", (id, inv, extraData) -> new EBAnimalsMenu(id, inv, extraData));
+	public static final MenuType<EBMetalMenu> EB_METAL = register("eb_metal", (id, inv, extraData) -> new EBMetalMenu(id, inv, extraData));
+	public static final MenuType<EBLightMenu> EB_LIGHT = register("eb_light", (id, inv, extraData) -> new EBLightMenu(id, inv, extraData));
+	public static final MenuType<EBShadowMenu> EB_SHADOW = register("eb_shadow", (id, inv, extraData) -> new EBShadowMenu(id, inv, extraData));
+	public static final MenuType<EBVacuumMenu> EB_VACUUM = register("eb_vacuum", (id, inv, extraData) -> new EBVacuumMenu(id, inv, extraData));
+	public static final MenuType<EBSunMenu> EB_SUN = register("eb_sun", (id, inv, extraData) -> new EBSunMenu(id, inv, extraData));
+	public static final MenuType<EBMoonMenu> EB_MOON = register("eb_moon", (id, inv, extraData) -> new EBMoonMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

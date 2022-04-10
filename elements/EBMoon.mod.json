@@ -1,0 +1,101 @@
+{
+  "_fv": 27,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_of_elements_book.png",
+          "use1Xscale": true,
+          "name": "book_of_elements_book.png",
+          "x": -31,
+          "y": -7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Class: Great",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Class: Great",
+          "x": 51,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Element: Moon",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Element: Moon",
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Force: Withering",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Force: Withering",
+          "x": 51,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moon_stone.png",
+          "use1Xscale": false,
+          "name": "moon_stone.png",
+          "x": 109,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moon_master.png",
+          "use1Xscale": false,
+          "name": "moon_master.png",
+          "x": 307,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moon_element.png",
+          "use1Xscale": true,
+          "name": "moon_element.png",
+          "x": 285,
+          "y": 35
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

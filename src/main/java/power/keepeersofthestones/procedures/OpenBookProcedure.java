@@ -1,17 +1,25 @@
 package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.world.inventory.EBWaterMenu;
+import power.keepeersofthestones.world.inventory.EBVacuumMenu;
 import power.keepeersofthestones.world.inventory.EBTornadoMenu;
+import power.keepeersofthestones.world.inventory.EBSunMenu;
 import power.keepeersofthestones.world.inventory.EBSoundMenu;
+import power.keepeersofthestones.world.inventory.EBShadowMenu;
 import power.keepeersofthestones.world.inventory.EBRainMenu;
 import power.keepeersofthestones.world.inventory.EBOceanMenu;
+import power.keepeersofthestones.world.inventory.EBMoonMenu;
+import power.keepeersofthestones.world.inventory.EBMetalMenu;
 import power.keepeersofthestones.world.inventory.EBLightningMenu;
+import power.keepeersofthestones.world.inventory.EBLightMenu;
 import power.keepeersofthestones.world.inventory.EBLavaMenu;
 import power.keepeersofthestones.world.inventory.EBIceMenu;
+import power.keepeersofthestones.world.inventory.EBGreeneryMenu;
 import power.keepeersofthestones.world.inventory.EBFireMenu;
 import power.keepeersofthestones.world.inventory.EBEnergyMenu;
 import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
+import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAirMenu;
 import power.keepeersofthestones.init.PowerModItems;
 
@@ -281,6 +289,162 @@ public class OpenBookProcedure {
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 							return new EBOceanMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.GREENERY_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBGreenery");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBGreeneryMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.ANIMALS_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBAnimals");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBAnimalsMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.METAL_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBMetal");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBMetalMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHT_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBLight");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBLightMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SHADOW_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBShadow");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBShadowMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.VACUUM_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBVacuum");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBVacuumMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SUN_STONE.get())) : false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBSun");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBSunMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.MOON_STONE.get())) : false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBMoon");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBMoonMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
