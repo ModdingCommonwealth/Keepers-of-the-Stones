@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/mushroom_stone"
+    "layer0": "power:items/mushrooms_stone"
   }
 }

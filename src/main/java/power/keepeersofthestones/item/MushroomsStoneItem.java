@@ -8,8 +8,8 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-public class MushroomStoneItem extends Item {
-	public MushroomStoneItem() {
+public class MushroomsStoneItem extends Item {
+	public MushroomsStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 

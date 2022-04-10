@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "mushroom_stone",
+    "texture": "mushrooms_stone",
     "customModelName": "Normal",
-    "name": "Mushroom Stone",
+    "name": "Mushrooms Stone",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:ExperimentalGroup"

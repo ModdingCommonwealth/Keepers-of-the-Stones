@@ -94,7 +94,7 @@ import power.keepeersofthestones.item.OceanSwordItem;
 import power.keepeersofthestones.item.OceanStoneItem;
 import power.keepeersofthestones.item.OceanItem;
 import power.keepeersofthestones.item.OceanBatteryItem;
-import power.keepeersofthestones.item.MushroomStoneItem;
+import power.keepeersofthestones.item.MushroomsStoneItem;
 import power.keepeersofthestones.item.MoonWitherItem;
 import power.keepeersofthestones.item.MoonStonesItem;
 import power.keepeersofthestones.item.MoonStoneItem;
@@ -230,7 +230,6 @@ public class PowerModItems {
 	public static final RegistryObject<Item> EARTH_STONE = REGISTRY.register("earth_stone", () -> new EarthStoneItem());
 	public static final RegistryObject<Item> GREENERY_STONE = REGISTRY.register("greenery_stone", () -> new GreeneryStoneItem());
 	public static final RegistryObject<Item> ANIMALS_STONE = REGISTRY.register("animals_stone", () -> new AnimalsStoneItem());
-	public static final RegistryObject<Item> MUSHROOM_STONE = REGISTRY.register("mushroom_stone", () -> new MushroomStoneItem());
 	public static final RegistryObject<Item> TECHNOLOGY_STONE = REGISTRY.register("technology_stone", () -> new TechnologyStoneItem());
 	public static final RegistryObject<Item> METAL_STONE = REGISTRY.register("metal_stone", () -> new MetalStoneItem());
 	public static final RegistryObject<Item> LIGHT_STONE = REGISTRY.register("light_stone", () -> new LightStoneItem());
@@ -538,6 +537,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> INCREASE_POWER = REGISTRY.register("increase_power", () -> new IncreasePowerItem());
 	public static final RegistryObject<Item> ENERGY_ABSORPTION = REGISTRY.register("energy_absorption", () -> new EnergyAbsorptionItem());
 	public static final RegistryObject<Item> BOOK_OF_ELEMENTS = REGISTRY.register("book_of_elements", () -> new BookOfElementsItem());
+	public static final RegistryObject<Item> MUSHROOMS_STONE = REGISTRY.register("mushrooms_stone", () -> new MushroomsStoneItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
