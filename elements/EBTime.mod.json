@@ -36,12 +36,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Element: Moon",
+          "text": "Element: Time",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Element: Moon",
+          "name": "Element: Time",
           "x": 51,
           "y": 53
         }
@@ -49,12 +49,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Force: Withering",
+          "text": "Force: History",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Force: Withering",
+          "name": "Force: History",
           "x": 51,
           "y": 71
         }
@@ -62,9 +62,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_stone.png",
+          "image": "time_stone.png",
           "use1Xscale": false,
-          "name": "moon_stone.png",
+          "name": "time_stone.png",
           "x": 109,
           "y": 11
         }
@@ -72,9 +72,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_master.png",
+          "image": "time_master.png",
           "use1Xscale": false,
-          "name": "moon_master.png",
+          "name": "time_master.png",
           "x": 307,
           "y": 11
         }
@@ -82,9 +82,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_element.png",
+          "image": "time_element.png",
           "use1Xscale": true,
-          "name": "moon_element.png",
+          "name": "time_element.png",
           "x": 285,
           "y": 35
         }

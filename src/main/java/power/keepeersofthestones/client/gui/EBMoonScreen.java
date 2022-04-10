@@ -78,7 +78,7 @@ public class EBMoonScreen extends AbstractContainerScreen<EBMoonMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Class: Great", -162, -85, -12829636);
+		this.font.draw(poseStack, "Class: Great, Unique", -162, -85, -12829636);
 		this.font.draw(poseStack, "Element: Moon", -162, -67, -12829636);
 		this.font.draw(poseStack, "Force: Withering", -162, -49, -12829636);
 	}

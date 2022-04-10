@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.client.gui;
 
-import power.keepeersofthestones.world.inventory.EBSunMenu;
+import power.keepeersofthestones.world.inventory.EBBloodMenu;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -14,12 +14,12 @@ import net.minecraft.client.Minecraft;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
+public class EBBloodScreen extends AbstractContainerScreen<EBBloodMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public EBSunScreen(EBSunMenu container, Inventory inventory, Component text) {
+	public EBBloodScreen(EBBloodMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -30,7 +30,7 @@ public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
 		this.imageHeight = 0;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/eb_sun.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/eb_blood.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -50,14 +50,14 @@ public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_book.png"));
 		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/sun_stone.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blood_stone.png"));
 		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/sun_master.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blood_master.png"));
 		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/sun_element.png"));
-		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 53, 127, 53, 127);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blood_element.png"));
+		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 53, 128, 53, 128);
 
 		RenderSystem.disableBlend();
 	}
@@ -78,9 +78,9 @@ public class EBSunScreen extends AbstractContainerScreen<EBSunMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Class: Great, Unique", -162, -85, -12829636);
-		this.font.draw(poseStack, "Element: Sun", -162, -67, -12829636);
-		this.font.draw(poseStack, "Force: Healing", -162, -49, -12829636);
+		this.font.draw(poseStack, "Class: Additional", -162, -85, -12829636);
+		this.font.draw(poseStack, "Element: Blood", -162, -67, -12829636);
+		this.font.draw(poseStack, "Force: Submission", -162, -49, -12829636);
 	}
 
 	@Override

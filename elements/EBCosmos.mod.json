@@ -36,12 +36,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Element: Moon",
+          "text": "Element: Space",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Element: Moon",
+          "name": "Element: Space",
           "x": 51,
           "y": 53
         }
@@ -49,12 +49,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Force: Withering",
+          "text": "Force: Traveling",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Force: Withering",
+          "name": "Force: Traveling",
           "x": 51,
           "y": 71
         }
@@ -62,9 +62,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_stone.png",
+          "image": "space_stone.png",
           "use1Xscale": false,
-          "name": "moon_stone.png",
+          "name": "space_stone.png",
           "x": 109,
           "y": 11
         }
@@ -72,9 +72,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_master.png",
+          "image": "cosmos_master.png",
           "use1Xscale": false,
-          "name": "moon_master.png",
+          "name": "cosmos_master.png",
           "x": 307,
           "y": 11
         }
@@ -82,9 +82,9 @@
       {
         "type": "image",
         "data": {
-          "image": "moon_element.png",
+          "image": "cosmos_element.png",
           "use1Xscale": true,
-          "name": "moon_element.png",
+          "name": "cosmos_element.png",
           "x": 285,
           "y": 35
         }

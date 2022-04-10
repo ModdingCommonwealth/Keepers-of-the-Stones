@@ -11537,6 +11537,87 @@
       "locked_code": false,
       "registry_name": "eb_moon",
       "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBCosmos",
+      "type": "gui",
+      "sortid": 690,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_cosmos",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBTime",
+      "type": "gui",
+      "sortid": 691,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_time",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBCreation",
+      "type": "gui",
+      "sortid": 692,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_creation",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBDestruction",
+      "type": "gui",
+      "sortid": 693,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_destruction",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBBlood",
+      "type": "gui",
+      "sortid": 694,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_blood",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBTechnology",
+      "type": "gui",
+      "sortid": 695,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_technology",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBTeleportation",
+      "type": "gui",
+      "sortid": 696,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_teleportation",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBExplosion",
+      "type": "gui",
+      "sortid": 697,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_explosion",
+      "path": "~/ElementalBook"
+    },
+    {
+      "name": "EBAmber",
+      "type": "gui",
+      "sortid": 698,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_amber",
+      "path": "~/ElementalBook"
     }
   ],
   "variable_elements": [

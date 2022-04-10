@@ -23,12 +23,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Class: Great",
+          "text": "Class: Great, Unique",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Class: Great",
+          "name": "Class: Great, Unique",
           "x": 51,
           "y": 35
         }
