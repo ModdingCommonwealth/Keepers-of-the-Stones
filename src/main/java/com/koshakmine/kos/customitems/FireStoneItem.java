@@ -15,14 +15,18 @@ public class FireStoneItem extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
+        if (context.getPlayer().hasStatusEffect(Main.RechargeFireStoneEffect) != true) {
+            context.getPlayer().getMainHandStack().setCount(0);
+            ItemStack sword = new ItemStack(Main.Fire_Sword);
+            ItemStack fireball = new ItemStack(Main.MagicFireballItem);
+            context.getPlayer().giveItemStack(sword);
+            context.getPlayer().giveItemStack(fireball);
+            context.getPlayer().addStatusEffect(Main.FireMasterEffectInstance);
 
-        context.getPlayer().getMainHandStack().setCount(0);
-        ItemStack sword = new ItemStack(Main.Fire_Sword);
-        ItemStack fireball = new ItemStack(Main.MagicFireballItem);
-        context.getPlayer().giveItemStack(sword);
-        context.getPlayer().giveItemStack(fireball);
-        context.getPlayer().addStatusEffect(Main.FireMasterEffectInstance);
+            return super.useOnBlock(context);
+        } else {
+            return super.useOnBlock(context);
+        }
 
-        return super.useOnBlock(context);
     }
 }

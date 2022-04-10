@@ -28,8 +28,8 @@ public class FireMasterEffect extends StatusEffect {
             player.getInventory().removeStack(slot2, 1);
             player.giveItemStack(stone);
 
-
         }
         super.onRemoved(entity, attributes, amplifier);
     }
 }
+
