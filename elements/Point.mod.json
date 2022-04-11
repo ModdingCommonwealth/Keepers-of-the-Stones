@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "checkpoint",
     "customModelName": "Normal",
-    "name": "Checkpoint",
+    "name": "Point",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MISC"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -30,10 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "ReturnCheckpoint"
-    },
-    "onRightClickedOnBlock": {
-      "name": "CheckSet"
+      "name": "OpenPontGUI"
     },
     "hasDispenseBehavior": false
   }

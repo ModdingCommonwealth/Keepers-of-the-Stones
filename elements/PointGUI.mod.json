@@ -1,0 +1,121 @@
+{
+  "_fv": 27,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "tpX",
+          "x": 159,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "X",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "X",
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Enter the desired coordinates",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Enter the desired coordinates",
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "tpY",
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Y",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Y",
+          "x": 150,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Z",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Z",
+          "x": 150,
+          "y": 143
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "tpZ",
+          "x": 159,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport",
+          "onClick": {
+            "name": "PointTP"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Teleport",
+          "x": 177,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

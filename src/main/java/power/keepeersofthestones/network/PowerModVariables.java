@@ -115,6 +115,9 @@ public class PowerModVariables {
 			clone.teleportation = original.teleportation;
 			clone.explosion = original.explosion;
 			clone.amber = original.amber;
+			clone.tpX = original.tpX;
+			clone.tpZ = original.tpZ;
+			clone.tpY = original.tpY;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -443,6 +446,9 @@ public class PowerModVariables {
 		public boolean explosion = false;
 		public boolean amber = false;
 		public boolean copy = false;
+		public double tpX = 0;
+		public double tpZ = 0;
+		public double tpY = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -493,6 +499,9 @@ public class PowerModVariables {
 			nbt.putBoolean("explosion", explosion);
 			nbt.putBoolean("amber", amber);
 			nbt.putBoolean("copy", copy);
+			nbt.putDouble("tpX", tpX);
+			nbt.putDouble("tpZ", tpZ);
+			nbt.putDouble("tpY", tpY);
 			return nbt;
 		}
 
@@ -540,6 +549,9 @@ public class PowerModVariables {
 			explosion = nbt.getBoolean("explosion");
 			amber = nbt.getBoolean("amber");
 			copy = nbt.getBoolean("copy");
+			tpX = nbt.getDouble("tpX");
+			tpZ = nbt.getDouble("tpZ");
+			tpY = nbt.getDouble("tpY");
 		}
 	}
 
@@ -607,6 +619,9 @@ public class PowerModVariables {
 					variables.explosion = message.data.explosion;
 					variables.amber = message.data.amber;
 					variables.copy = message.data.copy;
+					variables.tpX = message.data.tpX;
+					variables.tpZ = message.data.tpZ;
+					variables.tpY = message.data.tpY;
 				}
 			});
 			context.setPacketHandled(true);

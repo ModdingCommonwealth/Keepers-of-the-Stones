@@ -10364,44 +10364,6 @@
       "path": "~/Time"
     },
     {
-      "name": "Checkpoint",
-      "type": "item",
-      "sortid": 620,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "checkpoint",
-      "path": "~/Teleportation"
-    },
-    {
-      "name": "CheckSet",
-      "type": "procedure",
-      "sortid": 621,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "check_set",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      },
-      "path": "~/Teleportation"
-    },
-    {
       "name": "PortalBlast",
       "type": "rangeditem",
       "sortid": 622,
@@ -11668,6 +11630,104 @@
         "ep": false
       },
       "path": "~/Time"
+    },
+    {
+      "name": "Magnetism",
+      "type": "potioneffect",
+      "sortid": 705,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetism",
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetismTick",
+      "type": "procedure",
+      "sortid": 706,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetism_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magnet"
+    },
+    {
+      "name": "Point",
+      "type": "item",
+      "sortid": 707,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "PointGUI",
+      "type": "gui",
+      "sortid": 708,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point_gui",
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "PointTP",
+      "type": "procedure",
+      "sortid": 709,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point_tp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
+    },
+    {
+      "name": "OpenPontGUI",
+      "type": "procedure",
+      "sortid": 710,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_pont_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleportation"
     }
   ],
   "variable_elements": [
@@ -12150,6 +12210,24 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "tpX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "tpZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "tpY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -12286,6 +12364,7 @@
       "item.power.tornado_battery": "Батарея",
       "item.power.crystal_boots": "Кристаллические Сапоги",
       "item.power.tornado_chestplate": "Нагрудник Торнадо",
+      "effect.power.magnetism": "Magnetism",
       "item.power.vacuum_leggings": "Ваакумные штаны",
       "item.power.fire_battery": "Батарея",
       "item.power.blood_reaper": "Кровавый Жнец",
@@ -12319,7 +12398,6 @@
       "item.power.fire_leggings": "Огненные Штаны",
       "item.power.black_heart": "Черное Сердце",
       "block.power.black_hole_block": "Блок Черной Дыры",
-      "item.power.checkpoint": "Чекпоинт",
       "item.power.spawn": "Порождение",
       "effect.power.water_master": "Мастер Воды",
       "item.power.light_boots": "Ботинки света",
@@ -12431,6 +12509,7 @@
       "item.power.sun_chestplate": "Нагрудник солнца",
       "item.power.explosion_battery": "Батарея",
       "item.power.tornado_stone": "Камень Торнадо",
+      "item.power.point": "Point",
       "itemGroup.tabbatteries": "Батареи",
       "item.power.vacuum_boots": "Ваакумные ботинки",
       "item.power.water_battery": "Батерея",
@@ -12702,6 +12781,7 @@
       "item.power.tornado_battery": "Battery",
       "item.power.crystal_boots": "Crystal Boots",
       "item.power.tornado_chestplate": "Tornado Chestplate",
+      "effect.power.magnetism": "Magnetism",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Blood Reaper",
@@ -12735,7 +12815,6 @@
       "item.power.black_heart": "Black Heart",
       "item.power.fire_leggings": "Fire Leggings",
       "block.power.black_hole_block": "Black Hole Block",
-      "item.power.checkpoint": "Checkpoint",
       "item.power.spawn": "Spawn",
       "effect.power.water_master": "Master of Water",
       "item.power.light_boots": "Light Boots",
@@ -12847,6 +12926,7 @@
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.explosion_battery": "Battery",
       "item.power.tornado_stone": "Tornado Stone",
+      "item.power.point": "Point",
       "itemGroup.tabbatteries": "Batteries",
       "item.power.vacuum_boots": "Vacuum Boots",
       "item.power.water_battery": "Battery",
@@ -13219,6 +13299,14 @@
       },
       {
         "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "Mercury",
+        "children": []
+      },
+      {
+        "name": "Magnet",
         "children": []
       }
     ]

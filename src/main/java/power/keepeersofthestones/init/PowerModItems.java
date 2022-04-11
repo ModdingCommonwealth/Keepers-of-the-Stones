@@ -90,6 +90,7 @@ import power.keepeersofthestones.item.RainBowItem;
 import power.keepeersofthestones.item.RainBatteryItem;
 import power.keepeersofthestones.item.PortalBlastItem;
 import power.keepeersofthestones.item.PoisonStoneItem;
+import power.keepeersofthestones.item.PointItem;
 import power.keepeersofthestones.item.PlasmaBallItem;
 import power.keepeersofthestones.item.PlagueStoneItem;
 import power.keepeersofthestones.item.PieceOfEarthItem;
@@ -187,7 +188,6 @@ import power.keepeersofthestones.item.CreateShadowItem;
 import power.keepeersofthestones.item.CoralShieldItem;
 import power.keepeersofthestones.item.ConstructionsItem;
 import power.keepeersofthestones.item.ClusterSharpItem;
-import power.keepeersofthestones.item.CheckpointItem;
 import power.keepeersofthestones.item.BurnItem;
 import power.keepeersofthestones.item.BookOfElementsItem;
 import power.keepeersofthestones.item.BoStaffItem;
@@ -212,6 +212,8 @@ import power.keepeersofthestones.item.AirBatteryItem;
 import power.keepeersofthestones.item.AcusticalExplodeItem;
 import power.keepeersofthestones.item.AccelerationTimeItem;
 import power.keepeersofthestones.PowerMod;
+
+import org.lwjgl.system.windows.POINT;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -515,7 +517,6 @@ public class PowerModItems {
 			() -> new TeleportationItem.Leggings());
 	public static final RegistryObject<Item> TELEPORTATION_BOOTS = REGISTRY.register("teleportation_boots", () -> new TeleportationItem.Boots());
 	public static final RegistryObject<Item> BLUE_KNIFE = REGISTRY.register("blue_knife", () -> new BlueKnifeItem());
-	public static final RegistryObject<Item> CHECKPOINT = REGISTRY.register("checkpoint", () -> new CheckpointItem());
 	public static final RegistryObject<Item> PORTAL_BLAST = REGISTRY.register("portal_blast", () -> new PortalBlastItem());
 	public static final RegistryObject<Item> BLUE_PORTAL = block(PowerModBlocks.BLUE_PORTAL, null);
 	public static final RegistryObject<Item> ORANGE_PORTAL = block(PowerModBlocks.ORANGE_PORTAL, null);
@@ -538,6 +539,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> ENERGY_ABSORPTION = REGISTRY.register("energy_absorption", () -> new EnergyAbsorptionItem());
 	public static final RegistryObject<Item> BOOK_OF_ELEMENTS = REGISTRY.register("book_of_elements", () -> new BookOfElementsItem());
 	public static final RegistryObject<Item> MUSHROOMS_STONE = REGISTRY.register("mushrooms_stone", () -> new MushroomsStoneItem());
+	public static final RegistryObject<Item> POINT = REGISTRY.register("point", () -> new PointItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

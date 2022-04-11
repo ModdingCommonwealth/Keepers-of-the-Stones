@@ -7,6 +7,7 @@ package power.keepeersofthestones.init;
 import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
 import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
 import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
+import power.keepeersofthestones.client.gui.PointGUIScreen;
 import power.keepeersofthestones.client.gui.EBWaterScreen;
 import power.keepeersofthestones.client.gui.EBVacuumScreen;
 import power.keepeersofthestones.client.gui.EBTornadoScreen;
@@ -103,6 +104,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.EB_TELEPORTATION, EBTeleportationScreen::new);
 			MenuScreens.register(PowerModMenus.EB_EXPLOSION, EBExplosionScreen::new);
 			MenuScreens.register(PowerModMenus.EB_AMBER, EBAmberScreen::new);
+			MenuScreens.register(PowerModMenus.POINT_GUI, PointGUIScreen::new);
 		});
 	}
 }
