@@ -74,7 +74,7 @@ public class CheckpointGUIButtonMessage {
 		}
 		if (buttonID == 3) {
 
-			ReturnToPresentProcedure.execute(entity);
+			ReturnToPresentProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -27,5 +27,15 @@
         "stream": true
       }
     ]
+  },
+  "time_travel": {
+    "category": "player",
+    "subtitle": "subtitles.time_travel",
+    "sounds": [
+      {
+        "name": "power:time_travel",
+        "stream": false
+      }
+    ]
   }
 }

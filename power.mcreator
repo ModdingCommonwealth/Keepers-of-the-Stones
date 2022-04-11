@@ -9184,7 +9184,12 @@
       "locked_code": false,
       "registry_name": "return_to_past",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Time"
     },
@@ -9200,6 +9205,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -11627,6 +11648,18 @@
       "locked_code": false,
       "registry_name": "technologies_and_artifacts",
       "path": "~/Artifacts"
+    },
+    {
+      "name": "Past",
+      "type": "dimension",
+      "sortid": 704,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinoera",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Time"
     }
   ],
   "variable_elements": [
@@ -12135,6 +12168,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "time_travel",
+      "files": [
+        "time_travel"
+      ],
+      "category": "player",
+      "subtitle": "Time Travel"
     }
   ],
   "language_map": {
@@ -12295,7 +12336,9 @@
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
       "item.power.shadow_chestplate": "Нагрудник тьмы",
+      "subtitles.time_travel": "Time Travel",
       "itemGroup.tabtechnologies_and_artifacts": "Технологии \u0026 Артефакты",
+      "item.power.dinoera": "Past Portal Igniter",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
@@ -12708,7 +12751,9 @@
       "item.power.sound_chestplate": "Sound Chestplate",
       "item.power.flash_light": "Flash Light",
       "item.power.shadow_chestplate": "Shadow Chestplate",
+      "subtitles.time_travel": "Time Travel",
       "itemGroup.tabtechnologies_and_artifacts": "Technologies \u0026 Artifacts",
+      "item.power.dinoera": "Past Portal Igniter",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",

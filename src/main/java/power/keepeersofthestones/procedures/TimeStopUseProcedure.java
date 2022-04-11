@@ -20,7 +20,7 @@ public class TimeStopUseProcedure {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
 				{
 					Entity _ent = entity;
 					if (!_ent.level.isClientSide() && _ent.getServer() != null)
@@ -28,7 +28,7 @@ public class TimeStopUseProcedure {
 								"effect give @e minecraft:slowness 60 255");
 				}
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_STOP_EFFECT.get(), 1500, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TIME_STOP_EFFECT.get(), 400, 0, (false), (false)));
 			}
 		}
 	}

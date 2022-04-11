@@ -21,9 +21,9 @@ public class AccelerationTimeUseProcedure {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 400);
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 800);
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get(), 1500, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.ACCELERATION_TIME_EFFECT.get(), 400, 0, (false), (false)));
 			}
 		}
 	}
