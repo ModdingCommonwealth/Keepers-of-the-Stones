@@ -295,7 +295,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> TECHNOLOGY_BATTERY = REGISTRY.register("technology_battery", () -> new TechnologyBatteryItem());
 	public static final RegistryObject<Item> TELEPORTATION_BATTERY = REGISTRY.register("teleportation_battery", () -> new TeleportationBatteryItem());
 	public static final RegistryObject<Item> EXPLOSION_BATTERY = REGISTRY.register("explosion_battery", () -> new ExplosionBatteryItem());
-	public static final RegistryObject<Item> BATTERY_CHARGER = block(PowerModBlocks.BATTERY_CHARGER, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> BATTERY_CHARGER = block(PowerModBlocks.BATTERY_CHARGER, PowerModTabs.TAB_TECHNOLOGIES_AND_ARTIFACTS);
 	public static final RegistryObject<Item> BURN = REGISTRY.register("burn", () -> new BurnItem());
 	public static final RegistryObject<Item> MAGIC_FIREBALL = REGISTRY.register("magic_fireball", () -> new MagicFireballItem());
 	public static final RegistryObject<Item> AIR_FLOW = REGISTRY.register("air_flow", () -> new AirFlowItem());

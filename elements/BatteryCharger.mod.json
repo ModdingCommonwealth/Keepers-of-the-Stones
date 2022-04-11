@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "REDSTONE"
+      "value": "CUSTOM:TechnologiesAndArtifacts"
     },
     "destroyTool": "Not specified",
     "customDrop": {

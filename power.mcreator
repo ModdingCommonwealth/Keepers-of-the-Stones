@@ -11341,15 +11341,6 @@
       "path": "~/ElementalBook"
     },
     {
-      "name": "MagicalArtifacts",
-      "type": "tab",
-      "sortid": 669,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magical_artifacts",
-      "path": "~/ElementalGroups"
-    },
-    {
       "name": "EBAir",
       "type": "gui",
       "sortid": 670,
@@ -11653,6 +11644,15 @@
       "locked_code": false,
       "registry_name": "super_charge",
       "path": "~/Achievements"
+    },
+    {
+      "name": "TechnologiesAndArtifacts",
+      "type": "tab",
+      "sortid": 703,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technologies_and_artifacts",
+      "path": "~/Artifacts"
     }
   ],
   "variable_elements": [
@@ -12300,7 +12300,6 @@
       "item.power.spawn": "Порождение",
       "effect.power.water_master": "Мастер Воды",
       "item.power.light_boots": "Ботинки света",
-      "itemGroup.tabmagical_artifacts": "Волшебные Артефакты",
       "effect.power.recharge_explosion_stone": "Перезарядка",
       "item.power.smoke_stone": "Камень Дыма",
       "item.power.earth_stone": "Камень Земли",
@@ -12322,6 +12321,7 @@
       "item.power.sound_chestplate": "Звуковой Нагрудник",
       "item.power.flash_light": "Вспышка Света",
       "item.power.shadow_chestplate": "Нагрудник тьмы",
+      "itemGroup.tabtechnologies_and_artifacts": "Технологии \u0026 Артефакты",
       "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Энергетический блок",
       "item.power.creation_chestplate": "Creation Chestplate",
@@ -12714,7 +12714,6 @@
       "item.power.spawn": "Spawn",
       "effect.power.water_master": "Master of Water",
       "item.power.light_boots": "Light Boots",
-      "itemGroup.tabmagical_artifacts": "Magical Artifacts",
       "effect.power.recharge_explosion_stone": "Recharge",
       "item.power.smoke_stone": "Smoke Stone",
       "item.power.earth_stone": "Earth Stone",
@@ -12736,6 +12735,7 @@
       "item.power.sound_chestplate": "Sound Chestplate",
       "item.power.flash_light": "Flash Light",
       "item.power.shadow_chestplate": "Shadow Chestplate",
+      "itemGroup.tabtechnologies_and_artifacts": "Technologies \u0026 Artifacts",
       "item.power.dinoera": "Dinoera Portal Igniter",
       "block.power.energy_block": "Energy Block",
       "item.power.creation_chestplate": "Creation Chestplate",

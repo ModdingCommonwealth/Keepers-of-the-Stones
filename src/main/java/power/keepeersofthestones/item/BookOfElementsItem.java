@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionHand;
 
 public class BookOfElementsItem extends Item {
 	public BookOfElementsItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_MAGICAL_ARTIFACTS).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(PowerModTabs.TAB_TECHNOLOGIES_AND_ARTIFACTS).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
