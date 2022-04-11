@@ -2,5 +2,7 @@
   "item.power.fire_stone": "Fire Stone",
   "item.power.fire_sword": "Fire Sword",
   "effect.power.fire_master": "Master of Fire",
-  "item.power.magic_fireball": "Magic Fireball"
+  "item.power.magic_fireball": "Magic Fireball",
+  "itemGroup.power.basicstones": "Basic Stones",
+  "item.power.burn": "Burn"
 }

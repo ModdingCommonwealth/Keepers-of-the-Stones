@@ -22,10 +22,13 @@ public class FireMasterEffect extends StatusEffect {
             ItemStack sword = new ItemStack(Main.Fire_Sword);
             ItemStack fireball = new ItemStack(Main.MagicFireballItem);
             ItemStack stone = new ItemStack(Main.Fire_Stone);
+            ItemStack burn = new ItemStack(Main.BurnItem);
             int slot1 = player.getInventory().getSlotWithStack(sword);
             int slot2 = player.getInventory().getSlotWithStack(fireball);
+            int slot3 = player.getInventory().getSlotWithStack(burn);
             player.getInventory().removeStack(slot1, 1);
             player.getInventory().removeStack(slot2, 1);
+            player.getInventory().removeStack(slot3, 1);
             player.giveItemStack(stone);
 
         }

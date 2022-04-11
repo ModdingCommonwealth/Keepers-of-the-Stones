@@ -2,5 +2,6 @@
   "item.power.fire_stone": "Камень Огня",
   "item.power.fire_sword": "Меч Огня",
   "effect.power.fire_master": "Мастер Огня",
-  "item.power.magic_fireball": "Волшебный Огненный Шар"
+  "item.power.magic_fireball": "Волшебный Огненный Шар",
+  "itemGroup.power.basicstones": "Базовые камни"
 }

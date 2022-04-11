@@ -1,10 +1,10 @@
 package com.koshakmine.kos;
 
+import com.koshakmine.kos.customitems.BurnItem;
 import com.koshakmine.kos.customitems.FireStoneItem;
 import com.koshakmine.kos.customitems.FireSwordItem;
 import com.koshakmine.kos.customitems.MagicFireballItem;
 import com.koshakmine.kos.effects.FireMasterEffect;
-import com.koshakmine.kos.effects.RechargeFireStoneEffect;
 import com.koshakmine.kos.entities.MagicFireballEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -22,17 +22,16 @@ import net.minecraft.util.registry.Registry;
 public class Main implements ModInitializer {
     static String MOD_ID = "power";
     //Items
-        public final static FireSwordItem Fire_Sword = new FireSwordItem(ToolMaterials.NETHERITE, 7, -2.5F, new FabricItemSettings());
+        public final static FireSwordItem Fire_Sword = new FireSwordItem(ToolMaterials.NETHERITE, 7, -2.5F, new FabricItemSettings().maxCount(1));
         public final static FireStoneItem Fire_Stone = new FireStoneItem(new FabricItemSettings().maxCount(1));
-        public static final Item MagicFireballItem = new MagicFireballItem(new Item.Settings().maxCount(16));
+        public static final Item MagicFireballItem = new MagicFireballItem(new Item.Settings().maxCount(1));
+        public static final Item BurnItem = new BurnItem(new Item.Settings().maxCount(1));
 
     //Blocks
 
     //Effects
         public static final StatusEffect FireMasterEffect = new FireMasterEffect();
-        public static final StatusEffect RechargeFireStoneEffect = new RechargeFireStoneEffect();
         public static final StatusEffectInstance FireMasterEffectInstance = new StatusEffectInstance(FireMasterEffect, 12000);
-        public static final StatusEffectInstance RechargeFireStoneEffectInstance = new StatusEffectInstance(RechargeFireStoneEffect, 6000);
 
     //Entities
         public static final EntityType<MagicFireballEntity> MAGIC_FIREBALL_ENTITY_ENTITY_TYPE = Registry.register(
@@ -48,13 +47,13 @@ public class Main implements ModInitializer {
             Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fire_stone"), Fire_Stone);
             Registry.register(Registry.ITEM, new Identifier(MOD_ID, "fire_sword"), Fire_Sword);
             Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "fire_master"), FireMasterEffect);
-            Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "recharge_fire_stone"), RechargeFireStoneEffect);
             Registry.register(Registry.ITEM, new Identifier(MOD_ID, "magic_fireball"), MagicFireballItem);
+            Registry.register(Registry.ITEM, new Identifier(MOD_ID, "burn"), BurnItem);
         }
 
     //Creative tabs
-        public static final ItemGroup STONES_TAB = FabricItemGroupBuilder.create(
-                    new Identifier(MOD_ID, "stonestab"))
+        public static final ItemGroup BASIC_STONES = FabricItemGroupBuilder.create(
+                    new Identifier(MOD_ID, "basicstones"))
             .icon(() -> new ItemStack(Fire_Stone))
             .appendItems(stacks -> {
                 stacks.add(new ItemStack(Fire_Stone));
