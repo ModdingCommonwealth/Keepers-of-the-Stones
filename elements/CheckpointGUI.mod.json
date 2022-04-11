@@ -55,9 +55,6 @@
         "type": "button",
         "data": {
           "text": "Return to the past",
-          "onClick": {
-            "name": "ReturnToPast"
-          },
           "width": 126,
           "height": 20,
           "name": "Return to the past",
