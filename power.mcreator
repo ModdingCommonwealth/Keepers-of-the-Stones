@@ -9205,22 +9205,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -12170,12 +12154,12 @@
       "subtitle": ""
     },
     {
-      "name": "time_travel",
+      "name": "time_power",
       "files": [
         "time_travel"
       ],
       "category": "player",
-      "subtitle": "Time Travel"
+      "subtitle": "Time Power"
     }
   ],
   "language_map": {
@@ -12577,6 +12561,7 @@
       "item.power.ice_battery": "Батарея",
       "item.power.sand_stone": "Камень Песка",
       "item.power.constructions": "Материализация Конструкций",
+      "subtitles.time_power": "Time Travel",
       "effect.power.technology_master": "Мастер Технологий",
       "item.power.eclipse": "Затмение",
       "biome.power.mars_land": "Марсианская Земля",
@@ -12993,6 +12978,7 @@
       "item.power.ice_battery": "Battery",
       "item.power.sand_stone": "Sand Stone",
       "item.power.constructions": "Materialization of Constructions",
+      "subtitles.time_power": "Time Power",
       "effect.power.technology_master": "Master of Technology",
       "item.power.eclipse": "Eclipse",
       "biome.power.mars_land": "Mars Land",

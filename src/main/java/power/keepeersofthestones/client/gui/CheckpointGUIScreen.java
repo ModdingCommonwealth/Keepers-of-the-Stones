@@ -96,6 +96,10 @@ public class CheckpointGUIScreen extends AbstractContainerScreen<CheckpointGUIMe
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 97, 126, 20, new TextComponent("Return to the past"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new CheckpointGUIButtonMessage(2, x, y, z));
+				CheckpointGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 124, 134, 20, new TextComponent("Return to the present"), e -> {
 			if (true) {

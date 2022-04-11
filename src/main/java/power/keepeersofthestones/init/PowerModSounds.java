@@ -21,7 +21,7 @@ public class PowerModSounds {
 		REGISTRY.put(new ResourceLocation("power", "stone_activation"), new SoundEvent(new ResourceLocation("power", "stone_activation")));
 		REGISTRY.put(new ResourceLocation("power", "stone_deactivation"), new SoundEvent(new ResourceLocation("power", "stone_deactivation")));
 		REGISTRY.put(new ResourceLocation("power", "powerful_stone"), new SoundEvent(new ResourceLocation("power", "powerful_stone")));
-		REGISTRY.put(new ResourceLocation("power", "time_travel"), new SoundEvent(new ResourceLocation("power", "time_travel")));
+		REGISTRY.put(new ResourceLocation("power", "time_power"), new SoundEvent(new ResourceLocation("power", "time_power")));
 	}
 
 	@SubscribeEvent

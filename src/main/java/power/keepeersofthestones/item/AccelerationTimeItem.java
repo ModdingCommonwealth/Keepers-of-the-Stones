@@ -35,7 +35,7 @@ public class AccelerationTimeItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AccelerationTimeUseProcedure.execute(world, entity, itemstack);
+		AccelerationTimeUseProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

@@ -35,7 +35,7 @@ public class TimeStopItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		TimeStopUseProcedure.execute(world, entity, itemstack);
+		TimeStopUseProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

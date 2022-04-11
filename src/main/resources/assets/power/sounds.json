@@ -28,9 +28,9 @@
       }
     ]
   },
-  "time_travel": {
+  "time_power": {
     "category": "player",
-    "subtitle": "subtitles.time_travel",
+    "subtitle": "subtitles.time_power",
     "sounds": [
       {
         "name": "power:time_travel",
