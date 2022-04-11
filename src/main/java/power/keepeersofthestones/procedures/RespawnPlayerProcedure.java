@@ -404,21 +404,21 @@ public class RespawnPlayerProcedure {
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get(), 6000, 0, (false), (false)));
 				} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
+						.orElse(new PowerModVariables.PlayerVariables())).space) {
 					{
 						boolean _setval = false;
 						entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.cosmos = _setval;
+							capability.space = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE.get());
+						ItemStack _setstack = new ItemStack(PowerModItems.SPACE_STONE.get());
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_COSMOS_STONE.get(), 6000, 0, (false), (false)));
+						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_SPACE_STONE.get(), 6000, 0, (false), (false)));
 				} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new PowerModVariables.PlayerVariables())).blood) {
 					{

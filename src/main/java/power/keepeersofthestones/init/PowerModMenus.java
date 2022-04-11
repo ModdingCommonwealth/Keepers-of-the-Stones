@@ -14,6 +14,7 @@ import power.keepeersofthestones.world.inventory.EBTimeMenu;
 import power.keepeersofthestones.world.inventory.EBTeleportationMenu;
 import power.keepeersofthestones.world.inventory.EBTechnologyMenu;
 import power.keepeersofthestones.world.inventory.EBSunMenu;
+import power.keepeersofthestones.world.inventory.EBSpaceMenu;
 import power.keepeersofthestones.world.inventory.EBSoundMenu;
 import power.keepeersofthestones.world.inventory.EBShadowMenu;
 import power.keepeersofthestones.world.inventory.EBRainMenu;
@@ -32,7 +33,6 @@ import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBDestructionMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
 import power.keepeersofthestones.world.inventory.EBCreationMenu;
-import power.keepeersofthestones.world.inventory.EBCosmosMenu;
 import power.keepeersofthestones.world.inventory.EBBloodMenu;
 import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
@@ -111,7 +111,7 @@ public class PowerModMenus {
 	public static final MenuType<EBVacuumMenu> EB_VACUUM = register("eb_vacuum", (id, inv, extraData) -> new EBVacuumMenu(id, inv, extraData));
 	public static final MenuType<EBSunMenu> EB_SUN = register("eb_sun", (id, inv, extraData) -> new EBSunMenu(id, inv, extraData));
 	public static final MenuType<EBMoonMenu> EB_MOON = register("eb_moon", (id, inv, extraData) -> new EBMoonMenu(id, inv, extraData));
-	public static final MenuType<EBCosmosMenu> EB_COSMOS = register("eb_cosmos", (id, inv, extraData) -> new EBCosmosMenu(id, inv, extraData));
+	public static final MenuType<EBSpaceMenu> EB_SPACE = register("eb_space", (id, inv, extraData) -> new EBSpaceMenu(id, inv, extraData));
 	public static final MenuType<EBTimeMenu> EB_TIME = register("eb_time", (id, inv, extraData) -> new EBTimeMenu(id, inv, extraData));
 	public static final MenuType<EBCreationMenu> EB_CREATION = register("eb_creation",
 			(id, inv, extraData) -> new EBCreationMenu(id, inv, extraData));

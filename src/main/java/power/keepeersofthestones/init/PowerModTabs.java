@@ -56,7 +56,7 @@ public class PowerModTabs {
 		TAB_GREAT_GROUP = new CreativeModeTab("tabgreat_group") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PowerModItems.COSMOS_STONE.get());
+				return new ItemStack(PowerModItems.SPACE_STONE.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

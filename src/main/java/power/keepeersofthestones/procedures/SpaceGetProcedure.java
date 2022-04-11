@@ -16,18 +16,18 @@ import net.minecraft.advancements.Advancement;
 
 import java.util.Iterator;
 
-public class CosmosGetProcedure {
+public class SpaceGetProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).selected) {
-			if (!PowerModVariables.WorldVariables.get(world).cosmos_stone) {
+			if (!PowerModVariables.WorldVariables.get(world).space_stone) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE.get());
+					ItemStack _setstack = new ItemStack(PowerModItems.SPACE_STONE.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PowerModVariables.WorldVariables.get(world).cosmos_stone = true;
+				PowerModVariables.WorldVariables.get(world).space_stone = true;
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
 					boolean _setval = true;

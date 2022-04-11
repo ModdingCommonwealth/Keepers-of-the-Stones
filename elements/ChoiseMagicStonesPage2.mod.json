@@ -68,13 +68,13 @@
       {
         "type": "button",
         "data": {
-          "text": " Cosmos",
+          "text": "Space",
           "onClick": {
-            "name": "CosmosGet"
+            "name": "SpaceGet"
           },
           "width": 56,
           "height": 20,
-          "name": " Cosmos",
+          "name": "Space",
           "x": 51,
           "y": 80
         }
@@ -409,6 +409,16 @@
           "name": "amber_master.png",
           "x": 123,
           "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_master.png",
+          "use1Xscale": false,
+          "name": "space_master.png",
+          "x": 33,
+          "y": 80
         }
       }
     ],

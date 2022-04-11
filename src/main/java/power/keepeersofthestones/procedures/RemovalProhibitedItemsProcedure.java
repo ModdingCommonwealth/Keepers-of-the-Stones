@@ -934,22 +934,22 @@ public class RemovalProhibitedItemsProcedure {
 								_player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_HELMET.get());
+						ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_HELMET.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_CHESTPLATE.get());
+						ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_CHESTPLATE.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_LEGGINGS.get());
+						ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_LEGGINGS.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_BOOTS.get());
+						ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_BOOTS.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}

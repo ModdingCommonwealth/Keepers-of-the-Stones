@@ -56,7 +56,7 @@ public class DetransformKeyPriNazhatiiKlavishiProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.DESTRUCTION_MASTER.get());
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.COSMOS_MASTER.get());
+			_entity.removeEffect(PowerModMobEffects.SPACE_MASTER.get());
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.BLOOD_MASTER.get());
 		if (entity instanceof LivingEntity _entity)

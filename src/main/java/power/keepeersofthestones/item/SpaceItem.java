@@ -13,8 +13,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-public abstract class CosmosItem extends ArmorItem {
-	public CosmosItem(EquipmentSlot slot, Item.Properties properties) {
+public abstract class SpaceItem extends ArmorItem {
+	public SpaceItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
@@ -43,7 +43,7 @@ public abstract class CosmosItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "cosmos";
+				return "space";
 			}
 
 			@Override
@@ -58,47 +58,47 @@ public abstract class CosmosItem extends ArmorItem {
 		}, slot, properties);
 	}
 
-	public static class Helmet extends CosmosItem {
+	public static class Helmet extends SpaceItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(null));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/cosmos__layer_1.png";
+			return "power:textures/models/armor/space__layer_1.png";
 		}
 	}
 
-	public static class Chestplate extends CosmosItem {
+	public static class Chestplate extends SpaceItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(null));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/cosmos__layer_1.png";
+			return "power:textures/models/armor/space__layer_1.png";
 		}
 	}
 
-	public static class Leggings extends CosmosItem {
+	public static class Leggings extends SpaceItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/cosmos__layer_2.png";
+			return "power:textures/models/armor/space__layer_2.png";
 		}
 	}
 
-	public static class Boots extends CosmosItem {
+	public static class Boots extends SpaceItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(null));
 		}
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "power:textures/models/armor/cosmos__layer_1.png";
+			return "power:textures/models/armor/space__layer_1.png";
 		}
 	}
 }

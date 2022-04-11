@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of Space",
-    "icon": "cosmos_master.png",
+    "icon": "space_master.png",
     "color": {
       "value": -13434829,
       "falpha": 0.0
@@ -14,13 +14,13 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onStarted": {
-      "name": "CosmosMasterEffectStart"
+      "name": "SpaceMasterEffectStart"
     },
     "onActiveTick": {
-      "name": "CosmosMasterEffects"
+      "name": "SpaceMasterEffects"
     },
     "onExpired": {
-      "name": "CosmosMasterEffectEnd"
+      "name": "SpaceMasterEffectEnd"
     }
   }
 }

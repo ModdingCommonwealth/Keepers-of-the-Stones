@@ -9,11 +9,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
-public class CosmosBatteryUseProcedure {
+public class SpaceBatteryUseProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.COSMOS_BATTERY.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SPACE_BATTERY.get()) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 				{
 					boolean _setval = true;
@@ -23,7 +23,7 @@ public class CosmosBatteryUseProcedure {
 					});
 				}
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.COSMOS_MASTER.get(), 6000, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.SPACE_MASTER.get(), 6000, 0, (false), (false)));
 			}
 		}
 	}

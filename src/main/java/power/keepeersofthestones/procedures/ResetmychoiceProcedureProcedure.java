@@ -829,14 +829,14 @@ public class ResetmychoiceProcedureProcedure {
 				}
 			}
 			if (entity instanceof Player _playerHasItem
-					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.COSMOS_STONE.get()))
+					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SPACE_STONE.get()))
 					: false) {
 				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_STONE.get());
+					ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_STONE.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 							_player.inventoryMenu.getCraftSlots());
 				}
-				PowerModVariables.WorldVariables.get(world).cosmos_stone = false;
+				PowerModVariables.WorldVariables.get(world).space_stone = false;
 				PowerModVariables.WorldVariables.get(world).syncData(world);
 				{
 					boolean _setval = false;

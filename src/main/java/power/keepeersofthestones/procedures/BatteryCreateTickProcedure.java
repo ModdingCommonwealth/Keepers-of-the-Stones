@@ -624,7 +624,7 @@ public class BatteryCreateTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.COSMOS_STONE.get() && new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 0)).getItem() == PowerModItems.SPACE_STONE.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -1820,7 +1820,7 @@ public class BatteryCreateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
-							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_BATTERY.get());
+							final ItemStack _setstack = new ItemStack(PowerModItems.SPACE_BATTERY.get());
 							_setstack.setCount(1);
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)
@@ -1832,7 +1832,7 @@ public class BatteryCreateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 3;
-							final ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE.get());
+							final ItemStack _setstack = new ItemStack(PowerModItems.SPACE_STONE.get());
 							_setstack.setCount(1);
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)

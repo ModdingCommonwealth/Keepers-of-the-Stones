@@ -73,7 +73,7 @@ public class WhenPlayerWakeUpProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get());
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.RECHARGE_COSMOS_STONE.get());
+			_entity.removeEffect(PowerModMobEffects.RECHARGE_SPACE_STONE.get());
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.RECHARGE_BLOOD_STONE.get());
 		if (entity instanceof LivingEntity _entity)

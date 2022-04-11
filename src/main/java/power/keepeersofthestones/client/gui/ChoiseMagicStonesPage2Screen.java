@@ -55,7 +55,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		this.blit(ms, this.leftPos + 19, this.topPos + 33, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/cosmos_master.png"));
-		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, -1, -1, -1, -1);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blood_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 141, 0, 0, 16, 16, 16, 16);
@@ -80,6 +80,9 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/amber_master.png"));
 		this.blit(ms, this.leftPos + 109, this.topPos + 141, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/space_master.png"));
+		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -132,7 +135,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 60, 56, 20, new TextComponent(" Cosmos"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 37, this.topPos + 60, 56, 20, new TextComponent("Space"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(3, x, y, z));
 				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 3, x, y, z);

@@ -6009,7 +6009,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "moon_land",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "Moon",
@@ -6021,7 +6021,7 @@
       "metadata": {
         "ep": false
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "OnMoonUse",
@@ -6076,13 +6076,13 @@
       "path": "~/Commands"
     },
     {
-      "name": "CosmosStone",
+      "name": "SpaceStone",
       "type": "item",
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_stone",
-      "path": "~/Cosmos"
+      "registry_name": "space_stone",
+      "path": "~/Space"
     },
     {
       "name": "MarsLand",
@@ -6091,7 +6091,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mars_land",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "Mars",
@@ -6103,7 +6103,7 @@
       "metadata": {
         "ep": false
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "OnMarsUse",
@@ -6138,7 +6138,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "venus_land",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "Venus",
@@ -6150,7 +6150,7 @@
       "metadata": {
         "ep": false
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "OnVenusUse",
@@ -6185,33 +6185,33 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "venus_desert",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
-      "name": "CosmosMaster",
+      "name": "SpaceMaster",
       "type": "potioneffect",
       "sortid": 407,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_master",
-      "path": "~/Cosmos"
+      "registry_name": "space_master",
+      "path": "~/Space"
     },
     {
-      "name": "RechargeCosmosStone",
+      "name": "RechargeSpaceStone",
       "type": "potioneffect",
       "sortid": 408,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "recharge_cosmos_stone",
-      "path": "~/Cosmos"
+      "registry_name": "recharge_space_stone",
+      "path": "~/Space"
     },
     {
-      "name": "CosmosStoneUse",
+      "name": "SpaceStoneUse",
       "type": "procedure",
       "sortid": 409,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_stone_use",
+      "registry_name": "space_stone_use",
       "metadata": {
         "dependencies": [
           {
@@ -6220,15 +6220,15 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
-      "name": "CosmosMasterEffectStart",
+      "name": "SpaceMasterEffectStart",
       "type": "procedure",
       "sortid": 410,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_master_effect_start",
+      "registry_name": "space_master_effect_start",
       "metadata": {
         "dependencies": [
           {
@@ -6253,15 +6253,15 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
-      "name": "CosmosMasterEffectEnd",
+      "name": "SpaceMasterEffectEnd",
       "type": "procedure",
       "sortid": 411,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_master_effect_end",
+      "registry_name": "space_master_effect_end",
       "metadata": {
         "dependencies": [
           {
@@ -6286,15 +6286,15 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
-      "name": "CosmosMasterEffects",
+      "name": "SpaceMasterEffects",
       "type": "procedure",
       "sortid": 412,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_master_effects",
+      "registry_name": "space_master_effects",
       "metadata": {
         "dependencies": [
           {
@@ -6303,7 +6303,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "TpOnMars",
@@ -6312,7 +6312,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tp_on_mars",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "TpOnVenus",
@@ -6321,7 +6321,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tp_on_venus",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "TpOnMoon",
@@ -6330,7 +6330,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tp_on_moon",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "TpOnEarth",
@@ -6339,7 +6339,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tp_on_earth",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "GalacticSword",
@@ -6348,7 +6348,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "galactic_sword",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "BlackHole",
@@ -6357,7 +6357,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_hole",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "BlackHoleBlock",
@@ -6366,7 +6366,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_hole_block",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "BlackHoleUse",
@@ -6395,7 +6395,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "TornadoEntity",
@@ -7265,27 +7265,27 @@
       }
     },
     {
-      "name": "Cosmos",
+      "name": "Space",
       "type": "armor",
       "sortid": 465,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos",
+      "registry_name": "space",
       "metadata": {
         "eh": true,
         "el": true,
         "eb": true,
         "ec": true
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
-      "name": "CosmosGet",
+      "name": "SpaceGet",
       "type": "procedure",
       "sortid": 466,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_get",
+      "registry_name": "space_get",
       "metadata": {
         "dependencies": [
           {
@@ -8266,7 +8266,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "MarsOnPlayer",
@@ -8283,7 +8283,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "MoonOnMe",
@@ -8308,7 +8308,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "MoonOnPlayer",
@@ -8325,7 +8325,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "VenusOnMe",
@@ -8350,7 +8350,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "VenusOnPlayer",
@@ -8367,7 +8367,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "EarthOnMe",
@@ -8392,7 +8392,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "EarthOnPlayer",
@@ -8409,7 +8409,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "EarthBlockCreate",
@@ -8735,7 +8735,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "AcceptTpOnMoon",
@@ -8744,7 +8744,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "accept_tp_on_moon",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "AcceptTpOnEarth",
@@ -8753,7 +8753,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "accept_tp_on_earth",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "AcceptTpOnMars",
@@ -8762,7 +8762,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "accept_tp_on_mars",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "AcceptTpOnVenus",
@@ -8771,7 +8771,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "accept_tp_on_venus",
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "VenusGUI",
@@ -8804,7 +8804,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "MarsGUI",
@@ -8837,7 +8837,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "EarthGUI",
@@ -8870,7 +8870,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "MoonGUI",
@@ -8903,7 +8903,7 @@
           }
         ]
       },
-      "path": "~/Cosmos"
+      "path": "~/Space"
     },
     {
       "name": "GetSugarCane",
@@ -9794,21 +9794,21 @@
       "path": "~/ElementalBattery"
     },
     {
-      "name": "CosmosBattery",
+      "name": "SpaceBattery",
       "type": "item",
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_battery",
+      "registry_name": "space_battery",
       "path": "~/ElementalBattery"
     },
     {
-      "name": "CosmosBatteryUse",
+      "name": "SpaceBatteryUse",
       "type": "procedure",
       "sortid": 593,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cosmos_battery_use",
+      "registry_name": "space_battery_use",
       "metadata": {
         "dependencies": [
           {
@@ -11521,12 +11521,12 @@
       "path": "~/ElementalBook"
     },
     {
-      "name": "EBCosmos",
+      "name": "EBSpace",
       "type": "gui",
       "sortid": 690,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "eb_cosmos",
+      "registry_name": "eb_space",
       "path": "~/ElementalBook"
     },
     {
@@ -11801,7 +11801,7 @@
       "value": "false"
     },
     {
-      "name": "cosmos",
+      "name": "space",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
@@ -11951,7 +11951,7 @@
       "value": "false"
     },
     {
-      "name": "cosmos_stone",
+      "name": "space_stone",
       "type": "logic",
       "scope": "world",
       "value": "false"
@@ -12177,8 +12177,8 @@
       "item.power.lightning_battery": "Батарея",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
-      "item.power.cutter_sword": "Куттер-Меч",
       "block.power.detonator_tnt": "Детонатор",
+      "item.power.cutter_sword": "Куттер-Меч",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.earth_battery": "Батарея",
       "item.power.lightning_helmet": "Повязка Молнии",
@@ -12186,8 +12186,8 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
-      "item.power.technology_chestplate": "Technology Chestplate",
       "effect.power.recharge_energy_stone": "Перезарядка",
+      "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Создание Снежного голема",
       "item.power.lava_hammer": "Лавовый Молот",
       "advancements.mighty_master.title": "Могучий Мастер",
@@ -12198,9 +12198,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Приручатель",
       "effect.power.recharge_earth_stone": "Перезарядка",
-      "item.power.time_reversed": "Обращение Времени",
       "effect.power.ice_master": "Мастер Льда",
-      "item.power.cosmos_leggings": "Космические штаны",
+      "item.power.time_reversed": "Обращение Времени",
       "effect.power.recharge_amber_stone": "Перезарядка",
       "item.power.piece_of_earth": "Кусок Земли",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
@@ -12209,13 +12208,14 @@
       "item.power.destruction_chestplate": "Destruction Кираса",
       "item.power.explode_chestplate": "Шахид-нагрудник",
       "item.power.lava_ball": "Лавовый Шар",
+      "item.power.space_leggings": "Космические штаны",
       "item.power.ocean_sword": "Меч Океана",
       "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.gravity_stone": "Камень Гравитации",
       "item.power.destruction_sphere": "Сфера Разрушения",
       "item.power.shadow_invisible": "Теневая Невидимость",
-      "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Шлем солнца",
+      "item.power.moon": "Moon Portal Igniter",
       "item.power.time_leggings": "Штаны времени",
       "effect.power.greenery_master": "Мастер Зелени",
       "effect.power.recharge_animals_stone": "Перезарядка",
@@ -12226,8 +12226,8 @@
       "item.power.water_flow": "Струя Воды",
       "item.power.animals_stone": "Камень Животных",
       "item.power.redstone_bundle": "Мешок С Редстоуном",
-      "item.power.light_battery": "Батарея",
       "item.power.iron_shield": "Железный Щит",
+      "item.power.light_battery": "Батарея",
       "effect.power.tornado_master": "Мастер Торнадо",
       "itemGroup.tabadditional_group": "Дополнительные",
       "item.power.bo_staff": "Посох Бо",
@@ -12239,10 +12239,8 @@
       "item.power.shadow_helmet": "Шлем тьмы",
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
-      "item.power.cosmos_stone": "Камень Космоса",
       "item.power.lava_leggings": "Лавовые Брюки",
       "item.power.ice_sharp": "Ледяной Осколок",
-      "item.power.cosmos_boots": "Космические ботинки",
       "item.power.sun_regeneration": "Солнечное Исцеление",
       "effect.power.recharge_lightning_stone": "Перезарядка",
       "item.power.fertilizer": "Удобрение",
@@ -12250,8 +12248,8 @@
       "item.power.fire_stone": "Камень Огня",
       "item.power.blood_stone": "Камень Крови",
       "item.power.rain_boots": "Дождевые Сапоги",
-      "item.power.portal_blast": "Портальная Пушка",
       "item.power.ice_spear": "Ледяное Копьё",
+      "item.power.portal_blast": "Портальная Пушка",
       "effect.power.recharge_teleportation_stone": "Перезарядка",
       "subtitles.stone_activation": "Камень был активирован",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
@@ -12268,6 +12266,7 @@
       "item.power.vacuum_leggings": "Ваакумные штаны",
       "item.power.fire_battery": "Батарея",
       "item.power.blood_reaper": "Кровавый Жнец",
+      "item.power.space_stone": "Камень Космоса",
       "item.power.teleportation_stone": "Камень Телепортации",
       "item.power.lava_boots": "Лавовые Ботинки",
       "gamerule.gettingStonesWhenEnteringTheGame": "Получение камней при входе в игру",
@@ -12281,31 +12280,32 @@
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
-      "item.power.tp_on_moon": "Луна",
       "effect.power.creation_master": "Мастер Созидания",
+      "item.power.tp_on_moon": "Луна",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ледяной щит",
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.light_leggings": "Штаны света",
       "item.power.empty_battery": "Батарея",
+      "item.power.space_helmet": "Космический шлем",
       "item.power.time_dilation": "Замедление Времени",
       "advancements.super_charge.title": "Супер Заряд!",
       "item.power.glow_spawn_egg": "Яйцо призыва Светляка",
       "item.power.sound_barrier": "Звуковой барьер",
       "item.power.blood_leggings": "Ботинки крови",
-      "item.power.black_heart": "Черное Сердце",
       "item.power.fire_leggings": "Огненные Штаны",
+      "item.power.black_heart": "Черное Сердце",
       "block.power.black_hole_block": "Блок Черной Дыры",
       "item.power.checkpoint": "Чекпоинт",
       "item.power.spawn": "Порождение",
       "effect.power.water_master": "Мастер Воды",
       "item.power.light_boots": "Ботинки света",
-      "effect.power.recharge_explosion_stone": "Перезарядка",
       "item.power.smoke_stone": "Камень Дыма",
+      "effect.power.recharge_explosion_stone": "Перезарядка",
       "item.power.earth_stone": "Камень Земли",
       "item.power.rain_battery": "Батарея",
-      "item.power.fire_boots": "Огненные Ботинки",
       "effect.power.air_master": "Мастер Воздуха",
+      "item.power.fire_boots": "Огненные Ботинки",
       "item.power.crystal_battery": "Батарея",
       "item.power.shadow_leggings": "Поножи тьмы",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
@@ -12327,14 +12327,13 @@
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Световой Меч",
       "item.power.technobarrier": "Технобарьер",
-      "advancements.super_charge.descr": "Создайте первую батарею",
       "entity.power.tornado_entity": "Торнадо",
+      "advancements.super_charge.descr": "Создайте первую батарею",
       "item.power.ice_stone": "Камень Льда",
       "item.power.shadow_sword": "Теневой Мач",
       "item.power.wind_boots": "Воздушные Сапоги",
       "item.power.rain_helmet": "Дождевая Шапка",
       "item.power.animals_leggings": "Штаны животных",
-      "item.power.cosmos_helmet": "Космический шлем",
       "item.power.air_battery": "Батарея",
       "item.power.rain_knife": "Дождевой Нож",
       "item.power.iron_golem_create": "Создание Железного Голема",
@@ -12377,7 +12376,6 @@
       "item.power.teleportation_helmet": "Шлем перемищения",
       "item.power.sound_emitate": "Издать Звук",
       "effect.power.vacuum_master": "Мастер Пустоты",
-      "effect.power.recharge_cosmos_stone": "Перезарядка",
       "item.power.golden_crossbow": "Золотой Арбалет",
       "item.power.lightning_leggings": "Штаны Молнии",
       "item.power.water_katana": "Водяная Катана",
@@ -12409,7 +12407,6 @@
       "item.power.sun_chestplate": "Нагрудник солнца",
       "item.power.explosion_battery": "Батарея",
       "item.power.tornado_stone": "Камень Торнадо",
-      "item.power.cosmos_battery": "Батарея",
       "itemGroup.tabbatteries": "Батареи",
       "item.power.vacuum_boots": "Ваакумные ботинки",
       "item.power.water_battery": "Батерея",
@@ -12426,6 +12423,7 @@
       "item.power.energy_battery": "Батарея",
       "item.power.vacuum_battery": "Батарея",
       "item.power.creation_boots": "Creation Boots",
+      "item.power.space_chestplate": "Космический нагрудник",
       "item.power.shadow_spawn_egg": "Яйцо призыва Тени",
       "item.power.crystal_helmet": "Кристаллическая Каска",
       "item.power.wind_helmet": "Воздушная Шапка",
@@ -12474,6 +12472,7 @@
       "effect.power.sun_master": "Мастер Солнца",
       "item.power.time_helmet": "Шлем времени",
       "item.power.random_item": "Случайный Предмет",
+      "effect.power.space_master": "Мастер Космоса",
       "biome.power.venus_desert": "Венерианская Пустыня",
       "item.power.plague_stone": "Камень Чумы",
       "itemGroup.tabbasic_group": "Базовые",
@@ -12510,11 +12509,13 @@
       "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
       "block.power.orange_portal": "Оранжевый Портал",
+      "item.power.space_battery": "Батарея",
       "item.power.sun_explode": "Солнечный Взрыв",
       "item.power.vacuum_sword": "Пустотный Меч",
       "item.power.fire_sword": "Меч Огня",
       "item.power.vacuum_chestplate": "Ваакумный нагрудник",
       "item.power.water_boots": "Водные Ласты",
+      "item.power.space_boots": "Космические ботинки",
       "item.power.acustical_explode": "Акустический Взрыв",
       "item.power.sun_helmet": "Шлем солнца",
       "itemGroup.tabmiddle_group": "Средние",
@@ -12539,7 +12540,6 @@
       "item.power.lightning_strike": "Удар Молнии",
       "block.power.cluster_block": "Блок Кластера",
       "item.power.fistof_earth": "Земляной Кулак",
-      "item.power.cosmos_chestplate": "Космический нагрудник",
       "item.power.blood_chestplate": "Нагрудник крови",
       "item.power.sun_axe": "Солнечная Секира",
       "item.power.sun_boots": "Шлем солнца",
@@ -12553,8 +12553,8 @@
       "item.power.sun_leggings": "Штаны солнца",
       "item.power.rain_bow": "Дождевой Лук",
       "item.power.wind_leggings": "Воздушные Штаны",
-      "effect.power.cosmos_master": "Мастер Космоса",
       "item.power.amber_chestplate": "Amber Chestplate",
+      "effect.power.recharge_space_stone": "Перезарядка",
       "item.power.blood_helmet": "Шлем крови",
       "item.power.light_chestplate": "Нагрудник света",
       "item.power.light_stone": "Камень Света",
@@ -12591,8 +12591,8 @@
       "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
-      "block.power.detonator_tnt": "Detonator TNT",
       "item.power.cutter_sword": "Cutter Sword",
+      "block.power.detonator_tnt": "Detonator TNT",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.earth_battery": "Battery",
       "item.power.lightning_helmet": "Lightning Helmet",
@@ -12600,8 +12600,8 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
-      "item.power.technology_chestplate": "Technology Chestplate",
       "effect.power.recharge_energy_stone": "Recharge",
+      "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.lava_hammer": "Lava Hammer",
       "advancements.mighty_master.title": "Mighty Master",
@@ -12612,9 +12612,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Tamer",
       "effect.power.recharge_earth_stone": "Recharge",
-      "item.power.time_reversed": "Time Reversed",
       "effect.power.ice_master": "Master of Ice",
-      "item.power.cosmos_leggings": "Cosmos Leggings",
+      "item.power.time_reversed": "Time Reversed",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
@@ -12623,13 +12622,14 @@
       "item.power.destruction_chestplate": "Destruction Chestplate",
       "item.power.explode_chestplate": "Explode Chestplate",
       "item.power.lava_ball": "Lava Ball",
+      "item.power.space_leggings": "Space Leggings",
       "item.power.ocean_sword": "Ocean Sword",
       "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.gravity_stone": "Gravity Stone",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "item.power.moon": "Moon Portal Igniter",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.greenery_master": "Master of Greenery",
       "effect.power.recharge_animals_stone": "Recharge",
@@ -12640,8 +12640,8 @@
       "item.power.water_flow": "Water Flow",
       "item.power.animals_stone": "Animals Stone",
       "item.power.redstone_bundle": "Redstone Bundle",
-      "item.power.light_battery": "Battery",
       "item.power.iron_shield": "Iron Shield",
+      "item.power.light_battery": "Battery",
       "effect.power.tornado_master": "Master of Tornado",
       "itemGroup.tabadditional_group": "Additional Group",
       "item.power.bo_staff": "Bo Staff",
@@ -12653,10 +12653,8 @@
       "item.power.shadow_helmet": "Shadow Helmet",
       "item.power.crystal_leggings": "Crystal Leggings",
       "item.power.crystal_dagger": "Crystal Dagger",
-      "item.power.cosmos_stone": "Space Stone",
       "item.power.lava_leggings": "Lava Leggings",
       "item.power.ice_sharp": "Ice Sharp",
-      "item.power.cosmos_boots": "Cosmos Boots",
       "item.power.sun_regeneration": "Sun Regeneration",
       "effect.power.recharge_lightning_stone": "Recharge",
       "item.power.fertilizer": "Fertilizer",
@@ -12664,8 +12662,8 @@
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
       "item.power.rain_boots": "Rain Boots",
-      "item.power.ice_spear": "Ice Spear",
       "item.power.portal_blast": "Portal Blaster",
+      "item.power.ice_spear": "Ice Spear",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "block.power.vacuum_web_block": "Vacuum Web Block",
@@ -12682,6 +12680,7 @@
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Blood Reaper",
+      "item.power.space_stone": "Space Stone",
       "item.power.teleportation_stone": "Teleportation Stone",
       "item.power.lava_boots": "Lava Boots",
       "gamerule.gettingStonesWhenEnteringTheGame": "Getting stones when entering the game",
@@ -12695,31 +12694,32 @@
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
-      "item.power.tp_on_moon": "Tp On Moon",
       "effect.power.creation_master": "Master of Creation",
+      "item.power.tp_on_moon": "Tp On Moon",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ice Shield",
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.light_leggings": "Light Leggings",
       "item.power.empty_battery": "Battery",
+      "item.power.space_helmet": "Space Helmet",
       "item.power.time_dilation": "Time Dilation",
       "advancements.super_charge.title": "Super Charge!",
       "item.power.glow_spawn_egg": "Glow Spawn Egg",
       "item.power.sound_barrier": "Sound Barrier",
       "item.power.blood_leggings": "Blood Leggings",
-      "item.power.black_heart": "Black Heart",
       "item.power.fire_leggings": "Fire Leggings",
+      "item.power.black_heart": "Black Heart",
       "block.power.black_hole_block": "Black Hole Block",
       "item.power.checkpoint": "Checkpoint",
       "item.power.spawn": "Spawn",
       "effect.power.water_master": "Master of Water",
       "item.power.light_boots": "Light Boots",
-      "effect.power.recharge_explosion_stone": "Recharge",
       "item.power.smoke_stone": "Smoke Stone",
+      "effect.power.recharge_explosion_stone": "Recharge",
       "item.power.earth_stone": "Earth Stone",
       "item.power.rain_battery": "Battery",
-      "item.power.fire_boots": "Fire Boots",
       "effect.power.air_master": "Master of the Air",
+      "item.power.fire_boots": "Fire Boots",
       "item.power.crystal_battery": "Battery",
       "item.power.shadow_leggings": "Shadow Leggings",
       "item.power.tornado_entity_spawn_egg": "Tornado Spawn Egg",
@@ -12741,14 +12741,13 @@
       "item.power.creation_chestplate": "Creation Chestplate",
       "item.power.light_sword": "Light Sword",
       "item.power.technobarrier": "Technobarrier",
-      "advancements.super_charge.descr": "Create the first battery",
       "entity.power.tornado_entity": "Tornado",
+      "advancements.super_charge.descr": "Create the first battery",
       "item.power.ice_stone": "Ice Stone",
       "item.power.shadow_sword": "Shadow Sword",
       "item.power.wind_boots": "Air Boots",
       "item.power.rain_helmet": "Rain Helmet",
       "item.power.animals_leggings": "Animals Leggings",
-      "item.power.cosmos_helmet": "Cosmos Helmet",
       "item.power.air_battery": "Battery",
       "item.power.rain_knife": "Rain Knife",
       "item.power.iron_golem_create": "Iron Golem Create",
@@ -12791,7 +12790,6 @@
       "item.power.teleportation_helmet": "Teleportation Helmet",
       "item.power.sound_emitate": "Sound Emitate",
       "effect.power.vacuum_master": "Master of Vacuum",
-      "effect.power.recharge_cosmos_stone": "Recharge",
       "item.power.golden_crossbow": "Golden Crossbow",
       "item.power.lightning_leggings": "Lightning Leggings",
       "item.power.water_katana": "Water Katana",
@@ -12823,7 +12821,6 @@
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.explosion_battery": "Battery",
       "item.power.tornado_stone": "Tornado Stone",
-      "item.power.cosmos_battery": "Battery",
       "itemGroup.tabbatteries": "Batteries",
       "item.power.vacuum_boots": "Vacuum Boots",
       "item.power.water_battery": "Battery",
@@ -12840,6 +12837,7 @@
       "item.power.energy_battery": "Battery",
       "item.power.vacuum_battery": "Battery",
       "item.power.creation_boots": "Creation Boots",
+      "item.power.space_chestplate": "Space Chestplate",
       "item.power.shadow_spawn_egg": "Shadow Spawn Egg",
       "item.power.crystal_helmet": "Crystal Helmet",
       "item.power.wind_helmet": "Air Helmet",
@@ -12888,6 +12886,7 @@
       "effect.power.sun_master": "Master of Sun",
       "item.power.time_helmet": "Time Helmet",
       "item.power.random_item": "Random Item",
+      "effect.power.space_master": "Master of Space",
       "biome.power.venus_desert": "Venus Desert",
       "item.power.plague_stone": "Plague Stone",
       "itemGroup.tabbasic_group": "Basic Group",
@@ -12925,11 +12924,13 @@
       "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
       "block.power.orange_portal": "Orange Portal",
+      "item.power.space_battery": "Battery",
       "item.power.sun_explode": "Sun Explode",
       "item.power.vacuum_sword": "Vacuum Sword",
       "item.power.fire_sword": "Fire Sword",
       "item.power.vacuum_chestplate": "Vacuum Chestplate",
       "item.power.water_boots": "Water Boots",
+      "item.power.space_boots": "Space Boots",
       "item.power.acustical_explode": "Acustical Explode",
       "item.power.sun_helmet": "Sun Helmet",
       "itemGroup.tabmiddle_group": "Middle Group",
@@ -12954,7 +12955,6 @@
       "item.power.lightning_strike": "Lightning Strike",
       "block.power.cluster_block": "Cluster Block",
       "item.power.fistof_earth": "Fist of Earth",
-      "item.power.cosmos_chestplate": "Cosmos Chestplate",
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.sun_axe": "Sun Axe",
       "item.power.sun_boots": "Sun Boots",
@@ -12968,8 +12968,8 @@
       "item.power.sun_leggings": "Sun Leggings",
       "item.power.rain_bow": "Rain Bow",
       "item.power.wind_leggings": "Air Leggings",
-      "effect.power.cosmos_master": "Master of Space",
       "item.power.amber_chestplate": "Amber Chestplate",
+      "effect.power.recharge_space_stone": "Recharge",
       "item.power.blood_helmet": "Blood Helmet",
       "item.power.light_chestplate": "Light Chestplate",
       "item.power.light_stone": "Light Stone",
@@ -13099,7 +13099,7 @@
         "children": []
       },
       {
-        "name": "Cosmos",
+        "name": "Space",
         "children": []
       },
       {

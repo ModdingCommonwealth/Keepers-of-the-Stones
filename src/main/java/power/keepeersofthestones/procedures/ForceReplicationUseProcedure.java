@@ -98,9 +98,9 @@ public class ForceReplicationUseProcedure {
 			if (sourceentity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.MOON_MASTER.get(), 12000, 0, (false), (false)));
 		}
-		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.COSMOS_MASTER.get()) : false) {
+		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.SPACE_MASTER.get()) : false) {
 			if (sourceentity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.COSMOS_MASTER.get(), 12000, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(PowerModMobEffects.SPACE_MASTER.get(), 12000, 0, (false), (false)));
 		}
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.BLOOD_MASTER.get()) : false) {
 			if (sourceentity instanceof LivingEntity _entity)

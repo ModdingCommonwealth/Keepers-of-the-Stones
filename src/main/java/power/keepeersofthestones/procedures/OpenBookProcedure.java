@@ -1,12 +1,13 @@
 package power.keepeersofthestones.procedures;
 
+import power.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
 import power.keepeersofthestones.world.inventory.EBWaterMenu;
 import power.keepeersofthestones.world.inventory.EBVacuumMenu;
 import power.keepeersofthestones.world.inventory.EBTornadoMenu;
 import power.keepeersofthestones.world.inventory.EBTimeMenu;
 import power.keepeersofthestones.world.inventory.EBTeleportationMenu;
-import power.keepeersofthestones.world.inventory.EBTechnologyMenu;
 import power.keepeersofthestones.world.inventory.EBSunMenu;
+import power.keepeersofthestones.world.inventory.EBSpaceMenu;
 import power.keepeersofthestones.world.inventory.EBSoundMenu;
 import power.keepeersofthestones.world.inventory.EBShadowMenu;
 import power.keepeersofthestones.world.inventory.EBRainMenu;
@@ -25,7 +26,6 @@ import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBDestructionMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
 import power.keepeersofthestones.world.inventory.EBCreationMenu;
-import power.keepeersofthestones.world.inventory.EBCosmosMenu;
 import power.keepeersofthestones.world.inventory.EBBloodMenu;
 import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
@@ -460,7 +460,7 @@ public class OpenBookProcedure {
 			}
 		}
 		if (entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.COSMOS_STONE.get()))
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SPACE_STONE.get()))
 				: false) {
 			{
 				if (entity instanceof ServerPlayer _ent) {
@@ -468,12 +468,12 @@ public class OpenBookProcedure {
 					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return new TextComponent("EBCosmos");
+							return new TextComponent("EBSpace");
 						}
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new EBCosmosMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new EBSpaceMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
@@ -566,12 +566,12 @@ public class OpenBookProcedure {
 					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return new TextComponent("EBTechnology");
+							return new TextComponent("SoundEmitateChoice");
 						}
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new EBTechnologyMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new SoundEmitateChoiceMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}

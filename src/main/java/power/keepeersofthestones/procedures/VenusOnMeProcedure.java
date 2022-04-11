@@ -85,7 +85,7 @@ public class VenusOnMeProcedure {
 
 				private void run() {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
+							.orElse(new PowerModVariables.PlayerVariables())).space) {
 						if (!(entity instanceof Player _playerHasItem
 								? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TP_ON_VENUS.get()))
 								: false)) {

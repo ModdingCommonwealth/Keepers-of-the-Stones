@@ -18,7 +18,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-public class CosmosMasterEffectEndProcedure {
+public class SpaceMasterEffectEndProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -35,7 +35,7 @@ public class CosmosMasterEffectEndProcedure {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PowerModVariables.PlayerVariables())).battery) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PowerModItems.COSMOS_STONE.get());
+					ItemStack _setstack = new ItemStack(PowerModItems.SPACE_STONE.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -66,32 +66,32 @@ public class CosmosMasterEffectEndProcedure {
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_HELMET.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_HELMET.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_CHESTPLATE.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_CHESTPLATE.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_LEGGINGS.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_LEGGINGS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.COSMOS_BOOTS.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_BOOTS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).amber) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PowerModVariables.PlayerVariables())).battery) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_COSMOS_STONE.get(), 6000, 0, (false), (false)));
+					_entity.addEffect(new MobEffectInstance(PowerModMobEffects.RECHARGE_SPACE_STONE.get(), 6000, 0, (false), (false)));
 			}
 		}
 		{
 			boolean _setval = false;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cosmos = _setval;
+				capability.space = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

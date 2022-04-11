@@ -1,7 +1,7 @@
 
 package power.keepeersofthestones.client.gui;
 
-import power.keepeersofthestones.world.inventory.EBCosmosMenu;
+import power.keepeersofthestones.world.inventory.EBSpaceMenu;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -14,12 +14,12 @@ import net.minecraft.client.Minecraft;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class EBCosmosScreen extends AbstractContainerScreen<EBCosmosMenu> {
+public class EBSpaceScreen extends AbstractContainerScreen<EBSpaceMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public EBCosmosScreen(EBCosmosMenu container, Inventory inventory, Component text) {
+	public EBSpaceScreen(EBSpaceMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -49,10 +49,10 @@ public class EBCosmosScreen extends AbstractContainerScreen<EBCosmosMenu> {
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/space_stone.png"));
 		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/cosmos_master.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/space_master.png"));
 		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/cosmos_element.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/space_element.png"));
 		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 53, 128, 53, 128);
 
 		RenderSystem.disableBlend();

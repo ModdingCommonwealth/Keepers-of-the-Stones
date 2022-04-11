@@ -102,7 +102,7 @@ public class PowerModVariables {
 			clone.sun = original.sun;
 			clone.creation = original.creation;
 			clone.destruction = original.destruction;
-			clone.cosmos = original.cosmos;
+			clone.space = original.space;
 			clone.selected = original.selected;
 			clone.blood = original.blood;
 			clone.technology = original.technology;
@@ -175,7 +175,7 @@ public class PowerModVariables {
 		public boolean moon_stone = false;
 		public boolean creation_stone = false;
 		public boolean destruction_stone = false;
-		public boolean cosmos_stone = false;
+		public boolean space_stone = false;
 		public boolean blood_stone = false;
 		public boolean time_stone = false;
 
@@ -209,7 +209,7 @@ public class PowerModVariables {
 			moon_stone = nbt.getBoolean("moon_stone");
 			creation_stone = nbt.getBoolean("creation_stone");
 			destruction_stone = nbt.getBoolean("destruction_stone");
-			cosmos_stone = nbt.getBoolean("cosmos_stone");
+			space_stone = nbt.getBoolean("space_stone");
 			blood_stone = nbt.getBoolean("blood_stone");
 			time_stone = nbt.getBoolean("time_stone");
 		}
@@ -239,7 +239,7 @@ public class PowerModVariables {
 			nbt.putBoolean("moon_stone", moon_stone);
 			nbt.putBoolean("creation_stone", creation_stone);
 			nbt.putBoolean("destruction_stone", destruction_stone);
-			nbt.putBoolean("cosmos_stone", cosmos_stone);
+			nbt.putBoolean("space_stone", space_stone);
 			nbt.putBoolean("blood_stone", blood_stone);
 			nbt.putBoolean("time_stone", time_stone);
 			return nbt;
@@ -425,7 +425,7 @@ public class PowerModVariables {
 		public boolean sun = false;
 		public boolean creation = false;
 		public boolean destruction = false;
-		public boolean cosmos = false;
+		public boolean space = false;
 		public boolean selected = false;
 		public boolean blood = false;
 		public boolean technology = false;
@@ -475,7 +475,7 @@ public class PowerModVariables {
 			nbt.putBoolean("sun", sun);
 			nbt.putBoolean("creation", creation);
 			nbt.putBoolean("destruction", destruction);
-			nbt.putBoolean("cosmos", cosmos);
+			nbt.putBoolean("space", space);
 			nbt.putBoolean("selected", selected);
 			nbt.putBoolean("blood", blood);
 			nbt.putBoolean("technology", technology);
@@ -522,7 +522,7 @@ public class PowerModVariables {
 			sun = nbt.getBoolean("sun");
 			creation = nbt.getBoolean("creation");
 			destruction = nbt.getBoolean("destruction");
-			cosmos = nbt.getBoolean("cosmos");
+			space = nbt.getBoolean("space");
 			selected = nbt.getBoolean("selected");
 			blood = nbt.getBoolean("blood");
 			technology = nbt.getBoolean("technology");
@@ -589,7 +589,7 @@ public class PowerModVariables {
 					variables.sun = message.data.sun;
 					variables.creation = message.data.creation;
 					variables.destruction = message.data.destruction;
-					variables.cosmos = message.data.cosmos;
+					variables.space = message.data.space;
 					variables.selected = message.data.selected;
 					variables.blood = message.data.blood;
 					variables.technology = message.data.technology;

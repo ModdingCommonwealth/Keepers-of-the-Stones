@@ -72,9 +72,9 @@
       {
         "type": "image",
         "data": {
-          "image": "cosmos_master.png",
+          "image": "space_master.png",
           "use1Xscale": false,
-          "name": "cosmos_master.png",
+          "name": "space_master.png",
           "x": 307,
           "y": 11
         }
@@ -82,9 +82,9 @@
       {
         "type": "image",
         "data": {
-          "image": "cosmos_element.png",
+          "image": "space_element.png",
           "use1Xscale": true,
-          "name": "cosmos_element.png",
+          "name": "space_element.png",
           "x": 285,
           "y": 35
         }

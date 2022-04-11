@@ -74,9 +74,6 @@
         "value": "CUSTOM:DestructionStone"
       },
       {
-        "value": "CUSTOM:CosmosStone"
-      },
-      {
         "value": "CUSTOM:BloodStone"
       },
       {
@@ -123,6 +120,9 @@
       },
       {
         "value": "CUSTOM:MushroomsStone"
+      },
+      {
+        "value": "CUSTOM:SpaceStone"
       }
     ],
     "blocks": [],

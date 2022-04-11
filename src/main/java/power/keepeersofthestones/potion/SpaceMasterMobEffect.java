@@ -1,39 +1,39 @@
 
 package power.keepeersofthestones.potion;
 
-import power.keepeersofthestones.procedures.CosmosMasterEffectsProcedure;
-import power.keepeersofthestones.procedures.CosmosMasterEffectStartProcedure;
-import power.keepeersofthestones.procedures.CosmosMasterEffectEndProcedure;
+import power.keepeersofthestones.procedures.SpaceMasterEffectsProcedure;
+import power.keepeersofthestones.procedures.SpaceMasterEffectStartProcedure;
+import power.keepeersofthestones.procedures.SpaceMasterEffectEndProcedure;
 
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-public class CosmosMasterMobEffect extends MobEffect {
-	public CosmosMasterMobEffect() {
+public class SpaceMasterMobEffect extends MobEffect {
+	public SpaceMasterMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -13434829);
 	}
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.power.cosmos_master";
+		return "effect.power.space_master";
 	}
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		CosmosMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SpaceMasterEffectStartProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		CosmosMasterEffectsProcedure.execute(entity);
+		SpaceMasterEffectsProcedure.execute(entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		CosmosMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		SpaceMasterEffectEndProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 
 	@Override

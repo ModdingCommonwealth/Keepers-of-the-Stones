@@ -3,36 +3,34 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "battery",
+    "texture": "space_stone",
     "customModelName": "Normal",
-    "name": "Battery",
+    "name": "Space Stone",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Batteries"
+      "value": "CUSTOM:GreatGroup"
     },
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 0.0,
-    "damageCount": 0,
+    "damageCount": 10,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "§0Space"
-    ],
+    "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "CosmosBatteryUse"
+      "name": "SpaceStoneUse"
     },
     "hasDispenseBehavior": false
   }

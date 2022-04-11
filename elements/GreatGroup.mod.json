@@ -4,7 +4,7 @@
   "definition": {
     "name": "Great Group",
     "icon": {
-      "value": "CUSTOM:CosmosStone"
+      "value": "CUSTOM:SpaceStone"
     },
     "showSearch": false
   }
