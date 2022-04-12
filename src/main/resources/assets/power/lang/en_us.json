@@ -4,5 +4,7 @@
   "effect.power.fire_master": "Master of Fire",
   "item.power.magic_fireball": "Magic Fireball",
   "itemGroup.power.basicstones": "Basic Stones",
-  "item.power.burn": "Burn"
+  "item.power.burn": "Burn",
+  "key.resetstone": "Reset stone",
+  "key.category.kos": "Keepers of the Stones"
 }
