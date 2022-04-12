@@ -1,7 +1,8 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.network.PowerModVariables;
+import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.gui.components.EditBox;
@@ -13,45 +14,61 @@ public class PointTPProcedure {
 		if (entity == null || guistate == null)
 			return;
 		{
-			double _setval = entity.getPersistentData()
-					.getDouble((guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : "text:tpX"));
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.tpX = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = entity.getPersistentData()
-					.getDouble((guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : "text:tpY"));
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.tpY = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
-			double _setval = entity.getPersistentData()
-					.getDouble((guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : "text:tpZ"));
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.tpZ = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		{
 			Entity _ent = entity;
-			_ent.teleportTo(
-					((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).tpX),
-					((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).tpY),
-					((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).tpZ));
+			_ent.teleportTo(new Object() {
+				double convert(String s) {
+					try {
+						return Double.parseDouble(s.trim());
+					} catch (Exception e) {
+					}
+					return 0;
+				}
+			}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : "text:tpX"), new Object() {
+				double convert(String s) {
+					try {
+						return Double.parseDouble(s.trim());
+					} catch (Exception e) {
+					}
+					return 0;
+				}
+			}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : "text:tpY"), new Object() {
+				double convert(String s) {
+					try {
+						return Double.parseDouble(s.trim());
+					} catch (Exception e) {
+					}
+					return 0;
+				}
+			}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : "text:tpZ"));
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(
-						((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new PowerModVariables.PlayerVariables())).tpX),
-						((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new PowerModVariables.PlayerVariables())).tpY),
-						((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new PowerModVariables.PlayerVariables())).tpZ),
-						_ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : "text:tpX"), new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : "text:tpY"), new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : "text:tpZ"), _ent.getYRot(),
+						_ent.getXRot());
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }
