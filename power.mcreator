@@ -11856,6 +11856,32 @@
         ]
       },
       "path": "~/BlueFlame"
+    },
+    {
+      "name": "BlueFlameBattery",
+      "type": "item",
+      "sortid": 721,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_flame_battery",
+      "path": "~/ElementalBattery"
+    },
+    {
+      "name": "BlueFlameBatteryUse",
+      "type": "procedure",
+      "sortid": 722,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_flame_battery_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ElementalBattery"
     }
   ],
   "variable_elements": [
@@ -12409,6 +12435,7 @@
       "item.power.cutter_sword": "Куттер-Меч",
       "block.power.detonator_tnt": "Детонатор",
       "effect.power.recharge_moon_stone": "Перезарядка",
+      "item.power.blue_flame_battery": "Battery",
       "item.power.earth_battery": "Батарея",
       "advancements.absolute_power.descr": "Скопируйте силу любого элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
@@ -12835,6 +12862,7 @@
       "block.power.detonator_tnt": "Detonator TNT",
       "item.power.cutter_sword": "Cutter Sword",
       "effect.power.recharge_moon_stone": "Recharge",
+      "item.power.blue_flame_battery": "Battery",
       "item.power.earth_battery": "Battery",
       "advancements.absolute_power.descr": "Copy the power of any element",
       "item.power.lightning_helmet": "Lightning Helmet",
