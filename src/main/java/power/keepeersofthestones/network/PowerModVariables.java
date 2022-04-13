@@ -111,7 +111,6 @@ public class PowerModVariables {
 			clone.spawny = original.spawny;
 			clone.spawnz = original.spawnz;
 			clone.battery = original.battery;
-			clone.power_level = original.power_level;
 			clone.teleportation = original.teleportation;
 			clone.explosion = original.explosion;
 			clone.amber = original.amber;
@@ -436,7 +435,6 @@ public class PowerModVariables {
 		public double spawny = 75.0;
 		public double spawnz = 0.0;
 		public boolean battery = false;
-		public double power_level = 0;
 		public boolean recharge_spell_sun = false;
 		public boolean recharge_spell_moon = false;
 		public boolean recharge_spell_blood = false;
@@ -488,7 +486,6 @@ public class PowerModVariables {
 			nbt.putDouble("spawny", spawny);
 			nbt.putDouble("spawnz", spawnz);
 			nbt.putBoolean("battery", battery);
-			nbt.putDouble("power_level", power_level);
 			nbt.putBoolean("recharge_spell_sun", recharge_spell_sun);
 			nbt.putBoolean("recharge_spell_moon", recharge_spell_moon);
 			nbt.putBoolean("recharge_spell_blood", recharge_spell_blood);
@@ -537,7 +534,6 @@ public class PowerModVariables {
 			spawny = nbt.getDouble("spawny");
 			spawnz = nbt.getDouble("spawnz");
 			battery = nbt.getBoolean("battery");
-			power_level = nbt.getDouble("power_level");
 			recharge_spell_sun = nbt.getBoolean("recharge_spell_sun");
 			recharge_spell_moon = nbt.getBoolean("recharge_spell_moon");
 			recharge_spell_blood = nbt.getBoolean("recharge_spell_blood");
@@ -606,7 +602,6 @@ public class PowerModVariables {
 					variables.spawny = message.data.spawny;
 					variables.spawnz = message.data.spawnz;
 					variables.battery = message.data.battery;
-					variables.power_level = message.data.power_level;
 					variables.recharge_spell_sun = message.data.recharge_spell_sun;
 					variables.recharge_spell_moon = message.data.recharge_spell_moon;
 					variables.recharge_spell_blood = message.data.recharge_spell_blood;

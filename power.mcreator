@@ -11632,32 +11632,6 @@
       "path": "~/Time"
     },
     {
-      "name": "Magnetism",
-      "type": "potioneffect",
-      "sortid": 705,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magnetism",
-      "path": "~/Magnet"
-    },
-    {
-      "name": "MagnetismTick",
-      "type": "procedure",
-      "sortid": 706,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magnetism_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Magnet"
-    },
-    {
       "name": "Point",
       "type": "item",
       "sortid": 707,
@@ -12128,12 +12102,6 @@
       "value": "false"
     },
     {
-      "name": "power_level",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
       "name": "recharge_spell_sun",
       "type": "logic",
       "scope": "player_lifetime",
@@ -12396,7 +12364,6 @@
       "item.power.tornado_battery": "Батарея",
       "item.power.crystal_boots": "Кристаллические Сапоги",
       "item.power.tornado_chestplate": "Нагрудник Торнадо",
-      "effect.power.magnetism": "Magnetism",
       "item.power.vacuum_leggings": "Ваакумные штаны",
       "item.power.fire_battery": "Батарея",
       "item.power.blood_reaper": "Кровавый Жнец",
@@ -12821,7 +12788,6 @@
       "item.power.tornado_battery": "Battery",
       "item.power.crystal_boots": "Crystal Boots",
       "item.power.tornado_chestplate": "Tornado Chestplate",
-      "effect.power.magnetism": "Magnetism",
       "item.power.vacuum_leggings": "Vacuum Leggings",
       "item.power.fire_battery": "Battery",
       "item.power.blood_reaper": "Blood Reaper",
