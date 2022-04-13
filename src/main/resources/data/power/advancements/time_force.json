@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:time_reversed"
+    },
+    "title": {
+      "translate": "advancements.time_force.title"
+    },
+    "description": {
+      "translate": "advancements.time_force.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "time_force": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:amber_stone"
+    },
+    "title": {
+      "translate": "advancements.absolute_power.title"
+    },
+    "description": {
+      "translate": "advancements.absolute_power.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "absolute_power": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

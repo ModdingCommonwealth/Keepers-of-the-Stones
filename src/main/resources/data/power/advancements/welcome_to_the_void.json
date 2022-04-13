@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:vacuum_web"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_the_void.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_the_void.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "welcome_to_the_void": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

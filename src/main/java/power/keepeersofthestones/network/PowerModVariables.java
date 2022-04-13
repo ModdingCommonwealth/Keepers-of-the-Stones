@@ -124,7 +124,6 @@ public class PowerModVariables {
 				clone.recharge_spell_moon = original.recharge_spell_moon;
 				clone.recharge_spell_blood = original.recharge_spell_blood;
 				clone.recharge_spell_energy = original.recharge_spell_energy;
-				clone.copy = original.copy;
 			}
 		}
 
@@ -445,7 +444,6 @@ public class PowerModVariables {
 		public boolean teleportation = false;
 		public boolean explosion = false;
 		public boolean amber = false;
-		public boolean copy = false;
 		public double tpX = 0;
 		public double tpZ = 0;
 		public double tpY = 0;
@@ -498,7 +496,6 @@ public class PowerModVariables {
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("explosion", explosion);
 			nbt.putBoolean("amber", amber);
-			nbt.putBoolean("copy", copy);
 			nbt.putDouble("tpX", tpX);
 			nbt.putDouble("tpZ", tpZ);
 			nbt.putDouble("tpY", tpY);
@@ -548,7 +545,6 @@ public class PowerModVariables {
 			teleportation = nbt.getBoolean("teleportation");
 			explosion = nbt.getBoolean("explosion");
 			amber = nbt.getBoolean("amber");
-			copy = nbt.getBoolean("copy");
 			tpX = nbt.getDouble("tpX");
 			tpZ = nbt.getDouble("tpZ");
 			tpY = nbt.getDouble("tpY");
@@ -618,7 +614,6 @@ public class PowerModVariables {
 					variables.teleportation = message.data.teleportation;
 					variables.explosion = message.data.explosion;
 					variables.amber = message.data.amber;
-					variables.copy = message.data.copy;
 					variables.tpX = message.data.tpX;
 					variables.tpZ = message.data.tpZ;
 					variables.tpY = message.data.tpY;

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:vampirism"
+    },
+    "title": {
+      "translate": "advancements.bloodlust.title"
+    },
+    "description": {
+      "translate": "advancements.bloodlust.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bloodlust": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}
