@@ -6,5 +6,6 @@
   "itemGroup.power.basicstones": "Basic Stones",
   "item.power.burn": "Burn",
   "key.resetstone": "Reset stone",
-  "key.category.kos": "Keepers of the Stones"
+  "key.category.kos": "Keepers of the Stones",
+  "key.fly": "Flying(not for all elements)"
 }
