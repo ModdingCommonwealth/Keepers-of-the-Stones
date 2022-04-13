@@ -117,6 +117,7 @@ public class PowerModVariables {
 			clone.tpX = original.tpX;
 			clone.tpZ = original.tpZ;
 			clone.tpY = original.tpY;
+			clone.blue_flame = original.blue_flame;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -277,6 +278,7 @@ public class PowerModVariables {
 		public double oposz = 0;
 		public boolean explosion_stone = false;
 		public boolean amber_stone = false;
+		public boolean blue_flame_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -297,6 +299,7 @@ public class PowerModVariables {
 			oposz = nbt.getDouble("oposz");
 			explosion_stone = nbt.getBoolean("explosion_stone");
 			amber_stone = nbt.getBoolean("amber_stone");
+			blue_flame_stone = nbt.getBoolean("blue_flame_stone");
 		}
 
 		@Override
@@ -313,6 +316,7 @@ public class PowerModVariables {
 			nbt.putDouble("oposz", oposz);
 			nbt.putBoolean("explosion_stone", explosion_stone);
 			nbt.putBoolean("amber_stone", amber_stone);
+			nbt.putBoolean("blue_flame_stone", blue_flame_stone);
 			return nbt;
 		}
 
@@ -445,6 +449,7 @@ public class PowerModVariables {
 		public double tpX = 0;
 		public double tpZ = 0;
 		public double tpY = 0;
+		public boolean blue_flame = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -496,6 +501,7 @@ public class PowerModVariables {
 			nbt.putDouble("tpX", tpX);
 			nbt.putDouble("tpZ", tpZ);
 			nbt.putDouble("tpY", tpY);
+			nbt.putBoolean("blue_flame", blue_flame);
 			return nbt;
 		}
 
@@ -544,6 +550,7 @@ public class PowerModVariables {
 			tpX = nbt.getDouble("tpX");
 			tpZ = nbt.getDouble("tpZ");
 			tpY = nbt.getDouble("tpY");
+			blue_flame = nbt.getBoolean("blue_flame");
 		}
 	}
 
@@ -612,6 +619,7 @@ public class PowerModVariables {
 					variables.tpX = message.data.tpX;
 					variables.tpZ = message.data.tpZ;
 					variables.tpY = message.data.tpY;
+					variables.blue_flame = message.data.blue_flame;
 				}
 			});
 			context.setPacketHandled(true);
