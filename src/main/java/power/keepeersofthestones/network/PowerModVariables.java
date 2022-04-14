@@ -124,6 +124,7 @@ public class PowerModVariables {
 				clone.recharge_spell_moon = original.recharge_spell_moon;
 				clone.recharge_spell_blood = original.recharge_spell_blood;
 				clone.recharge_spell_energy = original.recharge_spell_energy;
+				clone.fog = original.fog;
 			}
 		}
 
@@ -453,6 +454,7 @@ public class PowerModVariables {
 		public double tpZ = 0;
 		public double tpY = 0;
 		public boolean blue_flame = false;
+		public boolean fog = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -505,6 +507,7 @@ public class PowerModVariables {
 			nbt.putDouble("tpZ", tpZ);
 			nbt.putDouble("tpY", tpY);
 			nbt.putBoolean("blue_flame", blue_flame);
+			nbt.putBoolean("fog", fog);
 			return nbt;
 		}
 
@@ -554,6 +557,7 @@ public class PowerModVariables {
 			tpZ = nbt.getDouble("tpZ");
 			tpY = nbt.getDouble("tpY");
 			blue_flame = nbt.getBoolean("blue_flame");
+			fog = nbt.getBoolean("fog");
 		}
 	}
 
@@ -623,6 +627,7 @@ public class PowerModVariables {
 					variables.tpZ = message.data.tpZ;
 					variables.tpY = message.data.tpY;
 					variables.blue_flame = message.data.blue_flame;
+					variables.fog = message.data.fog;
 				}
 			});
 			context.setPacketHandled(true);

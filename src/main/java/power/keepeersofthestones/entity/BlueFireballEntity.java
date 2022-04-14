@@ -1,6 +1,9 @@
 
 package power.keepeersofthestones.entity;
 
+import power.keepeersofthestones.procedures.BurnBlockProcedureProcedure;
+import power.keepeersofthestones.procedures.BlueFlameFireBallParticlesProcedure;
+import power.keepeersofthestones.procedures.BlueFlameBurnBlockProcedure;
 import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModEntities;
 
@@ -10,6 +13,8 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -63,8 +68,22 @@ public class BlueFireballEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		BlueFlameBurnBlockProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		BurnBlockProcedureProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(),
+				blockHitResult.getBlockPos().getZ());
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
+		BlueFlameFireBallParticlesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
@@ -76,7 +95,6 @@ public class BlueFireballEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
-		entityarrow.setSecondsOnFire(100);
 		world.addFreshEntity(entityarrow);
 		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1,
@@ -94,7 +112,6 @@ public class BlueFireballEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(12);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
-		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1,

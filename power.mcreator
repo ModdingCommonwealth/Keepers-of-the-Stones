@@ -11909,6 +11909,134 @@
         "ec": true
       },
       "path": "~/BlueFlame"
+    },
+    {
+      "name": "BlueFlameFireBallParticles",
+      "type": "procedure",
+      "sortid": 731,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_flame_fire_ball_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BlueFlame"
+    },
+    {
+      "name": "BlueFlameBurnBlock",
+      "type": "procedure",
+      "sortid": 732,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_flame_burn_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BlueFlame"
+    },
+    {
+      "name": "Fog",
+      "type": "potioneffect",
+      "sortid": 733,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog",
+      "path": "~/Mist"
+    },
+    {
+      "name": "FogOverlayOtobrazhatOvierlieiVIghrie",
+      "type": "procedure",
+      "sortid": 734,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_overlay_otobrazhat_ovierliei_v_ighrie",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mist"
+    },
+    {
+      "name": "FogStart",
+      "type": "procedure",
+      "sortid": 735,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mist"
+    },
+    {
+      "name": "FogEnd",
+      "type": "procedure",
+      "sortid": 736,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mist"
+    },
+    {
+      "name": "FogOverlay",
+      "type": "overlay",
+      "sortid": 734,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fog_overlay",
+      "path": "~/Mist"
     }
   ],
   "variable_elements": [
@@ -12415,6 +12543,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "fog",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -12544,6 +12678,7 @@
       "item.power.portal_blast": "Портальная Пушка",
       "effect.power.recharge_teleportation_stone": "Перезарядка",
       "subtitles.stone_activation": "Камень был активирован",
+      "effect.power.fog": "Fog",
       "block.power.vacuum_web_block": "Блок Вакуумной Сети",
       "item.power.earth_boots": "Земляные Ботинки",
       "item.power.water_helmet": "Водная Маска",
@@ -12985,6 +13120,7 @@
       "item.power.portal_blast": "Portal Blaster",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
+      "effect.power.fog": "Fog",
       "block.power.vacuum_web_block": "Vacuum Web Block",
       "item.power.earth_boots": "Earth Boots",
       "item.power.water_helmet": "Water Helmet",
