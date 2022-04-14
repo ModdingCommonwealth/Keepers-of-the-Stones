@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.welcome_to_the_void.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
