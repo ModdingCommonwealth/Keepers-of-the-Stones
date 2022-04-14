@@ -6912,15 +6912,6 @@
       "path": "~/ReceivingStones"
     },
     {
-      "name": "Resetmychoice",
-      "type": "command",
-      "sortid": 445,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "resetmychoice",
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "Animals",
       "type": "armor",
       "sortid": 446,
@@ -11882,6 +11873,15 @@
         ]
       },
       "path": "~/ElementalBattery"
+    },
+    {
+      "name": "Confstone",
+      "type": "command",
+      "sortid": 723,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confstone",
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -13506,5 +13506,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200115109
+  "mcreatorVersion": 202200115413
 }

@@ -1,11 +1,9 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "command",
   "definition": {
     "commandName": "detransform",
     "permissionLevel": "No requirement",
-    "onCommandExecuted": {
-      "name": "DetransformKeyPriNazhatiiKlavishi"
-    }
+    "argsxml": "<xml><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"old_command\"><field name=\"procedure\">DetransformKeyPriNazhatiiKlavishi</field></block></next></block></xml>"
   }
 }
