@@ -533,14 +533,14 @@
       {
         "type": "label",
         "data": {
-          "text": "To reset the stone, use the command /confstone (for op only)",
+          "text": "To reset the stone, use the command /confstone",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "To reset the stone, use the command /confstone (for op only)",
-          "x": 16,
-          "y": 192
+          "name": "To reset the stone, use the command /confstone",
+          "x": 33,
+          "y": 197
         }
       }
     ],
@@ -549,7 +549,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }
