@@ -11834,7 +11834,7 @@
       "type": "command",
       "sortid": 723,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "confstone",
       "path": "~/ReceivingStones"
     },
@@ -11855,7 +11855,7 @@
       "type": "command",
       "sortid": 725,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "planet",
       "path": "~/Commands"
     }
@@ -12357,6 +12357,12 @@
       "name": "blue_flame",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "cosmos_stone",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],

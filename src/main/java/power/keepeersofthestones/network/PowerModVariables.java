@@ -279,6 +279,7 @@ public class PowerModVariables {
 		public boolean explosion_stone = false;
 		public boolean amber_stone = false;
 		public boolean blue_flame_stone = false;
+		public boolean cosmos_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -300,6 +301,7 @@ public class PowerModVariables {
 			explosion_stone = nbt.getBoolean("explosion_stone");
 			amber_stone = nbt.getBoolean("amber_stone");
 			blue_flame_stone = nbt.getBoolean("blue_flame_stone");
+			cosmos_stone = nbt.getBoolean("cosmos_stone");
 		}
 
 		@Override
@@ -317,6 +319,7 @@ public class PowerModVariables {
 			nbt.putBoolean("explosion_stone", explosion_stone);
 			nbt.putBoolean("amber_stone", amber_stone);
 			nbt.putBoolean("blue_flame_stone", blue_flame_stone);
+			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			return nbt;
 		}
 
