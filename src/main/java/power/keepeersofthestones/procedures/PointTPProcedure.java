@@ -23,7 +23,7 @@ public class PointTPProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : "text:tpX"), new Object() {
+			}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : ""), new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -31,7 +31,7 @@ public class PointTPProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : "text:tpY"), new Object() {
+			}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : ""), new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -39,7 +39,7 @@ public class PointTPProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : "text:tpZ"));
+			}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : ""));
 			if (_ent instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.connection.teleport(new Object() {
 					double convert(String s) {
@@ -49,7 +49,7 @@ public class PointTPProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : "text:tpX"), new Object() {
+				}.convert(guistate.containsKey("text:tpX") ? ((EditBox) guistate.get("text:tpX")).getValue() : ""), new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -57,7 +57,7 @@ public class PointTPProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : "text:tpY"), new Object() {
+				}.convert(guistate.containsKey("text:tpY") ? ((EditBox) guistate.get("text:tpY")).getValue() : ""), new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -65,8 +65,7 @@ public class PointTPProcedure {
 						}
 						return 0;
 					}
-				}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : "text:tpZ"), _ent.getYRot(),
-						_ent.getXRot());
+				}.convert(guistate.containsKey("text:tpZ") ? ((EditBox) guistate.get("text:tpZ")).getValue() : ""), _ent.getYRot(), _ent.getXRot());
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();

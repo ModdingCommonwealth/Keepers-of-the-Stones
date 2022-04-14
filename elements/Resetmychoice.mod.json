@@ -1,11 +1,9 @@
 {
-  "_fv": 27,
+  "_fv": 28,
   "_type": "command",
   "definition": {
     "commandName": "resetmychoice",
     "permissionLevel": "No requirement",
-    "onCommandExecuted": {
-      "name": "ResetmychoiceProcedure"
-    }
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">reset</field><statement name=\"args\"><block type=\"old_command\"><field name=\"procedure\">ResetmychoiceProcedure</field></block></statement></block></next></block></xml>"
   }
 }
