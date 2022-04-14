@@ -1,0 +1,47 @@
+{
+  "_fv": 28,
+  "_type": "fluid",
+  "definition": {
+    "name": "Quicksilver",
+    "bucketName": "Quicksilver Bucket",
+    "textureStill": "quick_silver_flow",
+    "textureFlowing": "quick_silver_flow",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 150,
+    "levelDecrease": 8,
+    "slopeFindDistance": 16,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "LAND_LAVA"
+    },
+    "flowStrength": -1.5,
+    "luminosity": 0,
+    "density": 100000,
+    "viscosity": 100000,
+    "isGas": false,
+    "temperature": 100,
+    "type": "WATER",
+    "generateBucket": false,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 5000.0,
+    "luminance": 0,
+    "lightOpacity": 15,
+    "emissiveRendering": false,
+    "tickRate": 100,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "CLAY",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": []
+  }
+}
