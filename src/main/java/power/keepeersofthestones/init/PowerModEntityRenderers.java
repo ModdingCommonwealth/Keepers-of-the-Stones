@@ -57,5 +57,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.ICE_SPEAR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.GOLDEN_CROSSBOW.get(), GoldenCrossbowRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.DESTRUCTION_SPHERE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.BLUE_FIREBALL.get(), ThrownItemRenderer::new);
 	}
 }
