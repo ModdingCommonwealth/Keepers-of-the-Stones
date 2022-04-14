@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "power:empty_battery"
+      "item": "power:battery_charger"
     },
     "title": {
-      "translate": "advancements.super_charge.title"
+      "translate": "advancements.put_it_on_charge_overnight.title"
     },
     "description": {
-      "translate": "advancements.super_charge.descr"
+      "translate": "advancements.put_it_on_charge_overnight.descr"
     },
     "frame": "goal",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": true
   },
   "criteria": {
-    "super_charge": {
+    "put_it_on_charge_overnight": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "power:empty_battery"
+              "power:battery_charger"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,8 @@
       }
     }
   },
-  "parent": "power:put_it_on_charge_overnight"
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "power:mighty_master"
 }

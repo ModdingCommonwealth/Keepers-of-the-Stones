@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:energy_staff"
+    },
+    "title": {
+      "translate": "advancements.powerless.title"
+    },
+    "description": {
+      "translate": "advancements.powerless.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "powerless": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}
