@@ -30,7 +30,7 @@
     "bulletDamage": 8.0,
     "bulletKnockback": 2,
     "bulletParticles": false,
-    "bulletIgnitesFire": true,
+    "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:MagicFireball"
     },
@@ -41,6 +41,9 @@
     },
     "onBulletHitsEntity": {
       "name": "BurnProcedure"
+    },
+    "onBulletFlyingTick": {
+      "name": "MagicFireballParticles"
     }
   }
 }

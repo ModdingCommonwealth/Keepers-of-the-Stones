@@ -1,6 +1,7 @@
 
 package power.keepeersofthestones.entity;
 
+import power.keepeersofthestones.procedures.MagicFireballParticlesProcedure;
 import power.keepeersofthestones.procedures.BurnProcedureProcedure;
 import power.keepeersofthestones.init.PowerModItems;
 import power.keepeersofthestones.init.PowerModEntities;
@@ -80,6 +81,7 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
+		MagicFireballParticlesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
@@ -91,7 +93,6 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
-		entityarrow.setSecondsOnFire(100);
 		world.addFreshEntity(entityarrow);
 		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1,
@@ -109,7 +110,6 @@ public class MagicFireballEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(8);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(false);
-		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.PLAYERS, 1,
