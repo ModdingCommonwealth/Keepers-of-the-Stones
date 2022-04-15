@@ -36,9 +36,6 @@
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",
-    "onBulletHitsPlayer": {
-      "name": "BurnProcedure"
-    },
     "onBulletHitsEntity": {
       "name": "BurnProcedure"
     },
