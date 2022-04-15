@@ -22,7 +22,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class FogOverlayOverlay {
-	@SubscribeEvent(priority = EventPriority.NORMAL)
+	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void eventHandler(RenderGameOverlayEvent.Pre event) {
 		if (event.getType() == RenderGameOverlayEvent.ElementType.ALL) {
 			int w = event.getWindow().getGuiScaledWidth();
@@ -53,8 +53,7 @@ public class FogOverlayOverlay {
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (FogOverlayOtobrazhatOvierlieiVIghrieProcedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/fog_ovelay.png"));
-				Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -737, posY + -417, 0, 0, 960, 540, 960, 540);
-
+				Minecraft.getInstance().gui.blit(event.getMatrixStack(), 0, 0, 0, 0, w, h, w, h);
 			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();

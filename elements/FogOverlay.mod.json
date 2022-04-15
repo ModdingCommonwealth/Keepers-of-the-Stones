@@ -2,20 +2,9 @@
   "_fv": 28,
   "_type": "overlay",
   "definition": {
-    "priority": "NORMAL",
-    "components": [
-      {
-        "type": "image",
-        "data": {
-          "image": "fog_ovelay.png",
-          "use1Xscale": true,
-          "name": "fog_ovelay.png",
-          "x": -524,
-          "y": -297
-        }
-      }
-    ],
-    "baseTexture": "",
+    "priority": "HIGH",
+    "components": [],
+    "baseTexture": "fog_ovelay.png",
     "overlayTarget": "Ingame",
     "displayCondition": {
       "name": "FogOverlayOtobrazhatOvierlieiVIghrie"
