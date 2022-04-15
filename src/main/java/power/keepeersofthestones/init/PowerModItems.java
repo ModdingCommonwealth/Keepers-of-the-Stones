@@ -109,7 +109,9 @@ import power.keepeersofthestones.item.MetalStoneItem;
 import power.keepeersofthestones.item.MetalItem;
 import power.keepeersofthestones.item.MetalInvulnerabilityItem;
 import power.keepeersofthestones.item.MetalBatteryItem;
+import power.keepeersofthestones.item.MercuryStoneItem;
 import power.keepeersofthestones.item.MegawattItem;
+import power.keepeersofthestones.item.MagnetStoneItem;
 import power.keepeersofthestones.item.MagmaShieldItem;
 import power.keepeersofthestones.item.MagicFireballItem;
 import power.keepeersofthestones.item.MaceItem;
@@ -549,6 +551,8 @@ public class PowerModItems {
 	public static final RegistryObject<Item> BLUE_FLAME_CHESTPLATE = REGISTRY.register("blue_flame_chestplate", () -> new BlueFlameItem.Chestplate());
 	public static final RegistryObject<Item> BLUE_FLAME_LEGGINGS = REGISTRY.register("blue_flame_leggings", () -> new BlueFlameItem.Leggings());
 	public static final RegistryObject<Item> BLUE_FLAME_BOOTS = REGISTRY.register("blue_flame_boots", () -> new BlueFlameItem.Boots());
+	public static final RegistryObject<Item> MERCURY_STONE = REGISTRY.register("mercury_stone", () -> new MercuryStoneItem());
+	public static final RegistryObject<Item> MAGNET_STONE = REGISTRY.register("magnet_stone", () -> new MagnetStoneItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

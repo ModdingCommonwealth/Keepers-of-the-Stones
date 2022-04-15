@@ -12066,6 +12066,24 @@
         ]
       },
       "path": "~/Fire"
+    },
+    {
+      "name": "MercuryStone",
+      "type": "item",
+      "sortid": 738,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mercury_stone",
+      "path": "~/Mercury"
+    },
+    {
+      "name": "MagnetStone",
+      "type": "item",
+      "sortid": 739,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_stone",
+      "path": "~/Magnet"
     }
   ],
   "variable_elements": [
@@ -12681,6 +12699,7 @@
       "item.power.animals_stone": "Камень Животных",
       "advancements.put_it_on_charge_overnight.descr": "Создайте зарядник для батарей",
       "item.power.redstone_bundle": "Мешок С Редстоуном",
+      "item.power.mercury_stone": "Камень Ртути",
       "item.power.light_battery": "Батарея",
       "item.power.iron_shield": "Железный Щит",
       "effect.power.tornado_master": "Мастер Торнадо",
@@ -12744,6 +12763,7 @@
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.light_leggings": "Штаны света",
       "item.power.empty_battery": "Батарея",
+      "item.power.magnet_stone": "Камень Магнита",
       "item.power.space_helmet": "Космический шлем",
       "item.power.time_dilation": "Замедление Времени",
       "advancements.super_charge.title": "Супер Заряд!",
@@ -13123,6 +13143,7 @@
       "item.power.animals_stone": "Animals Stone",
       "advancements.put_it_on_charge_overnight.descr": "Create a charger for batteries",
       "item.power.redstone_bundle": "Redstone Bundle",
+      "item.power.mercury_stone": "Mercury Stone",
       "item.power.iron_shield": "Iron Shield",
       "item.power.light_battery": "Battery",
       "effect.power.tornado_master": "Master of Tornado",
@@ -13186,6 +13207,7 @@
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.light_leggings": "Light Leggings",
       "item.power.empty_battery": "Battery",
+      "item.power.magnet_stone": "Magnet Stone",
       "item.power.space_helmet": "Space Helmet",
       "item.power.time_dilation": "Time Dilation",
       "advancements.super_charge.title": "Super Charge!",
@@ -13714,7 +13736,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.0.9",
+    "version": "2.0.0.10",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
