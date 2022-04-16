@@ -12084,6 +12084,15 @@
       "locked_code": false,
       "registry_name": "magnet_stone",
       "path": "~/Magnet"
+    },
+    {
+      "name": "EBBlueFlame",
+      "type": "gui",
+      "sortid": 740,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eb_blue_flame",
+      "path": "~/ElementalBook"
     }
   ],
   "variable_elements": [
