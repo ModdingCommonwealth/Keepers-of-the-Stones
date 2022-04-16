@@ -9263,7 +9263,7 @@
       "effect.power.recharge_creation_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
       "effect.power.recharge_moon_stone": "Перезарядка",
-      "item.power.sound_emitate": "�?здать Звук",
+      "item.power.sound_emitate": "Издать Звук",
       "effect.acceleration_time_effect": "Acceleration Time",
       "effect.power.vacuum_master": "Мастер Пустоты",
       "effect.power.recharge_cosmos_stone": "Перезарядка",
@@ -9688,7 +9688,7 @@
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
       "effect.power.acceleration_time_effect": "Acceleration Time",
-      "item.power.destruction_chestplate": "Destruction Кираса",
+      "item.power.destruction_chestplate": "Destruction ������",
       "effect.power.lava_master": "Master of Lava",
       "effect.power.blood_master": "Master of Blood",
       "item.power.lava_ball": "Lava Ball",
@@ -9735,11 +9735,11 @@
       "item.power.energy_boots": "Energy Boots",
       "itemGroup.tabadditional_group": "Additional Group",
       "item.power.burn": "Burn",
-      "item.power.destruction_helmet": "Destruction Шлем",
+      "item.power.destruction_helmet": "Destruction ����",
       "effect.creation_master": "Master of Creation",
       "effect.power.recharge_destruction_stone": "Recharge",
       "item.power.sun_ray": "Sun Ray",
-      "item.power.destruction_leggings": "Destruction Поножи",
+      "item.power.destruction_leggings": "Destruction ������",
       "item.power.vampirism": "Vampirism",
       "effect.power.recharge_time_stone": "Recharge",
       "item.power.shield_of_earth": "Shield of the Earth",
@@ -9837,7 +9837,7 @@
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.metal_leggings": "Metal Leggings",
       "effect.energy_master": "Master of Energy",
-      "item.power.destruction_boots": "Destruction Ботинки",
+      "item.power.destruction_boots": "Destruction �������",
       "item.power.sound_helmet": "Sound Helmet",
       "item.power.metal_stone": "Metal Stone",
       "item.power.greenery_boots": "Greenery Boots",
@@ -10144,5 +10144,5 @@
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200112711
+  "mcreatorVersion": 202200115413
 }
