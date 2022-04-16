@@ -26,6 +26,7 @@ import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBDestructionMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
 import power.keepeersofthestones.world.inventory.EBCreationMenu;
+import power.keepeersofthestones.world.inventory.EBBlueFlameMenu;
 import power.keepeersofthestones.world.inventory.EBBloodMenu;
 import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
@@ -632,6 +633,26 @@ public class OpenBookProcedure {
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 							return new EBAmberMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.BLUE_FLAME_STONE.get()))
+				: false) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("EBBlueFlame");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new EBBlueFlameMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
