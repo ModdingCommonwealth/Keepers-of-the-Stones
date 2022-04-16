@@ -48,6 +48,6 @@ public class ConfstoneCommand {
 
 					DetransformKeyPriNazhatiiKlavishiProcedure.execute(entity);
 					return 0;
-				}))).then(Commands.literal("recover")));
+				}))));
 	}
 }
