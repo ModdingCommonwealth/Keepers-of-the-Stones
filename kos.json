@@ -1,8 +1,8 @@
 {
   "homepage": "no",
   "promos": {
-    "1.16.5-latest": "1.4.1",
-    "1.16.5-recommended": "1.4.1",
+    "1.16.5-latest": "1.4.5",
+    "1.16.5-recommended": "1.4.5",
     "1.17.1-latest": "1.4.1",
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
@@ -72,6 +72,15 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed the error net.minecraft.nbt.CompoundTag.m_128425_ String, int because int is null
 - [Bugfix] The Time Stone can now be re-selected
 - [Bugfix] Fixed the game rule of re-selecting a stone
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+ "1.4.5": "
+- Updated stone textures (from version 1.9.4)
+- [Bugfix] Fixed a bug with copying stones in the left hand
+- [Bugfix] Fixed a bug with getting stuck in the ground when teleporting to other planets
+- [Bugfix] Fixed a bug where an energy stone could take energy from players with an activated stone
+- [Bugfix] Fixed a recharge bug that remained with some stones after the player went to bed with an activated stone
+- [Bugfix] Fixed a bug with infinite levitation when calling a tornado
+- [Bugfix] Fixed translations into Russian
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   },
   "1.17.1": {
