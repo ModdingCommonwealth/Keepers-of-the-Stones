@@ -9,15 +9,29 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
+
+import java.util.Iterator;
 
 public class IceSharpFreezingProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
+		if (entity == null || sourceentity == null)
 			return;
+		if (sourceentity instanceof ServerPlayer _player) {
+			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("power:refreezing"));
+			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+			if (!_ap.isDone()) {
+				Iterator _iterator = _ap.getRemainingCriteria().iterator();
+				while (_iterator.hasNext())
+					_player.getAdvancements().award(_adv, (String) _iterator.next());
+			}
+		}
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, (false), (false)));
 		if (world instanceof ServerLevel _level)
