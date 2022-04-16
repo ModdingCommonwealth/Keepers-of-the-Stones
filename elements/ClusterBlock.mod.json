@@ -36,8 +36,8 @@
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": true,
-    "isWaterloggable": false,
+    "hasGravity": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "No creative tab entry"
     },
