@@ -9,17 +9,18 @@ import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.common.util.FakePlayerFactory;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.util.Direction;
 import net.minecraft.entity.Entity;
 import net.minecraft.command.Commands;
 import net.minecraft.command.CommandSource;
 
 import java.util.stream.Stream;
+import java.util.Objects;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 import java.util.AbstractMap;
 
-import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
@@ -29,28 +30,26 @@ public class DetransformCommand {
 	public static void registerCommands(RegisterCommandsEvent event) {
 		event.getDispatcher().register(LiteralArgumentBuilder.<CommandSource>literal("detransform")
 
-				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(DetransformCommand::execute))
-				.executes(DetransformCommand::execute));
-	}
+				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(cmdargs -> {
+					ServerWorld world = cmdargs.getSource().getWorld();
+					double x = cmdargs.getSource().getPos().getX();
+					double y = cmdargs.getSource().getPos().getY();
+					double z = cmdargs.getSource().getPos().getZ();
+					Entity entity = cmdargs.getSource().getEntity();
+					Direction direction = Objects.requireNonNull(entity).getHorizontalFacing();
+					if (entity == null)
+						entity = FakePlayerFactory.getMinecraft(world);
+					HashMap<String, String> cmdparams = new HashMap<>();
+					int[] index = {-1};
+					Arrays.stream(cmdargs.getInput().split("\\s+")).forEach(param -> {
+						if (index[0] >= 0)
+							cmdparams.put(Integer.toString(index[0]), param);
+						index[0]++;
+					});
 
-	private static int execute(CommandContext<CommandSource> ctx) {
-		ServerWorld world = ctx.getSource().getWorld();
-		double x = ctx.getSource().getPos().getX();
-		double y = ctx.getSource().getPos().getY();
-		double z = ctx.getSource().getPos().getZ();
-		Entity entity = ctx.getSource().getEntity();
-		if (entity == null)
-			entity = FakePlayerFactory.getMinecraft(world);
-		HashMap<String, String> cmdparams = new HashMap<>();
-		int[] index = {-1};
-		Arrays.stream(ctx.getInput().split("\\s+")).forEach(param -> {
-			if (index[0] >= 0)
-				cmdparams.put(Integer.toString(index[0]), param);
-			index[0]++;
-		});
-
-		DetransformKeyPriNazhatiiKlavishiProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
-				(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		return 0;
+					DetransformKeyPriNazhatiiKlavishiProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+					return 0;
+				})));
 	}
 }

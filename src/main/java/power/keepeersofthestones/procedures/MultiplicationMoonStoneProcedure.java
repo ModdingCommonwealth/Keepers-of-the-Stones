@@ -44,14 +44,14 @@ public class MultiplicationMoonStoneProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).moon) {
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x, y + 1, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x + 1, y, z + 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x, y, z + 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x + 1, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x - 1, y, z - 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x, y, z - 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+			world.setBlockState(new BlockPos(x - 1, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
 		}
 	}
 }

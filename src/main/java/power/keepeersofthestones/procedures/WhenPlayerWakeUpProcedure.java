@@ -3,6 +3,8 @@ package power.keepeersofthestones.procedures;
 import power.keepeersofthestones.potion.RechargeWaterStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeVacuumStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeTornadoStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeTimeStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeTechnologyStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeSunStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeSoundStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeShadowStonePotionEffect;
@@ -22,6 +24,7 @@ import power.keepeersofthestones.potion.RechargeDestructionStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCrystalStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCreationStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeCosmosStonePotionEffect;
+import power.keepeersofthestones.potion.RechargeBloodStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeAnimalsStonePotionEffect;
 import power.keepeersofthestones.potion.RechargeAirStonePotionEffect;
 import power.keepeersofthestones.PowerMod;
@@ -136,6 +139,15 @@ public class WhenPlayerWakeUpProcedure {
 		}
 		if (entity instanceof LivingEntity) {
 			((LivingEntity) entity).removePotionEffect(RechargeCosmosStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeBloodStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeTechnologyStonePotionEffect.potion);
+		}
+		if (entity instanceof LivingEntity) {
+			((LivingEntity) entity).removePotionEffect(RechargeTimeStonePotionEffect.potion);
 		}
 	}
 }

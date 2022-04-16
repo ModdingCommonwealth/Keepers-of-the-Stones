@@ -1,9 +1,9 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "cystal_stone.png",
+    "icon": "crystal_stone.png",
     "color": {
       "value": -3407719,
       "falpha": 0.0

@@ -1,9 +1,9 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "cosmos_stone.png",
+    "icon": "space_stone.png",
     "color": {
       "value": -13434829,
       "falpha": 0.0

@@ -44,7 +44,7 @@ public class SunExplodeUseProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MoonStonesBlockBlock.block) {
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MoonStonesBlockBlock.block) {
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.DESTROY);
 			}
@@ -60,7 +60,7 @@ public class SunExplodeUseProcedure {
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
 						"fill ~-16 ~-16 ~-16 ~16 ~16 ~16 air replace power:unmultiplication_moon_stones_block");
 			}
-		} else if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == UnmultiplicationMoonStonesBlock.block) {
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == UnmultiplicationMoonStonesBlock.block) {
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 4, Explosion.Mode.DESTROY);
 			}

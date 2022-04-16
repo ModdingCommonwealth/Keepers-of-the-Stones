@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "biome",
   "definition": {
     "name": "Moon Land",
@@ -54,6 +54,8 @@
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,

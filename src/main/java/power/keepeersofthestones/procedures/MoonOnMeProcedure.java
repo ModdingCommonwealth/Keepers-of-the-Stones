@@ -15,6 +15,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
+import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
 import net.minecraft.network.play.server.SPlaySoundEventPacket;
@@ -82,9 +83,11 @@ public class MoonOnMeProcedure {
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent.world.getServer() != null) {
 					_ent.world.getServer().getCommandManager().handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-							"tp ~ 75 ~");
+							"tp ~ ~30 ~");
 				}
 			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOW_FALLING, (int) 100, (int) 0, (false), (false)));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -107,7 +110,7 @@ public class MoonOnMeProcedure {
 
 				private void run() {
 					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).cosmos) {
+							.orElse(new PowerModVariables.PlayerVariables())).fire) {
 						if (!((entity instanceof PlayerEntity)
 								? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(TpOnMoonItem.block))
 								: false)) {

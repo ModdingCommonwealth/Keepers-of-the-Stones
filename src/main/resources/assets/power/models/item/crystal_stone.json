@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/cystal_stone"
+    "layer0": "power:items/crystal_stone"
   }
 }

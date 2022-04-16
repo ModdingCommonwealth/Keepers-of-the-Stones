@@ -2,10 +2,12 @@ package power.keepeersofthestones.procedures;
 
 import power.keepeersofthestones.potion.RechargeAnimalsStonePotionEffect;
 import power.keepeersofthestones.potion.AnimalsMasterPotionEffect;
+import power.keepeersofthestones.item.AnimalsStoneItem;
 import power.keepeersofthestones.PowerModVariables;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -21,22 +23,25 @@ public class AnimalsStoneUseProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
-			if (!(new Object() {
-				boolean check(Entity _entity) {
-					if (_entity instanceof LivingEntity) {
-						Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
-						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == RechargeAnimalsStonePotionEffect.potion)
-								return true;
+		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == AnimalsStoneItem.block) {
+			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
+				if (!(new Object() {
+					boolean check(Entity _entity) {
+						if (_entity instanceof LivingEntity) {
+							Collection<EffectInstance> effects = ((LivingEntity) _entity).getActivePotionEffects();
+							for (EffectInstance effect : effects) {
+								if (effect.getPotion() == RechargeAnimalsStonePotionEffect.potion)
+									return true;
+							}
 						}
+						return false;
 					}
-					return false;
+				}.check(entity))) {
+					if (entity instanceof LivingEntity)
+						((LivingEntity) entity)
+								.addPotionEffect(new EffectInstance(AnimalsMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
 				}
-			}.check(entity))) {
-				if (entity instanceof LivingEntity)
-					((LivingEntity) entity)
-							.addPotionEffect(new EffectInstance(AnimalsMasterPotionEffect.potion, (int) 12000, (int) 0, (false), (false)));
 			}
 		}
 	}

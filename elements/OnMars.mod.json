@@ -1,11 +1,9 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "command",
   "definition": {
     "commandName": "onmars",
     "permissionLevel": "1",
-    "onCommandExecuted": {
-      "name": "OnMarsUse"
-    }
+    "argsxml": "<xml><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"old_command\"><field name=\"procedure\">OnMarsUse</field></block></next></block></xml>"
   }
 }

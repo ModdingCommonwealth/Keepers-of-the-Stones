@@ -62,15 +62,15 @@ public class MultiplicationMoonstoneBlockToTicksProcedure {
 				}
 
 				private void run() {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MoonStonesBlockBlock.block) {
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), MoonStonesBlockBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+					if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MoonStonesBlockBlock.block) {
+						world.setBlockState(new BlockPos(x, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y + 1, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x + 1, y, z + 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y, z + 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x + 1, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x - 1, y, z - 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y, z - 1), MoonStonesBlockBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x - 1, y, z), MoonStonesBlockBlock.block.getDefaultState(), 3);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -97,22 +97,15 @@ public class MultiplicationMoonstoneBlockToTicksProcedure {
 				}
 
 				private void run() {
-					if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MoonStonesBlockBlock.block) {
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), UnmultiplicationMoonStonesBlock.block.getDefaultState(),
-								3);
-						world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)),
-								UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), UnmultiplicationMoonStonesBlock.block.getDefaultState(),
-								3);
-						world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), UnmultiplicationMoonStonesBlock.block.getDefaultState(),
-								3);
-						world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)),
-								UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), UnmultiplicationMoonStonesBlock.block.getDefaultState(),
-								3);
-						world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), UnmultiplicationMoonStonesBlock.block.getDefaultState(),
-								3);
+					if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == MoonStonesBlockBlock.block) {
+						world.setBlockState(new BlockPos(x, y, z), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y + 1, z), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x + 1, y, z + 1), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y, z + 1), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x + 1, y, z), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x - 1, y, z - 1), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x, y, z - 1), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
+						world.setBlockState(new BlockPos(x - 1, y, z), UnmultiplicationMoonStonesBlock.block.getDefaultState(), 3);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}

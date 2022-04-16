@@ -41,7 +41,7 @@ public class LightningStrikeUseProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (world instanceof ServerWorld) {
 			LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
-			_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+			_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos(x, y, z)));
 			_ent.setEffectOnly(true);
 			((World) world).addEntity(_ent);
 		}

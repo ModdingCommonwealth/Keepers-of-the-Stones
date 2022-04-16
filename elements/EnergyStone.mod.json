@@ -1,9 +1,9 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "untitled_10-17-2021_10-08-37",
+    "texture": "energy_stone",
     "customModelName": "Normal",
     "name": "Energy stone",
     "rarity": "COMMON",
@@ -31,9 +31,6 @@
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "EnergyStoneUse"
-    },
-    "onEntityHitWith": {
-      "name": "EnergyStaffUse"
     },
     "hasDispenseBehavior": false
   }

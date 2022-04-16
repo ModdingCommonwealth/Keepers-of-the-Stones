@@ -57,7 +57,7 @@ import java.util.AbstractMap;
 public class ShadowEntity extends PowerModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1f, 1f))
-					.build("shadow").setRegistryName("shadow");
+			.build("shadow").setRegistryName("shadow");
 
 	public ShadowEntity(PowerModElements instance) {
 		super(instance, 298);

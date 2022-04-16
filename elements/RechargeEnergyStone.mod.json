@@ -1,9 +1,9 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "untitled_10-17-2021_10-08-37.png",
+    "icon": "energy_stone.png",
     "color": {
       "value": -52,
       "falpha": 0.0

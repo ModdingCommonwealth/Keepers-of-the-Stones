@@ -38,8 +38,8 @@ public class CheckpointProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof ServerPlayerEntity)
-			((ServerPlayerEntity) entity).func_242111_a(((ServerPlayerEntity) entity).world.getDimensionKey(),
-					new BlockPos((int) x, (int) (y + 1), (int) z), 0, true, false);
+			((ServerPlayerEntity) entity).func_242111_a(((ServerPlayerEntity) entity).world.getDimensionKey(), new BlockPos(x, y + 1, z), 0, true,
+					false);
 		{
 			double _setval = (y + 1);
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

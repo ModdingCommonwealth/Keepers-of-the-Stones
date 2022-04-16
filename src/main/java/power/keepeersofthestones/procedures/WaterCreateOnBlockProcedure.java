@@ -39,7 +39,7 @@ public class WaterCreateOnBlockProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.WATER.getDefaultState(), 3);
+		world.setBlockState(new BlockPos(x, y + 1, z), Blocks.WATER.getDefaultState(), 3);
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -61,7 +61,7 @@ public class WaterCreateOnBlockProcedure {
 			}
 
 			private void run() {
-				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.getDefaultState(), 3);
+				world.setBlockState(new BlockPos(x, y + 1, z), Blocks.AIR.getDefaultState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, (int) 100);

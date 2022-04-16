@@ -1,5 +1,5 @@
 {
-  "_fv": 25,
+  "_fv": 28,
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
@@ -38,9 +38,6 @@
     "customBulletModelTexture": "tornado.png",
     "onBulletHitsBlock": {
       "name": "TornadoCreateOnBlock"
-    },
-    "onBulletHitsEntity": {
-      "name": "TornadoCreateInEntity"
     }
   }
 }

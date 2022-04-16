@@ -2,7 +2,6 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.TornadoCreateOnBlockProcedure;
-import power.keepeersofthestones.procedures.TornadoCreateInEntityProcedure;
 import power.keepeersofthestones.procedures.RechargeMagicFireballProcedure;
 import power.keepeersofthestones.entity.renderer.TornadoCreateRenderer;
 import power.keepeersofthestones.PowerModElements;
@@ -17,7 +16,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -142,21 +140,6 @@ public class TornadoCreateItem extends PowerModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
-		}
-
-		@Override
-		public void onEntityHit(EntityRayTraceResult entityRayTraceResult) {
-			super.onEntityHit(entityRayTraceResult);
-			Entity entity = entityRayTraceResult.getEntity();
-			Entity sourceentity = this.func_234616_v_();
-			Entity imediatesourceentity = this;
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-
-			TornadoCreateInEntityProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
-					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override
