@@ -11834,7 +11834,7 @@
       "type": "command",
       "sortid": 723,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "confstone",
       "path": "~/ReceivingStones"
     },
