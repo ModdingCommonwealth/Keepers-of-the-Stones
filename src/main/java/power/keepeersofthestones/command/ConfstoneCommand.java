@@ -36,7 +36,7 @@ public class ConfstoneCommand {
 
 					ResetmychoiceProcedureProcedure.execute(world, x, y, z, entity);
 					return 0;
-				})).then(Commands.literal("detransform").then(Commands.argument("player", EntityArgument.players()).executes(cmdargs -> {
+				})).then(Commands.literal("detransform").then(Commands.argument("player", EntityArgument.player()).executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
 					double x = cmdargs.getSource().getPosition().x();
 					double y = cmdargs.getSource().getPosition().y();
@@ -48,6 +48,6 @@ public class ConfstoneCommand {
 
 					DetransformKeyPriNazhatiiKlavishiProcedure.execute(entity);
 					return 0;
-				}))));
+				}))).then(Commands.literal("recover")));
 	}
 }
