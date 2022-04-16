@@ -84,6 +84,9 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/space_master.png"));
 		this.blit(ms, this.leftPos + 19, this.topPos + 60, 0, 0, 16, 16, 16, 16);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/blue_flame_master.png"));
+		this.blit(ms, this.leftPos + 208, this.topPos + 33, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -104,7 +107,7 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Choose a stone to get it", 127, 6, -12829636);
-		this.font.draw(poseStack, "2/2", 10, 6, -12829636);
+		this.font.draw(poseStack, "2/3", 10, 6, -12829636);
 	}
 
 	@Override
@@ -177,7 +180,11 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 9, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 226, this.topPos + 33, 56, 20, new TextComponent(" "), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 226, this.topPos + 33, 56, 20, new TextComponent(" Blue Flame"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(10, x, y, z));
+				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 226, this.topPos + 60, 56, 20, new TextComponent(" "), e -> {
 		}));
@@ -204,6 +211,10 @@ public class ChoiseMagicStonesPage2Screen extends AbstractContainerScreen<Choise
 		this.addRenderableWidget(new Button(this.leftPos + 325, this.topPos + 141, 56, 20, new TextComponent(" "), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 316, this.topPos + 168, 72, 20, new TextComponent("Next page"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new ChoiseMagicStonesPage2ButtonMessage(21, x, y, z));
+				ChoiseMagicStonesPage2ButtonMessage.handleButtonAction(entity, 21, x, y, z);
+			}
 		}));
 	}
 }

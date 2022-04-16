@@ -7,10 +7,12 @@ import power.keepeersofthestones.procedures.TeleportationGetProcedure;
 import power.keepeersofthestones.procedures.TechnologyGetProcedure;
 import power.keepeersofthestones.procedures.SpaceGetProcedure;
 import power.keepeersofthestones.procedures.PreviousPageGUIChoiceStonesProcedure;
+import power.keepeersofthestones.procedures.NextToPage3Procedure;
 import power.keepeersofthestones.procedures.MoonGetProcedure;
 import power.keepeersofthestones.procedures.ExplosionGetProcedure;
 import power.keepeersofthestones.procedures.DestructionGetProcedure;
 import power.keepeersofthestones.procedures.CreationGetProcedure;
+import power.keepeersofthestones.procedures.BlueFlameGetProcedure;
 import power.keepeersofthestones.procedures.BloodGetProcedure;
 import power.keepeersofthestones.procedures.AmberGetProcedure;
 import power.keepeersofthestones.PowerMod;
@@ -112,9 +114,17 @@ public class ChoiseMagicStonesPage2ButtonMessage {
 
 			CreationGetProcedure.execute(world, entity);
 		}
+		if (buttonID == 10) {
+
+			BlueFlameGetProcedure.execute(world, entity);
+		}
 		if (buttonID == 13) {
 
 			PreviousPageGUIChoiceStonesProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 21) {
+
+			NextToPage3Procedure.execute(world, x, y, z, entity);
 		}
 	}
 

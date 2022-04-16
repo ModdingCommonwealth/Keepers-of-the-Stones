@@ -520,12 +520,12 @@
       {
         "type": "label",
         "data": {
-          "text": "1/2",
+          "text": "1/3",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "1/2",
+          "name": "1/3",
           "x": 24,
           "y": 26
         }

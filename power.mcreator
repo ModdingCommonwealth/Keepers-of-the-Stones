@@ -12093,6 +12093,102 @@
       "locked_code": false,
       "registry_name": "eb_blue_flame",
       "path": "~/ElementalBook"
+    },
+    {
+      "name": "BlueFlameGet",
+      "type": "procedure",
+      "sortid": 741,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_flame_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "ChoiseMagicStonesPage3",
+      "type": "gui",
+      "sortid": 742,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choise_magic_stones_page_3",
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "NextToPage3",
+      "type": "procedure",
+      "sortid": 743,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_to_page_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
+    },
+    {
+      "name": "PreviousPage2",
+      "type": "procedure",
+      "sortid": 744,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "previous_page_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
