@@ -228,7 +228,6 @@
   "item.power.teleportation_helmet": "Teleportation Helmet",
   "item.power.sound_emitate": "Sound Emitate",
   "effect.power.vacuum_master": "Master of Vacuum",
-  "advancements.power_level_4.descr": "Power level - Legendary",
   "item.power.golden_crossbow": "Golden Crossbow",
   "item.power.lightning_leggings": "Lightning Leggings",
   "item.power.water_katana": "Water Katana",
@@ -453,6 +452,5 @@
   "item.power.storm": "Storm",
   "item.power.water_leggings": "Water Leggings",
   "item.power.technology_helmet": "Technology Helmet",
-  "advancements.power_level_4.title": "Power Level IV",
   "item.power.shuriken": "Shuriken"
 }
