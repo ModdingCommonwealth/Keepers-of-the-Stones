@@ -6,6 +6,7 @@ import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -16,6 +17,11 @@ import net.minecraft.world.InteractionHand;
 public class DestructionStoneItem extends Item {
 	public DestructionStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_GREAT_GROUP).durability(1).fireResistant().rarity(Rarity.COMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override

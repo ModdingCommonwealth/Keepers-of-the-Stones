@@ -25,19 +25,7 @@ public class PlanetCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher()
-				.register(Commands.literal("planet").requires(s -> s.hasPermission(4)).then(Commands.literal("venus").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
-					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-
-					OnVenusUseProcedure.execute(entity);
-					return 0;
-				})).then(Commands.literal("earth").executes(cmdargs -> {
+				.register(Commands.literal("planet").requires(s -> s.hasPermission(4)).then(Commands.literal("earth").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
 					double x = cmdargs.getSource().getPosition().x();
 					double y = cmdargs.getSource().getPosition().y();
@@ -60,6 +48,18 @@ public class PlanetCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 
 					OnMoonUseProcedure.execute(entity);
+					return 0;
+				})).then(Commands.literal("venus").executes(cmdargs -> {
+					ServerLevel world = cmdargs.getSource().getLevel();
+					double x = cmdargs.getSource().getPosition().x();
+					double y = cmdargs.getSource().getPosition().y();
+					double z = cmdargs.getSource().getPosition().z();
+					Entity entity = cmdargs.getSource().getEntity();
+					Direction direction = Objects.requireNonNull(entity).getDirection();
+					if (entity == null)
+						entity = FakePlayerFactory.getMinecraft(world);
+
+					OnVenusUseProcedure.execute(entity);
 					return 0;
 				})).then(Commands.literal("mars").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();

@@ -4,6 +4,7 @@ package power.keepeersofthestones.item;
 import power.keepeersofthestones.init.PowerModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -11,6 +12,11 @@ import net.minecraft.world.item.Item;
 public class PoisonStoneItem extends Item {
 	public PoisonStoneItem() {
 		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
 	}
 
 	@Override
