@@ -228,6 +228,7 @@
   "item.power.teleportation_helmet": "Шлем перемищения",
   "item.power.sound_emitate": "Издать Звук",
   "effect.power.vacuum_master": "Мастер Пустоты",
+  "advancements.power_level_4.descr": "Power level - Ultimate",
   "item.power.golden_crossbow": "Золотой Арбалет",
   "item.power.lightning_leggings": "Штаны Молнии",
   "item.power.water_katana": "Водяная Катана",
@@ -451,5 +452,6 @@
   "item.power.storm": "Шторм",
   "item.power.water_leggings": "Водные Штаны",
   "item.power.technology_helmet": "Технологичный шлем",
+  "advancements.power_level_4.title": "Power Level III",
   "item.power.shuriken": "Сюрикен"
 }
