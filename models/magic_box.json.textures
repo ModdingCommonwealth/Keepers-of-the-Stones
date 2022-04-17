@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "wood_magic_box"
+      },
+      "name": "default"
+    },
+    "stone": {
+      "map": {
+        "1": "stone_magic_box"
+      },
+      "name": "stone"
+    },
+    "andesite": {
+      "map": {
+        "1": "andesite_magic_box"
+      },
+      "name": "andesite"
+    },
+    "iron": {
+      "map": {
+        "1": "iron_magic_box"
+      },
+      "name": "iron"
+    },
+    "gold": {
+      "map": {
+        "1": "gold_magic_box"
+      },
+      "name": "gold"
+    },
+    "obsidian": {
+      "map": {
+        "1": "obsidian_magic_box"
+      },
+      "name": "obsidian"
+    }
+  }
+}

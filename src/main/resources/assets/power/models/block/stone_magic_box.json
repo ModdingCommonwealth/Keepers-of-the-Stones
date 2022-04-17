@@ -1,0 +1,8 @@
+{
+  "parent": "power:custom/magic_box",
+  "textures": {
+    "all": "power:blocks/stone_magic_box",
+    "particle": "power:blocks/stone_magic_box",
+    "1": "power:blocks/stone_magic_box"
+  }
+}

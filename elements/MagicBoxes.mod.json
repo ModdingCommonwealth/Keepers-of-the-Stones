@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Magic Boxes",
+    "icon": {
+      "value": "CUSTOM:WoodMagicBox"
+    },
+    "showSearch": false
+  }
+}

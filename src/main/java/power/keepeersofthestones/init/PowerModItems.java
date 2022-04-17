@@ -549,6 +549,10 @@ public class PowerModItems {
 	public static final RegistryObject<Item> BLUE_FLAME_CHESTPLATE = REGISTRY.register("blue_flame_chestplate", () -> new BlueFlameItem.Chestplate());
 	public static final RegistryObject<Item> BLUE_FLAME_LEGGINGS = REGISTRY.register("blue_flame_leggings", () -> new BlueFlameItem.Leggings());
 	public static final RegistryObject<Item> BLUE_FLAME_BOOTS = REGISTRY.register("blue_flame_boots", () -> new BlueFlameItem.Boots());
+	public static final RegistryObject<Item> WOOD_MAGIC_BOX = block(PowerModBlocks.WOOD_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
+	public static final RegistryObject<Item> STONE_MAGIC_BOX = block(PowerModBlocks.STONE_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
+	public static final RegistryObject<Item> IRON_MAGIC_BOX = block(PowerModBlocks.IRON_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
+	public static final RegistryObject<Item> GOLD_MAGIC_BOX = block(PowerModBlocks.GOLD_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
