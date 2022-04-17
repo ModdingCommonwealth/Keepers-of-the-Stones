@@ -10,7 +10,7 @@
     "description": {
       "translate": "advancements.power_level_1.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true

@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Power Level I",
-    "achievementDescription": "Basic power level",
+    "achievementDescription": "Power level - Basic",
     "achievementIcon": {
       "value": "CUSTOM:BookOfElements"
     },
@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 500,
-    "achievementType": "task",
+    "achievementType": "goal",
     "parent": {
       "value": "No parent: root"
     },

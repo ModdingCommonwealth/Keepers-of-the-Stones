@@ -31,7 +31,6 @@ import power.keepeersofthestones.world.inventory.EBBloodMenu;
 import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
 import power.keepeersofthestones.world.inventory.EBAirMenu;
-import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModItems;
 
 import net.minecraftforge.network.NetworkHooks;
@@ -659,9 +658,6 @@ public class OpenBookProcedure {
 				}
 			}
 		}
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).power_level == 0) {
-			GetPowerLevel1Procedure.execute(entity);
-		}
+		GetPowerLevel1Procedure.execute(entity);
 	}
 }

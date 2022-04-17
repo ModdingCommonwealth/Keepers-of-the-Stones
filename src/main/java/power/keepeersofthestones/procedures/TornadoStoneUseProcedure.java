@@ -16,8 +16,18 @@ public class TornadoStoneUseProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TORNADO_STONE.get()) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 				if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.RECHARGE_TORNADO_STONE.get()) : false)) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TORNADO_MASTER.get(), 12000, 0, (false), (false)));
+					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).power_level == 2) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TORNADO_MASTER.get(), 18000, 0, (false), (false)));
+					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).power_level == 3) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TORNADO_MASTER.get(), 24000, 0, (false), (false)));
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.TORNADO_MASTER.get(), 12000, 0, (false), (false)));
+					}
 				}
 			}
 		}

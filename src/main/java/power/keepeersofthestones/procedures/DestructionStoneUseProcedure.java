@@ -17,8 +17,18 @@ public class DestructionStoneUseProcedure {
 				.get()) {
 			if (!(entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).active) {
 				if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PowerModMobEffects.RECHARGE_DESTRUCTION_STONE.get()) : false)) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER.get(), 12000, 0, (false), (false)));
+					if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).power_level == 2) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER.get(), 18000, 0, (false), (false)));
+					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new PowerModVariables.PlayerVariables())).power_level == 3) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER.get(), 24000, 0, (false), (false)));
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.DESTRUCTION_MASTER.get(), 12000, 0, (false), (false)));
+					}
 				}
 			}
 		}

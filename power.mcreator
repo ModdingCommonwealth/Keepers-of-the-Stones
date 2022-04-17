@@ -12291,6 +12291,58 @@
         ]
       },
       "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "PowerLevel2",
+      "type": "achievement",
+      "sortid": 757,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_level_2",
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "GetPowerLevel2",
+      "type": "procedure",
+      "sortid": 758,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_power_level_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "PowerLevel3",
+      "type": "achievement",
+      "sortid": 759,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_level_3",
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "GetPowerLevel3",
+      "type": "procedure",
+      "sortid": 760,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_power_level_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
     }
   ],
   "variable_elements": [
@@ -12887,6 +12939,7 @@
       "item.power.time_reversed": "Обращение Времени",
       "effect.power.recharge_amber_stone": "Перезарядка",
       "item.power.piece_of_earth": "Кусок Земли",
+      "advancements.power_level_3.descr": "Уровень силы - Ultimate",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
       "biome.power.moon_land": "Лунная Земля",
       "effect.power.acceleration_time_effect": "Ускорение Времени",
@@ -12894,9 +12947,9 @@
       "item.power.explode_chestplate": "Шахид-нагрудник",
       "item.power.lava_ball": "Лавовый Шар",
       "advancements.welcome_to_the_void.title": "Добро пожаловать в Пустоту!",
-      "item.power.space_leggings": "Космические штаны",
-      "item.power.ocean_sword": "Меч Океана",
       "item.power.energy_chestplate": "Энергетическая Кираса",
+      "item.power.ocean_sword": "Меч Океана",
+      "item.power.space_leggings": "Космические штаны",
       "item.power.gravity_stone": "Камень Гравитации",
       "item.power.destruction_sphere": "Сфера Разрушения",
       "item.power.shadow_invisible": "Теневая Невидимость",
@@ -13205,13 +13258,14 @@
       "item.power.mushrooms_stone": "Камень Грибов",
       "item.power.ocean_boots": "Ботинки Океана",
       "effect.power.moon_master": "Мастер Луны",
+      "advancements.power_level_2.title": "Уровень Силы II",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
       "item.power.energy_stone": "Камень Энергии",
       "item.power.energy_absorption": "Поглощение Энергии",
       "advancements.put_it_on_charge_overnight.title": "Поставить на ночь на зарядку",
       "item.power.ice_chestplate": "Ледяная Куртка",
       "item.power.moon_stones": "Лунные Камни",
-      "advancements.power_level_1.descr": "Базовый уровень силы",
+      "advancements.power_level_1.descr": "Уровень силы - Basic",
       "item.power.sound_battery": "Батарея",
       "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
@@ -13237,6 +13291,7 @@
       "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.tornado_helmet": "Шлем Торнадо",
+      "advancements.power_level_2.descr": "Уровень силы - Super",
       "item.power.magic_fireball": "Волшебный Огненный Шар",
       "advancements.absolute_power.title": "Абсолютная Сила",
       "item.power.crystal_stone": "Камень Кристалла",
@@ -13274,6 +13329,7 @@
       "effect.power.recharge_space_stone": "Перезарядка",
       "item.power.blood_helmet": "Шлем крови",
       "item.power.light_chestplate": "Нагрудник света",
+      "advancements.power_level_3.title": "Уровень Силы III",
       "item.power.light_stone": "Камень Света",
       "item.power.ice_battery": "Батарея",
       "item.power.sand_stone": "Камень Песка",
@@ -13338,6 +13394,7 @@
       "effect.power.ice_master": "Master of Ice",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
+      "advancements.power_level_3.descr": "Power level - Ultimate",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
       "effect.power.acceleration_time_effect": "Acceleration Time",
@@ -13345,9 +13402,9 @@
       "item.power.explode_chestplate": "Explode Chestplate",
       "item.power.lava_ball": "Lava Ball",
       "advancements.welcome_to_the_void.title": "Welcome to the Void!",
-      "item.power.space_leggings": "Space Leggings",
-      "item.power.ocean_sword": "Ocean Sword",
       "item.power.energy_chestplate": "Energy Chestplate",
+      "item.power.ocean_sword": "Ocean Sword",
+      "item.power.space_leggings": "Space Leggings",
       "item.power.gravity_stone": "Gravity Stone",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
@@ -13657,13 +13714,14 @@
       "item.power.mushrooms_stone": "Mushrooms Stone",
       "item.power.ocean_boots": "Ocean Boots",
       "effect.power.moon_master": "Master of the Moon",
+      "advancements.power_level_2.title": "Power Level II",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.energy_stone": "Energy stone",
       "item.power.energy_absorption": "Energy Absorption",
       "advancements.put_it_on_charge_overnight.title": "Put it on charge overnight",
       "item.power.ice_chestplate": "Ice Chestplate",
       "item.power.moon_stones": "Moon Stones",
-      "advancements.power_level_1.descr": "Basic power level",
+      "advancements.power_level_1.descr": "Power level - Basic",
       "item.power.sound_battery": "Battery",
       "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
@@ -13689,6 +13747,7 @@
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.ice_ball": "Ice Ball",
       "item.power.tornado_helmet": "Tornado Helmet",
+      "advancements.power_level_2.descr": "Power level - Super",
       "item.power.magic_fireball": "Magic Fireball",
       "advancements.absolute_power.title": "Absolute Power",
       "item.power.crystal_stone": "Crystal Stone",
@@ -13726,6 +13785,7 @@
       "effect.power.recharge_space_stone": "Recharge",
       "item.power.blood_helmet": "Blood Helmet",
       "item.power.light_chestplate": "Light Chestplate",
+      "advancements.power_level_3.title": "Power Level III",
       "item.power.light_stone": "Light Stone",
       "item.power.ice_battery": "Battery",
       "item.power.sand_stone": "Sand Stone",
@@ -13971,7 +14031,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.0.14",
+    "version": "2.0.0.15",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
