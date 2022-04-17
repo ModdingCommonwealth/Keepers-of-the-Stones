@@ -4,6 +4,7 @@ import power.keepeersofthestones.network.PowerModVariables;
 import power.keepeersofthestones.init.PowerModMobEffects;
 import power.keepeersofthestones.init.PowerModItems;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -101,6 +102,11 @@ public class EnergyStaffUseProcedure {
 							while (_iterator.hasNext())
 								_player.getAdvancements().award(_adv, (String) _iterator.next());
 						}
+					}
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(PowerModItems.ENERGY_ABSORPTION.get());
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				}
 				{
