@@ -658,6 +658,5 @@ public class OpenBookProcedure {
 				}
 			}
 		}
-		GetPowerLevel1Procedure.execute(entity);
 	}
 }
