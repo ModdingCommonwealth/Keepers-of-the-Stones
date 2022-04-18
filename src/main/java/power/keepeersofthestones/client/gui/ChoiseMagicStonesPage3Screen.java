@@ -15,10 +15,13 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class ChoiseMagicStonesPage3Screen extends AbstractContainerScreen<ChoiseMagicStonesPage3Menu> {
+	private final static HashMap<String, Object> guistate = ChoiseMagicStonesPage3Menu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

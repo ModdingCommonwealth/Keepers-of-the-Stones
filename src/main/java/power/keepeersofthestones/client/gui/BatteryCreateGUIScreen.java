@@ -13,10 +13,13 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreateGUIMenu> {
+	private final static HashMap<String, Object> guistate = BatteryCreateGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

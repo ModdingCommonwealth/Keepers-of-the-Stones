@@ -11,10 +11,13 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class EBDestructionScreen extends AbstractContainerScreen<EBDestructionMenu> {
+	private final static HashMap<String, Object> guistate = EBDestructionMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;

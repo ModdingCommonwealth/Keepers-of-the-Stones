@@ -16,10 +16,13 @@ import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class PointGUIScreen extends AbstractContainerScreen<PointGUIMenu> {
+	private final static HashMap<String, Object> guistate = PointGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -124,7 +127,7 @@ public class PointGUIScreen extends AbstractContainerScreen<PointGUIMenu> {
 					setSuggestion(null);
 			}
 		};
-		PointGUIMenu.guistate.put("text:tpX", tpX);
+		guistate.put("text:tpX", tpX);
 		tpX.setMaxLength(32767);
 		this.addWidget(this.tpX);
 		tpY = new EditBox(this.font, this.leftPos + 33, this.topPos + 61, 120, 20, new TextComponent("0")) {
@@ -150,7 +153,7 @@ public class PointGUIScreen extends AbstractContainerScreen<PointGUIMenu> {
 					setSuggestion(null);
 			}
 		};
-		PointGUIMenu.guistate.put("text:tpY", tpY);
+		guistate.put("text:tpY", tpY);
 		tpY.setMaxLength(32767);
 		this.addWidget(this.tpY);
 		tpZ = new EditBox(this.font, this.leftPos + 33, this.topPos + 97, 120, 20, new TextComponent("0")) {
@@ -176,7 +179,7 @@ public class PointGUIScreen extends AbstractContainerScreen<PointGUIMenu> {
 					setSuggestion(null);
 			}
 		};
-		PointGUIMenu.guistate.put("text:tpZ", tpZ);
+		guistate.put("text:tpZ", tpZ);
 		tpZ.setMaxLength(32767);
 		this.addWidget(this.tpZ);
 		this.addRenderableWidget(new Button(this.leftPos + 51, this.topPos + 133, 67, 20, new TextComponent("Teleport"), e -> {
