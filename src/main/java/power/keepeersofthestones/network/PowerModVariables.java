@@ -119,6 +119,8 @@ public class PowerModVariables {
 			clone.tpY = original.tpY;
 			clone.blue_flame = original.blue_flame;
 			clone.power_level = original.power_level;
+			clone.magnet = original.magnet;
+			clone.mist = original.mist;
 			if (!event.isWasDeath()) {
 				clone.active = original.active;
 				clone.recharge_spell_sun = original.recharge_spell_sun;
@@ -282,6 +284,8 @@ public class PowerModVariables {
 		public boolean amber_stone = false;
 		public boolean blue_flame_stone = false;
 		public boolean cosmos_stone = false;
+		public boolean magnet_stone = false;
+		public boolean mist_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -304,6 +308,8 @@ public class PowerModVariables {
 			amber_stone = nbt.getBoolean("amber_stone");
 			blue_flame_stone = nbt.getBoolean("blue_flame_stone");
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
+			magnet_stone = nbt.getBoolean("magnet_stone");
+			mist_stone = nbt.getBoolean("mist_stone");
 		}
 
 		@Override
@@ -322,6 +328,8 @@ public class PowerModVariables {
 			nbt.putBoolean("amber_stone", amber_stone);
 			nbt.putBoolean("blue_flame_stone", blue_flame_stone);
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
+			nbt.putBoolean("magnet_stone", magnet_stone);
+			nbt.putBoolean("mist_stone", mist_stone);
 			return nbt;
 		}
 
@@ -457,6 +465,8 @@ public class PowerModVariables {
 		public boolean blue_flame = false;
 		public boolean fog = false;
 		public double power_level = 0;
+		public boolean magnet = false;
+		public boolean mist = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -511,6 +521,8 @@ public class PowerModVariables {
 			nbt.putBoolean("blue_flame", blue_flame);
 			nbt.putBoolean("fog", fog);
 			nbt.putDouble("power_level", power_level);
+			nbt.putBoolean("magnet", magnet);
+			nbt.putBoolean("mist", mist);
 			return nbt;
 		}
 
@@ -562,6 +574,8 @@ public class PowerModVariables {
 			blue_flame = nbt.getBoolean("blue_flame");
 			fog = nbt.getBoolean("fog");
 			power_level = nbt.getDouble("power_level");
+			magnet = nbt.getBoolean("magnet");
+			mist = nbt.getBoolean("mist");
 		}
 	}
 
@@ -633,6 +647,8 @@ public class PowerModVariables {
 					variables.blue_flame = message.data.blue_flame;
 					variables.fog = message.data.fog;
 					variables.power_level = message.data.power_level;
+					variables.magnet = message.data.magnet;
+					variables.mist = message.data.mist;
 				}
 			});
 			context.setPacketHandled(true);

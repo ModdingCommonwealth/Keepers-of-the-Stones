@@ -123,6 +123,9 @@
       },
       {
         "value": "CUSTOM:SpaceStone"
+      },
+      {
+        "value": "CUSTOM:MagnetStone"
       }
     ],
     "blocks": [],

@@ -1,0 +1,26 @@
+{
+  "_fv": 29,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Master of Magnet",
+    "icon": "magnet_master.png",
+    "color": {
+      "value": -52378,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MagnetMasterEffectStart"
+    },
+    "onActiveTick": {
+      "name": "MagnetMasterEffects"
+    },
+    "onExpired": {
+      "name": "MagnetMasterEffectEnd"
+    }
+  }
+}

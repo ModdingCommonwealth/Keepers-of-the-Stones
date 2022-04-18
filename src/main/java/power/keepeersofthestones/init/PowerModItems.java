@@ -110,6 +110,8 @@ import power.keepeersofthestones.item.MetalItem;
 import power.keepeersofthestones.item.MetalInvulnerabilityItem;
 import power.keepeersofthestones.item.MetalBatteryItem;
 import power.keepeersofthestones.item.MegawattItem;
+import power.keepeersofthestones.item.MagnetStoneItem;
+import power.keepeersofthestones.item.MagnetItem;
 import power.keepeersofthestones.item.MagmaShieldItem;
 import power.keepeersofthestones.item.MagicFireballItem;
 import power.keepeersofthestones.item.MaceItem;
@@ -553,6 +555,11 @@ public class PowerModItems {
 	public static final RegistryObject<Item> STONE_MAGIC_BOX = block(PowerModBlocks.STONE_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
 	public static final RegistryObject<Item> IRON_MAGIC_BOX = block(PowerModBlocks.IRON_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
 	public static final RegistryObject<Item> GOLD_MAGIC_BOX = block(PowerModBlocks.GOLD_MAGIC_BOX, PowerModTabs.TAB_MAGIC_BOXES);
+	public static final RegistryObject<Item> MAGNET_STONE = REGISTRY.register("magnet_stone", () -> new MagnetStoneItem());
+	public static final RegistryObject<Item> MAGNET_HELMET = REGISTRY.register("magnet_helmet", () -> new MagnetItem.Helmet());
+	public static final RegistryObject<Item> MAGNET_CHESTPLATE = REGISTRY.register("magnet_chestplate", () -> new MagnetItem.Chestplate());
+	public static final RegistryObject<Item> MAGNET_LEGGINGS = REGISTRY.register("magnet_leggings", () -> new MagnetItem.Leggings());
+	public static final RegistryObject<Item> MAGNET_BOOTS = REGISTRY.register("magnet_boots", () -> new MagnetItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

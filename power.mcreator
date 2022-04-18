@@ -12326,6 +12326,148 @@
         ]
       },
       "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "MagnetStone",
+      "type": "item",
+      "sortid": 761,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_stone",
+      "path": "~/Magnet"
+    },
+    {
+      "name": "Magnet",
+      "type": "armor",
+      "sortid": 762,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetMaster",
+      "type": "potioneffect",
+      "sortid": 763,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_master",
+      "path": "~/Magnet"
+    },
+    {
+      "name": "RechargeMagnetStone",
+      "type": "potioneffect",
+      "sortid": 764,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_magnet_stone",
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetStoneUse",
+      "type": "procedure",
+      "sortid": 765,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_stone_use",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetMasterEffectStart",
+      "type": "procedure",
+      "sortid": 766,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_master_effect_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetMasterEffectEnd",
+      "type": "procedure",
+      "sortid": 767,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_master_effect_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magnet"
+    },
+    {
+      "name": "MagnetMasterEffects",
+      "type": "procedure",
+      "sortid": 768,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnet_master_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magnet"
     }
   ],
   "variable_elements": [
@@ -12844,6 +12986,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "magnet_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "magnet",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "mist_stone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "mist",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -12914,6 +13080,7 @@
       "item.power.black_hole": "Черная Дыра",
       "item.power.air_blade": "Воздушная Рапира",
       "item.power.lighting": "Освещение",
+      "item.power.magnet_leggings": "Magnet Leggings",
       "effect.power.recharge_vacuum_stone": "Перезарядка",
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Приручатель",
@@ -13016,6 +13183,7 @@
       "item.power.sound_leggings": "Звуковые Брюки",
       "item.power.light_leggings": "Штаны света",
       "item.power.empty_battery": "Батарея",
+      "item.power.magnet_stone": "Камень Магнита",
       "item.power.space_helmet": "Космический шлем",
       "item.power.time_dilation": "Замедление Времени",
       "advancements.super_charge.title": "Супер Заряд!",
@@ -13093,6 +13261,7 @@
       "itemGroup.tabgreat_group": "Великие",
       "item.power.metal_invulnerability": "Неуязвимость Металла",
       "effect.power.recharge_technology_stone": "Перезарядка",
+      "effect.power.recharge_magnet_stone": "Перезарядка",
       "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
       "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
       "item.power.energy_sphere": "Энергетический Шар",
@@ -13101,6 +13270,7 @@
       "item.power.energy_shield": "Энергощит",
       "effect.power.sound_master": "Мастер Звука",
       "item.power.rainfall": "Ливень",
+      "item.power.magnet_helmet": "Magnet Helmet",
       "effect.power.time_stop_effect": "Остановка Времени",
       "item.power.greenery_chestplate": "Травяной нагрудник",
       "advancements.guardian.descr": "Создайте деревянную шкатулку",
@@ -13228,6 +13398,7 @@
       "effect.power.rain_fly": "RainFly",
       "item.power.sound_sword": "Звуковой кинжал",
       "fluid.power.quicksilver": "Quicksilver",
+      "effect.power.magnet_master": "Мастер Магнита",
       "item.power.ice_boots": "Ледяные Сапоги",
       "item.power.earth_chestplate": "Земляной Желет",
       "item.power.ocean_helmet": "Шлем Океана",
@@ -13298,6 +13469,7 @@
       "item.power.sun_boots": "Шлем солнца",
       "item.power.moon_stone": "Камень Луны",
       "item.power.mars": "Mars Portal Igniter",
+      "item.power.magnet_boots": "Magnet Boots",
       "item.power.destruction_power": "Анигиляция",
       "item.power.greenery_stone": "Камень Зелени",
       "item.power.blue_fireball": "Синий Огненный Шар",
@@ -13328,6 +13500,7 @@
       "effect.power.recharge_metal_stone": "Перезарядка",
       "gamerule.canRechoiseStone": "Может быть, можно заново выбрать камень?",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
+      "item.power.magnet_chestplate": "Magnet Chestplate",
       "effect.power.time_master_effect": "Мастер Времени",
       "item.power.acceleration_time": "Ускорение Времени",
       "item.power.mist_stone": "Камень Тумана",
@@ -13337,8 +13510,8 @@
       "item.power.shuriken": "Сюрикен"
     },
     "en_us": {
-      "item.power.moon_battery": "Battery",
       "item.power.energy_leggings": "Energy Leggings",
+      "item.power.moon_battery": "Battery",
       "item.power.sun_battery": "Battery",
       "item.power.explode_leggings": "Explode Leggings",
       "item.power.create_shadow": "Create Shadow",
@@ -13349,8 +13522,8 @@
       "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
-      "block.power.detonator_tnt": "Detonator TNT",
       "item.power.cutter_sword": "Cutter Sword",
+      "block.power.detonator_tnt": "Detonator TNT",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.blue_flame_battery": "Battery",
       "item.power.earth_battery": "Battery",
@@ -13360,8 +13533,8 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
-      "item.power.technology_chestplate": "Technology Chestplate",
       "effect.power.recharge_energy_stone": "Recharge",
+      "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.lava_hammer": "Lava Hammer",
       "block.power.iron_magic_box": "Iron Magic Box",
@@ -13369,12 +13542,13 @@
       "item.power.black_hole": "Black Hole",
       "item.power.air_blade": "Air Rapier",
       "item.power.lighting": "Lighting",
+      "item.power.magnet_leggings": "Magnet Leggings",
       "effect.power.recharge_vacuum_stone": "Recharge",
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Tamer",
       "effect.power.recharge_earth_stone": "Recharge",
-      "item.power.time_reversed": "Time Reversed",
       "effect.power.ice_master": "Master of Ice",
+      "item.power.time_reversed": "Time Reversed",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
       "advancements.power_level_3.descr": "Power level - Ultimate",
@@ -13385,14 +13559,14 @@
       "item.power.explode_chestplate": "Explode Chestplate",
       "item.power.lava_ball": "Lava Ball",
       "advancements.welcome_to_the_void.title": "Welcome to the Void!",
-      "item.power.energy_chestplate": "Energy Chestplate",
-      "item.power.ocean_sword": "Ocean Sword",
       "item.power.space_leggings": "Space Leggings",
+      "item.power.ocean_sword": "Ocean Sword",
+      "item.power.energy_chestplate": "Energy Chestplate",
       "item.power.gravity_stone": "Gravity Stone",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "item.power.moon": "Moon Portal Igniter",
       "item.power.light_helmet": "Light Helmet",
+      "item.power.moon": "Moon Portal Igniter",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.greenery_master": "Master of Greenery",
       "effect.power.recharge_animals_stone": "Recharge",
@@ -13405,8 +13579,8 @@
       "advancements.guardian.title": "Guardian",
       "advancements.put_it_on_charge_overnight.descr": "Create a charger for batteries",
       "item.power.redstone_bundle": "Redstone Bundle",
-      "item.power.light_battery": "Battery",
       "item.power.iron_shield": "Iron Shield",
+      "item.power.light_battery": "Battery",
       "effect.power.tornado_master": "Master of Tornado",
       "itemGroup.tabadditional_group": "Additional Group",
       "item.power.bo_staff": "Bo Staff",
@@ -13428,8 +13602,8 @@
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
       "item.power.rain_boots": "Rain Boots",
-      "item.power.ice_spear": "Ice Spear",
       "item.power.portal_blast": "Portal Blaster",
+      "item.power.ice_spear": "Ice Spear",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "effect.power.fog": "Fog",
@@ -13464,13 +13638,14 @@
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
-      "item.power.tp_on_moon": "Tp On Moon",
       "effect.power.creation_master": "Master of Creation",
+      "item.power.tp_on_moon": "Tp On Moon",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ice Shield",
       "item.power.sound_leggings": "Sound Leggings",
       "item.power.light_leggings": "Light Leggings",
       "item.power.empty_battery": "Battery",
+      "item.power.magnet_stone": "Magnet Stone",
       "item.power.space_helmet": "Space Helmet",
       "item.power.time_dilation": "Time Dilation",
       "advancements.super_charge.title": "Super Charge!",
@@ -13548,6 +13723,7 @@
       "itemGroup.tabgreat_group": "Great Group",
       "item.power.metal_invulnerability": "Invulnerability of Metal",
       "effect.power.recharge_technology_stone": "Recharge",
+      "effect.power.recharge_magnet_stone": "Recharge",
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
       "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "item.power.vacuum_web": "Vacuum Web",
@@ -13556,6 +13732,7 @@
       "item.power.energy_shield": "Energy Shield",
       "effect.power.sound_master": "Master of Sound",
       "item.power.rainfall": "Rainfall",
+      "item.power.magnet_helmet": "Magnet Helmet",
       "effect.power.time_stop_effect": "Time Stop",
       "item.power.greenery_chestplate": "Greenery Chestplate",
       "advancements.guardian.descr": "Create a wooden box",
@@ -13684,6 +13861,7 @@
       "effect.power.rain_fly": "RainFly",
       "item.power.sound_sword": "Sound Sword",
       "fluid.power.quicksilver": "Quicksilver",
+      "effect.power.magnet_master": "Master of Magnet",
       "item.power.ice_boots": "Ice Boots",
       "item.power.earth_chestplate": "Earth Chestplate",
       "item.power.ocean_helmet": "Ocean Helmet",
@@ -13754,6 +13932,7 @@
       "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Moon Stone",
       "item.power.mars": "Mars Portal Igniter",
+      "item.power.magnet_boots": "Magnet Boots",
       "item.power.destruction_power": "Destruction Power",
       "item.power.greenery_stone": "Greenery Stone",
       "item.power.blue_fireball": "Blue Fireball",
@@ -13784,6 +13963,7 @@
       "effect.power.recharge_metal_stone": "Recharge",
       "gamerule.canRechoiseStone": "Maybe it is possible to re-select the stone?",
       "item.power.vacuum_spiral": "Vacuum Spiral",
+      "item.power.magnet_chestplate": "Magnet Chestplate",
       "effect.power.time_master_effect": "Master of Time",
       "item.power.acceleration_time": "Acceleration Time",
       "item.power.mist_stone": "Mist Stone",
@@ -14014,7 +14194,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.0.19",
+    "version": "2.0.0.20",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "MagicalAlexey",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
