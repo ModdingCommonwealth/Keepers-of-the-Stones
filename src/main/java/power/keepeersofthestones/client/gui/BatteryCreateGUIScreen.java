@@ -35,7 +35,7 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/battery_create_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/battery_create_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -52,8 +52,8 @@ public class BatteryCreateGUIScreen extends AbstractContainerScreen<BatteryCreat
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/acceleration_time.png"));
-		this.blit(ms, this.leftPos + 78, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/acceleration_time.png"));
+		this.blit(ms, this.leftPos + 78, this.topPos + 34, 0, 0, -1, -1, -1, -1);
 
 		RenderSystem.disableBlend();
 	}

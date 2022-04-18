@@ -46,17 +46,17 @@ public class EBEarthScreen extends AbstractContainerScreen<EBEarthMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/book_of_elements_book.png"));
-		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 512, 256, 512, 256);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/book_of_elements_book.png"));
+		this.blit(ms, this.leftPos + -244, this.topPos + -127, 0, 0, 0, 0, 0, 0);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/earth_stone.png"));
-		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/earth_stone.png"));
+		this.blit(ms, this.leftPos + -104, this.topPos + -109, 0, 0, -1, -1, -1, -1);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/earth_master.png"));
-		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/earth_master.png"));
+		this.blit(ms, this.leftPos + 93, this.topPos + -109, 0, 0, -1, -1, -1, -1);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/earth_element.png"));
-		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 61, 128, 61, 128);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/earth_element.png"));
+		this.blit(ms, this.leftPos + 71, this.topPos + -85, 0, 0, 0, 0, 0, 0);
 
 		RenderSystem.disableBlend();
 	}

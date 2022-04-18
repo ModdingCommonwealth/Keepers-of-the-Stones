@@ -37,7 +37,7 @@ public class RedstoneBundleGUIScreen extends AbstractContainerScreen<RedstoneBun
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/redstone_bundle_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/redstone_bundle_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

@@ -37,7 +37,7 @@ public class AcceptTpOnMoonScreen extends AbstractContainerScreen<AcceptTpOnMoon
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/accept_tp_on_moon.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/accept_tp_on_moon.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

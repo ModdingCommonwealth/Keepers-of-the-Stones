@@ -37,7 +37,7 @@ public class ChoiseMagicStonesPage3Screen extends AbstractContainerScreen<Choise
 		this.imageHeight = 200;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/choise_magic_stones_page_3.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/choise_magic_stones_page_3.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

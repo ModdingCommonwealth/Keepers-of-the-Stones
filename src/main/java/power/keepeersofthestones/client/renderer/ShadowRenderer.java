@@ -15,6 +15,6 @@ public class ShadowRenderer extends MobRenderer<ShadowEntity, Modelshadow<Shadow
 
 	@Override
 	public ResourceLocation getTextureLocation(ShadowEntity entity) {
-		return new ResourceLocation("power:textures/shadow.png");
+		return new ResourceLocation("power:textures/entities/shadow.png");
 	}
 }

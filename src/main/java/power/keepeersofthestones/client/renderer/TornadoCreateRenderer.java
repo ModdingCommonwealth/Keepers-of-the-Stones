@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class TornadoCreateRenderer extends EntityRenderer<TornadoCreateEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/tornado.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/entities/tornado.png");
 	private final Modeltornadocc model;
 
 	public TornadoCreateRenderer(EntityRendererProvider.Context context) {

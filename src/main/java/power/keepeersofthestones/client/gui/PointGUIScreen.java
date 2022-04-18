@@ -41,7 +41,7 @@ public class PointGUIScreen extends AbstractContainerScreen<PointGUIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/point_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/point_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

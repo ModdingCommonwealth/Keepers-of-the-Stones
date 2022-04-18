@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "power:textures/moon_stones_block.png",
+    "background": "power:textures/screens/moon_stones_block.png",
     "icon": {
       "item": "power:fire_stone"
     },

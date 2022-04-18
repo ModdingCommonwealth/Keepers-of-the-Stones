@@ -37,7 +37,7 @@ public class BuildingGUIScreen extends AbstractContainerScreen<BuildingGUIMenu> 
 		this.imageHeight = 211;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/building_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/building_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

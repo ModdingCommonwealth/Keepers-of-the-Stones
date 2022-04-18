@@ -37,7 +37,7 @@ public class SpawnAnimalsGUIScreen extends AbstractContainerScreen<SpawnAnimalsG
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/spawn_animals_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/spawn_animals_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

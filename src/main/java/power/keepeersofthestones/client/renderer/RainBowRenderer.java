@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class RainBowRenderer extends EntityRenderer<RainBowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/arrows.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/entities/arrows.png");
 	private final Modelmagic_arrow model;
 
 	public RainBowRenderer(EntityRendererProvider.Context context) {

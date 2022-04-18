@@ -37,7 +37,7 @@ public class AcceptTpOnMarsScreen extends AbstractContainerScreen<AcceptTpOnMars
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/accept_tp_on_mars.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/accept_tp_on_mars.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

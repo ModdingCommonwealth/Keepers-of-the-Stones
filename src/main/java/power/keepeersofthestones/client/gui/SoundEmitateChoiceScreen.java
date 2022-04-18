@@ -37,7 +37,7 @@ public class SoundEmitateChoiceScreen extends AbstractContainerScreen<SoundEmita
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/sound_emitate_choice.png");
+	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/sound_emitate_choice.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
