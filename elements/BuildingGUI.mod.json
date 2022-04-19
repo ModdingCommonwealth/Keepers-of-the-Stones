@@ -20,21 +20,134 @@
           },
           "name": "Select the structure you want to place",
           "x": 114,
-          "y": 17
+          "y": 125
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Fountain",
+          "text": "Library",
           "onClick": {
-            "name": "FontanBuild"
+            "name": "LibraryBuild"
           },
-          "width": 67,
+          "width": 61,
           "height": 20,
-          "name": "Fountain",
-          "x": 105,
-          "y": 35
+          "name": "Library",
+          "x": 267,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Blacksmith",
+          "onClick": {
+            "name": "BlacksmithBuild"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Blacksmith",
+          "x": 186,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Butcher Shop",
+          "onClick": {
+            "name": "ButcherShopBuild"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "Butcher Shop",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Enter the coordinates for the structure",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Enter the coordinates for the structure",
+          "x": 114,
+          "y": 26
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "sX",
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "sY",
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "width": 120,
+          "height": 20,
+          "name": "sZ",
+          "x": 159,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "X:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "X:",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Y:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Y:",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Z:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Z:",
+          "x": 141,
+          "y": 107
         }
       }
     ],

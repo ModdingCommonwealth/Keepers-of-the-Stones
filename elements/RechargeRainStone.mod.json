@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "rain_stone.png",
+    "icon": "recharge_rain_stone.png",
     "color": {
       "value": -6710785,
       "falpha": 0.0

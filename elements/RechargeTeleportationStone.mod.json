@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "teleportation_stone.png",
+    "icon": "recharge_teleportation_stone.png",
     "color": {
       "value": -16750849,
       "falpha": 0.0

@@ -114,9 +114,6 @@ public class PowerModVariables {
 			clone.teleportation = original.teleportation;
 			clone.explosion = original.explosion;
 			clone.amber = original.amber;
-			clone.tpX = original.tpX;
-			clone.tpZ = original.tpZ;
-			clone.tpY = original.tpY;
 			clone.blue_flame = original.blue_flame;
 			clone.power_level = original.power_level;
 			clone.magnet = original.magnet;
@@ -459,9 +456,6 @@ public class PowerModVariables {
 		public boolean teleportation = false;
 		public boolean explosion = false;
 		public boolean amber = false;
-		public double tpX = 0;
-		public double tpZ = 0;
-		public double tpY = 0;
 		public boolean blue_flame = false;
 		public boolean fog = false;
 		public double power_level = 0;
@@ -515,9 +509,6 @@ public class PowerModVariables {
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("explosion", explosion);
 			nbt.putBoolean("amber", amber);
-			nbt.putDouble("tpX", tpX);
-			nbt.putDouble("tpZ", tpZ);
-			nbt.putDouble("tpY", tpY);
 			nbt.putBoolean("blue_flame", blue_flame);
 			nbt.putBoolean("fog", fog);
 			nbt.putDouble("power_level", power_level);
@@ -568,9 +559,6 @@ public class PowerModVariables {
 			teleportation = nbt.getBoolean("teleportation");
 			explosion = nbt.getBoolean("explosion");
 			amber = nbt.getBoolean("amber");
-			tpX = nbt.getDouble("tpX");
-			tpZ = nbt.getDouble("tpZ");
-			tpY = nbt.getDouble("tpY");
 			blue_flame = nbt.getBoolean("blue_flame");
 			fog = nbt.getBoolean("fog");
 			power_level = nbt.getDouble("power_level");
@@ -641,9 +629,6 @@ public class PowerModVariables {
 					variables.teleportation = message.data.teleportation;
 					variables.explosion = message.data.explosion;
 					variables.amber = message.data.amber;
-					variables.tpX = message.data.tpX;
-					variables.tpZ = message.data.tpZ;
-					variables.tpY = message.data.tpY;
 					variables.blue_flame = message.data.blue_flame;
 					variables.fog = message.data.fog;
 					variables.power_level = message.data.power_level;

@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "amber_stone.png",
+    "icon": "recharge_amber_stone.png",
     "color": {
       "value": -26266,
       "falpha": 0.0

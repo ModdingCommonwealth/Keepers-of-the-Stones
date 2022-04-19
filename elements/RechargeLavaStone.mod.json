@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "lava_stone.png",
+    "icon": "recharge_lava_stone.png",
     "color": {
       "value": -39424,
       "falpha": 0.0

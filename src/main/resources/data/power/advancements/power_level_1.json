@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "power:textures/screens/energy_block.png",
+    "background": "power:textures/screens/power_level_theme.png",
     "icon": {
       "item": "power:book_of_elements"
     },

@@ -7,7 +7,7 @@
     "achievementIcon": {
       "value": "CUSTOM:FireStone"
     },
-    "background": "moon_stones_block.png",
+    "background": "mighty_master_theme.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,

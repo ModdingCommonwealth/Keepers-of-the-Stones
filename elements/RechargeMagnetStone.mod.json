@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Recharge",
-    "icon": "magnet_stone.png",
+    "icon": "recharge_magnet_stone.png",
     "color": {
       "value": -39220,
       "falpha": 0.0

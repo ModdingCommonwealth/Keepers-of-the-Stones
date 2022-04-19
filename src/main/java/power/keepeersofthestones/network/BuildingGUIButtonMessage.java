@@ -2,7 +2,9 @@
 package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.BuildingGUIMenu;
-import power.keepeersofthestones.procedures.FontanBuildProcedure;
+import power.keepeersofthestones.procedures.LibraryBuildProcedure;
+import power.keepeersofthestones.procedures.ButcherShopBuildProcedure;
+import power.keepeersofthestones.procedures.BlacksmithBuildProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -64,7 +66,15 @@ public class BuildingGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			FontanBuildProcedure.execute(world, x, y, z, entity);
+			LibraryBuildProcedure.execute(world, entity, guistate);
+		}
+		if (buttonID == 1) {
+
+			BlacksmithBuildProcedure.execute(world, entity, guistate);
+		}
+		if (buttonID == 2) {
+
+			ButcherShopBuildProcedure.execute(world, entity, guistate);
 		}
 	}
 
