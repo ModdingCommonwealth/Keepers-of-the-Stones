@@ -201,5 +201,11 @@ public class BuildingGUIScreen extends AbstractContainerScreen<BuildingGUIMenu> 
 		guistate.put("text:sZ", sZ);
 		sZ.setMaxLength(32767);
 		this.addWidget(this.sZ);
+		this.addRenderableWidget(new Button(this.leftPos + 10, this.topPos + 164, 82, 20, new TextComponent("Streetlight"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new BuildingGUIButtonMessage(3, x, y, z));
+				BuildingGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
+		}));
 	}
 }

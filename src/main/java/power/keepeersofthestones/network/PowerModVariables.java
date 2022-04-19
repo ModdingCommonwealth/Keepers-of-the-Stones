@@ -283,6 +283,7 @@ public class PowerModVariables {
 		public boolean cosmos_stone = false;
 		public boolean magnet_stone = false;
 		public boolean mist_stone = false;
+		public String build = "Build 2.0.0.20-beta";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -307,6 +308,7 @@ public class PowerModVariables {
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
 			magnet_stone = nbt.getBoolean("magnet_stone");
 			mist_stone = nbt.getBoolean("mist_stone");
+			build = nbt.getString("build");
 		}
 
 		@Override
@@ -327,6 +329,7 @@ public class PowerModVariables {
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			nbt.putBoolean("magnet_stone", magnet_stone);
 			nbt.putBoolean("mist_stone", mist_stone);
+			nbt.putString("build", build);
 			return nbt;
 		}
 

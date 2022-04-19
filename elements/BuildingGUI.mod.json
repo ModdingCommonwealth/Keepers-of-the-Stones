@@ -149,6 +149,20 @@
           "x": 141,
           "y": 107
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Streetlight",
+          "onClick": {
+            "name": "StreetlightBuild"
+          },
+          "width": 82,
+          "height": 20,
+          "name": "Streetlight",
+          "x": 96,
+          "y": 179
+        }
       }
     ],
     "gridSettings": {

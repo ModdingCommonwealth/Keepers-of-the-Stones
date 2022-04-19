@@ -12535,6 +12535,27 @@
         ]
       },
       "path": "~/Creation/Structures"
+    },
+    {
+      "name": "Checkversion",
+      "type": "procedure",
+      "sortid": 773,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "checkversion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReceivingStones"
     }
   ],
   "variable_elements": [
@@ -13059,6 +13080,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "build",
+      "type": "string",
+      "scope": "map",
+      "value": "Build 2.0.0.20-beta"
     }
   ],
   "sound_elements": [

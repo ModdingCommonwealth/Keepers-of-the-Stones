@@ -2,6 +2,7 @@
 package power.keepeersofthestones.network;
 
 import power.keepeersofthestones.world.inventory.BuildingGUIMenu;
+import power.keepeersofthestones.procedures.StreetlightBuildProcedure;
 import power.keepeersofthestones.procedures.LibraryBuildProcedure;
 import power.keepeersofthestones.procedures.ButcherShopBuildProcedure;
 import power.keepeersofthestones.procedures.BlacksmithBuildProcedure;
@@ -75,6 +76,10 @@ public class BuildingGUIButtonMessage {
 		if (buttonID == 2) {
 
 			ButcherShopBuildProcedure.execute(world, entity, guistate);
+		}
+		if (buttonID == 3) {
+
+			StreetlightBuildProcedure.execute(world, entity, guistate);
 		}
 	}
 
