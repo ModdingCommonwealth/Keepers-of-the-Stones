@@ -2292,7 +2292,7 @@
       "name": "LavaMasterEffectEnd",
       "type": "procedure",
       "sortid": 195,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "lava_master_effect_end",
       "metadata": {
@@ -2436,7 +2436,7 @@
       "name": "RainStoneUse",
       "type": "procedure",
       "sortid": 202,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "rain_stone_use",
       "metadata": {
@@ -4329,7 +4329,7 @@
       "name": "LightMasterEffectEnd",
       "type": "procedure",
       "sortid": 308,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "light_master_effect_end",
       "metadata": {
@@ -5034,7 +5034,7 @@
       "name": "SunStoneUse",
       "type": "procedure",
       "sortid": 347,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sun_stone_use",
       "metadata": {
@@ -5305,7 +5305,7 @@
       "name": "MoonStoneUse",
       "type": "procedure",
       "sortid": 361,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "moon_stone_use",
       "metadata": {
@@ -5639,7 +5639,7 @@
       "name": "CreationStoneUse",
       "type": "procedure",
       "sortid": 378,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "creation_stone_use",
       "metadata": {
@@ -5913,7 +5913,7 @@
       "name": "DestructionMasterEffectEnd",
       "type": "procedure",
       "sortid": 391,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "destruction_master_effect_end",
       "metadata": {
@@ -7331,7 +7331,7 @@
       "name": "BloodMasterEffectEnd",
       "type": "procedure",
       "sortid": 471,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "blood_master_effect_end",
       "metadata": {
@@ -7825,7 +7825,7 @@
       "name": "TimeMasterEffectEnd",
       "type": "procedure",
       "sortid": 500,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "time_master_effect_end",
       "metadata": {
@@ -10526,7 +10526,7 @@
       "name": "ExplosionMasterEffectEnd",
       "type": "procedure",
       "sortid": 634,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "explosion_master_effect_end",
       "metadata": {
@@ -12390,7 +12390,7 @@
       "name": "MagnetMasterEffectEnd",
       "type": "procedure",
       "sortid": 767,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "magnet_master_effect_end",
       "metadata": {
@@ -12535,6 +12535,15 @@
         ]
       },
       "path": "~/Creation/Structures"
+    },
+    {
+      "name": "SkillsGUI",
+      "type": "gui",
+      "sortid": 773,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skills_gui",
+      "path": "~/SystemPowerLevel"
     }
   ],
   "variable_elements": [
@@ -13031,12 +13040,6 @@
       "value": "false"
     },
     {
-      "name": "power_level",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
       "name": "magnet_stone",
       "type": "logic",
       "scope": "map",
@@ -13065,6 +13068,24 @@
       "type": "string",
       "scope": "map",
       "value": "Build 2.0.0.20-beta"
+    },
+    {
+      "name": "power_level1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "power_level2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "power_level3",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
