@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:moon_wither"
+    },
+    "title": {
+      "translate": "advancements.wither_and_decay.title"
+    },
+    "description": {
+      "translate": "advancements.wither_and_decay.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wither_and_decay": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

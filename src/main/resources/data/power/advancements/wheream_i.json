@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:shadow_invisible"
+    },
+    "title": {
+      "translate": "advancements.wheream_i.title"
+    },
+    "description": {
+      "translate": "advancements.wheream_i.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wheream_i": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

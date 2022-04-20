@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:lighting"
+    },
+    "title": {
+      "translate": "advancements.bright_light.title"
+    },
+    "description": {
+      "translate": "advancements.bright_light.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bright_light": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

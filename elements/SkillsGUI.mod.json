@@ -280,6 +280,9 @@
           "onClick": {
             "name": "GetPowerLevel1"
           },
+          "displayCondition": {
+            "name": "CurrentLevel0"
+          },
           "width": 61,
           "height": 20,
           "name": "Upgrade",

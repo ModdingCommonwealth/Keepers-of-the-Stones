@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "power:sun_regeneration"
+    },
+    "title": {
+      "translate": "advancements.flower_gleam_and_glow.title"
+    },
+    "description": {
+      "translate": "advancements.flower_gleam_and_glow.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "flower_gleam_and_glow": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "power:mighty_master"
+}

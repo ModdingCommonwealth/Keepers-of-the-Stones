@@ -4,6 +4,7 @@ package power.keepeersofthestones.client.gui;
 import power.keepeersofthestones.world.inventory.SkillsGUIMenu;
 import power.keepeersofthestones.procedures.CurrentLevel2Procedure;
 import power.keepeersofthestones.procedures.CurrentLevel1Procedure;
+import power.keepeersofthestones.procedures.CurrentLevel0Procedure;
 import power.keepeersofthestones.network.SkillsGUIButtonMessage;
 import power.keepeersofthestones.PowerMod;
 
@@ -143,10 +144,16 @@ public class SkillsGUIScreen extends AbstractContainerScreen<SkillsGUIMenu> {
 			}
 		});
 		this.addRenderableWidget(new Button(this.leftPos + 46, this.topPos + 141, 61, 20, new TextComponent("Upgrade"), e -> {
-			if (true) {
+			if (CurrentLevel0Procedure.execute(entity)) {
 				PowerMod.PACKET_HANDLER.sendToServer(new SkillsGUIButtonMessage(2, x, y, z));
 				SkillsGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (CurrentLevel0Procedure.execute(entity))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 	}
 }
