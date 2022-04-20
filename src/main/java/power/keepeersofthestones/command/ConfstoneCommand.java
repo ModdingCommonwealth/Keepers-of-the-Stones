@@ -2,9 +2,7 @@
 package power.keepeersofthestones.command;
 
 import power.keepeersofthestones.procedures.ResetmychoiceProcedureProcedure;
-import power.keepeersofthestones.procedures.GetPowerLevel3Procedure;
-import power.keepeersofthestones.procedures.GetPowerLevel2Procedure;
-import power.keepeersofthestones.procedures.GetPowerLevel1Procedure;
+import power.keepeersofthestones.procedures.ResetLevelProcedure;
 import power.keepeersofthestones.procedures.DetransformKeyPriNazhatiiKlavishiProcedure;
 
 import org.checkerframework.checker.units.qual.s;
@@ -17,7 +15,6 @@ import net.minecraftforge.common.util.FakePlayerFactory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
-import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 import java.util.Objects;
@@ -39,7 +36,7 @@ public class ConfstoneCommand {
 
 					ResetmychoiceProcedureProcedure.execute(world, x, y, z, entity);
 					return 0;
-				})).then(Commands.literal("detransform").then(Commands.argument("player", EntityArgument.player()).executes(cmdargs -> {
+				})).then(Commands.literal("detransform").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
 					double x = cmdargs.getSource().getPosition().x();
 					double y = cmdargs.getSource().getPosition().y();
@@ -51,7 +48,7 @@ public class ConfstoneCommand {
 
 					DetransformKeyPriNazhatiiKlavishiProcedure.execute(entity);
 					return 0;
-				}))).then(Commands.literal("powerup").then(Commands.literal("basic").executes(cmdargs -> {
+				})).then(Commands.literal("resetlevel").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
 					double x = cmdargs.getSource().getPosition().x();
 					double y = cmdargs.getSource().getPosition().y();
@@ -61,32 +58,8 @@ public class ConfstoneCommand {
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					GetPowerLevel1Procedure.execute(entity);
+					ResetLevelProcedure.execute(entity);
 					return 0;
-				})).then(Commands.literal("super").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
-					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-
-					GetPowerLevel2Procedure.execute(entity);
-					return 0;
-				})).then(Commands.literal("ultimate").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
-					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-
-					GetPowerLevel3Procedure.execute(entity);
-					return 0;
-				}))));
+				})));
 	}
 }

@@ -24,11 +24,13 @@ import net.minecraft.client.KeyMapping;
 public class PowerModKeyMappings {
 	public static final KeyMapping DETRANSFORM_KEY = new KeyMapping("key.power.detransform_key", GLFW.GLFW_KEY_U, "key.categories.stones");
 	public static final KeyMapping SPECIAL_ABILITY_KEY = new KeyMapping("key.power.special_ability_key", GLFW.GLFW_KEY_R, "key.categories.stone");
+	public static final KeyMapping SKILLS_KEY = new KeyMapping("key.power.skills_key", GLFW.GLFW_KEY_Y, "key.categories.stones");
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
 		ClientRegistry.registerKeyBinding(DETRANSFORM_KEY);
 		ClientRegistry.registerKeyBinding(SPECIAL_ABILITY_KEY);
+		ClientRegistry.registerKeyBinding(SKILLS_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})

@@ -19,7 +19,7 @@
             "falpha": 0.0
           },
           "name": "Skills",
-          "x": 186,
+          "x": 195,
           "y": 26
         }
       },
@@ -124,7 +124,7 @@
             "falpha": 0.0
           },
           "name": "Level 2",
-          "x": 159,
+          "x": 195,
           "y": 44
         }
       },
@@ -137,7 +137,7 @@
             "falpha": 0.0
           },
           "name": "Level 3",
-          "x": 267,
+          "x": 330,
           "y": 44
         }
       },
@@ -147,7 +147,7 @@
           "image": "book_of_elements.png",
           "use1Xscale": false,
           "name": "book_of_elements.png",
-          "x": 168,
+          "x": 204,
           "y": 53
         }
       },
@@ -157,8 +157,8 @@
           "image": "book_of_elements.png",
           "use1Xscale": false,
           "name": "book_of_elements.png",
-          "x": 276,
-          "y": 53
+          "x": 339,
+          "y": 62
         }
       },
       {
@@ -170,7 +170,7 @@
             "falpha": 0.0
           },
           "name": "2 seconds",
-          "x": 159,
+          "x": 195,
           "y": 134
         }
       },
@@ -183,7 +183,7 @@
             "falpha": 0.0
           },
           "name": "3 minutes",
-          "x": 159,
+          "x": 195,
           "y": 80
         }
       },
@@ -196,7 +196,7 @@
             "falpha": 0.0
           },
           "name": "15 minutes",
-          "x": 159,
+          "x": 195,
           "y": 107
         }
       },
@@ -209,7 +209,7 @@
             "falpha": 0.0
           },
           "name": "2 minutes",
-          "x": 267,
+          "x": 330,
           "y": 80
         }
       },
@@ -222,7 +222,7 @@
             "falpha": 0.0
           },
           "name": "20 minutes",
-          "x": 267,
+          "x": 330,
           "y": 107
         }
       },
@@ -235,7 +235,7 @@
             "falpha": 0.0
           },
           "name": "1 second",
-          "x": 267,
+          "x": 330,
           "y": 134
         }
       },
@@ -243,10 +243,16 @@
         "type": "button",
         "data": {
           "text": "Upgrade",
+          "onClick": {
+            "name": "GetPowerLevel2"
+          },
+          "displayCondition": {
+            "name": "CurrentLevel1"
+          },
           "width": 61,
           "height": 20,
           "name": "Upgrade",
-          "x": 159,
+          "x": 195,
           "y": 161
         }
       },
@@ -254,10 +260,30 @@
         "type": "button",
         "data": {
           "text": "Upgrade",
+          "onClick": {
+            "name": "GetPowerLevel3"
+          },
+          "displayCondition": {
+            "name": "CurrentLevel2"
+          },
           "width": 61,
           "height": 20,
           "name": "Upgrade",
-          "x": 267,
+          "x": 330,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Upgrade",
+          "onClick": {
+            "name": "GetPowerLevel1"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Upgrade",
+          "x": 60,
           "y": 161
         }
       }

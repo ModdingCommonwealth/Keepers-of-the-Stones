@@ -12234,24 +12234,6 @@
       "path": "~/MagicBox"
     },
     {
-      "name": "PowerLevel1",
-      "type": "achievement",
-      "sortid": 755,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "power_level_1",
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "PowerLevel2",
-      "type": "achievement",
-      "sortid": 757,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "power_level_2",
-      "path": "~/SystemPowerLevel"
-    },
-    {
       "name": "GetPowerLevel2",
       "type": "procedure",
       "sortid": 758,
@@ -12266,15 +12248,6 @@
           }
         ]
       },
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "PowerLevel3",
-      "type": "achievement",
-      "sortid": 759,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "power_level_3",
       "path": "~/SystemPowerLevel"
     },
     {
@@ -12561,6 +12534,119 @@
         ]
       },
       "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "CurrentLevel1",
+      "type": "procedure",
+      "sortid": 775,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_level_1",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "CurrentLevel2",
+      "type": "procedure",
+      "sortid": 776,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_level_2",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "CurrentLevel0",
+      "type": "procedure",
+      "sortid": 777,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_level_0",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "ResetLevel",
+      "type": "procedure",
+      "sortid": 778,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
+    },
+    {
+      "name": "SkillsKey",
+      "type": "keybind",
+      "sortid": 779,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skills_key",
+      "path": "~/Keys"
+    },
+    {
+      "name": "OpenSkillsGUI",
+      "type": "procedure",
+      "sortid": 780,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_skills_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys"
     }
   ],
   "variable_elements": [
@@ -13146,6 +13232,7 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
+      "key.power.skills_key": "Клавиша скиллов",
       "item.power.technology_chestplate": "Technology Chestplate",
       "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.snow_golem_creator": "Создание Снежного голема",
@@ -13164,7 +13251,6 @@
       "effect.power.ice_master": "Мастер Льда",
       "effect.power.recharge_amber_stone": "Перезарядка",
       "item.power.piece_of_earth": "Кусок Земли",
-      "advancements.power_level_3.descr": "Уровень мощности - Ultimate",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
       "biome.power.moon_land": "Лунная Земля",
       "effect.power.acceleration_time_effect": "Ускорение Времени",
@@ -13487,14 +13573,12 @@
       "item.power.mushrooms_stone": "Камень Грибов",
       "item.power.ocean_boots": "Ботинки Океана",
       "effect.power.moon_master": "Мастер Луны",
-      "advancements.power_level_2.title": "Уровень Мощности II",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
       "item.power.energy_stone": "Камень Энергии",
       "item.power.energy_absorption": "Поглощение Энергии",
       "advancements.put_it_on_charge_overnight.title": "Поставить на ночь на зарядку",
       "item.power.ice_chestplate": "Ледяная Куртка",
       "item.power.moon_stones": "Лунные Камни",
-      "advancements.power_level_1.descr": "Уровень мощности - Basic",
       "item.power.sound_battery": "Батарея",
       "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
@@ -13520,7 +13604,6 @@
       "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.tornado_helmet": "Шлем Торнадо",
-      "advancements.power_level_2.descr": "Уровень мощности - Super",
       "item.power.magic_fireball": "Волшебный Огненный Шар",
       "advancements.absolute_power.title": "Абсолютная Сила",
       "item.power.crystal_stone": "Камень Кристалла",
@@ -13532,7 +13615,6 @@
       "item.power.tiger_claw": "Тигриный Коготь",
       "advancements.bloodlust.title": "Жажда Крови",
       "effect.power.blue_flame_master": "Мастер Синего Пламени",
-      "advancements.power_level_1.title": "Уровень Мощности I",
       "item.power.speed_stone": "Камень Скорости",
       "item.power.rain_stone": "Камень Дождя",
       "item.power.lightning_strike": "Удар Молнии",
@@ -13559,7 +13641,6 @@
       "effect.power.recharge_space_stone": "Перезарядка",
       "item.power.blood_helmet": "Шлем крови",
       "item.power.light_chestplate": "Нагрудник света",
-      "advancements.power_level_3.title": "Уровень Мощности III",
       "item.power.light_stone": "Камень Света",
       "item.power.ice_battery": "Батарея",
       "item.power.sand_stone": "Камень Песка",
@@ -13608,6 +13689,7 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
+      "key.power.skills_key": "Skills Key",
       "effect.power.recharge_energy_stone": "Recharge",
       "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Snow Golem Creator",
@@ -13626,7 +13708,6 @@
       "item.power.time_reversed": "Time Reversed",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
-      "advancements.power_level_3.descr": "Power level - Ultimate",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
       "biome.power.moon_land": "Moon Land",
       "effect.power.acceleration_time_effect": "Acceleration Time",
@@ -13950,14 +14031,12 @@
       "item.power.mushrooms_stone": "Mushrooms Stone",
       "item.power.ocean_boots": "Ocean Boots",
       "effect.power.moon_master": "Master of the Moon",
-      "advancements.power_level_2.title": "Power Level II",
       "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.energy_stone": "Energy stone",
       "item.power.energy_absorption": "Energy Absorption",
       "advancements.put_it_on_charge_overnight.title": "Put it on charge overnight",
       "item.power.ice_chestplate": "Ice Chestplate",
       "item.power.moon_stones": "Moon Stones",
-      "advancements.power_level_1.descr": "Power level - Basic",
       "item.power.sound_battery": "Battery",
       "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
@@ -13983,7 +14062,6 @@
       "item.power.tp_on_earth": "Tp On Earth",
       "item.power.ice_ball": "Ice Ball",
       "item.power.tornado_helmet": "Tornado Helmet",
-      "advancements.power_level_2.descr": "Power level - Super",
       "item.power.magic_fireball": "Magic Fireball",
       "advancements.absolute_power.title": "Absolute Power",
       "item.power.crystal_stone": "Crystal Stone",
@@ -13995,7 +14073,6 @@
       "item.power.tiger_claw": "Tiger Claw",
       "advancements.bloodlust.title": "Bloodlust",
       "effect.power.blue_flame_master": "Master of Blue Flame",
-      "advancements.power_level_1.title": "Power Level I",
       "item.power.speed_stone": "Speed Stone",
       "item.power.rain_stone": "Rain Stone",
       "item.power.lightning_strike": "Lightning Strike",
@@ -14022,7 +14099,6 @@
       "effect.power.recharge_space_stone": "Recharge",
       "item.power.blood_helmet": "Blood Helmet",
       "item.power.light_chestplate": "Light Chestplate",
-      "advancements.power_level_3.title": "Power Level III",
       "item.power.light_stone": "Light Stone",
       "item.power.ice_battery": "Battery",
       "item.power.sand_stone": "Sand Stone",
