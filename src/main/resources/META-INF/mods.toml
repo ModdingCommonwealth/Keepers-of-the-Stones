@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="MIT License"
+license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="power"
 version="2.0.0.23"
 displayName="Keepers of the Stones"
-credits="Created by MagicalAlexey"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
+credits="Created by ModdingCommonwealth"
+displayURL="https://raw.githubusercontent.com/ModdingCommonwealth/Keepers-of-the-Stones/main/kos.json"
 updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Keepers-of-the-Stones/main/kos.json"
 logoFile="logo.png"
-authors="MagicalAlexey"
+authors="ModdingCommonwealth"
 description='''
 This mod will add new sources of energy to the world with which you can transform into masters of the elements.
 '''
