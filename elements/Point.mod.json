@@ -8,7 +8,7 @@
     "name": "Point",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -36,6 +36,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

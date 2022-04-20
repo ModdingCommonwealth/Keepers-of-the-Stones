@@ -12692,6 +12692,24 @@
       "locked_code": false,
       "registry_name": "wither_and_decay",
       "path": "~/Achievements"
+    },
+    {
+      "name": "CurrentLevel3",
+      "type": "procedure",
+      "sortid": 786,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_level_3",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SystemPowerLevel"
     }
   ],
   "variable_elements": [
