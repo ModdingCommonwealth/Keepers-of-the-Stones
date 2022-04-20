@@ -8,7 +8,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -19,7 +18,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class BlueFireballItem extends Item {
 	public BlueFireballItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(5000));
+		super(new Item.Properties().tab(null).durability(5000));
 	}
 
 	@Override

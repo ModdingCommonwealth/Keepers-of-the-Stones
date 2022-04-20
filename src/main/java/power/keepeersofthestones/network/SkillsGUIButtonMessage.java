@@ -66,15 +66,15 @@ public class SkillsGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			GetPowerLevel2Procedure.execute(entity);
+			GetPowerLevel1Procedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			GetPowerLevel3Procedure.execute(entity);
+			GetPowerLevel2Procedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			GetPowerLevel1Procedure.execute(entity);
+			GetPowerLevel3Procedure.execute(entity);
 		}
 	}
 

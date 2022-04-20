@@ -47,75 +47,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "fire_stone.png",
-          "use1Xscale": false,
-          "name": "fire_stone.png",
-          "x": 24,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "fire_master.png",
-          "use1Xscale": false,
-          "name": "fire_master.png",
-          "x": 24,
-          "y": 107
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "magic_fireball.png",
-          "use1Xscale": false,
-          "name": "magic_fireball.png",
-          "x": 24,
-          "y": 134
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "5 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "5 minutes",
-          "x": 60,
-          "y": 80
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "10 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "10 minutes",
-          "x": 60,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "3 seconds",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "3 seconds",
-          "x": 60,
-          "y": 134
-        }
-      },
-      {
         "type": "label",
         "data": {
           "text": "Level 2",
@@ -124,7 +55,7 @@
             "falpha": 0.0
           },
           "name": "Level 2",
-          "x": 195,
+          "x": 132,
           "y": 44
         }
       },
@@ -137,7 +68,7 @@
             "falpha": 0.0
           },
           "name": "Level 3",
-          "x": 330,
+          "x": 204,
           "y": 44
         }
       },
@@ -147,7 +78,7 @@
           "image": "book_of_elements.png",
           "use1Xscale": false,
           "name": "book_of_elements.png",
-          "x": 204,
+          "x": 141,
           "y": 53
         }
       },
@@ -157,120 +88,8 @@
           "image": "book_of_elements.png",
           "use1Xscale": false,
           "name": "book_of_elements.png",
-          "x": 339,
-          "y": 62
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "2 seconds",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "2 seconds",
-          "x": 195,
-          "y": 134
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "3 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "3 minutes",
-          "x": 195,
-          "y": 80
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "15 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "15 minutes",
-          "x": 195,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "2 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "2 minutes",
-          "x": 330,
-          "y": 80
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "20 minutes",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "20 minutes",
-          "x": 330,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "1 second",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "1 second",
-          "x": 330,
-          "y": 134
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Upgrade",
-          "onClick": {
-            "name": "GetPowerLevel2"
-          },
-          "displayCondition": {
-            "name": "CurrentLevel1"
-          },
-          "width": 61,
-          "height": 20,
-          "name": "Upgrade",
-          "x": 195,
-          "y": 161
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Upgrade",
-          "onClick": {
-            "name": "GetPowerLevel3"
-          },
-          "displayCondition": {
-            "name": "CurrentLevel2"
-          },
-          "width": 61,
-          "height": 20,
-          "name": "Upgrade",
-          "x": 330,
-          "y": 161
+          "x": 213,
+          "y": 53
         }
       },
       {
@@ -286,8 +105,90 @@
           "width": 61,
           "height": 20,
           "name": "Upgrade",
-          "x": 60,
-          "y": 161
+          "x": 45,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Upgrade",
+          "onClick": {
+            "name": "GetPowerLevel2"
+          },
+          "displayCondition": {
+            "name": "CurrentLevel1"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Upgrade",
+          "x": 119,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Upgrade",
+          "onClick": {
+            "name": "GetPowerLevel3"
+          },
+          "displayCondition": {
+            "name": "CurrentLevel2"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Upgrade",
+          "x": 192,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CurrentLevel1"
+          },
+          "name": "Current",
+          "x": 58,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CurrentLevel2"
+          },
+          "name": "Current",
+          "x": 132,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "CurrentLevel3"
+          },
+          "name": "Current",
+          "x": 206,
+          "y": 85
         }
       }
     ],
@@ -296,7 +197,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
