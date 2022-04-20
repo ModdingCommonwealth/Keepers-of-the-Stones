@@ -4,7 +4,7 @@
   "definition": {
     "triggerKey": "R",
     "keyBindingName": "Special Ability Key",
-    "keyBindingCategoryKey": "stone",
+    "keyBindingCategoryKey": "stones",
     "onKeyPressed": {
       "name": "SpecialAbilityUse"
     }

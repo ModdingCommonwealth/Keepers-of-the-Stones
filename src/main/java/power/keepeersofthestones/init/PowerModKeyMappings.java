@@ -5,6 +5,7 @@
 package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.network.SpecialAbilityKeyMessage;
+import power.keepeersofthestones.network.SkillsKeyMessage;
 import power.keepeersofthestones.network.DetransformKeyMessage;
 import power.keepeersofthestones.PowerMod;
 
@@ -23,7 +24,7 @@ import net.minecraft.client.KeyMapping;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PowerModKeyMappings {
 	public static final KeyMapping DETRANSFORM_KEY = new KeyMapping("key.power.detransform_key", GLFW.GLFW_KEY_U, "key.categories.stones");
-	public static final KeyMapping SPECIAL_ABILITY_KEY = new KeyMapping("key.power.special_ability_key", GLFW.GLFW_KEY_R, "key.categories.stone");
+	public static final KeyMapping SPECIAL_ABILITY_KEY = new KeyMapping("key.power.special_ability_key", GLFW.GLFW_KEY_R, "key.categories.stones");
 	public static final KeyMapping SKILLS_KEY = new KeyMapping("key.power.skills_key", GLFW.GLFW_KEY_Y, "key.categories.stones");
 
 	@SubscribeEvent
@@ -48,6 +49,12 @@ public class PowerModKeyMappings {
 					if (event.getAction() == GLFW.GLFW_PRESS) {
 						PowerMod.PACKET_HANDLER.sendToServer(new SpecialAbilityKeyMessage(0, 0));
 						SpecialAbilityKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == SKILLS_KEY.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						PowerMod.PACKET_HANDLER.sendToServer(new SkillsKeyMessage(0, 0));
+						SkillsKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 					}
 				}
 			}

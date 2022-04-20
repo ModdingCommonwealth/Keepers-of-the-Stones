@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "Y",
     "keyBindingName": "Skills Key",
-    "keyBindingCategoryKey": "stones"
+    "keyBindingCategoryKey": "stones",
+    "onKeyPressed": {
+      "name": "OpenSkillsGUI"
+    }
   }
 }
