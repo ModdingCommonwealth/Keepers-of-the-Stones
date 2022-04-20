@@ -22,7 +22,7 @@ public class EarthStoneUseProcedure {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.EARTH_MASTER.get(), 18000, 0, (false), (false)));
 					} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PowerModVariables.PlayerVariables())).power_level == 3) {
+							.orElse(new PowerModVariables.PlayerVariables())).power_level >= 3) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(PowerModMobEffects.EARTH_MASTER.get(), 24000, 0, (false), (false)));
 					} else {
