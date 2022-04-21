@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "1.9.4",
-    "1.18.2-recommended": "1.9.4"
+    "1.18.2-latest": "2.0.0",
+    "1.18.2-recommended": "2.0.0"
   },
   "1.16.5": {
     "B2": "
@@ -358,6 +358,33 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Now the shield is activated by right-clicking on the air
 - [Bugfix] Fixed dropping of rechargeable items after removing the wizard effect
 - [Bugfix] Fixed a bug with the issuance of a crystal stone when using a battery
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"2.0.0": "
+- Added A Book Of Elements
+- Added new achievements
+- Added new inventory tabs in creative mode
+- Magic boxes have been returned (functionality will be added in the future)
+- The identifier of the cosmos stone has been changed to match the localization
+- The checkpoint has been replaced with a point with which you can teleport by coordinates
+- Sorted some items and blocks
+- Balanced effects of stopping and speeding up time
+- Improved generation of Dinoera (Past)
+- Gorenje magic fireball changed to create fire particles
+- The resetmychoice command has been replaced with confstone
+- Removed unused commands
+- Added the planet command
+- Updated the mechanics of placing the structure at the materialization of structures
+- Added new structures for the creation wizard
+- Removed the fountain structure
+- Updated the light master icon
+- All textures have been placed in their own categories
+- The mod now uses the GPLv3 license
+- [Experimental] Added early support for power levels
+- [Bugfix] Fixed the streamlining of some blocks
+- [Bugfix] Fixed key binding categories
+- [Bugfix] Fixed a bug with copying stones during re-election
+- [Bugfix] Fixed a bug where a player could burn after using a magic fireball
+- [Bugfix] Fixed a bug that caused the energy absorption spell to disappear from inventory
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
