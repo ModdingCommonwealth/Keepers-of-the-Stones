@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   build:
-    name: deploy to staging
+    name: Building and testing
     runs-on: ubuntu-18.04
 
     steps:
@@ -32,3 +32,9 @@ jobs:
       uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
       with:
         arguments: build
+        
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm test
