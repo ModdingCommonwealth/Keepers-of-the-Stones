@@ -50,12 +50,13 @@ public class ResetmychoiceProcedureProcedure {
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.FIRE_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.FIRE_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.FIRE_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.FIRE_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).fire_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -84,20 +85,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.AIR_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.AIR_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.AIR_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.AIR_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).air_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -126,20 +135,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.WATER_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.WATER_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.WATER_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.WATER_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).water_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -168,20 +185,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.EARTH_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.EARTH_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.EARTH_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.EARTH_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).earth_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -210,20 +235,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.ENERGY_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ENERGY_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.ENERGY_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ENERGY_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).energy_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -252,20 +285,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.ICE_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ICE_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.ICE_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ICE_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).ice_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -294,20 +335,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHTNING_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.LIGHTNING_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHTNING_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LIGHTNING_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).lightning_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -336,20 +385,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SOUND_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SOUND_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.SOUND_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SOUND_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).sound_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -378,20 +435,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.CRYSTAL_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.CRYSTAL_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.CRYSTAL_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.CRYSTAL_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).crystal_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -420,20 +485,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LAVA_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LAVA_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.LAVA_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LAVA_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).lava_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -462,20 +535,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.RAIN_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.RAIN_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.RAIN_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.RAIN_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).rain_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -504,20 +585,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TORNADO_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TORNADO_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.TORNADO_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TORNADO_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).tornado_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -546,20 +635,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.OCEAN_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.OCEAN_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.OCEAN_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.OCEAN_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).ocean_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -588,20 +685,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.GREENERY_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.GREENERY_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.GREENERY_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.GREENERY_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).greenery_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -630,20 +735,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.ANIMALS_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ANIMALS_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.ANIMALS_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.ANIMALS_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).animals_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -672,20 +785,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.METAL_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.METAL_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.METAL_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.METAL_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).metal_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -714,20 +835,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHT_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LIGHT_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.LIGHT_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LIGHT_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).light_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -756,20 +885,78 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
+			}
+			if (entity instanceof Player _playerHasItem
+					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.LIGHT_STONE.get()))
+					: false) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.LIGHT_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
+					}
+					PowerModVariables.WorldVariables.get(world).light_stone = false;
+					PowerModVariables.WorldVariables.get(world).syncData(world);
+					{
+						boolean _setval = false;
+						entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.selected = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						if (entity instanceof ServerPlayer _ent) {
+							BlockPos _bpos = new BlockPos(x, y, z);
+							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return new TextComponent("ChoiseMagicStoneGUI");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								}
+							}, _bpos);
+						}
+					}
+				} else {
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+								(false));
+				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SHADOW_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHADOW_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.SHADOW_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SHADOW_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).shadow_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -798,20 +985,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.VACUUM_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.VACUUM_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.VACUUM_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.VACUUM_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).vacuum_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -840,20 +1035,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SUN_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SUN_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.SUN_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SUN_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).sun_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -882,20 +1085,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.MOON_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.MOON_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.MOON_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.MOON_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).moon_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -924,20 +1135,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.CREATION_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.CREATION_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.CREATION_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.CREATION_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).creation_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -966,20 +1185,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.DESTRUCTION_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.DESTRUCTION_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.DESTRUCTION_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == PowerModItems.DESTRUCTION_STONE.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).destruction_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -1008,20 +1235,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.SPACE_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SPACE_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.SPACE_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).space_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -1050,20 +1285,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.BLOOD_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.BLOOD_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.BLOOD_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.BLOOD_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.WorldVariables.get(world).blood_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
@@ -1092,22 +1335,30 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
-					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TIME_STONE.get()))
+					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.BLOOD_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TIME_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.TIME_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.BLOOD_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
-					PowerModVariables.WorldVariables.get(world).time_stone = false;
+					PowerModVariables.WorldVariables.get(world).blood_stone = false;
 					PowerModVariables.WorldVariables.get(world).syncData(world);
 					{
 						boolean _setval = false;
@@ -1134,20 +1385,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TECHNOLOGY_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.TECHNOLOGY_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.TECHNOLOGY_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TECHNOLOGY_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.MapVariables.get(world).technology_stone = false;
 					PowerModVariables.MapVariables.get(world).syncData(world);
@@ -1176,20 +1435,78 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
+			}
+			if (entity instanceof Player _playerHasItem
+					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TIME_STONE.get()))
+					: false) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.TIME_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
+					}
+					PowerModVariables.WorldVariables.get(world).time_stone = false;
+					PowerModVariables.WorldVariables.get(world).syncData(world);
+					{
+						boolean _setval = false;
+						entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.selected = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+					{
+						if (entity instanceof ServerPlayer _ent) {
+							BlockPos _bpos = new BlockPos(x, y, z);
+							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return new TextComponent("ChoiseMagicStoneGUI");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								}
+							}, _bpos);
+						}
+					}
+				} else {
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+								(false));
+				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.TELEPORTATION_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.TELEPORTATION_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.TELEPORTATION_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.getItem() == PowerModItems.TELEPORTATION_STONE.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.MapVariables.get(world).teleportation_stone = false;
 					PowerModVariables.MapVariables.get(world).syncData(world);
@@ -1218,20 +1535,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.EXPLOSION_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.EXPLOSION_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.EXPLOSION_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.EXPLOSION_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.MapVariables.get(world).explosion_stone = false;
 					PowerModVariables.MapVariables.get(world).syncData(world);
@@ -1260,20 +1585,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.AMBER_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.AMBER_STONE
-						.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.AMBER_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.AMBER_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.MapVariables.get(world).amber_stone = false;
 					PowerModVariables.MapVariables.get(world).syncData(world);
@@ -1302,20 +1635,28 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(PowerModItems.BLUE_FLAME_STONE.get()))
 					: false) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.getItem() == PowerModItems.BLUE_FLAME_STONE.get())) {
-					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(PowerModItems.BLUE_FLAME_STONE.get());
-						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-								_player.inventoryMenu.getCraftSlots());
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.BLUE_FLAME_STONE
+						.get()) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"item replace entity @s weapon.mainhand with air");
 					}
 					PowerModVariables.MapVariables.get(world).blue_flame_stone = false;
 					PowerModVariables.MapVariables.get(world).syncData(world);
@@ -1344,10 +1685,17 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent(
-								"\u00A74It is impossible to replace the stone. Please make sure that the stone is in your inventory and that it is not in the main hand."),
+						_player.displayClientMessage(
+								new TextComponent(
+										"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
 								(false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(
+							new TextComponent(
+									"\u00A74It is impossible to replace the stone. Please make sure that the stone is in the leading hand."),
+							(false));
 			}
 		}
 	}

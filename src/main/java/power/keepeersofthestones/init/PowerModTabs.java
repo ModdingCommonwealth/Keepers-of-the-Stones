@@ -79,7 +79,7 @@ public class PowerModTabs {
 		TAB_EXPERIMENTAL_GROUP = new CreativeModeTab("tabexperimental_group") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PowerModItems.MIST_STONE.get());
+				return new ItemStack(PowerModItems.MAGNET_STONE.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

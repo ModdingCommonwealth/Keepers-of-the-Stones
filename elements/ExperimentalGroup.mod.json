@@ -4,7 +4,7 @@
   "definition": {
     "name": "Experimental Group",
     "icon": {
-      "value": "CUSTOM:MistStone"
+      "value": "CUSTOM:MagnetStone"
     },
     "showSearch": false
   }
