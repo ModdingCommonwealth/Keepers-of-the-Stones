@@ -18,5 +18,9 @@ public class RainFlyTickProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.RAIN, x, y, z, 10, 0, (-1), 0, 1);
 		}
+		if (!world.getLevelData().isRaining()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(MobEffects.LEVITATION);
+		}
 	}
 }
