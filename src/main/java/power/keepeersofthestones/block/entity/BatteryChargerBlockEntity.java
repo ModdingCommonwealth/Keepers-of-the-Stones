@@ -20,7 +20,6 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.network.Connection;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
@@ -64,11 +63,6 @@ public class BatteryChargerBlockEntity extends RandomizableContainerBlockEntity 
 	@Override
 	public CompoundTag getUpdateTag() {
 		return this.saveWithFullMetadata();
-	}
-
-	@Override
-	public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
-		this.load(pkt.getTag());
 	}
 
 	@Override

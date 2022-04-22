@@ -55,7 +55,6 @@
     "temperature": 2.0,
     "baseHeight": 0.5,
     "heightVariation": 1.0,
-    "biomeType": "DESERT",
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

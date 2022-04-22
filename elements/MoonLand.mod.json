@@ -55,7 +55,6 @@
     "temperature": 2.0,
     "baseHeight": 0.1,
     "heightVariation": 0.19999999999999998,
-    "biomeType": "WARM",
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

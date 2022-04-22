@@ -17,17 +17,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
 
 import javax.annotation.Nullable;
-
-import java.util.Iterator;
 
 import io.netty.buffer.Unpooled;
 
@@ -75,25 +70,6 @@ public class JoinPlayerInTheWorldProcedure {
 				_player.displayClientMessage(
 						new TextComponent("Attention! The space stone has had its identifier changed, use the /give command to give it back."),
 						(false));
-		}
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new PowerModVariables.PlayerVariables())).power_level == 0) {
-			{
-				double _setval = 1;
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power_level = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("power:power_level_1"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					Iterator _iterator = _ap.getRemainingCriteria().iterator();
-					while (_iterator.hasNext())
-						_player.getAdvancements().award(_adv, (String) _iterator.next());
-				}
-			}
 		}
 	}
 }
