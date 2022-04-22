@@ -1,8 +1,6 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.init.PowerModTabs;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
@@ -11,7 +9,7 @@ import net.minecraft.world.item.Item;
 
 public class SmokeStoneItem extends Item {
 	public SmokeStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_EXPERIMENTAL_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

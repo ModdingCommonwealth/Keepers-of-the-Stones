@@ -11163,15 +11163,6 @@
       "path": "~/Spirit"
     },
     {
-      "name": "ExperimentalGroup",
-      "type": "tab",
-      "sortid": 665,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "experimental_group",
-      "path": "~/ElementalGroups"
-    },
-    {
       "name": "EBFire",
       "type": "gui",
       "sortid": 666,
@@ -13584,7 +13575,6 @@
       "item.power.time_battery": "Батарея",
       "item.power.animals_helmet": "Животный шлем",
       "item.power.teleportation_battery": "Батарея",
-      "itemGroup.tabexperimental_group": "Экспериментальные",
       "item.power.water_drop": "Капли Воды",
       "item.power.tornado_leggings": "Штаны Торнадо",
       "item.power.creation_stone": "Камень Созидания",
@@ -14051,7 +14041,6 @@
       "item.power.time_battery": "Battery",
       "item.power.animals_helmet": "Animals Helmet",
       "item.power.teleportation_battery": "Battery",
-      "itemGroup.tabexperimental_group": "Experimental Group",
       "item.power.water_drop": "Water Drops",
       "item.power.tornado_leggings": "Tornado Leggings",
       "item.power.creation_stone": "Creation Stone",
