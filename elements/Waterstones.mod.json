@@ -1,0 +1,29 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:WaterStone"
+      },
+      {
+        "value": "CUSTOM:IceStone"
+      },
+      {
+        "value": "CUSTOM:RainStone"
+      },
+      {
+        "value": "CUSTOM:OceanStone"
+      },
+      {
+        "value": "CUSTOM:BloodStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "water",
+    "namespace": "mod"
+  }
+}
