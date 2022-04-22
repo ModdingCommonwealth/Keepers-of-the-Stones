@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "2.0.0",
-    "1.18.2-recommended": "2.0.0"
+    "1.18.2-latest": "2.0.1",
+    "1.18.2-recommended": "2.0.1"
   },
   "1.16.5": {
     "B2": "
@@ -385,6 +385,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - [Bugfix] Fixed a bug with copying stones during re-election
 - [Bugfix] Fixed a bug where a player could burn after using a magic fireball
 - [Bugfix] Fixed a bug that caused the energy absorption spell to disappear from inventory
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"2.0.1": "
+- Optimized the stone selection code
+- [Bugfix] Fixed a bug where there was spam in the chat when opening the stone selection interface
+- [Bugfix] Fixed the mod's homepage
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
