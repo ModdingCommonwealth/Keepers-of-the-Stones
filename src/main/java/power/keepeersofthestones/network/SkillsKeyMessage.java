@@ -52,7 +52,7 @@ public class SkillsKeyMessage {
 			return;
 		if (type == 0) {
 
-			OpenSkillsGUIProcedure.execute(world, x, y, z, entity);
+			OpenSkillsGUIProcedure.execute(entity);
 		}
 	}
 
