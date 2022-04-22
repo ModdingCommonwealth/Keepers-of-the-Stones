@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "power:ice_stone",
+    "power:blood_stone",
+    "power:water_stone",
+    "power:ocean_stone",
+    "power:rain_stone"
+  ]
+}
