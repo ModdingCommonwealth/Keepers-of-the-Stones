@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "power:ice_stone",
+    "power:spirit_stone",
+    "power:poison_stone",
     "power:blood_stone",
     "power:water_stone",
     "power:ocean_stone",

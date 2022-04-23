@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "power:creation_stone",
+    "power:sun_stone",
+    "power:light_stone"
+  ]
+}

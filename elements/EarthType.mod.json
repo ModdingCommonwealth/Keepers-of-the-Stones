@@ -1,0 +1,32 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:EarthStone"
+      },
+      {
+        "value": "CUSTOM:CrystalStone"
+      },
+      {
+        "value": "CUSTOM:LavaStone"
+      },
+      {
+        "value": "CUSTOM:MetalStone"
+      },
+      {
+        "value": "CUSTOM:SandStone"
+      },
+      {
+        "value": "CUSTOM:AmberStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "earth_type",
+    "namespace": "mod"
+  }
+}

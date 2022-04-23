@@ -1,0 +1,23 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:LightStone"
+      },
+      {
+        "value": "CUSTOM:SunStone"
+      },
+      {
+        "value": "CUSTOM:CreationStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "light_type",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "power:lava_stone",
+    "power:sand_stone",
+    "power:amber_stone",
+    "power:earth_stone",
+    "power:crystal_stone",
+    "power:metal_stone"
+  ]
+}

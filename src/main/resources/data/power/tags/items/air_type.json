@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "power:speed_stone",
+    "power:sound_stone",
+    "power:air_stone",
+    "power:mist_stone",
+    "power:tornado_stone",
+    "power:gravity_stone"
+  ]
+}

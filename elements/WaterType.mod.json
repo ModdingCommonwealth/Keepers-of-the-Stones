@@ -18,12 +18,18 @@
       },
       {
         "value": "CUSTOM:BloodStone"
+      },
+      {
+        "value": "CUSTOM:SpiritStone"
+      },
+      {
+        "value": "CUSTOM:PoisonStone"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "water",
+    "name": "water_type",
     "namespace": "mod"
   }
 }

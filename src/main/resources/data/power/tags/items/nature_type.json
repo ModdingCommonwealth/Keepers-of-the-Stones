@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "power:greenery_stone",
+    "power:plague_stone",
+    "power:animals_stone",
+    "power:technology_stone",
+    "power:mushrooms_stone"
+  ]
+}

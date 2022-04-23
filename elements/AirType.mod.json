@@ -1,0 +1,32 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:AirStone"
+      },
+      {
+        "value": "CUSTOM:TornadoStone"
+      },
+      {
+        "value": "CUSTOM:MistStone"
+      },
+      {
+        "value": "CUSTOM:SoundStone"
+      },
+      {
+        "value": "CUSTOM:SpeedStone"
+      },
+      {
+        "value": "CUSTOM:GravityStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "air_type",
+    "namespace": "mod"
+  }
+}

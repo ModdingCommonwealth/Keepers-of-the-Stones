@@ -12687,12 +12687,75 @@
       "path": "~/SystemPowerLevel"
     },
     {
-      "name": "Waterstones",
+      "name": "FireType",
       "type": "tag",
       "sortid": 787,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "waterstones",
+      "registry_name": "fire_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "AirType",
+      "type": "tag",
+      "sortid": 788,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "EarthType",
+      "type": "tag",
+      "sortid": 789,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "WaterType",
+      "type": "tag",
+      "sortid": 790,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "NatureType",
+      "type": "tag",
+      "sortid": 791,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nature_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "LightType",
+      "type": "tag",
+      "sortid": 792,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "ShadowType",
+      "type": "tag",
+      "sortid": 793,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_type",
+      "path": "~/StoneTypes"
+    },
+    {
+      "name": "CosmicType",
+      "type": "tag",
+      "sortid": 794,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cosmic_type",
       "path": "~/StoneTypes"
     }
   ],
@@ -14412,13 +14475,17 @@
       {
         "name": "StoneTypes",
         "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.2",
+    "version": "2.1.0.1",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "ModdingCommonwealth",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

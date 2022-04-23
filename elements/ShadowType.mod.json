@@ -1,0 +1,23 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:ShadowStone"
+      },
+      {
+        "value": "CUSTOM:MoonStone"
+      },
+      {
+        "value": "CUSTOM:DestructionStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "shadow_type",
+    "namespace": "mod"
+  }
+}

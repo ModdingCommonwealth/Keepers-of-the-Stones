@@ -1,0 +1,29 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:FireStone"
+      },
+      {
+        "value": "CUSTOM:LightningStone"
+      },
+      {
+        "value": "CUSTOM:BlueFlameStone"
+      },
+      {
+        "value": "CUSTOM:SmokeStone"
+      },
+      {
+        "value": "CUSTOM:ExplosionStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "fire_type",
+    "namespace": "mod"
+  }
+}

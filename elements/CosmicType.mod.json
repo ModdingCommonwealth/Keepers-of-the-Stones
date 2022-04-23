@@ -1,0 +1,29 @@
+{
+  "_fv": 29,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:VacuumStone"
+      },
+      {
+        "value": "CUSTOM:SpaceStone"
+      },
+      {
+        "value": "CUSTOM:TimeStone"
+      },
+      {
+        "value": "CUSTOM:TeleportationStone"
+      },
+      {
+        "value": "CUSTOM:MagnetStone"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "cosmic_type",
+    "namespace": "mod"
+  }
+}

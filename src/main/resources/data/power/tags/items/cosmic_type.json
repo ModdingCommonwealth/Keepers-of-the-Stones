@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "power:space_stone",
+    "power:vacuum_stone",
+    "power:time_stone",
+    "power:teleportation_stone",
+    "power:magnet_stone"
+  ]
+}
