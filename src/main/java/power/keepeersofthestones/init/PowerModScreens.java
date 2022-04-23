@@ -6,7 +6,6 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
 import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
-import power.keepeersofthestones.client.gui.SkillsGUIScreen;
 import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
 import power.keepeersofthestones.client.gui.PointGUIScreen;
 import power.keepeersofthestones.client.gui.EBWaterScreen;
@@ -110,7 +109,6 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.POINT_GUI, PointGUIScreen::new);
 			MenuScreens.register(PowerModMenus.EB_BLUE_FLAME, EBBlueFlameScreen::new);
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_3, ChoiseMagicStonesPage3Screen::new);
-			MenuScreens.register(PowerModMenus.SKILLS_GUI, SkillsGUIScreen::new);
 		});
 	}
 }

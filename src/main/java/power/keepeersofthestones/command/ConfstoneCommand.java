@@ -5,7 +5,6 @@ import power.keepeersofthestones.procedures.ResetmychoiceProcedureProcedure;
 import power.keepeersofthestones.procedures.ResetLevelProcedure;
 import power.keepeersofthestones.procedures.GetPowerLevel3Procedure;
 import power.keepeersofthestones.procedures.GetPowerLevel2Procedure;
-import power.keepeersofthestones.procedures.GetPowerLevel1Procedure;
 import power.keepeersofthestones.procedures.DetransformKeyPriNazhatiiKlavishiProcedure;
 
 import org.checkerframework.checker.units.qual.s;
@@ -63,19 +62,7 @@ public class ConfstoneCommand {
 
 					ResetLevelProcedure.execute(entity);
 					return 0;
-				})).then(Commands.literal("up-to").then(Commands.literal("1").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
-					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-
-					GetPowerLevel1Procedure.execute(entity);
-					return 0;
-				})).then(Commands.literal("2").executes(cmdargs -> {
+				})).then(Commands.literal("select").then(Commands.literal("2").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
 					double x = cmdargs.getSource().getPosition().x();
 					double y = cmdargs.getSource().getPosition().y();
