@@ -6,7 +6,7 @@
     "displayName": "Maybe it is possible to re-select the stone?",
     "description": "Turn it off so that you cannot re-select the stones",
     "category": "PLAYER",
-    "defaultValueLogic": false,
+    "defaultValueLogic": true,
     "defaultValueNumber": 0
   }
 }
