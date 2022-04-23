@@ -6415,48 +6415,6 @@
       "path": "~/Moon"
     },
     {
-      "name": "GettingStonesWhenEnteringTheGame",
-      "type": "gamerule",
-      "sortid": 424,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gettingStonesWhenEnteringTheGame",
-      "metadata": {
-        "type": "logic"
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ChoiseMagicStoneGUI",
-      "type": "gui",
-      "sortid": 425,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "choise_magic_stone_gui",
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "FireGet",
-      "type": "procedure",
-      "sortid": 426,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "JoinPlayerInTheWorld",
       "type": "procedure",
       "sortid": 427,
@@ -6464,409 +6422,7 @@
       "locked_code": false,
       "registry_name": "join_player_in_the_world",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "AirGet",
-      "type": "procedure",
-      "sortid": 428,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "WaterGet",
-      "type": "procedure",
-      "sortid": 429,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "EarthGet",
-      "type": "procedure",
-      "sortid": 430,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "earth_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "EnergyGet",
-      "type": "procedure",
-      "sortid": 431,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "IceGet",
-      "type": "procedure",
-      "sortid": 432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ChoiseMagicStonesPage2",
-      "type": "gui",
-      "sortid": 433,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "choise_magic_stones_page_2",
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "NextPageGUIChoiceStone",
-      "type": "procedure",
-      "sortid": 434,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "next_page_gui_choice_stone",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "PreviousPageGUIChoiceStones",
-      "type": "procedure",
-      "sortid": 435,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "previous_page_gui_choice_stones",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "LightningGet",
-      "type": "procedure",
-      "sortid": 436,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightning_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "SoundGet",
-      "type": "procedure",
-      "sortid": 437,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sound_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "CrystalGet",
-      "type": "procedure",
-      "sortid": 438,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "LavaGet",
-      "type": "procedure",
-      "sortid": 439,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lava_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "RainGet",
-      "type": "procedure",
-      "sortid": 440,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rain_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "TornadoGet",
-      "type": "procedure",
-      "sortid": 441,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tornado_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "OceanGet",
-      "type": "procedure",
-      "sortid": 442,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ocean_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "GreeneryGet",
-      "type": "procedure",
-      "sortid": 443,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "greenery_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ResetmychoiceProcedure",
-      "type": "procedure",
-      "sortid": 444,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "resetmychoice_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/ReceivingStones"
     },
@@ -6886,27 +6442,6 @@
       "path": "~/Animals"
     },
     {
-      "name": "AnimalsGet",
-      "type": "procedure",
-      "sortid": 447,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "animals_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "Metal",
       "type": "armor",
       "sortid": 448,
@@ -6920,27 +6455,6 @@
         "ec": true
       },
       "path": "~/Metal"
-    },
-    {
-      "name": "MetalGet",
-      "type": "procedure",
-      "sortid": 449,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "metal_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "Light",
@@ -7018,111 +6532,6 @@
       "path": "~/Vacuum"
     },
     {
-      "name": "LightGet",
-      "type": "procedure",
-      "sortid": 455,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ShadowGet",
-      "type": "procedure",
-      "sortid": 456,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shadow_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "VacuumGet",
-      "type": "procedure",
-      "sortid": 457,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vacuum_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "SunGet",
-      "type": "procedure",
-      "sortid": 458,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sun_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "MoonGet",
-      "type": "procedure",
-      "sortid": 459,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "Creation",
       "type": "armor",
       "sortid": 460,
@@ -7151,48 +6560,6 @@
         "ec": true
       },
       "path": "~/Destruction"
-    },
-    {
-      "name": "CreationGet",
-      "type": "procedure",
-      "sortid": 462,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "creation_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "DestructionGet",
-      "type": "procedure",
-      "sortid": 463,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "destruction_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "RemovalProhibitedItems",
@@ -7228,27 +6595,6 @@
         "ec": true
       },
       "path": "~/Space"
-    },
-    {
-      "name": "SpaceGet",
-      "type": "procedure",
-      "sortid": 466,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "space_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "BloodStone",
@@ -7374,27 +6720,6 @@
         "ec": true
       },
       "path": "~/Blood"
-    },
-    {
-      "name": "BloodGet",
-      "type": "procedure",
-      "sortid": 473,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blood_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "BloodEffects",
@@ -7689,18 +7014,6 @@
         ]
       },
       "path": "~/Blood"
-    },
-    {
-      "name": "CanRechoiseStone",
-      "type": "gamerule",
-      "sortid": 492,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "canRechoiseStone",
-      "metadata": {
-        "type": "logic"
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "TechnologyStone",
@@ -8090,27 +7403,6 @@
       "locked_code": false,
       "registry_name": "time_stop_effect",
       "path": "~/Time"
-    },
-    {
-      "name": "TimeGet",
-      "type": "procedure",
-      "sortid": 514,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "time_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "TimeReversed",
@@ -9863,27 +9155,6 @@
       "path": "~/ElementalBattery"
     },
     {
-      "name": "TechnologyGet",
-      "type": "procedure",
-      "sortid": 597,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "technology_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "ElementalMusicDisc",
       "type": "musicdisc",
       "sortid": 49,
@@ -10120,27 +9391,6 @@
       "locked_code": false,
       "registry_name": "teleportation_battery",
       "path": "~/ElementalBattery"
-    },
-    {
-      "name": "TeleportationGet",
-      "type": "procedure",
-      "sortid": 610,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "teleportation_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "RechargeTeleportationStone",
@@ -10590,27 +9840,6 @@
       "path": "~/Explosion"
     },
     {
-      "name": "ExplosionGet",
-      "type": "procedure",
-      "sortid": 637,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "explosion_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "Explode",
       "type": "armor",
       "sortid": 638,
@@ -10905,27 +10134,6 @@
         ]
       },
       "path": "~/Amber"
-    },
-    {
-      "name": "AmberGet",
-      "type": "procedure",
-      "sortid": 654,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amber_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "Constructions",
@@ -12039,102 +11247,6 @@
       "path": "~/ElementalBook"
     },
     {
-      "name": "BlueFlameGet",
-      "type": "procedure",
-      "sortid": 741,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "ChoiseMagicStonesPage3",
-      "type": "gui",
-      "sortid": 742,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "choise_magic_stones_page_3",
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "NextToPage3",
-      "type": "procedure",
-      "sortid": 743,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "next_to_page_3",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
-      "name": "PreviousPage2",
-      "type": "procedure",
-      "sortid": 744,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "previous_page_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
-    },
-    {
       "name": "WoodMagicBox",
       "type": "block",
       "sortid": 745,
@@ -12501,86 +11613,6 @@
       "path": "~/Creation/Structures"
     },
     {
-      "name": "SkillsGUI",
-      "type": "gui",
-      "sortid": 773,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skills_gui",
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "GetPowerLevel1",
-      "type": "procedure",
-      "sortid": 774,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_power_level_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "CurrentLevel1",
-      "type": "procedure",
-      "sortid": 775,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "current_level_1",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "CurrentLevel2",
-      "type": "procedure",
-      "sortid": 776,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "current_level_2",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "CurrentLevel0",
-      "type": "procedure",
-      "sortid": 777,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "current_level_0",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/SystemPowerLevel"
-    },
-    {
       "name": "ResetLevel",
       "type": "procedure",
       "sortid": 778,
@@ -12596,32 +11628,6 @@
         ]
       },
       "path": "~/SystemPowerLevel"
-    },
-    {
-      "name": "SkillsKey",
-      "type": "keybind",
-      "sortid": 779,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "skills_key",
-      "path": "~/Keys"
-    },
-    {
-      "name": "OpenSkillsGUI",
-      "type": "procedure",
-      "sortid": 780,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_skills_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Keys"
     },
     {
       "name": "MaximumPower",
@@ -12667,24 +11673,6 @@
       "locked_code": false,
       "registry_name": "wither_and_decay",
       "path": "~/Achievements"
-    },
-    {
-      "name": "CurrentLevel3",
-      "type": "procedure",
-      "sortid": 786,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "current_level_3",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/SystemPowerLevel"
     },
     {
       "name": "FireType",
@@ -12911,177 +11899,15 @@
       "value": "false"
     },
     {
-      "name": "fire_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "selected",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "air_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "water_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "earth_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "energy_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "ice_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "lightning_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "sound_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "crystal_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "lava_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "rain_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "tornado_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "ocean_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "greenery_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "animals_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "metal_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "light_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "shadow_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "vacuum_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "sun_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "moon_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "creation_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "destruction_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "space_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
       "name": "blood",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
     },
     {
-      "name": "blood_stone",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
       "name": "technology",
       "type": "logic",
       "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "technology_stone",
-      "type": "logic",
-      "scope": "map",
       "value": "false"
     },
     {
@@ -13151,12 +11977,6 @@
       "value": "false"
     },
     {
-      "name": "teleportation_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "blue_portal",
       "type": "logic",
       "scope": "map",
@@ -13211,27 +12031,9 @@
       "value": "false"
     },
     {
-      "name": "explosion_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "amber",
       "type": "logic",
       "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "amber_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "blue_flame_stone",
-      "type": "logic",
-      "scope": "map",
       "value": "false"
     },
     {
@@ -13241,33 +12043,15 @@
       "value": "false"
     },
     {
-      "name": "cosmos_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "fog",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
     },
     {
-      "name": "magnet_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "magnet",
       "type": "logic",
       "scope": "player_persistent",
-      "value": "false"
-    },
-    {
-      "name": "mist_stone",
-      "type": "logic",
-      "scope": "map",
       "value": "false"
     },
     {
@@ -13280,7 +12064,7 @@
       "name": "power_level",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -13342,7 +12126,6 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
-      "key.power.skills_key": "Клавиша скиллов",
       "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Создание Снежного голема",
@@ -13437,7 +12220,6 @@
       "item.power.space_stone": "Камень Космоса",
       "item.power.teleportation_stone": "Камень Телепортации",
       "item.power.lava_boots": "Лавовые Ботинки",
-      "gamerule.gettingStonesWhenEnteringTheGame": "Получение камней при входе в игру",
       "item.power.lava_hole": "Лавовая Яма",
       "item.power.metal_leggings": "Металлические Поножи",
       "item.power.destruction_boots": "Ботинки разрушения",
@@ -13539,7 +12321,6 @@
       "effect.power.recharge_technology_stone": "Перезарядка",
       "effect.power.recharge_magnet_stone": "Перезарядка",
       "block.power.unmultiplication_moon_stones_block": "Блок Лунных Камней",
-      "gamerule.canRechoiseStone.description": "Выключите, чтобы нельзя было перевыбрать камни",
       "item.power.energy_sphere": "Энергетический Шар",
       "item.power.vacuum_web": "Вакуумная Сеть",
       "item.power.energy_helmet": "Энергетический Шлем",
@@ -13690,7 +12471,6 @@
       "item.power.mushrooms_stone": "Камень Грибов",
       "item.power.ocean_boots": "Ботинки Океана",
       "effect.power.moon_master": "Мастер Луны",
-      "gamerule.gettingStonesWhenEnteringTheGame.description": "Дает игрокам камни, когда они вступают в игру, если у них их нет",
       "item.power.energy_stone": "Камень Энергии",
       "item.power.energy_absorption": "Поглощение Энергии",
       "advancements.put_it_on_charge_overnight.title": "Поставить на ночь на зарядку",
@@ -13772,7 +12552,6 @@
       "item.power.air_flow": "Поток Воздуха",
       "effect.power.metal_master": "Мастер Металла",
       "effect.power.recharge_metal_stone": "Перезарядка",
-      "gamerule.canRechoiseStone": "Может быть, можно заново выбрать камень?",
       "advancements.wither_and_decay.title": "Всё Накроет Тьма",
       "item.power.vacuum_spiral": "Вакуумная Спираль",
       "item.power.magnet_chestplate": "Magnet Chestplate",
@@ -13808,7 +12587,6 @@
       "item.power.crestcent_leggings": "Crestcent Leggings",
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
-      "key.power.skills_key": "Skills Key",
       "effect.power.recharge_energy_stone": "Recharge",
       "item.power.technology_chestplate": "Technology Chestplate",
       "item.power.snow_golem_creator": "Snow Golem Creator",
@@ -13903,7 +12681,6 @@
       "item.power.space_stone": "Space Stone",
       "item.power.teleportation_stone": "Teleportation Stone",
       "item.power.lava_boots": "Lava Boots",
-      "gamerule.gettingStonesWhenEnteringTheGame": "Getting stones when entering the game",
       "item.power.lava_hole": "Lava Hole",
       "item.power.metal_leggings": "Metal Leggings",
       "item.power.destruction_boots": "Destruction Boots",
@@ -14005,7 +12782,6 @@
       "effect.power.recharge_technology_stone": "Recharge",
       "effect.power.recharge_magnet_stone": "Recharge",
       "block.power.unmultiplication_moon_stones_block": "Moon Stones Block",
-      "gamerule.canRechoiseStone.description": "Turn it off so that you cannot re-select the stones",
       "item.power.vacuum_web": "Vacuum Web",
       "item.power.energy_sphere": "Energy Sphere",
       "item.power.energy_helmet": "Energy Helmet",
@@ -14157,7 +12933,6 @@
       "item.power.mushrooms_stone": "Mushrooms Stone",
       "item.power.ocean_boots": "Ocean Boots",
       "effect.power.moon_master": "Master of the Moon",
-      "gamerule.gettingStonesWhenEnteringTheGame.description": "Gives players stones when they enter the game, if they do not have them",
       "item.power.energy_stone": "Energy stone",
       "item.power.energy_absorption": "Energy Absorption",
       "advancements.put_it_on_charge_overnight.title": "Put it on charge overnight",
@@ -14239,7 +13014,6 @@
       "item.power.air_flow": "Air Flow",
       "effect.power.metal_master": "Master of Metal",
       "effect.power.recharge_metal_stone": "Recharge",
-      "gamerule.canRechoiseStone": "Maybe it is possible to re-select the stone?",
       "advancements.wither_and_decay.title": "Wither And Decay",
       "item.power.vacuum_spiral": "Vacuum Spiral",
       "item.power.magnet_chestplate": "Magnet Chestplate",
@@ -14485,7 +13259,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.1.0.1",
+    "version": "2.1.0.2",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "ModdingCommonwealth",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

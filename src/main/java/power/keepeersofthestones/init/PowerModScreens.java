@@ -6,7 +6,6 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
 import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
-import power.keepeersofthestones.client.gui.SkillsGUIScreen;
 import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
 import power.keepeersofthestones.client.gui.PointGUIScreen;
 import power.keepeersofthestones.client.gui.EBWaterScreen;
@@ -41,9 +40,6 @@ import power.keepeersofthestones.client.gui.EBAnimalsScreen;
 import power.keepeersofthestones.client.gui.EBAmberScreen;
 import power.keepeersofthestones.client.gui.EBAirScreen;
 import power.keepeersofthestones.client.gui.CultivationGUIScreen;
-import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage3Screen;
-import power.keepeersofthestones.client.gui.ChoiseMagicStonesPage2Screen;
-import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
 import power.keepeersofthestones.client.gui.CheckpointGUIScreen;
 import power.keepeersofthestones.client.gui.BuildingGUIScreen;
 import power.keepeersofthestones.client.gui.BatteryCreateGUIScreen;
@@ -67,8 +63,6 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.SOUND_EMITATE_CHOICE, SoundEmitateChoiceScreen::new);
 			MenuScreens.register(PowerModMenus.CULTIVATION_GUI, CultivationGUIScreen::new);
 			MenuScreens.register(PowerModMenus.SPAWN_ANIMALS_GUI, SpawnAnimalsGUIScreen::new);
-			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONE_GUI, ChoiseMagicStoneGUIScreen::new);
-			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_2, ChoiseMagicStonesPage2Screen::new);
 			MenuScreens.register(PowerModMenus.CHECKPOINT_GUI, CheckpointGUIScreen::new);
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_MOON, AcceptTpOnMoonScreen::new);
 			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_EARTH, AcceptTpOnEarthScreen::new);
@@ -109,8 +103,6 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.EB_AMBER, EBAmberScreen::new);
 			MenuScreens.register(PowerModMenus.POINT_GUI, PointGUIScreen::new);
 			MenuScreens.register(PowerModMenus.EB_BLUE_FLAME, EBBlueFlameScreen::new);
-			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_3, ChoiseMagicStonesPage3Screen::new);
-			MenuScreens.register(PowerModMenus.SKILLS_GUI, SkillsGUIScreen::new);
 		});
 	}
 }
