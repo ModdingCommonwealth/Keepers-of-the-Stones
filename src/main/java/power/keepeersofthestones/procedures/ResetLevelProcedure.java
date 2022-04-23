@@ -9,7 +9,7 @@ public class ResetLevelProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = 1;
+			double _setval = 0;
 			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.power_level = _setval;
 				capability.syncPlayerVariables(entity);

@@ -1,0 +1,293 @@
+{
+  "_fv": 29,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 400,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 51,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Choose a stone to get it",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Choose a stone to get it",
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "  ",
+          "width": 56,
+          "height": 20,
+          "name": "  ",
+          "x": 141,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 51,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 51,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 51,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 51,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous page",
+          "onClick": {
+            "name": "PreviousPage2"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "Previous page",
+          "x": 24,
+          "y": 188
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 240,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": " ",
+          "width": 56,
+          "height": 20,
+          "name": " ",
+          "x": 339,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next page",
+          "width": 72,
+          "height": 20,
+          "name": "Next page",
+          "x": 330,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "3/3",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "3/3",
+          "x": 24,
+          "y": 26
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

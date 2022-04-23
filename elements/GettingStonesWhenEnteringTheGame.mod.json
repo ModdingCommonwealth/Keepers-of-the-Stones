@@ -1,0 +1,12 @@
+{
+  "_fv": 29,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Getting stones when entering the game",
+    "description": "Gives players stones when they enter the game, if they do not have them",
+    "category": "PLAYER",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

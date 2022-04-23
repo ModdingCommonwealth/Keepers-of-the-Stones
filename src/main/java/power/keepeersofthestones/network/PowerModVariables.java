@@ -103,6 +103,7 @@ public class PowerModVariables {
 			clone.creation = original.creation;
 			clone.destruction = original.destruction;
 			clone.space = original.space;
+			clone.selected = original.selected;
 			clone.blood = original.blood;
 			clone.technology = original.technology;
 			clone.time = original.time;
@@ -154,6 +155,31 @@ public class PowerModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "power_worldvars";
+		public boolean fire_stone = false;
+		public boolean air_stone = false;
+		public boolean water_stone = false;
+		public boolean earth_stone = false;
+		public boolean energy_stone = false;
+		public boolean ice_stone = false;
+		public boolean lightning_stone = false;
+		public boolean sound_stone = false;
+		public boolean crystal_stone = false;
+		public boolean lava_stone = false;
+		public boolean rain_stone = false;
+		public boolean tornado_stone = false;
+		public boolean ocean_stone = false;
+		public boolean greenery_stone = false;
+		public boolean animals_stone = false;
+		public boolean metal_stone = false;
+		public boolean light_stone = false;
+		public boolean shadow_stone = false;
+		public boolean vacuum_stone = false;
+		public boolean sun_stone = false;
+		public boolean moon_stone = false;
+		public boolean creation_stone = false;
+		public boolean destruction_stone = false;
+		public boolean space_stone = false;
+		public boolean blood_stone = false;
 		public boolean time_stone = false;
 
 		public static WorldVariables load(CompoundTag tag) {
@@ -163,11 +189,61 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			fire_stone = nbt.getBoolean("fire_stone");
+			air_stone = nbt.getBoolean("air_stone");
+			water_stone = nbt.getBoolean("water_stone");
+			earth_stone = nbt.getBoolean("earth_stone");
+			energy_stone = nbt.getBoolean("energy_stone");
+			ice_stone = nbt.getBoolean("ice_stone");
+			lightning_stone = nbt.getBoolean("lightning_stone");
+			sound_stone = nbt.getBoolean("sound_stone");
+			crystal_stone = nbt.getBoolean("crystal_stone");
+			lava_stone = nbt.getBoolean("lava_stone");
+			rain_stone = nbt.getBoolean("rain_stone");
+			tornado_stone = nbt.getBoolean("tornado_stone");
+			ocean_stone = nbt.getBoolean("ocean_stone");
+			greenery_stone = nbt.getBoolean("greenery_stone");
+			animals_stone = nbt.getBoolean("animals_stone");
+			metal_stone = nbt.getBoolean("metal_stone");
+			light_stone = nbt.getBoolean("light_stone");
+			shadow_stone = nbt.getBoolean("shadow_stone");
+			vacuum_stone = nbt.getBoolean("vacuum_stone");
+			sun_stone = nbt.getBoolean("sun_stone");
+			moon_stone = nbt.getBoolean("moon_stone");
+			creation_stone = nbt.getBoolean("creation_stone");
+			destruction_stone = nbt.getBoolean("destruction_stone");
+			space_stone = nbt.getBoolean("space_stone");
+			blood_stone = nbt.getBoolean("blood_stone");
 			time_stone = nbt.getBoolean("time_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("fire_stone", fire_stone);
+			nbt.putBoolean("air_stone", air_stone);
+			nbt.putBoolean("water_stone", water_stone);
+			nbt.putBoolean("earth_stone", earth_stone);
+			nbt.putBoolean("energy_stone", energy_stone);
+			nbt.putBoolean("ice_stone", ice_stone);
+			nbt.putBoolean("lightning_stone", lightning_stone);
+			nbt.putBoolean("sound_stone", sound_stone);
+			nbt.putBoolean("crystal_stone", crystal_stone);
+			nbt.putBoolean("lava_stone", lava_stone);
+			nbt.putBoolean("rain_stone", rain_stone);
+			nbt.putBoolean("tornado_stone", tornado_stone);
+			nbt.putBoolean("ocean_stone", ocean_stone);
+			nbt.putBoolean("greenery_stone", greenery_stone);
+			nbt.putBoolean("animals_stone", animals_stone);
+			nbt.putBoolean("metal_stone", metal_stone);
+			nbt.putBoolean("light_stone", light_stone);
+			nbt.putBoolean("shadow_stone", shadow_stone);
+			nbt.putBoolean("vacuum_stone", vacuum_stone);
+			nbt.putBoolean("sun_stone", sun_stone);
+			nbt.putBoolean("moon_stone", moon_stone);
+			nbt.putBoolean("creation_stone", creation_stone);
+			nbt.putBoolean("destruction_stone", destruction_stone);
+			nbt.putBoolean("space_stone", space_stone);
+			nbt.putBoolean("blood_stone", blood_stone);
 			nbt.putBoolean("time_stone", time_stone);
 			return nbt;
 		}
@@ -191,6 +267,8 @@ public class PowerModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "power_mapvars";
+		public boolean technology_stone = false;
+		public boolean teleportation_stone = false;
 		public boolean blue_portal = false;
 		public boolean orange_portal = false;
 		public double bposx = 0;
@@ -199,6 +277,12 @@ public class PowerModVariables {
 		public double oposx = 0;
 		public double oposy = 0;
 		public double oposz = 0;
+		public boolean explosion_stone = false;
+		public boolean amber_stone = false;
+		public boolean blue_flame_stone = false;
+		public boolean cosmos_stone = false;
+		public boolean magnet_stone = false;
+		public boolean mist_stone = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -207,6 +291,8 @@ public class PowerModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			technology_stone = nbt.getBoolean("technology_stone");
+			teleportation_stone = nbt.getBoolean("teleportation_stone");
 			blue_portal = nbt.getBoolean("blue_portal");
 			orange_portal = nbt.getBoolean("orange_portal");
 			bposx = nbt.getDouble("bposx");
@@ -215,10 +301,18 @@ public class PowerModVariables {
 			oposx = nbt.getDouble("oposx");
 			oposy = nbt.getDouble("oposy");
 			oposz = nbt.getDouble("oposz");
+			explosion_stone = nbt.getBoolean("explosion_stone");
+			amber_stone = nbt.getBoolean("amber_stone");
+			blue_flame_stone = nbt.getBoolean("blue_flame_stone");
+			cosmos_stone = nbt.getBoolean("cosmos_stone");
+			magnet_stone = nbt.getBoolean("magnet_stone");
+			mist_stone = nbt.getBoolean("mist_stone");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putBoolean("technology_stone", technology_stone);
+			nbt.putBoolean("teleportation_stone", teleportation_stone);
 			nbt.putBoolean("blue_portal", blue_portal);
 			nbt.putBoolean("orange_portal", orange_portal);
 			nbt.putDouble("bposx", bposx);
@@ -227,6 +321,12 @@ public class PowerModVariables {
 			nbt.putDouble("oposx", oposx);
 			nbt.putDouble("oposy", oposy);
 			nbt.putDouble("oposz", oposz);
+			nbt.putBoolean("explosion_stone", explosion_stone);
+			nbt.putBoolean("amber_stone", amber_stone);
+			nbt.putBoolean("blue_flame_stone", blue_flame_stone);
+			nbt.putBoolean("cosmos_stone", cosmos_stone);
+			nbt.putBoolean("magnet_stone", magnet_stone);
+			nbt.putBoolean("mist_stone", mist_stone);
 			return nbt;
 		}
 
@@ -341,6 +441,7 @@ public class PowerModVariables {
 		public boolean creation = false;
 		public boolean destruction = false;
 		public boolean space = false;
+		public boolean selected = false;
 		public boolean blood = false;
 		public boolean technology = false;
 		public boolean time = false;
@@ -359,7 +460,7 @@ public class PowerModVariables {
 		public boolean fog = false;
 		public boolean magnet = false;
 		public boolean mist = false;
-		public double power_level = 1.0;
+		public double power_level = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -393,6 +494,7 @@ public class PowerModVariables {
 			nbt.putBoolean("creation", creation);
 			nbt.putBoolean("destruction", destruction);
 			nbt.putBoolean("space", space);
+			nbt.putBoolean("selected", selected);
 			nbt.putBoolean("blood", blood);
 			nbt.putBoolean("technology", technology);
 			nbt.putBoolean("time", time);
@@ -442,6 +544,7 @@ public class PowerModVariables {
 			creation = nbt.getBoolean("creation");
 			destruction = nbt.getBoolean("destruction");
 			space = nbt.getBoolean("space");
+			selected = nbt.getBoolean("selected");
 			blood = nbt.getBoolean("blood");
 			technology = nbt.getBoolean("technology");
 			time = nbt.getBoolean("time");
@@ -511,6 +614,7 @@ public class PowerModVariables {
 					variables.creation = message.data.creation;
 					variables.destruction = message.data.destruction;
 					variables.space = message.data.space;
+					variables.selected = message.data.selected;
 					variables.blood = message.data.blood;
 					variables.technology = message.data.technology;
 					variables.time = message.data.time;

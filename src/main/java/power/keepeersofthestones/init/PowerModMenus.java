@@ -6,6 +6,7 @@ package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.world.inventory.SpawnAnimalsGUIMenu;
 import power.keepeersofthestones.world.inventory.SoundEmitateChoiceMenu;
+import power.keepeersofthestones.world.inventory.SkillsGUIMenu;
 import power.keepeersofthestones.world.inventory.RedstoneBundleGUIMenu;
 import power.keepeersofthestones.world.inventory.PointGUIMenu;
 import power.keepeersofthestones.world.inventory.EBWaterMenu;
@@ -40,6 +41,9 @@ import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
 import power.keepeersofthestones.world.inventory.EBAirMenu;
 import power.keepeersofthestones.world.inventory.CultivationGUIMenu;
+import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage3Menu;
+import power.keepeersofthestones.world.inventory.ChoiseMagicStonesPage2Menu;
+import power.keepeersofthestones.world.inventory.ChoiseMagicStoneGUIMenu;
 import power.keepeersofthestones.world.inventory.CheckpointGUIMenu;
 import power.keepeersofthestones.world.inventory.BuildingGUIMenu;
 import power.keepeersofthestones.world.inventory.BatteryCreateGUIMenu;
@@ -68,6 +72,10 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new CultivationGUIMenu(id, inv, extraData));
 	public static final MenuType<SpawnAnimalsGUIMenu> SPAWN_ANIMALS_GUI = register("spawn_animals_gui",
 			(id, inv, extraData) -> new SpawnAnimalsGUIMenu(id, inv, extraData));
+	public static final MenuType<ChoiseMagicStoneGUIMenu> CHOISE_MAGIC_STONE_GUI = register("choise_magic_stone_gui",
+			(id, inv, extraData) -> new ChoiseMagicStoneGUIMenu(id, inv, extraData));
+	public static final MenuType<ChoiseMagicStonesPage2Menu> CHOISE_MAGIC_STONES_PAGE_2 = register("choise_magic_stones_page_2",
+			(id, inv, extraData) -> new ChoiseMagicStonesPage2Menu(id, inv, extraData));
 	public static final MenuType<CheckpointGUIMenu> CHECKPOINT_GUI = register("checkpoint_gui",
 			(id, inv, extraData) -> new CheckpointGUIMenu(id, inv, extraData));
 	public static final MenuType<AcceptTpOnMoonMenu> ACCEPT_TP_ON_MOON = register("accept_tp_on_moon",
@@ -124,6 +132,9 @@ public class PowerModMenus {
 	public static final MenuType<PointGUIMenu> POINT_GUI = register("point_gui", (id, inv, extraData) -> new PointGUIMenu(id, inv, extraData));
 	public static final MenuType<EBBlueFlameMenu> EB_BLUE_FLAME = register("eb_blue_flame",
 			(id, inv, extraData) -> new EBBlueFlameMenu(id, inv, extraData));
+	public static final MenuType<ChoiseMagicStonesPage3Menu> CHOISE_MAGIC_STONES_PAGE_3 = register("choise_magic_stones_page_3",
+			(id, inv, extraData) -> new ChoiseMagicStonesPage3Menu(id, inv, extraData));
+	public static final MenuType<SkillsGUIMenu> SKILLS_GUI = register("skills_gui", (id, inv, extraData) -> new SkillsGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);
