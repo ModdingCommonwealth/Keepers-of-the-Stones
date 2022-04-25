@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Glow",
     "mobLabel": "",
-    "mobModelName": "Modelglow",
+    "mobModelName": "Modelglowmodel",
     "mobModelTexture": "glow.png",
     "mobModelGlowTexture": "glow.png",
     "modelWidth": 1.0,

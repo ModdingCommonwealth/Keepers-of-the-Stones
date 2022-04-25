@@ -1,0 +1,34 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wood_stone_box"
+      },
+      "name": "default"
+    },
+    "stone": {
+      "map": {
+        "0": "stone_stone_box"
+      },
+      "name": "stone"
+    },
+    "metal": {
+      "map": {
+        "0": "metal_stone_box"
+      },
+      "name": "metal"
+    },
+    "gold": {
+      "map": {
+        "0": "golden_stone_box"
+      },
+      "name": "gold"
+    },
+    "andesite": {
+      "map": {
+        "0": "andesite_box"
+      },
+      "name": "andesite"
+    }
+  }
+}

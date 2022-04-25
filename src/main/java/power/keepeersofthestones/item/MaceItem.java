@@ -1,37 +1,51 @@
 
 package power.keepeersofthestones.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Item;
+import power.keepeersofthestones.PowerModElements;
 
-public class MaceItem extends PickaxeItem {
-	public MaceItem() {
-		super(new Tier() {
-			public int getUses() {
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+@PowerModElements.ModElement.Tag
+public class MaceItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:mace")
+	public static final Item block = null;
+
+	public MaceItem(PowerModElements instance) {
+		super(instance, 45);
+	}
+
+	@Override
+	public void initElements() {
+		elements.items.add(() -> new PickaxeItem(new IItemTier() {
+			public int getMaxUses() {
 				return 5000;
 			}
 
-			public float getSpeed() {
+			public float getEfficiency() {
 				return 4f;
 			}
 
-			public float getAttackDamageBonus() {
+			public float getAttackDamage() {
 				return 16f;
 			}
 
-			public int getLevel() {
+			public int getHarvestLevel() {
 				return 1;
 			}
 
-			public int getEnchantmentValue() {
+			public int getEnchantability() {
 				return 2;
 			}
 
-			public Ingredient getRepairIngredient() {
+			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -2.9000000000000001f, new Item.Properties().tab(null));
+		}, 1, -2.9000000000000001f, new Item.Properties().group(null)) {
+		}.setRegistryName("mace"));
 	}
 }

@@ -6,72 +6,81 @@ import power.keepeersofthestones.procedures.OnMoonUseProcedure;
 import power.keepeersofthestones.procedures.OnMarsUseProcedure;
 import power.keepeersofthestones.procedures.OnEarthUseProcedure;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.common.util.FakePlayerFactory;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.Direction;
-import net.minecraft.commands.Commands;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.util.Direction;
+import net.minecraft.entity.Entity;
+import net.minecraft.command.Commands;
+import net.minecraft.command.CommandSource;
 
+import java.util.stream.Stream;
 import java.util.Objects;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 
 @Mod.EventBusSubscriber
 public class PlanetCommand {
 	@SubscribeEvent
-	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher()
-				.register(Commands.literal("planet").requires(s -> s.hasPermission(4)).then(Commands.literal("earth").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
+	public static void registerCommands(RegisterCommandsEvent event) {
+		event.getDispatcher().register(LiteralArgumentBuilder.<CommandSource>literal("planet").requires(s -> s.hasPermissionLevel(4))
+				.then(Commands.literal("earth").executes(cmdargs -> {
+					ServerWorld world = cmdargs.getSource().getWorld();
+					double x = cmdargs.getSource().getPos().getX();
+					double y = cmdargs.getSource().getPos().getY();
+					double z = cmdargs.getSource().getPos().getZ();
 					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
+					Direction direction = Objects.requireNonNull(entity).getHorizontalFacing();
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnEarthUseProcedure.execute(entity);
+					OnEarthUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+							(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 					return 0;
 				})).then(Commands.literal("moon").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
+					ServerWorld world = cmdargs.getSource().getWorld();
+					double x = cmdargs.getSource().getPos().getX();
+					double y = cmdargs.getSource().getPos().getY();
+					double z = cmdargs.getSource().getPos().getZ();
 					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
+					Direction direction = Objects.requireNonNull(entity).getHorizontalFacing();
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnMoonUseProcedure.execute(entity);
+					OnMoonUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+							(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 					return 0;
 				})).then(Commands.literal("venus").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
+					ServerWorld world = cmdargs.getSource().getWorld();
+					double x = cmdargs.getSource().getPos().getX();
+					double y = cmdargs.getSource().getPos().getY();
+					double z = cmdargs.getSource().getPos().getZ();
 					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
+					Direction direction = Objects.requireNonNull(entity).getHorizontalFacing();
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnVenusUseProcedure.execute(entity);
+					OnVenusUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+							(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 					return 0;
 				})).then(Commands.literal("mars").executes(cmdargs -> {
-					ServerLevel world = cmdargs.getSource().getLevel();
-					double x = cmdargs.getSource().getPosition().x();
-					double y = cmdargs.getSource().getPosition().y();
-					double z = cmdargs.getSource().getPosition().z();
+					ServerWorld world = cmdargs.getSource().getWorld();
+					double x = cmdargs.getSource().getPos().getX();
+					double y = cmdargs.getSource().getPos().getY();
+					double z = cmdargs.getSource().getPos().getZ();
 					Entity entity = cmdargs.getSource().getEntity();
-					Direction direction = Objects.requireNonNull(entity).getDirection();
+					Direction direction = Objects.requireNonNull(entity).getHorizontalFacing();
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnMarsUseProcedure.execute(entity);
+					OnMarsUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+							(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 					return 0;
 				})));
 	}

@@ -2,47 +2,77 @@
 package power.keepeersofthestones.item;
 
 import power.keepeersofthestones.procedures.AirStoneUseProcedure;
-import power.keepeersofthestones.init.PowerModTabs;
+import power.keepeersofthestones.itemgroup.BasicGroupItemGroup;
+import power.keepeersofthestones.PowerModElements;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
+import net.minecraftforge.registries.ObjectHolder;
 
-public class AirStoneItem extends Item {
-	public AirStoneItem() {
-		super(new Item.Properties().tab(PowerModTabs.TAB_BASIC_GROUP).durability(10).fireResistant().rarity(Rarity.COMMON));
+import net.minecraft.world.World;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.block.BlockState;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+@PowerModElements.ModElement.Tag
+public class AirStoneItem extends PowerModElements.ModElement {
+	@ObjectHolder("power:air_stone")
+	public static final Item block = null;
+
+	public AirStoneItem(PowerModElements instance) {
+		super(instance, 2);
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.EAT;
+	public void initElements() {
+		elements.items.add(() -> new ItemCustom());
 	}
 
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
-	}
+	public static class ItemCustom extends Item {
+		public ItemCustom() {
+			super(new Item.Properties().group(BasicGroupItemGroup.tab).maxDamage(10).isImmuneToFire().rarity(Rarity.COMMON));
+			setRegistryName("air_stone");
+		}
 
-	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
-	}
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.EAT;
+		}
 
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
+		@Override
+		public int getItemEnchantability() {
+			return 0;
+		}
 
-		AirStoneUseProcedure.execute(entity);
-		return ar;
+		@Override
+		public int getUseDuration(ItemStack itemstack) {
+			return 0;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+			return 0F;
+		}
+
+		@Override
+		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
+			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
+			ItemStack itemstack = ar.getResult();
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+
+			AirStoneUseProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return ar;
+		}
 	}
 }
