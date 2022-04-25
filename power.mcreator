@@ -14400,7 +14400,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
+    "currentGenerator": "forge-1.16.5",
     "credits": "Created by ModdingCommonwealth",
     "modElementsPackage": "power.keepeersofthestones",
     "lockBaseModFiles": false
