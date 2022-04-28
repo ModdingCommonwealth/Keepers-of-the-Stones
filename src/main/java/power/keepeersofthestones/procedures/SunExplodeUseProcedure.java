@@ -16,7 +16,7 @@ import net.minecraft.commands.CommandSource;
 public class SunExplodeUseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.NONE);
+			_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
 		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == PowerModBlocks.MOON_STONES_BLOCK.get()) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(

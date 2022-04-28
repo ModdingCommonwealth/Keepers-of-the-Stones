@@ -5779,27 +5779,6 @@
       "path": "~/Creation"
     },
     {
-      "name": "RechargeSunExplode",
-      "type": "procedure",
-      "sortid": 384,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recharge_sun_explode",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Sun"
-    },
-    {
       "name": "SummonHorse",
       "type": "procedure",
       "sortid": 385,
