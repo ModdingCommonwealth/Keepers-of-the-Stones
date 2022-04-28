@@ -4,40 +4,22 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "badlands"
+        "value": "CUSTOM:JurassicJungle"
       },
       {
-        "value": "badlands_plateau"
+        "value": "CUSTOM:JurassicSwamp"
       },
       {
-        "value": "bamboo_jungle"
+        "value": "CUSTOM:TriassicDesert"
       },
       {
-        "value": "desert"
+        "value": "CUSTOM:TriassicPlains"
       },
       {
-        "value": "jungle"
+        "value": "CUSTOM:CretaceousMountains"
       },
       {
-        "value": "lush_caves"
-      },
-      {
-        "value": "ocean"
-      },
-      {
-        "value": "plains"
-      },
-      {
-        "value": "river"
-      },
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "savanna_rock"
-      },
-      {
-        "value": "swamp"
+        "value": "CUSTOM:CretaceousTaiga"
       }
     ],
     "worldGenType": "Normal world gen",

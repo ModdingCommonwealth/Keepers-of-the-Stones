@@ -1,0 +1,105 @@
+{
+  "_fv": 29,
+  "_type": "biome",
+  "definition": {
+    "name": "Jurassic Swamp",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.ROOTED_DIRT"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.SAND#0"
+    },
+    "grassColor": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "SWAMP",
+    "rainingPossibility": 0.9,
+    "temperature": 0.7,
+    "baseHeight": 0.1,
+    "heightVariation": 0.1,
+    "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
+    "biomeWeight": 25,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 8,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 6,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 2,
+    "reedsPerChunk": 5,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "SwampVegetation",
+      "DeadBushes",
+      "Fossils"
+    ],
+    "spawnEntries": []
+  }
+}

@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Time Stop",
-    "icon": "time_stop.png",
+    "icon": "time_stop_effect.png",
     "color": {
       "value": -6750208,
       "falpha": 0.0

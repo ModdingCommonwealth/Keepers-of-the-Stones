@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Acceleration Time",
-    "icon": "acceleration_time.png",
+    "icon": "acceleration_time_effect.png",
     "color": {
       "value": -13395712,
       "falpha": 0.0
