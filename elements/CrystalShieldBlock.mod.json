@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "AMETHYST_BLOCK"
     },
     "breakSound": {
       "value": ""

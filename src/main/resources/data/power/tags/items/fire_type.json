@@ -4,7 +4,6 @@
     "power:fire_stone",
     "power:explosion_stone",
     "power:smoke_stone",
-    "power:lightning_stone",
-    "power:blue_flame_stone"
+    "power:lightning_stone"
   ]
 }

@@ -41,7 +41,7 @@ public class ClusterBlockBlock extends Block implements SimpleWaterloggedBlock
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public ClusterBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f).noCollission().noOcclusion()
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.AMETHYST_CLUSTER).strength(1f, 10f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
