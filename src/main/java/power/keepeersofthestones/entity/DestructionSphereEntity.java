@@ -55,7 +55,7 @@ public class DestructionSphereEntity extends AbstractArrow implements ItemSuppli
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return null;
+		return ItemStack.EMPTY;
 	}
 
 	@Override

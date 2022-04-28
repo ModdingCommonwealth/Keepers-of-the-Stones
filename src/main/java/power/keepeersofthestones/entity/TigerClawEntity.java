@@ -53,7 +53,7 @@ public class TigerClawEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return null;
+		return ItemStack.EMPTY;
 	}
 
 	@Override
