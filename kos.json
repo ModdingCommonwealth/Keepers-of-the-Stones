@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "2.0.2",
-    "1.18.2-recommended": "2.0.2"
+    "1.18.2-latest": "2.0.3",
+    "1.18.2-recommended": "2.0.3"
   },
   "1.16.5": {
     "B2": "
@@ -395,6 +395,11 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Added element type tags
 - Removed experimental stones and their group
 - [Bugfix] Fixed a bug where a player could fly into space after a rain using flying in the rain
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"2.0.3": "
+- Completely removed element - blue flame
+- Returned the destructiveness of the explosion from the element of the sun
+- Some sounds of blocks and objects are replaced with amethyst from the crystal master
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
