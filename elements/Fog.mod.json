@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Fog",
-    "icon": "unknown.png",
+    "icon": "fog.png",
     "color": {
       "value": -3355393,
       "falpha": 0.0

@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Fire Flying",
-    "icon": "unknown.png",
+    "icon": "fire_flying.png",
     "color": {
       "value": -26368,
       "falpha": 0.0
