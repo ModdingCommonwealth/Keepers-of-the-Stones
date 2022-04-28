@@ -114,7 +114,6 @@ public class PowerModVariables {
 			clone.teleportation = original.teleportation;
 			clone.explosion = original.explosion;
 			clone.amber = original.amber;
-			clone.blue_flame = original.blue_flame;
 			clone.magnet = original.magnet;
 			clone.mist = original.mist;
 			clone.power_level = original.power_level;
@@ -279,7 +278,6 @@ public class PowerModVariables {
 		public double oposz = 0;
 		public boolean explosion_stone = false;
 		public boolean amber_stone = false;
-		public boolean blue_flame_stone = false;
 		public boolean cosmos_stone = false;
 		public boolean magnet_stone = false;
 		public boolean mist_stone = false;
@@ -303,7 +301,6 @@ public class PowerModVariables {
 			oposz = nbt.getDouble("oposz");
 			explosion_stone = nbt.getBoolean("explosion_stone");
 			amber_stone = nbt.getBoolean("amber_stone");
-			blue_flame_stone = nbt.getBoolean("blue_flame_stone");
 			cosmos_stone = nbt.getBoolean("cosmos_stone");
 			magnet_stone = nbt.getBoolean("magnet_stone");
 			mist_stone = nbt.getBoolean("mist_stone");
@@ -323,7 +320,6 @@ public class PowerModVariables {
 			nbt.putDouble("oposz", oposz);
 			nbt.putBoolean("explosion_stone", explosion_stone);
 			nbt.putBoolean("amber_stone", amber_stone);
-			nbt.putBoolean("blue_flame_stone", blue_flame_stone);
 			nbt.putBoolean("cosmos_stone", cosmos_stone);
 			nbt.putBoolean("magnet_stone", magnet_stone);
 			nbt.putBoolean("mist_stone", mist_stone);
@@ -456,7 +452,6 @@ public class PowerModVariables {
 		public boolean teleportation = false;
 		public boolean explosion = false;
 		public boolean amber = false;
-		public boolean blue_flame = false;
 		public boolean fog = false;
 		public boolean magnet = false;
 		public boolean mist = false;
@@ -509,7 +504,6 @@ public class PowerModVariables {
 			nbt.putBoolean("teleportation", teleportation);
 			nbt.putBoolean("explosion", explosion);
 			nbt.putBoolean("amber", amber);
-			nbt.putBoolean("blue_flame", blue_flame);
 			nbt.putBoolean("fog", fog);
 			nbt.putBoolean("magnet", magnet);
 			nbt.putBoolean("mist", mist);
@@ -559,7 +553,6 @@ public class PowerModVariables {
 			teleportation = nbt.getBoolean("teleportation");
 			explosion = nbt.getBoolean("explosion");
 			amber = nbt.getBoolean("amber");
-			blue_flame = nbt.getBoolean("blue_flame");
 			fog = nbt.getBoolean("fog");
 			magnet = nbt.getBoolean("magnet");
 			mist = nbt.getBoolean("mist");
@@ -629,7 +622,6 @@ public class PowerModVariables {
 					variables.teleportation = message.data.teleportation;
 					variables.explosion = message.data.explosion;
 					variables.amber = message.data.amber;
-					variables.blue_flame = message.data.blue_flame;
 					variables.fog = message.data.fog;
 					variables.magnet = message.data.magnet;
 					variables.mist = message.data.mist;

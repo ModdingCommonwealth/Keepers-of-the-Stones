@@ -12866,18 +12866,6 @@
       "value": "false"
     },
     {
-      "name": "blue_flame_stone",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "blue_flame",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
       "name": "cosmos_stone",
       "type": "logic",
       "scope": "map",
