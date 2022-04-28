@@ -133,7 +133,7 @@ public class BlackHeartItem extends PowerModElements.ModElement {
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return null;
+			return ItemStack.EMPTY;
 		}
 
 		@Override
