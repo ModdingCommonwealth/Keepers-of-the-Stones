@@ -1050,40 +1050,6 @@ public class ResetmychoiceProcedureProcedure {
 					}
 				}
 			}
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PowerModItems.BLUE_FLAME_STONE
-					.get()) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"item replace entity @s weapon.mainhand with air");
-				}
-				PowerModVariables.MapVariables.get(world).blue_flame_stone = false;
-				PowerModVariables.MapVariables.get(world).syncData(world);
-				{
-					boolean _setval = false;
-					entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.selected = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-				{
-					if (entity instanceof ServerPlayer _ent) {
-						BlockPos _bpos = new BlockPos(x, y, z);
-						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
-							@Override
-							public Component getDisplayName() {
-								return new TextComponent("ChoiseMagicStoneGUI");
-							}
-
-							@Override
-							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-								return new ChoiseMagicStoneGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-							}
-						}, _bpos);
-					}
-				}
-			}
 		}
 	}
 }

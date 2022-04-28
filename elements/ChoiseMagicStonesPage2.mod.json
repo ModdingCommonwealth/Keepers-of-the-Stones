@@ -166,13 +166,10 @@
       {
         "type": "button",
         "data": {
-          "text": " Blue Flame",
-          "onClick": {
-            "name": "BlueFlameGet"
-          },
+          "text": " ",
           "width": 56,
           "height": 20,
-          "name": " Blue Flame",
+          "name": " ",
           "x": 240,
           "y": 53
         }
@@ -425,16 +422,6 @@
           "name": "space_master.png",
           "x": 33,
           "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "blue_flame_master.png",
-          "use1Xscale": false,
-          "name": "blue_flame_master.png",
-          "x": 222,
-          "y": 53
         }
       }
     ],

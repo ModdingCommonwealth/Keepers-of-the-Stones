@@ -11082,15 +11082,6 @@
       "path": "~/Energy"
     },
     {
-      "name": "BlueFlameStone",
-      "type": "item",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_stone",
-      "path": "~/BlueFlame"
-    },
-    {
       "name": "MistStone",
       "type": "item",
       "sortid": 28,
@@ -11648,150 +11639,6 @@
       "path": "~/Achievements"
     },
     {
-      "name": "BlueFlameMaster",
-      "type": "potioneffect",
-      "sortid": 715,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_master",
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "RechargeBlueFlameStone",
-      "type": "potioneffect",
-      "sortid": 716,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recharge_blue_flame_stone",
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameStoneUse",
-      "type": "procedure",
-      "sortid": 717,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_stone_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameEffectStart",
-      "type": "procedure",
-      "sortid": 718,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_effect_start",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameEffectEnd",
-      "type": "procedure",
-      "sortid": 719,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_effect_end",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameEffects",
-      "type": "procedure",
-      "sortid": 720,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameBattery",
-      "type": "item",
-      "sortid": 721,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_battery",
-      "path": "~/ElementalBattery"
-    },
-    {
-      "name": "BlueFlameBatteryUse",
-      "type": "procedure",
-      "sortid": 722,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_battery_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/ElementalBattery"
-    },
-    {
       "name": "Confstone",
       "type": "command",
       "sortid": 723,
@@ -11847,88 +11694,6 @@
       "locked_code": false,
       "registry_name": "refreezing",
       "path": "~/Achievements"
-    },
-    {
-      "name": "BlueFireball",
-      "type": "rangeditem",
-      "sortid": 729,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_fireball",
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlame",
-      "type": "armor",
-      "sortid": 730,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameFireBallParticles",
-      "type": "procedure",
-      "sortid": 731,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_fire_ball_particles",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
-    },
-    {
-      "name": "BlueFlameBurnBlock",
-      "type": "procedure",
-      "sortid": 732,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_burn_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/BlueFlame"
     },
     {
       "name": "Fog",
@@ -12028,36 +11793,6 @@
         ]
       },
       "path": "~/Fire"
-    },
-    {
-      "name": "EBBlueFlame",
-      "type": "gui",
-      "sortid": 740,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "eb_blue_flame",
-      "path": "~/ElementalBook"
-    },
-    {
-      "name": "BlueFlameGet",
-      "type": "procedure",
-      "sortid": 741,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_flame_get",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReceivingStones"
     },
     {
       "name": "ChoiseMagicStonesPage3",
@@ -13233,10 +12968,9 @@
       "item.power.lightning_battery": "Батарея",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
-      "block.power.detonator_tnt": "Детонатор",
       "item.power.cutter_sword": "Куттер-Меч",
+      "block.power.detonator_tnt": "Детонатор",
       "effect.power.recharge_moon_stone": "Перезарядка",
-      "item.power.blue_flame_battery": "Батарея",
       "item.power.earth_battery": "Батарея",
       "advancements.absolute_power.descr": "Скопируйте силу любого элемента",
       "item.power.lightning_helmet": "Повязка Молнии",
@@ -13245,8 +12979,8 @@
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
       "key.power.skills_key": "Клавиша скиллов",
-      "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.snow_golem_creator": "Создание Снежного голема",
       "item.power.lava_hammer": "Лавовый Молот",
       "block.power.iron_magic_box": "Железная Волшебная Шкатулка",
@@ -13259,8 +12993,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Приручатель",
       "effect.power.recharge_earth_stone": "Перезарядка",
-      "effect.power.ice_master": "Мастер Льда",
       "item.power.time_reversed": "Обращение Времени",
+      "effect.power.ice_master": "Мастер Льда",
       "effect.power.recharge_amber_stone": "Перезарядка",
       "item.power.piece_of_earth": "Кусок Земли",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
@@ -13270,14 +13004,14 @@
       "item.power.explode_chestplate": "Шахид-нагрудник",
       "item.power.lava_ball": "Лавовый Шар",
       "advancements.welcome_to_the_void.title": "Добро пожаловать в Пустоту!",
-      "item.power.energy_chestplate": "Энергетическая Кираса",
-      "item.power.ocean_sword": "Меч Океана",
       "item.power.space_leggings": "Космические штаны",
+      "item.power.ocean_sword": "Меч Океана",
+      "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.gravity_stone": "Камень Гравитации",
       "item.power.destruction_sphere": "Сфера Разрушения",
       "item.power.shadow_invisible": "Теневая Невидимость",
-      "item.power.light_helmet": "Шлем солнца",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Шлем солнца",
       "item.power.time_leggings": "Штаны времени",
       "effect.power.greenery_master": "Мастер Зелени",
       "effect.power.recharge_animals_stone": "Перезарядка",
@@ -13290,8 +13024,8 @@
       "advancements.guardian.title": "Хранитель",
       "advancements.put_it_on_charge_overnight.descr": "Создайте зарядник для батарей",
       "item.power.redstone_bundle": "Мешок С Редстоуном",
-      "item.power.iron_shield": "Железный Щит",
       "item.power.light_battery": "Батарея",
+      "item.power.iron_shield": "Железный Щит",
       "effect.power.tornado_master": "Мастер Торнадо",
       "itemGroup.tabadditional_group": "Дополнительные",
       "item.power.bo_staff": "Посох Бо",
@@ -13299,8 +13033,8 @@
       "item.power.sun_ray": "Луч Солнца",
       "item.power.destruction_leggings": "Поножи разрушения",
       "item.power.energy_staff": "Посох Энергии",
-      "item.power.shadow_helmet": "Шлем тьмы",
       "effect.power.recharge_fire_stone": "Перезарядка",
+      "item.power.shadow_helmet": "Шлем тьмы",
       "item.power.crystal_leggings": "Кристаллические Штаны",
       "item.power.crystal_dagger": "Кристаллический Кинжал",
       "item.power.lava_leggings": "Лавовые Брюки",
@@ -13313,8 +13047,8 @@
       "item.power.fire_stone": "Камень Огня",
       "item.power.blood_stone": "Камень Крови",
       "item.power.rain_boots": "Дождевые Сапоги",
-      "item.power.ice_spear": "Ледяное Копьё",
       "item.power.portal_blast": "Портальная Пушка",
+      "item.power.ice_spear": "Ледяное Копьё",
       "effect.power.recharge_teleportation_stone": "Перезарядка",
       "subtitles.stone_activation": "Камень был активирован",
       "effect.power.fog": "Fog",
@@ -13351,8 +13085,8 @@
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
-      "effect.power.creation_master": "Мастер Созидания",
       "item.power.tp_on_moon": "Луна",
+      "effect.power.creation_master": "Мастер Созидания",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ледяной щит",
       "item.power.sound_leggings": "Звуковые Брюки",
@@ -13368,7 +13102,6 @@
       "item.power.fire_leggings": "Огненные Штаны",
       "item.power.black_heart": "Черное Сердце",
       "block.power.black_hole_block": "Блок Черной Дыры",
-      "item.power.blue_flame_chestplate": "Blue Flame Chestplate",
       "item.power.spawn": "Порождение",
       "effect.power.water_master": "Мастер Воды",
       "item.power.light_boots": "Ботинки света",
@@ -13492,7 +13225,6 @@
       "item.power.explosion_battery": "Батарея",
       "item.power.tornado_stone": "Камень Торнадо",
       "item.power.point": "Точка",
-      "effect.power.recharge_blue_flame_stone": "Перезарядка",
       "itemGroup.tabbatteries": "Батареи",
       "item.power.vacuum_boots": "Ваакумные ботинки",
       "item.power.water_battery": "Батерея",
@@ -13523,7 +13255,6 @@
       "item.power.vacuum_stone": "Камень Пустоты",
       "effect.power.destruction_master": "Мастер Разрушения",
       "item.power.poison_stone": "Камень Яда",
-      "item.power.blue_flame_boots": "Blue Flame Boots",
       "item.power.metal_battery": "Батарея",
       "item.power.energy_boots": "Энергетические Ботинки",
       "item.power.burn": "Поджёг",
@@ -13588,7 +13319,6 @@
       "item.power.sai": "Саи",
       "entity.power.shadow": "Тень",
       "item.power.lightning_stone": "Камень Молнии",
-      "item.power.blue_flame_stone": "Камень Синего Пламени",
       "item.power.mushrooms_stone": "Камень Грибов",
       "item.power.ocean_boots": "Ботинки Океана",
       "effect.power.moon_master": "Мастер Луны",
@@ -13607,7 +13337,6 @@
       "item.power.vacuum_sword": "Пустотный Меч",
       "item.power.fire_sword": "Меч Огня",
       "item.power.vacuum_chestplate": "Ваакумный нагрудник",
-      "item.power.blue_flame_helmet": "Blue Flame Helmet",
       "item.power.water_boots": "Водные Ласты",
       "item.power.space_boots": "Космические ботинки",
       "advancements.powerless.title": "Бессильный",
@@ -13633,7 +13362,6 @@
       "block.power.technobarrier_block": "Блок Технобарьера",
       "item.power.tiger_claw": "Тигриный Коготь",
       "advancements.bloodlust.title": "Жажда Крови",
-      "effect.power.blue_flame_master": "Мастер Синего Пламени",
       "item.power.speed_stone": "Камень Скорости",
       "item.power.rain_stone": "Камень Дождя",
       "item.power.lightning_strike": "Удар Молнии",
@@ -13642,14 +13370,12 @@
       "advancements.bright_light.descr": "Используйте Освещение",
       "item.power.blood_chestplate": "Нагрудник крови",
       "item.power.sun_axe": "Солнечная Секира",
-      "item.power.blue_flame_leggings": "Blue Flame Leggings",
       "item.power.sun_boots": "Шлем солнца",
       "item.power.moon_stone": "Камень Луны",
       "item.power.mars": "Mars Portal Igniter",
       "item.power.magnet_boots": "Magnet Boots",
       "item.power.destruction_power": "Анигиляция",
       "item.power.greenery_stone": "Камень Зелени",
-      "item.power.blue_fireball": "Синий Огненный Шар",
       "effect.power.recharge_ocean_stone": "Перезарядка",
       "item.power.tornado_battle_axe": "Боевой Топор Торнадо",
       "biome.power.venus_land": "Венерианская Земля",
@@ -13699,10 +13425,9 @@
       "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
-      "item.power.cutter_sword": "Cutter Sword",
       "block.power.detonator_tnt": "Detonator TNT",
+      "item.power.cutter_sword": "Cutter Sword",
       "effect.power.recharge_moon_stone": "Recharge",
-      "item.power.blue_flame_battery": "Battery",
       "item.power.earth_battery": "Battery",
       "advancements.absolute_power.descr": "Copy the power of any element",
       "item.power.lightning_helmet": "Lightning Helmet",
@@ -13711,8 +13436,8 @@
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
       "key.power.skills_key": "Skills Key",
-      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.lava_hammer": "Lava Hammer",
       "block.power.iron_magic_box": "Iron Magic Box",
@@ -13725,8 +13450,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Tamer",
       "effect.power.recharge_earth_stone": "Recharge",
-      "effect.power.ice_master": "Master of Ice",
       "item.power.time_reversed": "Time Reversed",
+      "effect.power.ice_master": "Master of Ice",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
@@ -13736,14 +13461,14 @@
       "item.power.explode_chestplate": "Explode Chestplate",
       "item.power.lava_ball": "Lava Ball",
       "advancements.welcome_to_the_void.title": "Welcome to the Void!",
-      "item.power.space_leggings": "Space Leggings",
-      "item.power.ocean_sword": "Ocean Sword",
       "item.power.energy_chestplate": "Energy Chestplate",
+      "item.power.ocean_sword": "Ocean Sword",
+      "item.power.space_leggings": "Space Leggings",
       "item.power.gravity_stone": "Gravity Stone",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "item.power.light_helmet": "Light Helmet",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Light Helmet",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.greenery_master": "Master of Greenery",
       "effect.power.recharge_animals_stone": "Recharge",
@@ -13756,8 +13481,8 @@
       "advancements.guardian.title": "Guardian",
       "advancements.put_it_on_charge_overnight.descr": "Create a charger for batteries",
       "item.power.redstone_bundle": "Redstone Bundle",
-      "item.power.iron_shield": "Iron Shield",
       "item.power.light_battery": "Battery",
+      "item.power.iron_shield": "Iron Shield",
       "effect.power.tornado_master": "Master of Tornado",
       "itemGroup.tabadditional_group": "Additional Group",
       "item.power.bo_staff": "Bo Staff",
@@ -13765,8 +13490,8 @@
       "item.power.sun_ray": "Sun Ray",
       "item.power.destruction_leggings": "Destruction Leggings",
       "item.power.energy_staff": "Energy Staff",
-      "effect.power.recharge_fire_stone": "Recharge",
       "item.power.shadow_helmet": "Shadow Helmet",
+      "effect.power.recharge_fire_stone": "Recharge",
       "item.power.crystal_leggings": "Crystal Leggings",
       "item.power.crystal_dagger": "Crystal Dagger",
       "item.power.lava_leggings": "Lava Leggings",
@@ -13779,8 +13504,8 @@
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
       "item.power.rain_boots": "Rain Boots",
-      "item.power.portal_blast": "Portal Blaster",
       "item.power.ice_spear": "Ice Spear",
+      "item.power.portal_blast": "Portal Blaster",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "effect.power.fog": "Fog",
@@ -13834,7 +13559,6 @@
       "item.power.black_heart": "Black Heart",
       "item.power.fire_leggings": "Fire Leggings",
       "block.power.black_hole_block": "Black Hole Block",
-      "item.power.blue_flame_chestplate": "Blue Flame Chestplate",
       "item.power.spawn": "Spawn",
       "effect.power.water_master": "Master of Water",
       "item.power.light_boots": "Light Boots",
@@ -13958,7 +13682,6 @@
       "item.power.explosion_battery": "Battery",
       "item.power.tornado_stone": "Tornado Stone",
       "item.power.point": "Point",
-      "effect.power.recharge_blue_flame_stone": "Recharge",
       "itemGroup.tabbatteries": "Batteries",
       "item.power.vacuum_boots": "Vacuum Boots",
       "item.power.water_battery": "Battery",
@@ -13989,7 +13712,6 @@
       "item.power.vacuum_stone": "Vacuum Stone",
       "effect.power.destruction_master": "Destruction Master",
       "item.power.poison_stone": "Poison Stone",
-      "item.power.blue_flame_boots": "Blue Flame Boots",
       "item.power.metal_battery": "Battery",
       "item.power.energy_boots": "Energy Boots",
       "item.power.burn": "Burn",
@@ -14055,7 +13777,6 @@
       "item.power.sai": "Sai",
       "entity.power.shadow": "Shadow",
       "item.power.lightning_stone": "Lightning Stone",
-      "item.power.blue_flame_stone": "Blue Flame Stone",
       "item.power.mushrooms_stone": "Mushrooms Stone",
       "item.power.ocean_boots": "Ocean Boots",
       "effect.power.moon_master": "Master of the Moon",
@@ -14074,7 +13795,6 @@
       "item.power.vacuum_sword": "Vacuum Sword",
       "item.power.fire_sword": "Fire Sword",
       "item.power.vacuum_chestplate": "Vacuum Chestplate",
-      "item.power.blue_flame_helmet": "Blue Flame Helmet",
       "item.power.water_boots": "Water Boots",
       "item.power.space_boots": "Space Boots",
       "advancements.powerless.title": "Powerless",
@@ -14100,7 +13820,6 @@
       "block.power.technobarrier_block": "Technobarrier Block",
       "item.power.tiger_claw": "Tiger Claw",
       "advancements.bloodlust.title": "Bloodlust",
-      "effect.power.blue_flame_master": "Master of Blue Flame",
       "item.power.speed_stone": "Speed Stone",
       "item.power.rain_stone": "Rain Stone",
       "item.power.lightning_strike": "Lightning Strike",
@@ -14109,14 +13828,12 @@
       "advancements.bright_light.descr": "Use lighting",
       "item.power.blood_chestplate": "Blood Chestplate",
       "item.power.sun_axe": "Sun Axe",
-      "item.power.blue_flame_leggings": "Blue Flame Leggings",
       "item.power.sun_boots": "Sun Boots",
       "item.power.moon_stone": "Moon Stone",
       "item.power.mars": "Mars Portal Igniter",
       "item.power.magnet_boots": "Magnet Boots",
       "item.power.destruction_power": "Destruction Power",
       "item.power.greenery_stone": "Greenery Stone",
-      "item.power.blue_fireball": "Blue Fireball",
       "effect.power.recharge_ocean_stone": "Recharge",
       "item.power.tornado_battle_axe": "Tornado Battle Axe",
       "biome.power.venus_land": "Venus Land",
@@ -14300,10 +14017,6 @@
       },
       {
         "name": "Amber",
-        "children": []
-      },
-      {
-        "name": "BlueFlame",
         "children": []
       },
       {

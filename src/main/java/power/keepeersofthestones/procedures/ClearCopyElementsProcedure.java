@@ -67,7 +67,5 @@ public class ClearCopyElementsProcedure {
 			_entity.removeEffect(PowerModMobEffects.TELEPORTATION_MASTER.get());
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeEffect(PowerModMobEffects.EXPLOSION_MASTER.get());
-		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PowerModMobEffects.BLUE_FLAME_MASTER.get());
 	}
 }

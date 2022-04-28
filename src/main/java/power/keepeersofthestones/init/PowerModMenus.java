@@ -34,7 +34,6 @@ import power.keepeersofthestones.world.inventory.EBEarthMenu;
 import power.keepeersofthestones.world.inventory.EBDestructionMenu;
 import power.keepeersofthestones.world.inventory.EBCrystalMenu;
 import power.keepeersofthestones.world.inventory.EBCreationMenu;
-import power.keepeersofthestones.world.inventory.EBBlueFlameMenu;
 import power.keepeersofthestones.world.inventory.EBBloodMenu;
 import power.keepeersofthestones.world.inventory.EBAnimalsMenu;
 import power.keepeersofthestones.world.inventory.EBAmberMenu;
@@ -129,8 +128,6 @@ public class PowerModMenus {
 			(id, inv, extraData) -> new EBExplosionMenu(id, inv, extraData));
 	public static final MenuType<EBAmberMenu> EB_AMBER = register("eb_amber", (id, inv, extraData) -> new EBAmberMenu(id, inv, extraData));
 	public static final MenuType<PointGUIMenu> POINT_GUI = register("point_gui", (id, inv, extraData) -> new PointGUIMenu(id, inv, extraData));
-	public static final MenuType<EBBlueFlameMenu> EB_BLUE_FLAME = register("eb_blue_flame",
-			(id, inv, extraData) -> new EBBlueFlameMenu(id, inv, extraData));
 	public static final MenuType<ChoiseMagicStonesPage3Menu> CHOISE_MAGIC_STONES_PAGE_3 = register("choise_magic_stones_page_3",
 			(id, inv, extraData) -> new ChoiseMagicStonesPage3Menu(id, inv, extraData));
 
