@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Master of Time",
-    "icon": "time_master.png",
+    "icon": "time_master_effect.png",
     "color": {
       "value": -10092544,
       "falpha": 0.0
