@@ -168,6 +168,7 @@ import power.keepeersofthestones.item.EnergyBatteryItem;
 import power.keepeersofthestones.item.EnergyAbsorptionItem;
 import power.keepeersofthestones.item.EmptyBatteryItem;
 import power.keepeersofthestones.item.ElementalMusicDiscItem;
+import power.keepeersofthestones.item.ElementalCoinItem;
 import power.keepeersofthestones.item.EclipseItem;
 import power.keepeersofthestones.item.EarthStoneItem;
 import power.keepeersofthestones.item.EarthItem;
@@ -219,6 +220,7 @@ import org.lwjgl.system.windows.POINT;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -549,6 +551,10 @@ public class PowerModItems {
 	public static final RegistryObject<Item> MAGNET_CHESTPLATE = REGISTRY.register("magnet_chestplate", () -> new MagnetItem.Chestplate());
 	public static final RegistryObject<Item> MAGNET_LEGGINGS = REGISTRY.register("magnet_leggings", () -> new MagnetItem.Leggings());
 	public static final RegistryObject<Item> MAGNET_BOOTS = REGISTRY.register("magnet_boots", () -> new MagnetItem.Boots());
+	public static final RegistryObject<Item> ELEMENTAL_COIN = REGISTRY.register("elemental_coin", () -> new ElementalCoinItem());
+	public static final RegistryObject<Item> TYRANNOSAURUS_REX = REGISTRY.register("tyrannosaurus_rex_spawn_egg",
+			() -> new ForgeSpawnEggItem(PowerModEntities.TYRANNOSAURUS_REX, -6750208, -65536,
+					new Item.Properties().tab(PowerModTabs.TAB_TECHNOLOGIES_AND_ARTIFACTS)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

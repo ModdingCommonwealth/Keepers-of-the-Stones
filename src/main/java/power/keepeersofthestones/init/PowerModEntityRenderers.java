@@ -4,6 +4,7 @@
  */
 package power.keepeersofthestones.init;
 
+import power.keepeersofthestones.client.renderer.TyrannosaurusRexRenderer;
 import power.keepeersofthestones.client.renderer.TornadoEntityRenderer;
 import power.keepeersofthestones.client.renderer.TornadoCreateRenderer;
 import power.keepeersofthestones.client.renderer.ShadowRenderer;
@@ -57,5 +58,6 @@ public class PowerModEntityRenderers {
 		event.registerEntityRenderer(PowerModEntities.ICE_SPEAR.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.GOLDEN_CROSSBOW.get(), GoldenCrossbowRenderer::new);
 		event.registerEntityRenderer(PowerModEntities.DESTRUCTION_SPHERE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PowerModEntities.TYRANNOSAURUS_REX.get(), TyrannosaurusRexRenderer::new);
 	}
 }

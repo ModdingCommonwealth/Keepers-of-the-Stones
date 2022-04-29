@@ -8,6 +8,7 @@ import power.keepeersofthestones.entity.WhirlpoolEntity;
 import power.keepeersofthestones.entity.WaterFlowEntity;
 import power.keepeersofthestones.entity.VacuumWebEntity;
 import power.keepeersofthestones.entity.VacuumSpiralEntity;
+import power.keepeersofthestones.entity.TyrannosaurusRexEntity;
 import power.keepeersofthestones.entity.TornadoEntityEntity;
 import power.keepeersofthestones.entity.TornadoCreateEntity;
 import power.keepeersofthestones.entity.TimeDilationEntity;
@@ -167,6 +168,11 @@ public class PowerModEntities {
 			EntityType.Builder.<DestructionSphereEntity>of(DestructionSphereEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(DestructionSphereEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TyrannosaurusRexEntity>> TYRANNOSAURUS_REX = register("tyrannosaurus_rex",
+			EntityType.Builder.<TyrannosaurusRexEntity>of(TyrannosaurusRexEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(TyrannosaurusRexEntity::new)
+
+					.sized(1.1f, 2.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -178,6 +184,7 @@ public class PowerModEntities {
 			TornadoEntityEntity.init();
 			GlowEntity.init();
 			ShadowEntity.init();
+			TyrannosaurusRexEntity.init();
 		});
 	}
 
@@ -186,5 +193,6 @@ public class PowerModEntities {
 		event.put(TORNADO_ENTITY.get(), TornadoEntityEntity.createAttributes().build());
 		event.put(GLOW.get(), GlowEntity.createAttributes().build());
 		event.put(SHADOW.get(), ShadowEntity.createAttributes().build());
+		event.put(TYRANNOSAURUS_REX.get(), TyrannosaurusRexEntity.createAttributes().build());
 	}
 }

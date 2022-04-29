@@ -1,0 +1,121 @@
+{
+  "_fv": 29,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Tyrannosaurus Rex",
+    "mobLabel": "",
+    "mobModelName": "Modelglow",
+    "mobModelTexture": "glow.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 1.1,
+    "modelHeight": 2.5,
+    "modelShadowSize": 1.1,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -6750208,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:TechnologiesAndArtifacts"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 25,
+    "attackKnockback": 1.5,
+    "knockbackResistance": 1.0,
+    "movementSpeed": 1.0,
+    "armorBaseValue": 0.0,
+    "trackingRange": 256,
+    "health": 150,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": true,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": true,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": "CUSTOM:tyrannosaurus_rex.ambient"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:tyrannosaurus_rex.hurt"
+    },
+    "deathSound": {
+      "value": "CUSTOM:tyrannosaurus_rex.dead"
+    },
+    "stepSound": {
+      "value": "entity.cow.step"
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">2.4</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false
+  }
+}

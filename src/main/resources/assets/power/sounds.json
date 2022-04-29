@@ -37,5 +37,41 @@
         "stream": false
       }
     ]
+  },
+  "tyrannosaurus_rex.hurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power:tyrannosaurus_rex.hurt",
+        "stream": false
+      }
+    ]
+  },
+  "tyrannosaurus_rex.dead": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power:tyrannosaurus_rex.dead",
+        "stream": false
+      }
+    ]
+  },
+  "tyrannosaurus_rex.attack": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power:tyrannosaurus_rex.attack",
+        "stream": false
+      }
+    ]
+  },
+  "tyrannosaurus_rex.ambient": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "power:tyrannosaurus_rex.ambient",
+        "stream": false
+      }
+    ]
   }
 }
