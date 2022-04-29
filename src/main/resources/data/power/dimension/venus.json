@@ -7,25 +7,55 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "power:venus_land",
+          "biome": "power:venus_desert",
           "parameters": {
-            "temperature": 1,
-            "humidity": -1,
-            "continentalness": 0.75,
-            "weirdness": -1.5,
-            "erosion": 0,
+            "temperature": [
+              0.857142857143,
+              1.142857142857
+            ],
+            "humidity": [
+              -1.142857142857,
+              -0.857142857143
+            ],
+            "continentalness": [
+              0.467142857143,
+              0.752857142857
+            ],
+            "weirdness": [
+              -1.002968757251,
+              -0.717254471537
+            ],
+            "erosion": [
+              -0.3428571428570002,
+              -0.0571428571430002
+            ],
             "depth": 0,
             "offset": 0
           }
         },
         {
-          "biome": "power:venus_desert",
+          "biome": "power:venus_land",
           "parameters": {
-            "temperature": -1,
-            "humidity": 1,
-            "continentalness": -0.75,
-            "weirdness": 1.5,
-            "erosion": 0,
+            "temperature": [
+              0.857142857143,
+              1.142857142857
+            ],
+            "humidity": [
+              -1.142857142857,
+              -0.857142857143
+            ],
+            "continentalness": [
+              0.407142857143,
+              0.692857142857
+            ],
+            "weirdness": [
+              -1.002968757251,
+              -0.717254471537
+            ],
+            "erosion": [
+              -0.142857142857,
+              0.142857142857
+            ],
             "depth": 0,
             "offset": 0
           }
@@ -2963,7 +2993,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "power:venus_land"
+                "power:venus_desert"
               ]
             },
             "then_run": {
@@ -2997,7 +3027,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:coarse_dirt"
+                              "Name": "minecraft:sand"
                             }
                           }
                         },
@@ -3035,7 +3065,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "power:venus_desert"
+                "power:venus_land"
               ]
             },
             "then_run": {
@@ -3069,7 +3099,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:sand"
+                              "Name": "minecraft:coarse_dirt"
                             }
                           }
                         },
