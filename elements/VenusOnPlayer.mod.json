@@ -1,7 +1,0 @@
-{
-  "_fv": 29,
-  "_type": "procedure",
-  "definition": {
-    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_switch_dimension\"><field name=\"dimension\">CUSTOM:Venus</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">tp ~ ~30 ~</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"entity_add_potion_advanced\"><field name=\"potion\">SLOW_FALLING</field><value name=\"level\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value><value name=\"ambient\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value><value name=\"particles\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></next></block></next></block></xml>"
-  }
-}

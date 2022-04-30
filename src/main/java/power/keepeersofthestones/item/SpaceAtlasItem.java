@@ -1,8 +1,7 @@
 
 package power.keepeersofthestones.item;
 
-import power.keepeersofthestones.procedures.MarsOnMeProcedure;
-import power.keepeersofthestones.procedures.MarsGUIProcedure;
+import power.keepeersofthestones.procedures.OpenSpaceAtlasProcedure;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -11,13 +10,12 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-public class TpOnMarsItem extends Item {
-	public TpOnMarsItem() {
-		super(new Item.Properties().tab(null).durability(10).fireResistant().rarity(Rarity.COMMON));
+public class SpaceAtlasItem extends Item {
+	public SpaceAtlasItem() {
+		super(new Item.Properties().tab(null).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -43,14 +41,7 @@ public class TpOnMarsItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		MarsOnMeProcedure.execute(world, entity, itemstack);
+		OpenSpaceAtlasProcedure.execute(world, x, y, z, entity);
 		return ar;
-	}
-
-	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		MarsGUIProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
-		return retval;
 	}
 }

@@ -50,19 +50,7 @@ public class SpaceMasterEffectEndProcedure {
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TP_ON_MARS.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TP_ON_VENUS.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TP_ON_MOON.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(PowerModItems.TP_ON_EARTH.get());
+			ItemStack _stktoremove = new ItemStack(PowerModItems.SPACE_ATLAS.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof Player _player) {

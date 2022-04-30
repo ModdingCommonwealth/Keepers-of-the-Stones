@@ -1,9 +1,11 @@
 
 package power.keepeersofthestones.network;
 
-import power.keepeersofthestones.world.inventory.AcceptTpOnVenusMenu;
-import power.keepeersofthestones.procedures.VenusOnPlayerProcedure;
-import power.keepeersofthestones.procedures.NoAcceptProcProcedure;
+import power.keepeersofthestones.world.inventory.SpaceAtlasGUIMenu;
+import power.keepeersofthestones.procedures.VenusOnMeProcedure;
+import power.keepeersofthestones.procedures.MoonOnMeProcedure;
+import power.keepeersofthestones.procedures.MarsOnMeProcedure;
+import power.keepeersofthestones.procedures.EarthOnMeProcedure;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -20,31 +22,31 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class AcceptTpOnVenusButtonMessage {
+public class SpaceAtlasGUIButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public AcceptTpOnVenusButtonMessage(FriendlyByteBuf buffer) {
+	public SpaceAtlasGUIButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public AcceptTpOnVenusButtonMessage(int buttonID, int x, int y, int z) {
+	public SpaceAtlasGUIButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(AcceptTpOnVenusButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(SpaceAtlasGUIButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(AcceptTpOnVenusButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(SpaceAtlasGUIButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -59,23 +61,31 @@ public class AcceptTpOnVenusButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
-		HashMap guistate = AcceptTpOnVenusMenu.guistate;
+		HashMap guistate = SpaceAtlasGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			VenusOnPlayerProcedure.execute(entity);
+			MoonOnMeProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			NoAcceptProcProcedure.execute(entity);
+			EarthOnMeProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			MarsOnMeProcedure.execute(entity);
+		}
+		if (buttonID == 3) {
+
+			VenusOnMeProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PowerMod.addNetworkMessage(AcceptTpOnVenusButtonMessage.class, AcceptTpOnVenusButtonMessage::buffer, AcceptTpOnVenusButtonMessage::new,
-				AcceptTpOnVenusButtonMessage::handler);
+		PowerMod.addNetworkMessage(SpaceAtlasGUIButtonMessage.class, SpaceAtlasGUIButtonMessage::buffer, SpaceAtlasGUIButtonMessage::new,
+				SpaceAtlasGUIButtonMessage::handler);
 	}
 }

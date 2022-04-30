@@ -1,6 +1,6 @@
 package power.keepeersofthestones.procedures;
 
-import power.keepeersofthestones.world.inventory.AcceptTpOnMarsMenu;
+import power.keepeersofthestones.world.inventory.SpaceAtlasGUIMenu;
 
 import net.minecraftforge.network.NetworkHooks;
 
@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 
 import io.netty.buffer.Unpooled;
 
-public class MarsGUIProcedure {
+public class OpenSpaceAtlasProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -28,12 +28,12 @@ public class MarsGUIProcedure {
 				NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return new TextComponent("AcceptTpOnMars");
+						return new TextComponent("SpaceAtlasGUI");
 					}
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new AcceptTpOnMarsMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new SpaceAtlasGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

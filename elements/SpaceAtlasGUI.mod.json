@@ -1,0 +1,101 @@
+{
+  "_fv": 29,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space atlas_book.png",
+          "use1Xscale": true,
+          "name": "space atlas_book.png",
+          "x": -31,
+          "y": -6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Atlas of Space Travel",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Atlas of Space Travel",
+          "x": 57,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Moon",
+          "onClick": {
+            "name": "MoonOnMe"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Moon",
+          "x": 42,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth",
+          "onClick": {
+            "name": "EarthOnMe"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Earth",
+          "x": 42,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mars",
+          "onClick": {
+            "name": "MarsOnMe"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Mars",
+          "x": 42,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Venus",
+          "onClick": {
+            "name": "VenusOnMe"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "Venus",
+          "x": 42,
+          "y": 116
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

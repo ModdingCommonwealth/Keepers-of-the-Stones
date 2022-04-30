@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "power:items/tponmoon"
+    "layer0": "power:items/space_atlas"
   }
 }

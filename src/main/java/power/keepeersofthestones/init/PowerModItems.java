@@ -20,10 +20,6 @@ import power.keepeersofthestones.item.VacuumStoneItem;
 import power.keepeersofthestones.item.VacuumSpiralItem;
 import power.keepeersofthestones.item.VacuumItem;
 import power.keepeersofthestones.item.VacuumBatteryItem;
-import power.keepeersofthestones.item.TpOnVenusItem;
-import power.keepeersofthestones.item.TpOnMoonItem;
-import power.keepeersofthestones.item.TpOnMarsItem;
-import power.keepeersofthestones.item.TpOnEarthItem;
 import power.keepeersofthestones.item.TornadoStoneItem;
 import power.keepeersofthestones.item.TornadoItem;
 import power.keepeersofthestones.item.TornadoCreateItem;
@@ -61,6 +57,7 @@ import power.keepeersofthestones.item.SpawnItem;
 import power.keepeersofthestones.item.SpaceStoneItem;
 import power.keepeersofthestones.item.SpaceItem;
 import power.keepeersofthestones.item.SpaceBatteryItem;
+import power.keepeersofthestones.item.SpaceAtlasItem;
 import power.keepeersofthestones.item.SoundSwordItem;
 import power.keepeersofthestones.item.SoundStoneItem;
 import power.keepeersofthestones.item.SoundItem;
@@ -433,10 +430,6 @@ public class PowerModItems {
 	public static final RegistryObject<Item> MOON_WITHER = REGISTRY.register("moon_wither", () -> new MoonWitherItem());
 	public static final RegistryObject<Item> RANDOM_ITEM = REGISTRY.register("random_item", () -> new RandomItemItem());
 	public static final RegistryObject<Item> DESTRUCTION_POWER = REGISTRY.register("destruction_power", () -> new DestructionPowerItem());
-	public static final RegistryObject<Item> TP_ON_MARS = REGISTRY.register("tp_on_mars", () -> new TpOnMarsItem());
-	public static final RegistryObject<Item> TP_ON_VENUS = REGISTRY.register("tp_on_venus", () -> new TpOnVenusItem());
-	public static final RegistryObject<Item> TP_ON_MOON = REGISTRY.register("tp_on_moon", () -> new TpOnMoonItem());
-	public static final RegistryObject<Item> TP_ON_EARTH = REGISTRY.register("tp_on_earth", () -> new TpOnEarthItem());
 	public static final RegistryObject<Item> GALACTIC_SWORD = REGISTRY.register("galactic_sword", () -> new GalacticSwordItem());
 	public static final RegistryObject<Item> BLACK_HOLE = REGISTRY.register("black_hole", () -> new BlackHoleItem());
 	public static final RegistryObject<Item> BLACK_HOLE_BLOCK = block(PowerModBlocks.BLACK_HOLE_BLOCK, null);
@@ -555,6 +548,7 @@ public class PowerModItems {
 	public static final RegistryObject<Item> TYRANNOSAURUS_REX = REGISTRY.register("tyrannosaurus_rex_spawn_egg",
 			() -> new ForgeSpawnEggItem(PowerModEntities.TYRANNOSAURUS_REX, -6750208, -65536,
 					new Item.Properties().tab(PowerModTabs.TAB_TECHNOLOGIES_AND_ARTIFACTS)));
+	public static final RegistryObject<Item> SPACE_ATLAS = REGISTRY.register("space_atlas", () -> new SpaceAtlasItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class AcceptTpOnMarsMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class SpaceAtlasGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -27,8 +27,8 @@ public class AcceptTpOnMarsMenu extends AbstractContainerMenu implements Supplie
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
 
-	public AcceptTpOnMarsMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(PowerModMenus.ACCEPT_TP_ON_MARS, id);
+	public SpaceAtlasGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(PowerModMenus.SPACE_ATLAS_GUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

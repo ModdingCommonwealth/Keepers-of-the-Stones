@@ -5,6 +5,7 @@
 package power.keepeersofthestones.init;
 
 import power.keepeersofthestones.client.gui.SpawnAnimalsGUIScreen;
+import power.keepeersofthestones.client.gui.SpaceAtlasGUIScreen;
 import power.keepeersofthestones.client.gui.SoundEmitateChoiceScreen;
 import power.keepeersofthestones.client.gui.RedstoneBundleGUIScreen;
 import power.keepeersofthestones.client.gui.PointGUIScreen;
@@ -45,10 +46,6 @@ import power.keepeersofthestones.client.gui.ChoiseMagicStoneGUIScreen;
 import power.keepeersofthestones.client.gui.CheckpointGUIScreen;
 import power.keepeersofthestones.client.gui.BuildingGUIScreen;
 import power.keepeersofthestones.client.gui.BatteryCreateGUIScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnVenusScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnMoonScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnMarsScreen;
-import power.keepeersofthestones.client.gui.AcceptTpOnEarthScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -68,10 +65,6 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONE_GUI, ChoiseMagicStoneGUIScreen::new);
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_2, ChoiseMagicStonesPage2Screen::new);
 			MenuScreens.register(PowerModMenus.CHECKPOINT_GUI, CheckpointGUIScreen::new);
-			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_MOON, AcceptTpOnMoonScreen::new);
-			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_EARTH, AcceptTpOnEarthScreen::new);
-			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_MARS, AcceptTpOnMarsScreen::new);
-			MenuScreens.register(PowerModMenus.ACCEPT_TP_ON_VENUS, AcceptTpOnVenusScreen::new);
 			MenuScreens.register(PowerModMenus.BATTERY_CREATE_GUI, BatteryCreateGUIScreen::new);
 			MenuScreens.register(PowerModMenus.REDSTONE_BUNDLE_GUI, RedstoneBundleGUIScreen::new);
 			MenuScreens.register(PowerModMenus.BUILDING_GUI, BuildingGUIScreen::new);
@@ -107,6 +100,7 @@ public class PowerModScreens {
 			MenuScreens.register(PowerModMenus.EB_AMBER, EBAmberScreen::new);
 			MenuScreens.register(PowerModMenus.POINT_GUI, PointGUIScreen::new);
 			MenuScreens.register(PowerModMenus.CHOISE_MAGIC_STONES_PAGE_3, ChoiseMagicStonesPage3Screen::new);
+			MenuScreens.register(PowerModMenus.SPACE_ATLAS_GUI, SpaceAtlasGUIScreen::new);
 		});
 	}
 }

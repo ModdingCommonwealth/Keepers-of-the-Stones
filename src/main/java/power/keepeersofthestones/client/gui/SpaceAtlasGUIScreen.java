@@ -1,8 +1,8 @@
 
 package power.keepeersofthestones.client.gui;
 
-import power.keepeersofthestones.world.inventory.AcceptTpOnVenusMenu;
-import power.keepeersofthestones.network.AcceptTpOnVenusButtonMessage;
+import power.keepeersofthestones.world.inventory.SpaceAtlasGUIMenu;
+import power.keepeersofthestones.network.SpaceAtlasGUIButtonMessage;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraft.world.level.Level;
@@ -20,24 +20,22 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AcceptTpOnVenusScreen extends AbstractContainerScreen<AcceptTpOnVenusMenu> {
-	private final static HashMap<String, Object> guistate = AcceptTpOnVenusMenu.guistate;
+public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMenu> {
+	private final static HashMap<String, Object> guistate = SpaceAtlasGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public AcceptTpOnVenusScreen(AcceptTpOnVenusMenu container, Inventory inventory, Component text) {
+	public SpaceAtlasGUIScreen(SpaceAtlasGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 267;
+		this.imageWidth = 176;
 		this.imageHeight = 166;
 	}
-
-	private static final ResourceLocation texture = new ResourceLocation("power:textures/screens/accept_tp_on_venus.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -51,8 +49,10 @@ public class AcceptTpOnVenusScreen extends AbstractContainerScreen<AcceptTpOnVen
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/space atlas_book.png"));
+		this.blit(ms, this.leftPos + -156, this.topPos + -43, 0, 0, 512, 256, 512, 256);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -72,8 +72,7 @@ public class AcceptTpOnVenusScreen extends AbstractContainerScreen<AcceptTpOnVen
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "They want to teleport you to the venus.", 34, 7, -12829636);
-		this.font.draw(poseStack, " Do you agree?", 88, 25, -12829636);
+		this.font.draw(poseStack, "Atlas of Space Travel", -68, -20, -16777216);
 	}
 
 	@Override
@@ -86,16 +85,28 @@ public class AcceptTpOnVenusScreen extends AbstractContainerScreen<AcceptTpOnVen
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 52, this.topPos + 70, 40, 20, new TextComponent("Yes"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 25, 46, 20, new TextComponent("Moon"), e -> {
 			if (true) {
-				PowerMod.PACKET_HANDLER.sendToServer(new AcceptTpOnVenusButtonMessage(0, x, y, z));
-				AcceptTpOnVenusButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(0, x, y, z));
+				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 70, 35, 20, new TextComponent("No"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + -2, 51, 20, new TextComponent("Earth"), e -> {
 			if (true) {
-				PowerMod.PACKET_HANDLER.sendToServer(new AcceptTpOnVenusButtonMessage(1, x, y, z));
-				AcceptTpOnVenusButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(1, x, y, z));
+				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 52, 46, 20, new TextComponent("Mars"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(2, x, y, z));
+				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 79, 51, 20, new TextComponent("Venus"), e -> {
+			if (true) {
+				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(3, x, y, z));
+				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
 	}

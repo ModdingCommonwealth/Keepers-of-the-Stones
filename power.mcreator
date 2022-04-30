@@ -6244,42 +6244,6 @@
       "path": "~/Space"
     },
     {
-      "name": "TpOnMars",
-      "type": "item",
-      "sortid": 413,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tp_on_mars",
-      "path": "~/Space"
-    },
-    {
-      "name": "TpOnVenus",
-      "type": "item",
-      "sortid": 414,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tp_on_venus",
-      "path": "~/Space"
-    },
-    {
-      "name": "TpOnMoon",
-      "type": "item",
-      "sortid": 415,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tp_on_moon",
-      "path": "~/Space"
-    },
-    {
-      "name": "TpOnEarth",
-      "type": "item",
-      "sortid": 416,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tp_on_earth",
-      "path": "~/Space"
-    },
-    {
       "name": "GalacticSword",
       "type": "tool",
       "sortid": 417,
@@ -8208,31 +8172,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "MarsOnPlayer",
-      "type": "procedure",
-      "sortid": 525,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mars_on_player",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },
@@ -8245,31 +8184,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "moon_on_me",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "MoonOnPlayer",
-      "type": "procedure",
-      "sortid": 527,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_on_player",
       "metadata": {
         "dependencies": [
           {
@@ -8292,31 +8206,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "VenusOnPlayer",
-      "type": "procedure",
-      "sortid": 529,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "venus_on_player",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },
@@ -8329,31 +8218,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "earth_on_me",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "EarthOnPlayer",
-      "type": "procedure",
-      "sortid": 531,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "earth_on_player",
       "metadata": {
         "dependencies": [
           {
@@ -8672,191 +8536,6 @@
         ]
       },
       "path": "~/Rain"
-    },
-    {
-      "name": "NoAcceptProc",
-      "type": "procedure",
-      "sortid": 545,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "no_accept_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "AcceptTpOnMoon",
-      "type": "gui",
-      "sortid": 546,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "accept_tp_on_moon",
-      "path": "~/Space"
-    },
-    {
-      "name": "AcceptTpOnEarth",
-      "type": "gui",
-      "sortid": 547,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "accept_tp_on_earth",
-      "path": "~/Space"
-    },
-    {
-      "name": "AcceptTpOnMars",
-      "type": "gui",
-      "sortid": 548,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "accept_tp_on_mars",
-      "path": "~/Space"
-    },
-    {
-      "name": "AcceptTpOnVenus",
-      "type": "gui",
-      "sortid": 549,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "accept_tp_on_venus",
-      "path": "~/Space"
-    },
-    {
-      "name": "VenusGUI",
-      "type": "procedure",
-      "sortid": 550,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "venus_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "MarsGUI",
-      "type": "procedure",
-      "sortid": 551,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mars_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "EarthGUI",
-      "type": "procedure",
-      "sortid": 552,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "earth_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
-    },
-    {
-      "name": "MoonGUI",
-      "type": "procedure",
-      "sortid": 553,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "moon_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Space"
     },
     {
       "name": "GetSugarCane",
@@ -12454,6 +12133,57 @@
       "locked_code": false,
       "registry_name": "tyrannosaurus_rexloot",
       "path": "~/Time"
+    },
+    {
+      "name": "SpaceAtlas",
+      "type": "item",
+      "sortid": 804,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_atlas",
+      "path": "~/Space"
+    },
+    {
+      "name": "SpaceAtlasGUI",
+      "type": "gui",
+      "sortid": 805,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "space_atlas_gui",
+      "path": "~/Space"
+    },
+    {
+      "name": "OpenSpaceAtlas",
+      "type": "procedure",
+      "sortid": 806,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_space_atlas",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Space"
     }
   ],
   "variable_elements": [
@@ -13048,9 +12778,9 @@
       "item.power.lightning_battery": "Батарея",
       "effect.power.recharge_rain_stone": "Перезарядка",
       "effect.recharge_tornado_stone": "Перезарядка",
-      "block.power.detonator_tnt": "Детонатор",
-      "item.power.cutter_sword": "Куттер-Меч",
       "biome.power.triassic_plains": "Triassic Plains",
+      "item.power.cutter_sword": "Куттер-Меч",
+      "block.power.detonator_tnt": "Детонатор",
       "effect.power.recharge_moon_stone": "Перезарядка",
       "item.power.earth_battery": "Батарея",
       "advancements.absolute_power.descr": "Скопируйте силу любого элемента",
@@ -13060,8 +12790,8 @@
       "item.power.fire_chestplate": "Огненная Мантия",
       "item.power.glow_create": "Создать Светляка",
       "key.power.skills_key": "Клавиша скиллов",
-      "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "effect.power.recharge_energy_stone": "Перезарядка",
       "item.power.snow_golem_creator": "Создание Снежного голема",
       "item.power.lava_hammer": "Лавовый Молот",
       "block.power.iron_magic_box": "Железная Волшебная Шкатулка",
@@ -13074,8 +12804,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Приручатель",
       "effect.power.recharge_earth_stone": "Перезарядка",
-      "effect.power.ice_master": "Мастер Льда",
       "item.power.time_reversed": "Обращение Времени",
+      "effect.power.ice_master": "Мастер Льда",
       "effect.power.recharge_amber_stone": "Перезарядка",
       "item.power.piece_of_earth": "Кусок Земли",
       "block.power.moon_stones_block": "Блок Разрастающихся Лунных Камней",
@@ -13085,14 +12815,14 @@
       "item.power.explode_chestplate": "Шахид-нагрудник",
       "item.power.lava_ball": "Лавовый Шар",
       "advancements.welcome_to_the_void.title": "Добро пожаловать в Пустоту!",
-      "item.power.energy_chestplate": "Энергетическая Кираса",
-      "item.power.ocean_sword": "Меч Океана",
       "item.power.space_leggings": "Космические штаны",
+      "item.power.ocean_sword": "Меч Океана",
+      "item.power.energy_chestplate": "Энергетическая Кираса",
       "item.power.gravity_stone": "Камень Гравитации",
       "item.power.destruction_sphere": "Сфера Разрушения",
       "item.power.shadow_invisible": "Теневая Невидимость",
-      "item.power.light_helmet": "Шлем солнца",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Шлем солнца",
       "item.power.time_leggings": "Штаны времени",
       "effect.power.greenery_master": "Мастер Зелени",
       "effect.power.recharge_animals_stone": "Перезарядка",
@@ -13129,8 +12859,8 @@
       "item.power.fire_stone": "Камень Огня",
       "item.power.blood_stone": "Камень Крови",
       "item.power.rain_boots": "Дождевые Сапоги",
-      "item.power.ice_spear": "Ледяное Копьё",
       "item.power.portal_blast": "Портальная Пушка",
+      "item.power.ice_spear": "Ледяное Копьё",
       "effect.power.recharge_teleportation_stone": "Перезарядка",
       "subtitles.stone_activation": "Камень был активирован",
       "effect.power.fog": "Fog",
@@ -13140,6 +12870,7 @@
       "item.power.water_helmet": "Водная Маска",
       "item.power.cultivation": "Выращивание",
       "item.power.ocean_battery": "Батарея",
+      "item.power.space_atlas": "Space Atlas",
       "item.power.animals_boots": "Животные ботинки",
       "advancements.flower_gleam_and_glow.descr": "Исцелите кого-нибудь при помощи солнечного исцеления",
       "item.power.wind_chestplate": "Воздушный Жилет",
@@ -13169,7 +12900,6 @@
       "item.power.sun_stone": "Камень Солнца",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
       "effect.power.creation_master": "Мастер Созидания",
-      "item.power.tp_on_moon": "Луна",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ледяной щит",
       "item.power.sound_leggings": "Звуковые Брюки",
@@ -13244,7 +12974,6 @@
       "item.power.rain_leggings": "Дождевые Штаны",
       "item.power.shadow_ball": "Теневой Шар",
       "effect.power.fire_master": "Мастер Огня",
-      "item.power.tp_on_mars": "Марс",
       "item.power.ocean_leggings": "Штаны Океана",
       "block.power.wood_magic_box": "Деревянная Волшебная Шкатулка",
       "item.power.ocean_stone": "Камень Океана",
@@ -13305,7 +13034,6 @@
       "item.power.techno_pickaxe": "Техно-Кирка",
       "effect.power.lava_master": "Мастер Лавы",
       "effect.power.blood_master": "Мастер Крови",
-      "item.power.tp_on_venus": "Венера",
       "advancements.mighty_master.descr": "Выберите свой волшебный камень",
       "item.power.sun_chestplate": "Нагрудник солнца",
       "item.power.explosion_battery": "Батарея",
@@ -13441,7 +13169,6 @@
       "advancements.powerless.descr": "Заберите энергию у другого мастера",
       "item.power.increase_power": "Увеличение Силы",
       "item.power.destruction_stone": "Камень Разрушения",
-      "item.power.tp_on_earth": "Земля",
       "item.power.ice_ball": "Ледяной шар",
       "item.power.tornado_helmet": "Шлем Торнадо",
       "item.power.magic_fireball": "Волшебный Огненный Шар",
@@ -13518,9 +13245,9 @@
       "item.power.lightning_battery": "Battery",
       "effect.power.recharge_rain_stone": "Recharge",
       "effect.recharge_tornado_stone": "Recharge",
-      "item.power.cutter_sword": "Cutter Sword",
-      "block.power.detonator_tnt": "Detonator TNT",
       "biome.power.triassic_plains": "Triassic Plains",
+      "block.power.detonator_tnt": "Detonator TNT",
+      "item.power.cutter_sword": "Cutter Sword",
       "effect.power.recharge_moon_stone": "Recharge",
       "item.power.earth_battery": "Battery",
       "advancements.absolute_power.descr": "Copy the power of any element",
@@ -13530,8 +13257,8 @@
       "item.power.fire_chestplate": "Fire Chestplate",
       "item.power.glow_create": "Glow Create",
       "key.power.skills_key": "Skills Key",
-      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.technology_chestplate": "Technology Chestplate",
+      "effect.power.recharge_energy_stone": "Recharge",
       "item.power.snow_golem_creator": "Snow Golem Creator",
       "item.power.lava_hammer": "Lava Hammer",
       "block.power.iron_magic_box": "Iron Magic Box",
@@ -13544,8 +13271,8 @@
       "item.power.amber_leggings": "Amber Leggings",
       "item.power.tamer": "Tamer",
       "effect.power.recharge_earth_stone": "Recharge",
-      "effect.power.ice_master": "Master of Ice",
       "item.power.time_reversed": "Time Reversed",
+      "effect.power.ice_master": "Master of Ice",
       "effect.power.recharge_amber_stone": "Recharge",
       "item.power.piece_of_earth": "Piece of the Earth",
       "block.power.moon_stones_block": "Growing Moon Stones Block",
@@ -13555,14 +13282,14 @@
       "item.power.explode_chestplate": "Explode Chestplate",
       "item.power.lava_ball": "Lava Ball",
       "advancements.welcome_to_the_void.title": "Welcome to the Void!",
-      "item.power.space_leggings": "Space Leggings",
-      "item.power.ocean_sword": "Ocean Sword",
       "item.power.energy_chestplate": "Energy Chestplate",
+      "item.power.ocean_sword": "Ocean Sword",
+      "item.power.space_leggings": "Space Leggings",
       "item.power.gravity_stone": "Gravity Stone",
       "item.power.destruction_sphere": "Destruction Sphere",
       "item.power.shadow_invisible": "Shadow Invisible",
-      "item.power.light_helmet": "Light Helmet",
       "item.power.moon": "Moon Portal Igniter",
+      "item.power.light_helmet": "Light Helmet",
       "item.power.time_leggings": "Time Leggings",
       "effect.power.greenery_master": "Master of Greenery",
       "effect.power.recharge_animals_stone": "Recharge",
@@ -13599,8 +13326,8 @@
       "item.power.fire_stone": "Fire stone",
       "item.power.blood_stone": "Blood Stone",
       "item.power.rain_boots": "Rain Boots",
-      "item.power.portal_blast": "Portal Blaster",
       "item.power.ice_spear": "Ice Spear",
+      "item.power.portal_blast": "Portal Blaster",
       "effect.power.recharge_teleportation_stone": "Recharge",
       "subtitles.stone_activation": "Stone been activation",
       "effect.power.fog": "Fog",
@@ -13610,6 +13337,7 @@
       "item.power.water_helmet": "Water Helmet",
       "item.power.cultivation": "Cultivation",
       "item.power.ocean_battery": "Battery",
+      "item.power.space_atlas": "Space Atlas",
       "item.power.animals_boots": "Animals Boots",
       "advancements.flower_gleam_and_glow.descr": "Heal someone with solar healing",
       "item.power.wind_chestplate": "Air Chestplate",
@@ -13638,7 +13366,6 @@
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
-      "item.power.tp_on_moon": "Tp On Moon",
       "effect.power.creation_master": "Master of Creation",
       "item.power.crestcent_chestplate": "Crestcent Chestplate",
       "item.power.ice_shield": "Ice Shield",
@@ -13714,7 +13441,6 @@
       "item.power.rain_leggings": "Rain Leggings",
       "item.power.shadow_ball": "Shadow Ball",
       "effect.power.fire_master": "Master of Fire",
-      "item.power.tp_on_mars": "Tp On Mars",
       "item.power.ocean_leggings": "Ocean Leggings",
       "block.power.wood_magic_box": "Wood Magic Box",
       "item.power.ocean_stone": "Ocean Stone",
@@ -13775,7 +13501,6 @@
       "item.power.techno_pickaxe": "Techno Pickaxe",
       "effect.power.lava_master": "Master of Lava",
       "effect.power.blood_master": "Master of Blood",
-      "item.power.tp_on_venus": "Tp On Venus",
       "advancements.mighty_master.descr": "Choose your magic stone",
       "item.power.sun_chestplate": "Sun Chestplate",
       "item.power.explosion_battery": "Battery",
@@ -13912,7 +13637,6 @@
       "advancements.powerless.descr": "Take the energy from another master",
       "item.power.increase_power": "Increase Power",
       "item.power.destruction_stone": "Destruction Stone",
-      "item.power.tp_on_earth": "Tp On Earth",
       "item.power.ice_ball": "Ice Ball",
       "item.power.tornado_helmet": "Tornado Helmet",
       "item.power.magic_fireball": "Magic Fireball",
@@ -14206,7 +13930,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.4.3",
+    "version": "2.0.4.4",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "ModdingCommonwealth",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tponmoon",
+    "texture": "space_atlas",
     "customModelName": "Normal",
-    "name": "Tp On Moon",
+    "name": "Space Atlas",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "No creative tab entry"
@@ -14,7 +14,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 0.0,
-    "damageCount": 10,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -30,15 +30,15 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "MoonOnMe"
-    },
-    "onEntityHitWith": {
-      "name": "MoonGUI"
+      "name": "OpenSpaceAtlas"
     },
     "hasDispenseBehavior": false,
     "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"
