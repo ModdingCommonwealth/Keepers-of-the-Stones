@@ -50,7 +50,7 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/space atlas_book.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/space_atlas.png"));
 		this.blit(ms, this.leftPos + 11, this.topPos + 130, 0, 0, 512, 256, 512, 256);
 
 		RenderSystem.disableBlend();

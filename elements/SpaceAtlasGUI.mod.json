@@ -13,9 +13,9 @@
       {
         "type": "image",
         "data": {
-          "image": "space atlas_book.png",
+          "image": "space_atlas.png",
           "use1Xscale": true,
-          "name": "space atlas_book.png",
+          "name": "space_atlas.png",
           "x": -31,
           "y": -6
         }
