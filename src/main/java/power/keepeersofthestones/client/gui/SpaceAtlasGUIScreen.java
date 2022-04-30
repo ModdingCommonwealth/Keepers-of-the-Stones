@@ -33,8 +33,8 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 512;
+		this.imageHeight = 512;
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 		RenderSystem.defaultBlendFunc();
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("power:textures/screens/space atlas_book.png"));
-		this.blit(ms, this.leftPos + -156, this.topPos + -43, 0, 0, 512, 256, 512, 256);
+		this.blit(ms, this.leftPos + 11, this.topPos + 130, 0, 0, 512, 256, 512, 256);
 
 		RenderSystem.disableBlend();
 	}
@@ -72,7 +72,7 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Atlas of Space Travel", -68, -20, -16777216);
+		this.font.draw(poseStack, "Atlas of Space Travel", 99, 153, -16777216);
 	}
 
 	@Override
@@ -85,25 +85,25 @@ public class SpaceAtlasGUIScreen extends AbstractContainerScreen<SpaceAtlasGUIMe
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 25, 46, 20, new TextComponent("Moon"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 84, this.topPos + 198, 46, 20, new TextComponent("Moon"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(0, x, y, z));
 				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + -2, 51, 20, new TextComponent("Earth"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 84, this.topPos + 171, 51, 20, new TextComponent("Earth"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(1, x, y, z));
 				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 52, 46, 20, new TextComponent("Mars"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 84, this.topPos + 225, 46, 20, new TextComponent("Mars"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(2, x, y, z));
 				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -83, this.topPos + 79, 51, 20, new TextComponent("Venus"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 84, this.topPos + 252, 51, 20, new TextComponent("Venus"), e -> {
 			if (true) {
 				PowerMod.PACKET_HANDLER.sendToServer(new SpaceAtlasGUIButtonMessage(3, x, y, z));
 				SpaceAtlasGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
