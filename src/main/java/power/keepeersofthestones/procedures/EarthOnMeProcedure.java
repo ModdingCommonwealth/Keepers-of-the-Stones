@@ -39,6 +39,6 @@ public class EarthOnMeProcedure {
 				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4), "tp ~ 256 ~");
 		}
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 0, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0, (false), (false)));
 	}
 }
