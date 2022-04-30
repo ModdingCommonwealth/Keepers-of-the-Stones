@@ -2,7 +2,7 @@
   "type": "power:venus",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 0,
+    "seed": 1290242725820016369,
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

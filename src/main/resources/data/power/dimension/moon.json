@@ -2,7 +2,7 @@
   "type": "power:moon",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 0,
+    "seed": 3764109680914248997,
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

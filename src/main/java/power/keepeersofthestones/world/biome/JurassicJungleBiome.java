@@ -1,8 +1,6 @@
 
 package power.keepeersofthestones.world.biome;
 
-import power.keepeersofthestones.init.PowerModEntities;
-
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
@@ -23,7 +21,6 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
@@ -69,7 +66,6 @@ public class JurassicJungleBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addExtraEmeralds(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		mobSpawnInfo.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(PowerModEntities.TYRANNOSAURUS_REX.get(), 20, 1, 2));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).temperature(1.3f)
 				.downfall(0.9f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();

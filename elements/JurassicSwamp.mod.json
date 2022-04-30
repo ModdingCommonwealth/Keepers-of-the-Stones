@@ -100,16 +100,6 @@
       "DeadBushes",
       "Fossils"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:TyrannosaurusRex"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }

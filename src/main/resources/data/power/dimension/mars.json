@@ -2,7 +2,7 @@
   "type": "power:mars",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 0,
+    "seed": 5158806125681009096,
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
