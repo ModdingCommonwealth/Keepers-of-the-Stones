@@ -7,11 +7,13 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
 import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
 import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 
 public class ReturnToPresentProcedure {
@@ -19,7 +21,7 @@ public class ReturnToPresentProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
-			ResourceKey<Level> destinationType = Level.OVERWORLD;
+			ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("power:dinoera"));
 			if (_player.level.dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -36,9 +38,9 @@ public class ReturnToPresentProcedure {
 		{
 			Entity _ent = entity;
 			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4), "tp ~ ~10 ~");
+				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4), "tp ~ 256 ~");
 		}
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0, (false), (false)));
 	}
 }

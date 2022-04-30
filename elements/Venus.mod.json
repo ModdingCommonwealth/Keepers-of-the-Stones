@@ -23,7 +23,7 @@
     },
     "canRespawnHere": true,
     "hasFog": true,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": true,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,

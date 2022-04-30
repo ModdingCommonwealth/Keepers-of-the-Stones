@@ -1,10 +1,10 @@
 
 package power.keepeersofthestones.command;
 
-import power.keepeersofthestones.procedures.OnVenusUseProcedure;
-import power.keepeersofthestones.procedures.OnMoonUseProcedure;
-import power.keepeersofthestones.procedures.OnMarsUseProcedure;
-import power.keepeersofthestones.procedures.OnEarthUseProcedure;
+import power.keepeersofthestones.procedures.VenusOnMeProcedure;
+import power.keepeersofthestones.procedures.MoonOnMeProcedure;
+import power.keepeersofthestones.procedures.MarsOnMeProcedure;
+import power.keepeersofthestones.procedures.EarthOnMeProcedure;
 
 import org.checkerframework.checker.units.qual.s;
 
@@ -35,7 +35,7 @@ public class PlanetCommand {
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnEarthUseProcedure.execute(entity);
+					EarthOnMeProcedure.execute(entity);
 					return 0;
 				})).then(Commands.literal("moon").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
@@ -47,7 +47,7 @@ public class PlanetCommand {
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnMoonUseProcedure.execute(entity);
+					MoonOnMeProcedure.execute(entity);
 					return 0;
 				})).then(Commands.literal("venus").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
@@ -59,7 +59,7 @@ public class PlanetCommand {
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnVenusUseProcedure.execute(entity);
+					VenusOnMeProcedure.execute(entity);
 					return 0;
 				})).then(Commands.literal("mars").executes(cmdargs -> {
 					ServerLevel world = cmdargs.getSource().getLevel();
@@ -71,7 +71,7 @@ public class PlanetCommand {
 					if (entity == null)
 						entity = FakePlayerFactory.getMinecraft(world);
 
-					OnMarsUseProcedure.execute(entity);
+					MarsOnMeProcedure.execute(entity);
 					return 0;
 				})));
 	}

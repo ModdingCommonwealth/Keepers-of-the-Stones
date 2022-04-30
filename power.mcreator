@@ -5998,40 +5998,6 @@
       "path": "~/Space"
     },
     {
-      "name": "OnMoonUse",
-      "type": "procedure",
-      "sortid": 396,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_moon_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Commands"
-    },
-    {
-      "name": "OnEarthUse",
-      "type": "procedure",
-      "sortid": 398,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_earth_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Commands"
-    },
-    {
       "name": "SpaceStone",
       "type": "item",
       "sortid": 37,
@@ -6062,23 +6028,6 @@
       "path": "~/Space"
     },
     {
-      "name": "OnMarsUse",
-      "type": "procedure",
-      "sortid": 401,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_mars_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Commands"
-    },
-    {
       "name": "VenusLand",
       "type": "biome",
       "sortid": 403,
@@ -6098,23 +6047,6 @@
         "ep": false
       },
       "path": "~/Space"
-    },
-    {
-      "name": "OnVenusUse",
-      "type": "procedure",
-      "sortid": 404,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_venus_use",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Commands"
     },
     {
       "name": "VenusDesert",
@@ -13930,7 +13862,7 @@
   "workspaceSettings": {
     "modid": "power",
     "modName": "Keepers of the Stones",
-    "version": "2.0.4.4",
+    "version": "2.0.4.5",
     "description": "This mod will add new sources of energy to the world with which you can transform into masters of the elements.",
     "author": "ModdingCommonwealth",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
