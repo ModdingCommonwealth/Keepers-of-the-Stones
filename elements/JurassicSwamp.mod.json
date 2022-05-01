@@ -24,6 +24,10 @@
       "value": -13421824,
       "falpha": 0.0
     },
+    "waterFogColor": {
+      "value": -13421824,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },

@@ -31,7 +31,7 @@ import java.util.List;
 
 public class JurassicSwampBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-13421824).waterFogColor(329011)
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-13421824).waterFogColor(-13421824)
 				.skyColor(7972607).foliageColorOverride(-13408768).grassColorOverride(-13408768).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("power:tree_jurassic_swamp",

@@ -29,8 +29,8 @@ import java.util.List;
 
 public class CretaceousMountainsBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(-16751053).grassColorOverride(-16751053).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-16751002).waterFogColor(-16751002)
+				.skyColor(7972607).foliageColorOverride(-16751053).grassColorOverride(-16751053).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("power:tree_cretaceous_mountains",
 				FeatureUtils.register("power:tree_cretaceous_mountains", Feature.TREE,
