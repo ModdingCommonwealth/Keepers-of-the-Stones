@@ -27,13 +27,13 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
 import java.util.List;
 
-public class CretaceousPineForestBiome {
+public class CretaceousMountainsBiome {
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-16751002).waterFogColor(-16751002)
 				.skyColor(7972607).foliageColorOverride(-16751053).grassColorOverride(-16751053).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("power:tree_cretaceous_pine_forest",
-				FeatureUtils.register("power:tree_cretaceous_pine_forest", Feature.TREE,
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("power:tree_cretaceous_mountains",
+				FeatureUtils.register("power:tree_cretaceous_mountains", Feature.TREE,
 						new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.SPRUCE_LOG.defaultBlockState()),
 								new GiantTrunkPlacer(13, 2, 14), BlockStateProvider.simple(Blocks.SPRUCE_LEAVES.defaultBlockState()),
 								new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(3, 4)),
@@ -41,11 +41,11 @@ public class CretaceousPineForestBiome {
 				List.of(CountPlacement.of(3), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 						PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:brown_mushroom_cretaceous_pine_forest", VegetationFeatures.PATCH_BROWN_MUSHROOM,
+				PlacementUtils.register("power:brown_mushroom_cretaceous_mountains", VegetationFeatures.PATCH_BROWN_MUSHROOM,
 						List.of(CountPlacement.of(2), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
 								BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("power:red_mushroom_cretaceous_pine_forest", VegetationFeatures.PATCH_RED_MUSHROOM,
+				PlacementUtils.register("power:red_mushroom_cretaceous_mountains", VegetationFeatures.PATCH_RED_MUSHROOM,
 						List.of(CountPlacement.of(2), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
@@ -55,7 +55,7 @@ public class CretaceousPineForestBiome {
 		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
 		BiomeDefaultFeatures.addMeadowVegetation(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.SNOW).biomeCategory(Biome.BiomeCategory.TAIGA).temperature(-0.5f)
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.SNOW).biomeCategory(Biome.BiomeCategory.MOUNTAIN).temperature(0.1f)
 				.downfall(0.4f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
 	}
