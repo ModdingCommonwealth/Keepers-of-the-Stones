@@ -21,7 +21,7 @@ import java.util.HashSet;
 import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber
-public class PastDimension {
+public class DinoeraDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class Fixers {
 		@SubscribeEvent
