@@ -10,7 +10,7 @@
       "value": "Blocks.ROOTED_DIRT"
     },
     "underwaterBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "Blocks.DIRT#0"
     },
     "grassColor": {
       "value": -13408768,
@@ -18,6 +18,10 @@
     },
     "foliageColor": {
       "value": -13408768,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13421824,
       "falpha": 0.0
     },
     "ambientSound": {

@@ -11109,18 +11109,6 @@
       "path": "~/Artifacts"
     },
     {
-      "name": "Past",
-      "type": "dimension",
-      "sortid": 704,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dinoera",
-      "metadata": {
-        "ep": false
-      },
-      "path": "~/Time"
-    },
-    {
       "name": "Point",
       "type": "item",
       "sortid": 707,
@@ -12116,6 +12104,18 @@
         ]
       },
       "path": "~/Space"
+    },
+    {
+      "name": "Dinoera",
+      "type": "dimension",
+      "sortid": 807,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinoera",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Time"
     }
   ],
   "variable_elements": [

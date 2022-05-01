@@ -7,7 +7,7 @@
       "value": "Blocks.DIRT#1"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.DIRT#0"
     },
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
@@ -41,8 +41,8 @@
     "biomeCategory": "MOUNTAIN",
     "rainingPossibility": 0.4,
     "temperature": 0.1,
-    "baseHeight": 0.30000000000000004,
-    "heightVariation": 0.7,
+    "baseHeight": 0.7,
+    "heightVariation": 1.4000000000000001,
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": false,

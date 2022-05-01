@@ -24,7 +24,7 @@ import java.util.List;
 public class TriassicPlainsBiome {
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
-				.foliageColorOverride(-3381760).grassColorOverride(-3381760).build();
+				.foliageColorOverride(-6724096).grassColorOverride(-6724096).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("power:grass_triassic_plains", VegetationFeatures.PATCH_GRASS,

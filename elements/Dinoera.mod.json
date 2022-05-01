@@ -20,27 +20,6 @@
       },
       {
         "value": "CUSTOM:CretaceousTaiga"
-      },
-      {
-        "value": "deep_lukewarm_ocean"
-      },
-      {
-        "value": "deep_ocean"
-      },
-      {
-        "value": "deep_warm_ocean"
-      },
-      {
-        "value": "lukewarm_ocean"
-      },
-      {
-        "value": "ocean"
-      },
-      {
-        "value": "warm_ocean"
-      },
-      {
-        "value": "river"
       }
     ],
     "worldGenType": "Normal world gen",

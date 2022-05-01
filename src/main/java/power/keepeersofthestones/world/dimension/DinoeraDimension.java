@@ -33,7 +33,7 @@ public class DinoeraDimension {
 			replaceableBlocks.add(Blocks.GRASS_BLOCK);
 			replaceableBlocks.add(Blocks.DIRT);
 			replaceableBlocks.add(Blocks.COARSE_DIRT);
-			replaceableBlocks.add(Blocks.STONE);
+			replaceableBlocks.add(Blocks.DIRT);
 			replaceableBlocks.add(Blocks.GRASS_BLOCK);
 			replaceableBlocks.add(Blocks.ROOTED_DIRT);
 			replaceableBlocks.add(Blocks.GRASS_BLOCK);
