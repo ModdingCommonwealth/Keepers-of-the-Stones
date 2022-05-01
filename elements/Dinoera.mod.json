@@ -16,10 +16,10 @@
         "value": "CUSTOM:TriassicPlains"
       },
       {
-        "value": "CUSTOM:CretaceousMountains"
+        "value": "CUSTOM:CretaceousTaiga"
       },
       {
-        "value": "CUSTOM:CretaceousTaiga"
+        "value": "CUSTOM:CretaceousPineForest"
       }
     ],
     "worldGenType": "Normal world gen",

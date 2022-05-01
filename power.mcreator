@@ -12019,15 +12019,6 @@
       "path": "~/Time"
     },
     {
-      "name": "CretaceousMountains",
-      "type": "biome",
-      "sortid": 800,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cretaceous_mountains",
-      "path": "~/Time"
-    },
-    {
       "name": "ElementalCoin",
       "type": "item",
       "sortid": 801,
@@ -12115,6 +12106,15 @@
       "metadata": {
         "ep": false
       },
+      "path": "~/Time"
+    },
+    {
+      "name": "CretaceousPineForest",
+      "type": "biome",
+      "sortid": 808,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cretaceous_pine_forest",
       "path": "~/Time"
     }
   ],
@@ -12828,6 +12828,7 @@
       "item.power.greenery_boots": "Лиственные ботинки",
       "advancements.time_force.title": "Сила Времени",
       "key.power.detransform_key": "Клавиша детрансформации",
+      "biome.power.cretaceous_pine_forest": "Cretaceous Mountains",
       "item.power.tornado_create": "Создание Торнадо",
       "item.power.sun_stone": "Камень Солнца",
       "item.power.crystal_chestplate": "Кристаллическая Куртка",
@@ -13082,7 +13083,6 @@
       "effect.power.teleportation_master": "Мастер Телепортации",
       "item.power.lava_stone": "Камень Лавы",
       "block.power.orange_portal": "Оранжевый Портал",
-      "biome.power.cretaceous_mountains": "Cretaceous Mountains",
       "item.power.space_battery": "Батарея",
       "item.power.sun_explode": "Солнечный Взрыв",
       "item.power.vacuum_sword": "Пустотный Меч",
@@ -13295,6 +13295,7 @@
       "item.power.greenery_boots": "Greenery Boots",
       "advancements.time_force.title": "Time Force",
       "key.power.detransform_key": "Detransform key",
+      "biome.power.cretaceous_pine_forest": "Cretaceous Mountains",
       "item.power.tornado_create": "Tornado Create",
       "item.power.sun_stone": "Sun Stone",
       "item.power.crystal_chestplate": "Crystal Chestplate",
@@ -13550,7 +13551,6 @@
       "effect.power.teleportation_master": "Master of Teleportation",
       "item.power.lava_stone": "Lava Stone",
       "block.power.orange_portal": "Orange Portal",
-      "biome.power.cretaceous_mountains": "Cretaceous Mountains",
       "item.power.space_battery": "Battery",
       "item.power.sun_explode": "Sun Explode",
       "item.power.vacuum_sword": "Vacuum Sword",

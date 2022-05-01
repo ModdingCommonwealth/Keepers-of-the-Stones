@@ -32,12 +32,12 @@ public class DinoeraDimension {
 			replaceableBlocks.add(Blocks.COARSE_DIRT);
 			replaceableBlocks.add(Blocks.GRASS_BLOCK);
 			replaceableBlocks.add(Blocks.DIRT);
+			replaceableBlocks.add(Blocks.GRASS_BLOCK);
+			replaceableBlocks.add(Blocks.ROOTED_DIRT);
+			replaceableBlocks.add(Blocks.GRASS_BLOCK);
+			replaceableBlocks.add(Blocks.ROOTED_DIRT);
 			replaceableBlocks.add(Blocks.COARSE_DIRT);
 			replaceableBlocks.add(Blocks.DIRT);
-			replaceableBlocks.add(Blocks.GRASS_BLOCK);
-			replaceableBlocks.add(Blocks.ROOTED_DIRT);
-			replaceableBlocks.add(Blocks.GRASS_BLOCK);
-			replaceableBlocks.add(Blocks.ROOTED_DIRT);
 			replaceableBlocks.add(Blocks.SAND);
 			replaceableBlocks.add(Blocks.SANDSTONE);
 			event.enqueueWork(() -> {

@@ -13,7 +13,7 @@ import power.keepeersofthestones.world.biome.MarsLandBiome;
 import power.keepeersofthestones.world.biome.JurassicSwampBiome;
 import power.keepeersofthestones.world.biome.JurassicJungleBiome;
 import power.keepeersofthestones.world.biome.CretaceousTaigaBiome;
-import power.keepeersofthestones.world.biome.CretaceousMountainsBiome;
+import power.keepeersofthestones.world.biome.CretaceousPineForestBiome;
 import power.keepeersofthestones.PowerMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -37,8 +37,8 @@ public class PowerModBiomes {
 	public static final RegistryObject<Biome> JURASSIC_JUNGLE = REGISTRY.register("jurassic_jungle", () -> JurassicJungleBiome.createBiome());
 	public static final RegistryObject<Biome> JURASSIC_SWAMP = REGISTRY.register("jurassic_swamp", () -> JurassicSwampBiome.createBiome());
 	public static final RegistryObject<Biome> CRETACEOUS_TAIGA = REGISTRY.register("cretaceous_taiga", () -> CretaceousTaigaBiome.createBiome());
-	public static final RegistryObject<Biome> CRETACEOUS_MOUNTAINS = REGISTRY.register("cretaceous_mountains",
-			() -> CretaceousMountainsBiome.createBiome());
+	public static final RegistryObject<Biome> CRETACEOUS_PINE_FOREST = REGISTRY.register("cretaceous_pine_forest",
+			() -> CretaceousPineForestBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -52,7 +52,7 @@ public class PowerModBiomes {
 			JurassicJungleBiome.init();
 			JurassicSwampBiome.init();
 			CretaceousTaigaBiome.init();
-			CretaceousMountainsBiome.init();
+			CretaceousPineForestBiome.init();
 		});
 	}
 }
