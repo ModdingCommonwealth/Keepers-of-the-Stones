@@ -1,5 +1,5 @@
 {
-  "homepage": "no",
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
   "promos": {
     "1.16.5-latest": "1.4.5",
     "1.16.5-recommended": "1.4.5",
@@ -7,8 +7,8 @@
     "1.17.1-recommended": "1.4.1",
     "1.18.1-latest": "1.6.1",
     "1.18.1-recommended": "1.6.1",
-    "1.18.2-latest": "2.0.3",
-    "1.18.2-recommended": "2.0.3"
+    "1.18.2-latest": "2.0.5",
+    "1.18.2-recommended": "2.0.5"
   },
   "1.16.5": {
     "B2": "
@@ -400,6 +400,31 @@ You can download the mod by following the link: https://www.curseforge.com/minec
 - Completely removed element - blue flame
 - Returned the destructiveness of the explosion from the element of the sun
 - Some sounds of blocks and objects are replaced with amethyst from the crystal master
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"2.0.4": "
+- Added a split stone
+- Redesigned dinoera generation
+- Added a portal to Dinoera
+- Added a time feather
+- Added 2 biomes for 3 periods of the Mesozoic era
+- Added Tyrannosaurus Rex
+- Added randomization of generation for other dimensions
+- Added an amber shield and amber veins for the amber master
+- The construction function was rolled back by coordinates for the creation stone
+- Dot now puts only checkpoints
+- Improved combat performance of the teleportation master
+- Ownership of the mod has been returned
+- [Bugfix] Fixed a bug where the amber master could copy creation and destruction
+- [Bugfix] Fixed a bug due to which force replication was triggered every time the master hit with an already copied element
+- [Bugfix] Fixed a bug that caused the slow-down effect to act after the end of the time stop effect
+- [Bugfix] Fixed icons for time control effects
+- [Bugfix] Fixed generation of biomes in dimensions
+- [Bugfix] Fixed a bug with copying a stone after 2 deaths with a used battery
+You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones",
+"2.0.5": "
+- Improved Tyrannosaurus behavior
+- The split feather functionality is temporarily disabled
+- [Bugfix] Fixed Tyrannosaurus hitbox
 You can download the mod by following the link: https://www.curseforge.com/minecraft/mc-mods/keepers-of-the-stones"
   }
 }
